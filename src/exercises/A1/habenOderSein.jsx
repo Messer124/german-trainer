@@ -4,7 +4,7 @@ import data from "../../../data/A1/haben-sein.json";
 import ModalImage from "../../components/ModalImage";
 import PageHeader from "../../components/PageHeader";
 import habenSeinImage from "../../../data/A1/images/haben-sein.png";
-import "../../css/a1/habenOderSein.css";
+import "../../css/A1/habenOderSein.css";
 
 export default function HabenOderSein() {
   const STORAGE_KEY = "haben-sein-answers";
