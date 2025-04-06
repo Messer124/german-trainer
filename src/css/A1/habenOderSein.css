@@ -1,0 +1,49 @@
+
+.haben-container {
+  font-family: sans-serif;
+}
+
+.haben-list {
+  list-style: none;
+  padding: 0;
+}
+
+.haben-item {
+  margin-bottom: 12px;
+}
+
+.haben-input {
+  margin: 0 8px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  outline: none;
+  transition: border-color 0.5s ease;
+  width: 40px;
+  text-align: center;
+}
+
+.haben-input.correct {
+  border-color: #6eea8d;
+}
+
+.haben-input.incorrect {
+  border-color: red;
+}
+
+.hint-button {
+  font-size: 18px;
+  background: none;
+  border: 2px solid #4ea1f3;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  cursor: pointer;
+  color: #4ea1f3;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}

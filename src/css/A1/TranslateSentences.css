@@ -1,0 +1,90 @@
+
+.translate-container {
+  font-family: sans-serif;
+}
+
+.translate-header {
+  border-bottom: 3px solid #4ea1f3;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+}
+
+.translate-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+}
+
+.translate-container p {
+  margin-bottom: 16px;
+}
+
+.translate-list {
+  list-style: none;
+  padding: 0;
+}
+
+.translate-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.translate-sentence {
+  min-width: 240px;
+  margin-right: 16px;
+}
+
+.translate-input {
+  transition: all 0.6s ease;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 16px;
+  min-width: 6em;
+  outline: none;
+  max-width: 40%;
+}
+
+.translate-input.correct {
+  border-color: #6eea8d;
+}
+
+.translate-input.incorrect {
+  border-color: red;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.eye-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fefefe;
+  border: 2px solid #ccc;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+  z-index: 10;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}

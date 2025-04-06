@@ -1,0 +1,95 @@
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  height: 100vh;
+  background-color: #f8fcff;
+  border-right: 1px solid #ccc;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.tab-item {
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 4px;
+  transition: background 0.3s;
+  border-left: 4px solid transparent;
+}
+
+.tab-item.active {
+  background: #e6f4ff;
+  border-left: 4px solid #4ea1f3;
+}
+
+.clear-button {
+  padding: 12px;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.clear-button:hover {
+  background-color: #e0f0ff;
+}
+
+.clear-button:active {
+  background-color: #b7e2ff;
+}
+
+.content {
+  flex: 1;
+  padding-left: 24px;
+  overflow-y: auto;
+}
+
+/* 📱 Адаптив */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 16px;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease;
+}

@@ -1,0 +1,198 @@
+{
+  "title": "Прошедшее время",
+  "instructions": "Напишите правильную форму глагола в прошедшем времени (Präteritum или Perfekt).",
+  "items": [
+    {
+      "sentence": "Ich ___ gestern zu Hause (sein).",
+      "answer": "war"
+    },
+    {
+      "sentence": "Wir ___ einen Film gesehen (haben).",
+      "answer": "haben"
+    },
+    {
+      "sentence": "Er ___ lange geschlafen (haben).",
+      "answer": "hat"
+    },
+    {
+      "sentence": "Sie ___ nach Berlin gefahren (sein).",
+      "answer": "ist"
+    },
+    {
+      "sentence": "Du ___ eine E-Mail geschrieben (haben).",
+      "answer": "hast"
+    },
+    {
+      "sentence": "Ich ___ krank (sein).",
+      "answer": "war"
+    },
+    {
+      "sentence": "Ihr ___ ins Kino gegangen (sein).",
+      "answer": "seid"
+    },
+    {
+      "sentence": "Wir ___ zu viel gearbeitet (haben).",
+      "answer": "haben"
+    },
+    {
+      "sentence": "Sie ___ das Fenster geöffnet (haben).",
+      "answer": "haben"
+    },
+    {
+      "sentence": "Du ___ schnell gelaufen (sein).",
+      "answer": "bist"
+    },
+    {
+      "sentence": "Ich ___ Brot gekauft (haben).",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Sie ___ eine Frage gestellt (haben).",
+      "answer": "hat"
+    },
+    {
+      "sentence": "Wir ___ gut geschlafen (haben).",
+      "answer": "haben"
+    },
+    {
+      "sentence": "Er ___ das Buch gelesen (haben).",
+      "answer": "hat"
+    },
+    {
+      "sentence": "Ich ___ in Berlin gewesen (sein).",
+      "answer": "bin"
+    },
+    {
+      "sentence": "Du ___ Kaffee getrunken (haben).",
+      "answer": "hast"
+    },
+    {
+      "sentence": "Sie ___ spät angekommen (sein).",
+      "answer": "ist"
+    },
+    {
+      "sentence": "Wir ___ zusammen gegessen (haben).",
+      "answer": "haben"
+    },
+    {
+      "sentence": "Ich ___ im Supermarkt gewesen (sein).",
+      "answer": "bin"
+    },
+    {
+      "sentence": "Er ___ mit dem Bus gefahren (sein).",
+      "answer": "ist"
+    },
+    {
+      "sentence": "Ihr ___ Deutsch gesprochen (haben).",
+      "answer": "habt"
+    },
+    {
+      "sentence": "Ich ___ das Fenster zugemacht (haben).",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Du ___ das Licht ausgemacht (haben).",
+      "answer": "hast"
+    },
+    {
+      "sentence": "Sie ___ eine Pizza gegessen (haben).",
+      "answer": "hat"
+    },
+    {
+      "sentence": "Wir ___ einen Brief geschrieben (haben).",
+      "answer": "haben"
+    },
+    {
+      "sentence": "Ich ___ viel gelernt (haben).",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Er ___ spät aufgestanden (sein).",
+      "answer": "ist"
+    },
+    {
+      "sentence": "Du ___ im Bett geblieben (sein).",
+      "answer": "bist"
+    },
+    {
+      "sentence": "Ich ___ das Fenster aufgemacht (haben).",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Sie ___ das Haus verlassen (haben).",
+      "answer": "hat"
+    },
+    {
+      "sentence": "Wir ___ Musik gehört (haben).",
+      "answer": "haben"
+    },
+    {
+      "sentence": "Ich ___ den Fernseher angemacht (haben).",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Du ___ das Buch gefunden (haben).",
+      "answer": "hast"
+    },
+    {
+      "sentence": "Sie ___ ein Lied gesungen (haben).",
+      "answer": "hat"
+    },
+    {
+      "sentence": "Wir ___ das Essen gekocht (haben).",
+      "answer": "haben"
+    },
+    {
+      "sentence": "Ich ___ eine Frage gehabt (haben).",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Du ___ schnell gelaufen (sein).",
+      "answer": "bist"
+    },
+    {
+      "sentence": "Er ___ seine Tasche verloren (haben).",
+      "answer": "hat"
+    },
+    {
+      "sentence": "Sie ___ einen Apfel gegessen (haben).",
+      "answer": "hat"
+    },
+    {
+      "sentence": "Ich ___ Wasser getrunken (haben).",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Wir ___ einen Ausflug gemacht (haben).",
+      "answer": "haben"
+    },
+    {
+      "sentence": "Ihr ___ laut gelacht (haben).",
+      "answer": "habt"
+    },
+    {
+      "sentence": "Du ___ lange geschlafen (haben).",
+      "answer": "hast"
+    },
+    {
+      "sentence": "Ich ___ eine E-Mail bekommen (haben).",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Sie ___ viel gesprochen (haben).",
+      "answer": "hat"
+    },
+    {
+      "sentence": "Wir ___ pünktlich angekommen (sein).",
+      "answer": "sind"
+    },
+    {
+      "sentence": "Ich ___ das Handy verloren (haben).",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Du ___ gut gekocht (haben).",
+      "answer": "hast"
+    }
+  ]
+}

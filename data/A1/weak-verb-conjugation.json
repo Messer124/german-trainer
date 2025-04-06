@@ -1,0 +1,502 @@
+{
+  "title": {
+    "ru": "Спряжение слабых глаголов",
+    "en": "Weak verb conjugation"
+  },
+  "instructions": {
+    "ru": "Проспрягайте слабые глаголы по группам местоимений",
+    "en": "Conjugate weak verbs by pronoun groups"
+  },
+  "items": [
+    {
+      "infinitive": "machen",
+      "conjugation": {
+        "ich": "mache",
+        "du": "machst",
+        "er/sie/es": "macht",
+        "wir/sie/Sie": "machen",
+        "ihr": "macht"
+      }
+    },
+    {
+      "infinitive": "lernen",
+      "conjugation": {
+        "ich": "lerne",
+        "du": "lernst",
+        "er/sie/es": "lernt",
+        "wir/sie/Sie": "lernen",
+        "ihr": "lernt"
+      }
+    },
+    {
+      "infinitive": "arbeiten",
+      "conjugation": {
+        "ich": "arbeite",
+        "du": "arbeitest",
+        "er/sie/es": "arbeitet",
+        "wir/sie/Sie": "arbeiten",
+        "ihr": "arbeitet"
+      }
+    },
+    {
+      "infinitive": "spielen",
+      "conjugation": {
+        "ich": "spiele",
+        "du": "spielst",
+        "er/sie/es": "spielt",
+        "wir/sie/Sie": "spielen",
+        "ihr": "spielt"
+      }
+    },
+    {
+      "infinitive": "wohnen",
+      "conjugation": {
+        "ich": "wohne",
+        "du": "wohnst",
+        "er/sie/es": "wohnt",
+        "wir/sie/Sie": "wohnen",
+        "ihr": "wohnt"
+      }
+    },
+    {
+      "infinitive": "leben",
+      "conjugation": {
+        "ich": "lebe",
+        "du": "lebst",
+        "er/sie/es": "lebt",
+        "wir/sie/Sie": "leben",
+        "ihr": "lebt"
+      }
+    },
+    {
+      "infinitive": "fragen",
+      "conjugation": {
+        "ich": "frage",
+        "du": "fragst",
+        "er/sie/es": "fragt",
+        "wir/sie/Sie": "fragen",
+        "ihr": "fragt"
+      }
+    },
+    {
+      "infinitive": "antworten",
+      "conjugation": {
+        "ich": "antworte",
+        "du": "antwortest",
+        "er/sie/es": "antwortet",
+        "wir/sie/Sie": "antworten",
+        "ihr": "antwortet"
+      }
+    },
+    {
+      "infinitive": "sagen",
+      "conjugation": {
+        "ich": "sage",
+        "du": "sagst",
+        "er/sie/es": "sagt",
+        "wir/sie/Sie": "sagen",
+        "ihr": "sagt"
+      }
+    },
+    {
+      "infinitive": "kaufen",
+      "conjugation": {
+        "ich": "kaufe",
+        "du": "kaufst",
+        "er/sie/es": "kauft",
+        "wir/sie/Sie": "kaufen",
+        "ihr": "kauft"
+      }
+    },
+    {
+      "infinitive": "verkaufen",
+      "conjugation": {
+        "ich": "verkaufe",
+        "du": "verkaufst",
+        "er/sie/es": "verkauft",
+        "wir/sie/Sie": "verkaufen",
+        "ihr": "verkauft"
+      }
+    },
+    {
+      "infinitive": "hören",
+      "conjugation": {
+        "ich": "höre",
+        "du": "hörst",
+        "er/sie/es": "hört",
+        "wir/sie/Sie": "hören",
+        "ihr": "hört"
+      }
+    },
+    {
+      "infinitive": "tanzen",
+      "conjugation": {
+        "ich": "tanze",
+        "du": "tanzst",
+        "er/sie/es": "tanzt",
+        "wir/sie/Sie": "tanzen",
+        "ihr": "tanzt"
+      }
+    },
+    {
+      "infinitive": "reisen",
+      "conjugation": {
+        "ich": "reise",
+        "du": "reisst",
+        "er/sie/es": "reist",
+        "wir/sie/Sie": "reisen",
+        "ihr": "reist"
+      }
+    },
+    {
+      "infinitive": "kochen",
+      "conjugation": {
+        "ich": "koche",
+        "du": "kochst",
+        "er/sie/es": "kocht",
+        "wir/sie/Sie": "kochen",
+        "ihr": "kocht"
+      }
+    },
+    {
+      "infinitive": "öffnen",
+      "conjugation": {
+        "ich": "öffne",
+        "du": "öffnst",
+        "er/sie/es": "öffnt",
+        "wir/sie/Sie": "öffnen",
+        "ihr": "öffnt"
+      }
+    },
+    {
+      "infinitive": "schließen",
+      "conjugation": {
+        "ich": "schließe",
+        "du": "schließst",
+        "er/sie/es": "schließt",
+        "wir/sie/Sie": "schließen",
+        "ihr": "schließt"
+      }
+    },
+    {
+      "infinitive": "kosten",
+      "conjugation": {
+        "ich": "koste",
+        "du": "kostest",
+        "er/sie/es": "kostet",
+        "wir/sie/Sie": "kosten",
+        "ihr": "kostet"
+      }
+    },
+    {
+      "infinitive": "glauben",
+      "conjugation": {
+        "ich": "glaube",
+        "du": "glaubst",
+        "er/sie/es": "glaubt",
+        "wir/sie/Sie": "glauben",
+        "ihr": "glaubt"
+      }
+    },
+    {
+      "infinitive": "warten",
+      "conjugation": {
+        "ich": "warte",
+        "du": "wartest",
+        "er/sie/es": "wartet",
+        "wir/sie/Sie": "warten",
+        "ihr": "wartet"
+      }
+    },
+    {
+      "infinitive": "zahlen",
+      "conjugation": {
+        "ich": "zahle",
+        "du": "zahlst",
+        "er/sie/es": "zahlt",
+        "wir/sie/Sie": "zahlen",
+        "ihr": "zahlt"
+      }
+    },
+    {
+      "infinitive": "zeichnen",
+      "conjugation": {
+        "ich": "zeichne",
+        "du": "zeichnst",
+        "er/sie/es": "zeichnt",
+        "wir/sie/Sie": "zeichnen",
+        "ihr": "zeichnt"
+      }
+    },
+    {
+      "infinitive": "sammeln",
+      "conjugation": {
+        "ich": "samme",
+        "du": "sammst",
+        "er/sie/es": "sammt",
+        "wir/sie/Sie": "sammen",
+        "ihr": "sammt"
+      }
+    },
+    {
+      "infinitive": "regnen",
+      "conjugation": {
+        "ich": "regne",
+        "du": "regnst",
+        "er/sie/es": "regnt",
+        "wir/sie/Sie": "regnen",
+        "ihr": "regnt"
+      }
+    },
+    {
+      "infinitive": "wandern",
+      "conjugation": {
+        "ich": "wande",
+        "du": "wandst",
+        "er/sie/es": "wandt",
+        "wir/sie/Sie": "wanden",
+        "ihr": "wandt"
+      }
+    },
+    {
+      "infinitive": "feiern",
+      "conjugation": {
+        "ich": "feie",
+        "du": "feist",
+        "er/sie/es": "feit",
+        "wir/sie/Sie": "feien",
+        "ihr": "feit"
+      }
+    },
+    {
+      "infinitive": "lachen",
+      "conjugation": {
+        "ich": "lache",
+        "du": "lachst",
+        "er/sie/es": "lacht",
+        "wir/sie/Sie": "lachen",
+        "ihr": "lacht"
+      }
+    },
+    {
+      "infinitive": "weinen",
+      "conjugation": {
+        "ich": "weine",
+        "du": "weinst",
+        "er/sie/es": "weint",
+        "wir/sie/Sie": "weinen",
+        "ihr": "weint"
+      }
+    },
+    {
+      "infinitive": "bauen",
+      "conjugation": {
+        "ich": "baue",
+        "du": "baust",
+        "er/sie/es": "baut",
+        "wir/sie/Sie": "bauen",
+        "ihr": "baut"
+      }
+    },
+    {
+      "infinitive": "putzen",
+      "conjugation": {
+        "ich": "putze",
+        "du": "putzst",
+        "er/sie/es": "putzt",
+        "wir/sie/Sie": "putzen",
+        "ihr": "putzt"
+      }
+    },
+    {
+      "infinitive": "lieben",
+      "conjugation": {
+        "ich": "liebe",
+        "du": "liebst",
+        "er/sie/es": "liebt",
+        "wir/sie/Sie": "lieben",
+        "ihr": "liebt"
+      }
+    },
+    {
+      "infinitive": "hassen",
+      "conjugation": {
+        "ich": "hasse",
+        "du": "hassst",
+        "er/sie/es": "hasst",
+        "wir/sie/Sie": "hassen",
+        "ihr": "hasst"
+      }
+    },
+    {
+      "infinitive": "zeigen",
+      "conjugation": {
+        "ich": "zeige",
+        "du": "zeigst",
+        "er/sie/es": "zeigt",
+        "wir/sie/Sie": "zeigen",
+        "ihr": "zeigt"
+      }
+    },
+    {
+      "infinitive": "versuchen",
+      "conjugation": {
+        "ich": "versuche",
+        "du": "versuchst",
+        "er/sie/es": "versucht",
+        "wir/sie/Sie": "versuchen",
+        "ihr": "versucht"
+      }
+    },
+    {
+      "infinitive": "erklären",
+      "conjugation": {
+        "ich": "erkläre",
+        "du": "erklärst",
+        "er/sie/es": "erklärt",
+        "wir/sie/Sie": "erklären",
+        "ihr": "erklärt"
+      }
+    },
+    {
+      "infinitive": "benutzen",
+      "conjugation": {
+        "ich": "benutze",
+        "du": "benutzst",
+        "er/sie/es": "benutzt",
+        "wir/sie/Sie": "benutzen",
+        "ihr": "benutzt"
+      }
+    },
+    {
+      "infinitive": "telefonieren",
+      "conjugation": {
+        "ich": "telefoniere",
+        "du": "telefonierst",
+        "er/sie/es": "telefoniert",
+        "wir/sie/Sie": "telefonieren",
+        "ihr": "telefoniert"
+      }
+    },
+    {
+      "infinitive": "studieren",
+      "conjugation": {
+        "ich": "studiere",
+        "du": "studierst",
+        "er/sie/es": "studiert",
+        "wir/sie/Sie": "studieren",
+        "ihr": "studiert"
+      }
+    },
+    {
+      "infinitive": "reparieren",
+      "conjugation": {
+        "ich": "repariere",
+        "du": "reparierst",
+        "er/sie/es": "repariert",
+        "wir/sie/Sie": "reparieren",
+        "ihr": "repariert"
+      }
+    },
+    {
+      "infinitive": "fotografieren",
+      "conjugation": {
+        "ich": "fotografiere",
+        "du": "fotografierst",
+        "er/sie/es": "fotografiert",
+        "wir/sie/Sie": "fotografieren",
+        "ihr": "fotografiert"
+      }
+    },
+    {
+      "infinitive": "probieren",
+      "conjugation": {
+        "ich": "probiere",
+        "du": "probierst",
+        "er/sie/es": "probiert",
+        "wir/sie/Sie": "probieren",
+        "ihr": "probiert"
+      }
+    },
+    {
+      "infinitive": "reservieren",
+      "conjugation": {
+        "ich": "reserviere",
+        "du": "reservierst",
+        "er/sie/es": "reserviert",
+        "wir/sie/Sie": "reservieren",
+        "ihr": "reserviert"
+      }
+    },
+    {
+      "infinitive": "korrigieren",
+      "conjugation": {
+        "ich": "korrigiere",
+        "du": "korrigierst",
+        "er/sie/es": "korrigiert",
+        "wir/sie/Sie": "korrigieren",
+        "ihr": "korrigiert"
+      }
+    },
+    {
+      "infinitive": "bezahlen",
+      "conjugation": {
+        "ich": "bezahle",
+        "du": "bezahlst",
+        "er/sie/es": "bezahlt",
+        "wir/sie/Sie": "bezahlen",
+        "ihr": "bezahlt"
+      }
+    },
+    {
+      "infinitive": "grüßen",
+      "conjugation": {
+        "ich": "grüße",
+        "du": "grüßst",
+        "er/sie/es": "grüßt",
+        "wir/sie/Sie": "grüßen",
+        "ihr": "grüßt"
+      }
+    },
+    {
+      "infinitive": "wünschen",
+      "conjugation": {
+        "ich": "wünsche",
+        "du": "wünschst",
+        "er/sie/es": "wünscht",
+        "wir/sie/Sie": "wünschen",
+        "ihr": "wünscht"
+      }
+    },
+    {
+      "infinitive": "denken",
+      "conjugation": {
+        "ich": "denke",
+        "du": "denkst",
+        "er/sie/es": "denkt",
+        "wir/sie/Sie": "denken",
+        "ihr": "denkt"
+      }
+    },
+    {
+      "infinitive": "hören",
+      "conjugation": {
+        "ich": "höre",
+        "du": "hörst",
+        "er/sie/es": "hört",
+        "wir/sie/Sie": "hören",
+        "ihr": "hört"
+      }
+    },
+    {
+      "infinitive": "spielen",
+      "conjugation": {
+        "ich": "spiele",
+        "du": "spielst",
+        "er/sie/es": "spielt",
+        "wir/sie/Sie": "spielen",
+        "ihr": "spielt"
+      }
+    }
+  ]
+}

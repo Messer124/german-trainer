@@ -1,0 +1,1112 @@
+{
+  "title": {
+    "ru": "Спряжение сильных глаголов",
+    "en": "Strong verb conjugation"
+  },
+  "instructions": {
+    "ru": "Введите правильную форму сильного глагола.",
+    "en": "Enter the correct form of the strong verb."
+  },
+  "items": [
+    {
+      "sentence": "sein",
+      "answers": {
+        "ich": "bin",
+        "du": "bist",
+        "er/sie/es": "ist",
+        "wir/Sie/sie": "sind",
+        "ihr": "seid"
+      }
+    },
+    {
+      "sentence": "haben",
+      "answers": {
+        "ich": "habe",
+        "du": "hast",
+        "er/sie/es": "hat",
+        "wir/Sie/sie": "haben",
+        "ihr": "habt"
+      }
+    },
+    {
+      "sentence": "heißen",
+      "answers": {
+        "ich": "heiße",
+        "du": "heißt",
+        "er/sie/es": "heißt",
+        "wir/Sie/sie": "heißen",
+        "ihr": "heißt"
+      }
+    },
+    {
+      "sentence": "halten",
+      "answers": {
+        "ich": "halte",
+        "du": "hältst",
+        "er/sie/es": "hält",
+        "wir/Sie/sie": "halten",
+        "ihr": "haltet"
+      }
+    },
+    {
+      "sentence": "nennen",
+      "answers": {
+        "ich": "nenne",
+        "du": "nennst",
+        "er/sie/es": "nennt",
+        "wir/Sie/sie": "nennen",
+        "ihr": "nennt"
+      }
+    },
+    {
+      "sentence": "sprechen",
+      "answers": {
+        "ich": "spreche",
+        "du": "sprichst",
+        "er/sie/es": "spricht",
+        "wir/Sie/sie": "sprechen",
+        "ihr": "sprecht"
+      }
+    },
+    {
+      "sentence": "fahren",
+      "answers": {
+        "ich": "fahre",
+        "du": "fährst",
+        "er/sie/es": "fährt",
+        "wir/Sie/sie": "fahren",
+        "ihr": "fahrt"
+      }
+    },
+    {
+      "sentence": "kennen",
+      "answers": {
+        "ich": "kenne",
+        "du": "kennst",
+        "er/sie/es": "kennt",
+        "wir/Sie/sie": "kennen",
+        "ihr": "kennt"
+      }
+    },
+    {
+      "sentence": "gelten",
+      "answers": {
+        "ich": "gelte",
+        "du": "giltst",
+        "er/sie/es": "gilt",
+        "wir/Sie/sie": "gelten",
+        "ihr": "geltet"
+      }
+    },
+    {
+      "sentence": "bekommen",
+      "answers": {
+        "ich": "bekomme",
+        "du": "bekommst",
+        "er/sie/es": "bekommt",
+        "wir/Sie/sie": "bekommen",
+        "ihr": "bekommt"
+      }
+    },
+    {
+      "sentence": "schließen",
+      "answers": {
+        "ich": "schließe",
+        "du": "schließt",
+        "er/sie/es": "schließt",
+        "wir/Sie/sie": "schließen",
+        "ihr": "schließt"
+      }
+    },
+    {
+      "sentence": "gewinnen",
+      "answers": {
+        "ich": "gewinne",
+        "du": "gewinnst",
+        "er/sie/es": "gewinnt",
+        "wir/Sie/sie": "gewinnen",
+        "ihr": "gewinnt"
+      }
+    },
+    {
+      "sentence": "sitzen",
+      "answers": {
+        "ich": "sitze",
+        "du": "sitzt",
+        "er/sie/es": "sitzt",
+        "wir/Sie/sie": "sitzen",
+        "ihr": "sitzt"
+      }
+    },
+    {
+      "sentence": "fallen",
+      "answers": {
+        "ich": "falle",
+        "du": "fällst",
+        "er/sie/es": "fällt",
+        "wir/Sie/sie": "fallen",
+        "ihr": "fallt"
+      }
+    },
+    {
+      "sentence": "trinken",
+      "answers": {
+        "ich": "trinke",
+        "du": "trinkst",
+        "er/sie/es": "trinkt",
+        "wir/Sie/sie": "trinken",
+        "ihr": "trinkt"
+      }
+    },
+    {
+      "sentence": "schlafen",
+      "answers": {
+        "ich": "schlafe",
+        "du": "schläfst",
+        "er/sie/es": "schläft",
+        "wir/Sie/sie": "schlafen",
+        "ihr": "schlaft"
+      }
+    },
+    {
+      "sentence": "helfen",
+      "answers": {
+        "ich": "helfe",
+        "du": "hilfst",
+        "er/sie/es": "hilft",
+        "wir/Sie/sie": "helfen",
+        "ihr": "helft"
+      }
+    },
+    {
+      "sentence": "rufen",
+      "answers": {
+        "ich": "rufe",
+        "du": "rufst",
+        "er/sie/es": "ruft",
+        "wir/Sie/sie": "rufen",
+        "ihr": "ruft"
+      }
+    },
+    {
+      "sentence": "scheinen",
+      "answers": {
+        "ich": "scheine",
+        "du": "scheinst",
+        "er/sie/es": "scheint",
+        "wir/Sie/sie": "scheinen",
+        "ihr": "scheint"
+      }
+    },
+    {
+      "sentence": "bitten",
+      "answers": {
+        "ich": "bitte",
+        "du": "bittest",
+        "er/sie/es": "bittet",
+        "wir/Sie/sie": "bitten",
+        "ihr": "bittet"
+      }
+    },
+    {
+      "sentence": "beginnen",
+      "answers": {
+        "ich": "beginne",
+        "du": "beginnst",
+        "er/sie/es": "beginnt",
+        "wir/Sie/sie": "beginnen",
+        "ihr": "beginnt"
+      }
+    },
+    {
+      "sentence": "liegen",
+      "answers": {
+        "ich": "liege",
+        "du": "liegst",
+        "er/sie/es": "liegt",
+        "wir/Sie/sie": "liegen",
+        "ihr": "liegt"
+      }
+    },
+    {
+      "sentence": "laufen",
+      "answers": {
+        "ich": "laufe",
+        "du": "läufst",
+        "er/sie/es": "läuft",
+        "wir/Sie/sie": "laufen",
+        "ihr": "lauft"
+      }
+    },
+    {
+      "sentence": "lassen",
+      "answers": {
+        "ich": "lasse",
+        "du": "lässt",
+        "er/sie/es": "lässt",
+        "wir/Sie/sie": "lassen",
+        "ihr": "lasst"
+      }
+    },
+    {
+      "sentence": "ziehen",
+      "answers": {
+        "ich": "ziehe",
+        "du": "ziehst",
+        "er/sie/es": "zieht",
+        "wir/Sie/sie": "ziehen",
+        "ihr": "zieht"
+      }
+    },
+    {
+      "sentence": "finden",
+      "answers": {
+        "ich": "finde",
+        "du": "findest",
+        "er/sie/es": "findet",
+        "wir/Sie/sie": "finden",
+        "ihr": "findet"
+      }
+    },
+    {
+      "sentence": "bringen",
+      "answers": {
+        "ich": "bringe",
+        "du": "bringst",
+        "er/sie/es": "bringt",
+        "wir/Sie/sie": "bringen",
+        "ihr": "bringt"
+      }
+    },
+    {
+      "sentence": "sehen",
+      "answers": {
+        "ich": "sehe",
+        "du": "siehst",
+        "er/sie/es": "sieht",
+        "wir/Sie/sie": "sehen",
+        "ihr": "seht"
+      }
+    },
+    {
+      "sentence": "bleiben",
+      "answers": {
+        "ich": "bleibe",
+        "du": "bleibst",
+        "er/sie/es": "bleibt",
+        "wir/Sie/sie": "bleiben",
+        "ihr": "bleibt"
+      }
+    },
+    {
+      "sentence": "geben",
+      "answers": {
+        "ich": "gebe",
+        "du": "gibst",
+        "er/sie/es": "gibt",
+        "wir/Sie/sie": "geben",
+        "ihr": "gebt"
+      }
+    },
+    {
+      "sentence": "gehen",
+      "answers": {
+        "ich": "gehe",
+        "du": "gehst",
+        "er/sie/es": "geht",
+        "wir/Sie/sie": "gehen",
+        "ihr": "geht"
+      }
+    },
+    {
+      "sentence": "stehen",
+      "answers": {
+        "ich": "stehe",
+        "du": "stehst",
+        "er/sie/es": "steht",
+        "wir/Sie/sie": "stehen",
+        "ihr": "steht"
+      }
+    },
+    {
+      "sentence": "kommen",
+      "answers": {
+        "ich": "komme",
+        "du": "kommst",
+        "er/sie/es": "kommt",
+        "wir/Sie/sie": "kommen",
+        "ihr": "kommt"
+      }
+    },
+    {
+      "sentence": "wissen",
+      "answers": {
+        "ich": "weiß",
+        "du": "weißt",
+        "er/sie/es": "weiß",
+        "wir/Sie/sie": "wissen",
+        "ihr": "wisst"
+      }
+    },
+    {
+      "sentence": "nehmen",
+      "answers": {
+        "ich": "nehme",
+        "du": "nimmst",
+        "er/sie/es": "nimmt",
+        "wir/Sie/sie": "nehmen",
+        "ihr": "nehmt"
+      }
+    },
+    {
+      "sentence": "denken",
+      "answers": {
+        "ich": "denke",
+        "du": "denkst",
+        "er/sie/es": "denkt",
+        "wir/Sie/sie": "denken",
+        "ihr": "denkt"
+      }
+    },
+    {
+      "sentence": "verlieren",
+      "answers": {
+        "ich": "verliere",
+        "du": "verlierst",
+        "er/sie/es": "verliert",
+        "wir/Sie/sie": "verlieren",
+        "ihr": "verliert"
+      }
+    },
+    {
+      "sentence": "tun",
+      "answers": {
+        "ich": "tue",
+        "du": "tust",
+        "er/sie/es": "tut",
+        "wir/Sie/sie": "tun",
+        "ihr": "tut"
+      }
+    },
+    {
+      "sentence": "lesen",
+      "answers": {
+        "ich": "lese",
+        "du": "liest",
+        "er/sie/es": "liest",
+        "wir/Sie/sie": "lesen",
+        "ihr": "lest"
+      }
+    },
+    {
+      "sentence": "vergessen",
+      "answers": {
+        "ich": "vergesse",
+        "du": "vergisst",
+        "er/sie/es": "vergisst",
+        "wir/Sie/sie": "vergessen",
+        "ihr": "vergesst"
+      }
+    },
+    {
+      "sentence": "treffen",
+      "answers": {
+        "ich": "treffe",
+        "du": "triffst",
+        "er/sie/es": "trifft",
+        "wir/Sie/sie": "treffen",
+        "ihr": "trefft"
+      }
+    },
+    {
+      "sentence": "schreiben",
+      "answers": {
+        "ich": "schreibe",
+        "du": "schreibst",
+        "er/sie/es": "schreibt",
+        "wir/Sie/sie": "schreiben",
+        "ihr": "schreibt"
+      }
+    },
+    {
+      "sentence": "werden",
+      "answers": {
+        "ich": "werde",
+        "du": "wirst",
+        "er/sie/es": "wird",
+        "wir/Sie/sie": "werden",
+        "ihr": "werdet"
+      }
+    },
+    {
+      "sentence": "singen",
+      "answers": {
+        "ich": "singe",
+        "du": "singst",
+        "er/sie/es": "singt",
+        "wir/Sie/sie": "singen",
+        "ihr": "singt"
+      }
+    },
+    {
+      "sentence": "schieben",
+      "answers": {
+        "ich": "schiebe",
+        "du": "schiebst",
+        "er/sie/es": "schiebt",
+        "wir/Sie/sie": "schieben",
+        "ihr": "schiebt"
+      }
+    },
+    {
+      "sentence": "schießen",
+      "answers": {
+        "ich": "schieße",
+        "du": "schießt",
+        "er/sie/es": "schießt",
+        "wir/Sie/sie": "schießen",
+        "ihr": "schießt"
+      }
+    },
+    {
+      "sentence": "tragen",
+      "answers": {
+        "ich": "trage",
+        "du": "trägst",
+        "er/sie/es": "trägt",
+        "wir/Sie/sie": "tragen",
+        "ihr": "tragt"
+      }
+    },
+    {
+      "sentence": "streiten",
+      "answers": {
+        "ich": "streite",
+        "du": "streitest",
+        "er/sie/es": "streitet",
+        "wir/Sie/sie": "streiten",
+        "ihr": "streitet"
+      }
+    },
+    {
+      "sentence": "streichen",
+      "answers": {
+        "ich": "streiche",
+        "du": "streichst",
+        "er/sie/es": "streicht",
+        "wir/Sie/sie": "streichen",
+        "ihr": "streicht"
+      }
+    },
+    {
+      "sentence": "werfen",
+      "answers": {
+        "ich": "werfe",
+        "du": "wirfst",
+        "er/sie/es": "wirft",
+        "wir/Sie/sie": "werfen",
+        "ihr": "werft"
+      }
+    },
+    {
+      "sentence": "schlagen",
+      "answers": {
+        "ich": "schlage",
+        "du": "schlägst",
+        "er/sie/es": "schlägt",
+        "wir/Sie/sie": "schlagen",
+        "ihr": "schlagt"
+      }
+    },
+    {
+      "sentence": "waschen",
+      "answers": {
+        "ich": "wasche",
+        "du": "wäschst",
+        "er/sie/es": "wäscht",
+        "wir/Sie/sie": "waschen",
+        "ihr": "wascht"
+      }
+    },
+    {
+      "sentence": "schneiden",
+      "answers": {
+        "ich": "schneide",
+        "du": "schneidest",
+        "er/sie/es": "schneidet",
+        "wir/Sie/sie": "schneiden",
+        "ihr": "schneidet"
+      }
+    },
+    {
+      "sentence": "stoßen",
+      "answers": {
+        "ich": "stoße",
+        "du": "stößt",
+        "er/sie/es": "stößt",
+        "wir/Sie/sie": "stoßen",
+        "ihr": "stoßt"
+      }
+    },
+    {
+      "sentence": "sterben",
+      "answers": {
+        "ich": "sterbe",
+        "du": "stirbst",
+        "er/sie/es": "stirbt",
+        "wir/Sie/sie": "sterben",
+        "ihr": "sterbt"
+      }
+    },
+    {
+      "sentence": "steigen",
+      "answers": {
+        "ich": "steige",
+        "du": "steigst",
+        "er/sie/es": "steigt",
+        "wir/Sie/sie": "steigen",
+        "ihr": "steigt"
+      }
+    },
+    {
+      "sentence": "treten",
+      "answers": {
+        "ich": "trete",
+        "du": "trittst",
+        "er/sie/es": "tritt",
+        "wir/Sie/sie": "treten",
+        "ihr": "tretet"
+      }
+    },
+    {
+      "sentence": "stehlen",
+      "answers": {
+        "ich": "stehle",
+        "du": "stiehlst",
+        "er/sie/es": "stiehlt",
+        "wir/Sie/sie": "stehlen",
+        "ihr": "stehlt"
+      }
+    },
+    {
+      "sentence": "schreien",
+      "answers": {
+        "ich": "schreie",
+        "du": "schreist",
+        "er/sie/es": "schreit",
+        "wir/Sie/sie": "schreien",
+        "ihr": "schreit"
+      }
+    },
+    {
+      "sentence": "schweigen",
+      "answers": {
+        "ich": "schweige",
+        "du": "schweigst",
+        "er/sie/es": "schweigt",
+        "wir/Sie/sie": "schweigen",
+        "ihr": "schweigt"
+      }
+    },
+    {
+      "sentence": "wachsen",
+      "answers": {
+        "ich": "wachse",
+        "du": "wächst",
+        "er/sie/es": "wächst",
+        "wir/Sie/sie": "wachsen",
+        "ihr": "wachst"
+      }
+    },
+    {
+      "sentence": "springen",
+      "answers": {
+        "ich": "springe",
+        "du": "springst",
+        "er/sie/es": "springt",
+        "wir/Sie/sie": "springen",
+        "ihr": "springt"
+      }
+    },
+    {
+      "sentence": "sinken",
+      "answers": {
+        "ich": "sinke",
+        "du": "sinkst",
+        "er/sie/es": "sinkt",
+        "wir/Sie/sie": "sinken",
+        "ihr": "sinkt"
+      }
+    },
+    {
+      "sentence": "verzeihen",
+      "answers": {
+        "ich": "verzeihe",
+        "du": "verzeihst",
+        "er/sie/es": "verzeiht",
+        "wir/Sie/sie": "verzeihen",
+        "ihr": "verzeiht"
+      }
+    },
+    {
+      "sentence": "treiben",
+      "answers": {
+        "ich": "treibe",
+        "du": "treibst",
+        "er/sie/es": "treibt",
+        "wir/Sie/sie": "treiben",
+        "ihr": "treibt"
+      }
+    },
+    {
+      "sentence": "senden",
+      "answers": {
+        "ich": "sende",
+        "du": "sendest",
+        "er/sie/es": "sendet",
+        "wir/Sie/sie": "senden",
+        "ihr": "sendet"
+      }
+    },
+    {
+      "sentence": "backen",
+      "answers": {
+        "ich": "backe",
+        "du": "bäckst",
+        "er/sie/es": "bäckt",
+        "wir/Sie/sie": "backen",
+        "ihr": "backt"
+      }
+    },
+    {
+      "sentence": "leihen",
+      "answers": {
+        "ich": "leihe",
+        "du": "leihst",
+        "er/sie/es": "leiht",
+        "wir/Sie/sie": "leihen",
+        "ihr": "leiht"
+      }
+    },
+    {
+      "sentence": "rennen",
+      "answers": {
+        "ich": "renne",
+        "du": "rennst",
+        "er/sie/es": "rennt",
+        "wir/Sie/sie": "rennen",
+        "ihr": "rennt"
+      }
+    },
+    {
+      "sentence": "fressen",
+      "answers": {
+        "ich": "fresse",
+        "du": "frisst",
+        "er/sie/es": "frisst",
+        "wir/Sie/sie": "fressen",
+        "ihr": "fresst"
+      }
+    },
+    {
+      "sentence": "fließen",
+      "answers": {
+        "ich": "fließe",
+        "du": "fließt",
+        "er/sie/es": "fließt",
+        "wir/Sie/sie": "fließen",
+        "ihr": "fließt"
+      }
+    },
+    {
+      "sentence": "fliehen",
+      "answers": {
+        "ich": "fliehe",
+        "du": "fliehst",
+        "er/sie/es": "flieht",
+        "wir/Sie/sie": "fliehen",
+        "ihr": "flieht"
+      }
+    },
+    {
+      "sentence": "fliegen",
+      "answers": {
+        "ich": "fliege",
+        "du": "fliegst",
+        "er/sie/es": "fliegt",
+        "wir/Sie/sie": "fliegen",
+        "ihr": "fliegt"
+      }
+    },
+    {
+      "sentence": "fangen",
+      "answers": {
+        "ich": "fange",
+        "du": "fängst",
+        "er/sie/es": "fängt",
+        "wir/Sie/sie": "fangen",
+        "ihr": "fangt"
+      }
+    },
+    {
+      "sentence": "essen",
+      "answers": {
+        "ich": "esse",
+        "du": "isst",
+        "er/sie/es": "isst",
+        "wir/Sie/sie": "essen",
+        "ihr": "esst"
+      }
+    },
+    {
+      "sentence": "erschrecken",
+      "answers": {
+        "ich": "erschrecke",
+        "du": "erschrickst",
+        "er/sie/es": "erschrickt",
+        "wir/Sie/sie": "erschrecken",
+        "ihr": "erschreckt"
+      }
+    },
+    {
+      "sentence": "empfehlen",
+      "answers": {
+        "ich": "empfehle",
+        "du": "empfiehlst",
+        "er/sie/es": "empfiehlt",
+        "wir/Sie/sie": "empfehlen",
+        "ihr": "empfehlt"
+      }
+    },
+    {
+      "sentence": "brennen",
+      "answers": {
+        "ich": "brenne",
+        "du": "brennst",
+        "er/sie/es": "brennt",
+        "wir/Sie/sie": "brennen",
+        "ihr": "brennt"
+      }
+    },
+    {
+      "sentence": "brechen",
+      "answers": {
+        "ich": "breche",
+        "du": "brichst",
+        "er/sie/es": "bricht",
+        "wir/Sie/sie": "brechen",
+        "ihr": "brecht"
+      }
+    },
+    {
+      "sentence": "blasen",
+      "answers": {
+        "ich": "blase",
+        "du": "bläst",
+        "er/sie/es": "bläst",
+        "wir/Sie/sie": "blasen",
+        "ihr": "blast"
+      }
+    },
+    {
+      "sentence": "binden",
+      "answers": {
+        "ich": "binde",
+        "du": "bindest",
+        "er/sie/es": "bindet",
+        "wir/Sie/sie": "binden",
+        "ihr": "bindet"
+      }
+    },
+    {
+      "sentence": "bieten",
+      "answers": {
+        "ich": "biete",
+        "du": "bietest",
+        "er/sie/es": "bietet",
+        "wir/Sie/sie": "bieten",
+        "ihr": "bietet"
+      }
+    },
+    {
+      "sentence": "biegen",
+      "answers": {
+        "ich": "biege",
+        "du": "biegst",
+        "er/sie/es": "biegt",
+        "wir/Sie/sie": "biegen",
+        "ihr": "biegt"
+      }
+    },
+    {
+      "sentence": "bewerben",
+      "answers": {
+        "ich": "bewerbe",
+        "du": "bewirbst",
+        "er/sie/es": "bewirbt",
+        "wir/Sie/sie": "bewerben",
+        "ihr": "bewerbt"
+      }
+    },
+    {
+      "sentence": "beißen",
+      "answers": {
+        "ich": "beiße",
+        "du": "beißt",
+        "er/sie/es": "beißt",
+        "wir/Sie/sie": "beißen",
+        "ihr": "beißt"
+      }
+    },
+    {
+      "sentence": "befehlen",
+      "answers": {
+        "ich": "befehle",
+        "du": "befiehlst",
+        "er/sie/es": "befiehlt",
+        "wir/Sie/sie": "befehlen",
+        "ihr": "befehlt"
+      }
+    },
+    {
+      "sentence": "frieren",
+      "answers": {
+        "ich": "friere",
+        "du": "frierst",
+        "er/sie/es": "friert",
+        "wir/Sie/sie": "frieren",
+        "ihr": "friert"
+      }
+    },
+    {
+      "sentence": "gelingen",
+      "answers": {
+        "ich": "gelinge",
+        "du": "gelingst",
+        "er/sie/es": "gelingt",
+        "wir/Sie/sie": "gelingen",
+        "ihr": "gelingt"
+      }
+    },
+    {
+      "sentence": "genießen",
+      "answers": {
+        "ich": "genieße",
+        "du": "genießt",
+        "er/sie/es": "genießt",
+        "wir/Sie/sie": "genießen",
+        "ihr": "genießt"
+      }
+    },
+    {
+      "sentence": "geschehen",
+      "answers": {
+        "ich": "geschehe",
+        "du": "geschiehst",
+        "er/sie/es": "geschieht",
+        "wir/Sie/sie": "geschehen",
+        "ihr": "gescheht"
+      }
+    },
+    {
+      "sentence": "reiten",
+      "answers": {
+        "ich": "reite",
+        "du": "reitest",
+        "er/sie/es": "reitet",
+        "wir/Sie/sie": "reiten",
+        "ihr": "reitet"
+      }
+    },
+    {
+      "sentence": "reißen",
+      "answers": {
+        "ich": "reiße",
+        "du": "reißt",
+        "er/sie/es": "reißt",
+        "wir/Sie/sie": "reißen",
+        "ihr": "reißt"
+      }
+    },
+    {
+      "sentence": "raten",
+      "answers": {
+        "ich": "rate",
+        "du": "rätst",
+        "er/sie/es": "rät",
+        "wir/Sie/sie": "raten",
+        "ihr": "ratet"
+      }
+    },
+    {
+      "sentence": "pfeifen",
+      "answers": {
+        "ich": "pfeife",
+        "du": "pfeifst",
+        "er/sie/es": "pfeift",
+        "wir/Sie/sie": "pfeifen",
+        "ihr": "pfeift"
+      }
+    },
+    {
+      "sentence": "messen",
+      "answers": {
+        "ich": "messe",
+        "du": "misst",
+        "er/sie/es": "misst",
+        "wir/Sie/sie": "messen",
+        "ihr": "messt"
+      }
+    },
+    {
+      "sentence": "meiden",
+      "answers": {
+        "ich": "meide",
+        "du": "meidest",
+        "er/sie/es": "meidet",
+        "wir/Sie/sie": "meiden",
+        "ihr": "meidet"
+      }
+    },
+    {
+      "sentence": "lügen",
+      "answers": {
+        "ich": "lüge",
+        "du": "lügst",
+        "er/sie/es": "lügt",
+        "wir/Sie/sie": "lügen",
+        "ihr": "lügt"
+      }
+    },
+    {
+      "sentence": "leiden",
+      "answers": {
+        "ich": "leide",
+        "du": "leidest",
+        "er/sie/es": "leidet",
+        "wir/Sie/sie": "leiden",
+        "ihr": "leidet"
+      }
+    },
+    {
+      "sentence": "riechen",
+      "answers": {
+        "ich": "rieche",
+        "du": "riechst",
+        "er/sie/es": "riecht",
+        "wir/Sie/sie": "riechen",
+        "ihr": "riecht"
+      }
+    },
+    {
+      "sentence": "laden",
+      "answers": {
+        "ich": "lade",
+        "du": "lädst",
+        "er/sie/es": "lädt",
+        "wir/Sie/sie": "laden",
+        "ihr": "ladet"
+      }
+    },
+    {
+      "sentence": "klingen",
+      "answers": {
+        "ich": "klinge",
+        "du": "klingst",
+        "er/sie/es": "klingt",
+        "wir/Sie/sie": "klingen",
+        "ihr": "klingt"
+      }
+    },
+    {
+      "sentence": "heben",
+      "answers": {
+        "ich": "hebe",
+        "du": "hebst",
+        "er/sie/es": "hebt",
+        "wir/Sie/sie": "heben",
+        "ihr": "hebt"
+      }
+    },
+    {
+      "sentence": "hängen",
+      "answers": {
+        "ich": "hänge",
+        "du": "hängst",
+        "er/sie/es": "hängt",
+        "wir/Sie/sie": "hängen",
+        "ihr": "hängt"
+      }
+    },
+    {
+      "sentence": "greifen",
+      "answers": {
+        "ich": "greife",
+        "du": "greifst",
+        "er/sie/es": "greift",
+        "wir/Sie/sie": "greifen",
+        "ihr": "greift"
+      }
+    },
+    {
+      "sentence": "graben",
+      "answers": {
+        "ich": "grabe",
+        "du": "gräbst",
+        "er/sie/es": "gräbt",
+        "wir/Sie/sie": "graben",
+        "ihr": "grabt"
+      }
+    },
+    {
+      "sentence": "gleiten",
+      "answers": {
+        "ich": "gleite",
+        "du": "gleitest",
+        "er/sie/es": "gleitet",
+        "wir/Sie/sie": "gleiten",
+        "ihr": "gleitet"
+      }
+    },
+    {
+      "sentence": "gleichen",
+      "answers": {
+        "ich": "gleiche",
+        "du": "gleichst",
+        "er/sie/es": "gleicht",
+        "wir/Sie/sie": "gleichen",
+        "ihr": "gleicht"
+      }
+    },
+    {
+      "sentence": "gießen",
+      "answers": {
+        "ich": "gieße",
+        "du": "gießt",
+        "er/sie/es": "gießt",
+        "wir/Sie/sie": "gießen",
+        "ihr": "gießt"
+      }
+    },
+    {
+      "sentence": "kriechen",
+      "answers": {
+        "ich": "krieche",
+        "du": "kriechst",
+        "er/sie/es": "kriecht",
+        "wir/Sie/sie": "kriechen",
+        "ihr": "kriecht"
+      }
+    },
+    {
+      "sentence": "zwingen",
+      "answers": {
+        "ich": "zwinge",
+        "du": "zwingst",
+        "er/sie/es": "zwingt",
+        "wir/Sie/sie": "zwingen",
+        "ihr": "zwingt"
+      }
+    }
+  ]
+}

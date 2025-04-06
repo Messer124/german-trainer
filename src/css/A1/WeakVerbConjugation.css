@@ -1,0 +1,80 @@
+
+.weak-verb-wrapper {
+  margin-bottom: 4px;
+  padding-bottom: 0;
+  border-bottom: 2px solid #4ea1f3;
+}
+
+.weak-verb-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+}
+
+.weak-verb-subtitle {
+  font-size: 16px;
+  color: #444;
+  margin: 0 0 10px;
+}
+
+.weak-verb-table-wrapper {
+  overflow-x: auto;
+  max-height: 88vh;
+}
+
+.weak-verb-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.weak-verb-table th,
+.weak-verb-table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+  width: 140px;
+}
+
+.weak-verb-table td.infinitive {
+  width: 120px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.weak-table-wrapper {
+  overflow-x: auto;
+  max-height: 88vh;
+}
+
+.weak-verb-table input {
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  width: 80%;
+  padding: 4px 6px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: #222;
+}
+
+.weak-verb-table input.correct {
+  border-color: #6eea8d;
+  background-color: #e6fff1;
+}
+
+.weak-verb-table input.incorrect {
+  border-color: red;
+  background-color: #ffecec;
+}
+
+.weak-verb-table thead th {
+  position: sticky;
+  top: 0;
+  background: #f4f4f4;
+  z-index: 2;
+}

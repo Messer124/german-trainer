@@ -1,0 +1,160 @@
+{
+  "title": {
+    "ru": "Haben или Sein",
+    "en": "Haben or Sein"
+  },
+  "instructions": {
+    "ru": "Вставьте глагол haben или sein в правильной форме, ориентируясь на смысл.",
+    "en": "Insert the verb 'haben' or 'sein' in the correct form based on the meaning."
+  },
+  "items": [
+    {
+      "sentence": "er ___ einen Bus.",
+      "answer": "hat"
+    },
+    {
+      "sentence": "ich ___ auf der Treppe.",
+      "answer": "bin"
+    },
+    {
+      "sentence": "ich ___ ein Kind.",
+      "answer": "habe"
+    },
+    {
+      "sentence": "Sie ___ ein Theater.",
+      "answer": "haben"
+    },
+    {
+      "sentence": "du ___ bei der Frage.",
+      "answer": "bist"
+    },
+    {
+      "sentence": "Sie ___ eine Familie.",
+      "answer": "haben"
+    },
+    {
+      "sentence": "ich ___ einen Fernseher.",
+      "answer": "habe"
+    },
+    {
+      "sentence": "wir ___ einen Hund.",
+      "answer": "haben"
+    },
+    {
+      "sentence": "du ___ einen Garten.",
+      "answer": "hast"
+    },
+    {
+      "sentence": "ihr ___ im Kino.",
+      "answer": "seid"
+    },
+    {
+      "sentence": "ich ___ eine Zeitung.",
+      "answer": "habe"
+    },
+    {
+      "sentence": "er ___ an der Kasse.",
+      "answer": "ist"
+    },
+    {
+      "sentence": "du ___ eine Adresse.",
+      "answer": "hast"
+    },
+    {
+      "sentence": "wir ___ im Haus.",
+      "answer": "sind"
+    },
+    {
+      "sentence": "er ___ einen Tisch.",
+      "answer": "hat"
+    },
+    {
+      "sentence": "ich ___ im Supermarkt.",
+      "answer": "bin"
+    },
+    {
+      "sentence": "Sie ___ ein Fenster.",
+      "answer": "haben"
+    },
+    {
+      "sentence": "sie ___ auf dem Computer.",
+      "answer": "ist"
+    },
+    {
+      "sentence": "ich ___ ein Handy.",
+      "answer": "habe"
+    },
+    {
+      "sentence": "du ___ in der Stadt.",
+      "answer": "bist"
+    },
+    {
+      "sentence": "wir ___ einen Fernseher.",
+      "answer": "haben"
+    },
+    {
+      "sentence": "du ___ eine Tasche.",
+      "answer": "hast"
+    },
+    {
+      "sentence": "er ___ in der Straße.",
+      "answer": "ist"
+    },
+    {
+      "sentence": "ich ___ eine Tasse.",
+      "answer": "habe"
+    },
+    {
+      "sentence": "wir ___ einen Stuhl.",
+      "answer": "haben"
+    },
+    {
+      "sentence": "ihr ___ auf dem Tisch.",
+      "answer": "seid"
+    },
+    {
+      "sentence": "er ___ eine Karte.",
+      "answer": "hat"
+    },
+    {
+      "sentence": "ich ___ in der Post.",
+      "answer": "bin"
+    },
+    {
+      "sentence": "Sie ___ ein Zimmer.",
+      "answer": "haben"
+    },
+    {
+      "sentence": "du ___ in der Küche.",
+      "answer": "bist"
+    },
+    {
+      "sentence": "wir ___ im Laden.",
+      "answer": "sind"
+    },
+    {
+      "sentence": "ich ___ ein Buch.",
+      "answer": "habe"
+    },
+    {
+      "sentence": "er ___ im Flughafen.",
+      "answer": "ist"
+    },
+    {
+      "sentence": "du ___ eine Lampe.",
+      "answer": "hast"
+    },
+    {
+      "sentence": "ich ___ auf der Straße.",
+      "answer": "bin"
+    },
+    {
+      "sentence": "du ___ einen Computer.",
+      "answer": "hast"
+    },
+    {
+      "sentence": "wir ___ in der Arbeit.",
+      "answer": "sind"
+    }
+  ]
+}

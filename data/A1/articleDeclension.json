@@ -1,0 +1,147 @@
+{
+  "title": {
+    "ru": "Выберите правильный артикль",
+    "en": "Choose the correct article"
+  },
+  "instructions": {
+    "ru": "Вставьте правильный артикль в пропуск.",
+    "en": "Insert the correct article into the blank."
+  },
+  "items": [
+    { "sentence": "___ Mann schreibt ___ Frau ___ E-Mail.", "answer": ["Der","der","die"] },
+    { "sentence": "___ Mutter gibt ___ Kind ___ Tabletten.", "answer": ["Die","dem","die"] },
+    { "sentence": "___ Mutter kocht ___ Kindern ___ Frühstück.", "answer": ["Die","den","das"] },
+    { "sentence": "___ Frau gibt ___ Mann ___ Tasse Kaffee.", "answer": ["Die","dem","die"] },
+    { "sentence": "___ Mutter schenkt ___ Kind ___ Tasse.", "answer": ["Die","dem","die"] },
+    { "sentence": "Ich zeige ___ Eltern ___ Auto.", "answer": ["den","das"] },
+    { "sentence": "Peter gibt ___ Mutter ___ Teller.", "answer": ["der","den"] },
+    { "sentence": "___ Mutter fährt mit ___ Taxi zu ___ Kollegin.", "answer": ["Die","dem","der"] },
+    { "sentence": "___ Familie möchte mit ___ Auto nach Deutschland fahren.", "answer": ["Die","dem"] },
+    { "sentence": "Ich möchte in ___ Cafe gehen.", "answer": ["das"] },
+    { "sentence": "Wir wollen ___ Fleisch in ___ Restaurant essen.", "answer": ["das","dem"] },
+    { "sentence": "Ich gebe ___ Mutter ___ Teller.", "answer": ["der","den"] },
+    { "sentence": "Herr Krause will mit ___ Auto in ___ Supermarkt fahren.", "answer": ["dem","den"] },
+    { "sentence": "Ich laufe mit ___ Kollegin.", "answer": ["der"] },
+    { "sentence": "Wir gehen aus ___ Cafe.", "answer": ["dem"] },
+    { "sentence": "Anna fährt in ___ Park.", "answer": ["den"] },
+    { "sentence": "Max ist bei ___ Eltern.", "answer": ["den"] },
+    { "sentence": "Ich sehe ___ Lampe.", "answer": ["die"] },
+    { "sentence": "Ich helfe ___ Frau.", "answer": ["der"] },
+    { "sentence": "Er besucht ___ Lehrer.", "answer": ["den"] },
+    { "sentence": "Sie gibt ___ Kind ein Buch.", "answer": ["dem"] },
+    { "sentence": "Wir lieben ___ Film.", "answer": ["den"] },
+    { "sentence": "___ Auto ist schnell.", "answer": ["Das"] },
+    { "sentence": "Sie fragt ___ Mann.", "answer": ["den"] },
+    { "sentence": "___ Tisch steht am Fenster.", "answer": ["Der"] },
+    { "sentence": "Wir hören ___ Musik.", "answer": ["die"] },
+    { "sentence": "Ich besuche ___ Stadt.", "answer": ["die"] },
+    { "sentence": "Sie schreibt ___ Brief.", "answer": ["den"] },
+    { "sentence": "Er zeigt ___ Weg.", "answer": ["den"] },
+    { "sentence": "Wir wohnen in ___ Wohnung.", "answer": ["der"] },
+    { "sentence": "Sie fährt mit ___ Bus.", "answer": ["dem"] },
+    { "sentence": "Ich rufe ___ Arzt.", "answer": ["den"] },
+    { "sentence": "Ich höre ___ Radio.", "answer": ["das"] },
+    { "sentence": "Er nimmt ___ Tasche.", "answer": ["die"] },
+    { "sentence": "Sie spricht mit ___ Lehrer.", "answer": ["dem"] },
+    { "sentence": "Wo ist ___ Schlüssel?", "answer": ["der"] },
+    { "sentence": "Ich öffne ___ Fenster.", "answer": ["das"] },
+    { "sentence": "Wir gehen durch ___ Park.", "answer": ["den"] },
+    { "sentence": "Sie steht neben ___ Auto.", "answer": ["dem"] },
+    { "sentence": "Er gibt ___ Frau die Blumen.", "answer": ["der"] },
+    { "sentence": "___ Junge lacht laut.", "answer": ["Der"] },
+    { "sentence": "___ Mädchen liest ein Buch.", "answer": ["Das"] },
+    { "sentence": "Ich sehe ___ Zug.", "answer": ["den"] },
+    { "sentence": "Wir danken ___ Kellner.", "answer": ["dem"] },
+    { "sentence": "Sie besucht ___ Freundin.", "answer": ["die"] },
+    { "sentence": "Er fragt ___ Polizist nach dem Weg.", "answer": ["den"] },
+    { "sentence": "Ich sitze auf ___ Stuhl.", "answer": ["dem"] },
+    { "sentence": "Sie arbeitet in ___ Schule.", "answer": ["der"] },
+    { "sentence": "Er liest ___ Zeitung.", "answer": ["die"] },
+    { "sentence": "Ich spiele mit ___ Ball.", "answer": ["dem"] },
+    { "sentence": "Wir gehen in ___ Kino.", "answer": ["das"] },
+    { "sentence": "Er steht vor ___ Tür.", "answer": ["der"] },
+    { "sentence": "Ich suche ___ Buch.", "answer": ["das"] },
+    { "sentence": "Sie wohnt in ___ Stadt.", "answer": ["der"] },
+    { "sentence": "Ich spreche mit ___ Chef.", "answer": ["dem"] },
+    {
+      "sentence": "Pass auf, sonst läufst du gegen ___ Schild.",
+      "answer": ["das"]
+    },
+    {
+      "sentence": "Komm, wir gehen durch ___ Park.",
+      "answer": ["den"]
+    },
+    {
+      "sentence": "Ich komme gerade von ___ Arzt.",
+      "answer": ["dem"]
+    },
+    {
+      "sentence": "Ich gehe jetzt zu ___ Nachbarin.",
+      "answer": ["der"]
+    },
+    {
+      "sentence": "Wir gehen um ___ See spazieren.",
+      "answer": ["den"]
+    },
+    {
+      "sentence": "Die Krawatte ist für ___ Vater.",
+      "answer": ["den"]
+    },
+    {
+      "sentence": "Fahren Sie mit ___ Auto zu ___ Arbeit?",
+      "answer": ["dem", "der"]
+    },
+    {
+      "sentence": "Wir sind gerade bei ___ Freunden.",
+      "answer": ["den"]
+    },
+    {
+      "sentence": "Sie gehen selten ohne ___ Kinder aus.",
+      "answer": ["die"]
+    },
+    {
+      "sentence": "Nach ___ Schule ist er immer müde.",
+      "answer": ["der"]
+    },
+    {
+      "sentence": "Wir kaufen ein Geschenk für ___ Schwester.",
+      "answer": ["die"]
+    },
+    {
+      "sentence": "Die Katze springt durch ___ Fenster.",
+      "answer": ["das"]
+    },
+    {
+      "sentence": "Marie geht aus ___ Haus.",
+      "answer": ["dem"]
+    },
+    {
+      "sentence": "Die Kinder laufen um ___ Tisch.",
+      "answer": ["den"]
+    },
+    {
+      "sentence": "Sie arbeiten seit ___ Jahr 2000.",
+      "answer": ["dem"]
+    },
+    {
+      "sentence": "Meine Damen und Herren, links ist ___ Turm. Das ist ___ Fernsehturm.",
+      "answer": ["ein", "der"]
+    },
+    {
+      "sentence": "Da ist ___ Stadion, das ist ___ Olympiastadion.",
+      "answer": ["ein", "das"]
+    },
+    {
+      "sentence": "Sie sehen geradeaus ___ Kirche, das ist ___ Frauenkirche.",
+      "answer": ["eine", "die"]
+    },
+    {
+      "sentence": "Hier links ist ___ großer Platz, das ist ___ Marienplatz.",
+      "answer": ["ein", "der"]
+    },
+    {
+      "sentence": "Am Marienplatz steht ___ Haus mit einem Turm, das ist ___ Rathaus.",
+      "answer": ["ein", "das"]
+    }
+  ]
+}
