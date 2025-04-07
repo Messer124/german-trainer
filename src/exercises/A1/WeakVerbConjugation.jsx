@@ -8,7 +8,7 @@ export default function WeakVerbConjugation() {
     const { locale } = useLocale();
 
     const [answers, setAnswers] = useState(() => {
-        const saved = sessionStorage.getItem(STORAGE_KEY);
+        const saved = localStorage.getItem(STORAGE_KEY);
         try {
             return saved ? JSON.parse(saved) : {};
         } catch {
@@ -17,7 +17,7 @@ export default function WeakVerbConjugation() {
     });
 
     useEffect(() => {
-        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
     }, [answers]);
 
     useEffect(() => {

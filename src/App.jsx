@@ -36,7 +36,7 @@ const STORAGE_KEYS = {
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState(() => {
-    const savedTab = sessionStorage.getItem("last-tab");
+    const savedTab = localStorage.getItem("last-tab");
     return savedTab && TABS[savedTab] ? savedTab : "noun-articles";
   });
 
@@ -45,7 +45,7 @@ export default function App() {
   const contentRef = useRef(null);
 
   useEffect(() => {
-    sessionStorage.setItem("last-tab", currentTab);
+    localStorage.setItem("last-tab", currentTab);
 
     const node = contentRef.current;
     if (!node) return;
@@ -60,7 +60,7 @@ export default function App() {
   const handleClearAnswers = () => {
     const key = STORAGE_KEYS[currentTab];
     if (key) {
-      sessionStorage.removeItem(key);
+      localStorage.removeItem(key);
       window.dispatchEvent(new CustomEvent(`clear-${key}`));
     }
   };
@@ -88,7 +88,7 @@ export default function App() {
         </div>
 
         <div ref={contentRef} className="content fade-in">
-          <Component key={currentTab} />
+          <Component key={currentTab}/>
         </div>
       </div>
   );

@@ -7,12 +7,12 @@ export default function StrongVerbsConjugation() {
   const { locale } = useLocale();
 
   const [answers, setAnswers] = useState(() => {
-    const saved = sessionStorage.getItem("irregular-answers");
+    const saved = localStorage.getItem("irregular-answers");
     return saved ? JSON.parse(saved) : {};
   });
 
   useEffect(() => {
-    sessionStorage.setItem("irregular-answers", JSON.stringify(answers));
+    localStorage.setItem("irregular-answers", JSON.stringify(answers));
   }, [answers]);
 
   useEffect(() => {

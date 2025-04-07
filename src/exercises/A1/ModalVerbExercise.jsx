@@ -30,7 +30,7 @@ export default function ModalVerbExercise() {
     const { locale } = useLocale();
 
     const [answers, setAnswers] = useState(() => {
-        let saved = sessionStorage.getItem("modal-answers");
+        let saved = localStorage.getItem("modal-answers");
         try {
             saved = JSON.parse(saved);
         } catch (e) {
@@ -40,7 +40,7 @@ export default function ModalVerbExercise() {
     });
 
     useEffect(() => {
-        sessionStorage.setItem("modal-answers", JSON.stringify(answers));
+        localStorage.setItem("modal-answers", JSON.stringify(answers));
     }, [answers]);
 
     useEffect(() => {

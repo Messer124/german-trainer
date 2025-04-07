@@ -12,7 +12,7 @@ export default function ArticleDeclension() {
 
     const [answers, setAnswers] = useState(() => {
         try {
-            const saved = sessionStorage.getItem(STORAGE_KEY);
+            const saved = localStorage.getItem(STORAGE_KEY);
             return saved ? JSON.parse(saved) : {};
         } catch {
             return {};
@@ -22,7 +22,7 @@ export default function ArticleDeclension() {
     const [showImage, setShowImage] = useState(false);
 
     useEffect(() => {
-        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
     }, [answers]);
 
     useEffect(() => {

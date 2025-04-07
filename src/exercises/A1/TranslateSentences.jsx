@@ -9,7 +9,7 @@ export default function TranslateSentences() {
     const { locale } = useLocale();
 
     const [answers, setAnswers] = useState(() => {
-        const saved = sessionStorage.getItem(STORAGE_KEY);
+        const saved = localStorage.getItem(STORAGE_KEY);
         try {
             return saved ? JSON.parse(saved) : {};
         } catch {
@@ -18,13 +18,13 @@ export default function TranslateSentences() {
     });
 
     useEffect(() => {
-        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
     }, [answers]);
 
     useEffect(() => {
         const handleClear = () => {
             setAnswers({});
-            sessionStorage.removeItem(STORAGE_KEY);
+            localStorage.removeItem(STORAGE_KEY);
         };
         window.addEventListener("clear-translate-sentences", handleClear);
         return () => window.removeEventListener("clear-translate-sentences", handleClear);
