@@ -4,12 +4,13 @@ const translations = {
     tabs: {
       "noun-articles": "Артикли существительных",
       "haben-sein": "Haben или Sein",
-      "translate-sentences": "Перевод предложений",
       "verb-conjugation": "Слабые глаголы",
+      "irregular-verbs": "Сильные глаголы",
+      "modal-verbs": "Модальные глаголы",
       "past-tense": "Прошедшее время",
       "articles": "Склонение артиклей",
-      "modal-verbs": "Модальные глаголы",
-      "irregular-verbs": "Сильные глаголы"
+      "possessive-pronouns": "Притяжательные местоимения",
+      "translate-sentences": "Перевод предложений"
     },
     labels: {
       level: "Уровень",
@@ -21,12 +22,13 @@ const translations = {
     tabs: {
       "noun-articles": "Articles of nouns",
       "haben-sein": "Haben or Sein",
-      "translate-sentences": "Translate sentences",
       "verb-conjugation": "Weak verbs",
+      "irregular-verbs": "Strong verbs",
+      "modal-verbs": "Modal verbs",
       "past-tense": "Past tense",
       "articles": "Article declension",
-      "modal-verbs": "Modal verbs",
-      "irregular-verbs": "Strong verbs"
+      "possessive-pronouns": "Possessive pronouns",
+      "translate-sentences": "Translate sentences"
     },
     labels: {
       level: "Level",

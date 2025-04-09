@@ -1,0 +1,252 @@
+{
+  "title": {
+    "ru": "Притяжательные местоимения",
+    "en": "Possessive pronouns"
+  },
+  "instructions": {
+    "ru": "Вставьте правильную форму притяжательного местоимения в пропуск.",
+    "en": "Insert the correct form of the possessive pronoun into the gap."
+  },
+  "items": [
+    {
+      "sentence": "(ich) ___ Freunde sind langweilig.",
+      "answer": [
+        "Meine"
+      ]
+    },
+    {
+      "sentence": "(du) ___ Kleidung ist zu kurz.",
+      "answer": [
+        "Deine"
+      ]
+    },
+    {
+      "sentence": "(Sie) ___ Kuchen ist kalt.",
+      "answer": [
+        "Ihr"
+      ]
+    },
+    {
+      "sentence": "(ihr) ___ Zeitungen sind neu.",
+      "answer": [
+        "Eure"
+      ]
+    },
+    {
+      "sentence": "(er) ___ Schwester ist 34 Jahre alt.",
+      "answer": [
+        "Seine"
+      ]
+    },
+    {
+      "sentence": "(wir) ___ Lehrerin hat heute Geburtstag.",
+      "answer": [
+        "Unsere"
+      ]
+    },
+    {
+      "sentence": "(wir) ___ Enkel geht im Herbst in die erste Klasse.",
+      "answer": [
+        "Unser"
+      ]
+    },
+    {
+      "sentence": "(ich) ___ Eltern erlauben das nie.",
+      "answer": [
+        "Meine"
+      ]
+    },
+    {
+      "sentence": "(du) ___ Wecker klingelt um 6 Uhr.",
+      "answer": [
+        "Dein"
+      ]
+    },
+    {
+      "sentence": "(er) ___ Kinder sind schon erwachsen.",
+      "answer": [
+        "Seine"
+      ]
+    },
+    {
+      "sentence": "(ich) ___ Freund schwimmt gern im Sommer.",
+      "answer": [
+        "Mein"
+      ]
+    },
+    {
+      "sentence": "(du) ___ Vater hat Geburtstag im Frühling.",
+      "answer": [
+        "Dein"
+      ]
+    },
+    {
+      "sentence": "Thomas und Susi, wo ist ___ Vater? ___ Vater ist in der Bank. Und wo ist ___ Mutter? ___ Mutter ist bei der Arbeit.",
+      "answer": [
+        "euer",
+        "Unser",
+        "eure",
+        "Unsere"
+      ]
+    },
+    {
+      "sentence": "An ___ Geburtstag fahre ich immer nach Hamburg zu ___ Familie. ___ Bruder Heinrich wohnt mit ___ Frau Doris.",
+      "answer": [
+        "meinem",
+        "meiner",
+        "Mein",
+        "seiner"
+      ]
+    },
+    {
+      "sentence": "Hier stehen Ella und Mark und ___ zwei Töchter.",
+      "answer": [
+        "ihre"
+      ]
+    },
+    {
+      "sentence": "Guten Tag, Herr Schmidt, kommt ___ Frau heute auch?",
+      "answer": [
+        "Ihre"
+      ]
+    },
+    {
+      "sentence": "Hier bin ich und das ist ___ Kind.",
+      "answer": [
+        "mein"
+      ]
+    },
+    {
+      "sentence": "Das bist du und das ist ___ Vater.",
+      "answer": [
+        "dein"
+      ]
+    },
+    {
+      "sentence": "Hier ist Judy und ___ Tochter.",
+      "answer": [
+        "ihre"
+      ]
+    },
+    {
+      "sentence": "Das sind wir und ___ Kinder.",
+      "answer": [
+        "unsere"
+      ]
+    },
+    {
+      "sentence": "Und das seid ___ und eure Eltern.",
+      "answer": [
+        "ihr"
+      ]
+    },
+    {
+      "sentence": "Was sagst du ___ Chef?",
+      "answer": [
+        "deinem"
+      ]
+    },
+    {
+      "sentence": "Ich habe viel Glück in ___ Leben gehabt.",
+      "answer": [
+        "meinem"
+      ]
+    },
+    {
+      "sentence": "Wir kaufen ein Fahrrad für ___ Sohn.",
+      "answer": [
+        "unseren"
+      ]
+    },
+    {
+      "sentence": "Warum verkauft sie ___ Wohnung?",
+      "answer": [
+        "ihre"
+      ]
+    },
+    {
+      "sentence": "Darf ich ___ Freund einladen?",
+      "answer": [
+        "meinen"
+      ]
+    },
+    {
+      "sentence": "Kinder, ___ müsst eurem Vater zuhören!",
+      "answer": [
+        "ihr"
+      ]
+    },
+    {
+      "sentence": "Ich bin mit ___ Leben zufrieden.",
+      "answer": [
+        "meinem"
+      ]
+    },
+    {
+      "sentence": "Sie kann stundenlang am Telefon mit ___ Freundinnen sprechen.",
+      "answer": [
+        "ihren"
+      ]
+    },
+    {
+      "sentence": "Er regt sich über ___ Enkelin auf.",
+      "answer": [
+        "seine"
+      ]
+    },
+    {
+      "sentence": "Ist es ___ Auto? — Nein, das ist das Auto ___ Kollegen.",
+      "answer": [
+        "sein",
+        "seines"
+      ]
+    },
+    {
+      "sentence": "Hans, Anna! Wann kommt ___ Neffe nach Wien?",
+      "answer": [
+        "euer"
+      ]
+    },
+    {
+      "sentence": "Sie hat ein gutes Verhältnis zu ___ Schwiegermutter.",
+      "answer": [
+        "ihrer"
+      ]
+    },
+    {
+      "sentence": "Ich habe ___ Freundin gerade eine SMS geschrieben. Hast du ___  heute auch schon eine SMS geschrieben?",
+      "answer": [
+        "meiner",
+        "deiner"
+      ]
+    },
+    {
+      "sentence": "Die kleine Lisa hat ___ Lieblingsspielzeug in den Kindergarten mitgenommen. Der kleine Otto hat ___ zu Hause vergessen.",
+      "answer": [
+        "ihr",
+        "seins"
+      ]
+    },
+    {
+      "sentence": "___ Lehrer ist viel besser als ___ .",
+      "answer": [
+        "Mein",
+        "eurer"
+      ]
+    },
+    {
+      "sentence": "Sie fittern gerade ___ Hund. ___ haben wir vorhin schon Fressen gegeben.",
+      "answer": [
+        "ihren",
+        "Unserem"
+      ]
+    },
+    {
+      "sentence": "Entlang ___ Hauses wachsen Sonnenblumen. Was wachst um ___ Haus herum?",
+      "answer": [
+        "seines",
+        "euer"
+      ]
+    }
+  ]
+}

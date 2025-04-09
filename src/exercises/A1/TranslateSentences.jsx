@@ -73,7 +73,7 @@ export default function TranslateSentences() {
                                 }}
                             />
                             <span className="tooltip-container">
-                <span role="img" className="eye-icon">👁️</span>
+                <span role="img" className="eye-icon">👁️‍🗨️️</span>
                 <span className="tooltip">{item.answer}</span>
               </span>
                         </li>

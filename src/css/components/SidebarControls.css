@@ -1,0 +1,30 @@
+.sidebar-controls {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-controls label {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.sidebar-controls .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-controls select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 14px;
+}

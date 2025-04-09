@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import data from "../../../data/A1/noun-articles.json";
+import data from "../../../data/A1/noun_articles_with_gender_mismatch.json";
 import { useLocale } from "../../contexts/LocaleContext";
 import PageHeader from "../../components/PageHeader";
 

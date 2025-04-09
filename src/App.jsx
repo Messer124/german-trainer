@@ -8,6 +8,7 @@ import WeakVerbConjugation from "./exercises/A1/WeakVerbConjugation";
 import PastTense from "./exercises/A1/PastTense";
 import ArticleDeclension from "./exercises/A1/ArticleDeclension";
 import NounArticles from "./exercises/A1/NounArticles";
+import PossessivePronouns from "./exercises/A1/PossessivePronouns";
 import SidebarControls from "./components/SidebarControls";
 import translations from "./locales/locales";
 import "./css/App.css";
@@ -15,12 +16,13 @@ import "./css/App.css";
 const TABS = {
   "noun-articles": { component: NounArticles },
   "haben-sein": { component: HabenOderSein },
-  "translate-sentences": { component: TranslateSentences },
+  // "past-tense": { component: PastTense },
   "verb-conjugation": { component: WeakVerbConjugation },
-  "past-tense": { component: PastTense },
-  "articles": { component: ArticleDeclension },
+  "irregular-verbs": { component: StrongVerbsConjugation },
   "modal-verbs": { component: ModalVerbExercise },
-  "irregular-verbs": { component: StrongVerbsConjugation }
+  "articles": { component: ArticleDeclension },
+  "possessive-pronouns": { component: PossessivePronouns },
+  "translate-sentences": { component: TranslateSentences }
 };
 
 const STORAGE_KEYS = {
@@ -28,9 +30,10 @@ const STORAGE_KEYS = {
   "haben-sein": "haben-sein-answers",
   "translate-sentences": "translate-sentences",
   "verb-conjugation": "verb-conjugation",
-  "past-tense": "past-tense",
+  //"past-tense": "past-tense",
   "articles": "articles",
   "modal-verbs": "modal-answers",
+  "possessive-pronouns": "possessive-pronouns-answers",
   "irregular-verbs": "irregular-answers"
 };
 

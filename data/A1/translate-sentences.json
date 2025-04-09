@@ -10,13 +10,6 @@
   "items": [
     {
       "sentence": {
-        "ru": "Я читаю газету",
-        "en": "I read the newspaper"
-      },
-      "answer": "Ich lese die Zeitung"
-    },
-    {
-      "sentence": {
         "ru": "Она работает в аптеке",
         "en": "She works at the pharmacy"
       },
@@ -192,171 +185,234 @@
     },
     {
       "sentence": {
-        "ru": "Она покупает фрукты",
-        "en": "She is buying fruit"
+        "ru": "Это моя газета.",
+        "en": "This is my newspaper."
       },
-      "answer": "Sie kauft Obst"
+      "answer": "Das ist meine Zeitung."
     },
     {
       "sentence": {
-        "ru": "Ты носишь очки",
-        "en": "You wear glasses"
+        "ru": "Её мама покупает дом.",
+        "en": "Her mother is buying a house."
       },
-      "answer": "Du trägst eine Brille"
+      "answer": "Ihre Mutter kauft ein Haus."
     },
     {
       "sentence": {
-        "ru": "Мы ищем ресторан",
-        "en": "We are looking for a restaurant"
+        "ru": "Твой подарок прекрасен.",
+        "en": "Your present is wonderful."
       },
-      "answer": "Wir suchen ein Restaurant"
+      "answer": "Dein Geschenk ist wunderbar."
     },
     {
       "sentence": {
-        "ru": "Он работает инженером",
-        "en": "He works as an engineer"
+        "ru": "Его сестра усталая.",
+        "en": "His sister is tired."
       },
-      "answer": "Er arbeitet als Ingenieur"
+      "answer": "Seine Schwester ist müde."
     },
     {
       "sentence": {
-        "ru": "Я живу в квартире",
-        "en": "I live in an apartment"
+        "ru": "Твои родители тоже родом из России?",
+        "en": "Are your parents also from Russia?"
       },
-      "answer": "Ich wohne in einer Wohnung"
+      "answer": "Kommen deine Eltern auch aus Russland?"
     },
     {
       "sentence": {
-        "ru": "Они читают журнал",
-        "en": "They are reading a magazine"
+        "ru": "Ваш ребёнок плачет слишком громко.",
+        "en": "Your child is crying too loudly."
       },
-      "answer": "Sie lesen eine Zeitschrift"
+      "answer": "Euer Kind weint zu laut."
     },
     {
       "sentence": {
-        "ru": "Ты идёшь по улице",
-        "en": "You are walking down the street"
+        "ru": "Ваш автомобиль быстрый.",
+        "en": "Your car is fast."
       },
-      "answer": "Du gehst auf der Straße"
+      "answer": "Ihr Auto ist schnell."
     },
     {
       "sentence": {
-        "ru": "Мы пьем кофе",
-        "en": "We are drinking coffee"
+        "ru": "Мои книги в шкафу.",
+        "en": "My books are in the cupboard."
       },
-      "answer": "Wir trinken Kaffee"
+      "answer": "Meine Bücher sind im Schrank."
     },
     {
       "sentence": {
-        "ru": "Я смотрю фильм",
-        "en": "I am watching a movie"
+        "ru": "Ваши родители учителя?",
+        "en": "Are your parents teachers?"
       },
-      "answer": "Ich sehe einen Film"
+      "answer": "Sind eure Eltern Lehrer?"
     },
     {
       "sentence": {
-        "ru": "Он встает рано",
-        "en": "He gets up early"
+        "ru": "Его друг идёт в кино.",
+        "en": "His friend is going to the cinema."
       },
-      "answer": "Er steht früh auf"
+      "answer": "Sein Freund geht ins Kino."
     },
     {
       "sentence": {
-        "ru": "Она моет посуду",
-        "en": "She is washing the dishes"
+        "ru": "Наша собака чёрная.",
+        "en": "Our dog is black."
       },
-      "answer": "Sie wäscht das Geschirr"
+      "answer": "Unser Hund ist schwarz."
     },
     {
       "sentence": {
-        "ru": "Ты идешь в парк",
-        "en": "You are going to the park"
+        "ru": "Их дом (находится) в деревне.",
+        "en": "Their house is in the village."
       },
-      "answer": "Du gehst in den Park"
+      "answer": "Ihr Haus ist im Dorf."
     },
     {
       "sentence": {
-        "ru": "Я иду в магазин",
-        "en": "I am going to the store"
+        "ru": "Ваше мнение важное.",
+        "en": "Your opinion is important."
       },
-      "answer": "Ich gehe in den Laden"
+      "answer": "Ihre Meinung ist wichtig."
     },
     {
       "sentence": {
-        "ru": "Они ждут поезд",
-        "en": "They are waiting for the train"
+        "ru": "Он дарит куклы своим сёстрам.",
+        "en": "He gives dolls to his sisters."
       },
-      "answer": "Sie warten auf den Zug"
+      "answer": "Er schenkt seinen Schwestern Puppen."
     },
     {
       "sentence": {
-        "ru": "Ты слушаешь радио",
-        "en": "You are listening to the radio"
+        "ru": "Моя квартира не большая.",
+        "en": "My apartment is not big."
       },
-      "answer": "Du hörst Radio"
+      "answer": "Meine Wohnung ist nicht groß."
     },
     {
       "sentence": {
-        "ru": "Я сплю долго",
-        "en": "I sleep for a long time"
+        "ru": "Её муж богатый.",
+        "en": "Her husband is rich."
       },
-      "answer": "Ich schlafe lange"
+      "answer": "Ihr Mann ist reich."
     },
     {
       "sentence": {
-        "ru": "Он закрывает дверь",
-        "en": "He closes the door"
+        "ru": "Его собака больная.",
+        "en": "His dog is sick."
       },
-      "answer": "Er macht die Tür zu"
+      "answer": "Sein Hund ist krank."
     },
     {
       "sentence": {
-        "ru": "Мы обедаем в кафе",
-        "en": "We have lunch at a café"
+        "ru": "Ваш (обращение к нескольким лицам) отец врач.",
+        "en": "Your (plural) father is a doctor."
       },
-      "answer": "Wir essen im Café"
+      "answer": "Euer Vater ist Arzt."
     },
     {
       "sentence": {
-        "ru": "Она рисует картину",
-        "en": "She is painting a picture"
+        "ru": "Её платье длинное и красивое.",
+        "en": "Her dress is long and beautiful."
       },
-      "answer": "Sie malt ein Bild"
+      "answer": "Ihr Kleid ist lang und schön."
     },
     {
       "sentence": {
-        "ru": "Ты читаешь газету",
-        "en": "You are reading a newspaper"
+        "ru": "Я посещаю моего врача.",
+        "en": "I am visiting my doctor."
       },
-      "answer": "Du liest die Zeitung"
+      "answer": "Ich besuche meinen Arzt."
     },
     {
       "sentence": {
-        "ru": "Я покупаю цветы",
-        "en": "I am buying flowers"
+        "ru": "Он берет свой паспорт.",
+        "en": "He is taking his passport."
       },
-      "answer": "Ich kaufe Blumen"
+      "answer": "Er nimmt seinen Pass."
     },
     {
       "sentence": {
-        "ru": "Он идёт в университет",
-        "en": "He is going to the university"
+        "ru": "Она продает свой дом.",
+        "en": "She is selling her house."
       },
-      "answer": "Er geht zur Universität"
+      "answer": "Sie verkauft ihr Haus."
     },
     {
       "sentence": {
-        "ru": "Мы играем в футбол",
-        "en": "We are playing football (soccer)"
+        "ru": "Девочка звонит своей матери.",
+        "en": "The girl is calling her mother."
       },
-      "answer": "Wir spielen Fußball"
+      "answer": "Das Mädchen ruft ihre Mutter an."
     },
     {
       "sentence": {
-        "ru": "Ты открываешь окно",
-        "en": "You open the window"
+        "ru": "Она читает наше сообщение.",
+        "en": "She is reading our message."
       },
-      "answer": "Du öffnest das Fenster"
+      "answer": "Sie liest unsere Nachricht."
+    },
+    {
+      "sentence": {
+        "ru": "Мы спрашиваем нашу подругу.",
+        "en": "We are asking our (female) friend."
+      },
+      "answer": "Wir fragen unsere Freundin."
+    },
+    {
+      "sentence": {
+        "ru": "Они ищут их сумку.",
+        "en": "They are looking for their bag."
+      },
+      "answer": "Sie suchen ihre Tasche."
+    },
+    {
+      "sentence": {
+        "ru": "Он приветствует своего учителя.",
+        "en": "He greets his teacher."
+      },
+      "answer": "Er begrüßt seinen Lehrer."
+    },
+    {
+      "sentence": {
+        "ru": "Вы (формально) ставите свой чемодан.",
+        "en": "You (formal) are putting down your suitcase."
+      },
+      "answer": "Sie stellen Ihren Koffer hin."
+    },
+    {
+      "sentence": {
+        "ru": "Он приносит мой стакан.",
+        "en": "He brings my glass."
+      },
+      "answer": "Er bringt mein Glas."
+    },
+    {
+      "sentence": {
+        "ru": "Вы (обращение к нескльким лицвм) показываете свою фотографию.",
+        "en": "You (plural) are showing your photo."
+      },
+      "answer": "Ihr zeigt euer Foto."
+    },
+    {
+      "sentence": {
+        "ru": "Вы (формально) рассказываете ее историю.",
+        "en": "You (formal) are telling her story."
+      },
+      "answer": "Sie erzählen ihre Geschichte."
+    },
+    {
+      "sentence": {
+        "ru": "Мы пишем его номер телефона.",
+        "en": "We are writing down his phone number."
+      },
+      "answer": "Wir schreiben seine Telefonnummer auf."
+    },
+    {
+      "sentence": {
+        "ru": "Они читают его книги.",
+        "en": "They are reading his books."
+      },
+      "answer": "Sie lesen seine Bücher."
     }
   ]
 }
