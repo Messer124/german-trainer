@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1/translate-sentences.json";
-import PageHeader from "../../components/PageHeader";
 import "../../css/A1/TranslateSentences.css";
 
-export default function TranslateSentences() {
+function TranslateSentences() {
     const STORAGE_KEY = "translate-sentences";
     const { locale } = useLocale();
 
@@ -45,8 +44,6 @@ export default function TranslateSentences() {
 
     return (
         <div className="translate-container">
-            <PageHeader title={data.title[locale]}>{data.instructions[locale]}</PageHeader>
-
             <ul className="translate-list">
                 {data.items.map((item, index) => {
                     const key = `translate-${index}`;
@@ -83,3 +80,6 @@ export default function TranslateSentences() {
         </div>
     );
 }
+
+TranslateSentences.instructions = data.instructions;
+export default TranslateSentences;

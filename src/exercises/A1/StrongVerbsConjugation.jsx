@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
-import strongVerbs from "../../../data/A1/strong-verb-conjugation.json";
+import data from "../../../data/A1/strong-verb-conjugation.json";
 import "../../css/A1/StrongVerbsConjugation.css";
 
-export default function StrongVerbsConjugation() {
+function StrongVerbsConjugation() {
   const { locale } = useLocale();
 
   const [answers, setAnswers] = useState(() => {
@@ -23,11 +23,6 @@ export default function StrongVerbsConjugation() {
 
   return (
       <div>
-        <div className="strong-header-wrapper">
-          <h2 className="strong-header-title">{strongVerbs.title[locale]}</h2>
-          <p className="strong-header-subtitle">{strongVerbs.instructions[locale]}</p>
-        </div>
-
         <div className="strong-table-wrapper">
           <table className="strong-table">
             <thead>
@@ -41,7 +36,7 @@ export default function StrongVerbsConjugation() {
             </tr>
             </thead>
             <tbody>
-            {strongVerbs.items.map((item, index) => (
+            {data.items.map((item, index) => (
                 <tr key={index}>
                   <td className="infinitive">{item.sentence}</td>
                   {["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"].map((pronoun) => {
@@ -83,3 +78,6 @@ export default function StrongVerbsConjugation() {
       </div>
   );
 }
+
+StrongVerbsConjugation.instructions = data.instructions;
+export default StrongVerbsConjugation;

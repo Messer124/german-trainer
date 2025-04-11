@@ -3,7 +3,7 @@ import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1/weak-verb-conjugation.json";
 import "../../css/A1/WeakVerbConjugation.css";
 
-export default function WeakVerbConjugation() {
+function WeakVerbConjugation() {
     const STORAGE_KEY = "weak-verb-conjugation-answers";
     const { locale } = useLocale();
 
@@ -30,11 +30,6 @@ export default function WeakVerbConjugation() {
 
     return (
         <div>
-            <div className="weak-verb-wrapper">
-                <h2 className="weak-verb-title">{data.title?.[locale]}</h2>
-                <p className="weak-verb-subtitle">{data.instructions?.[locale]}</p>
-            </div>
-
             <div className="weak-table-wrapper">
                 <table className="weak-verb-table">
                     <thead>
@@ -88,3 +83,6 @@ export default function WeakVerbConjugation() {
         </div>
     );
 }
+
+WeakVerbConjugation.instructions = data.instructions;
+export default WeakVerbConjugation;

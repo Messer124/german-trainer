@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1/posessive_pronouns.json";
 import ModalImage from "../../components/ModalImage";
-import PageHeader from "../../components/PageHeader";
+import Sidebar from "../../components/Sidebar";
 import "../../css/A1/PossessivePronouns.css";
 import casesImage from "../../../data/A1/images/posessive_pronouns.png";
 
-export default function PossessivePronouns() {
+function PossessivePronouns() {
     const STORAGE_KEY = "possessive-pronouns-answers";
     const { locale } = useLocale();
 
@@ -26,9 +26,25 @@ export default function PossessivePronouns() {
     }, [answers]);
 
     useEffect(() => {
-        const handleClear = () => setAnswers({});
-        window.addEventListener("clear-pronouns", handleClear);
-        return () => window.removeEventListener("clear-pronouns", handleClear);
+        const handleClear = () => {
+            setAnswers({});
+        };
+
+        window.addEventListener("clear-possessive-pronouns-answers", handleClear);
+        return () => {
+            window.removeEventListener("clear-possessive-pronouns-answers", handleClear);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleShowHint = () => {
+            setShowImage(true);
+        };
+
+        document.addEventListener("show-possessive-hint", handleShowHint);
+        return () => {
+            document.removeEventListener("show-possessive-hint", handleShowHint);
+        };
     }, []);
 
     const handleChange = (sentenceIdx, blankIdx, value) => {
@@ -80,21 +96,6 @@ export default function PossessivePronouns() {
 
     return (
         <div>
-            <PageHeader
-                title={data.title[locale]}
-                right={
-                    <button
-                        onClick={() => setShowImage(true)}
-                        className="hint-button"
-                        title={locale === "ru" ? "Показать подсказку" : "Show hint"}
-                    >
-                        !
-                    </button>
-                }
-            >
-                {data.instructions[locale]}
-            </PageHeader>
-
             {showImage && (
                 <ModalImage
                     src={casesImage}
@@ -111,3 +112,15 @@ export default function PossessivePronouns() {
         </div>
     );
 }
+
+PossessivePronouns.headerButton = (
+    <button
+        onClick={() => document.dispatchEvent(new CustomEvent("show-possessive-hint"))}
+        className="hint-button"
+    >
+        !
+    </button>
+);
+
+PossessivePronouns.instructions = data.instructions;
+export default PossessivePronouns;

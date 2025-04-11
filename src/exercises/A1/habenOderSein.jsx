@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1/haben-sein.json";
 import ModalImage from "../../components/ModalImage";
-import PageHeader from "../../components/PageHeader";
 import habenSeinImage from "../../../data/A1/images/haben-sein.png";
 import "../../css/A1/habenOderSein.css";
 
-export default function HabenOderSein() {
+function HabenOderSein() {
   const STORAGE_KEY = "haben-sein-answers";
   const { locale } = useLocale();
 
@@ -24,6 +23,17 @@ export default function HabenOderSein() {
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
   }, [answers]);
+
+  useEffect(() => {
+    const handleShowHint = () => {
+        setShowImage(true);
+    };
+
+    document.addEventListener("show-habenOderSein-hint", handleShowHint);
+    return () => {
+        document.removeEventListener("show-habenOderSein-hint", handleShowHint);
+    };
+    }, []);
 
   useEffect(() => {
     const handleClear = () => setAnswers({});
@@ -44,20 +54,6 @@ export default function HabenOderSein() {
 
   return (
       <div className="haben-container">
-        <PageHeader
-            title={data.title[locale]}
-            right={
-              <button
-                  onClick={() => setShowImage(true)}
-                  className="hint-button"
-                  title={locale === "ru" ? "Показать подсказку" : "Show hint"}
-              >
-                !
-              </button>
-            }
-        >
-          {data.instructions[locale]}
-        </PageHeader>
 
         {showImage && (
             <ModalImage
@@ -90,3 +86,15 @@ export default function HabenOderSein() {
       </div>
   );
 }
+
+HabenOderSein.headerButton = (
+    <button
+        onClick={() => document.dispatchEvent(new CustomEvent("show-habenOderSein-hint"))}
+        className="hint-button"
+    >
+        !
+    </button>
+);
+
+HabenOderSein.instructions = data.instructions;
+export default HabenOderSein;

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
-import PageHeader from "../../components/PageHeader";
 import "./../../css/A1/ModalVerbExercise.css";
 
 const pronouns = ["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"];
@@ -26,7 +25,7 @@ const data = {
     }
 };
 
-export default function ModalVerbExercise() {
+function ModalVerbExercise() {
     const { locale } = useLocale();
 
     const [answers, setAnswers] = useState(() => {
@@ -63,10 +62,6 @@ export default function ModalVerbExercise() {
 
     return (
         <div>
-            <PageHeader title={data.title[locale]}>
-                {data.instructions[locale]}
-            </PageHeader>
-
             <table className="modal-table">
                 <thead>
                 <tr>
@@ -105,3 +100,6 @@ export default function ModalVerbExercise() {
         </div>
     );
 }
+
+ModalVerbExercise.instructions = data.instructions;
+export default ModalVerbExercise;

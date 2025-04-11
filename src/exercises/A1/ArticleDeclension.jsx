@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1/articleDeclension.json";
 import ModalImage from "../../components/ModalImage";
-import PageHeader from "../../components/PageHeader";
 import "../../css/A1/ArticleDeclension.css";
 import casesImage from "../../../data/A1/images/cases.jpg";
 
-export default function ArticleDeclension() {
+function ArticleDeclension() {
     const STORAGE_KEY = "articles-answers";
     const { locale } = useLocale();
 
@@ -30,6 +29,18 @@ export default function ArticleDeclension() {
         window.addEventListener("clear-articles", handleClear);
         return () => window.removeEventListener("clear-articles", handleClear);
     }, []);
+
+    useEffect(() => {
+        const handleShowHint = () => {
+            setShowImage(true);
+        };
+
+        document.addEventListener("show-articleDeclension-hint", handleShowHint);
+        return () => {
+            document.removeEventListener("show-articleDeclension-hint", handleShowHint);
+        };
+    }, []);
+
 
     const handleChange = (sentenceIdx, blankIdx, value) => {
         const correct = data.items[sentenceIdx].answer[blankIdx]?.toLowerCase();
@@ -80,21 +91,6 @@ export default function ArticleDeclension() {
 
     return (
         <div>
-            <PageHeader
-                title={data.title[locale]}
-                right={
-                    <button
-                        onClick={() => setShowImage(true)}
-                        className="hint-button"
-                        title={locale === "ru" ? "Показать подсказку" : "Show hint"}
-                    >
-                        !
-                    </button>
-                }
-            >
-                {data.instructions[locale]}
-            </PageHeader>
-
             {showImage && (
                 <ModalImage
                     src={casesImage}
@@ -111,3 +107,15 @@ export default function ArticleDeclension() {
         </div>
     );
 }
+
+ArticleDeclension.headerButton = (
+    <button
+        onClick={() => document.dispatchEvent(new CustomEvent("show-articleDeclension-hint"))}
+        className="hint-button"
+    >
+        !
+    </button>
+);
+
+ArticleDeclension.instructions = data.instructions;
+export default ArticleDeclension;

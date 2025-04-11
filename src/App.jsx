@@ -1,28 +1,27 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useLocale } from "./contexts/LocaleContext";
+import translations from "./locales/locales";
 import ModalVerbExercise from "./exercises/A1/ModalVerbExercise";
 import StrongVerbsConjugation from "./exercises/A1/StrongVerbsConjugation";
 import HabenOderSein from "./exercises/A1/habenOderSein";
 import TranslateSentences from "./exercises/A1/TranslateSentences";
 import WeakVerbConjugation from "./exercises/A1/WeakVerbConjugation";
-import PastTense from "./exercises/A1/PastTense";
 import ArticleDeclension from "./exercises/A1/ArticleDeclension";
 import NounArticles from "./exercises/A1/NounArticles";
 import PossessivePronouns from "./exercises/A1/PossessivePronouns";
-import SidebarControls from "./components/SidebarControls";
-import translations from "./locales/locales";
+import Sidebar from "./components/Sidebar";
+
 import "./css/App.css";
 
 const TABS = {
   "noun-articles": { component: NounArticles },
   "haben-sein": { component: HabenOderSein },
-  // "past-tense": { component: PastTense },
   "verb-conjugation": { component: WeakVerbConjugation },
   "irregular-verbs": { component: StrongVerbsConjugation },
   "modal-verbs": { component: ModalVerbExercise },
   "articles": { component: ArticleDeclension },
   "possessive-pronouns": { component: PossessivePronouns },
-  "translate-sentences": { component: TranslateSentences }
+  "translate-sentences": { component: TranslateSentences },
 };
 
 const STORAGE_KEYS = {
@@ -30,11 +29,10 @@ const STORAGE_KEYS = {
   "haben-sein": "haben-sein-answers",
   "translate-sentences": "translate-sentences",
   "verb-conjugation": "verb-conjugation",
-  //"past-tense": "past-tense",
   "articles": "articles",
   "modal-verbs": "modal-answers",
   "possessive-pronouns": "possessive-pronouns-answers",
-  "irregular-verbs": "irregular-answers"
+  "irregular-verbs": "irregular-answers",
 };
 
 export default function App() {
@@ -46,6 +44,7 @@ export default function App() {
   const { locale } = useLocale();
   const tabTitles = translations[locale].tabs;
   const contentRef = useRef(null);
+  const [sidebarWidth, setSidebarWidth] = useState("250px");
 
   useEffect(() => {
     localStorage.setItem("last-tab", currentTab);
@@ -69,29 +68,31 @@ export default function App() {
   };
 
   return (
-      <div className="app-container">
-        <div className="sidebar">
-          <SidebarControls />
+      <div style={{ display: "flex"}}>
+        <Sidebar
+            currentTab={currentTab}
+            setCurrentTab={setCurrentTab}
+            tabTitles={tabTitles}
+            tabs={TABS}
+            locale={locale}
+            onClearAnswers={handleClearAnswers}
+            onWidthChange={setSidebarWidth}
+            headerButton={Component.headerButton}
+            instructions={Component.instructions[locale]}
+        >
+        </Sidebar>
 
-          <div>
-            {Object.keys(TABS).map((key) => (
-                <div
-                    key={key}
-                    className={`tab-item ${currentTab === key ? "active" : ""}`}
-                    onClick={() => setCurrentTab(key)}
-                >
-                  {tabTitles[key]}
-                </div>
-            ))}
-          </div>
-
-          <button className="clear-button" onClick={handleClearAnswers}>
-            {translations[locale].labels.clearAnswers}
-          </button>
-        </div>
-
-        <div ref={contentRef} className="content fade-in">
-          <Component key={currentTab}/>
+        <div
+            ref={contentRef}
+            className="content fade-in"
+            style={{
+              marginLeft: sidebarWidth, marginTop: 50,
+              transition: "margin-left 0.3s ease",
+              flexGrow: 1,
+              padding: "24px"
+            }}
+        >
+          <Component key={currentTab} />
         </div>
       </div>
   );

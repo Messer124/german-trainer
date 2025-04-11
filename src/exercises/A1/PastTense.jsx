@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1/past-tense.json";
 
-export default function PastTense() {
+function PastTense() {
   const STORAGE_KEY = "past-tense-answers";
 
   const [answers, setAnswers] = useState(() => {
@@ -87,3 +87,6 @@ export default function PastTense() {
     </div>
   );
 }
+
+PastTense.instructions = data.instructions;
+export default PastTense;

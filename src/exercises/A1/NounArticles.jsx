@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1/noun_articles_with_gender_mismatch.json";
 import { useLocale } from "../../contexts/LocaleContext";
-import PageHeader from "../../components/PageHeader";
 
-export default function NounArticles() {
+function NounArticles() {
   const { locale } = useLocale();
   const STORAGE_KEY = "noun-articles-answers";
 
@@ -45,12 +44,6 @@ export default function NounArticles() {
 
   return (
     <div>
-      <PageHeader title={data.title[locale]}>
-        {data.instructions[locale]}
-      </PageHeader>
-
-      <p style={{ marginBottom: 20 }}>{data.instructions[locale]}</p>
-
       <ul style={{ listStyle: "none", padding: 0 }}>
         {data.items.map((item, index) => {
           const value = answers[index]?.value || "";
@@ -87,3 +80,6 @@ export default function NounArticles() {
     </div>
   );
 }
+
+NounArticles.instructions = data.instructions;
+export default NounArticles;
