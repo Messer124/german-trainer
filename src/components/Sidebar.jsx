@@ -2,17 +2,31 @@ import { useLocale } from "../contexts/LocaleContext";
 import { useLevel } from "../contexts/LevelContext";
 import translations from "../locales/locales";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Globe2, BookOpen, Settings, ChevronDown } from "lucide-react";
 import "../css/components/Sidebar.css";
 
-export default function Sidebar({ currentTab, setCurrentTab, tabTitles, tabs, locale, onClearAnswers, onWidthChange, headerButton, instructions, headerTitle }) {
+export default function Sidebar({ currentTab, setCurrentTab, tabTitles, tabs, locale, onClearAnswers,
+                                    onWidthChange, headerButton, instructions, headerTitle, onHeaderHeight }) {
     const { level, setLevel } = useLevel();
     const { setLocale } = useLocale();
     const labels = translations[locale].labels;
     const [isMobile, setIsMobile] = useState(false);
     const [isOpen, setIsOpen] = useState(true);
     const [settingsOpen, setSettingsOpen] = useState(false);
+    const headerRef = useRef(null);
+
+    useEffect(() => {
+        if (headerRef.current && onHeaderHeight) {
+            const observer = new ResizeObserver(() => {
+                onHeaderHeight(headerRef.current.offsetHeight);
+            });
+
+            observer.observe(headerRef.current);
+
+            return () => observer.disconnect();
+        }
+    }, [onHeaderHeight]);
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -31,6 +45,7 @@ export default function Sidebar({ currentTab, setCurrentTab, tabTitles, tabs, lo
         <>
             {/* Фиксированная шапка */}
             <div
+                ref={headerRef}
                 className="sidebar-header"
                 style={{ left: isMobile ? 0 : sidebarWidth }}
             >
@@ -105,8 +120,8 @@ export default function Sidebar({ currentTab, setCurrentTab, tabTitles, tabs, lo
                                             onChange={(e) => setLevel(e.target.value)}
                                             className="sidebar-select"
                                         >
-                                            <option value="A1">A1</option>
-                                            <option value="A2">A2</option>
+                                            <option value="A1.1">A1.1</option>
+                                            <option value="A1.2">A1.2 in progress</option>
                                         </select>
 
                                         <label

@@ -45,8 +45,10 @@ export default function App() {
   const tabTitles = translations[locale].tabs;
   const contentRef = useRef(null);
   const [sidebarWidth, setSidebarWidth] = useState("250px");
+  const [headerHeight, setHeaderHeight] = useState(0);
 
-  useEffect(() => {
+
+    useEffect(() => {
     localStorage.setItem("last-tab", currentTab);
 
     const node = contentRef.current;
@@ -80,6 +82,7 @@ export default function App() {
             headerButton={Component.headerButton}
             instructions={Component.instructions[locale]}
             headerTitle={Component.title[locale]}
+            onHeaderHeight={setHeaderHeight}
         >
         </Sidebar>
 
@@ -87,10 +90,11 @@ export default function App() {
             ref={contentRef}
             className="content fade-in"
             style={{
-              marginLeft: sidebarWidth, marginTop: 50,
-              transition: "margin-left 0.3s ease",
-              flexGrow: 1,
-              padding: "24px"
+                marginLeft: sidebarWidth,
+                marginTop: headerHeight - 30,
+                transition: "margin-left 0.3s ease",
+                flexGrow: 1,
+                padding: "24px"
             }}
         >
           <Component key={currentTab} />
