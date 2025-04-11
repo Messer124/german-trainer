@@ -80,4 +80,5 @@ function StrongVerbsConjugation() {
 }
 
 StrongVerbsConjugation.instructions = data.instructions;
+StrongVerbsConjugation.title = data.title;
 export default StrongVerbsConjugation;

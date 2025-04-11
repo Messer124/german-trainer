@@ -85,4 +85,5 @@ function WeakVerbConjugation() {
 }
 
 WeakVerbConjugation.instructions = data.instructions;
+WeakVerbConjugation.title = data.title;
 export default WeakVerbConjugation;

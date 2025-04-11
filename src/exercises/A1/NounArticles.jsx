@@ -82,4 +82,5 @@ function NounArticles() {
 }
 
 NounArticles.instructions = data.instructions;
+NounArticles.title = data.title;
 export default NounArticles;

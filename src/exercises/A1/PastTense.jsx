@@ -89,4 +89,5 @@ function PastTense() {
 }
 
 PastTense.instructions = data.instructions;
+PastTense.title = data.title;
 export default PastTense;

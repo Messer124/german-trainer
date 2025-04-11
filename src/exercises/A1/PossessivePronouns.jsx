@@ -123,4 +123,5 @@ PossessivePronouns.headerButton = (
 );
 
 PossessivePronouns.instructions = data.instructions;
+PossessivePronouns.title = data.title;
 export default PossessivePronouns;

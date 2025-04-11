@@ -79,6 +79,7 @@ export default function App() {
             onWidthChange={setSidebarWidth}
             headerButton={Component.headerButton}
             instructions={Component.instructions[locale]}
+            headerTitle={Component.title[locale]}
         >
         </Sidebar>
 

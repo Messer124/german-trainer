@@ -102,4 +102,5 @@ function ModalVerbExercise() {
 }
 
 ModalVerbExercise.instructions = data.instructions;
+ModalVerbExercise.title = data.title;
 export default ModalVerbExercise;

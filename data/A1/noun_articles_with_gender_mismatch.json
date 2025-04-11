@@ -1,11 +1,11 @@
 {
   "title": {
     "ru": "Артикли 150 существительных с несоответствием рода в русском языке",
-    "en": "Articles of 150 nouns with gender mismatch in Russian language"
+    "en": "Articles of 150 nouns"
   },
   "instructions": {
-    "ru": "Впишите артикль перед существительным (der, die или das).",
-    "en": "Type the correct article before the noun (der, die or das)."
+    "ru": "Впишите артикль (der, die или das).",
+    "en": "Type the correct article (der, die or das)."
   },
   "items": [
     {

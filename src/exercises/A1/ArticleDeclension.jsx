@@ -118,4 +118,5 @@ ArticleDeclension.headerButton = (
 );
 
 ArticleDeclension.instructions = data.instructions;
+ArticleDeclension.title = data.title;
 export default ArticleDeclension;

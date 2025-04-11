@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { Globe2, BookOpen, Settings, ChevronDown } from "lucide-react";
 import "../css/components/Sidebar.css";
 
-export default function Sidebar({ currentTab, setCurrentTab, tabTitles, tabs, locale, onClearAnswers, onWidthChange, headerButton, instructions }) {
+export default function Sidebar({ currentTab, setCurrentTab, tabTitles, tabs, locale, onClearAnswers, onWidthChange, headerButton, instructions, headerTitle }) {
     const { level, setLevel } = useLevel();
     const { setLocale } = useLocale();
     const labels = translations[locale].labels;
@@ -42,10 +42,8 @@ export default function Sidebar({ currentTab, setCurrentTab, tabTitles, tabs, lo
                     )}
 
                     <div>
-                        <h1>{tabTitles[currentTab]}</h1>
-                        {typeof instructions !== "undefined" && (
-                            <p>{instructions}</p>
-                        )}
+                        <h1>{headerTitle}</h1>
+                        <p>{instructions}</p>
                     </div>
                 </div>
 
@@ -78,7 +76,7 @@ export default function Sidebar({ currentTab, setCurrentTab, tabTitles, tabs, lo
                                 onClick={() => setSettingsOpen(!settingsOpen)}
                                 className="sidebar-settings-button"
                             >
-                                <Settings size={isMobile ? 22 : 16} />
+                                <Settings size={16} style={{ flexShrink: 0 }} />
                                 {locale === "ru" ? "Настройки" : "Settings"}
                                 <ChevronDown
                                     size={16}

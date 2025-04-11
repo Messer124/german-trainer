@@ -97,4 +97,5 @@ HabenOderSein.headerButton = (
 );
 
 HabenOderSein.instructions = data.instructions;
+HabenOderSein.title = data.title;
 export default HabenOderSein;

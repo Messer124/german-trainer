@@ -82,4 +82,5 @@ function TranslateSentences() {
 }
 
 TranslateSentences.instructions = data.instructions;
+TranslateSentences.title = data.title;
 export default TranslateSentences;
