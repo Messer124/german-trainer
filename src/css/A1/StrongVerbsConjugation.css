@@ -73,3 +73,17 @@
     background: #f4f4f4;
     z-index: 2;
 }
+
+/* Обёртка с горизонтальным скроллом */
+.strong-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* Таблица фиксированной ширины */
+.strong-table {
+    width: 100%;
+    min-width: 700px; /* чтобы на мобилке можно было скроллить */
+    border-collapse: collapse;
+    table-layout: fixed;
+}
