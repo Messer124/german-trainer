@@ -26,18 +26,18 @@
 }
 
 .translate-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .translate-sentence {
-  min-width: 240px;
-  margin-right: 16px;
+  display: inline;
+  margin-right: 8px;
 }
 
+
 .translate-input {
-  transition: all 0.6s ease;
+  transition: all 0.7s ease;
   border: 2px solid #ccc;
   border-radius: 6px;
   padding: 6px 12px;
@@ -45,6 +45,7 @@
   min-width: 6em;
   outline: none;
   max-width: 40%;
+  width: auto;
 }
 
 .translate-input.correct {
