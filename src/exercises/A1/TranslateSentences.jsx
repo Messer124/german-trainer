@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Eye } from "lucide-react";
 import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1/translate-sentences.json";
 import "../../css/A1/TranslateSentences.css";
@@ -70,9 +71,9 @@ function TranslateSentences() {
                                 }}
                             />
                             <span className="tooltip-container">
-                <span role="img" className="eye-icon">👁️‍🗨️️</span>
-                <span className="tooltip">{item.answer}</span>
-              </span>
+                                <span> <Eye size={18}/> </span>
+                                <span className="tooltip">{item.answer}</span>
+                            </span>
                         </li>
                     );
                 })}

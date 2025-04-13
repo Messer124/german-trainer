@@ -58,7 +58,6 @@ function HabenOderSein() {
         {showImage && (
             <ModalImage
                 src={habenSeinImage}
-                alt="Подсказка: когда использовать haben или sein"
                 onClose={() => setShowImage(false)}
             />
         )}

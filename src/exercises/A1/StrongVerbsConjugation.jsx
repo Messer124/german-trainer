@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1/strong-verb-conjugation.json";
 import "../../css/A1/StrongVerbsConjugation.css";
+import ModalImage from "../../components/ModalImage";
+import strongVerbsImage from "../../../data/A1/images/strong-verbs-conj.png";
 
 function StrongVerbsConjugation() {
   const { locale } = useLocale();
-
+  const [showImage, setShowImage] = useState(false);
   const [answers, setAnswers] = useState(() => {
     const saved = localStorage.getItem("irregular-answers");
     return saved ? JSON.parse(saved) : {};
@@ -21,8 +23,28 @@ function StrongVerbsConjugation() {
     return () => window.removeEventListener("clear-irregular-answers", handleClear);
   }, []);
 
+  useEffect(() => {
+    const handleShowHint = () => {
+      setShowImage(true);
+    };
+
+    document.addEventListener("show-strongVerbs-hint", handleShowHint);
+    return () => {
+      document.removeEventListener("show-strongVerbs-hint", handleShowHint);
+    };
+  }, []);
+
   return (
       <div>
+
+        {showImage && (
+            <ModalImage
+                src={strongVerbsImage}
+                alt="Strong verb chart"
+                onClose={() => setShowImage(false)}
+            />
+        )}
+
         <div className="strong-table-wrapper">
           <table className="strong-table">
             <thead>
@@ -78,6 +100,15 @@ function StrongVerbsConjugation() {
       </div>
   );
 }
+
+StrongVerbsConjugation.headerButton = (
+    <button
+        onClick={() => document.dispatchEvent(new CustomEvent("show-strongVerbs-hint"))}
+        className="hint-button"
+    >
+      !
+    </button>
+);
 
 StrongVerbsConjugation.instructions = data.instructions;
 StrongVerbsConjugation.title = data.title;

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import "./../../css/A1/ModalVerbExercise.css";
+import ModalImage from "../../components/ModalImage";
+import modalVerbsImage from "../../../data/A1/images/modal-verbs.png";
 
 const pronouns = ["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"];
 
@@ -25,9 +27,10 @@ const data = {
     }
 };
 
+
 function ModalVerbExercise() {
     const { locale } = useLocale();
-
+    const [showImage, setShowImage] = useState(false);
     const [answers, setAnswers] = useState(() => {
         let saved = localStorage.getItem("modal-answers");
         try {
@@ -48,6 +51,17 @@ function ModalVerbExercise() {
         return () => window.removeEventListener("clear-modal-answers", handleClear);
     }, []);
 
+    useEffect(() => {
+        const handleShowHint = () => {
+            setShowImage(true);
+        };
+
+        document.addEventListener("show-modalVerbs-hint", handleShowHint);
+        return () => {
+            document.removeEventListener("show-modalVerbs-hint", handleShowHint);
+        };
+    }, []);
+
     const handleChange = (pronounIdx, verb, value) => {
         const key = `${pronounIdx}-${verb}`;
         const correct = modalVerbs[verb][pronounIdx];
@@ -62,6 +76,15 @@ function ModalVerbExercise() {
 
     return (
         <div>
+
+            {showImage && (
+                <ModalImage
+                    src={modalVerbsImage}
+                    alt="Modal verb chart"
+                    onClose={() => setShowImage(false)}
+                />
+            )}
+
             <table className="modal-table">
                 <thead>
                 <tr>
@@ -100,6 +123,15 @@ function ModalVerbExercise() {
         </div>
     );
 }
+
+ModalVerbExercise.headerButton = (
+    <button
+        onClick={() => document.dispatchEvent(new CustomEvent("show-modalVerbs-hint"))}
+        className="hint-button"
+    >
+        !
+    </button>
+);
 
 ModalVerbExercise.instructions = data.instructions;
 ModalVerbExercise.title = data.title;

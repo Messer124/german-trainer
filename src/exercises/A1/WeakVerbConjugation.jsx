@@ -2,10 +2,13 @@ import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1/weak-verb-conjugation.json";
 import "../../css/A1/WeakVerbConjugation.css";
+import ModalImage from "../../components/ModalImage";
+import weakVerbsImage from "../../../data/A1/images/weak-verbs-conj.png";
 
 function WeakVerbConjugation() {
     const STORAGE_KEY = "weak-verb-conjugation-answers";
     const { locale } = useLocale();
+    const [showImage, setShowImage] = useState(false);
 
     const [answers, setAnswers] = useState(() => {
         const saved = localStorage.getItem(STORAGE_KEY);
@@ -26,10 +29,30 @@ function WeakVerbConjugation() {
         return () => window.removeEventListener("clear-verb-conjugation", handleClear);
     }, []);
 
+    useEffect(() => {
+        const handleShowHint = () => {
+            setShowImage(true);
+        };
+
+        document.addEventListener("show-weakVerbConjugation-hint", handleShowHint);
+        return () => {
+            document.removeEventListener("show-weakVerbConjugation-hint", handleShowHint);
+        };
+    }, []);
+
     const pronouns = ["ich", "du", "er/sie/es", "wir/sie/Sie", "ihr"];
 
     return (
         <div>
+
+            {showImage && (
+                <ModalImage
+                    src={weakVerbsImage}
+                    alt="Weak verb chart"
+                    onClose={() => setShowImage(false)}
+                />
+            )}
+
             <div className="weak-table-wrapper">
                 <table className="weak-verb-table">
                     <thead>
@@ -81,8 +104,18 @@ function WeakVerbConjugation() {
                 </table>
             </div>
         </div>
+
     );
 }
+
+WeakVerbConjugation.headerButton = (
+    <button
+        onClick={() => document.dispatchEvent(new CustomEvent("show-weakVerbConjugation-hint"))}
+        className="hint-button"
+    >
+        !
+    </button>
+);
 
 WeakVerbConjugation.instructions = data.instructions;
 WeakVerbConjugation.title = data.title;

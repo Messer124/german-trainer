@@ -91,11 +91,9 @@ export default function App() {
             className="content fade-in"
             style={{
                 marginLeft: sidebarWidth,
-                marginTop: headerHeight - 30,
+                marginTop: headerHeight,
                 transition: "margin-left 0.3s ease",
-                flexGrow: 1,
-                padding: "24px"
-            }}
+                flexGrow: 1}}
         >
           <Component key={currentTab} />
         </div>

@@ -337,14 +337,6 @@
       }
     },
     {
-      "word": "___ Zuhause",
-      "article": "das",
-      "translation": {
-        "ru": "дом",
-        "en": "home"
-      }
-    },
-    {
       "word": "___ Hund",
       "article": "der",
       "translation": {
@@ -406,14 +398,6 @@
       "translation": {
         "ru": "смерть",
         "en": "death"
-      }
-    },
-    {
-      "word": "___ Anderen",
-      "article": "die",
-      "translation": {
-        "ru": "другие",
-        "en": "others"
       }
     },
     {

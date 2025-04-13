@@ -132,7 +132,7 @@
       "infinitive": "tanzen",
       "conjugation": {
         "ich": "tanze",
-        "du": "tanzst",
+        "du": "tanzt",
         "er/sie/es": "tanzt",
         "wir/sie/Sie": "tanzen",
         "ihr": "tanzt"
@@ -142,7 +142,7 @@
       "infinitive": "reisen",
       "conjugation": {
         "ich": "reise",
-        "du": "reisst",
+        "du": "reist",
         "er/sie/es": "reist",
         "wir/sie/Sie": "reisen",
         "ihr": "reist"
@@ -162,17 +162,17 @@
       "infinitive": "öffnen",
       "conjugation": {
         "ich": "öffne",
-        "du": "öffnst",
-        "er/sie/es": "öffnt",
+        "du": "öffnest",
+        "er/sie/es": "öffnet",
         "wir/sie/Sie": "öffnen",
-        "ihr": "öffnt"
+        "ihr": "öffnet"
       }
     },
     {
       "infinitive": "schließen",
       "conjugation": {
         "ich": "schließe",
-        "du": "schließst",
+        "du": "schließt",
         "er/sie/es": "schließt",
         "wir/sie/Sie": "schließen",
         "ihr": "schließt"
@@ -222,50 +222,50 @@
       "infinitive": "zeichnen",
       "conjugation": {
         "ich": "zeichne",
-        "du": "zeichnst",
-        "er/sie/es": "zeichnt",
+        "du": "zeichnest",
+        "er/sie/es": "zeichnet",
         "wir/sie/Sie": "zeichnen",
-        "ihr": "zeichnt"
+        "ihr": "zeichnet"
       }
     },
     {
       "infinitive": "sammeln",
       "conjugation": {
-        "ich": "samme",
-        "du": "sammst",
-        "er/sie/es": "sammt",
-        "wir/sie/Sie": "sammen",
-        "ihr": "sammt"
+        "ich": "sammle",
+        "du": "sammelst",
+        "er/sie/es": "sammelt",
+        "wir/sie/Sie": "sammeln",
+        "ihr": "sammelt"
       }
     },
     {
       "infinitive": "regnen",
       "conjugation": {
         "ich": "regne",
-        "du": "regnst",
-        "er/sie/es": "regnt",
+        "du": "regnest",
+        "er/sie/es": "regnet",
         "wir/sie/Sie": "regnen",
-        "ihr": "regnt"
+        "ihr": "regnet"
       }
     },
     {
       "infinitive": "wandern",
       "conjugation": {
-        "ich": "wande",
-        "du": "wandst",
-        "er/sie/es": "wandt",
-        "wir/sie/Sie": "wanden",
-        "ihr": "wandt"
+        "ich": "wandere",
+        "du": "wanderst",
+        "er/sie/es": "wandert",
+        "wir/sie/Sie": "wandern",
+        "ihr": "wandert"
       }
     },
     {
       "infinitive": "feiern",
       "conjugation": {
-        "ich": "feie",
-        "du": "feist",
-        "er/sie/es": "feit",
-        "wir/sie/Sie": "feien",
-        "ihr": "feit"
+        "ich": "feiere",
+        "du": "feierst",
+        "er/sie/es": "feiert",
+        "wir/sie/Sie": "feiern",
+        "ihr": "feiert"
       }
     },
     {
@@ -302,7 +302,7 @@
       "infinitive": "putzen",
       "conjugation": {
         "ich": "putze",
-        "du": "putzst",
+        "du": "putzt",
         "er/sie/es": "putzt",
         "wir/sie/Sie": "putzen",
         "ihr": "putzt"
@@ -322,7 +322,7 @@
       "infinitive": "hassen",
       "conjugation": {
         "ich": "hasse",
-        "du": "hassst",
+        "du": "hasst",
         "er/sie/es": "hasst",
         "wir/sie/Sie": "hassen",
         "ihr": "hasst"
@@ -452,7 +452,7 @@
       "infinitive": "grüßen",
       "conjugation": {
         "ich": "grüße",
-        "du": "grüßst",
+        "du": "grüßt",
         "er/sie/es": "grüßt",
         "wir/sie/Sie": "grüßen",
         "ihr": "grüßt"
