@@ -195,13 +195,6 @@
       ]
     },
     {
-      "sentence": "Ist es ___ Auto? — Nein, das ist das Auto ___ Kollegen.",
-      "answer": [
-        "sein",
-        "seines"
-      ]
-    },
-    {
       "sentence": "Hans, Anna! Wann kommt ___ Neffe nach Wien?",
       "answer": [
         "euer"
@@ -214,10 +207,9 @@
       ]
     },
     {
-      "sentence": "Ich habe ___ Freundin gerade eine SMS geschrieben. Hast du ___  heute auch schon eine SMS geschrieben?",
+      "sentence": "Ich habe ___ Freundin gerade eine SMS geschrieben.",
       "answer": [
-        "meiner",
-        "deiner"
+        "meiner"
       ]
     },
     {
@@ -231,7 +223,7 @@
       "sentence": "___ Lehrer ist viel besser als ___ .",
       "answer": [
         "Mein",
-        "eurer"
+        "deiner"
       ]
     },
     {
@@ -239,13 +231,6 @@
       "answer": [
         "ihren",
         "Unserem"
-      ]
-    },
-    {
-      "sentence": "Entlang ___ Hauses wachsen Sonnenblumen. Was wachst um ___ Haus herum?",
-      "answer": [
-        "seines",
-        "euer"
       ]
     }
   ]

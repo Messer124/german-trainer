@@ -122,26 +122,6 @@
     {
       "sentence": "Sie arbeiten seit ___ Jahr 2000.",
       "answer": ["dem"]
-    },
-    {
-      "sentence": "Meine Damen und Herren, links ist ___ Turm. Das ist ___ Fernsehturm.",
-      "answer": ["ein", "der"]
-    },
-    {
-      "sentence": "Da ist ___ Stadion, das ist ___ Olympiastadion.",
-      "answer": ["ein", "das"]
-    },
-    {
-      "sentence": "Sie sehen geradeaus ___ Kirche, das ist ___ Frauenkirche.",
-      "answer": ["eine", "die"]
-    },
-    {
-      "sentence": "Hier links ist ___ großer Platz, das ist ___ Marienplatz.",
-      "answer": ["ein", "der"]
-    },
-    {
-      "sentence": "Am Marienplatz steht ___ Haus mit einem Turm, das ist ___ Rathaus.",
-      "answer": ["ein", "das"]
     }
   ]
 }

@@ -1,43 +1,45 @@
 
-.translate-container {
+.keinOrNicht-container {
   font-family: sans-serif;
 }
 
-.translate-container p {
+.keinOrNicht-container p {
   margin-bottom: 16px;
 }
 
-.translate-list {
+.keinOrNicht-list {
   list-style: none;
   padding: 0;
 }
 
-.translate-item {
+.keinOrNicht-item {
   display: block;
   margin-bottom: 16px;
 }
 
-.translate-sentence {
+.keinOrNicht-sentence {
   display: inline;
   margin-right: 8px;
 }
 
-.translate-input {
+
+.keinOrNicht-input {
   transition: all 0.7s ease;
   border: 2px solid #ccc;
   border-radius: 6px;
   padding: 6px 12px;
   font-size: 16px;
-  min-width: 6ch;
-  width: fit-content;
+  min-width: 6em;
   outline: none;
+  max-width: 40%;
+  width: auto;
 }
 
-.translate-input.correct {
+.keinOrNicht-input.correct {
   border-color: #6eea8d;
 }
 
-.translate-input.incorrect {
+.keinOrNicht-input.incorrect {
   border-color: red;
 }
 

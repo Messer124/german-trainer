@@ -10,6 +10,7 @@ const translations = {
       "past-tense": "Прошедшее время",
       "articles": "Склонение артиклей",
       "possessive-pronouns": "Притяжательные местоимения",
+      "keinOrNicht-sentences": "Kein или Nicht",
       "translate-sentences": "Перевод предложений"
     },
     labels: {
@@ -28,6 +29,7 @@ const translations = {
       "past-tense": "Past tense",
       "articles": "Article declension",
       "possessive-pronouns": "Possessive pronouns",
+      "keinOrNicht-sentences": "Kein or Nicht",
       "translate-sentences": "Translate sentences"
     },
     labels: {

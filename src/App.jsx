@@ -9,6 +9,7 @@ import WeakVerbConjugation from "./exercises/A1/WeakVerbConjugation";
 import ArticleDeclension from "./exercises/A1/ArticleDeclension";
 import NounArticles from "./exercises/A1/NounArticles";
 import PossessivePronouns from "./exercises/A1/PossessivePronouns";
+import KeinOrNicht from "./exercises/A1/KeinOrNicht";
 import Sidebar from "./components/Sidebar";
 
 import "./css/App.css";
@@ -21,6 +22,7 @@ const TABS = {
   "modal-verbs": { component: ModalVerbExercise },
   "articles": { component: ArticleDeclension },
   "possessive-pronouns": { component: PossessivePronouns },
+  "keinOrNicht-sentences": { component: KeinOrNicht },
   "translate-sentences": { component: TranslateSentences },
 };
 
@@ -32,6 +34,7 @@ const STORAGE_KEYS = {
   "articles": "articles",
   "modal-verbs": "modal-answers",
   "possessive-pronouns": "possessive-pronouns-answers",
+  "keinOrNicht-sentences": "keinOrNicht-sentences-answers",
   "irregular-verbs": "irregular-answers",
 };
 
