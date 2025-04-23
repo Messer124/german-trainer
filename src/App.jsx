@@ -3,7 +3,7 @@ import { useLocale } from "./contexts/LocaleContext";
 import translations from "./locales/locales";
 import ModalVerbExercise from "./exercises/A1/ModalVerbExercise";
 import StrongVerbsConjugation from "./exercises/A1/StrongVerbsConjugation";
-import HabenOderSein from "./exercises/A1/habenOderSein";
+import HabenOderSein from "./exercises/A1/HabenOderSein";
 import TranslateSentences from "./exercises/A1/TranslateSentences";
 import WeakVerbConjugation from "./exercises/A1/WeakVerbConjugation";
 import ArticleDeclension from "./exercises/A1/ArticleDeclension";
