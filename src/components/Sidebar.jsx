@@ -19,7 +19,9 @@ export default function Sidebar({ currentTab, setCurrentTab, tabTitles, tabs, lo
     useEffect(() => {
         if (headerRef.current && onHeaderHeight) {
             const observer = new ResizeObserver(() => {
-                onHeaderHeight(headerRef.current.offsetHeight);
+                if (headerRef.current) {
+                    onHeaderHeight(headerRef.current.offsetHeight);
+                }
             });
 
             observer.observe(headerRef.current);

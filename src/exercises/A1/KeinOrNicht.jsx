@@ -3,10 +3,13 @@ import { Eye } from "lucide-react";
 import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1/kein-nicht.json";
 import "../../css/A1/KeinOrNicht.css";
+import ModalImage from "../../components/ModalImage";
+import keinOrNichtImage from "../../../data/A1/images/kein-nicht.png";
 
 function KeinOrNichtSentences() {
     const STORAGE_KEY = "keinOrNicht-sentences-answers";
     const { locale } = useLocale();
+    const [showImage, setShowImage] = useState(false);
 
     const [answers, setAnswers] = useState(() => {
         const saved = localStorage.getItem(STORAGE_KEY);
@@ -30,6 +33,17 @@ function KeinOrNichtSentences() {
         return () => window.removeEventListener("clear-keinOrNicht-sentences", handleClear);
     }, []);
 
+    useEffect(() => {
+        const handleShowHint = () => {
+            setShowImage(true);
+        };
+
+        document.addEventListener("show-kein-nicht-hint", handleShowHint);
+        return () => {
+            document.removeEventListener("show-kein-nicht-hint", handleShowHint);
+        };
+    }, []);
+
     const handleChange = (index, value) => {
         const correct = data.items[index].answer.trim().toLowerCase();
         const isCorrect = value.trim().toLowerCase() === correct;
@@ -45,6 +59,13 @@ function KeinOrNichtSentences() {
 
     return (
         <div className="keinOrNicht-container">
+            {showImage && (
+                <ModalImage
+                    src={keinOrNichtImage}
+                    alt={locale === "ru" ? "Подсказка: kein или nicht" : "Hint: kein or nicht"}
+                    onClose={() => setShowImage(false)}
+                />
+            )}
             <ul className="keinOrNicht-list">
                 {data.items.map((item, index) => {
                     const key = `keinOrNicht-${index}`;
@@ -81,6 +102,15 @@ function KeinOrNichtSentences() {
         </div>
     );
 }
+
+KeinOrNichtSentences.headerButton = (
+    <button
+        onClick={() => document.dispatchEvent(new CustomEvent("show-kein-nicht-hint"))}
+        className="hint-button"
+    >
+        !
+    </button>
+);
 
 KeinOrNichtSentences.instructions = data.instructions;
 KeinOrNichtSentences.title = data.title;

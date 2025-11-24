@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { useLocale } from "./contexts/LocaleContext";
+import { useLevel } from "./contexts/LevelContext";
 import translations from "./locales/locales";
+
 import ModalVerbExercise from "./exercises/A1/ModalVerbExercise";
 import StrongVerbsConjugation from "./exercises/A1/StrongVerbsConjugation";
 import HabenOderSein from "./exercises/A1/HabenOderSein";
@@ -10,22 +12,29 @@ import ArticleDeclension from "./exercises/A1/ArticleDeclension";
 import NounArticles from "./exercises/A1/NounArticles";
 import PossessivePronouns from "./exercises/A1/PossessivePronouns";
 import KeinOrNicht from "./exercises/A1/KeinOrNicht";
+
 import Sidebar from "./components/Sidebar";
 
 import "./css/App.css";
 
-const TABS = {
-  "noun-articles": { component: NounArticles },
-  "haben-sein": { component: HabenOderSein },
-  "verb-conjugation": { component: WeakVerbConjugation },
-  "irregular-verbs": { component: StrongVerbsConjugation },
-  "modal-verbs": { component: ModalVerbExercise },
-  "articles": { component: ArticleDeclension },
-  "possessive-pronouns": { component: PossessivePronouns },
-  "keinOrNicht-sentences": { component: KeinOrNicht },
-  "translate-sentences": { component: TranslateSentences },
+// Вкладки по уровням
+const TABS_BY_LEVEL = {
+  "A1.1": {
+    "haben-sein": { component: HabenOderSein },
+    "verb-conjugation": { component: WeakVerbConjugation },
+    "irregular-verbs": { component: StrongVerbsConjugation },
+    "modal-verbs": { component: ModalVerbExercise },
+    "articles": { component: ArticleDeclension },
+    "possessive-pronouns": { component: PossessivePronouns },
+    "keinOrNicht-sentences": { component: KeinOrNicht },
+    "translate-sentences": { component: TranslateSentences },
+  },
+  "A1.2": {
+    "noun-articles": { component: NounArticles },
+  },
 };
 
+// ключи для очистки localStorage и отправки событий
 const STORAGE_KEYS = {
   "noun-articles": "noun-articles-answers",
   "haben-sein": "haben-sein-answers",
@@ -39,64 +48,102 @@ const STORAGE_KEYS = {
 };
 
 export default function App() {
+  const { locale } = useLocale();
+  const { level } = useLevel();
+
+  // Инициализация текущей вкладки с учётом уровня
   const [currentTab, setCurrentTab] = useState(() => {
-    const savedTab = localStorage.getItem("last-tab");
-    return savedTab && TABS[savedTab] ? savedTab : "noun-articles";
+    const tabsForLevel = TABS_BY_LEVEL[level] || TABS_BY_LEVEL["A1.1"];
+    const keys = Object.keys(tabsForLevel);
+    const savedTab = typeof window !== "undefined"
+        ? localStorage.getItem(`last-tab-${level}`)
+        : null;
+
+    return savedTab && tabsForLevel[savedTab] ? savedTab : keys[0];
   });
 
-  const { locale } = useLocale();
   const tabTitles = translations[locale].tabs;
   const contentRef = useRef(null);
   const [sidebarWidth, setSidebarWidth] = useState("250px");
   const [headerHeight, setHeaderHeight] = useState(0);
 
+  // При смене уровня проверяем, существует ли текущая вкладка в новом уровне
+  useEffect(() => {
+    const tabsForLevel = TABS_BY_LEVEL[level] || TABS_BY_LEVEL["A1.1"];
+    const keys = Object.keys(tabsForLevel);
 
-    useEffect(() => {
-    localStorage.setItem("last-tab", currentTab);
+    setCurrentTab((prev) => {
+      if (tabsForLevel[prev]) return prev;
+
+      const savedTab = typeof window !== "undefined"
+          ? localStorage.getItem(`last-tab-${level}`)
+          : null;
+
+      if (savedTab && tabsForLevel[savedTab]) return savedTab;
+
+      return keys[0];
+    });
+  }, [level]);
+
+  // Сохраняем последнюю вкладку для конкретного уровня + анимация смены
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem(`last-tab-${level}`, currentTab);
+      localStorage.setItem("last-level", level);
+    }
 
     const node = contentRef.current;
     if (!node) return;
 
     node.classList.remove("fade-in");
-    void node.offsetWidth;
+    void node.offsetWidth; // принудительный рефлоу
     node.classList.add("fade-in");
-  }, [currentTab]);
+  }, [currentTab, level]);
 
-  const Component = TABS[currentTab].component;
+  const tabsForLevel = TABS_BY_LEVEL[level] || TABS_BY_LEVEL["A1.1"];
+  if (!tabsForLevel[currentTab]) {
+    // берём первую доступную вкладку уровня
+    const first = Object.keys(tabsForLevel)[0];
+    setCurrentTab(first);
+    return null; // временно ничего не рендерим, пока состояние переключается
+  }
+  const Component = tabsForLevel[currentTab].component;
 
   const handleClearAnswers = () => {
     const key = STORAGE_KEYS[currentTab];
     if (key) {
-      localStorage.removeItem(key);
-      window.dispatchEvent(new CustomEvent(`clear-${key}`));
+      if (typeof window !== "undefined") {
+        localStorage.removeItem(key);
+        window.dispatchEvent(new CustomEvent(`clear-${key}`));
+      }
     }
   };
 
   return (
-      <div style={{ display: "flex"}}>
+      <div className="app-container">
         <Sidebar
             currentTab={currentTab}
             setCurrentTab={setCurrentTab}
             tabTitles={tabTitles}
-            tabs={TABS}
+            tabs={tabsForLevel}
             locale={locale}
             onClearAnswers={handleClearAnswers}
             onWidthChange={setSidebarWidth}
             headerButton={Component.headerButton}
-            instructions={Component.instructions[locale]}
-            headerTitle={Component.title[locale]}
+            instructions={Component.instructions?.[locale]}
+            headerTitle={Component.title?.[locale]}
             onHeaderHeight={setHeaderHeight}
-        >
-        </Sidebar>
+        />
 
         <div
             ref={contentRef}
             className="content fade-in"
             style={{
-                marginLeft: sidebarWidth,
-                marginTop: headerHeight,
-                transition: "margin-left 0.3s ease",
-                flexGrow: 1}}
+              marginLeft: sidebarWidth,
+              marginTop: headerHeight,
+              transition: "margin-left 0.3s ease",
+              flexGrow: 1,
+            }}
         >
           <Component key={currentTab} />
         </div>

@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1/noun_articles_with_gender_mismatch.json";
 import { useLocale } from "../../contexts/LocaleContext";
+import ModalImage from "../../components/ModalImage";
+import wordGenderImage from "../../../data/A1/images/wordGender.png";
 
 function NounArticles() {
   const { locale } = useLocale();
   const STORAGE_KEY = "noun-articles-answers";
+  const [showImage, setShowImage] = useState(false);
 
   const [answers, setAnswers] = useState(() => {
     try {
@@ -31,6 +34,19 @@ function NounArticles() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleShowHint = () => {
+      setShowImage(true);
+    };
+
+    document.addEventListener("show-noun-articles-hint", handleShowHint);
+
+    return () => {
+      document.removeEventListener("show-noun-articles-hint", handleShowHint);
+    };
+  }, []);
+
+
   const handleChange = (index, value) => {
     const correct = data.items[index].article.toLowerCase();
     setAnswers((prev) => ({
@@ -44,6 +60,17 @@ function NounArticles() {
 
   return (
     <div>
+      {showImage && (
+          <ModalImage
+              src={wordGenderImage}
+              alt={
+                locale === "ru"
+                    ? "Подсказка: артикли существительных"
+                    : "Hint: noun articles"
+              }
+              onClose={() => setShowImage(false)}
+          />
+      )}
       <ul style={{ listStyle: "none", padding: 0 }}>
         {data.items.map((item, index) => {
           const value = answers[index]?.value || "";
@@ -80,6 +107,17 @@ function NounArticles() {
     </div>
   );
 }
+
+NounArticles.headerButton = (
+    <button
+        onClick={() =>
+            document.dispatchEvent(new CustomEvent("show-noun-articles-hint"))
+        }
+        className="hint-button"
+    >
+      !
+    </button>
+);
 
 NounArticles.instructions = data.instructions;
 NounArticles.title = data.title;
