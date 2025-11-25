@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { Eye } from "lucide-react";
 import { useLocale } from "../../contexts/LocaleContext";
-import data from "../../../data/A1/translate-sentences.json";
-import "../../css/A1/TranslateSentences.css";
+import data from "../../../data/A1-1/kein-nicht.json";
+import "../../css/A1-1/KeinOrNicht.css";
+import ModalImage from "../../components/ModalImage";
+import keinOrNichtImage from "../../../data/A1-1/images/kein-nicht.png";
 
-function TranslateSentences() {
-    const STORAGE_KEY = "translate-sentences";
+function KeinOrNichtSentences() {
+    const STORAGE_KEY = "keinOrNicht-sentences-answers";
     const { locale } = useLocale();
+    const [showImage, setShowImage] = useState(false);
 
     const [answers, setAnswers] = useState(() => {
         const saved = localStorage.getItem(STORAGE_KEY);
@@ -26,14 +29,25 @@ function TranslateSentences() {
             setAnswers({});
             localStorage.removeItem(STORAGE_KEY);
         };
-        window.addEventListener("clear-translate-sentences", handleClear);
-        return () => window.removeEventListener("clear-translate-sentences", handleClear);
+        window.addEventListener("clear-keinOrNicht-sentences", handleClear);
+        return () => window.removeEventListener("clear-keinOrNicht-sentences", handleClear);
+    }, []);
+
+    useEffect(() => {
+        const handleShowHint = () => {
+            setShowImage(true);
+        };
+
+        document.addEventListener("show-kein-nicht-hint", handleShowHint);
+        return () => {
+            document.removeEventListener("show-kein-nicht-hint", handleShowHint);
+        };
     }, []);
 
     const handleChange = (index, value) => {
         const correct = data.items[index].answer.trim().toLowerCase();
         const isCorrect = value.trim().toLowerCase() === correct;
-        const key = `translate-${index}`;
+        const key = `keinOrNicht-${index}`;
         setAnswers((prev) => ({
             ...prev,
             [key]: {
@@ -44,20 +58,27 @@ function TranslateSentences() {
     };
 
     return (
-        <div className="translate-container">
-            <ul className="translate-list">
+        <div className="keinOrNicht-container">
+            {showImage && (
+                <ModalImage
+                    src={keinOrNichtImage}
+                    alt={locale === "ru" ? "Подсказка: kein или nicht" : "Hint: kein or nicht"}
+                    onClose={() => setShowImage(false)}
+                />
+            )}
+            <ul className="keinOrNicht-list">
                 {data.items.map((item, index) => {
-                    const key = `translate-${index}`;
+                    const key = `keinOrNicht-${index}`;
                     const correct = item.answer.trim().toLowerCase();
                     const value = answers[key]?.value?.trim().toLowerCase() || "";
                     const isCorrect = value === correct;
 
                     return (
-                        <li className="translate-item" key={index}>
-                            <span className="translate-sentence">{item.sentence[locale]}</span>
+                        <li className="keinOrNicht-item" key={index}>
+                            <span className="keinOrNicht-sentence">{item.sentence}</span>
                             <input
                                 type="text"
-                                className={`translate-input ${
+                                className={`keinOrNicht-input ${
                                     !answers[key] || answers[key].value === ""
                                         ? ""
                                         : isCorrect
@@ -82,6 +103,15 @@ function TranslateSentences() {
     );
 }
 
-TranslateSentences.instructions = data.instructions;
-TranslateSentences.title = data.title;
-export default TranslateSentences;
+KeinOrNichtSentences.headerButton = (
+    <button
+        onClick={() => document.dispatchEvent(new CustomEvent("show-kein-nicht-hint"))}
+        className="hint-button"
+    >
+        !
+    </button>
+);
+
+KeinOrNichtSentences.instructions = data.instructions;
+KeinOrNichtSentences.title = data.title;
+export default KeinOrNichtSentences;

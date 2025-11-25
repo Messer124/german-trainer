@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
-import data from "../../../data/A1/strong-verb-conjugation.json";
-import "../../css/A1/StrongVerbsConjugation.css";
+import data from "../../../data/A1-1/strong-verb-conjugation.json";
+import "../../css/A1-1/StrongVerbsConjugation.css";
 import ModalImage from "../../components/ModalImage";
-import strongVerbsImage from "../../../data/A1/images/strong-verbs-conj.png";
+import strongVerbsImage from "../../../data/A1-1/images/strong-verbs-conj.png";
 
 function StrongVerbsConjugation() {
   const { locale } = useLocale();

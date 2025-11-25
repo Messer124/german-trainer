@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import data from "../../../data/A1/past-tense.json";
+import data from "../../../data/A1-1/past-tense.json";
 
 function PastTense() {
   const STORAGE_KEY = "past-tense-answers";

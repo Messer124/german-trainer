@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import data from "../../../data/A1/noun_articles_with_gender_mismatch.json";
+import data from "../../../data/A1-2/noun_articles_with_gender_mismatch.json";
 import { useLocale } from "../../contexts/LocaleContext";
 import ModalImage from "../../components/ModalImage";
-import wordGenderImage from "../../../data/A1/images/wordGender.png";
+import wordGenderImage from "../../../data/A1-2/images/wordGender.png";
 
 function NounArticles() {
   const { locale } = useLocale();

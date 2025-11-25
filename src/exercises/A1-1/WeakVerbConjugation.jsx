@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
-import data from "../../../data/A1/weak-verb-conjugation.json";
-import "../../css/A1/WeakVerbConjugation.css";
+import data from "../../../data/A1-1/weak-verb-conjugation.json";
+import "../../css/A1-1/WeakVerbConjugation.css";
 import ModalImage from "../../components/ModalImage";
-import weakVerbsImage from "../../../data/A1/images/weak-verbs-conj.png";
+import weakVerbsImage from "../../../data/A1-1/images/weak-verbs-conj.png";
 
 function WeakVerbConjugation() {
     const STORAGE_KEY = "weak-verb-conjugation-answers";

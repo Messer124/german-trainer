@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
-import data from "../../../data/A1/posessive_pronouns.json";
+import data from "../../../data/A1-1/articleDeclension.json";
 import ModalImage from "../../components/ModalImage";
-import Sidebar from "../../components/Sidebar";
-import "../../css/A1/PossessivePronouns.css";
-import casesImage from "../../../data/A1/images/posessive_pronouns.png";
+import "../../css/A1-1/ArticleDeclension.css";
+import casesImage from "../../../data/A1-1/images/cases.jpg";
 
-function PossessivePronouns() {
-    const STORAGE_KEY = "possessive-pronouns-answers";
+function ArticleDeclension() {
+    const STORAGE_KEY = "articles-answers";
     const { locale } = useLocale();
 
     const [answers, setAnswers] = useState(() => {
@@ -26,14 +25,9 @@ function PossessivePronouns() {
     }, [answers]);
 
     useEffect(() => {
-        const handleClear = () => {
-            setAnswers({});
-        };
-
-        window.addEventListener("clear-possessive-pronouns-answers", handleClear);
-        return () => {
-            window.removeEventListener("clear-possessive-pronouns-answers", handleClear);
-        };
+        const handleClear = () => setAnswers({});
+        window.addEventListener("clear-articles", handleClear);
+        return () => window.removeEventListener("clear-articles", handleClear);
     }, []);
 
     useEffect(() => {
@@ -41,11 +35,12 @@ function PossessivePronouns() {
             setShowImage(true);
         };
 
-        document.addEventListener("show-possessive-hint", handleShowHint);
+        document.addEventListener("show-articleDeclension-hint", handleShowHint);
         return () => {
-            document.removeEventListener("show-possessive-hint", handleShowHint);
+            document.removeEventListener("show-articleDeclension-hint", handleShowHint);
         };
     }, []);
+
 
     const handleChange = (sentenceIdx, blankIdx, value) => {
         const correct = data.items[sentenceIdx].answer[blankIdx]?.toLowerCase();
@@ -113,15 +108,15 @@ function PossessivePronouns() {
     );
 }
 
-PossessivePronouns.headerButton = (
+ArticleDeclension.headerButton = (
     <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-possessive-hint"))}
+        onClick={() => document.dispatchEvent(new CustomEvent("show-articleDeclension-hint"))}
         className="hint-button"
     >
         !
     </button>
 );
 
-PossessivePronouns.instructions = data.instructions;
-PossessivePronouns.title = data.title;
-export default PossessivePronouns;
+ArticleDeclension.instructions = data.instructions;
+ArticleDeclension.title = data.title;
+export default ArticleDeclension;

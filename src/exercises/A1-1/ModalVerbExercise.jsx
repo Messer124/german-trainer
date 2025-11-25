@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
-import "./../../css/A1/ModalVerbExercise.css";
+import "../../css/A1-1/ModalVerbExercise.css";
 import ModalImage from "../../components/ModalImage";
-import modalVerbsImage from "../../../data/A1/images/modal-verbs.png";
+import modalVerbsImage from "../../../data/A1-1/images/modal-verbs.png";
 
 const pronouns = ["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"];
 

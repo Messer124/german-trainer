@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
-import data from "../../../data/A1/haben-sein.json";
+import data from "../../../data/A1-1/haben-sein.json";
 import ModalImage from "../../components/ModalImage";
-import habenSeinImage from "../../../data/A1/images/haben-sein.png";
-import "../../css/A1/habenOderSein.css";
+import habenSeinImage from "../../../data/A1-1/images/haben-sein.png";
+import "../../css/A1-1/habenOderSein.css";
 
 function HabenOderSein() {
   const STORAGE_KEY = "haben-sein-answers";

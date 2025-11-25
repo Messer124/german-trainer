@@ -3,19 +3,20 @@ import { useLocale } from "./contexts/LocaleContext";
 import { useLevel } from "./contexts/LevelContext";
 import translations from "./locales/locales";
 
-import ModalVerbExercise from "./exercises/A1/ModalVerbExercise";
-import StrongVerbsConjugation from "./exercises/A1/StrongVerbsConjugation";
-import HabenOderSein from "./exercises/A1/HabenOderSein";
-import TranslateSentences from "./exercises/A1/TranslateSentences";
-import WeakVerbConjugation from "./exercises/A1/WeakVerbConjugation";
-import ArticleDeclension from "./exercises/A1/ArticleDeclension";
-import NounArticles from "./exercises/A1/NounArticles";
-import PossessivePronouns from "./exercises/A1/PossessivePronouns";
-import KeinOrNicht from "./exercises/A1/KeinOrNicht";
+import ModalVerbExercise from "./exercises/A1-1/ModalVerbExercise";
+import StrongVerbsConjugation from "./exercises/A1-1/StrongVerbsConjugation";
+import HabenOderSein from "./exercises/A1-1/HabenOderSein";
+import TranslateSentences from "./exercises/A1-1/TranslateSentences";
+import WeakVerbConjugation from "./exercises/A1-1/WeakVerbConjugation";
+import ArticleDeclension from "./exercises/A1-1/ArticleDeclension";
+import NounArticles from "./exercises/A1-2/NounArticles";
+import PossessivePronouns from "./exercises/A1-1/PossessivePronouns";
+import KeinOrNicht from "./exercises/A1-1/KeinOrNicht";
 
 import Sidebar from "./components/Sidebar";
 
 import "./css/App.css";
+import TimeExercise from "./exercises/A1-2/TimeExercise";
 
 // Вкладки по уровням
 const TABS_BY_LEVEL = {
@@ -31,10 +32,10 @@ const TABS_BY_LEVEL = {
   },
   "A1.2": {
     "noun-articles": { component: NounArticles },
+    "time": { component: TimeExercise },
   },
 };
 
-// ключи для очистки localStorage и отправки событий
 const STORAGE_KEYS = {
   "noun-articles": "noun-articles-answers",
   "haben-sein": "haben-sein-answers",
@@ -45,6 +46,7 @@ const STORAGE_KEYS = {
   "possessive-pronouns": "possessive-pronouns-answers",
   "keinOrNicht-sentences": "keinOrNicht-sentences-answers",
   "irregular-verbs": "irregular-answers",
+  "time": "time-answers",
 };
 
 export default function App() {

@@ -11,7 +11,8 @@ const translations = {
       "articles": "Склонение артиклей",
       "possessive-pronouns": "Притяжательные местоимения",
       "keinOrNicht-sentences": "Kein или Nicht",
-      "translate-sentences": "Перевод предложений"
+      "translate-sentences": "Перевод предложений",
+      "time": "Время"
     },
     labels: {
       level: "Уровень",
@@ -30,7 +31,8 @@ const translations = {
       "articles": "Article declension",
       "possessive-pronouns": "Possessive pronouns",
       "keinOrNicht-sentences": "Kein or Nicht",
-      "translate-sentences": "Translate sentences"
+      "translate-sentences": "Translate sentences",
+      "time": "Time"
     },
     labels: {
       level: "Level",
