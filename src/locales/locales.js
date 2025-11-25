@@ -12,7 +12,8 @@ const translations = {
       "possessive-pronouns": "Притяжательные местоимения",
       "keinOrNicht-sentences": "Kein или Nicht",
       "translate-sentences": "Перевод предложений",
-      "time": "Время"
+      "time": "Время",
+      "plural-nouns": "Множественное число"
     },
     labels: {
       level: "Уровень",
@@ -32,7 +33,8 @@ const translations = {
       "possessive-pronouns": "Possessive pronouns",
       "keinOrNicht-sentences": "Kein or Nicht",
       "translate-sentences": "Translate sentences",
-      "time": "Time"
+      "time": "Time",
+      "plural-nouns": "Plural nouns"
     },
     labels: {
       level: "Level",
