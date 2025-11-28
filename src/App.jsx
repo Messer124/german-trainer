@@ -14,6 +14,7 @@ import PossessivePronouns from "./exercises/A1-1/PossessivePronouns";
 import KeinOrNicht from "./exercises/A1-1/KeinOrNicht";
 import PluralNounsExercise from "./exercises/A1-2/PluralNouns";
 import VerbsPreteritumPerfekt from "./exercises/A1-2/VerbsPreteritumPerfekt";
+import HabenSeinPreteritum from "./exercises/A1-2/HabenSeinPreteritum";
 
 import Sidebar from "./components/Sidebar";
 
@@ -37,6 +38,7 @@ const TABS_BY_LEVEL = {
     "time": { component: TimeExercise },
     "plural-nouns": { component: PluralNounsExercise },
     "verbs-preteritum-perfekt": { component: VerbsPreteritumPerfekt },
+    "haben-sein-preteritum": { component: HabenSeinPreteritum },
   },
 };
 
@@ -53,6 +55,7 @@ const STORAGE_KEYS = {
   "time": "time-answers",
   "plural-nouns": "plural-nouns-answers",
   "verbs-preteritum-perfekt": "verbs-preteritum-perfekt-answers",
+  "haben-sein-preteritum": "haben-sein-preteritum-answers",
 };
 
 export default function App() {
