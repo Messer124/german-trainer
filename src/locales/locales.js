@@ -13,7 +13,8 @@ const translations = {
       "keinOrNicht-sentences": "Kein или Nicht",
       "translate-sentences": "Перевод предложений",
       "time": "Время",
-      "plural-nouns": "Множественное число"
+      "plural-nouns": "Множественное число",
+      "verbs-preteritum-perfekt": "Глаголы в Präteritum и Perfekt"
     },
     labels: {
       level: "Уровень",
@@ -34,7 +35,8 @@ const translations = {
       "keinOrNicht-sentences": "Kein or Nicht",
       "translate-sentences": "Translate sentences",
       "time": "Time",
-      "plural-nouns": "Plural nouns"
+      "plural-nouns": "Plural nouns",
+      "verbs-preteritum-perfekt": "Verbs in Präteritum and Perfekt"
     },
     labels: {
       level: "Level",

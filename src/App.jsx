@@ -13,6 +13,7 @@ import NounArticles from "./exercises/A1-2/NounArticles";
 import PossessivePronouns from "./exercises/A1-1/PossessivePronouns";
 import KeinOrNicht from "./exercises/A1-1/KeinOrNicht";
 import PluralNounsExercise from "./exercises/A1-2/PluralNouns";
+import VerbsPreteritumPerfekt from "./exercises/A1-2/VerbsPreteritumPerfekt";
 
 import Sidebar from "./components/Sidebar";
 
@@ -35,6 +36,7 @@ const TABS_BY_LEVEL = {
     "noun-articles": { component: NounArticles },
     "time": { component: TimeExercise },
     "plural-nouns": { component: PluralNounsExercise },
+    "verbs-preteritum-perfekt": { component: VerbsPreteritumPerfekt },
   },
 };
 
@@ -50,6 +52,7 @@ const STORAGE_KEYS = {
   "irregular-verbs": "irregular-answers",
   "time": "time-answers",
   "plural-nouns": "plural-nouns-answers",
+  "verbs-preteritum-perfekt": "verbs-preteritum-perfekt-answers",
 };
 
 export default function App() {

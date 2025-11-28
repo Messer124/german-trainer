@@ -1,0 +1,422 @@
+{
+  "title": {
+    "ru": "Глаголы в Präteritum и Perfekt",
+    "en": "Verbs in Präteritum and Perfekt"
+  },
+  "instructions": {
+    "ru": "Заполните формы Präteritum и Partizip II (Perfekt) для каждого глагола.",
+    "en": "Fill in Präteritum and Partizip II (Perfekt) for each verb."
+  },
+  "items": [
+    {
+      "infinitive": "mögen",
+      "praeteritum": "mochte",
+      "perfekt": "gemocht"
+    },
+    {
+      "infinitive": "wissen",
+      "praeteritum": "wusste",
+      "perfekt": "gewusst"
+    },
+    {
+      "infinitive": "denken",
+      "praeteritum": "dachte",
+      "perfekt": "gedacht"
+    },
+    {
+      "infinitive": "bringen",
+      "praeteritum": "brachte",
+      "perfekt": "gebracht"
+    },
+    {
+      "infinitive": "kennen",
+      "praeteritum": "kannte",
+      "perfekt": "gekannt"
+    },
+    {
+      "infinitive": "brennen",
+      "praeteritum": "brannte",
+      "perfekt": "gebrannt"
+    },
+    {
+      "infinitive": "nennen",
+      "praeteritum": "nannte",
+      "perfekt": "genannt"
+    },
+    {
+      "infinitive": "rennen",
+      "praeteritum": "rannte",
+      "perfekt": "gerannt"
+    },
+    {
+      "infinitive": "denken",
+      "praeteritum": "dachte",
+      "perfekt": "gedacht"
+    },
+    {
+      "infinitive": "bringen",
+      "praeteritum": "brachte",
+      "perfekt": "gebracht"
+    },
+    {
+      "infinitive": "kennen",
+      "praeteritum": "kannte",
+      "perfekt": "gekannt"
+    },
+    {
+      "infinitive": "brennen",
+      "praeteritum": "brannte",
+      "perfekt": "gebrannt"
+    },
+    {
+      "infinitive": "nennen",
+      "praeteritum": "nannte",
+      "perfekt": "genannt"
+    },
+    {
+      "infinitive": "rennen",
+      "praeteritum": "rannte",
+      "perfekt": "gerannt"
+    },
+    {
+      "infinitive": "gehen",
+      "praeteritum": "ging",
+      "perfekt": "gegangen"
+    },
+    {
+      "infinitive": "stehen",
+      "praeteritum": "stand",
+      "perfekt": "gestanden"
+    },
+    {
+      "infinitive": "verstehen",
+      "praeteritum": "verstand",
+      "perfekt": "verstanden"
+    },
+    {
+      "infinitive": "tun",
+      "praeteritum": "tat",
+      "perfekt": "getan"
+    },
+    {
+      "infinitive": "essen",
+      "praeteritum": "aß",
+      "perfekt": "gegessen"
+    },
+    {
+      "infinitive": "fressen",
+      "praeteritum": "fraß",
+      "perfekt": "gefressen"
+    },
+    {
+      "infinitive": "geben",
+      "praeteritum": "gab",
+      "perfekt": "gegeben"
+    },
+    {
+      "infinitive": "lesen",
+      "praeteritum": "las",
+      "perfekt": "gelesen"
+    },
+    {
+      "infinitive": "sehen",
+      "praeteritum": "sah",
+      "perfekt": "gesehen"
+    },
+    {
+      "infinitive": "vergessen",
+      "praeteritum": "vergaß",
+      "perfekt": "vergessen"
+    },
+    {
+      "infinitive": "brechen",
+      "praeteritum": "brach",
+      "perfekt": "gebrochen"
+    },
+    {
+      "infinitive": "empfehlen",
+      "praeteritum": "empfahl",
+      "perfekt": "empfohlen"
+    },
+    {
+      "infinitive": "helfen",
+      "praeteritum": "half",
+      "perfekt": "geholfen"
+    },
+    {
+      "infinitive": "nehmen",
+      "praeteritum": "nahm",
+      "perfekt": "genommen"
+    },
+    {
+      "infinitive": "sprechen",
+      "praeteritum": "sprach",
+      "perfekt": "gesprochen"
+    },
+    {
+      "infinitive": "sterben",
+      "praeteritum": "starb",
+      "perfekt": "gestorben"
+    },
+    {
+      "infinitive": "treffen",
+      "praeteritum": "traf",
+      "perfekt": "getroffen"
+    },
+    {
+      "infinitive": "werden",
+      "praeteritum": "wurde",
+      "perfekt": "geworden"
+    },
+    {
+      "infinitive": "werfen",
+      "praeteritum": "warf",
+      "perfekt": "geworfen"
+    },
+    {
+      "infinitive": "ziehen",
+      "praeteritum": "zog",
+      "perfekt": "gezogen"
+    },
+    {
+      "infinitive": "bitten",
+      "praeteritum": "bat",
+      "perfekt": "gebeten"
+    },
+    {
+      "infinitive": "liegen",
+      "praeteritum": "lag",
+      "perfekt": "gelegen"
+    },
+    {
+      "infinitive": "bleiben",
+      "praeteritum": "blieb",
+      "perfekt": "geblieben"
+    },
+    {
+      "infinitive": "fahren",
+      "praeteritum": "fuhr",
+      "perfekt": "gefahren"
+    },
+    {
+      "infinitive": "fallen",
+      "praeteritum": "fiel",
+      "perfekt": "gefallen"
+    },
+    {
+      "infinitive": "fangen",
+      "praeteritum": "fing",
+      "perfekt": "gefangen"
+    },
+    {
+      "infinitive": "gehen",
+      "praeteritum": "ging",
+      "perfekt": "gegangen"
+    },
+    {
+      "infinitive": "kommen",
+      "praeteritum": "kam",
+      "perfekt": "gekommen"
+    },
+    {
+      "infinitive": "laufen",
+      "praeteritum": "lief",
+      "perfekt": "gelaufen"
+    },
+    {
+      "infinitive": "rufen",
+      "praeteritum": "rief",
+      "perfekt": "gerufen"
+    },
+    {
+      "infinitive": "schlafen",
+      "praeteritum": "schlief",
+      "perfekt": "geschlafen"
+    },
+    {
+      "infinitive": "schlagen",
+      "praeteritum": "schlug",
+      "perfekt": "geschlagen"
+    },
+    {
+      "infinitive": "schreiben",
+      "praeteritum": "schrieb",
+      "perfekt": "geschrieben"
+    },
+    {
+      "infinitive": "sehen",
+      "praeteritum": "sah",
+      "perfekt": "gesehen"
+    },
+    {
+      "infinitive": "singen",
+      "praeteritum": "sang",
+      "perfekt": "gesungen"
+    },
+    {
+      "infinitive": "sitzen",
+      "praeteritum": "saß",
+      "perfekt": "gesessen"
+    },
+    {
+      "infinitive": "sprechen",
+      "praeteritum": "sprach",
+      "perfekt": "gesprochen"
+    },
+    {
+      "infinitive": "stehen",
+      "praeteritum": "stand",
+      "perfekt": "gestanden"
+    },
+    {
+      "infinitive": "steigen",
+      "praeteritum": "stieg",
+      "perfekt": "gestiegen"
+    },
+    {
+      "infinitive": "tragen",
+      "praeteritum": "trug",
+      "perfekt": "getragen"
+    },
+    {
+      "infinitive": "treffen",
+      "praeteritum": "traf",
+      "perfekt": "getroffen"
+    },
+    {
+      "infinitive": "trinken",
+      "praeteritum": "trank",
+      "perfekt": "getrunken"
+    },
+    {
+      "infinitive": "tun",
+      "praeteritum": "tat",
+      "perfekt": "getan"
+    },
+    {
+      "infinitive": "vergessen",
+      "praeteritum": "vergaß",
+      "perfekt": "vergessen"
+    },
+    {
+      "infinitive": "verlieren",
+      "praeteritum": "verlor",
+      "perfekt": "verloren"
+    },
+    {
+      "infinitive": "ziehen",
+      "praeteritum": "zog",
+      "perfekt": "gezogen"
+    },
+    {
+      "infinitive": "backen",
+      "praeteritum": "backte",
+      "perfekt": "gebacken"
+    },
+    {
+      "infinitive": "befehlen",
+      "praeteritum": "befahl",
+      "perfekt": "befohlen"
+    },
+    {
+      "infinitive": "beginnen",
+      "praeteritum": "begann",
+      "perfekt": "begonnen"
+    },
+    {
+      "infinitive": "bieten",
+      "praeteritum": "bot",
+      "perfekt": "geboten"
+    },
+    {
+      "infinitive": "bitten",
+      "praeteritum": "bat",
+      "perfekt": "gebeten"
+    },
+    {
+      "infinitive": "blasen",
+      "praeteritum": "blies",
+      "perfekt": "geblasen"
+    },
+    {
+      "infinitive": "bleiben",
+      "praeteritum": "blieb",
+      "perfekt": "geblieben"
+    },
+    {
+      "infinitive": "braten",
+      "praeteritum": "briet",
+      "perfekt": "gebraten"
+    },
+    {
+      "infinitive": "brechen",
+      "praeteritum": "brach",
+      "perfekt": "gebrochen"
+    },
+    {
+      "infinitive": "empfehlen",
+      "praeteritum": "empfahl",
+      "perfekt": "empfohlen"
+    },
+    {
+      "infinitive": "essen",
+      "praeteritum": "aß",
+      "perfekt": "gegessen"
+    },
+    {
+      "infinitive": "fahren",
+      "praeteritum": "fuhr",
+      "perfekt": "gefahren"
+    },
+    {
+      "infinitive": "fangen",
+      "praeteritum": "fing",
+      "perfekt": "gefangen"
+    },
+    {
+      "infinitive": "finden",
+      "praeteritum": "fand",
+      "perfekt": "gefunden"
+    },
+    {
+      "infinitive": "geben",
+      "praeteritum": "gab",
+      "perfekt": "gegeben"
+    },
+    {
+      "infinitive": "gehen",
+      "praeteritum": "ging",
+      "perfekt": "gegangen"
+    },
+    {
+      "infinitive": "gelingen",
+      "praeteritum": "gelang",
+      "perfekt": "gelungen"
+    },
+    {
+      "infinitive": "geschehen",
+      "praeteritum": "geschah",
+      "perfekt": "geschehen"
+    },
+    {
+      "infinitive": "gewinnen",
+      "praeteritum": "gewann",
+      "perfekt": "gewonnen"
+    },
+    {
+      "infinitive": "gießen",
+      "praeteritum": "goss",
+      "perfekt": "gegossen"
+    },
+    {
+      "infinitive": "kriechen",
+      "praeteritum": "kroch",
+      "perfekt": "gekrochen"
+    },
+    {
+      "infinitive": "zwingen",
+      "praeteritum": "zwang",
+      "perfekt": "gezwungen"
+    }
+  ]
+}

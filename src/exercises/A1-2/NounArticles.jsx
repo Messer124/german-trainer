@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-2/noun_articles_with_gender_mismatch.json";
 import { useLocale } from "../../contexts/LocaleContext";
-import ModalImage from "../../components/ModalImage";
-import wordGenderImage from "../../../data/A1-2/images/wordGender.png";
+import ModalImageGallery from "../../components/ModalImageGallery";
+import pluralImage1 from "../../../data/A1-2/images/wordGender1.png";
+import pluralImage2 from "../../../data/A1-2/images/wordGender2.png";
 
 function NounArticles() {
   const { locale } = useLocale();
@@ -17,6 +18,13 @@ function NounArticles() {
       return {};
     }
   });
+
+  const [showGallery, setShowGallery] = useState(false);
+
+  const hintImages = [
+    { src: pluralImage1, alt: "Hint 1" },
+    { src: pluralImage2, alt: "Hint 2" },
+  ];
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
@@ -36,11 +44,10 @@ function NounArticles() {
 
   useEffect(() => {
     const handleShowHint = () => {
-      setShowImage(true);
+      setShowGallery(true);
     };
 
     document.addEventListener("show-noun-articles-hint", handleShowHint);
-
     return () => {
       document.removeEventListener("show-noun-articles-hint", handleShowHint);
     };
@@ -60,15 +67,10 @@ function NounArticles() {
 
   return (
     <div>
-      {showImage && (
-          <ModalImage
-              src={wordGenderImage}
-              alt={
-                locale === "ru"
-                    ? "Подсказка: артикли существительных"
-                    : "Hint: noun articles"
-              }
-              onClose={() => setShowImage(false)}
+      {showGallery && (
+          <ModalImageGallery
+              images={hintImages}
+              onClose={() => setShowGallery(false)}
           />
       )}
       <ul style={{ listStyle: "none", padding: 0 }}>
