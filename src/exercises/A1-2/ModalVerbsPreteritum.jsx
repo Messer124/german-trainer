@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import ModalImage from "../../components/ModalImage";
 
-import data from "../../../data/A1-2/habenSeinPreteritum.json";
-import habenSeinPreteritumImage from "../../../data/A1-2/images/habenSeinPreteritum.png";
+import data from "../../../data/A1-2/modalVerbsPreteritum.json";
+import modalVerbsImage from "../../../data/A1-2/images/modalVersPreteritum.png";
 import "../../css/A1-1/habenOderSein.css";
 
-function HabenSeinPreteritum() {
-  const STORAGE_KEY = "haben-sein-preteritum-answers";
+function ModalVerbsPreteritum() {
+  const STORAGE_KEY = "modal-verbs-preteritum-answers";
   const { locale } = useLocale();
 
   const [answers, setAnswers] = useState(() => {
@@ -21,6 +21,7 @@ function HabenSeinPreteritum() {
 
   const [showImage, setShowImage] = useState(false);
 
+  // сохраняем ответы
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
   }, [answers]);
@@ -31,45 +32,29 @@ function HabenSeinPreteritum() {
       localStorage.removeItem(STORAGE_KEY);
     };
 
-    window.addEventListener(
-        "clear-haben-sein-preteritum-answers",
-        handleClear
-    );
+    window.addEventListener("clear-modal-verbs-preteritum-answers", handleClear);
     return () => {
-      window.removeEventListener(
-          "clear-haben-sein-preteritum-answers",
-          handleClear
-      );
+      window.removeEventListener("clear-modal-verbs-preteritum-answers", handleClear);
     };
   }, []);
 
   useEffect(() => {
-    const handleShowHint = () => {
-      setShowImage(true);
-    };
+    const handleShowHint = () => setShowImage(true);
 
-    document.addEventListener(
-        "show-haben-sein-preteritum-hint",
-        handleShowHint
-    );
+    document.addEventListener("show-modal-verbs-preteritum-hint", handleShowHint);
     return () => {
-      document.removeEventListener(
-          "show-haben-sein-preteritum-hint",
-          handleShowHint
-      );
+      document.removeEventListener("show-modal-verbs-preteritum-hint", handleShowHint);
     };
   }, []);
 
   const handleChange = (index, value) => {
     const correct =
         data.items[0].items[index].answer.trim().toLowerCase();
+    const isCorrect = value.trim().toLowerCase() === correct;
 
     setAnswers((prev) => ({
       ...prev,
-      [index]: {
-        value,
-        isCorrect: value.trim().toLowerCase() === correct,
-      },
+      [index]: { value, isCorrect },
     }));
   };
 
@@ -77,11 +62,11 @@ function HabenSeinPreteritum() {
       <div className="haben-container">
         {showImage && (
             <ModalImage
-                src={habenSeinPreteritumImage}
+                src={modalVerbsImage}
                 alt={
                   locale === "ru"
-                      ? "Подсказка: haben / sein в Präteritum"
-                      : "Hint: haben / sein in Präteritum"
+                      ? "Подсказка: модальные глаголы в Präteritum"
+                      : "Hint: modal verbs in Präteritum"
                 }
                 onClose={() => setShowImage(false)}
             />
@@ -89,10 +74,19 @@ function HabenSeinPreteritum() {
 
         <ul className="haben-list">
           {data.items[0].items.map((item, index) => {
-            const value = answers[index]?.value || "";
-            const isCorrect = answers[index]?.isCorrect;
+            const stored = answers[index];
+            const value = stored?.value || "";
+            const trimmed = value.trim();
+            const isCorrect = stored?.isCorrect;
 
             const parts = item.sentence.split("___");
+
+            const inputClass =
+                trimmed === ""
+                    ? "haben-input"
+                    : isCorrect
+                        ? "haben-input correct"
+                        : "haben-input incorrect";
 
             return (
                 <li key={index} className="haben-item">
@@ -101,13 +95,10 @@ function HabenSeinPreteritum() {
                       type="text"
                       value={value}
                       onChange={(e) => handleChange(index, e.target.value)}
-                      className={`haben-input ${
-                          value === ""
-                              ? ""
-                              : isCorrect
-                                  ? "correct"
-                                  : "incorrect"
-                      }`}
+                      className={inputClass}
+                      style={{
+                        width: `${Math.max(trimmed.length + 1, 6)}ch`,
+                      }}
                   />
                   {parts[1]}
                 </li>
@@ -118,11 +109,11 @@ function HabenSeinPreteritum() {
   );
 }
 
-HabenSeinPreteritum.headerButton = (
+ModalVerbsPreteritum.headerButton = (
     <button
         onClick={() =>
             document.dispatchEvent(
-                new CustomEvent("show-haben-sein-preteritum-hint")
+                new CustomEvent("show-modal-verbs-preteritum-hint")
             )
         }
         className="hint-button"
@@ -131,8 +122,7 @@ HabenSeinPreteritum.headerButton = (
     </button>
 );
 
-HabenSeinPreteritum.instructions = data.instructions;
-HabenSeinPreteritum.title = data.title;
+ModalVerbsPreteritum.instructions = data.instructions;
+ModalVerbsPreteritum.title = data.title;
 
-export default HabenSeinPreteritum;
-
+export default ModalVerbsPreteritum;

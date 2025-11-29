@@ -15,6 +15,7 @@ import KeinOrNicht from "./exercises/A1-1/KeinOrNicht";
 import PluralNounsExercise from "./exercises/A1-2/PluralNouns";
 import VerbsPreteritumPerfekt from "./exercises/A1-2/VerbsPreteritumPerfekt";
 import HabenSeinPreteritum from "./exercises/A1-2/HabenSeinPreteritum";
+import ModalVerbsPreteritum from "./exercises/A1-2/ModalVerbsPreteritum";
 
 import Sidebar from "./components/Sidebar";
 
@@ -39,6 +40,7 @@ const TABS_BY_LEVEL = {
     "plural-nouns": { component: PluralNounsExercise },
     "verbs-preteritum-perfekt": { component: VerbsPreteritumPerfekt },
     "haben-sein-preteritum": { component: HabenSeinPreteritum },
+    "modal-verbs-preteritum": { component: ModalVerbsPreteritum },
   },
 };
 
@@ -56,6 +58,7 @@ const STORAGE_KEYS = {
   "plural-nouns": "plural-nouns-answers",
   "verbs-preteritum-perfekt": "verbs-preteritum-perfekt-answers",
   "haben-sein-preteritum": "haben-sein-preteritum-answers",
+  "modal-verbs-preteritum": "modal-verbs-preteritum-answers",
 };
 
 export default function App() {

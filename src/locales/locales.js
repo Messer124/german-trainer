@@ -15,7 +15,8 @@ const translations = {
       "time": "Время",
       "plural-nouns": "Множественное число",
       "verbs-preteritum-perfekt": "Глаголы в Präteritum и Perfekt",
-      "haben-sein-preteritum": "Haben и Sein в Präteritum"
+      "haben-sein-preteritum": "Haben и Sein в Präteritum",
+      "modal-verbs-preteritum": "Модальные глаголы в Präteritum"
     },
     labels: {
       level: "Уровень",
@@ -38,7 +39,8 @@ const translations = {
       "time": "Time",
       "plural-nouns": "Plural nouns",
       "verbs-preteritum-perfekt": "Verbs in Präteritum and Perfekt",
-      "haben-sein-preteritum": "Haben and Sein in Präteritum"
+      "haben-sein-preteritum": "Haben and Sein in Präteritum",
+      "modal-verbs-preteritum": "Modal verbs in Präteritum"
     },
     labels: {
       level: "Level",

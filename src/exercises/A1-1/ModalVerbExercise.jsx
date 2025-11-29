@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import "../../css/A1-1/ModalVerbExercise.css";
 import ModalImage from "../../components/ModalImage";
-import modalVerbsImage from "../../../data/A1-1/images/modal-verbs.png";
+import modalVerbsImage1 from "../../../data/A1-1/images/modal-verbs.png";
+import modalVerbsImage2 from "../../../data/A1-1/images/modal-verbs-2.png";
+import ModalImageGallery from "../../components/ModalImageGallery";
 
 const pronouns = ["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"];
 
@@ -41,6 +43,13 @@ function ModalVerbExercise() {
         return saved || {};
     });
 
+    const [showGallery, setShowGallery] = useState(false);
+
+    const hintImages = [
+        { src: modalVerbsImage1, alt: "Hint 1" },
+        { src: modalVerbsImage2, alt: "Hint 2" },
+    ];
+
     useEffect(() => {
         localStorage.setItem("modal-answers", JSON.stringify(answers));
     }, [answers]);
@@ -76,11 +85,9 @@ function ModalVerbExercise() {
 
     return (
         <div>
-
             {showImage && (
-                <ModalImage
-                    src={modalVerbsImage}
-                    alt="Modal verb chart"
+                <ModalImageGallery
+                    images={hintImages}
                     onClose={() => setShowImage(false)}
                 />
             )}

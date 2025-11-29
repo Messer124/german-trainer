@@ -1,0 +1,65 @@
+{
+  "title": {
+    "ru": "Модальные глаголы в Präteritum",
+    "en": "Modal verbs in Präteritum"
+  },
+  "instructions": {
+    "ru": "Вставьте правильный модальный глагол в Präteritum.",
+    "en": "Insert the correct modal verb into the Präteritum."
+  },
+  "items": [
+    {
+      "items": [
+        { "sentence": "Ich ___ gestern lange arbeiten.", "answer": "musste" },
+        { "sentence": "Wir ___ das Fenster nicht öffnen.", "answer": "durften" },
+        { "sentence": "Er ___ gestern nicht kommen.", "answer": "konnte" },
+        { "sentence": "Anna ___ früher nach Hause gehen.", "answer": "wollte" },
+        { "sentence": "Die Kinder ___ gestern länger draußen bleiben.", "answer": "durften" },
+        { "sentence": "Du ___ mir gestern nicht helfen, oder?", "answer": "konntest" },
+        { "sentence": "Peter ___ das Buch nicht finden.", "answer": "konnte" },
+        { "sentence": "Wir ___ sofort antworten.", "answer": "mussten" },
+        { "sentence": "Ich ___ gestern kein Fleisch essen.", "answer": "wollte" },
+        { "sentence": "Ihr ___ im Unterricht nicht sprechen.", "answer": "durftet" },
+        { "sentence": "Maria ___ das Fenster schließen.", "answer": "musste" },
+        { "sentence": "Die Schüler ___ die Aufgabe alleine machen.", "answer": "sollten" },
+        { "sentence": "Er ___ früher schlafen gehen.", "answer": "sollte" },
+        { "sentence": "Wir ___ gestern keinen Kaffee trinken.", "answer": "wollten" },
+        { "sentence": "Ich ___ gestern kein Geld abheben.", "answer": "konnte" },
+        { "sentence": "Die Gäste ___ lange warten.", "answer": "mussten" },
+        { "sentence": "Du ___ das nicht tun, das war verboten.", "answer": "durftest" },
+        { "sentence": "Sie ___ ihre Eltern besuchen.", "answer": "wollte" },
+        { "sentence": "Wir ___ das Meeting absagen.", "answer": "mussten" },
+        { "sentence": "Die Kinder ___ früher ins Bett.", "answer": "sollten" },
+        { "sentence": "Ich ___ gestern lange bleiben.", "answer": "konnte" },
+        { "sentence": "Ihr ___ kein Handy im Unterricht benutzen.", "answer": "durftet" },
+        { "sentence": "Thomas ___ die Präsentation vorbereiten.", "answer": "musste" },
+        { "sentence": "Wir ___ ein neues Projekt anfangen.", "answer": "wollten" },
+        { "sentence": "Sie ___ niemanden stören.", "answer": "sollten" },
+        { "sentence": "Ich ___ gestern viel lernen.", "answer": "musste" },
+        { "sentence": "Die Katze ___ nicht ins Haus.", "answer": "durfte" },
+        { "sentence": "Wir ___ das Passwort nicht finden.", "answer": "konnten" },
+        { "sentence": "Er ___ gestern nicht arbeiten.", "answer": "wollte" },
+        { "sentence": "Die beiden ___ in der Bibliothek leise sein.", "answer": "mussten" },
+        { "sentence": "Meine Eltern ___ gestern früh aufstehen.", "answer": "mussten" },
+        { "sentence": "Ich ___ leider nicht mitfahren.", "answer": "konnte" },
+        { "sentence": "Wir ___ das Licht nicht ausschalten.", "answer": "durften" },
+        { "sentence": "Die Teilnehmer ___ pünktlich kommen.", "answer": "sollten" },
+        { "sentence": "Eva ___ gestern lange telefonieren.", "answer": "wollte" },
+        { "sentence": "Der Junge ___ seine Hausaufgaben machen.", "answer": "musste" },
+        { "sentence": "Ihr ___ den Raum nicht verlassen.", "answer": "durftet" },
+        { "sentence": "Ich ___ das Problem schnell lösen.", "answer": "konnte" },
+        { "sentence": "Die Mitarbeiter ___ Überstunden machen.", "answer": "mussten" },
+        { "sentence": "Paula ___ gestern kein Auto fahren.", "answer": "wollte" },
+        { "sentence": "Wir ___ am Abend niemanden stören.", "answer": "durften" },
+        { "sentence": "Die Gruppe ___ zusammen arbeiten.", "answer": "sollte" },
+        { "sentence": "Du ___ die Tür leise schließen.", "answer": "solltest" },
+        { "sentence": "Der Hund ___ nicht auf das Bett.", "answer": "durfte" },
+        { "sentence": "Ich ___ gestern sehr früh schlafen gehen.", "answer": "musste" },
+        { "sentence": "Die Touristen ___ kein Deutsch sprechen.", "answer": "konnten" },
+        { "sentence": "Mein Bruder ___ das Paket abholen.", "answer": "musste" },
+        { "sentence": "Wir ___ gestern lange im Stau stehen.", "answer": "mussten" },
+        { "sentence": "Sie ___ das Angebot nicht akzeptieren.", "answer": "wollte" }
+      ]
+    }
+  ]
+}
