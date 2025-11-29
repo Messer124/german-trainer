@@ -1,27 +1,15 @@
 import { useState, useEffect } from "react";
-import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-1/strong-verb-conjugation.json";
 import "../../css/A1-1/StrongVerbsConjugation.css";
 import ModalImage from "../../components/ModalImage";
 import strongVerbsImage from "../../../data/A1-1/images/strong-verbs-conj.png";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+
+const STORAGE_KEY = "irregular-verbs-answers";
 
 function StrongVerbsConjugation() {
-  const { locale } = useLocale();
   const [showImage, setShowImage] = useState(false);
-  const [answers, setAnswers] = useState(() => {
-    const saved = localStorage.getItem("irregular-answers");
-    return saved ? JSON.parse(saved) : {};
-  });
-
-  useEffect(() => {
-    localStorage.setItem("irregular-answers", JSON.stringify(answers));
-  }, [answers]);
-
-  useEffect(() => {
-    const handleClear = () => setAnswers({});
-    window.addEventListener("clear-irregular-answers", handleClear);
-    return () => window.removeEventListener("clear-irregular-answers", handleClear);
-  }, []);
+  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
   useEffect(() => {
     const handleShowHint = () => {

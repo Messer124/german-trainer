@@ -1,40 +1,15 @@
 import { useState, useEffect } from "react";
-import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-1/posessive_pronouns.json";
 import ModalImage from "../../components/ModalImage";
-import Sidebar from "../../components/Sidebar";
 import "../../css/A1-1/PossessivePronouns.css";
 import casesImage from "../../../data/A1-1/images/posessive_pronouns.png";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+
+const STORAGE_KEY = "possessive-pronouns-answers";
 
 function PossessivePronouns() {
-    const STORAGE_KEY = "possessive-pronouns-answers";
-    const { locale } = useLocale();
-
-    const [answers, setAnswers] = useState(() => {
-        try {
-            const saved = localStorage.getItem(STORAGE_KEY);
-            return saved ? JSON.parse(saved) : {};
-        } catch {
-            return {};
-        }
-    });
-
+    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showImage, setShowImage] = useState(false);
-
-    useEffect(() => {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-    }, [answers]);
-
-    useEffect(() => {
-        const handleClear = () => {
-            setAnswers({});
-        };
-
-        window.addEventListener("clear-possessive-pronouns-answers", handleClear);
-        return () => {
-            window.removeEventListener("clear-possessive-pronouns-answers", handleClear);
-        };
-    }, []);
 
     useEffect(() => {
         const handleShowHint = () => {

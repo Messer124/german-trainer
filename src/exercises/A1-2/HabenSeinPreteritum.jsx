@@ -1,47 +1,19 @@
 import { useEffect, useState } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import ModalImage from "../../components/ModalImage";
-
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/habenSeinPreteritum.json";
-import habenSeinPreteritumImage from "../../../data/A1-2/images/habenSeinPreteritum.png";
+import hint from "../../../data/A1-2/images/habenSeinPreteritum.png";
 import "../../css/A1-1/habenOderSein.css";
 
+const STORAGE_KEY = "haben-sein-preteritum-answers";
+
 function HabenSeinPreteritum() {
-  const STORAGE_KEY = "haben-sein-preteritum-answers";
   const { locale } = useLocale();
 
-  const [answers, setAnswers] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    try {
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
+  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
   const [showImage, setShowImage] = useState(false);
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-  }, [answers]);
-
-  useEffect(() => {
-    const handleClear = () => {
-      setAnswers({});
-      localStorage.removeItem(STORAGE_KEY);
-    };
-
-    window.addEventListener(
-        "clear-haben-sein-preteritum-answers",
-        handleClear
-    );
-    return () => {
-      window.removeEventListener(
-          "clear-haben-sein-preteritum-answers",
-          handleClear
-      );
-    };
-  }, []);
 
   useEffect(() => {
     const handleShowHint = () => {
@@ -77,7 +49,7 @@ function HabenSeinPreteritum() {
       <div className="haben-container">
         {showImage && (
             <ModalImage
-                src={habenSeinPreteritumImage}
+                src={hint}
                 alt={
                   locale === "ru"
                       ? "Подсказка: haben / sein в Präteritum"

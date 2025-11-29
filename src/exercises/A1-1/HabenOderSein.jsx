@@ -1,28 +1,15 @@
 import { useState, useEffect } from "react";
-import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-1/haben-sein.json";
 import ModalImage from "../../components/ModalImage";
 import habenSeinImage from "../../../data/A1-1/images/haben-sein.png";
 import "../../css/A1-1/habenOderSein.css";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+
+const STORAGE_KEY = "haben-sein-answers";
 
 function HabenOderSein() {
-  const STORAGE_KEY = "haben-sein-answers";
-  const { locale } = useLocale();
-
-  const [answers, setAnswers] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    try {
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
-
+  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showImage, setShowImage] = useState(false);
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-  }, [answers]);
 
   useEffect(() => {
     const handleShowHint = () => {
@@ -34,12 +21,6 @@ function HabenOderSein() {
         document.removeEventListener("show-habenOderSein-hint", handleShowHint);
     };
     }, []);
-
-  useEffect(() => {
-    const handleClear = () => setAnswers({});
-    window.addEventListener("clear-haben-sein-answers", handleClear);
-    return () => window.removeEventListener("clear-haben-sein-answers", handleClear);
-  }, []);
 
   const handleChange = (index, value) => {
     const correct = data.items[index].answer.trim().toLowerCase();

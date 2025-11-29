@@ -1,42 +1,19 @@
 import { useEffect, useState } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import ModalImage from "../../components/ModalImage";
-
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/modalVerbsPreteritum.json";
 import modalVerbsImage from "../../../data/A1-2/images/modalVersPreteritum.png";
 import "../../css/A1-1/habenOderSein.css";
 
+const STORAGE_KEY = "modal-verbs-preteritum-answers";
+
 function ModalVerbsPreteritum() {
-  const STORAGE_KEY = "modal-verbs-preteritum-answers";
   const { locale } = useLocale();
 
-  const [answers, setAnswers] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    try {
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
+  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
   const [showImage, setShowImage] = useState(false);
-
-  // сохраняем ответы
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-  }, [answers]);
-
-  useEffect(() => {
-    const handleClear = () => {
-      setAnswers({});
-      localStorage.removeItem(STORAGE_KEY);
-    };
-
-    window.addEventListener("clear-modal-verbs-preteritum-answers", handleClear);
-    return () => {
-      window.removeEventListener("clear-modal-verbs-preteritum-answers", handleClear);
-    };
-  }, []);
 
   useEffect(() => {
     const handleShowHint = () => setShowImage(true);

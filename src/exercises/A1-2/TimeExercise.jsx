@@ -5,34 +5,14 @@ import ModalImage from "../../components/ModalImage";
 import data from "../../../data/A1-2/time.json";
 import timeImage from "../../../data/A1-2/images/timeRules.png";
 import "../../css/A1-2/TimeExercise.css";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+
+const STORAGE_KEY = "time-answers";
 
 function TimeExercise() {
-  const STORAGE_KEY = "time-answers";
   const { locale } = useLocale();
   const [showImage, setShowImage] = useState(false);
-
-  const [answers, setAnswers] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    try {
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-  }, [answers]);
-
-  useEffect(() => {
-    const handleClear = () => {
-      setAnswers({});
-      localStorage.removeItem(STORAGE_KEY);
-    };
-
-    window.addEventListener("clear-time-answers", handleClear);
-    return () => window.removeEventListener("clear-time-answers", handleClear);
-  }, []);
+  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
   useEffect(() => {
     const handleShowHint = () => {

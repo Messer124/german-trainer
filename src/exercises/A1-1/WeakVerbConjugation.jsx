@@ -1,33 +1,15 @@
 import { useState, useEffect } from "react";
-import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-1/weak-verb-conjugation.json";
 import "../../css/A1-1/WeakVerbConjugation.css";
 import ModalImage from "../../components/ModalImage";
 import weakVerbsImage from "../../../data/A1-1/images/weak-verbs-conj.png";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+
+const STORAGE_KEY = "weak-verb-conjugation-answers";
 
 function WeakVerbConjugation() {
-    const STORAGE_KEY = "weak-verb-conjugation-answers";
-    const { locale } = useLocale();
     const [showImage, setShowImage] = useState(false);
-
-    const [answers, setAnswers] = useState(() => {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        try {
-            return saved ? JSON.parse(saved) : {};
-        } catch {
-            return {};
-        }
-    });
-
-    useEffect(() => {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-    }, [answers]);
-
-    useEffect(() => {
-        const handleClear = () => setAnswers({});
-        window.addEventListener("clear-verb-conjugation", handleClear);
-        return () => window.removeEventListener("clear-verb-conjugation", handleClear);
-    }, []);
+    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
     useEffect(() => {
         const handleShowHint = () => {

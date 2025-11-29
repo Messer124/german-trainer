@@ -1,34 +1,14 @@
-import { useEffect, useState } from "react";
 import { Eye } from "lucide-react";
 import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-1/translate-sentences.json";
 import "../../css/A1-1/TranslateSentences.css";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+
+const STORAGE_KEY = "translate-sentences-answers";
 
 function TranslateSentences() {
-    const STORAGE_KEY = "translate-sentences";
     const { locale } = useLocale();
-
-    const [answers, setAnswers] = useState(() => {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        try {
-            return saved ? JSON.parse(saved) : {};
-        } catch {
-            return {};
-        }
-    });
-
-    useEffect(() => {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-    }, [answers]);
-
-    useEffect(() => {
-        const handleClear = () => {
-            setAnswers({});
-            localStorage.removeItem(STORAGE_KEY);
-        };
-        window.addEventListener("clear-translate-sentences", handleClear);
-        return () => window.removeEventListener("clear-translate-sentences", handleClear);
-    }, []);
+    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
     const handleChange = (index, value) => {
         const correct = data.items[index].answer.trim().toLowerCase();

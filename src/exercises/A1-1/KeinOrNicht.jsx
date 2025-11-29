@@ -5,33 +5,14 @@ import data from "../../../data/A1-1/kein-nicht.json";
 import "../../css/A1-1/KeinOrNicht.css";
 import ModalImage from "../../components/ModalImage";
 import keinOrNichtImage from "../../../data/A1-1/images/kein-nicht.png";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+
+const STORAGE_KEY = "keinOrNicht-sentences-answers";
 
 function KeinOrNichtSentences() {
-    const STORAGE_KEY = "keinOrNicht-sentences-answers";
     const { locale } = useLocale();
     const [showImage, setShowImage] = useState(false);
-
-    const [answers, setAnswers] = useState(() => {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        try {
-            return saved ? JSON.parse(saved) : {};
-        } catch {
-            return {};
-        }
-    });
-
-    useEffect(() => {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-    }, [answers]);
-
-    useEffect(() => {
-        const handleClear = () => {
-            setAnswers({});
-            localStorage.removeItem(STORAGE_KEY);
-        };
-        window.addEventListener("clear-keinOrNicht-sentences", handleClear);
-        return () => window.removeEventListener("clear-keinOrNicht-sentences", handleClear);
-    }, []);
+    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
     useEffect(() => {
         const handleShowHint = () => {

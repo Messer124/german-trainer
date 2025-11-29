@@ -2,45 +2,21 @@ import { useState, useEffect } from "react";
 import data from "../../../data/A1-2/noun_articles_with_gender_mismatch.json";
 import { useLocale } from "../../contexts/LocaleContext";
 import ModalImageGallery from "../../components/ModalImageGallery";
-import pluralImage1 from "../../../data/A1-2/images/wordGender1.png";
-import pluralImage2 from "../../../data/A1-2/images/wordGender2.png";
+import image1 from "../../../data/A1-2/images/wordGender1.png";
+import image2 from "../../../data/A1-2/images/wordGender2.png";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+
+const STORAGE_KEY = "noun-articles-answers";
 
 function NounArticles() {
+
   const { locale } = useLocale();
-  const STORAGE_KEY = "noun-articles-answers";
-  const [showImage, setShowImage] = useState(false);
-
-  const [answers, setAnswers] = useState(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
-
+  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showGallery, setShowGallery] = useState(false);
-
   const hintImages = [
-    { src: pluralImage1, alt: "Hint 1" },
-    { src: pluralImage2, alt: "Hint 2" },
+    { src: image1, alt: "Hint 1" },
+    { src: image2, alt: "Hint 2" },
   ];
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-  }, [answers]);
-
-  useEffect(() => {
-    const handleClear = () => {
-      setAnswers({});
-    };
-  
-    window.addEventListener("clear-noun-articles-answers", handleClear);
-  
-    return () => {
-      window.removeEventListener("clear-noun-articles-answers", handleClear);
-    };
-  }, []);
 
   useEffect(() => {
     const handleShowHint = () => {
@@ -52,7 +28,6 @@ function NounArticles() {
       document.removeEventListener("show-noun-articles-hint", handleShowHint);
     };
   }, []);
-
 
   const handleChange = (index, value) => {
     const correct = data.items[index].article.toLowerCase();

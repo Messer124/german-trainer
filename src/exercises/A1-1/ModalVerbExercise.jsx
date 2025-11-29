@@ -1,21 +1,21 @@
 import { useState, useEffect } from "react";
-import { useLocale } from "../../contexts/LocaleContext";
 import "../../css/A1-1/ModalVerbExercise.css";
-import ModalImage from "../../components/ModalImage";
-import modalVerbsImage1 from "../../../data/A1-1/images/modal-verbs.png";
-import modalVerbsImage2 from "../../../data/A1-1/images/modal-verbs-2.png";
+import image1 from "../../../data/A1-1/images/modal-verbs.png";
+import image2 from "../../../data/A1-1/images/modal-verbs-2.png";
 import ModalImageGallery from "../../components/ModalImageGallery";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const pronouns = ["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"];
+const STORAGE_KEY = "modal-verbs-answers";
 
 const modalVerbs = {
-    müssen: ["muss", "musst", "muss", "müssen", "müsst"],
+    "müssen": ["muss", "musst", "muss", "müssen", "müsst"],
     sollen: ["soll", "sollst", "soll", "sollen", "sollt"],
-    können: ["kann", "kannst", "kann", "können", "könnt"],
-    dürfen: ["darf", "darfst", "darf", "dürfen", "dürft"],
+    "können": ["kann", "kannst", "kann", "können", "könnt"],
+    "dürfen": ["darf", "darfst", "darf", "dürfen", "dürft"],
     wollen: ["will", "willst", "will", "wollen", "wollt"],
-    möchten: ["möchte", "möchtest", "möchte", "möchten", "möchtet"],
-    mögen: ["mag", "magst", "mag", "mögen", "mögt"]
+    "möchten": ["möchte", "möchtest", "möchte", "möchten", "möchtet"],
+    "mögen": ["mag", "magst", "mag", "mögen", "mögt"]
 };
 
 const data = {
@@ -31,34 +31,8 @@ const data = {
 
 
 function ModalVerbExercise() {
-    const { locale } = useLocale();
     const [showImage, setShowImage] = useState(false);
-    const [answers, setAnswers] = useState(() => {
-        let saved = localStorage.getItem("modal-answers");
-        try {
-            saved = JSON.parse(saved);
-        } catch (e) {
-            saved = null;
-        }
-        return saved || {};
-    });
-
-    const [showGallery, setShowGallery] = useState(false);
-
-    const hintImages = [
-        { src: modalVerbsImage1, alt: "Hint 1" },
-        { src: modalVerbsImage2, alt: "Hint 2" },
-    ];
-
-    useEffect(() => {
-        localStorage.setItem("modal-answers", JSON.stringify(answers));
-    }, [answers]);
-
-    useEffect(() => {
-        const handleClear = () => setAnswers({});
-        window.addEventListener("clear-modal-answers", handleClear);
-        return () => window.removeEventListener("clear-modal-answers", handleClear);
-    }, []);
+    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
     useEffect(() => {
         const handleShowHint = () => {
@@ -87,7 +61,10 @@ function ModalVerbExercise() {
         <div>
             {showImage && (
                 <ModalImageGallery
-                    images={hintImages}
+                    images={[
+                        { src: image1, alt: "Hint 1" },
+                        { src: image2, alt: "Hint 2" },
+                    ]}
                     onClose={() => setShowImage(false)}
                 />
             )}

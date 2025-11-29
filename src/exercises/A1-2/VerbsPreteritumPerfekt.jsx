@@ -5,41 +5,15 @@ import data from "../../../data/A1-2/irregular verbs.json";
 import "../../css/A1-1/StrongVerbsConjugation.css";
 import modalImage from "../../../data/A1-2/images/preteritum.png";
 import { Eye } from "lucide-react";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
+const STORAGE_KEY = "verbs-preteritum-perfekt-answers";
 
 function VerbsPreteritumPerfekt() {
   const { locale } = useLocale();
-  const STORAGE_KEY = "verbs-preteritum-perfekt-answers";
-
   const [showImage, setShowImage] = useState(false);
+  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
-  const [answers, setAnswers] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    try {
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-  }, [answers]);
-
-  // очистка через кнопку "Очистить ответы" в сайдбаре
-  useEffect(() => {
-    const handleClear = () => {
-      setAnswers({});
-      localStorage.removeItem(STORAGE_KEY);
-    };
-
-    window.addEventListener("clear-verbs-preteritum-perfekt-answers", handleClear);
-    return () => {
-      window.removeEventListener("clear-verbs-preteritum-perfekt-answers", handleClear);
-    };
-  }, []);
-
-  // показ подсказки с картинкой preteritum.png
   useEffect(() => {
     const handleShowHint = () => {
       setShowImage(true);

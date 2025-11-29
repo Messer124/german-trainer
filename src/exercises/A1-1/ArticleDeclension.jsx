@@ -1,34 +1,15 @@
 import { useState, useEffect } from "react";
-import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-1/articleDeclension.json";
 import ModalImage from "../../components/ModalImage";
 import "../../css/A1-1/ArticleDeclension.css";
 import casesImage from "../../../data/A1-1/images/cases.jpg";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+
+const STORAGE_KEY = "articles-answers";
 
 function ArticleDeclension() {
-    const STORAGE_KEY = "articles-answers";
-    const { locale } = useLocale();
-
-    const [answers, setAnswers] = useState(() => {
-        try {
-            const saved = localStorage.getItem(STORAGE_KEY);
-            return saved ? JSON.parse(saved) : {};
-        } catch {
-            return {};
-        }
-    });
-
+    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showImage, setShowImage] = useState(false);
-
-    useEffect(() => {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-    }, [answers]);
-
-    useEffect(() => {
-        const handleClear = () => setAnswers({});
-        window.addEventListener("clear-articles", handleClear);
-        return () => window.removeEventListener("clear-articles", handleClear);
-    }, []);
 
     useEffect(() => {
         const handleShowHint = () => {

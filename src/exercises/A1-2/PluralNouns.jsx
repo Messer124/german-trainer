@@ -2,48 +2,35 @@ import { useEffect, useState } from "react";
 import { Eye } from "lucide-react";
 import { useLocale } from "../../contexts/LocaleContext";
 import ModalImageGallery from "../../components/ModalImageGallery";
+import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/pluralNouns.json";
 import "../../css/A1-2/PluralNouns.css";
 import pluralImage1 from "../../../data/A1-2/images/pluralNouns1.png";
 import pluralImage2 from "../../../data/A1-2/images/pluralNouns2.png";
 
+const STORAGE_KEY = "plural-nouns-answers";
+
 function PluralNounsExercise() {
-  const STORAGE_KEY = "plural-nouns-answers";
   const { locale } = useLocale();
 
-  const [answers, setAnswers] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    try {
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
+  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
   const [showGallery, setShowGallery] = useState(false);
 
-  const hintImages = [
-    { src: pluralImage1, alt: "Множественное число: подсказка 1" },
-    { src: pluralImage2, alt: "Множественное число: подсказка 2" },
-  ];
+  const hintImagesByLocale = {
+    ru: [
+      { src: pluralImage1, alt: "Множественное число: подсказка 1" },
+      { src: pluralImage2, alt: "Множественное число: подсказка 2" },
+    ],
+    en: [
+      { src: pluralImage1, alt: "Plural nouns: hint 1" },
+      { src: pluralImage2, alt: "Plural nouns: hint 2" },
+    ],
+  };
 
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(answers));
-  }, [answers]);
+  const hintImages = hintImagesByLocale[locale] || hintImagesByLocale.ru;
 
-  // очистка через кнопку "Очистить ответы" в сайдбаре
-  useEffect(() => {
-    const handleClear = () => {
-      setAnswers({});
-      localStorage.removeItem(STORAGE_KEY);
-    };
-
-    window.addEventListener("clear-plural-nouns-answers", handleClear);
-    return () => {
-      window.removeEventListener("clear-plural-nouns-answers", handleClear);
-    };
-  }, []);
-
+  // 4) Подсказка по глобальному событию (оставляем на этом этапе)
   useEffect(() => {
     const handleShowHint = () => {
       setShowGallery(true);
@@ -73,6 +60,7 @@ function PluralNounsExercise() {
                 onClose={() => setShowGallery(false)}
             />
         )}
+
         <ul className="plural-list">
           {data.items.map((item, index) => {
             const stored = answers[index];
@@ -100,11 +88,11 @@ function PluralNounsExercise() {
                   />
 
                   <span className="tooltip-container">
-                                <span>
-                                    <Eye size={18} />
-                                </span>
-                                <span className="tooltip">{item.plural}</span>
-                            </span>
+                    <span>
+                        <Eye size={18} />
+                    </span>
+                    <span className="tooltip">{item.plural}</span>
+                  </span>
                 </li>
             );
           })}
@@ -113,8 +101,10 @@ function PluralNounsExercise() {
   );
 }
 
+// Кнопка подсказки для сайдбара
 PluralNounsExercise.headerButton = (
     <button
+        type="button"
         onClick={() =>
             document.dispatchEvent(new CustomEvent("show-plural-nouns-hint"))
         }
