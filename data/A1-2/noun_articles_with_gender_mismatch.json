@@ -52,8 +52,8 @@
       "word": "___ Raum",
       "article": "der",
       "translation": {
-        "ru": "комната",
-        "en": "room"
+        "ru": "пространство",
+        "en": "room, space"
       }
     },
     {
@@ -769,14 +769,6 @@
       }
     },
     {
-      "word": "___ Lebenden",
-      "article": "die",
-      "translation": {
-        "ru": "живые",
-        "en": "the living"
-      }
-    },
-    {
       "word": "___ Richtung",
       "article": "die",
       "translation": {
@@ -1044,8 +1036,8 @@
       "word": "___ Gate",
       "article": "die",
       "translation": {
-        "ru": "выход",
-        "en": "gate"
+        "ru": "выход на посадку",
+        "en": "boarding gate"
       }
     },
     {

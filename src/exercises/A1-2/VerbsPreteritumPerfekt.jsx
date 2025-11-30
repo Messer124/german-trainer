@@ -1,27 +1,34 @@
 import { useState, useEffect } from "react";
-import { useLocale } from "../../contexts/LocaleContext";
-import ModalImage from "../../components/ModalImage";
+import ModalImageGallery from "../../components/ModalImageGallery";
 import data from "../../../data/A1-2/irregular verbs.json";
 import "../../css/A1-1/StrongVerbsConjugation.css";
-import modalImage from "../../../data/A1-2/images/preteritum.png";
+import image1 from "../../../data/A1-2/images/preteritum.png";
+import image2 from "../../../data/A1-2/images/partizip2.png";
 import { Eye } from "lucide-react";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "verbs-preteritum-perfekt-answers";
 
 function VerbsPreteritumPerfekt() {
-  const { locale } = useLocale();
-  const [showImage, setShowImage] = useState(false);
+  const [showGallery, setShowGallery] = useState(false);
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
+  const hintImages = [
+    { src: image1, alt: "Hint" },
+    { src: image2, alt: "Hint" },
+  ];
 
   useEffect(() => {
-    const handleShowHint = () => {
-      setShowImage(true);
-    };
+    const handleShowHint = () => setShowGallery(true);
 
-    document.addEventListener("show-verbs-preteritum-perfekt-hint", handleShowHint);
+    document.addEventListener(
+        "show-verbs-preteritum-perfekt-hint",
+        handleShowHint
+    );
     return () => {
-      document.removeEventListener("show-verbs-preteritum-perfekt-hint", handleShowHint);
+      document.removeEventListener(
+          "show-verbs-preteritum-perfekt-hint",
+          handleShowHint
+      );
     };
   }, []);
 
@@ -41,15 +48,10 @@ function VerbsPreteritumPerfekt() {
 
   return (
       <div>
-        {showImage && (
-            <ModalImage
-                src={modalImage}
-                alt={
-                  locale === "ru"
-                      ? "Подсказка по Präteritum и Perfekt"
-                      : "Hint: Präteritum and Perfekt"
-                }
-                onClose={() => setShowImage(false)}
+        {showGallery && (
+            <ModalImageGallery
+                images={hintImages}
+                onClose={() => setShowGallery(false)}
             />
         )}
 

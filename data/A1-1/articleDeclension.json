@@ -53,7 +53,7 @@
     { "sentence": "Ich sehe ___ Zug.", "answer": ["den"] },
     { "sentence": "Wir danken ___ Kellner.", "answer": ["dem"] },
     { "sentence": "Sie besucht ___ Freundin.", "answer": ["die"] },
-    { "sentence": "Er fragt ___ Polizist nach dem Weg.", "answer": ["den"] },
+    { "sentence": "Er fragt ___ Polizist nach ___ Weg.", "answer": ["den", "dem"] },
     { "sentence": "Ich sitze auf ___ Stuhl.", "answer": ["dem"] },
     { "sentence": "Sie arbeitet in ___ Schule.", "answer": ["der"] },
     { "sentence": "Er liest ___ Zeitung.", "answer": ["die"] },

@@ -12,7 +12,7 @@
   "items": [
     { "time": "07:30", "answer": "halb acht" },
     { "time": "10:20", "answer": "zwanzig nach zehn" },
-    { "time": "09:35", "answer": "fünf nach halb acht" },
+    { "time": "09:35", "answer": "fünf nach halb zehn" },
     { "time": "15:30", "answer": "halb vier" },
     { "time": "02:40", "answer": "zwanzig vor drei" },
     { "time": "07:55", "answer": "fünf vor acht" },
