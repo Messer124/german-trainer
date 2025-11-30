@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useLocale } from "../../contexts/LocaleContext";
 import ModalImage from "../../components/ModalImage";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/modalVerbsPreteritum.json";
@@ -9,10 +8,7 @@ import "../../css/A1-1/habenOderSein.css";
 const STORAGE_KEY = "modal-verbs-preteritum-answers";
 
 function ModalVerbsPreteritum() {
-  const { locale } = useLocale();
-
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-
   const [showImage, setShowImage] = useState(false);
 
   useEffect(() => {
@@ -39,12 +35,7 @@ function ModalVerbsPreteritum() {
       <div className="haben-container">
         {showImage && (
             <ModalImage
-                src={modalVerbsImage}
-                alt={
-                  locale === "ru"
-                      ? "Подсказка: модальные глаголы в Präteritum"
-                      : "Hint: modal verbs in Präteritum"
-                }
+                src={modalVerbsImage} alt="Hint"
                 onClose={() => setShowImage(false)}
             />
         )}
@@ -76,6 +67,7 @@ function ModalVerbsPreteritum() {
                       style={{
                         width: `${Math.max(trimmed.length + 1, 6)}ch`,
                       }}
+                      placeholder={item.verb}
                   />
                   {parts[1]}
                 </li>
