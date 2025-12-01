@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/posessive_pronouns.json";
 import ModalImage from "../../components/ModalImage";
-import "../../css/A1-1/PossessivePronouns.css";
+import "../../css/exercises/Common.css";
 import casesImage from "../../../data/A1-1/images/posessive_pronouns.png";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -16,9 +16,9 @@ function PossessivePronouns() {
             setShowImage(true);
         };
 
-        document.addEventListener("show-possessive-hint", handleShowHint);
+        document.addEventListener("show-hint", handleShowHint);
         return () => {
-            document.removeEventListener("show-possessive-hint", handleShowHint);
+            document.removeEventListener("show-hint", handleShowHint);
         };
     }, []);
 
@@ -38,13 +38,13 @@ function PossessivePronouns() {
         const parts = sentence.split("___");
 
         return (
-            <li key={sentenceIdx} className="article-declension-list-item">
+            <li key={sentenceIdx}>
                 {parts.map((part, idx) => {
                     const key = `${sentenceIdx}-${idx}`;
                     const inputValue = answers[key]?.value || "";
                     const isCorrect = answers[key]?.isCorrect;
 
-                    let inputClass = "article-declension-input";
+                    let inputClass = "input";
                     if (inputValue !== "") {
                         inputClass += isCorrect ? " correct" : " incorrect";
                     }
@@ -70,27 +70,28 @@ function PossessivePronouns() {
     };
 
     return (
-        <div>
+        <div className="exercise-inner">
             {showImage && (
                 <ModalImage
                     src={casesImage}
-                    alt="Case chart"
+                    alt="Hint"
                     onClose={() => setShowImage(false)}
                 />
             )}
-
-            <ul className="article-declension-list">
+            <div className="scroll-container">
+            <ul className="list">
                 {data.items.map((item, idx) =>
                     renderSentence(item.sentence, item.answer, idx)
                 )}
             </ul>
+        </div>
         </div>
     );
 }
 
 PossessivePronouns.headerButton = (
     <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-possessive-hint"))}
+        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
         className="hint-button"
     >
         !

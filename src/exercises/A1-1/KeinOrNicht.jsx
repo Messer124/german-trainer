@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
 import { Eye } from "lucide-react";
-import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-1/kein-nicht.json";
-import "../../css/A1-1/KeinOrNicht.css";
+import "../../css/exercises/Common.css";
 import ModalImage from "../../components/ModalImage";
-import keinOrNichtImage from "../../../data/A1-1/images/kein-nicht.png";
+import hintImage from "../../../data/A1-1/images/kein-nicht.png";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "keinOrNicht-sentences-answers";
 
 function KeinOrNichtSentences() {
-    const { locale } = useLocale();
     const [showImage, setShowImage] = useState(false);
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
@@ -19,9 +17,9 @@ function KeinOrNichtSentences() {
             setShowImage(true);
         };
 
-        document.addEventListener("show-kein-nicht-hint", handleShowHint);
+        document.addEventListener("show-hint", handleShowHint);
         return () => {
-            document.removeEventListener("show-kein-nicht-hint", handleShowHint);
+            document.removeEventListener("show-hint", handleShowHint);
         };
     }, []);
 
@@ -39,54 +37,56 @@ function KeinOrNichtSentences() {
     };
 
     return (
-        <div className="keinOrNicht-container">
+        <div className="exercise-inner">
             {showImage && (
                 <ModalImage
-                    src={keinOrNichtImage}
-                    alt={locale === "ru" ? "Подсказка: kein или nicht" : "Hint: kein or nicht"}
+                    src={hintImage}
+                    alt="Hint"
                     onClose={() => setShowImage(false)}
                 />
             )}
-            <ul className="keinOrNicht-list">
-                {data.items.map((item, index) => {
-                    const key = `keinOrNicht-${index}`;
-                    const correct = item.answer.trim().toLowerCase();
-                    const value = answers[key]?.value?.trim().toLowerCase() || "";
-                    const isCorrect = value === correct;
+            <div className="scroll-container">
+                <ul className="list">
+                    {data.items.map((item, index) => {
+                        const key = `keinOrNicht-${index}`;
+                        const correct = item.answer.trim().toLowerCase();
+                        const value = answers[key]?.value?.trim().toLowerCase() || "";
+                        const isCorrect = value === correct;
 
-                    return (
-                        <li className="keinOrNicht-item" key={index}>
-                            <span className="keinOrNicht-sentence">{item.sentence}</span>
-                            <input
-                                type="text"
-                                className={`keinOrNicht-input ${
-                                    !answers[key] || answers[key].value === ""
-                                        ? ""
-                                        : isCorrect
-                                            ? "correct"
-                                            : "incorrect"
-                                }`}
-                                value={answers[key]?.value || ""}
-                                onChange={(e) => handleChange(index, e.target.value)}
-                                style={{
-                                    width: `${Math.max(value.length + 1, 6)}ch`
-                                }}
-                            />
-                            <span className="tooltip-container">
-                                <span> <Eye size={18}/> </span>
-                                <span className="tooltip">{item.answer}</span>
-                            </span>
-                        </li>
-                    );
-                })}
-            </ul>
+                        return (
+                            <li key={index}>
+                                <span className="sentence">{item.sentence}</span>
+                                <input
+                                    type="text"
+                                    className={`autosize-input ${
+                                        !answers[key] || answers[key].value === ""
+                                            ? ""
+                                            : isCorrect
+                                                ? "correct"
+                                                : "incorrect"
+                                    }`}
+                                    value={answers[key]?.value || ""}
+                                    onChange={(e) => handleChange(index, e.target.value)}
+                                    style={{
+                                        width: `${Math.max(value.length + 1, 6)}ch`
+                                    }}
+                                />
+                                <span className="eye-container">
+                                    <span> <Eye size={18}/> </span>
+                                    <span className="eye">{item.answer}</span>
+                                </span>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
         </div>
     );
 }
 
 KeinOrNichtSentences.headerButton = (
     <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-kein-nicht-hint"))}
+        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
         className="hint-button"
     >
         !

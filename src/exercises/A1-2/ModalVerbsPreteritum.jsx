@@ -3,7 +3,7 @@ import ModalImage from "../../components/ModalImage";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/modalVerbsPreteritum.json";
 import modalVerbsImage from "../../../data/A1-2/images/modalVersPreteritum.png";
-import "../../css/A1-1/habenOderSein.css";
+import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "modal-verbs-preteritum-answers";
 
@@ -14,9 +14,9 @@ function ModalVerbsPreteritum() {
   useEffect(() => {
     const handleShowHint = () => setShowImage(true);
 
-    document.addEventListener("show-modal-verbs-preteritum-hint", handleShowHint);
+    document.addEventListener("show-hint", handleShowHint);
     return () => {
-      document.removeEventListener("show-modal-verbs-preteritum-hint", handleShowHint);
+      document.removeEventListener("show-hint", handleShowHint);
     };
   }, []);
 
@@ -32,48 +32,49 @@ function ModalVerbsPreteritum() {
   };
 
   return (
-      <div className="haben-container">
+      <div className="exercise-inner">
         {showImage && (
             <ModalImage
                 src={modalVerbsImage} alt="Hint"
                 onClose={() => setShowImage(false)}
             />
         )}
+          <div className="scroll-container">
+            <ul className="list">
+              {data.items[0].items.map((item, index) => {
+                const stored = answers[index];
+                const value = stored?.value || "";
+                const trimmed = value.trim();
+                const isCorrect = stored?.isCorrect;
 
-        <ul className="haben-list">
-          {data.items[0].items.map((item, index) => {
-            const stored = answers[index];
-            const value = stored?.value || "";
-            const trimmed = value.trim();
-            const isCorrect = stored?.isCorrect;
+                const parts = item.sentence.split("___");
 
-            const parts = item.sentence.split("___");
+                const inputClass =
+                    trimmed === ""
+                        ? "input"
+                        : isCorrect
+                            ? "input correct"
+                            : "input incorrect";
 
-            const inputClass =
-                trimmed === ""
-                    ? "haben-input"
-                    : isCorrect
-                        ? "haben-input correct"
-                        : "haben-input incorrect";
-
-            return (
-                <li key={index} className="haben-item">
-                  {parts[0]}
-                  <input
-                      type="text"
-                      value={value}
-                      onChange={(e) => handleChange(index, e.target.value)}
-                      className={inputClass}
-                      style={{
-                        width: `${Math.max(trimmed.length + 1, 6)}ch`,
-                      }}
-                      placeholder={item.verb}
-                  />
-                  {parts[1]}
-                </li>
-            );
-          })}
-        </ul>
+                return (
+                    <li key={index}>
+                      {parts[0]}
+                      <input
+                          type="text"
+                          value={value}
+                          onChange={(e) => handleChange(index, e.target.value)}
+                          className={inputClass}
+                          style={{
+                            width: `${Math.max(trimmed.length + 1, 6)}ch`,
+                          }}
+                          placeholder={item.verb}
+                      />
+                      {parts[1]}
+                    </li>
+                );
+              })}
+            </ul>
+        </div>
       </div>
   );
 }
@@ -82,7 +83,7 @@ ModalVerbsPreteritum.headerButton = (
     <button
         onClick={() =>
             document.dispatchEvent(
-                new CustomEvent("show-modal-verbs-preteritum-hint")
+                new CustomEvent("show-hint")
             )
         }
         className="hint-button"

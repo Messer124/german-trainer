@@ -1,0 +1,38 @@
+:root {
+    /* === Цвета фона === */
+    --color-bg-body: #f2f2f7;
+    --color-bg-surface: #ffffff;
+    --color-bg-surface-muted: #f2f2f7;
+
+    /* === Текст === */
+    --color-text-primary: #1c1c1e;
+    --color-text-secondary: #555555;
+    --color-text-muted: #666666;
+
+    /* === Бордеры === */
+    --color-border-subtle: rgba(0, 0, 0, 0.15);
+    --color-border-light: #cccccc;
+
+    /* === Акценты === */
+    --color-accent: #4ea1f3;
+    --color-accent-bg: #e9eaec;
+
+    /* === Статусы (для инпутов упражнений) === */
+    --color-correct: #6eea8d;
+    --color-correct-bg: #e6fff1;
+    --color-incorrect: red;
+    --color-incorrect-bg: #ffecec;
+
+    /* === Радиусы === */
+    --radius-s: 8px;
+    --radius-m: 14px;
+    --radius-l: 18px;
+    --radius-card: 16px;
+
+    /* === Тени === */
+    --shadow-card: 0 18px 40px rgba(15, 23, 42, 0.16),
+    0 0 1px rgba(15, 23, 42, 0.2);
+
+    /* === Прочее === */
+    --tab-padding-x: 18px;
+}

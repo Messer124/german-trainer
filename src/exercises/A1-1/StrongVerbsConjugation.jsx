@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/strong-verb-conjugation.json";
-import "../../css/A1-1/StrongVerbsConjugation.css";
+import "../../css/exercises/Common.css";
 import ModalImage from "../../components/ModalImage";
 import strongVerbsImage from "../../../data/A1-1/images/strong-verbs-conj.png";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
@@ -16,28 +16,28 @@ function StrongVerbsConjugation() {
       setShowImage(true);
     };
 
-    document.addEventListener("show-strongVerbs-hint", handleShowHint);
+    document.addEventListener("show-hint", handleShowHint);
     return () => {
-      document.removeEventListener("show-strongVerbs-hint", handleShowHint);
+      document.removeEventListener("show-hint", handleShowHint);
     };
   }, []);
 
   return (
-      <div>
+      <div className="exercise-inner">
 
         {showImage && (
             <ModalImage
                 src={strongVerbsImage}
-                alt="Strong verb chart"
+                alt="Hint"
                 onClose={() => setShowImage(false)}
             />
         )}
 
-        <div className="strong-table-wrapper">
-          <table className="strong-table">
+        <div className="table-wrapper">
+          <table className="table">
             <thead>
             <tr>
-              <th className="infinitive">Infinitiv</th>
+              <th>Infinitiv</th>
               <th>ich</th>
               <th>du</th>
               <th>er/sie/es</th>
@@ -48,7 +48,7 @@ function StrongVerbsConjugation() {
             <tbody>
             {data.items.map((item, index) => (
                 <tr key={index}>
-                  <td className="infinitive">{item.sentence}</td>
+                  <td>{item.sentence}</td>
                   {["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"].map((pronoun) => {
                     const inputKey = `irregular-verbs-${index}-${pronoun}`;
                     const correct = item.answers[pronoun]?.toLowerCase();
@@ -69,13 +69,12 @@ function StrongVerbsConjugation() {
                                     }
                                   }))
                               }
-                              className={
-                                !answers[inputKey] || answers[inputKey].value === ""
-                                    ? ""
-                                    : isCorrect
-                                        ? "correct"
-                                        : "incorrect"
-                              }
+                              className={`table-input ${!answers[inputKey] || answers[inputKey].value === ""
+                                  ? ""
+                                  : isCorrect
+                                      ? "correct"
+                                      : "incorrect"
+                              }`}
                           />
                         </td>
                     );
@@ -91,7 +90,7 @@ function StrongVerbsConjugation() {
 
 StrongVerbsConjugation.headerButton = (
     <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-strongVerbs-hint"))}
+        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
         className="hint-button"
     >
       !

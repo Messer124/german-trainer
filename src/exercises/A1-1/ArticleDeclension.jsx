@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/articleDeclension.json";
 import ModalImage from "../../components/ModalImage";
-import "../../css/A1-1/ArticleDeclension.css";
+import "../../css/exercises/Common.css";
 import casesImage from "../../../data/A1-1/images/cases.jpg";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -16,9 +16,9 @@ function ArticleDeclension() {
             setShowImage(true);
         };
 
-        document.addEventListener("show-articleDeclension-hint", handleShowHint);
+        document.addEventListener("show-hint", handleShowHint);
         return () => {
-            document.removeEventListener("show-articleDeclension-hint", handleShowHint);
+            document.removeEventListener("show-hint", handleShowHint);
         };
     }, []);
 
@@ -39,13 +39,13 @@ function ArticleDeclension() {
         const parts = sentence.split("___");
 
         return (
-            <li key={sentenceIdx} className="article-declension-list-item">
+            <li key={sentenceIdx} className="list-item">
                 {parts.map((part, idx) => {
                     const key = `${sentenceIdx}-${idx}`;
                     const inputValue = answers[key]?.value || "";
                     const isCorrect = answers[key]?.isCorrect;
 
-                    let inputClass = "article-declension-input";
+                    let inputClass = "input";
                     if (inputValue !== "") {
                         inputClass += isCorrect ? " correct" : " incorrect";
                     }
@@ -71,27 +71,28 @@ function ArticleDeclension() {
     };
 
     return (
-        <div>
+        <div className="exercise-inner">
             {showImage && (
                 <ModalImage
                     src={casesImage}
-                    alt="Case chart"
+                    alt="Hint"
                     onClose={() => setShowImage(false)}
                 />
             )}
-
-            <ul className="article-declension-list">
-                {data.items.map((item, idx) =>
-                    renderSentence(item.sentence, item.answer, idx)
-                )}
-            </ul>
+            <div className="scroll-container">
+                <ul className="list">
+                    {data.items.map((item, idx) =>
+                        renderSentence(item.sentence, item.answer, idx)
+                    )}
+                </ul>
+            </div>
         </div>
     );
 }
 
 ArticleDeclension.headerButton = (
     <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-articleDeclension-hint"))}
+        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
         className="hint-button"
     >
         !

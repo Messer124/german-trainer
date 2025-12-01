@@ -5,14 +5,15 @@ import ModalImageGallery from "../../components/ModalImageGallery";
 import image1 from "../../../data/A1-2/images/wordGender1.png";
 import image2 from "../../../data/A1-2/images/wordGender2.png";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "noun-articles-answers";
 
 function NounArticles() {
-
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showGallery, setShowGallery] = useState(false);
+
   const hintImages = [
     { src: image1, alt: "Hint 1" },
     { src: image2, alt: "Hint 2" },
@@ -23,14 +24,15 @@ function NounArticles() {
       setShowGallery(true);
     };
 
-    document.addEventListener("show-noun-articles-hint", handleShowHint);
+    document.addEventListener("show-hint", handleShowHint);
     return () => {
-      document.removeEventListener("show-noun-articles-hint", handleShowHint);
+      document.removeEventListener("show-hint", handleShowHint);
     };
   }, []);
 
   const handleChange = (index, value) => {
     const correct = data.items[index].article.toLowerCase();
+
     setAnswers((prev) => ({
       ...prev,
       [index]: {
@@ -41,54 +43,49 @@ function NounArticles() {
   };
 
   return (
-    <div>
-      {showGallery && (
-          <ModalImageGallery
-              images={hintImages}
-              onClose={() => setShowGallery(false)}
-          />
-      )}
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        {data.items.map((item, index) => {
-          const value = answers[index]?.value || "";
-          const isCorrect = answers[index]?.isCorrect;
+      <div className="exercise-inner">
+        {showGallery && (
+            <ModalImageGallery
+                images={hintImages}
+                onClose={() => setShowGallery(false)}
+            />
+        )}
+        <div className="scroll-container">
+          <ul className="list">
+            {data.items.map((item, index) => {
+              const value = answers[index]?.value || "";
+              const isCorrect = answers[index]?.isCorrect;
 
-          return (
-            <li key={index} style={{ marginBottom: 14 }}>
-              <input
-                type="text"
-                value={value}
-                onChange={(e) => handleChange(index, e.target.value)}
-                style={{
-                  width: "4ch",
-                  textAlign: "center",
-                  marginRight: 12,
-                  padding: "6px",
-                  borderRadius: "6px",
-                  border: "2px solid",
-                  outline: "none",
-                  transition: "border-color 0.5s ease",
-                  borderColor:
-                    value === ""
-                      ? "#ccc"
+              const inputClassName =
+                  "input" +
+                  (value === ""
+                      ? ""
                       : isCorrect
-                      ? "#6eea8d"
-                      : "red",
-                }}
-              />
-              {item.word.replace(/^_+/, '').trim()} — {item.translation[locale]}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+                          ? " correct"
+                          : " incorrect");
+
+              return (
+                  <li key={index}>
+                    <input
+                        type="text"
+                        value={value}
+                        onChange={(e) => handleChange(index, e.target.value)}
+                        className={inputClassName}
+                    />
+                    {item.word.replace(/^_+/, "").trim()} — {item.translation[locale]}
+                  </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
   );
 }
 
 NounArticles.headerButton = (
     <button
         onClick={() =>
-            document.dispatchEvent(new CustomEvent("show-noun-articles-hint"))
+            document.dispatchEvent(new CustomEvent("show-hint"))
         }
         className="hint-button"
     >
@@ -98,4 +95,5 @@ NounArticles.headerButton = (
 
 NounArticles.instructions = data.instructions;
 NounArticles.title = data.title;
+
 export default NounArticles;

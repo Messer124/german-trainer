@@ -1,3 +1,9 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
 
 .app-container {
   display: flex;
@@ -9,8 +15,8 @@
   width: 240px;
   min-width: 240px;
   height: 100vh;
-  background-color: #f8fcff;
-  border-right: 1px solid #ccc;
+  background-color: var(--color-bg-surface-muted);
+  border-right: 1px solid var(--color-border-light);
   padding: 20px 10px;
   box-sizing: border-box;
   display: flex;
@@ -28,16 +34,16 @@
 }
 
 .tab-item.active {
-  background: #e6f4ff;
-  border-left: 4px solid #4ea1f3;
+  background: var(--color-accent-bg);
+  border-left: 4px solid var(--color-accent);
 }
 
 .clear-button {
   padding: 12px;
   font-size: 15px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  background-color: var(--color-bg-surface-muted);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-l);
   cursor: pointer;
   width: 100%;
   text-align: center;
@@ -54,9 +60,33 @@
 }
 
 .content {
+  overflow: hidden;
+}
+
+/* Белая «облако-карточка» */
+.exercise-card {
+  background: var(--color-bg-surface);
+  border-radius: var(--radius-l);
+  padding: 24px 20px;
+
+  box-shadow: var(--shadow-card);
+
+  box-sizing: border-box;
+
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Прокручивается только содержимое карточки */
+.exercise-scroll {
   flex: 1;
-  padding-left: 24px;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 0;
+  padding: 0;
 }
 
 /* 📱 Адаптив */

@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
 import { Eye } from "lucide-react";
-import { useLocale } from "../../contexts/LocaleContext";
 import ModalImage from "../../components/ModalImage";
 import data from "../../../data/A1-2/time.json";
 import timeImage from "../../../data/A1-2/images/timeRules.png";
-import "../../css/A1-2/TimeExercise.css";
+import "../../css/exercises/Common.css";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "time-answers";
 
 function TimeExercise() {
-  const { locale } = useLocale();
   const [showImage, setShowImage] = useState(false);
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
@@ -19,9 +17,9 @@ function TimeExercise() {
       setShowImage(true);
     };
 
-    document.addEventListener("show-time-hint", handleShowHint);
+    document.addEventListener("show-hint", handleShowHint);
     return () => {
-      document.removeEventListener("show-time-hint", handleShowHint);
+      document.removeEventListener("show-hint", handleShowHint);
     };
   }, []);
 
@@ -36,58 +34,55 @@ function TimeExercise() {
   };
 
   return (
-      <div className="time-container">
+      <div className="exercise-inner">
         {showImage && (
             <ModalImage
                 src={timeImage}
-                alt={
-                  locale === "ru"
-                      ? "Подсказка: как говорить время"
-                      : "Hint: telling the time"
-                }
+                alt={"Hint"}
                 onClose={() => setShowImage(false)}
             />
         )}
+          <div className="scroll-container">
+            <ul className="list">
+              {data.items.map((item, index) => {
+                const stored = answers[index];
+                const value = stored?.value || "";
+                const trimmed = value.trim();
+                const isCorrect = stored?.isCorrect;
 
-        <ul className="time-list">
-          {data.items.map((item, index) => {
-            const stored = answers[index];
-            const value = stored?.value || "";
-            const trimmed = value.trim();
-            const isCorrect = stored?.isCorrect;
+                let inputClass = "autosize-input";
+                if (trimmed !== "") {
+                  inputClass += isCorrect ? " correct" : " incorrect";
+                }
 
-            let inputClass = "time-input";
-            if (trimmed !== "") {
-              inputClass += isCorrect ? " correct" : " incorrect";
-            }
+                // ширина считается на каждом рендере, как в KeinOrNicht
+                const widthCh = Math.max(trimmed.length + 1, 6);
 
-            // ширина считается на каждом рендере, как в KeinOrNicht
-            const widthCh = Math.max(trimmed.length + 1, 6);
+                return (
+                    <li key={index}>
+                      <span className="sentence">{item.time}</span>
 
-            return (
-                <li className="time-item" key={index}>
-                  <span className="time-sentence">{item.time}</span>
+                      <input
+                          type="text"
+                          className={inputClass}
+                          value={value}
+                          onChange={(e) => handleChange(index, e.target.value)}
+                          style={{
+                            width: `${widthCh}ch`,
+                          }}
+                      />
 
-                  <input
-                      type="text"
-                      className={inputClass}
-                      value={value}
-                      onChange={(e) => handleChange(index, e.target.value)}
-                      style={{
-                        width: `${widthCh}ch`,
-                      }}
-                  />
-
-                  <span className="tooltip-container">
-                                <span>
-                                    <Eye size={18} />
+                      <span className="eye-container">
+                                    <span>
+                                        <Eye size={18} />
+                                    </span>
+                                    <span className="eye">{item.answer}</span>
                                 </span>
-                                <span className="tooltip">{item.answer}</span>
-                            </span>
-                </li>
-            );
-          })}
-        </ul>
+                    </li>
+                );
+              })}
+            </ul>
+          </div>
       </div>
   );
 }
@@ -95,7 +90,7 @@ function TimeExercise() {
 TimeExercise.headerButton = (
     <button
         onClick={() =>
-            document.dispatchEvent(new CustomEvent("show-time-hint"))
+            document.dispatchEvent(new CustomEvent("show-hint"))
         }
         className="hint-button"
     >

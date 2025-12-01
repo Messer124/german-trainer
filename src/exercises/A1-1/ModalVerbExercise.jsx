@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../../css/A1-1/ModalVerbExercise.css";
+import "../../css/exercises/Common.css";
 import image1 from "../../../data/A1-1/images/modal-verbs.png";
 import image2 from "../../../data/A1-1/images/modal-verbs-2.png";
 import ModalImageGallery from "../../components/ModalImageGallery";
@@ -39,9 +39,9 @@ function ModalVerbExercise() {
             setShowImage(true);
         };
 
-        document.addEventListener("show-modalVerbs-hint", handleShowHint);
+        document.addEventListener("show-hint", handleShowHint);
         return () => {
-            document.removeEventListener("show-modalVerbs-hint", handleShowHint);
+            document.removeEventListener("show-hint", handleShowHint);
         };
     }, []);
 
@@ -58,7 +58,7 @@ function ModalVerbExercise() {
     };
 
     return (
-        <div>
+        <div className="exercise-inner">
             {showImage && (
                 <ModalImageGallery
                     images={[
@@ -69,7 +69,7 @@ function ModalVerbExercise() {
                 />
             )}
 
-            <table className="modal-table">
+            <table className="table">
                 <thead>
                 <tr>
                     <th>Pronomen</th>
@@ -93,7 +93,7 @@ function ModalVerbExercise() {
                                         type="text"
                                         value={value}
                                         onChange={(e) => handleChange(i, verb, e.target.value)}
-                                        className={`modal-input ${
+                                        className={`table-input ${
                                             value === "" ? "" : isCorrect ? "correct" : "incorrect"
                                         }`}
                                     />
@@ -110,7 +110,7 @@ function ModalVerbExercise() {
 
 ModalVerbExercise.headerButton = (
     <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-modalVerbs-hint"))}
+        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
         className="hint-button"
     >
         !

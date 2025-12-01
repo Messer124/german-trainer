@@ -1,0 +1,190 @@
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.sentence {
+    display: inline;
+    margin-right: 8px;
+}
+
+.scroll-container {
+    flex: 1;                /* Занимает все свободное место */
+    overflow-y: auto;       /* Вертикальный скролл при переполнении */
+    width: 100%;
+    min-height: 0;          /* Фикс для flex-контейнеров */
+    padding-right: 4px;     /* Небольшой отступ от скроллбара */
+
+    /* Опционально: чтобы контент не прилипал к краям при скролле */
+    box-sizing: border-box;
+}
+
+.input {
+    width: 60px;
+    padding: 4px;
+    margin: 0 4px;
+    border-radius: var(--radius-l);
+    border: 2px solid #ccc;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.4;
+    transition: border-color 0.5s ease;
+}
+
+.autosize-input {
+    transition: all 0.5s ease;
+    border: 2px solid #ccc;
+    border-radius: var(--radius-l);
+    padding: 6px 12px;
+    font-size: 16px;
+    min-width: 6ch;
+    width: fit-content;
+    outline: none;
+    text-align: center;
+}
+
+.table-input {
+    transition: border-color 0.5s ease;
+    width: 80%;
+    padding: 4px 6px;
+    min-height: 28px;
+    border-radius: var(--radius-l);
+    border: 2px solid #ccc;
+    text-align: center;
+    outline: none;
+}
+
+.input.correct,
+.autosize-input.correct,
+.table-input.correct {
+    border-color: var(--color-correct);
+    background-color: var(--color-correct-bg);
+}
+
+.input.incorrect,
+.autosize-input.incorrect,
+.table-input.incorrect {
+    border-color: var(--color-incorrect);
+    background-color: var(--color-incorrect-bg);
+}
+
+.exercise-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.table-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+    width: 100%;
+    min-height: 0;
+
+    border-radius: 19px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table thead {
+    position: sticky;
+    top: 0;
+    background: #f4f4f4;
+    z-index: 2;
+}
+
+.table th {
+    border: 0.5px solid #ccc;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table td {
+    border: 0.5px solid #ccc;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Верхние скругления */
+.table thead tr:first-child th:first-child {
+    border-top-left-radius: var(--radius-l);
+}
+.table thead tr:first-child th:last-child {
+    border-top-right-radius: var(--radius-l);
+}
+
+/* Нижние скругления */
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: var(--radius-l);
+}
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: var(--radius-l);
+}
+
+.eye-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.eye {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fefefe;
+    border: 2px solid #ccc;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+    z-index: 10;
+}
+
+.eye-container:hover .eye {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hint-button {
+    font-size: 18px;
+    background: none;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}

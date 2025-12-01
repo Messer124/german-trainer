@@ -34,8 +34,10 @@ export default function App() {
   const contentRef = useRef(null);
   const [sidebarWidth, setSidebarWidth] = useState(0);
   const [headerHeight, setHeaderHeight] = useState(0);
+  const [headerCardWidth, setHeaderCardWidth] = useState(null);
 
-  // Переключение вкладок при смене уровня
+
+    // Переключение вкладок при смене уровня
   useEffect(() => {
     const tabsForLevel = getTabsForLevel(level);
     const keys = Object.keys(tabsForLevel);
@@ -84,7 +86,6 @@ export default function App() {
       return;
     }
 
-    // Локальная очистка теперь полностью внутри хука
     window.dispatchEvent(new CustomEvent(`clear-${storageKey}`));
   };
 
@@ -102,20 +103,34 @@ export default function App() {
             instructions={Component.instructions?.[locale]}
             headerTitle={Component.title?.[locale]}
             onHeaderHeight={setHeaderHeight}
+            onHeaderCardWidth={setHeaderCardWidth}
         />
 
-        <div
-            ref={contentRef}
-            className="content fade-in"
-            style={{
-              marginLeft: sidebarWidth,
-              marginTop: headerHeight,
-              transition: "margin-left 0.3s ease",
-              flexGrow: 1,
-            }}
-        >
-          <Component key={currentTab} />
-        </div>
+          <div
+              ref={contentRef}
+              className="content fade-in"
+              style={{
+                  marginLeft: sidebarWidth,
+                  marginTop: headerHeight,
+                  transition: "margin-left 0.3s ease",
+                  flexGrow: 1,
+              }}
+          >
+              <div
+                  className="exercise-card"
+                  style={{
+                      height: `calc(100vh - ${headerHeight}px - 12px)`,
+                      width: headerCardWidth ? headerCardWidth + "px" : "auto",
+                      marginLeft: "auto",
+                      marginRight: "auto"
+                  }}
+              >
+                  <div className="exercise-scroll">
+                      <Component key={currentTab}/>
+                  </div>
+              </div>
+          </div>
+
       </div>
   );
 }

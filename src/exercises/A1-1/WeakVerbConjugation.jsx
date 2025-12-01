@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/weak-verb-conjugation.json";
-import "../../css/A1-1/WeakVerbConjugation.css";
+import "../../css/exercises/Common.css";
 import ModalImage from "../../components/ModalImage";
 import weakVerbsImage from "../../../data/A1-1/images/weak-verbs-conj.png";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
@@ -16,30 +16,30 @@ function WeakVerbConjugation() {
             setShowImage(true);
         };
 
-        document.addEventListener("show-weakVerbConjugation-hint", handleShowHint);
+        document.addEventListener("show-hint", handleShowHint);
         return () => {
-            document.removeEventListener("show-weakVerbConjugation-hint", handleShowHint);
+            document.removeEventListener("show-hint", handleShowHint);
         };
     }, []);
 
     const pronouns = ["ich", "du", "er/sie/es", "wir/sie/Sie", "ihr"];
 
     return (
-        <div>
+        <div className="exercise-inner">
 
             {showImage && (
                 <ModalImage
                     src={weakVerbsImage}
-                    alt="Weak verb chart"
+                    alt="Hint"
                     onClose={() => setShowImage(false)}
                 />
             )}
 
-            <div className="weak-table-wrapper">
-                <table className="weak-verb-table">
+            <div className="table-wrapper">
+                <table className="table">
                     <thead>
                     <tr>
-                        <th className="infinitive">Infinitiv</th>
+                        <th>Infinitiv</th>
                         {pronouns.map((p) => (
                             <th key={p}>{p}</th>
                         ))}
@@ -48,7 +48,7 @@ function WeakVerbConjugation() {
                     <tbody>
                     {data.items.map((verb, index) => (
                         <tr key={index}>
-                            <td className="infinitive">{verb.infinitive}</td>
+                            <td>{verb.infinitive}</td>
                             {pronouns.map((pronoun) => {
                                 const inputKey = `weak-verbs-${index}-${pronoun}`;
                                 const correct = verb.conjugation[pronoun]?.toLowerCase();
@@ -69,13 +69,12 @@ function WeakVerbConjugation() {
                                                     }
                                                 }))
                                             }
-                                            className={
-                                                !answers[inputKey] || answers[inputKey].value === ""
+                                            className={`table-input ${!answers[inputKey] || answers[inputKey].value === ""
                                                     ? ""
                                                     : isCorrect
                                                         ? "correct"
                                                         : "incorrect"
-                                            }
+                                            }`}
                                         />
                                     </td>
                                 );
@@ -92,7 +91,7 @@ function WeakVerbConjugation() {
 
 WeakVerbConjugation.headerButton = (
     <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-weakVerbConjugation-hint"))}
+        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
         className="hint-button"
     >
         !

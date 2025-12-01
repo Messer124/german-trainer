@@ -4,9 +4,9 @@ import { useLocale } from "../../contexts/LocaleContext";
 import ModalImageGallery from "../../components/ModalImageGallery";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/pluralNouns.json";
-import "../../css/A1-2/PluralNouns.css";
-import pluralImage1 from "../../../data/A1-2/images/pluralNouns1.png";
-import pluralImage2 from "../../../data/A1-2/images/pluralNouns2.png";
+import "../../css/exercises/Common.css";
+import hintImage1 from "../../../data/A1-2/images/pluralNouns1.png";
+import hintImage2 from "../../../data/A1-2/images/pluralNouns2.png";
 
 const STORAGE_KEY = "plural-nouns-answers";
 
@@ -19,12 +19,12 @@ function PluralNounsExercise() {
 
   const hintImagesByLocale = {
     ru: [
-      { src: pluralImage1, alt: "Множественное число: подсказка 1" },
-      { src: pluralImage2, alt: "Множественное число: подсказка 2" },
+      { src: hintImage1, alt: "Множественное число: подсказка 1" },
+      { src: hintImage2, alt: "Множественное число: подсказка 2" },
     ],
     en: [
-      { src: pluralImage1, alt: "Plural nouns: hint 1" },
-      { src: pluralImage2, alt: "Plural nouns: hint 2" },
+      { src: hintImage1, alt: "Plural nouns: hint 1" },
+      { src: hintImage2, alt: "Plural nouns: hint 2" },
     ],
   };
 
@@ -36,9 +36,9 @@ function PluralNounsExercise() {
       setShowGallery(true);
     };
 
-    document.addEventListener("show-plural-nouns-hint", handleShowHint);
+    document.addEventListener("show-hint", handleShowHint);
     return () => {
-      document.removeEventListener("show-plural-nouns-hint", handleShowHint);
+      document.removeEventListener("show-hint", handleShowHint);
     };
   }, []);
 
@@ -53,50 +53,51 @@ function PluralNounsExercise() {
   };
 
   return (
-      <div className="plural-container">
+      <div className="exercise-inner">
         {showGallery && (
             <ModalImageGallery
                 images={hintImages}
                 onClose={() => setShowGallery(false)}
             />
         )}
+        <div className="scroll-container">
+          <ul className="list">
+            {data.items.map((item, index) => {
+              const stored = answers[index];
+              const value = stored?.value || "";
+              const trimmed = value.trim();
+              const isCorrect = stored?.isCorrect;
 
-        <ul className="plural-list">
-          {data.items.map((item, index) => {
-            const stored = answers[index];
-            const value = stored?.value || "";
-            const trimmed = value.trim();
-            const isCorrect = stored?.isCorrect;
+              let inputClass = "input";
+              if (trimmed !== "") {
+                inputClass += isCorrect ? " correct" : " incorrect";
+              }
 
-            let inputClass = "plural-input";
-            if (trimmed !== "") {
-              inputClass += isCorrect ? " correct" : " incorrect";
-            }
+              const widthCh = Math.max(trimmed.length + 1, 6);
 
-            const widthCh = Math.max(trimmed.length + 1, 6);
+              return (
+                  <li key={index}>
+                    <span className="plural-singular">{item.word} — die</span>
 
-            return (
-                <li className="plural-item" key={index}>
-                  <span className="plural-singular">{item.word} — die</span>
+                    <input
+                        type="text"
+                        className={inputClass}
+                        value={value}
+                        onChange={(e) => handleChange(index, e.target.value)}
+                        style={{ width: `${widthCh}ch` }}
+                    />
 
-                  <input
-                      type="text"
-                      className={inputClass}
-                      value={value}
-                      onChange={(e) => handleChange(index, e.target.value)}
-                      style={{ width: `${widthCh}ch` }}
-                  />
-
-                  <span className="tooltip-container">
-                    <span>
-                        <Eye size={18} />
+                    <span className="eye-container">
+                      <span>
+                          <Eye size={18} />
+                      </span>
+                      <span className="eye">{item.plural}</span>
                     </span>
-                    <span className="tooltip">{item.plural}</span>
-                  </span>
-                </li>
-            );
-          })}
-        </ul>
+                  </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
   );
 }
@@ -106,7 +107,7 @@ PluralNounsExercise.headerButton = (
     <button
         type="button"
         onClick={() =>
-            document.dispatchEvent(new CustomEvent("show-plural-nouns-hint"))
+            document.dispatchEvent(new CustomEvent("show-hint"))
         }
         className="hint-button"
     >

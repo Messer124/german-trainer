@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ModalImageGallery from "../../components/ModalImageGallery";
 import data from "../../../data/A1-2/irregular verbs.json";
-import "../../css/A1-1/StrongVerbsConjugation.css";
+import "../../css/exercises/Common.css";
 import image1 from "../../../data/A1-2/images/preteritum.png";
 import image2 from "../../../data/A1-2/images/partizip2.png";
 import { Eye } from "lucide-react";
@@ -21,12 +21,12 @@ function VerbsPreteritumPerfekt() {
     const handleShowHint = () => setShowGallery(true);
 
     document.addEventListener(
-        "show-verbs-preteritum-perfekt-hint",
+        "show-hint",
         handleShowHint
     );
     return () => {
       document.removeEventListener(
-          "show-verbs-preteritum-perfekt-hint",
+          "show-hint",
           handleShowHint
       );
     };
@@ -47,7 +47,7 @@ function VerbsPreteritumPerfekt() {
   };
 
   return (
-      <div>
+      <div className="exercise-inner">
         {showGallery && (
             <ModalImageGallery
                 images={hintImages}
@@ -55,11 +55,11 @@ function VerbsPreteritumPerfekt() {
             />
         )}
 
-        <div className="strong-table-wrapper">
-          <table className="strong-table">
+        <div className="table-wrapper">
+          <table className="table">
             <thead>
             <tr>
-              <th className="infinitive">Infinitiv</th>
+              <th>Infinitiv</th>
               <th>Präteritum</th>
               <th>Partizip II</th>
             </tr>
@@ -67,7 +67,7 @@ function VerbsPreteritumPerfekt() {
             <tbody>
             {data.items.map((item, rowIndex) => (
                 <tr key={rowIndex}>
-                  <td className="infinitive">{item.infinitive}</td>
+                  <td>{item.infinitive}</td>
 
                   {["praeteritum", "perfekt"].map((field) => {
                     const inputKey = `verbs-pp-${rowIndex}-${field}`;
@@ -77,30 +77,22 @@ function VerbsPreteritumPerfekt() {
                     const trimmed = value.trim().toLowerCase();
                     const isCorrect = trimmed === correct;
 
-                    const className =
-                        value.trim() === ""
-                            ? ""
-                            : isCorrect
-                                ? "correct"
-                                : "incorrect";
-
                     return (
                         <td key={field}>
-                          <div className="verbs-input-wrapper">
+                          <div>
                             <input
                                 type="text"
                                 value={value}
                                 onChange={(e) => handleChange(rowIndex, field, e.target.value)}
-                                className={className}
+                                className={`table-input ${value.trim() === "" ? "" : isCorrect ? "correct" : "incorrect"}`}
                             />
 
-                            <span className="tooltip-container">
+                            <span className="eye-container">
                               <span><Eye size={18}/></span>
-                              <span className="tooltip">{item[field]}</span>
+                              <span className="eye">{item[field]}</span>
                             </span>
                           </div>
                         </td>
-
                     );
                   })}
                 </tr>
@@ -116,7 +108,7 @@ VerbsPreteritumPerfekt.headerButton = (
     <button
         onClick={() =>
             document.dispatchEvent(
-                new CustomEvent("show-verbs-preteritum-perfekt-hint")
+                new CustomEvent("show-hint")
             )
         }
         className="hint-button"

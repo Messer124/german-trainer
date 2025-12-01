@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import "./css/util/Tokens.css";
 import { LevelProvider } from "./contexts/LevelContext";
 import { LocaleProvider } from "./contexts/LocaleContext";
 
