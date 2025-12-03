@@ -7,6 +7,7 @@ body {
 
 body {
   background: linear-gradient(135deg, #6ecfff 0%, #4ade80 100%) fixed;
+  zoom: 2;
 }
 .app-container {
   display: flex;
@@ -18,9 +19,6 @@ body {
   width: 240px;
   min-width: 240px;
   height: 100vh;
-
-  /* Используем прозрачный токен */
-  background-color: var(--color-bg-sidebar);
   /* Размытие фона позади сайдбара */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
