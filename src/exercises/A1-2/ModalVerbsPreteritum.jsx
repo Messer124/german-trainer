@@ -51,7 +51,7 @@ function ModalVerbsPreteritum() {
 
                 const inputClass =
                     trimmed === ""
-                        ? "input"
+                        ? "input "
                         : isCorrect
                             ? "input correct"
                             : "input incorrect";
@@ -64,9 +64,6 @@ function ModalVerbsPreteritum() {
                           value={value}
                           onChange={(e) => handleChange(index, e.target.value)}
                           className={inputClass}
-                          style={{
-                            width: `${Math.max(trimmed.length + 1, 6)}ch`,
-                          }}
                           placeholder={item.verb}
                       />
                       {parts[1]}

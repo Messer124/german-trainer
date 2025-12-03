@@ -5,6 +5,9 @@ body {
   overflow: hidden;
 }
 
+body {
+  background: linear-gradient(135deg, #6ecfff 0%, #4ade80 100%) fixed;
+}
 .app-container {
   display: flex;
   height: 100vh;
@@ -15,7 +18,13 @@ body {
   width: 240px;
   min-width: 240px;
   height: 100vh;
-  background-color: var(--color-bg-surface-muted);
+
+  /* Используем прозрачный токен */
+  background-color: var(--color-bg-sidebar);
+  /* Размытие фона позади сайдбара */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
   border-right: 1px solid var(--color-border-light);
   padding: 20px 10px;
   box-sizing: border-box;
@@ -23,6 +32,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
+  z-index: 10;
 }
 
 .tab-item {

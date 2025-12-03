@@ -58,7 +58,7 @@ function ModalVerbExercise() {
     };
 
     return (
-        <div className="exercise-inner">
+        <div>
             {showImage && (
                 <ModalImageGallery
                     images={[
@@ -68,42 +68,43 @@ function ModalVerbExercise() {
                     onClose={() => setShowImage(false)}
                 />
             )}
-
-            <table className="table">
-                <thead>
-                <tr>
-                    <th>Pronomen</th>
-                    {Object.keys(modalVerbs).map((verb) => (
-                        <th key={verb}>{verb}</th>
-                    ))}
-                </tr>
-                </thead>
-                <tbody>
-                {pronouns.map((pronoun, i) => (
-                    <tr key={pronoun}>
-                        <td>{pronoun}</td>
-                        {Object.keys(modalVerbs).map((verb) => {
-                            const key = `${i}-${verb}`;
-                            const value = answers[key]?.value || "";
-                            const isCorrect = answers[key]?.isCorrect;
-
-                            return (
-                                <td key={verb}>
-                                    <input
-                                        type="text"
-                                        value={value}
-                                        onChange={(e) => handleChange(i, verb, e.target.value)}
-                                        className={`table-input ${
-                                            value === "" ? "" : isCorrect ? "correct" : "incorrect"
-                                        }`}
-                                    />
-                                </td>
-                            );
-                        })}
+            <div className="table-wrapper">
+                <table className="table">
+                    <thead>
+                    <tr>
+                        <th>Pronomen</th>
+                        {Object.keys(modalVerbs).map((verb) => (
+                            <th key={verb}>{verb}</th>
+                        ))}
                     </tr>
-                ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    {pronouns.map((pronoun, i) => (
+                        <tr key={pronoun}>
+                            <td>{pronoun}</td>
+                            {Object.keys(modalVerbs).map((verb) => {
+                                const key = `${i}-${verb}`;
+                                const value = answers[key]?.value || "";
+                                const isCorrect = answers[key]?.isCorrect;
+
+                                return (
+                                    <td key={verb}>
+                                        <input
+                                            type="text"
+                                            value={value}
+                                            onChange={(e) => handleChange(i, verb, e.target.value)}
+                                            className={`table-input ${
+                                                value === "" ? "" : isCorrect ? "correct" : "incorrect"
+                                            }`}
+                                        />
+                                    </td>
+                                );
+                            })}
+                        </tr>
+                    ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 }
