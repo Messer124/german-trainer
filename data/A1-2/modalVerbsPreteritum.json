@@ -9,253 +9,249 @@
   },
   "items": [
     {
-      "items": [
-        {
-          "sentence": "Ich ___ gestern lange arbeiten.",
-          "verb": "müssen",
-          "answer": "musste"
-        },
-        {
-          "sentence": "Wir ___ das Fenster nicht öffnen.",
-          "verb": "dürfen",
-          "answer": "durften"
-        },
-        {
-          "sentence": "Er ___ gestern nicht kommen.",
-          "verb": "können",
-          "answer": "konnte"
-        },
-        {
-          "sentence": "Anna ___ früher nach Hause gehen.",
-          "verb": "wollen",
-          "answer": "wollte"
-        },
-        {
-          "sentence": "Ihr ___ das neue Spiel überhaupt nicht.",
-          "verb": "mögen",
-          "answer": "mochtet"
-        },
-        {
-          "sentence": "Du ___ mir gestern nicht helfen, oder?",
-          "verb": "können",
-          "answer": "konntest"
-        },
-        {
-          "sentence": "Peter ___ das Buch nicht finden.",
-          "verb": "können",
-          "answer": "konnte"
-        },
-        {
-          "sentence": "Wir ___ sofort antworten.",
-          "verb": "müssen",
-          "answer": "mussten"
-        },
-        {
-          "sentence": "Ich ___ gestern kein Fleisch essen.",
-          "verb": "wollen",
-          "answer": "wollte"
-        },
-        {
-          "sentence": "Ihr ___ im Unterricht nicht sprechen.",
-          "verb": "dürfen",
-          "answer": "durftet"
-        },
-        {
-          "sentence": "Maria ___ das Fenster schließen.",
-          "verb": "müssen",
-          "answer": "musste"
-        },
-        {
-          "sentence": "Die Schüler ___ die Aufgabe alleine machen.",
-          "verb": "sollen",
-          "answer": "sollten"
-        },
-        {
-          "sentence": "Er ___ früher schlafen gehen.",
-          "verb": "sollen",
-          "answer": "sollte"
-        },
-        {
-          "sentence": "Wir ___ gestern keinen Kaffee trinken.",
-          "verb": "wollen",
-          "answer": "wollten"
-        },
-        {
-          "sentence": "Ich ___ gestern keinen Kaffee.",
-          "verb": "mögen",
-          "answer": "mochte"
-        },
-        {
-          "sentence": "Die Gäste ___ lange warten.",
-          "verb": "müssen",
-          "answer": "mussten"
-        },
-        {
-          "sentence": "Du ___ das nicht tun, das war verboten.",
-          "verb": "dürfen",
-          "answer": "durftest"
-        },
-        {
-          "sentence": "Sie ___ ihre Eltern besuchen.",
-          "verb": "wollen",
-          "answer": "wollte"
-        },
-        {
-          "sentence": "Du ___ gestern die Suppe nicht.",
-          "verb": "mögen",
-          "answer": "mochtest"
-        },
-        {
-          "sentence": "Die Kinder ___ früher ins Bett.",
-          "verb": "sollen",
-          "answer": "sollten"
-        },
-        {
-          "sentence": "Ich ___ gestern lange bleiben.",
-          "verb": "können",
-          "answer": "konnte"
-        },
-        {
-          "sentence": "Ihr ___ kein Handy im Unterricht benutzen.",
-          "verb": "dürfen",
-          "answer": "durftet"
-        },
-        {
-          "sentence": "Thomas ___ die Präsentation vorbereiten.",
-          "verb": "müssen",
-          "answer": "musste"
-        },
-        {
-          "sentence": "Wir ___ ein neues Projekt anfangen.",
-          "verb": "wollen",
-          "answer": "wollten"
-        },
-        {
-          "sentence": "Sie ___ niemanden stören.",
-          "verb": "sollen",
-          "answer": "sollten"
-        },
-        {
-          "sentence": "Ich ___ gestern viel lernen.",
-          "verb": "müssen",
-          "answer": "musste"
-        },
-        {
-          "sentence": "Die Katze ___ nicht ins Haus.",
-          "verb": "dürfen",
-          "answer": "durfte"
-        },
-        {
-          "sentence": "Wir ___ das Passwort nicht finden.",
-          "verb": "können",
-          "answer": "konnten"
-        },
-        {
-          "sentence": "Er ___ gestern nicht arbeiten.",
-          "verb": "wollen",
-          "answer": "wollte"
-        },
-        {
-          "sentence": "Die beiden ___ in der Bibliothek leise sein.",
-          "verb": "müssen",
-          "answer": "mussten"
-        },
-        {
-          "sentence": "Meine Eltern ___ gestern früh aufstehen.",
-          "verb": "müssen",
-          "answer": "mussten"
-        },
-        {
-          "sentence": "Ich ___ leider nicht mitfahren.",
-          "verb": "können",
-          "answer": "konnte"
-        },
-        {
-          "sentence": "Wir ___ das Licht nicht ausschalten.",
-          "verb": "dürfen",
-          "answer": "durften"
-        },
-        {
-          "sentence": "Die Teilnehmer ___ pünktlich kommen.",
-          "verb": "sollen",
-          "answer": "sollten"
-        },
-        {
-          "sentence": "Eva ___ gestern lange telefonieren.",
-          "verb": "wollen",
-          "answer": "wollte"
-        },
-        {
-          "sentence": "Der Junge ___ seine Hausaufgaben machen.",
-          "verb": "müssen",
-          "answer": "musste"
-        },
-        {
-          "sentence": "Ihr ___ den Raum nicht verlassen.",
-          "verb": "dürfen",
-          "answer": "durftet"
-        },
-        {
-          "sentence": "Ich ___ das Problem schnell lösen.",
-          "verb": "können",
-          "answer": "konnte"
-        },
-        {
-          "sentence": "Die Mitarbeiter ___ Überstunden machen.",
-          "verb": "müssen",
-          "answer": "mussten"
-        },
-        {
-          "sentence": "Paula ___ gestern kein Auto fahren.",
-          "verb": "wollen",
-          "answer": "wollte"
-        },
-        {
-          "sentence": "Wir ___ am Abend niemanden stören.",
-          "verb": "dürfen",
-          "answer": "durften"
-        },
-        {
-          "sentence": "Die Gruppe ___ zusammen arbeiten.",
-          "verb": "sollen",
-          "answer": "sollte"
-        },
-        {
-          "sentence": "Du ___ die Tür leise schließen.",
-          "verb": "sollen",
-          "answer": "solltest"
-        },
-        {
-          "sentence": "Der Hund ___ nicht auf das Bett.",
-          "verb": "dürfen",
-          "answer": "durfte"
-        },
-        {
-          "sentence": "Ich ___ gestern sehr früh schlafen gehen.",
-          "verb": "müssen",
-          "answer": "musste"
-        },
-        {
-          "sentence": "Die Touristen ___ kein Deutsch sprechen.",
-          "verb": "können",
-          "answer": "konnten"
-        },
-        {
-          "sentence": "Mein Bruder ___ das Paket abholen.",
-          "verb": "müssen",
-          "answer": "musste"
-        },
-        {
-          "sentence": "Wir ___ gestern lange im Stau stehen.",
-          "verb": "müssen",
-          "answer": "mussten"
-        },
-        {
-          "sentence": "Sie ___ das Angebot nicht akzeptieren.",
-          "verb": "wollen",
-          "answer": "wollte"
-        }
-      ]
+      "sentence": "Ich ___ gestern lange arbeiten.",
+      "verb": "müssen",
+      "answer": "musste"
+    },
+    {
+      "sentence": "Wir ___ das Fenster nicht öffnen.",
+      "verb": "dürfen",
+      "answer": "durften"
+    },
+    {
+      "sentence": "Er ___ gestern nicht kommen.",
+      "verb": "können",
+      "answer": "konnte"
+    },
+    {
+      "sentence": "Anna ___ früher nach Hause gehen.",
+      "verb": "wollen",
+      "answer": "wollte"
+    },
+    {
+      "sentence": "Ihr ___ das neue Spiel überhaupt nicht.",
+      "verb": "mögen",
+      "answer": "mochtet"
+    },
+    {
+      "sentence": "Du ___ mir gestern nicht helfen, oder?",
+      "verb": "können",
+      "answer": "konntest"
+    },
+    {
+      "sentence": "Peter ___ das Buch nicht finden.",
+      "verb": "können",
+      "answer": "konnte"
+    },
+    {
+      "sentence": "Wir ___ sofort antworten.",
+      "verb": "müssen",
+      "answer": "mussten"
+    },
+    {
+      "sentence": "Ich ___ gestern kein Fleisch essen.",
+      "verb": "wollen",
+      "answer": "wollte"
+    },
+    {
+      "sentence": "Ihr ___ im Unterricht nicht sprechen.",
+      "verb": "dürfen",
+      "answer": "durftet"
+    },
+    {
+      "sentence": "Maria ___ das Fenster schließen.",
+      "verb": "müssen",
+      "answer": "musste"
+    },
+    {
+      "sentence": "Die Schüler ___ die Aufgabe alleine machen.",
+      "verb": "sollen",
+      "answer": "sollten"
+    },
+    {
+      "sentence": "Er ___ früher schlafen gehen.",
+      "verb": "sollen",
+      "answer": "sollte"
+    },
+    {
+      "sentence": "Wir ___ gestern keinen Kaffee trinken.",
+      "verb": "wollen",
+      "answer": "wollten"
+    },
+    {
+      "sentence": "Ich ___ gestern keinen Kaffee.",
+      "verb": "mögen",
+      "answer": "mochte"
+    },
+    {
+      "sentence": "Die Gäste ___ lange warten.",
+      "verb": "müssen",
+      "answer": "mussten"
+    },
+    {
+      "sentence": "Du ___ das nicht tun, das war verboten.",
+      "verb": "dürfen",
+      "answer": "durftest"
+    },
+    {
+      "sentence": "Sie ___ ihre Eltern besuchen.",
+      "verb": "wollen",
+      "answer": "wollte"
+    },
+    {
+      "sentence": "Du ___ gestern die Suppe nicht.",
+      "verb": "mögen",
+      "answer": "mochtest"
+    },
+    {
+      "sentence": "Die Kinder ___ früher ins Bett.",
+      "verb": "sollen",
+      "answer": "sollten"
+    },
+    {
+      "sentence": "Ich ___ gestern lange bleiben.",
+      "verb": "können",
+      "answer": "konnte"
+    },
+    {
+      "sentence": "Ihr ___ kein Handy im Unterricht benutzen.",
+      "verb": "dürfen",
+      "answer": "durftet"
+    },
+    {
+      "sentence": "Thomas ___ die Präsentation vorbereiten.",
+      "verb": "müssen",
+      "answer": "musste"
+    },
+    {
+      "sentence": "Wir ___ ein neues Projekt anfangen.",
+      "verb": "wollen",
+      "answer": "wollten"
+    },
+    {
+      "sentence": "Sie ___ niemanden stören.",
+      "verb": "sollen",
+      "answer": "sollten"
+    },
+    {
+      "sentence": "Ich ___ gestern viel lernen.",
+      "verb": "müssen",
+      "answer": "musste"
+    },
+    {
+      "sentence": "Die Katze ___ nicht ins Haus.",
+      "verb": "dürfen",
+      "answer": "durfte"
+    },
+    {
+      "sentence": "Wir ___ das Passwort nicht finden.",
+      "verb": "können",
+      "answer": "konnten"
+    },
+    {
+      "sentence": "Er ___ gestern nicht arbeiten.",
+      "verb": "wollen",
+      "answer": "wollte"
+    },
+    {
+      "sentence": "Die beiden ___ in der Bibliothek leise sein.",
+      "verb": "müssen",
+      "answer": "mussten"
+    },
+    {
+      "sentence": "Meine Eltern ___ gestern früh aufstehen.",
+      "verb": "müssen",
+      "answer": "mussten"
+    },
+    {
+      "sentence": "Ich ___ leider nicht mitfahren.",
+      "verb": "können",
+      "answer": "konnte"
+    },
+    {
+      "sentence": "Wir ___ das Licht nicht ausschalten.",
+      "verb": "dürfen",
+      "answer": "durften"
+    },
+    {
+      "sentence": "Die Teilnehmer ___ pünktlich kommen.",
+      "verb": "sollen",
+      "answer": "sollten"
+    },
+    {
+      "sentence": "Eva ___ gestern lange telefonieren.",
+      "verb": "wollen",
+      "answer": "wollte"
+    },
+    {
+      "sentence": "Der Junge ___ seine Hausaufgaben machen.",
+      "verb": "müssen",
+      "answer": "musste"
+    },
+    {
+      "sentence": "Ihr ___ den Raum nicht verlassen.",
+      "verb": "dürfen",
+      "answer": "durftet"
+    },
+    {
+      "sentence": "Ich ___ das Problem schnell lösen.",
+      "verb": "können",
+      "answer": "konnte"
+    },
+    {
+      "sentence": "Die Mitarbeiter ___ Überstunden machen.",
+      "verb": "müssen",
+      "answer": "mussten"
+    },
+    {
+      "sentence": "Paula ___ gestern kein Auto fahren.",
+      "verb": "wollen",
+      "answer": "wollte"
+    },
+    {
+      "sentence": "Wir ___ am Abend niemanden stören.",
+      "verb": "dürfen",
+      "answer": "durften"
+    },
+    {
+      "sentence": "Die Gruppe ___ zusammen arbeiten.",
+      "verb": "sollen",
+      "answer": "sollte"
+    },
+    {
+      "sentence": "Du ___ die Tür leise schließen.",
+      "verb": "sollen",
+      "answer": "solltest"
+    },
+    {
+      "sentence": "Der Hund ___ nicht auf das Bett.",
+      "verb": "dürfen",
+      "answer": "durfte"
+    },
+    {
+      "sentence": "Ich ___ gestern sehr früh schlafen gehen.",
+      "verb": "müssen",
+      "answer": "musste"
+    },
+    {
+      "sentence": "Die Touristen ___ kein Deutsch sprechen.",
+      "verb": "können",
+      "answer": "konnten"
+    },
+    {
+      "sentence": "Mein Bruder ___ das Paket abholen.",
+      "verb": "müssen",
+      "answer": "musste"
+    },
+    {
+      "sentence": "Wir ___ gestern lange im Stau stehen.",
+      "verb": "müssen",
+      "answer": "mussten"
+    },
+    {
+      "sentence": "Sie ___ das Angebot nicht akzeptieren.",
+      "verb": "wollen",
+      "answer": "wollte"
     }
   ]
 }

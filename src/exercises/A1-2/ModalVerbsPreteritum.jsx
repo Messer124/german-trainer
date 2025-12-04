@@ -41,7 +41,7 @@ function ModalVerbsPreteritum() {
         )}
           <div className="scroll-container">
             <ul className="list">
-              {data.items[0].items.map((item, index) => {
+              {data.items.map((item, index) => {
                 const stored = answers[index];
                 const value = stored?.value || "";
                 const trimmed = value.trim();
