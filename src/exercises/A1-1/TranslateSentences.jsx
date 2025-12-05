@@ -61,9 +61,9 @@ function TranslateSentences() {
                 </ul>
             </div>
         </div>
-            );
-            }
+    );
+}
 
-            TranslateSentences.instructions = data.instructions;
-            TranslateSentences.title = data.title;
-            export default TranslateSentences;
+TranslateSentences.instructions = data.instructions;
+TranslateSentences.title = data.title;
+export default TranslateSentences;

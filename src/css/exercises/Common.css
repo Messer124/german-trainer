@@ -26,24 +26,24 @@
 }
 
 .input {
+    font-size: 30px;
     width: 70px;
     padding: 4px;
-    margin: 0 4px;
-    border-radius: var(--radius-l);
+    margin: 0 8px;
+    border-radius: var(--radius);
     border: 2px solid #ccc;
     text-align: center;
     outline: none;
-    font-size: 16px;
     line-height: 1.4;
-    transition: border-color 0.5s ease;
+    transition: border-color 0.3s ease;
 }
 
 .autosize-input {
     transition: all 0.5s ease;
     border: 2px solid #ccc;
-    border-radius: var(--radius-l);
+    border-radius: var(--radius);
     padding: 6px 12px;
-    font-size: 16px;
+    font-size: 30px;
     min-width: 6ch;
     width: fit-content;
     outline: none;
@@ -51,11 +51,12 @@
 }
 
 .table-input {
+    font-size: 30px;
     transition: border-color 0.5s ease;
     width: 80%;
     padding: 4px 6px;
     min-height: 28px;
-    border-radius: var(--radius-l);
+    border-radius: var(--radius);
     border: 2px solid #ccc;
     text-align: center;
     outline: none;
@@ -114,16 +115,15 @@
 }
 
 .table th {
-    border: 0.5px solid #ccc;
+    border: 1px solid #cccccc;
     padding: 8px;
     font-weight: bold;
     text-align: center;
 }
 
 .table td {
-    border: 0.5px solid #ccc;
+    border: 1px solid #ccc;
     padding: 8px;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -149,27 +149,44 @@
     margin-left: 8px;
 }
 
+/* Позиционируем всплывашку справа от иконки и по её вертикальному центру */
+.eye-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 12px;
+    cursor: pointer;              /* чувствуем, что это кнопка */
+}
+
+/* всплывающее окно с ответом */
 .eye {
     position: absolute;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
+
+    top: 50%;
+    right: calc(100% + 12px);      /* правее иконки */
+    transform: translateY(-50%) scale(0.96);
+
     background: #fefefe;
     border: 2px solid #ccc;
-    padding: 4px 8px;
-    border-radius: 6px;
+    padding: 6px 10px;
+    border-radius: 12px;
     white-space: nowrap;
-    font-size: 14px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease;
+    transition:
+            opacity 0.18s ease-out,
+            transform 0.18s ease-out;
     z-index: 10;
 }
 
-.eye-container:hover .eye {
+/* показываем ответ ТОЛЬКО при нажатии */
+.eye-container:active .eye {
     opacity: 1;
     visibility: visible;
+    transform: translateY(-50%) scale(1);
 }
 
 .hint-button {
