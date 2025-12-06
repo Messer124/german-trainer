@@ -196,6 +196,12 @@ body {
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16);
 }
 
+@media (min-width: 1201px) {
+  .sidebar-close-icon-button {
+    display: none;
+  }
+}
+
 /* обёртка для анимации высоты настроек */
 .sidebar-settings-dropdown-wrapper {
   flex: 0 0 auto;       /* высота по содержимому (анимируется framer-motion) */
@@ -576,14 +582,6 @@ body {
 /* ---------- адаптив ---------- */
 
 @media (max-width: 600px) {
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
   .app-header {
     height: 12vh;
     min-height: 80px;
@@ -619,7 +617,7 @@ body {
   }
 
   .sidebar-settings-button {
-    height: 50px;           /* фиксированная высота */
+    height: 50px;
   }
 
   .sidebar-close-icon-button {
@@ -636,8 +634,22 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .app-layout {
+    height: 100dvh;
+  }
+}
+
 /* ПЛАНШЕТЫ: от 601px до 1024px */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1200px) {
   .app-layout {
     font-size: var(--tablet-font-size);
   }

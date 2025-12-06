@@ -4,8 +4,8 @@
     "en": "Verbs in Präteritum and Perfekt"
   },
   "instructions": {
-    "ru": "Заполните формы Präteritum и Partizip II (Perfekt) для каждого глагола.",
-    "en": "Fill in Präteritum and Partizip II (Perfekt) for each verb."
+    "ru": "Заполните формы Präteritum и Partizip II (Perfekt) для глаголов.",
+    "en": "Fill in Präteritum and Partizip II (Perfekt) for verb."
   },
   "items": [
     { "infinitive": "antworten", "praeteritum": "antwortete", "perfekt": "geantwortet" },

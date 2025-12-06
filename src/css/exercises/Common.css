@@ -218,8 +218,6 @@
 
 /* === ПОДСКАЗКА С ОТВЕТОМ ДЛЯ EYE === */
 
-/* === Глазок + подсказка с ответом === */
-
 .eye-container {
     position: relative;
     display: inline-flex;
@@ -284,7 +282,6 @@
         padding: 5px;
         border: 2px solid #ccc;
         font-size: var(--mobile-font-size);
-
     }
 
     .input {
@@ -302,7 +299,7 @@
 }
 
 /* ПЛАНШЕТЫ: от 601px до 1024px */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1200px) {
     .input,
     .autosize-input,
     .table-input {
