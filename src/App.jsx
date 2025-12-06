@@ -19,6 +19,7 @@ import { useColoredInputs } from "./hooks/useColoredInputs";
 import "./css/App.css";
 
 const DEFAULT_LEVEL = "A1.1";
+const MOBILE_BREAKPOINT = 600;
 
 function getTabsForLevel(level) {
     return EXERCISES_BY_LEVEL[level] || EXERCISES_BY_LEVEL[DEFAULT_LEVEL];
@@ -47,6 +48,7 @@ export default function App() {
     const [isMobile, setIsMobile] = useState(false);
 
     const contentRef = useRef(null);
+    const prevIsMobileRef = useRef(false);
 
     const tabsForLevel = getTabsForLevel(level);
     const labels = translations[locale].labels;
@@ -93,17 +95,16 @@ export default function App() {
         const handleResize = () => {
             const mobile = window.innerWidth <= MOBILE_BREAKPOINT;
 
-            // переход режима desktop/tablet -> mobile
+            // переход из не-мобильного состояния в мобильное
             if (mobile && !prevIsMobileRef.current) {
-                setIsSidebarOpen(true);   // открыть сайдбар ОДИН раз
+                setIsSidebarOpen(true);   // открыть сайдбар один раз при входе в мобилку
             }
 
-            // сохраняем новое состояние
             prevIsMobileRef.current = mobile;
             setIsMobile(mobile);
         };
 
-        handleResize(); // первый запуск при монтировании
+        handleResize(); // первый вызов при монтировании
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
@@ -346,7 +347,7 @@ export default function App() {
 
             <main className="exercise-container">
                 <div ref={contentRef} className="exercise-card fade-in">
-                    <div className="exercise-scroll" onClick={(e) => e.stopPropagation()}>
+                    <div className="exercise-scroll">
                         <Component key={currentTab}/>
                     </div>
                 </div>
