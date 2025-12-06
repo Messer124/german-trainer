@@ -339,7 +339,7 @@ export default function App() {
 
             <main className="exercise-container">
                 <div ref={contentRef} className="exercise-card fade-in">
-                    <div className="exercise-scroll">
+                    <div className="exercise-scroll" onClick={(e) => e.stopPropagation()}>
                         <Component key={currentTab}/>
                     </div>
                 </div>
