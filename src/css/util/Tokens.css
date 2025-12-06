@@ -24,14 +24,12 @@
 
     /* === Статусы (для инпутов упражнений) === */
     --color-correct: #6eea8d;
-    --color-correct-bg: #e6fff1;
+    --color-correct-bg: #d6ffe7;
     --color-incorrect: red;
     --color-incorrect-bg: #ffecec;
 
     /* === Радиусы === */
-    --radius-s: 8px;
-    --radius-m: 14px;
-    --radius-l: 18px;
+    --radius: 36px;
     --radius-card: 16px;
 
     /* === Тени === */

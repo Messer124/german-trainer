@@ -1,8 +1,9 @@
 :root {
   --radius: 36px;
   --sidebar-bg-alpha: 0.4;
-  --sidebar-element-alpha: 0.4;
   --layout-gap: 24px;
+  --desktop-font-size: 30px;
+  --mobile-font-size: 15px;
 }
 
 /* базовые сбросы */
@@ -17,6 +18,7 @@ html,
 body,
 #root {
   height: 100%;
+  position: fixed;
 }
 
 body {
@@ -34,7 +36,7 @@ body {
   padding: var(--layout-gap);
   background: linear-gradient(135deg, #6ecfff 0%, #4ade80 100%) fixed;
   overflow: hidden;
-  font-size: 30px; /* всё, кроме хедера */
+  font-size: var(--desktop-font-size);
 }
 
 .app-layout--mobile {
@@ -140,7 +142,7 @@ body {
   gap: 6px;
   border-radius: var(--radius);
   border: none;
-  background-color: rgba(255, 255, 255, var(--sidebar-element-alpha));
+  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
   cursor: pointer;
   font: inherit;
   font-weight: 600;
@@ -180,7 +182,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, var(--sidebar-element-alpha));
+  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
   cursor: pointer;
   transition: transform 0.15s ease,
   background-color 0.15s ease;
@@ -203,7 +205,7 @@ body {
   margin-top: 10px;
 
   border-radius: var(--radius);
-  background-color: rgba(255, 255, 255, var(--sidebar-element-alpha));
+  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
   padding: 18px 20px;
 }
 
@@ -263,7 +265,7 @@ body {
 
 .sidebar-exercises-inner {
   border-radius: var(--radius);
-  background-color: rgba(255, 255, 255, var(--sidebar-element-alpha));
+  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
   padding: 0;
   overflow: hidden;     /* скролл общий на .sidebar-middle, тут не нужен */
 }
@@ -331,7 +333,7 @@ body {
   border: none;
 
   padding: 16px 0;
-  background-color: rgba(255, 255, 255, var(--sidebar-element-alpha));
+  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
 
   font: inherit;
   font-weight: 700;
@@ -493,20 +495,6 @@ body {
   line-height: 1;
 
   color: #111827;
-  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.9);
-}
-
-/* лёгкое свечение по краю */
-
-.app-header-right > button::after {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 18px rgba(255, 255, 255, 0.6);
-  opacity: 0.0;
-  transition: opacity 0.18s ease-out;
 }
 
 /* HOVER: лёгкий подъём и усиление свечения */
@@ -585,6 +573,10 @@ body {
 /* ---------- адаптив ---------- */
 
 @media (max-width: 767px) {
+  .app-layout {
+    font-size: var(--mobile-font-size);
+  }
+
   .app-header {
     height: 12vh;
     min-height: 80px;
@@ -592,16 +584,21 @@ body {
   }
 
   .header-sidebar-button {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .app-header-right > button {
+    width: 40px;
+    height: 40px;
   }
 
   .app-header-title {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .app-header-subtitle {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .exercise-scroll {
@@ -610,6 +607,23 @@ body {
 
   .sidebar--desktop {
     margin-right: 0;
+  }
+
+  .sidebar-settings-button {
+    height: 50px;           /* фиксированная высота */
+  }
+
+  .sidebar-close-icon-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sidebar-tab {
+    height: 50px;
+  }
+
+  .sidebar-clear-button {
+    height: 50px;
   }
 }
 

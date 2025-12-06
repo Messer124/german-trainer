@@ -25,41 +25,105 @@
     box-sizing: border-box;
 }
 
-.input {
-    font-size: 30px;
-    width: 70px;
-    padding: 4px;
-    margin: 0 8px;
-    border-radius: var(--radius);
-    border: 2px solid #ccc;
-    text-align: center;
-    outline: none;
-    line-height: 1.4;
-    transition: border-color 0.3s ease;
-}
-
-.autosize-input {
-    transition: all 0.5s ease;
-    border: 2px solid #ccc;
-    border-radius: var(--radius);
-    padding: 6px 12px;
-    font-size: 30px;
-    min-width: 6ch;
-    width: fit-content;
-    outline: none;
-    text-align: center;
-}
-
+/* базовый стиль для всех инпутов упражнений */
+.input,
+.autosize-input,
 .table-input {
-    font-size: 30px;
-    transition: border-color 0.5s ease;
-    width: 80%;
-    padding: 4px 6px;
-    min-height: 28px;
+    padding: 8px 18px;
     border-radius: var(--radius);
-    border: 2px solid #ccc;
-    text-align: center;
+    border: 3px solid #ccc;
     outline: none;
+
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+
+    transition:
+            border-color 0.2s ease,
+            background-color 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+/* 1) обычный input фиксированной ширины 140px */
+.input {
+    width: 140px;
+    margin: 0 6px;
+}
+
+/* 2) table-input — ширина ячейки, но не более 300px */
+.table-input {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* 3) autosize-input — чисто CSS:
+   базово 140px, дальше растягивается за счёт fit-content */
+.autosize-input {
+    min-width: 140px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+/* ПУСТОЙ ИНПУТ — базовый класс */
+.input.empty,
+.autosize-input.empty,
+.table-input.empty {
+    box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.06);
+}
+
+/* оранжевый — чуть ярче */
+.input.empty.color-orange,
+.autosize-input.empty.color-orange,
+.table-input.empty.color-orange {
+    border-color: #ffb86c;
+}
+
+/* жёлтый */
+.input.empty.color-yellow,
+.autosize-input.empty.color-yellow,
+.table-input.empty.color-yellow {
+    border-color: #ffe66d;
+}
+
+/* фиалковый */
+.input.empty.color-violet,
+.autosize-input.empty.color-violet,
+.table-input.empty.color-violet {
+    border-color: #d0b3ff;
+}
+
+/* салатовый */
+.input.empty.color-green,
+.autosize-input.empty.color-green,
+.table-input.empty.color-green {
+    border-color: #9ae6b4;
+}
+
+/* бирюзовый */
+.input.empty.color-teal,
+.autosize-input.empty.color-teal,
+.table-input.empty.color-teal {
+    border-color: #81e6d9;
+}
+
+/* ПРАВИЛЬНО / НЕПРАВИЛЬНО — поверх любых цветов пустого */
+.input.correct,
+.autosize-input.correct,
+.table-input.correct {
+    border-color: var(--color-correct);
+    background-color: var(--color-correct-bg);
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);
+}
+
+.input.incorrect,
+.autosize-input.incorrect,
+.table-input.incorrect {
+    border-color: var(--color-incorrect);
+    background-color: var(--color-incorrect-bg);
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.3);
 }
 
 .input.correct,
@@ -96,7 +160,7 @@
     width: 100%;
     min-height: 0;
 
-    border-radius: 19px;
+    border-radius: var(--radius);
     border: 1px solid #ccc;
     background: #fff;
 }
@@ -110,7 +174,7 @@
 .table thead {
     position: sticky;
     top: 0;
-    background: var(--color-bg-surface);
+    background: #f2f2f7;
     z-index: 2;
 }
 
@@ -125,22 +189,23 @@
     border: 1px solid #ccc;
     padding: 8px;
     text-align: center;
+    min-width: 100px;
 }
 
 /* Верхние скругления */
 .table thead tr:first-child th:first-child {
-    border-top-left-radius: var(--radius-l);
+    border-top-left-radius: var(--radius);
 }
 .table thead tr:first-child th:last-child {
-    border-top-right-radius: var(--radius-l);
+    border-top-right-radius: var(--radius);
 }
 
 /* Нижние скругления */
 .table tbody tr:last-child td:first-child {
-    border-bottom-left-radius: var(--radius-l);
+    border-bottom-left-radius: var(--radius);
 }
 .table tbody tr:last-child td:last-child {
-    border-bottom-right-radius: var(--radius-l);
+    border-bottom-right-radius: var(--radius);
 }
 
 .eye-container {
@@ -149,44 +214,45 @@
     margin-left: 8px;
 }
 
-/* Позиционируем всплывашку справа от иконки и по её вертикальному центру */
+/* === ПОДСКАЗКА С ОТВЕТОМ ДЛЯ EYE === */
+
+/* === Глазок + подсказка с ответом === */
+
 .eye-container {
     position: relative;
     display: inline-flex;
     align-items: center;
-    margin-left: 12px;
-    cursor: pointer;              /* чувствуем, что это кнопка */
+    margin-left: 8px;
+    cursor: pointer;
 }
 
-/* всплывающее окно с ответом */
+/* базовое состояние: подсказка скрыта, по центру относительно глазка */
 .eye {
     position: absolute;
-
     top: 50%;
-    right: calc(100% + 12px);      /* правее иконки */
-    transform: translateY(-50%) scale(0.96);
+    transform: translate(-50%, -50%) scale(0.96);
+    transform-origin: center center;
 
     background: #fefefe;
-    border: 2px solid #ccc;
-    padding: 6px 10px;
-    border-radius: 12px;
+    border: 2px solid #73ff2c;
+    padding: 6px 12px;
+    border-radius: var(--radius);
     white-space: nowrap;
-    font-size: 18px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    font-size: var(--desktop-font-size);
 
     opacity: 0;
     visibility: hidden;
+    z-index: 10;
     transition:
             opacity 0.18s ease-out,
             transform 0.18s ease-out;
-    z-index: 10;
 }
 
-/* показываем ответ ТОЛЬКО при нажатии */
-.eye-container:active .eye {
+/* видимое состояние — включаем классом .eye--visible */
+.eye.eye--visible {
     opacity: 1;
     visibility: visible;
-    transform: translateY(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .hint-button {
@@ -204,4 +270,32 @@
     align-items: center;
     justify-content: center;
     margin-left: 12px;
+}
+
+
+/* ---------- адаптив ---------- */
+
+@media (max-width: 767px) {
+    .input,
+    .autosize-input,
+    .table-input {
+        padding: 5px;
+        border: 2px solid #ccc;
+        font-size: var(--mobile-font-size);
+
+    }
+
+    .input {
+        width: 70px;
+        margin: 3px;
+    }
+
+    .autosize-input {
+        min-width: 70px;
+    }
+
+    .eye {
+        font-size: var(--mobile-font-size);
+    }
+
 }
