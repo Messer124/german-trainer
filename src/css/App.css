@@ -82,16 +82,16 @@ body {
           transform 0.35s ease;
 }
 
-/* когда сайдбар закрыт на десктопе */
-.sidebar--desktop.sidebar--collapsed {
-  flex-basis: 0;
-  min-width: 0;
-  max-width: 0;
-  margin-right: 0;
-  opacity: 0;
-  transform: translateX(-20px);
-  pointer-events: none;
-}
+/*!* когда сайдбар закрыт на десктопе *!*/
+/*.sidebar--desktop.sidebar--collapsed {*/
+/*  flex-basis: 0;*/
+/*  min-width: 0;*/
+/*  max-width: 0;*/
+/*  margin-right: 0;*/
+/*  opacity: 0;*/
+/*  transform: translateX(-20px);*/
+/*  pointer-events: none;*/
+/*}*/
 
 /* Весь внутренний контент сайдбара */
 .sidebar-inner {
@@ -671,6 +671,10 @@ body {
   .header-sidebar-button {
     width: 50px;
     height: 50px;
+  }
+
+  .sidebar--desktop {
+    min-width: 250px;
   }
 
   .app-header-right > button {

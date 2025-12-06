@@ -88,15 +88,22 @@ export default function App() {
 
     // адаптив
     useEffect(() => {
+        if (typeof window === "undefined") return;
+
         const handleResize = () => {
-            const mobile = window.innerWidth < 768;
-            setIsMobile(mobile);
-            if (mobile) {
-                setIsSidebarOpen(true);
+            const mobile = window.innerWidth <= MOBILE_BREAKPOINT;
+
+            // переход режима desktop/tablet -> mobile
+            if (mobile && !prevIsMobileRef.current) {
+                setIsSidebarOpen(true);   // открыть сайдбар ОДИН раз
             }
+
+            // сохраняем новое состояние
+            prevIsMobileRef.current = mobile;
+            setIsMobile(mobile);
         };
 
-        handleResize();
+        handleResize(); // первый запуск при монтировании
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
