@@ -152,7 +152,7 @@ export default function App() {
             const timeoutId = window.setTimeout(() => {
                 popup.classList.remove("eye--visible");
                 popup.removeAttribute("data-eye-timeout-id");
-            }, 4500);
+            }, 1500);
 
             popup.setAttribute("data-eye-timeout-id", String(timeoutId));
         };

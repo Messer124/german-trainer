@@ -3,6 +3,7 @@
   --sidebar-bg-alpha: 0.4;
   --layout-gap: 24px;
   --desktop-font-size: 30px;
+  --tablet-font-size: 24px;
   --mobile-font-size: 15px;
 }
 
@@ -34,13 +35,15 @@ body {
   width: 100vw;
   display: flex;
   padding: var(--layout-gap);
-  background: linear-gradient(135deg, #6ecfff 0%, #4ade80 100%) fixed;
+  background: linear-gradient(to bottom, #6ecfff 0%, #4ade80 100%) fixed;
   overflow: hidden;
   font-size: var(--desktop-font-size);
 }
 
 .app-layout--mobile {
   padding: var(--layout-gap);
+  font-size: var(--mobile-font-size);
+  height: 100dvh;
 }
 
 .main {
@@ -572,9 +575,13 @@ body {
 
 /* ---------- адаптив ---------- */
 
-@media (max-width: 767px) {
-  .app-layout {
-    font-size: var(--mobile-font-size);
+@media (max-width: 600px) {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
 
   .app-header {
@@ -605,8 +612,10 @@ body {
     padding: 16px;
   }
 
-  .sidebar--desktop {
-    margin-right: 0;
+  .sidebar--mobile {
+    width: 100%;
+    flex: 1 0 auto;
+    border-radius: var(--radius)
   }
 
   .sidebar-settings-button {
@@ -626,4 +635,65 @@ body {
     height: 50px;
   }
 }
+
+/* ПЛАНШЕТЫ: от 601px до 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .app-layout {
+    font-size: var(--tablet-font-size);
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .app-header {
+    height: 10vh;
+    min-height: 60px;
+    padding: 14px 16px;
+  }
+
+  .header-sidebar-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .app-header-right > button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .app-header-title {
+    font-size: 25px;
+  }
+
+  .app-header-subtitle {
+    font-size: 20px;
+  }
+
+  .exercise-scroll {
+    padding: 16px;
+  }
+
+  .sidebar-settings-button {
+    height: 60px;
+  }
+
+  .sidebar-close-icon-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sidebar-tab {
+    height: 70px;
+  }
+
+  .sidebar-clear-button {
+    height: 70px;
+  }
+}
+
 
