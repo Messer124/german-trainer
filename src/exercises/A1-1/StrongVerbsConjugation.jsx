@@ -37,7 +37,6 @@ function StrongVerbsConjugation() {
           <table className="table">
             <thead>
             <tr>
-              <th>Infinitiv</th>
               <th>ich</th>
               <th>du</th>
               <th>er/sie/es</th>
@@ -48,7 +47,6 @@ function StrongVerbsConjugation() {
             <tbody>
             {data.items.map((item, index) => (
                 <tr key={index}>
-                  <td>{item.sentence}</td>
                   {["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"].map((pronoun) => {
                     const inputKey = `irregular-verbs-${index}-${pronoun}`;
                     const correct = item.answers[pronoun]?.toLowerCase();
@@ -60,6 +58,7 @@ function StrongVerbsConjugation() {
                           <input
                               type="text"
                               value={answers[inputKey]?.value || ""}
+                              placeholder={item.sentence}
                               onChange={(e) =>
                                   setAnswers((prev) => ({
                                     ...prev,

@@ -3,7 +3,7 @@
   --sidebar-bg-alpha: 0.4;
   --layout-gap: 24px;
   --desktop-font-size: 30px;
-  --tablet-font-size: 24px;
+  --tablet-font-size: 20px;
   --mobile-font-size: 15px;
 }
 
@@ -82,16 +82,16 @@ body {
           transform 0.35s ease;
 }
 
-/*!* когда сайдбар закрыт на десктопе *!*/
-/*.sidebar--desktop.sidebar--collapsed {*/
-/*  flex-basis: 0;*/
-/*  min-width: 0;*/
-/*  max-width: 0;*/
-/*  margin-right: 0;*/
-/*  opacity: 0;*/
-/*  transform: translateX(-20px);*/
-/*  pointer-events: none;*/
-/*}*/
+/* когда сайдбар закрыт на десктопе */
+.sidebar--desktop.sidebar--collapsed {
+  flex-basis: 0;
+  min-width: 0;
+  max-width: 0;
+  margin-right: 0;
+  opacity: 0;
+  transform: translateX(-20px);
+  pointer-events: none;
+}
 
 /* Весь внутренний контент сайдбара */
 .sidebar-inner {
@@ -131,7 +131,9 @@ body {
 .sidebar-top {
   flex: 0 0 auto;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: space-between;
+
   gap: 12px;
   margin-bottom: 12px;
 }
@@ -151,27 +153,14 @@ body {
   font-weight: 600;
 }
 
-.sidebar-settings-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16);
-}
-
 .sidebar-settings-icon {
   flex-shrink: 0;
+  display: compact;
 }
 
 .sidebar-settings-label-text {
   flex: 0;
   font-weight: 700;
-}
-
-.sidebar-settings-chevron {
-  margin-left: auto;
-  transition: transform 0.2s ease;
-}
-
-.sidebar-settings-chevron--open {
-  transform: rotate(180deg);
 }
 
 /* кнопка закрытия сайдбара */
@@ -191,24 +180,13 @@ body {
   background-color 0.15s ease;
 }
 
-.sidebar-close-icon-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16);
-}
-
 @media (min-width: 1201px) {
   .sidebar-close-icon-button {
     display: none;
   }
 }
 
-/* обёртка для анимации высоты настроек */
-.sidebar-settings-dropdown-wrapper {
-  flex: 0 0 auto;       /* высота по содержимому (анимируется framer-motion) */
-}
-
 /* выпадающее меню настроек */
-
 .sidebar-settings-dropdown {
   overflow: hidden;
   margin-top: 10px;
@@ -673,6 +651,25 @@ body {
     height: 50px;
   }
 
+  .sidebar-settings-button {
+    height: 60px;
+    flex: 0;
+  }
+
+  .sidebar-settings-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .sidebar-settings-label-text {
+    display: none;
+  }
+
+  .sidebar-close-icon-button {
+    width: 60px;
+    height: 60px;
+  }
+
   .sidebar--desktop {
     min-width: 250px;
   }
@@ -694,22 +691,12 @@ body {
     padding: 16px;
   }
 
-  .sidebar-settings-button {
-    height: 60px;
-  }
-
-  .sidebar-close-icon-button {
-    width: 60px;
-    height: 60px;
-  }
-
   .sidebar-tab {
-    height: 70px;
+    height: 80px;
+    font-size: var(--tablet-font-size);
   }
 
   .sidebar-clear-button {
     height: 70px;
   }
 }
-
-

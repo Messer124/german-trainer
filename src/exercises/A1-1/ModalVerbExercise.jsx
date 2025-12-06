@@ -72,7 +72,6 @@ function ModalVerbExercise() {
                 <table className="table">
                     <thead>
                     <tr>
-                        <th>Pronomen</th>
                         {Object.keys(modalVerbs).map((verb) => (
                             <th key={verb}>{verb}</th>
                         ))}
@@ -81,7 +80,6 @@ function ModalVerbExercise() {
                     <tbody>
                     {pronouns.map((pronoun, i) => (
                         <tr key={pronoun}>
-                            <td>{pronoun}</td>
                             {Object.keys(modalVerbs).map((verb) => {
                                 const key = `${i}-${verb}`;
                                 const value = answers[key]?.value || "";
@@ -92,6 +90,7 @@ function ModalVerbExercise() {
                                         <input
                                             type="text"
                                             value={value}
+                                            placeholder={pronoun}
                                             onChange={(e) => handleChange(i, verb, e.target.value)}
                                             className={`table-input ${
                                                 value === "" ? "" : isCorrect ? "correct" : "incorrect"

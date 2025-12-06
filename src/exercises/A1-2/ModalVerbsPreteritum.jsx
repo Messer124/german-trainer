@@ -22,7 +22,7 @@ function ModalVerbsPreteritum() {
 
   const handleChange = (index, value) => {
     const correct =
-        data.items[0].items[index].answer.trim().toLowerCase();
+        data.items[index].answer.trim().toLowerCase();
     const isCorrect = value.trim().toLowerCase() === correct;
 
     setAnswers((prev) => ({

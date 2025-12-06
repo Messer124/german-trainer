@@ -39,7 +39,6 @@ function WeakVerbConjugation() {
                 <table className="table">
                     <thead>
                     <tr>
-                        <th>Infinitiv</th>
                         {pronouns.map((p) => (
                             <th key={p}>{p}</th>
                         ))}
@@ -48,7 +47,6 @@ function WeakVerbConjugation() {
                     <tbody>
                     {data.items.map((verb, index) => (
                         <tr key={index}>
-                            <td>{verb.infinitive}</td>
                             {pronouns.map((pronoun) => {
                                 const inputKey = `weak-verbs-${index}-${pronoun}`;
                                 const correct = verb.conjugation[pronoun]?.toLowerCase();
@@ -60,6 +58,7 @@ function WeakVerbConjugation() {
                                         <input
                                             type="text"
                                             value={answers[inputKey]?.value || ""}
+                                            placeholder={verb.infinitive}
                                             onChange={(e) =>
                                                 setAnswers((prev) => ({
                                                     ...prev,

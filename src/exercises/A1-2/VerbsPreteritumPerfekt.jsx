@@ -59,7 +59,6 @@ function VerbsPreteritumPerfekt() {
           <table className="table">
             <thead>
             <tr>
-              <th>Infinitiv</th>
               <th>Präteritum</th>
               <th>Partizip II</th>
             </tr>
@@ -67,8 +66,6 @@ function VerbsPreteritumPerfekt() {
             <tbody>
             {data.items.map((item, rowIndex) => (
                 <tr key={rowIndex}>
-                  <td>{item.infinitive}</td>
-
                   {["praeteritum", "perfekt"].map((field) => {
                     const inputKey = `verbs-pp-${rowIndex}-${field}`;
                     const correct = item[field].trim().toLowerCase();
@@ -85,6 +82,7 @@ function VerbsPreteritumPerfekt() {
                                 value={value}
                                 onChange={(e) => handleChange(rowIndex, field, e.target.value)}
                                 className={`table-input ${value.trim() === "" ? "" : isCorrect ? "correct" : "incorrect"}`}
+                                placeholder={item.infinitive}
                             />
 
                             <span className="eye-container">

@@ -4,18 +4,15 @@ import {
     Globe2,
     SignalHigh,
     Settings,
-    ChevronDown,
     ArrowLeft,
     Menu,
 } from "lucide-react";
-
 import { useLocale } from "./contexts/LocaleContext";
 import { useLevel } from "./contexts/LevelContext";
 import translations from "./locales/locales";
 import { EXERCISES_BY_LEVEL } from "./config/exercises";
 import { useColoredInputs } from "./hooks/useColoredInputs";
-
-
+import { clearAnswersByStorageKey } from "./hooks/usePersistentAnswers";
 import "./css/App.css";
 
 const DEFAULT_LEVEL = "A1.1";
@@ -48,8 +45,6 @@ export default function App() {
     const [isMobile, setIsMobile] = useState(false);
 
     const contentRef = useRef(null);
-    const prevIsMobileRef = useRef(false);
-
     const tabsForLevel = getTabsForLevel(level);
     const labels = translations[locale].labels;
     const tabTitles = translations[locale].tabs;
@@ -88,25 +83,21 @@ export default function App() {
         node.classList.add("fade-in");
     }, [currentTab, level]);
 
-    // адаптив
+// адаптив: только определяем, мобильный layout или нет
     useEffect(() => {
         if (typeof window === "undefined") return;
 
         const handleResize = () => {
             const mobile = window.innerWidth <= MOBILE_BREAKPOINT;
-
-            // переход из не-мобильного состояния в мобильное
-            if (mobile && !prevIsMobileRef.current) {
-                setIsSidebarOpen(true);   // открыть сайдбар один раз при входе в мобилку
-            }
-
-            prevIsMobileRef.current = mobile;
             setIsMobile(mobile);
         };
 
-        handleResize(); // первый вызов при монтировании
+        handleResize(); // первый запуск при монтировании
         window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
 
     if (!tabsForLevel[currentTab]) {
@@ -122,9 +113,8 @@ export default function App() {
     const headerButton = Component.headerButton;
 
     const handleClearAnswers = () => {
-        if (!storageKey || typeof window === "undefined") return;
-
-        window.dispatchEvent(new CustomEvent(`clear-${storageKey}`));
+        if (!storageKey) return;
+        clearAnswersByStorageKey(storageKey);
     };
 
     const closeSidebar = () => setIsSidebarOpen(false);
@@ -198,16 +188,10 @@ export default function App() {
                         className="sidebar-settings-button"
                         onClick={() => setSettingsOpen((prev) => !prev)}
                     >
-                        <Settings size={30} className="sidebar-settings-icon"/>
+                        <Settings size={25} className="sidebar-settings-icon"/>
                         <span className="sidebar-settings-label-text">
-          {locale === "ru" ? "Настройки" : "Settings"}
-        </span>
-                        <ChevronDown
-                            size={20}
-                            className={`sidebar-settings-chevron ${
-                                settingsOpen ? "sidebar-settings-chevron--open" : ""
-                            }`}
-                        />
+                            {locale === "ru" ? "Настройки" : "Settings"}
+                        </span>
                     </button>
 
                     <button
@@ -215,7 +199,7 @@ export default function App() {
                         className="sidebar-close-icon-button"
                         onClick={closeSidebar}
                     >
-                        <ArrowLeft size={20}/>
+                        <ArrowLeft size={25}/>
                     </button>
                 </div>
 

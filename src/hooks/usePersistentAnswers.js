@@ -1,5 +1,42 @@
 import { useState, useEffect } from "react";
 
+// реестр всех сторов по storageKey
+const stores = new Map();
+
+/**
+ * Внутренний регистратор стора по ключу
+ */
+function registerStore(storageKey, resetFn) {
+    stores.set(storageKey, resetFn);
+}
+
+function unregisterStore(storageKey, resetFn) {
+    const existing = stores.get(storageKey);
+    if (existing === resetFn) {
+        stores.delete(storageKey);
+    }
+}
+
+/**
+ * Внешняя функция для очистки ответов по ключу.
+ * Можно вызывать из App.jsx.
+ */
+export function clearAnswersByStorageKey(storageKey) {
+    const reset = stores.get(storageKey);
+
+    if (reset) {
+        reset();
+    }
+
+    if (typeof window !== "undefined") {
+        try {
+            window.localStorage.removeItem(storageKey);
+        } catch {
+            // игнорируем ошибки localStorage
+        }
+    }
+}
+
 export function usePersistentAnswers(storageKey, defaultValue) {
     const [answers, setAnswers] = useState(() => {
         if (typeof window === "undefined") {
@@ -25,7 +62,16 @@ export function usePersistentAnswers(storageKey, defaultValue) {
         }
     }, [storageKey, answers]);
 
-    // Подписка на глобальное событие очистки для этого ключа
+    // Регистрируем стор в реестре, чтобы можно было очищать напрямую
+    useEffect(() => {
+        const reset = () => setAnswers(defaultValue);
+
+        registerStore(storageKey, reset);
+        return () => unregisterStore(storageKey, reset);
+    }, [storageKey, defaultValue]);
+
+    // (опционально можно оставить старую логику через события,
+    //  но она больше не обязательна)
     useEffect(() => {
         const eventName = `clear-${storageKey}`;
 
