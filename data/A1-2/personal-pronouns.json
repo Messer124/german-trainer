@@ -1,0 +1,66 @@
+{
+  "title": {
+    "ru": "Личные местоимения",
+    "en": "Personal pronouns"
+  },
+  "instructions": {
+    "ru": "Замените выделенные выражения местоимением в нужном падеже.",
+    "en": "Replace the highlighted expressions with pronouns in the required case."
+  },
+  "items": [
+    { "sentence": "Ich sehe \"den Turm\" gar nicht.", "answer": "ihn" },
+    { "sentence": "Wo finde ich \"die Bücherei\"?", "answer": "sie" },
+    { "sentence": "Wie geht es \"deinen Eltern\"?", "answer": "ihnen" },
+    { "sentence": "Peter trifft sich mit \"seinem Freund\" in der Pizzeria.", "answer": "ihm" },
+    { "sentence": "\"Max und Jana\" wohnen nicht weit vom Krankenhaus.", "answer": "sie" },
+    { "sentence": "Herr Bauer kennt \"diese Stadt\" sehr gut.", "answer": "sie" },
+    { "sentence": "Am Wochenende fahren wir zu \"unseren Großeltern\".", "answer": "ihnen" },
+    { "sentence": "Ich habe \"meinen Onkel\" schon lange nicht gesehen.", "answer": "ihn" },
+    { "sentence": "Klaus bringt \"Frau und Herrn Krause\" zum Bahnhof.", "answer": "sie" },
+    { "sentence": "Meine Nachbarn helfen immer \"diesem Mädchen\".", "answer": "ihm" },
+
+    { "sentence": "Ich kenne \"deine Schwester\" gut.", "answer": "sie" },
+    { "sentence": "Wir besuchen \"unseren Opa\" am Sonntag.", "answer": "ihn" },
+    { "sentence": "Lisa ruft \"ihre Freundin\" jeden Tag an.", "answer": "sie" },
+    { "sentence": "Ich helfe \"meinem Bruder\" bei den Hausaufgaben.", "answer": "ihm" },
+    { "sentence": "Gib \"dem Kind\" bitte die Schokolade.", "answer": "ihm" },
+    { "sentence": "Frau Meier zeigt \"den Gästen\" die Stadt.", "answer": "ihnen" },
+    { "sentence": "Siehst du \"das Auto\" dort?", "answer": "es" },
+    { "sentence": "Wir brauchen \"die Schlüssel\" jetzt.", "answer": "sie" },
+    { "sentence": "Ich warte auf \"meinen Bus\".", "answer": "ihn" },
+    { "sentence": "Der Lehrer erklärt \"den Schülern\" die Aufgabe.", "answer": "ihnen" },
+
+    { "sentence": "Markus wohnt mit \"seinen Eltern\" in Berlin.", "answer": "ihnen" },
+    { "sentence": "Ich kaufe \"meiner Mutter\" Blumen.", "answer": "ihr" },
+    { "sentence": "Wir hören \"die Musik\" nicht.", "answer": "sie" },
+    { "sentence": "Kennst du \"diesen Mann\"?", "answer": "ihn" },
+    { "sentence": "Ich schreibe \"meinem Freund\" eine E-Mail.", "answer": "ihm" },
+    { "sentence": "Anna besucht \"ihre Großeltern\" in den Ferien.", "answer": "sie" },
+    { "sentence": "\"Mein neues Handy\" ist sehr teuer.", "answer": "es" },
+    { "sentence": "\"Meine Kinder\" spielen im Garten.", "answer": "sie" },
+    { "sentence": "Morgen kommt \"unsere Lehrerin\".", "answer": "sie" },
+    { "sentence": "Ich sehe \"den Zug\" schon.", "answer": "ihn" },
+
+    { "sentence": "Wir fahren oft mit \"unserem Hund\" zum See.", "answer": "ihm" },
+    { "sentence": "Der Lehrer erklärt \"mir und meiner Schwester\" die Grammatik.", "answer": "uns" },
+    { "sentence": "Die Verkäuferin gibt \"dem Kunden\" das Wechselgeld.", "answer": "ihm" },
+    { "sentence": "Ich suche \"meine Brille\".", "answer": "sie" },
+    { "sentence": "Wir erzählen \"den Kindern\" eine Geschichte.", "answer": "ihnen" },
+    { "sentence": "Bringst du \"deinen Laptop\" mit?", "answer": "ihn" },
+    { "sentence": "Ich nehme \"dieses Buch\" mit in den Urlaub.", "answer": "es" },
+    { "sentence": "Wie geht es \"deinem Opa\"?", "answer": "ihm" },
+    { "sentence": "Heute Abend treffen wir \"unsere Freunde\" im Kino.", "answer": "sie" },
+    { "sentence": "Frau Klein dankt immer \"dem Arzt\".", "answer": "ihm" },
+
+    { "sentence": "Ich mag \"diese Stadt\" sehr.", "answer": "sie" },
+    { "sentence": "Die Lehrerin fragt \"den Schüler\" etwas.", "answer": "ihn" },
+    { "sentence": "Wir fahren zu \"unserer Tante\".", "answer": "ihr" },
+    { "sentence": "Peter spricht oft mit \"seiner Schwester\".", "answer": "ihr" },
+    { "sentence": "Ich kenne \"dieses Mädchen\" nicht.", "answer": "es" },
+    { "sentence": "Hast du \"mein Handy\" gesehen?", "answer": "es" },
+    { "sentence": "Der Busfahrer hilft \"der alten Frau\".", "answer": "ihr" },
+    { "sentence": "Am Wochenende gehen wir mit \"unseren Freunden\" ins Kino.", "answer": "ihnen" },
+    { "sentence": "Ich rufe \"meine Freunde\" später an.", "answer": "sie" },
+    { "sentence": "Kannst du \"dem Lehrer\" bitte antworten?", "answer": "ihm" }
+  ]
+}

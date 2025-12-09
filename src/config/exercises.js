@@ -12,6 +12,7 @@ import VerbsPreteritumPerfekt from "../exercises/A1-2/VerbsPreteritumPerfekt";
 import HabenSeinPreteritum from "../exercises/A1-2/HabenSeinPreteritum";
 import ModalVerbsPreteritum from "../exercises/A1-2/ModalVerbsPreteritum";
 import TimeExercise from "../exercises/A1-2/TimeExercise";
+import PersonalPronouns from "../exercises/A1-2/PersonalPronouns";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -73,5 +74,9 @@ export const EXERCISES_BY_LEVEL = {
             storageKey: "modal-verbs-preteritum-answers",
             component: ModalVerbsPreteritum,
         },
+        "personal-pronouns": {
+            storageKey: "personal-pronouns-answers",
+            component: PersonalPronouns,
+        }
     },
 };
