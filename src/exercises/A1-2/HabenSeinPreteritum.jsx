@@ -54,7 +54,7 @@ function HabenSeinPreteritum() {
         )}
           <div className="scroll-container">
             <ul className="list">
-              {data.items[0].items.map((item, index) => {
+              {data.items.map((item, index) => {
                 const value = answers[index]?.value || "";
                 const isCorrect = answers[index]?.isCorrect;
 
