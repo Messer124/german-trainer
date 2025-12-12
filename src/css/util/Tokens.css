@@ -1,4 +1,19 @@
 :root {
+    --sidebar-bg-alpha: 0.4;
+    --layout-gap: 24px;
+
+    --desktop-font-size: 30px;
+    --tablet-font-size: 20px;
+    --mobile-font-size: 15px;
+
+    --desktop-modal-header-font-size: 27px;
+    --tablet-modal-header-font-size: 17px;
+    --mobile-modal-header-font-size: 10px;
+
+    --desktop-modal-font-size: 25px;
+    --tablet-modal-font-size: 15px;
+    --mobile-modal-font-size: 10px;
+
     /* === Цвета фона === */
     --color-bg-body: #f2f2f7;
     --color-bg-surface: rgba(242, 242, 247, 0.6);

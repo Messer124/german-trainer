@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "../css/util/modalHtml.css";
+import "../../data/style/commonModal.css";
 
 function extractBody(html) {
     if (!html) return "";
@@ -135,6 +136,18 @@ export default function ModalHtml({
             aria-modal="true"
         >
             <div className="modal-html-content-wrapper" onClick={(e) => e.stopPropagation()}>
+                <button
+                    type="button"
+                    className="modal-close-button"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        startClose();
+                    }}
+                    aria-label="Close"
+                    title="Close"
+                >
+                    ×
+                </button>
                 <div className="modal-html-content">
                     {hasPages ? (
                         <div className="modal-slider">
@@ -145,7 +158,7 @@ export default function ModalHtml({
                             >
                                 <div
                                     className="modal-slider__page"
-                                    dangerouslySetInnerHTML={{ __html: pages[index] }}
+                                    dangerouslySetInnerHTML={{__html: pages[index]}}
                                 />
 
                                 {hasMultiple ? (

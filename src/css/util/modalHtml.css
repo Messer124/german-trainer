@@ -9,6 +9,10 @@
   padding: 24px;
   overflow: auto;
   z-index: 1000;
+
+  /* плавное появление затемнённого фона */
+  opacity: 0;
+  animation: modalOverlayFadeIn 0.25s ease-out forwards;
 }
 
 /* Белый прямоугольник модалки */
@@ -27,42 +31,25 @@
 }
 
 .modal-html-content-wrapper {
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
   background: #fff;
-  border-radius: 16px;
+  border-radius: var(--radius);
   padding: 16px 24px;
   display: inline-block;
   max-width: 90vw;
   box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
-}
 
-/* HTML-таблица внутри модалки */
-.modal-html-content .theory-card {
-  max-width: none;
-  max-height: none;
-  width: 100%;
-  margin: 0;
-  font-size: 35px;
-  line-height: 1.4;
+  opacity: 0;
+  transform: translateY(10px) scale(0.96);
+  animation: modalDialogZoomIn 0.25s ease-out forwards;
 }
 
 .modal-html-content .theory-table {
   width: 100%;
   table-layout: auto;
-}
-
-/* ==== Анимация плавного появления модалки ==== */
-
-/* плавное появление затемнённого фона */
-.modal-overlay {
-  opacity: 0;
-  animation: modalOverlayFadeIn 0.25s ease-out forwards;
-}
-
-/* плавное появление и "zoom" белого блока */
-.modal-html-content-wrapper {
-  opacity: 0;
-  transform: translateY(10px) scale(0.96);
-  animation: modalDialogZoomIn 0.25s ease-out forwards;
 }
 
 /* фон */
@@ -124,7 +111,7 @@
   transform: translateY(-50%);
   border: none;
   border-radius: 36px;
-  padding: 8px 12px;
+  padding: 4px 6px;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   font-size: 22px;
@@ -133,17 +120,17 @@
 }
 
 .modal-slider__nav--prev {
-  left: -40px;
+  left: -24px;
 }
 
 .modal-slider__nav--next {
-  right: -40px;
+  right: -24px;
 }
 
 /* счётчик (как на скрине 1/2) */
 .modal-slider__counter {
   position: absolute;
-  top: -40px;
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.6);
@@ -152,6 +139,33 @@
   border-radius: 999px;
   font-size: 12px;
   z-index: 2;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  z-index: 5; /* выше контента и стрелок */
+}
+
+.modal-close-button:hover {
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.modal-close-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 2px;
 }
 
 @keyframes modalFadeIn {
@@ -183,5 +197,60 @@
   to {
     opacity: 0;
     transform: scale(0.95) translateY(10px);
+  }
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  :root {
+    font-size: var(--tablet-modal-font-size);
+    --modal-overlay-padding: 16px;
+    --modal-wrapper-padding-y: 14px;
+    --modal-wrapper-padding-x: 16px;
+    --modal-wrapper-max-w: 94vw;
+  }
+
+  /* стрелки/счетчик внутрь карточки, чтобы не обрезались */
+  .modal-slider__nav--prev { left: 8px; }
+  .modal-slider__nav--next { right: 8px; }
+  .modal-slider__counter { top: 10px; }
+
+  .modal-slider__counter {
+    top: -16px;
+  }
+
+  .modal-slider__nav--prev {
+    left: -24px;
+  }
+
+  .modal-slider__nav--next {
+    right: -24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  :root {
+    font-size: var(--mobile-modal-font-size);
+    --modal-overlay-padding: 10px;
+    --modal-wrapper-padding-y: 12px;
+    --modal-wrapper-padding-x: 12px;
+    --modal-wrapper-max-w: 100%;
+  }
+
+  .modal-close-button {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+  }
+
+  .modal-slider__nav--prev {
+    left: -22px;
+  }
+
+  .modal-slider__nav--next {
+    right: -22px;
   }
 }

@@ -1,12 +1,3 @@
-:root {
-  --radius: 36px;
-  --sidebar-bg-alpha: 0.4;
-  --layout-gap: 24px;
-  --desktop-font-size: 30px;
-  --tablet-font-size: 20px;
-  --mobile-font-size: 15px;
-}
-
 /* базовые сбросы */
 
 *,

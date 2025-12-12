@@ -9,14 +9,12 @@
 }
 
 /* Базовая карточка с теорией */
-.theory-card {
+.modal-html-content .theory-card {
   box-sizing: border-box;
-  font-family: var(--theory-font-family);
   color: var(--theory-text-color);
-  font-size: 16px;
-  line-height: 1.4;
-  max-width: 760px;
-  margin: 0 auto;
+  font-size: var(--desktop-modal-font-size);
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .theory-section + .theory-section {
@@ -25,7 +23,7 @@
 
 /* Заголовки и текст */
 .theory-title {
-  font-size: 32px;
+  font-size: var(--desktop-modal-header-font-size);
   font-weight: 700;
   text-align: center;
   margin: 0 0 16px;
@@ -179,7 +177,7 @@
 
 /* Таблица личных местоимений */
 .theory-table--pronouns {
-  font-size: 14px;
+  font-size: var(--desktop-modal-font-size);
 }
 
 .theory-table--pronouns th,
@@ -188,7 +186,7 @@
 }
 
 .theory-case-header {
-  font-size: 16px;
+  font-size: var(--desktop-modal-header-font-size);
   padding-top: 0;
   padding-bottom: 8px;
 }
@@ -307,23 +305,6 @@
   color: var(--theory-text-color);
 }
 
-/* Вертикальный разделитель */
-@media (min-width: 600px) {
-  .theory-section--divided {
-    position: relative;
-  }
-  .theory-section--divided::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    bottom: 10px;
-    left: 50%;
-    width: 1px;
-    background-color: var(--theory-border-color);
-    transform: translateX(-50%);
-  }
-}
-
 /* Таблицы спряжения */
 .theory-table--conjugation td {
   border-bottom: 1px solid #f0f0f0;
@@ -337,7 +318,7 @@
   width: 45%;
   padding-right: 20px;
   border-right: 1px solid #f0f0f0;
-  font-size: 0.95em;
+  font-size: var(--desktop-modal-font-size);
 }
 
 /* Колонка глаголов */
@@ -345,7 +326,7 @@
   text-align: left;
   width: 55%;
   padding-left: 20px;
-  font-size: 1.1em;
+  font-size: var(--desktop-modal-font-size);
 }
 
 .theory-table--conjugation tr:last-child td {
@@ -362,7 +343,7 @@
 /* Цвет для примечания (серый, как на картинке) */
 .theory-muted {
   color: var(--theory-muted-color);
-  font-size: 0.95em;
+  font-size: var(--desktop-modal-font-size);
 }
 
 /* Формула (ge + корень + t) */
@@ -376,7 +357,7 @@
 /* Блок примеров слов */
 .theory-examples {
   text-align: center;
-  font-size: 1.1em;
+  font-size: var(--desktop-modal-font-size);
   margin-bottom: 16px;
 }
 
@@ -420,18 +401,8 @@
   flex: 0 0 360px; /* Увеличили размер для четкости */
   width: 360px;
   height: 360px;
-  font-size: 12px;
+  font-size: var(--desktop-modal-font-size);
   margin: 0 auto;
-}
-
-/* Адаптив */
-@media (max-width: 500px) {
-  .theory-clock-visual {
-    flex: 0 0 300px;
-    width: 300px;
-    height: 300px;
-    font-size: 10px;
-  }
 }
 
 /* Циферблат */
@@ -527,7 +498,7 @@
 
   white-space: nowrap;
   font-weight: 600;
-  font-size: 1.1em;
+  font-size: var(--tablet-modal-font-size);
   line-height: 1;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   z-index: 20;
@@ -566,7 +537,7 @@ table.mv-table caption {
   caption-side: top;
   text-align: left;
   padding: 0 0 10px;
-  font-size: 14px;
+  font-size: var(--desktop-modal-font-size);
   color: var(--theory-muted-color);
 }
 
@@ -580,7 +551,7 @@ table.mv-table td {
 table.mv-table thead th,
 table.mv-table tbody th,
 table.mv-table tbody td {
-  font-size: clamp(22px, 3.2vw, 44px);
+  font-size: var(--desktop-modal-font-size);
   line-height: 1.05;
 }
 
@@ -618,17 +589,11 @@ table.mv-table tbody td {
   font-weight: inherit;
 }
 
-@media (max-width: 520px) {
-  .mv-card {
-    padding: 12px 10px;
-  }
-}
-
 .vocab-table {
   width: 100%;
   border-collapse: collapse;
   /* Увеличиваем шрифт, чтобы соответствовать крупному тексту на картинке */
-  font-size: 24px;
+  font-size: var(--desktop-modal-font-size);
 }
 
 .vocab-table td {
@@ -655,15 +620,8 @@ table.mv-table tbody td {
   color: var(--theory-text-color);
 }
 
-/* Адаптив для мобильных: чуть уменьшаем шрифт */
-@media (max-width: 500px) {
-  .vocab-table {
-    font-size: 18px;
-  }
-}
-
 .theory-table--large {
-  font-size: 30px;
+  font-size: var(--desktop-modal-font-size);
 }
 
 .weak-conj-table th,
@@ -698,7 +656,7 @@ table.mv-table tbody td {
    чтобы создать визуальный разрыв */
 .weak-conj-table th:nth-child(4),
 .weak-conj-table td:nth-child(4) {
-  padding-left: 100px;
+  padding-left: 30px;
 }
 
 
@@ -725,3 +683,138 @@ table.mv-table tbody td {
 .weak-conj-table thead th {
   text-align: center;
 }
+
+@media (max-width: 1200px) {
+  .modal-html-content .theory-card {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .theory-title {
+    font-size: var(--tablet-modal-header-font-size);
+  }
+
+  .theory-table--pronouns {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .theory-case-header {
+    font-size: var(--tablet-modal-header-font-size);
+  }
+
+  .theory-clock-visual {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .theory-clock-visual {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  table.mv-table caption {
+    /*?????*/
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  table.mv-table thead th,
+  table.mv-table tbody th,
+  table.mv-table tbody td {
+    /*?????*/
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .vocab-table {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .theory-table--large { /*?????*/
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .theory-table--conjugation td:first-child {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .theory-table--conjugation td:last-child {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .theory-clock-label {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .theory-muted {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .theory-examples {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .theory-title {
+    font-size: var(--mobile-modal-header-font-size);
+  }
+
+  .theory-table--pronouns {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .theory-case-header {
+    font-size: var(--mobile-modal-header-font-size);
+  }
+
+  .theory-clock-visual {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .theory-clock-visual {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  table.mv-table caption {
+    /*?????*/
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  table.mv-table thead th,
+  table.mv-table tbody th,
+  table.mv-table tbody td {
+    /*?????*/
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .vocab-table {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .theory-table--large { /*?????*/
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .theory-table--conjugation td:first-child {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .theory-table--conjugation td:last-child {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .theory-clock-label {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .theory-muted {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .theory-examples {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .modal-html-content .theory-card{
+    font-size: var(--mobile-modal-font-size);
+  }
+}
+
