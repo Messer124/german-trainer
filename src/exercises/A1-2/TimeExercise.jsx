@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Eye } from "lucide-react";
-import ModalImage from "../../components/ModalImage";
+import ModalHtml from "../../components/ModalHtml";
 import data from "../../../data/A1-2/time.json";
-import timeImage from "../../../data/A1-2/images/timeRules.png";
+import hint from "../../../data/A1-2/images/timeRules.html?raw";
 import "../../css/exercises/Common.css";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -35,13 +35,13 @@ function TimeExercise() {
 
   return (
       <div className="exercise-inner">
-        {showImage && (
-            <ModalImage
-                src={timeImage}
-                alt={"Hint"}
-                onClose={() => setShowImage(false)}
-            />
-        )}
+          {showImage && (
+              <ModalHtml
+                  html={hint}
+                  onClose={() => setShowImage(false)}
+              />
+          )}
+
           <div className="scroll-container">
             <ul className="list">
               {data.items.map((item, index) => {

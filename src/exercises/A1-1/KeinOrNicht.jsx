@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { Eye } from "lucide-react";
 import data from "../../../data/A1-1/kein-nicht.json";
 import "../../css/exercises/Common.css";
-import ModalImage from "../../components/ModalImage";
-import hintImage from "../../../data/A1-1/images/kein-nicht.png";
+import hint from "../../../data/A1-1/images/kein-nicht.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import ModalHtml from "../../components/ModalHtml";
 
 const STORAGE_KEY = "keinOrNicht-sentences-answers";
 
@@ -39,9 +39,8 @@ function KeinOrNichtSentences() {
     return (
         <div className="exercise-inner">
             {showImage && (
-                <ModalImage
-                    src={hintImage}
-                    alt="Hint"
+                <ModalHtml
+                    html={hint}
                     onClose={() => setShowImage(false)}
                 />
             )}

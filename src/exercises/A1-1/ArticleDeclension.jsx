@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/articleDeclension.json";
-import ModalImage from "../../components/ModalImage";
+import ModalHtml from "../../components/ModalHtml";
 import "../../css/exercises/Common.css";
-import casesImage from "../../../data/A1-1/images/cases.jpg";
+import hint from "../../../data/A1-1/images/cases.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "articles-answers";
@@ -73,9 +73,8 @@ function ArticleDeclension() {
     return (
         <div className="exercise-inner">
             {showImage && (
-                <ModalImage
-                    src={casesImage}
-                    alt="Hint"
+                <ModalHtml
+                    html={hint}
                     onClose={() => setShowImage(false)}
                 />
             )}

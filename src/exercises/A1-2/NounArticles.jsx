@@ -1,33 +1,25 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-2/noun_articles_with_gender_mismatch.json";
 import { useLocale } from "../../contexts/LocaleContext";
-import ModalImageGallery from "../../components/ModalImageGallery";
-import image1 from "../../../data/A1-2/images/wordGender1.png";
-import image2 from "../../../data/A1-2/images/wordGender2.png";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import "../../css/exercises/Common.css";
+import ModalHtml from "../../components/ModalHtml";
+import hint1 from "../../../data/A1-2/images/wordGender1.html?raw";
+import hint2 from "../../../data/A1-2/images/wordGender2.html?raw";
 
 const STORAGE_KEY = "noun-articles-answers";
 
 function NounArticles() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const [showGallery, setShowGallery] = useState(false);
-
-  const hintImages = [
-    { src: image1, alt: "Hint 1" },
-    { src: image2, alt: "Hint 2" },
-  ];
+  const [showHint, setShowHint] = useState(false);
+  const hintSlides = [hint1, hint2];
 
   useEffect(() => {
-    const handleShowHint = () => {
-      setShowGallery(true);
-    };
+    const handleShowHint = () => setShowHint(true);
 
     document.addEventListener("show-hint", handleShowHint);
-    return () => {
-      document.removeEventListener("show-hint", handleShowHint);
-    };
+    return () => document.removeEventListener("show-hint", handleShowHint);
   }, []);
 
   const handleChange = (index, value) => {
@@ -44,12 +36,14 @@ function NounArticles() {
 
   return (
       <div className="exercise-inner">
-        {showGallery && (
-            <ModalImageGallery
-                images={hintImages}
-                onClose={() => setShowGallery(false)}
+        {showHint && (
+            <ModalHtml
+                images={hintSlides}
+                initialIndex={0}
+                onClose={() => setShowHint(false)}
             />
         )}
+
         <div className="scroll-container">
           <ul className="list">
             {data.items.map((item, index) => {
@@ -72,7 +66,8 @@ function NounArticles() {
                         onChange={(e) => handleChange(index, e.target.value)}
                         className={inputClassName}
                     />
-                    {item.word.replace(/^_+/, "").trim()} — {item.translation[locale]}
+                    {item.word.replace(/^_+/, "").trim()} —{" "}
+                    {item.translation[locale]}
                   </li>
               );
             })}

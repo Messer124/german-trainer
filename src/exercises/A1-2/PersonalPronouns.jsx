@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
-import ModalImage from "../../components/ModalImage";
+import ModalHtml from "../../components/ModalHtml";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
-
 import data from "../../../data/A1-2/personal-pronouns.json";
-import hintImage from "../../../data/A1-2/images/personal-pronouns.png";
-
+import hint from "../../../data/A1-2/images/personal-pronouns.html?raw";
 import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "personal-pronouns-answers";
@@ -53,9 +51,8 @@ function PersonalPronouns() {
     return (
         <div>
             {showImage && (
-                <ModalImage
-                    src={hintImage}
-                    alt={data.title?.ru || "Personal pronouns"}
+                <ModalHtml
+                    html={hint}
                     onClose={() => setShowImage(false)}
                 />
             )}

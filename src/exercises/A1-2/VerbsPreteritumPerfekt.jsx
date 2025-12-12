@@ -1,36 +1,28 @@
 import { useState, useEffect } from "react";
-import ModalImageGallery from "../../components/ModalImageGallery";
+import ModalHtml from "../../components/ModalHtml";
 import data from "../../../data/A1-2/irregular verbs.json";
 import "../../css/exercises/Common.css";
-import image1 from "../../../data/A1-2/images/preteritum.png";
-import image2 from "../../../data/A1-2/images/partizip2.png";
+import hint1 from "../../../data/A1-2/images/preteritum.html?raw";
+import hint2 from "../../../data/A1-2/images/partizip2.html?raw";
 import { Eye } from "lucide-react";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "verbs-preteritum-perfekt-answers";
 
 function VerbsPreteritumPerfekt() {
-  const [showGallery, setShowGallery] = useState(false);
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const hintImages = [
-    { src: image1, alt: "Hint" },
-    { src: image2, alt: "Hint" },
-  ];
+
+  const [showHint, setShowHint] = useState(false);
+  const hintSlides = [hint1, hint2];
 
   useEffect(() => {
-    const handleShowHint = () => setShowGallery(true);
+    const handleShowHint = () => setShowHint(true);
 
-    document.addEventListener(
-        "show-hint",
-        handleShowHint
-    );
-    return () => {
-      document.removeEventListener(
-          "show-hint",
-          handleShowHint
-      );
-    };
+    document.addEventListener("show-hint", handleShowHint);
+    return () => document.removeEventListener("show-hint", handleShowHint);
   }, []);
+
+  const closeGallery = () => setCurrentSlide(null);
 
   const handleChange = (rowIndex, field, value) => {
     const correct = data.items[rowIndex][field].trim().toLowerCase();
@@ -48,10 +40,11 @@ function VerbsPreteritumPerfekt() {
 
   return (
       <div className="exercise-inner">
-        {showGallery && (
-            <ModalImageGallery
-                images={hintImages}
-                onClose={() => setShowGallery(false)}
+        {showHint && (
+            <ModalHtml
+                images={hintSlides}
+                initialIndex={0}
+                onClose={() => setShowHint(false)}
             />
         )}
 
@@ -80,15 +73,25 @@ function VerbsPreteritumPerfekt() {
                             <input
                                 type="text"
                                 value={value}
-                                onChange={(e) => handleChange(rowIndex, field, e.target.value)}
-                                className={`table-input ${value.trim() === "" ? "" : isCorrect ? "correct" : "incorrect"}`}
+                                onChange={(e) =>
+                                    handleChange(rowIndex, field, e.target.value)
+                                }
+                                className={`table-input ${
+                                    value.trim() === ""
+                                        ? ""
+                                        : isCorrect
+                                            ? "correct"
+                                            : "incorrect"
+                                }`}
                                 placeholder={item.infinitive}
                             />
 
                             <span className="eye-container">
-                              <span><Eye size={18}/></span>
-                              <span className="eye">{item[field]}</span>
-                            </span>
+                          <span>
+                            <Eye size={18} />
+                          </span>
+                          <span className="eye">{item[field]}</span>
+                        </span>
                           </div>
                         </td>
                     );
@@ -105,9 +108,7 @@ function VerbsPreteritumPerfekt() {
 VerbsPreteritumPerfekt.headerButton = (
     <button
         onClick={() =>
-            document.dispatchEvent(
-                new CustomEvent("show-hint")
-            )
+            document.dispatchEvent(new CustomEvent("show-hint"))
         }
         className="hint-button"
     >

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "../../css/exercises/Common.css";
-import image1 from "../../../data/A1-1/images/modal-verbs.png";
-import image2 from "../../../data/A1-1/images/modal-verbs-2.png";
-import ModalImageGallery from "../../components/ModalImageGallery";
+import hint1 from "../../../data/A1-1/images/modal-verbs.html?raw";
+import hint2 from "../../../data/A1-1/images/modal-verbs-2.html?raw";
+import ModalHtml from "../../components/ModalHtml";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const pronouns = ["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"];
@@ -31,18 +31,15 @@ const data = {
 
 
 function ModalVerbExercise() {
-    const [showImage, setShowImage] = useState(false);
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
+    const [showHint, setShowHint] = useState(false);
+    const hintSlides = [hint1, hint2];
 
     useEffect(() => {
-        const handleShowHint = () => {
-            setShowImage(true);
-        };
+        const handleShowHint = () => setShowHint(true);
 
         document.addEventListener("show-hint", handleShowHint);
-        return () => {
-            document.removeEventListener("show-hint", handleShowHint);
-        };
+        return () => document.removeEventListener("show-hint", handleShowHint);
     }, []);
 
     const handleChange = (pronounIdx, verb, value) => {
@@ -59,15 +56,14 @@ function ModalVerbExercise() {
 
     return (
         <div>
-            {showImage && (
-                <ModalImageGallery
-                    images={[
-                        { src: image1, alt: "Hint 1" },
-                        { src: image2, alt: "Hint 2" },
-                    ]}
-                    onClose={() => setShowImage(false)}
+            {showHint && (
+                <ModalHtml
+                    images={hintSlides}
+                    initialIndex={0}
+                    onClose={() => setShowHint(false)}
                 />
             )}
+
             <div className="table-wrapper">
                 <table className="table">
                     <thead>

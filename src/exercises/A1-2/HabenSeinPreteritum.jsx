@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import ModalImage from "../../components/ModalImage";
+import ModalHtml from "../../components/ModalHtml";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/habenSeinPreteritum.json";
-import hint from "../../../data/A1-2/images/habenSeinPreteritum.png";
+import hint from "../../../data/A1-2/images/habenSeinPreteritum.html?raw";
 import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "haben-sein-preteritum-answers";
@@ -45,13 +45,13 @@ function HabenSeinPreteritum() {
 
   return (
       <div className="exercise-inner">
-        {showImage && (
-            <ModalImage
-                src={hint}
-                alt={"Hint"}
-                onClose={() => setShowImage(false)}
-            />
-        )}
+          {showImage && (
+              <ModalHtml
+                  html={hint}
+                  onClose={() => setShowImage(false)}
+              />
+          )}
+
           <div className="scroll-container">
             <ul className="list">
               {data.items.map((item, index) => {

@@ -1,0 +1,727 @@
+:root {
+  --theory-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --theory-text-color: #333643;
+  --theory-muted-color: #7a7d88;
+  --theory-accent-violet: #6c5ce7;
+  --theory-accent-yellow: #f8b722;
+  --theory-accent-red: #e74c3c;
+  --theory-border-color: #b3b3b6;
+}
+
+/* Базовая карточка с теорией */
+.theory-card {
+  box-sizing: border-box;
+  font-family: var(--theory-font-family);
+  color: var(--theory-text-color);
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.theory-section + .theory-section {
+  margin-top: 24px;
+}
+
+/* Заголовки и текст */
+.theory-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.theory-heading {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.theory-subtitle {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.theory-number {
+  margin-right: 4px;
+}
+
+.theory-text,
+.theory-note {
+  margin: 6px 0;
+}
+
+.theory-note--footnote {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.theory-text--ru {
+  font-style: italic;
+}
+
+.theory-translation {
+  margin-left: 2px;
+}
+
+/* Цветные и выделенные слова */
+.theory-word--violet {
+  color: var(--theory-accent-violet);
+  font-weight: 700;
+}
+
+.theory-word--yellow {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+}
+
+.theory-word--red {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.theory-word--italic {
+  font-style: italic;
+}
+
+.theory-word--bold {
+  font-weight: 700;
+}
+
+.theory-ending {
+  font-weight: 700;
+}
+
+/* Общие стили таблиц */
+.theory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.theory-table th,
+.theory-table td {
+  padding: 6px 10px;
+  border-bottom: 2px solid var(--theory-border-color);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.theory-table th {
+  font-weight: 700;
+}
+
+/* Таблица jemand/niemand */
+.theory-table--cases th:first-child,
+.theory-table--cases td:first-child {
+  width: 140px;
+}
+
+/* Таблица jeder */
+.theory-col-masc {
+  color: var(--theory-accent-violet);
+  font-weight: 700;
+}
+
+.theory-col-fem {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.theory-col-neut {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+}
+
+/* Вспомогательные глаголы haben / sein и модальные глаголы */
+.theory-pronoun {
+  font-weight: 700;
+  text-align: right;
+  padding-right: 16px;
+  white-space: nowrap;
+}
+
+.theory-table--aux-verbs th:first-child,
+.theory-table--modal-verbs th:first-child {
+  width: 170px;
+}
+
+.theory-table--aux-verbs th,
+.theory-table--modal-verbs th {
+  text-align: left;
+}
+
+/* Жёлтые колонки haben / sein */
+.theory-table--aux-verbs th:nth-child(2),
+.theory-table--aux-verbs th:nth-child(3),
+.theory-table--aux-verbs td:nth-child(2),
+.theory-table--aux-verbs td:nth-child(3),
+.theory-table--modal-verbs th:nth-child(2),
+.theory-table--modal-verbs th:nth-child(3),
+.theory-table--modal-verbs td:nth-child(2),
+.theory-table--modal-verbs td:nth-child(3) {
+  background-color: var(--theory-accent-yellow);
+}
+
+/* Дополнительная сетка и отступы для таблицы модальных глаголов */
+.theory-table--modal-verbs {
+  border-top: 1px solid var(--theory-border-color);
+}
+
+.theory-table--modal-verbs th + th,
+.theory-table--modal-verbs td + td {
+  border-left: 1px solid var(--theory-border-color);
+}
+
+.theory-dash-cell {
+  width: 32px;
+  text-align: center;
+}
+
+/* Таблица личных местоимений */
+.theory-table--pronouns {
+  font-size: 14px;
+}
+
+.theory-table--pronouns th,
+.theory-table--pronouns td {
+  padding: 6px 8px;
+}
+
+.theory-case-header {
+  font-size: 16px;
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+
+.theory-case-header--nom {
+  color: var(--theory-text-color);
+}
+
+.theory-case-header--akk {
+  color: var(--theory-accent-yellow);
+}
+
+.theory-case-header--dat {
+  color: var(--theory-accent-red);
+}
+
+/* Partizip II — двухколоночный блок */
+.theory-section--two-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.theory-column {
+  flex: 1 1 240px;
+}
+
+.theory-highlight {
+  font-weight: 700;
+}
+
+.theory-highlight--red {
+  color: var(--theory-accent-red);
+}
+
+.theory-list {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.theory-list li {
+  margin-bottom: 8px;
+}
+
+/* ===== СТРЕЛКИ (Финальная короткая версия) ===== */
+
+.theory-arrow-roof {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 12px;
+  overflow: visible;
+}
+
+.theory-arrow-line {
+  position: absolute;
+  top: 0;
+  /* Уменьшил ширину с 45% до 35%, чтобы стрелки были короче */
+  width: 35%;
+  height: 3px;
+  background-color: var(--theory-accent-yellow);
+}
+
+/* ЛЕВАЯ СТРЕЛКА */
+.theory-arrow-line--left {
+  right: 50%; /* Стыкуется в центре */
+  transform-origin: right top;
+  transform: rotate(-6deg);
+  border-radius: 2px 0 0 2px;
+}
+
+/* ПРАВАЯ СТРЕЛКА */
+.theory-arrow-line--right {
+  left: 50%;  /* Стыкуется в центре */
+  transform-origin: left top;
+  transform: rotate(6deg);
+  border-radius: 0 2px 2px 0;
+}
+
+/* Треугольники на концах */
+.theory-arrow-line::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent var(--theory-accent-yellow);
+}
+
+/* Треугольник слева */
+.theory-arrow-line--left::after {
+  left: -8px;
+  transform: rotate(180deg);
+}
+
+/* Треугольник справа */
+.theory-arrow-line--right::after {
+  right: -8px;
+}
+
+/* ===== СТИЛИ ТАБЛИЦ И ТЕКСТА ===== */
+
+/* Принудительное центрирование заголовков и формул */
+.theory-text-center {
+  text-align: center !important;
+}
+
+.theory-formula {
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  color: var(--theory-text-color);
+}
+
+/* Вертикальный разделитель */
+@media (min-width: 600px) {
+  .theory-section--divided {
+    position: relative;
+  }
+  .theory-section--divided::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    bottom: 10px;
+    left: 50%;
+    width: 1px;
+    background-color: var(--theory-border-color);
+    transform: translateX(-50%);
+  }
+}
+
+/* Таблицы спряжения */
+.theory-table--conjugation td {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 8px 4px;
+}
+
+/* Колонка местоимений */
+.theory-table--conjugation td:first-child {
+  text-align: right;
+  color: var(--theory-muted-color);
+  width: 45%;
+  padding-right: 20px;
+  border-right: 1px solid #f0f0f0;
+  font-size: 0.95em;
+}
+
+/* Колонка глаголов */
+.theory-table--conjugation td:last-child {
+  text-align: left;
+  width: 55%;
+  padding-left: 20px;
+  font-size: 1.1em;
+}
+
+.theory-table--conjugation tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== Дополнения для Partizip II ===== */
+
+/* Центрирование текста (утилита) */
+.theory-text-center {
+  text-align: center;
+}
+
+/* Цвет для примечания (серый, как на картинке) */
+.theory-muted {
+  color: var(--theory-muted-color);
+  font-size: 0.95em;
+}
+
+/* Формула (ge + корень + t) */
+.theory-formula {
+  text-align: center;
+  margin: 8px 0;
+  font-weight: 500;
+  color: var(--theory-muted-color);
+}
+
+/* Блок примеров слов */
+.theory-examples {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 16px;
+}
+
+/* Нумерованный список для особых случаев */
+.theory-list-numbered {
+  margin: 8px 0;
+  padding-left: 20px;
+  list-style-type: decimal;
+}
+
+.theory-list-numbered li {
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
+
+/* Небольшой отступ сверху для колонок, чтобы не прилипали к линиям */
+.theory-section--partizip-top {
+  margin-top: 60px;
+}
+
+/* ===== УЛУЧШЕННЫЕ ЧАСЫ ===== */
+
+.theory-clock-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Чуть больше воздуха */
+  margin-bottom: 40px;
+  font-family: var(--theory-font-family);
+}
+
+.theory-clock-lexicon {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+/* Контейнер визуализации */
+.theory-clock-visual {
+  position: relative;
+  flex: 0 0 360px; /* Увеличили размер для четкости */
+  width: 360px;
+  height: 360px;
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+/* Адаптив */
+@media (max-width: 500px) {
+  .theory-clock-visual {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
+    font-size: 10px;
+  }
+}
+
+/* Циферблат */
+.theory-clock-face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 55%;   /* Размер самого круга */
+  height: 55%;
+  /* Двухцветный зеленый градиент (центр светлее, край темнее) */
+  background: radial-gradient(circle, #bcdb4e 0%, #bcdb4e 55%, #aacc33 56%, #aacc33 100%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #8fa828;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+
+/* Центральная точка */
+.theory-clock-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Часовые риски (линии) */
+.theory-clock-tick-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px; /* Толщина риски */
+  height: 100%; /* На всю высоту круга */
+  margin-left: -1px; /* Центровка */
+  pointer-events: none;
+}
+
+/* Рисуем риски только на концах линии с помощью градиента, чтобы не перекрывать центр */
+.theory-clock-tick-line::before,
+.theory-clock-tick-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Длина риски */
+  background-color: #556b2f; /* Темно-зеленый цвет рисок */
+}
+.theory-clock-tick-line::before { top: 4px; }
+.theory-clock-tick-line::after { bottom: 4px; }
+
+/* Стрелки */
+.theory-clock-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  background-color: #333;
+  border-radius: 4px;
+  z-index: 5;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.theory-clock-hand--hour {
+  width: 6px;
+  height: 16%;
+  margin-left: -3px; /* Центровка */
+  transform: rotate(-60deg); /* 10 часов */
+}
+
+.theory-clock-hand--minute {
+  width: 4px;
+  height: 23%;
+  margin-left: -2px; /* Центровка */
+  transform: rotate(60deg); /* 10 минут */
+}
+
+/* Плашки с текстом */
+.theory-clock-label {
+  position: absolute;
+  /* Центрируем сам элемент относительно его координат */
+  transform: translate(-50%, -50%);
+
+  background-color: #636e72; /* Темно-серый */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 1.1em;
+  line-height: 1;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+/* Тонкие линии-указатели от плашки к часам */
+.theory-connector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 0; /* Высота задается динамически через JS или стили, но здесь мы используем фиксированные линии */
+  background-color: #b2bec3;
+  z-index: 0;
+  transform-origin: top left;
+}
+
+.mv-card {
+  max-width: 1700px;
+  padding: 16px;
+}
+
+.mv-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Переопределяем базовую .theory-table (рамки/паддинги/размер) под макет */
+table.mv-table {
+  border-collapse: collapse;
+  margin-top: 0;
+  background: #fff;
+}
+
+table.mv-table caption {
+  caption-side: top;
+  text-align: left;
+  padding: 0 0 10px;
+  font-size: 14px;
+  color: var(--theory-muted-color);
+}
+
+table.mv-table th,
+table.mv-table td {
+  padding: 18px 24px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+table.mv-table thead th,
+table.mv-table tbody th,
+table.mv-table tbody td {
+  font-size: clamp(22px, 3.2vw, 44px);
+  line-height: 1.05;
+}
+
+table.mv-table thead th {
+  font-weight: 800;
+  color: #2e313b;
+  white-space: nowrap;
+}
+
+table.mv-table tbody th {
+  font-weight: 800;
+  color: #2e313b;
+  white-space: nowrap;
+}
+
+table.mv-table tbody td {
+  font-weight: 300;
+  color: #2e313b;
+  white-space: nowrap;
+}
+
+/* Цветные буквы, как на картинке */
+.mv-yellow {
+  color: var(--theory-accent-yellow);
+  font-weight: inherit;
+}
+
+.mv-red {
+  color: var(--theory-accent-red);
+  font-weight: inherit;
+}
+
+.mv-gray {
+  color: #444854;
+  font-weight: inherit;
+}
+
+@media (max-width: 520px) {
+  .mv-card {
+    padding: 12px 10px;
+  }
+}
+
+.vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* Увеличиваем шрифт, чтобы соответствовать крупному тексту на картинке */
+  font-size: 24px;
+}
+
+.vocab-table td {
+  padding: 6px 0;
+  vertical-align: top; /* Выравнивание по верхнему краю для многострочных переводов */
+}
+
+/* Первая колонка: Немецкие глаголы */
+.vocab-table td:first-child {
+  white-space: nowrap; /* Глагол в одну строку */
+  width: 1%;           /* Сжимаем колонку по содержимому */
+  padding-right: 16px; /* Отступ до тире */
+}
+
+/* Вторая колонка: Тире */
+.vocab-table td:nth-child(2) {
+  width: 1%;
+  padding-right: 16px; /* Отступ до перевода */
+  color: var(--theory-text-color);
+}
+
+/* Третья колонка: Перевод */
+.vocab-table td:last-child {
+  color: var(--theory-text-color);
+}
+
+/* Адаптив для мобильных: чуть уменьшаем шрифт */
+@media (max-width: 500px) {
+  .vocab-table {
+    font-size: 18px;
+  }
+}
+
+.theory-table--large {
+  font-size: 30px;
+}
+
+.weak-conj-table th,
+.weak-conj-table td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 14px 16px; /* Чуть больше воздуха */
+}
+
+/* --- Вертикальные линии --- */
+
+/* Линия после столбца с местоимениями (1-й столбец) */
+.weak-conj-table th:first-child,
+.weak-conj-table td:first-child {
+  border-right: 1px solid #e0e0e0;
+}
+
+/* Линия после столбца с 'machen' (2-й столбец) */
+.weak-conj-table th:nth-child(2),
+.weak-conj-table td:nth-child(2) {
+  border-right: 1px solid #e0e0e0;
+}
+
+/* Линия между 'arbeiten' и 'tanzen' (перед последним столбцом) */
+.weak-conj-table th:last-child,
+.weak-conj-table td:last-child {
+  border-left: 1px solid #e0e0e0;
+}
+
+/* --- Разделение левой и правой части --- */
+
+/* Добавляем большой отступ слева для 4-го столбца ('arbeiten'),
+   чтобы создать визуальный разрыв */
+.weak-conj-table th:nth-child(4),
+.weak-conj-table td:nth-child(4) {
+  padding-left: 100px;
+}
+
+
+/* --- Прочие настройки столбцов --- */
+
+/* Колонка с местоимениями - жирная */
+.weak-conj-table td:first-child {
+  font-weight: 700;
+}
+
+/* Колонки с красными окончаниями - узкие и по центру */
+.weak-conj-table .ending-cell {
+  width: 1%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Убираем нижнюю границу у последнего ряда */
+.weak-conj-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Выравнивание заголовков по центру */
+.weak-conj-table thead th {
+  text-align: center;
+}

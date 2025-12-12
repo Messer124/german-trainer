@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/strong-verb-conjugation.json";
 import "../../css/exercises/Common.css";
-import ModalImage from "../../components/ModalImage";
-import strongVerbsImage from "../../../data/A1-1/images/strong-verbs-conj.png";
+import ModalHtml from "../../components/ModalHtml";
+import hint from "../../../data/A1-1/images/strong-verbs-conj.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "irregular-verbs-answers";
@@ -24,15 +24,12 @@ function StrongVerbsConjugation() {
 
   return (
       <div className="exercise-inner">
-
         {showImage && (
-            <ModalImage
-                src={strongVerbsImage}
-                alt="Hint"
+            <ModalHtml
+                html={hint}
                 onClose={() => setShowImage(false)}
             />
         )}
-
         <div className="table-wrapper">
           <table className="table">
             <thead>

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/posessive_pronouns.json";
-import ModalImage from "../../components/ModalImage";
+import ModalHtml from "../../components/ModalHtml";
 import "../../css/exercises/Common.css";
-import casesImage from "../../../data/A1-1/images/posessive_pronouns.png";
+import hint from "../../../data/A1-1/images/posessive_pronouns.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "possessive-pronouns-answers";
@@ -72,9 +72,8 @@ function PossessivePronouns() {
     return (
         <div className="exercise-inner">
             {showImage && (
-                <ModalImage
-                    src={casesImage}
-                    alt="Hint"
+                <ModalHtml
+                    html={hint}
                     onClose={() => setShowImage(false)}
                 />
             )}

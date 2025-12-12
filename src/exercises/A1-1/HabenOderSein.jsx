@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/haben-sein.json";
-import ModalImage from "../../components/ModalImage";
-import hintImage from "../../../data/A1-1/images/haben-sein.png";
+import ModalHtml from "../../components/ModalHtml";
+import hint from "../../../data/A1-1/images/haben-sein.html?raw";
 import "../../css/exercises/Common.css";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -35,12 +35,12 @@ function HabenOderSein() {
 
   return (
       <div className="exercise-inner">
-        {showImage && (
-            <ModalImage
-                src={hintImage}
-                onClose={() => setShowImage(false)}
-            />
-        )}
+          {showImage && (
+              <ModalHtml
+                  html={hint}
+                  onClose={() => setShowImage(false)}
+              />
+          )}
           <div className="scroll-container">
             <ul className="list">
               {data.items.map((item, index) => {

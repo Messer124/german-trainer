@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/weak-verb-conjugation.json";
 import "../../css/exercises/Common.css";
-import ModalImage from "../../components/ModalImage";
-import weakVerbsImage from "../../../data/A1-1/images/weak-verbs-conj.png";
+import ModalHtml from "../../components/ModalHtml";
+import hint from "../../../data/A1-1/images/weak-verbs-conj.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "weak-verb-conjugation-answers";
@@ -26,11 +26,9 @@ function WeakVerbConjugation() {
 
     return (
         <div className="exercise-inner">
-
             {showImage && (
-                <ModalImage
-                    src={weakVerbsImage}
-                    alt="Hint"
+                <ModalHtml
+                    html={hint}
                     onClose={() => setShowImage(false)}
                 />
             )}

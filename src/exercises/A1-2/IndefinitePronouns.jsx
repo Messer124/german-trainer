@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import ModalImage from "../../components/ModalImage";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/indefinitePronouns.json"
-import hintImage from "../../../data/A1-2/images/indefinitePronouns.png";
+import hintHtml from "../../../data/A1-2/images/indefinitePronouns.html?raw";
 import "../../css/exercises/Common.css";
+import ModalHtml from "../../components/ModalHtml";
 
 const STORAGE_KEY = "indefinite-pronouns-answers";
 
@@ -26,7 +26,7 @@ function IndefinitePronouns() {
         return raw
             .split(",")
             .map((part) => part.trim())
-            .filter(Boolean); // убираем пустые
+            .filter(Boolean);
     };
 
     const handleChange = (sentenceIdx, blankIdx, value) => {
@@ -47,7 +47,7 @@ function IndefinitePronouns() {
     };
 
     const renderSentence = (item, sentenceIdx) => {
-        const parts = item.sentence.split("___"); // как в ArticleDeclension
+        const parts = item.sentence.split("___");
         const answerArray = getAnswerArray(sentenceIdx);
 
         return (
@@ -85,9 +85,8 @@ function IndefinitePronouns() {
     return (
         <div className="exercise-inner">
             {showImage && (
-                <ModalImage
-                    src={hintImage}
-                    alt={data.title?.ru || "Indefinite pronouns"}
+                <ModalHtml
+                    html={hintHtml}
                     onClose={() => setShowImage(false)}
                 />
             )}
