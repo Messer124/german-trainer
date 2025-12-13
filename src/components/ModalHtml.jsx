@@ -1,22 +1,20 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "../css/util/modalHtml.css";
 import "../../data/style/commonModal.css";
 
 function extractBody(html) {
     if (!html) return "";
 
-    // Самый надёжный способ: DOMParser корректно вытащит body даже из полного HTML
     if (typeof window !== "undefined" && typeof window.DOMParser !== "undefined") {
         try {
             const doc = new window.DOMParser().parseFromString(html, "text/html");
             const body = doc?.body?.innerHTML;
             if (typeof body === "string" && body.trim()) return body;
         } catch {
-            // fallback ниже
+            // ignore
         }
     }
 
-    // Fallback: regex
     const match = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
     return match ? match[1] : html;
 }
@@ -26,13 +24,7 @@ function clampIndex(i, len) {
     return Math.min(Math.max(0, i), len - 1);
 }
 
-export default function ModalHtml({
-                                      html,
-                                      slides,
-                                      images, // alias для legacy-использования (у тебя сейчас так)
-                                      initialIndex = 0,
-                                      onClose,
-                                  }) {
+export default function ModalHtml({ html, slides, images, initialIndex = 0, onClose }) {
     const pages = useMemo(() => {
         const rawPages = Array.isArray(slides)
             ? slides
@@ -51,9 +43,6 @@ export default function ModalHtml({
     const [index, setIndex] = useState(() => clampIndex(initialIndex, pages.length));
     const [isClosing, setIsClosing] = useState(false);
 
-    // swipe
-    const swipeRef = useRef({ x: 0, y: 0 });
-
     const startClose = () => {
         if (isClosing) return;
         setIsClosing(true);
@@ -71,13 +60,11 @@ export default function ModalHtml({
         setIndex((prev) => (prev + 1) % pages.length);
     };
 
-    // если pages/initialIndex поменялись — приводим индекс в норму
     useEffect(() => {
         if (!hasPages) return;
         setIndex(clampIndex(initialIndex, pages.length));
     }, [hasPages, pages.length, initialIndex]);
 
-    // клавиатура
     useEffect(() => {
         const onKeyDown = (e) => {
             if (e.key === "Escape") {
@@ -99,34 +86,11 @@ export default function ModalHtml({
         return () => window.removeEventListener("keydown", onKeyDown);
     }, [hasMultiple, isClosing, pages.length]);
 
-    // закрытие после анимации
     useEffect(() => {
         if (!isClosing) return;
         const t = setTimeout(() => onClose(), 300);
         return () => clearTimeout(t);
     }, [isClosing, onClose]);
-
-    const onPointerDown = (e) => {
-        if (!hasMultiple || isClosing) return;
-        swipeRef.current = { x: e.clientX, y: e.clientY };
-    };
-
-    const onPointerUp = (e) => {
-        if (!hasMultiple || isClosing) return;
-
-        const dx = e.clientX - swipeRef.current.x;
-        const dy = e.clientY - swipeRef.current.y;
-
-        const absX = Math.abs(dx);
-        const absY = Math.abs(dy);
-
-        const SWIPE_THRESHOLD = 50;
-        if (absX < SWIPE_THRESHOLD) return;
-        if (absX < absY * 1.2) return; // не горизонтальный свайп
-
-        if (dx < 0) goNext(e);
-        else goPrev(e);
-    };
 
     return (
         <div
@@ -148,17 +112,14 @@ export default function ModalHtml({
                 >
                     ×
                 </button>
+
                 <div className="modal-html-content">
                     {hasPages ? (
                         <div className="modal-slider">
-                            <div
-                                className="modal-slider__stage"
-                                onPointerDown={onPointerDown}
-                                onPointerUp={onPointerUp}
-                            >
+                            <div className="modal-slider__stage">
                                 <div
                                     className="modal-slider__page"
-                                    dangerouslySetInnerHTML={{__html: pages[index]}}
+                                    dangerouslySetInnerHTML={{ __html: pages[index] }}
                                 />
 
                                 {hasMultiple ? (
