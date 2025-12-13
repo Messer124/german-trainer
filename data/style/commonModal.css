@@ -9,12 +9,12 @@
 }
 
 /* Базовая карточка с теорией */
-.modal-html-content .theory-card {
+.modal-html-content .theory-card,
+.modal-html-content .theory-card-haben-sein,
+.modal-html-content .theory-card-strong-verbs {
   box-sizing: border-box;
   color: var(--theory-text-color);
   font-size: var(--desktop-modal-font-size);
-  max-width: 90%;
-  max-height: 90%;
 }
 
 .theory-section + .theory-section {
@@ -543,7 +543,7 @@ table.mv-table caption {
 
 table.mv-table th,
 table.mv-table td {
-  padding: 18px 24px;
+  padding: 18px 0;
   text-align: left;
   vertical-align: middle;
 }
@@ -552,7 +552,7 @@ table.mv-table thead th,
 table.mv-table tbody th,
 table.mv-table tbody td {
   font-size: var(--desktop-modal-font-size);
-  line-height: 1.05;
+  line-height: 1;
 }
 
 table.mv-table thead th {
@@ -592,7 +592,6 @@ table.mv-table tbody td {
 .vocab-table {
   width: 100%;
   border-collapse: collapse;
-  /* Увеличиваем шрифт, чтобы соответствовать крупному тексту на картинке */
   font-size: var(--desktop-modal-font-size);
 }
 
@@ -685,20 +684,20 @@ table.mv-table tbody td {
 }
 
 @media (max-width: 1200px) {
-  .modal-html-content .theory-card {
-    font-size: var(--tablet-modal-font-size);
-  }
 
   .theory-title {
     font-size: var(--tablet-modal-header-font-size);
   }
 
-  .theory-table--pronouns {
+  .theory-case-header {
+    font-size: var(--tablet-modal-header-font-size);
+  }
+  .modal-html-content .theory-card {
     font-size: var(--tablet-modal-font-size);
   }
 
-  .theory-case-header {
-    font-size: var(--tablet-modal-header-font-size);
+  .theory-table--pronouns {
+    font-size: var(--tablet-modal-font-size);
   }
 
   .theory-clock-visual {
@@ -747,73 +746,41 @@ table.mv-table tbody td {
 
   .theory-examples {
     font-size: var(--tablet-modal-font-size);
+  }
+
+  .noun-articles--two-cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: var(--mobile-modal-font-size);
   }
 
 }
 
 @media (max-width: 600px) {
 
-  .theory-title {
-    font-size: var(--mobile-modal-header-font-size);
-  }
-
-  .theory-table--pronouns {
-    font-size: var(--mobile-modal-font-size);
-  }
-
+  .theory-title,
   .theory-case-header {
     font-size: var(--mobile-modal-header-font-size);
   }
 
-  .theory-clock-visual {
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  .theory-clock-visual {
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  table.mv-table caption {
-    /*?????*/
-    font-size: var(--mobile-modal-font-size);
-  }
-
+  .theory-table--pronouns,
+  .theory-clock-visual,
+  .theory-clock-visual,
+  table.mv-table caption,
   table.mv-table thead th,
   table.mv-table tbody th,
-  table.mv-table tbody td {
-    /*?????*/
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  .vocab-table {
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  .theory-table--large { /*?????*/
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  .theory-table--conjugation td:first-child {
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  .theory-table--conjugation td:last-child {
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  .theory-clock-label {
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  .theory-muted {
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  .theory-examples {
-    font-size: var(--mobile-modal-font-size);
-  }
-
-  .modal-html-content .theory-card{
+  table.mv-table tbody td,
+  .vocab-table,
+  .theory-table--large,
+  .theory-table--conjugation td:first-child,
+  .theory-table--conjugation td:last-child,
+  .theory-clock-label,
+  .theory-muted,
+  .theory-examples,
+  .modal-html-content .theory-card {
     font-size: var(--mobile-modal-font-size);
   }
 }

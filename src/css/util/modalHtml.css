@@ -13,6 +13,8 @@
   /* плавное появление затемнённого фона */
   opacity: 0;
   animation: modalOverlayFadeIn 0.25s ease-out forwards;
+
+  overflow-x: hidden;
 }
 
 /* Белый прямоугольник модалки */
@@ -32,15 +34,24 @@
 
 .modal-html-content-wrapper {
   position: relative;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
 
   background: #fff;
   border-radius: var(--radius);
   padding: 16px 24px;
-  display: inline-block;
-  max-width: 90vw;
   box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+
+  /* ключевое */
+  display: block;
+  box-sizing: border-box;
+  width: min(1200px, 96vw);
+  max-width: 100%;
+
+  max-height: calc(100dvh - 48px);
+
+  /* ключевое: только вертикальный скролл */
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 
   opacity: 0;
   transform: translateY(10px) scale(0.96);
@@ -97,6 +108,7 @@
 .modal-slider__stage {
   position: relative;
   touch-action: pan-y; /* вертикальный скролл ок, горизонтальные свайпы ловим сами */
+  overflow: hidden;
 }
 
 /* чтобы html-страницы не "съедали" клики по стрелкам */
@@ -112,34 +124,28 @@
   border: none;
   border-radius: 36px;
   padding: 4px 6px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   font-size: 22px;
   cursor: pointer;
   z-index: 2;
 }
 
-.modal-slider__nav--prev {
-  left: -24px;
-}
-
-.modal-slider__nav--next {
-  right: -24px;
-}
-
 /* счётчик (как на скрине 1/2) */
 .modal-slider__counter {
   position: absolute;
-  top: -15px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 12px;
   z-index: 2;
 }
+.modal-slider__nav--prev { left: 8px; }
+.modal-slider__nav--next { right: 8px; }
 
 .modal-close-button {
   position: absolute;
@@ -149,7 +155,7 @@
   height: 36px;
   border: none;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   font-size: 24px;
   line-height: 1;
@@ -200,6 +206,22 @@
   }
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .modal-slider__img {
+    pointer-events: none;      /* ключевое: тач идёт в контейнер, а не в img */
+    -webkit-user-drag: none;
+    user-select: none;
+    touch-action: pan-y;
+  }
+
+  /* если внутри HTML-слайда есть картинки — тоже */
+  .modal-html-content img {
+    -webkit-user-drag: none;
+    user-select: none;
+    touch-action: pan-y;
+  }
+}
+
 /* Tablet */
 @media (max-width: 1200px) {
   :root {
@@ -215,16 +237,22 @@
   .modal-slider__nav--next { right: 8px; }
   .modal-slider__counter { top: 10px; }
 
-  .modal-slider__counter {
-    top: -16px;
-  }
+  /*.modal-slider__counter {*/
+  /*  top: -16px;*/
+  /*}*/
 
-  .modal-slider__nav--prev {
-    left: -24px;
-  }
+  /*.modal-slider__nav--prev {*/
+  /*  left: -24px;*/
+  /*}*/
 
-  .modal-slider__nav--next {
-    right: -24px;
+  /*.modal-slider__nav--next {*/
+  /*  right: -24px;*/
+  /*}*/
+
+  .modal-slider__stage {
+    position: relative;
+    touch-action: pan-y;
+    overflow: hidden; /* чтобы стрелки/счётчик не увеличивали ширину */
   }
 }
 
@@ -246,11 +274,13 @@
     font-size: 22px;
   }
 
+  .modal-slider__counter { top: 0; }
+
   .modal-slider__nav--prev {
-    left: -22px;
+    left: 0;
   }
 
   .modal-slider__nav--next {
-    right: -22px;
+    right: 0;
   }
 }
