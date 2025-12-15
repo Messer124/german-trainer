@@ -50,12 +50,26 @@
 
   /* ключевое: только вертикальный скролл */
   overflow-y: auto;
-  overflow-x: hidden;
+  /*overflow-x: auto;*/
   -webkit-overflow-scrolling: touch;
 
   opacity: 0;
   transform: translateY(10px) scale(0.96);
   animation: modalDialogZoomIn 0.25s ease-out forwards;
+}
+
+.modal-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
+}
+
+/* Чтобы таблица реально могла стать шире контейнера и дала X-скролл */
+.modal-table-scroll > table {
+  width: max-content;
+  min-width: 100%;
 }
 
 .modal-html-content .theory-table {
@@ -107,7 +121,7 @@
 
 .modal-slider__stage {
   position: relative;
-  touch-action: pan-x pan-y;
+  touch-action: auto;
   overflow: hidden;
 }
 
@@ -236,18 +250,6 @@
   .modal-slider__nav--prev { left: 8px; }
   .modal-slider__nav--next { right: 8px; }
   .modal-slider__counter { top: 10px; }
-
-  /*.modal-slider__counter {*/
-  /*  top: -16px;*/
-  /*}*/
-
-  /*.modal-slider__nav--prev {*/
-  /*  left: -24px;*/
-  /*}*/
-
-  /*.modal-slider__nav--next {*/
-  /*  right: -24px;*/
-  /*}*/
 
   .modal-slider__stage {
     position: relative;

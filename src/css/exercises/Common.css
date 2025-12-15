@@ -272,7 +272,41 @@
     margin-left: 12px;
 }
 
+.expanding-input {
+    display: inline-block;
+    vertical-align: baseline;
+    width: auto; /* width задаём инлайном из React */
+}
 
+.expanding-input__measure {
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+    visibility: hidden;
+    white-space: pre;
+    pointer-events: none;
+
+    /* важно: наследуем те же шрифтовые параметры, что и input */
+    font: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+}
+
+.expanding-input__wrap {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.expanding-input__input {
+    transition: width 300ms ease;
+    will-change: width;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .expanding-input__input {
+        transition: none;
+    }
+}
 /* ---------- адаптив ---------- */
 
 @media (max-width: 600px) {

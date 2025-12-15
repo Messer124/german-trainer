@@ -167,7 +167,7 @@
 }
 
 .theory-dash-cell {
-  width: 32px;
+  width: 10px;
   text-align: center;
 }
 
@@ -178,7 +178,7 @@
 
 .theory-table--pronouns th,
 .theory-table--pronouns td {
-  padding: 6px 8px;
+  padding: 6px 4px;
 }
 
 .theory-case-header {
@@ -679,6 +679,107 @@ table.mv-table tbody td {
   text-align: center;
 }
 
+.imperativ-header {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+  text-align: center;
+  margin: 32px 0 16px;
+  font-size: 1.2em;
+}
+.imperativ-header:first-child {
+  margin-top: 0;
+}
+
+/* Контейнер для прокрутки на мобильных */
+.table-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 24px;
+}
+
+/* Базовая таблица Imperativ */
+.imperativ-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--desktop-modal-font-size);
+}
+
+.imperativ-table th,
+.imperativ-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0; /* Тонкие границы */
+  border-left: 1px solid #e0e0e0;   /* Вертикальные границы */
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Убираем левую границу у первой колонки */
+.imperativ-table th:first-child,
+.imperativ-table td:first-child {
+  border-left: none;
+}
+
+/* Настройка ширины колонок (примерная, как на картинке) */
+.imperativ-table th:nth-child(1) { width: 15%; }
+.imperativ-table th:nth-child(2) { width: 30%; }
+.imperativ-table th:nth-child(3) { width: 25%; }
+.imperativ-table th:nth-child(4) { width: 30%; }
+
+/* Цвета текста */
+.text-blue {
+  color: #5d78be; /* Синий цвет вопросов с картинки */
+  font-weight: 700;
+}
+
+.text-red {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.text-note {
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* Зачеркивание (жирное и черное поверх цветного текста) */
+.strike-black {
+  text-decoration: line-through;
+  text-decoration-color: #000; /* Цвет линии */
+  text-decoration-thickness: 2px;
+  color: inherit; /* Текст остается своего цвета (синий) */
+}
+
+/* Секция "Внимание" */
+.attention-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.attention-title {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.haben-sein-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.highlight-bold {
+  font-weight: 700;
+  color: #000;
+}
+
+.highlight-blue {
+  color: #5d78be;
+  font-weight: 700;
+}
+
 @media (max-width: 1200px) {
 
   .theory-title,
@@ -699,7 +800,9 @@ table.mv-table tbody td {
   .theory-table--conjugation td:last-child,
   .theory-clock-label,
   .theory-muted,
-  .theory-examples {
+  .theory-examples,
+  .theory-card,
+  .imperativ-table {
     font-size: var(--tablet-modal-font-size);
   }
 
@@ -713,9 +816,7 @@ table.mv-table tbody td {
   }
 
   .theory-clock-visual {
-    flex: 0 0 300px; /* Увеличили размер для четкости */
-    width: 300px;
-    height: 300px;
+    margin: 0 150px 0 auto;
   }
 
 }
@@ -741,7 +842,9 @@ table.mv-table tbody td {
   .theory-clock-label,
   .theory-muted,
   .theory-examples,
-  .modal-html-content .theory-card {
+  .modal-html-content .theory-card,
+  .theory-card,
+  .imperativ-table {
     font-size: var(--mobile-modal-font-size);
   }
 
@@ -749,6 +852,23 @@ table.mv-table tbody td {
     flex: 0 0 250px; /* Увеличили размер для четкости */
     width: 250px;
     height: 250px;
+    margin: 0 auto;
+  }
+
+  .theory-dash-cell {
+    width: 18px;
+  }
+
+  .theory-section--two-cols {
+    flex-wrap: nowrap;              /* ключевое */
+    gap: 16px;                      /* меньше gap, чтобы реально помещалось */
+    overflow-x: auto;               /* если всё равно шире — можно проскроллить */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .imperativ-table th,
+  .imperativ-table td {
+    padding: 8px 10px;
   }
 }
 

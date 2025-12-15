@@ -18,7 +18,8 @@ const translations = {
       "haben-sein-preteritum": "Haben и Sein в Präteritum",
       "modal-verbs-preteritum": "Модальные глаголы в Präteritum",
       "personal-pronouns": "Личные местоимения",
-      "indefinite-pronouns": "Неопределённые местоимения"
+      "indefinite-pronouns": "Неопределённые местоимения",
+      "imperativ": "Imperativ"
     },
     labels: {
       level: "Уровень",
@@ -44,7 +45,8 @@ const translations = {
       "haben-sein-preteritum": "Haben and Sein in Präteritum",
       "modal-verbs-preteritum": "Modal verbs in Präteritum",
       "personal-pronouns": "Personal pronouns",
-      "indefinite-pronouns": "Indefinite pronouns"
+      "indefinite-pronouns": "Indefinite pronouns",
+      "imperativ": "Imperativ"
     },
     labels: {
       level: "Level",

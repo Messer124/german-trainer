@@ -14,6 +14,7 @@ import ModalVerbsPreteritum from "../exercises/A1-2/ModalVerbsPreteritum";
 import TimeExercise from "../exercises/A1-2/TimeExercise";
 import PersonalPronouns from "../exercises/A1-2/PersonalPronouns";
 import IndefinitePronouns from "../exercises/A1-2/IndefinitePronouns";
+import Imperativ from "../exercises/A1-2/Imperativ";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -82,6 +83,10 @@ export const EXERCISES_BY_LEVEL = {
         "indefinite-pronouns": {
             storageKey: "indefinite-pronouns-answers",
             component: IndefinitePronouns,
+        },
+        "imperativ": {
+            storageKey: "imperativ-answers",
+            component: Imperativ,
         }
     },
 };
