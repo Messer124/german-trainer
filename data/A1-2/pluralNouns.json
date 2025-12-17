@@ -107,6 +107,16 @@
     { "word": "das Modell", "plural": "Modelle" },
     { "word": "die Methode", "plural": "Methoden" },
     { "word": "das Argument", "plural": "Argumente" },
-    { "word": "der Bericht", "plural": "Berichte" }
+    { "word": "der Bericht", "plural": "Berichte" },
+    { "word": "das Kleid", "plural": "Kleider" },
+    { "word": "das T-Shirt", "plural": "T-Shirts" },
+    { "word": "der Mantel", "plural": "Mäntel" },
+    { "word": "die Jacke", "plural": "Jacken" },
+    { "word": "der Anzug", "plural": "Anzüge" },
+    { "word": "die Hose", "plural": "Hosen" },
+    { "word": "das Hemd", "plural": "Hemden" },
+    { "word": "der Rock", "plural": "Röcke" },
+    { "word": "der Stiefel", "plural": "Stiefel" },
+    { "word": "die Brille", "plural": "Brillen" }
   ]
 }

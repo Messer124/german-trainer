@@ -148,7 +148,7 @@
 /* счётчик (как на скрине 1/2) */
 .modal-slider__counter {
   position: absolute;
-  top: 10px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.4);
@@ -158,8 +158,8 @@
   font-size: 12px;
   z-index: 2;
 }
-.modal-slider__nav--prev { left: 8px; }
-.modal-slider__nav--next { right: 8px; }
+.modal-slider__nav--prev { left: 0; }
+.modal-slider__nav--next { right: 0; }
 
 .modal-close-button {
   position: absolute;
@@ -246,11 +246,6 @@
     --modal-wrapper-max-w: 94vw;
   }
 
-  /* стрелки/счетчик внутрь карточки, чтобы не обрезались */
-  .modal-slider__nav--prev { left: 8px; }
-  .modal-slider__nav--next { right: 8px; }
-  .modal-slider__counter { top: 10px; }
-
   .modal-slider__stage {
     position: relative;
     touch-action: pan-y;
@@ -276,13 +271,4 @@
     font-size: 22px;
   }
 
-  .modal-slider__counter { top: 0; }
-
-  .modal-slider__nav--prev {
-    left: 0;
-  }
-
-  .modal-slider__nav--next {
-    right: 0;
-  }
 }

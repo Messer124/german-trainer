@@ -19,7 +19,8 @@ const translations = {
       "modal-verbs-preteritum": "Модальные глаголы в Präteritum",
       "personal-pronouns": "Личные местоимения",
       "indefinite-pronouns": "Неопределённые местоимения",
-      "imperativ": "Imperativ"
+      "imperativ": "Imperativ",
+      "prepositions": "Предлоги"
     },
     labels: {
       level: "Уровень",
@@ -46,7 +47,8 @@ const translations = {
       "modal-verbs-preteritum": "Modal verbs in Präteritum",
       "personal-pronouns": "Personal pronouns",
       "indefinite-pronouns": "Indefinite pronouns",
-      "imperativ": "Imperativ"
+      "imperativ": "Imperativ",
+      "prepositions": "Prepositions"
     },
     labels: {
       level: "Level",

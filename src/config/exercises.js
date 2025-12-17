@@ -15,6 +15,7 @@ import TimeExercise from "../exercises/A1-2/TimeExercise";
 import PersonalPronouns from "../exercises/A1-2/PersonalPronouns";
 import IndefinitePronouns from "../exercises/A1-2/IndefinitePronouns";
 import Imperativ from "../exercises/A1-2/Imperativ";
+import Prepositions from "../exercises/A1-2/Prepositions";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -87,6 +88,10 @@ export const EXERCISES_BY_LEVEL = {
         "imperativ": {
             storageKey: "imperativ-answers",
             component: Imperativ,
+        },
+        "prepositions": {
+            storageKey: "prepositions-answers",
+            component: Prepositions,
         }
     },
 };

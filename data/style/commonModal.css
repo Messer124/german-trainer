@@ -539,7 +539,7 @@ table.mv-table caption {
 
 table.mv-table th,
 table.mv-table td {
-  padding: 18px 0;
+  padding: 15px 0;
   text-align: left;
   vertical-align: middle;
 }
@@ -780,6 +780,119 @@ table.mv-table tbody td {
   font-weight: 700;
 }
 
+.time-prep-container {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: var(--theory-font-family);
+}
+
+/* ===== Сложная таблица предлогов (Prepositions Table) ===== */
+
+/* Базовые настройки ячеек для этой таблицы */
+.prep-table th,
+.prep-table td {
+  vertical-align: top;       /* Весь контент прижат к верху */
+  padding: 12px 14px;        /* Чуть больше воздуха чем в обычной таблице */
+  border: 1px solid #e0e0e0; /* Явные границы ячеек */
+}
+
+/* Первая колонка (Заголовки вопросов) */
+.prep-table .prep-header-cell {
+  width: 120px;              /* Фиксированная ширина для заголовков */
+  background-color: #fcfcfc; /* Легкий фон для отделения */
+  border-right: 1px solid #e0e0e0;
+}
+
+/* Заголовки внутри ячеек (предлог — перевод) */
+.prep-title {
+  font-size: var(--desktop-modal-font-size);
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--theory-text-color);
+}
+
+/* Описание (условия использования) */
+.prep-desc {
+  font-size: var(--desktop-modal-font-size);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+/* Блок примеров */
+.prep-table .theory-examples {
+  text-align: left;
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Русский текст примеров */
+.theory-text--ru {
+  color: #7a7d88;            /* Серый цвет для перевода */
+  font-size: var(--desktop-modal-font-size);
+  margin-top: 2px;
+}
+
+/* Фоновый желтый треугольник */
+.time-prep-triangle-bg {
+  position: absolute;
+  top: 40px; /* Начинается под первой строкой */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Ширина основания треугольника */
+  height: 85%;
+  /* Градиент имитирует треугольник: сверху желтый, к низу сужается и исчезает */
+  background: linear-gradient(to bottom, rgba(248, 183, 34, 0.25) 0%, rgba(248, 183, 34, 0.6) 100%);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ряды контента */
+.prep-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+/* Левая колонка (предлоги) */
+.prep-col-left {
+  flex: 0 0 35%; /* Ширина левой колонки */
+  text-align: right;
+  padding-right: 24px;
+  box-sizing: border-box;
+  font-size: var(--desktop-modal-header-font-size);
+  font-weight: 700;
+}
+
+/* Правая колонка (примеры) */
+.prep-col-right {
+  flex: 1;
+  text-align: left;
+  font-size: var(--desktop-modal-font-size);
+  color: var(--theory-text-color);
+}
+
+/* Специфические отступы для строк примеров */
+.example-line {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Знак предупреждения для "in der Nacht" */
+.warning-sign {
+  display: inline-block;
+  color: var(--theory-accent-red);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
 @media (max-width: 1200px) {
 
   .theory-title,
@@ -819,6 +932,20 @@ table.mv-table tbody td {
     margin: 0 150px 0 auto;
   }
 
+  /* ===== Сложная таблица предлогов (Prepositions Table) ===== */
+  .prep-title,
+  .prep-desc,
+  .prep-table .theory-examples,
+  .theory-text--ru,
+  .prep-table .prep-header-cell {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .prep-table th,
+  .prep-table td {
+    padding: 6px 7px;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -848,6 +975,13 @@ table.mv-table tbody td {
     font-size: var(--mobile-modal-font-size);
   }
 
+  table.mv-table th,
+  table.mv-table td {
+    padding: 9px 5px;
+    text-align: left;
+    vertical-align: middle;
+  }
+
   .theory-clock-visual {
     flex: 0 0 250px; /* Увеличили размер для четкости */
     width: 250px;
@@ -869,6 +1003,36 @@ table.mv-table tbody td {
   .imperativ-table th,
   .imperativ-table td {
     padding: 8px 10px;
+  }
+
+  .time-prep-triangle-bg {
+    width: 95%;
+    opacity: 0.5;
+  }
+  .prep-col-left {
+    flex: 0 0 30%;
+    padding-right: 12px;
+    font-size: var(--mobile-modal-header-font-size);
+  }
+  .prep-col-right {
+    font-size: var(--mobile-modal-font-size);
+  }
+  .prep-row {
+    margin-bottom: 24px;
+  }
+
+  /* ===== Сложная таблица предлогов (Prepositions Table) ===== */
+  .prep-title,
+  .prep-desc,
+  .prep-table .theory-examples,
+  .theory-text--ru,
+  .prep-table .prep-header-cell {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .prep-table th,
+  .prep-table td {
+    padding: 3px 4px;
   }
 }
 
