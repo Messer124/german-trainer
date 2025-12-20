@@ -893,6 +893,54 @@ table.mv-table tbody td {
   vertical-align: middle;
 }
 
+/* --- Стили для сложноподчиненных предложений --- */
+
+/* Сетка: Правило (слева) - Пример (справа) */
+.subordinate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /* Правая колонка чуть шире для длинных примеров */
+  gap: 24px 32px;
+  margin-top: 16px;
+  align-items: start;
+}
+
+.sub-rule {
+  font-size: var(--desktop-modal-font-size);
+  color: var(--theory-text-color);
+  line-height: 1.4;
+}
+
+.sub-example {
+  font-size: var(--desktop-modal-font-size);
+}
+
+/* --- Список особенностей союзов (weil/dass/damit) --- */
+
+.conjunction-list {
+  display: grid;
+  grid-template-columns: min-content 1fr; /* Левая колонка по ширине слова, правая - на всю ширину */
+  gap: 24px 32px; /* Отступы между колонками и строками */
+  margin-top: 16px;
+  align-items: start;
+}
+
+.conjunction-label {
+  font-size: var(--desktop-modal-header-font-size); /* Чуть крупнее, как заголовок */
+  font-weight: 700;
+  text-align: right; /* Выравнивание вправо к контенту */
+}
+
+.conjunction-content {
+  font-size: var(--desktop-modal-font-size);
+}
+
+/* Красный текст примечаний (не жирный, для пояснений в damit) */
+.theory-note-red {
+  display: block; /* С новой строки */
+  color: var(--theory-accent-red);
+  margin-top: 4px;
+}
+
 @media (max-width: 1200px) {
 
   .theory-title,
@@ -915,7 +963,11 @@ table.mv-table tbody td {
   .theory-muted,
   .theory-examples,
   .theory-card,
-  .imperativ-table {
+  .imperativ-table,
+  .conjunction-label,
+  .conjunction-content,
+  .sub-rule,
+  .sub-example {
     font-size: var(--tablet-modal-font-size);
   }
 
@@ -971,7 +1023,11 @@ table.mv-table tbody td {
   .theory-examples,
   .modal-html-content .theory-card,
   .theory-card,
-  .imperativ-table {
+  .imperativ-table,
+  .conjunction-label,
+  .conjunction-content,
+  .sub-rule,
+  .sub-example {
     font-size: var(--mobile-modal-font-size);
   }
 

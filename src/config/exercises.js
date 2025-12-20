@@ -16,6 +16,7 @@ import PersonalPronouns from "../exercises/A1-2/PersonalPronouns";
 import IndefinitePronouns from "../exercises/A1-2/IndefinitePronouns";
 import Imperativ from "../exercises/A1-2/Imperativ";
 import Prepositions from "../exercises/A1-2/Prepositions";
+import Conjunctions from "../exercises/A1-2/Conjunctions";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -92,6 +93,10 @@ export const EXERCISES_BY_LEVEL = {
         "prepositions": {
             storageKey: "prepositions-answers",
             component: Prepositions,
+        },
+        conjunctions: {
+            storageKey: "conjunctions-answers",
+            component: Conjunctions,
         }
     },
 };

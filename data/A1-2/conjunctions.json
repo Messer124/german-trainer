@@ -1,0 +1,392 @@
+{
+  "title": {
+    "ru": "Союзы",
+    "en": "Conjunctions"
+  },
+  "instructions": {
+    "ru": "Подберите нужный сочинительный союз, союзное слово или подчинительный союз.",
+    "en": "Choose the appropriate coordinating conjunction, coordinating word, or subordinating conjunction."
+  },
+  "items": [
+    {
+      "sentence": "Ich bleibe länger, ___ ich noch Fragen habe.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "Er sagt, ___ er später anruft.",
+      "answer": "dass"
+    },
+    {
+      "sentence": "Ich habe das Buch, ___ finde ich es nicht.",
+      "answer": "jedoch"
+    },
+    {
+      "sentence": "___ ich ein Kind war, hörte mein Vater immer diese Musik.",
+      "answer": "als"
+    },
+    {
+      "sentence": "Ich habe Sara getroffen, ___ ich im letzten Jahr in Deutschland war.",
+      "answer": "als"
+    },
+    {
+      "sentence": "Tim will ein Auto mieten, ___ Lara und er nach Salzburg fahren können.",
+      "answer": "damit"
+    },
+    {
+      "sentence": "Sie hat kein Auto, ___ fährt sie jeden Tag Fahrrad.",
+      "answer": "deswegen"
+    },
+    {
+      "sentence": "Wir wissen, ___ der Kurs um 18 Uhr beginnt.",
+      "answer": "dass"
+    },
+    {
+      "sentence": "Ich nehme Wasser mit, ___ ich genug trinken kann.",
+      "answer": "damit"
+    },
+    {
+      "sentence": "Ich schreibe es auf, ___ ich es nicht vergesse.",
+      "answer": "damit"
+    },
+    {
+      "sentence": "Wir bleiben zu Hause, ___ es draußen kalt ist.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "___ er ankommt, werden wir ihn schon am Flughafen erwarten.",
+      "answer": "wenn"
+    },
+    {
+      "sentence": "Ich trinke keinen Kaffee, ___ Tee.",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "Heute lerne ich viel, ___ ich habe morgen eine Prüfung.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "___ ich in München war, habe ich die Altstadt gesehen.",
+      "answer": "als"
+    },
+    {
+      "sentence": "Lara kann kein Auto mieten, ___ sie zu jung ist.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "___ ich 20 Jahre alt war, habe ich mein erstes Auto gekauft.",
+      "answer": "als"
+    },
+    {
+      "sentence": "Ruf mich an, ___ mache ich mir Sorgen.",
+      "answer": "sonst"
+    },
+    {
+      "sentence": "___ ich gestern nach Hause kam, war niemand da.",
+      "answer": "als"
+    },
+    {
+      "sentence": "Er kauft ein Ticket, ___ fährt er nach Berlin.",
+      "answer": "dann"
+    },
+    {
+      "sentence": "Das Wetter ist heute nicht schlecht, ___ sehr schlecht!",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "Ich lerne Deutsch, ___ ich in Deutschland arbeiten will.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "Wir gehen früh ins Bett, ___ wir stehen morgen um 6 Uhr auf.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "Ich nehme den Schirm mit, ___ es regnet vielleicht.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "Ich bin müde, ___ gehe ich noch spazieren.",
+      "answer": "trotzdem"
+    },
+    {
+      "sentence": "Machst du jede Hausaufgabe ___ bist du faul?",
+      "answer": "oder"
+    },
+    {
+      "sentence": "Ich sehe heute keine Serie, ___ ich lese ein Buch.",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "Ich muss shoppen gehen, ___ ich brauche viele neue Sommersachen.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "Das ist kein VW, ___ ein Audi.",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "___ ich Zeit habe, besuche ich dich.",
+      "answer": "wenn"
+    },
+    {
+      "sentence": "Tim kann in Deutschland kein Auto mieten, ___ er hat keinen internationalen Führerschein.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "Ich hoffe, ___ du morgen Zeit hast.",
+      "answer": "dass"
+    },
+    {
+      "sentence": "Das ist nicht mein Schlüssel, ___ deiner.",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "Zuerst arbeiten wir, ___ machen wir eine Pause.",
+      "answer": "dann"
+    },
+    {
+      "sentence": "Willst du heute Pizza ___ Pasta essen?",
+      "answer": "oder"
+    },
+    {
+      "sentence": "Tim hat einen Führerschein, ___ kann er kein Auto mieten.",
+      "answer": "jedoch"
+    },
+    {
+      "sentence": "Wir fahren nicht nach Spanien, ___ nach Portugal.",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "___ ich 4 Jahre alt war, konnte ich schon lesen.",
+      "answer": "als"
+    },
+    {
+      "sentence": "Tim kann kein Auto mieten, ___ er länger als 6 Monate in Deutschland lebt.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "Sie bleibt zu Hause, ___ sie ist krank.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "Tim wusste nicht, ___ er in Deutschland kein Auto mieten darf.",
+      "answer": "dass"
+    },
+    {
+      "sentence": "Er hat keinen Hunger, ___ isst er nur eine Suppe.",
+      "answer": "trotzdem"
+    },
+    {
+      "sentence": "___ ich morgens mit dem Bus gefahren bin, habe ich diesen Mann jedes Mal gesehen.",
+      "answer": "wenn"
+    },
+    {
+      "sentence": "Das Essen ist lecker, ___ ist es zu salzig.",
+      "answer": "jedoch"
+    },
+    {
+      "sentence": "Beeil dich, ___ verpasst du den Zug.",
+      "answer": "sonst"
+    },
+    {
+      "sentence": "Die Sonnenbrille ist nicht schwarz, ___ grau.",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "Sie glaubt, ___ das Wetter morgen besser ist.",
+      "answer": "dass"
+    },
+    {
+      "sentence": "Ich komme später, ___ ich muss noch arbeiten.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "Lara freut sich, ___ sie einen gültigen Führerschein hat.",
+      "answer": "dass"
+    },
+    {
+      "sentence": "Ich ziehe kein T-Shirt an, ___ ein Hemd.",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "Ich fliege nach Italien, ___ Italien ist mein Lieblingsland.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "Tim und Lara konnten kein Auto mieten, ___ fahren sie nach Salzburg.",
+      "answer": "trotzdem"
+    },
+    {
+      "sentence": "Ich mache jeden Tag Übungen, ___ mein Deutsch besser wird.",
+      "answer": "damit"
+    },
+    {
+      "sentence": "___ du willst, können wir zusammen lernen.",
+      "answer": "wenn"
+    },
+    {
+      "sentence": "Er lernt viel, ___ er die Prüfung besteht.",
+      "answer": "damit"
+    },
+    {
+      "sentence": "Wir arbeiten nicht zusammen, ___ wir sind gute Freunde.",
+      "answer": "trotzdem"
+    },
+    {
+      "sentence": "Sie möchte kommen, ___ hat sie keine Zeit.",
+      "answer": "jedoch"
+    },
+    {
+      "sentence": "Ich habe den Bus verpasst, ___ komme ich zu spät.",
+      "answer": "deswegen"
+    },
+    {
+      "sentence": "Der Lehrer hat mir immer geduldig geantwortet, ___ ich ihn etwas gefragt habe.",
+      "answer": "wenn"
+    },
+    {
+      "sentence": "Er ist freundlich, ___ spricht er sehr leise.",
+      "answer": "jedoch"
+    },
+    {
+      "sentence": "Ich habe wenig Zeit, ___ helfe ich dir kurz.",
+      "answer": "trotzdem"
+    },
+    {
+      "sentence": "Wir fahren mit dem Zug, ___ das Auto kaputt ist.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "Ich muss Deutsch lernen, ___ kann ich in Deutschland nicht studieren.",
+      "answer": "sonst"
+    },
+    {
+      "sentence": "Tim kommt aus Kanada, ___ darf er in Deutschland kein Auto mieten.",
+      "answer": "deswegen"
+    },
+    {
+      "sentence": "Ich erkläre es noch einmal, ___ du es gut verstehst.",
+      "answer": "damit"
+    },
+    {
+      "sentence": "Morgen fliege ich nach Köln, ___ fahre ich nach Kiel.",
+      "answer": "dann"
+    },
+    {
+      "sentence": "Nimm deine Jacke mit, ___ wird dir kalt.",
+      "answer": "sonst"
+    },
+    {
+      "sentence": "Die Straße ist gesperrt, ___ fahren wir eine andere Route.",
+      "answer": "deswegen"
+    },
+    {
+      "sentence": "Ich kann nicht schwimmen, ___ fahre ich ans Meer.",
+      "answer": "trotzdem"
+    },
+    {
+      "sentence": "Tim und Lara wollen nach Salzburg fahren, ___ müssen sie die Fahrkarten kaufen.",
+      "answer": "deswegen"
+    },
+    {
+      "sentence": "Wir treffen uns um 18 Uhr, ___ gehen wir zusammen ins Kino.",
+      "answer": "dann"
+    },
+    {
+      "sentence": "Er kommt nicht, ___ er keine Zeit hat.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "Er erklärt alles langsam, ___ wir es gut verstehen.",
+      "answer": "damit"
+    },
+    {
+      "sentence": "Heute mache ich keine Hausaufgaben, ___ ich bin sehr müde.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "Sie geht zum Arzt, ___ sie Bauchschmerzen hat.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "Tim sagt, ___ er einen großen Hunger hat.",
+      "answer": "dass"
+    },
+    {
+      "sentence": "Das ist nicht billig, ___ es ist sehr praktisch.",
+      "answer": "jedoch"
+    },
+    {
+      "sentence": "Wir haben kein Geld, ___ bleiben wir zu Hause.",
+      "answer": "deswegen"
+    },
+    {
+      "sentence": "Ich habe viel gearbeitet, ___ bin ich jetzt müde.",
+      "answer": "deswegen"
+    },
+    {
+      "sentence": "Man muss Sport treiben, ___ Sport macht einen gesund.",
+      "answer": "denn"
+    },
+    {
+      "sentence": "Wir haben keinen Plan, ___ fahren wir los.",
+      "answer": "trotzdem"
+    },
+    {
+      "sentence": "Lern die Wörter, ___ vergisst du sie morgen.",
+      "answer": "sonst"
+    },
+    {
+      "sentence": "Ich koche heute, ___ spülen wir zusammen ab.",
+      "answer": "dann"
+    },
+    {
+      "sentence": "Sie geht zum Zahnarzt, ___ sie Zahnschmerzen hat.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "Wir kaufen Brot, ___ wir morgen frühstücken können.",
+      "answer": "damit"
+    },
+    {
+      "sentence": "___ ich diese Musik höre, denke ich an meine Kindheit.",
+      "answer": "wenn"
+    },
+    {
+      "sentence": "___ du Hilfe brauchst, sag mir bitte Bescheid.",
+      "answer": "wenn"
+    },
+    {
+      "sentence": "Ich kann heute nicht telefonieren, ___ ich im Meeting bin.",
+      "answer": "weil"
+    },
+    {
+      "sentence": "Dieser Anzug ist nicht für dich, ___ für deinen Bruder.",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "Ich bin müde, ___ kaufe ich es.",
+      "answer": "trotzdem"
+    },
+    {
+      "sentence": "Er isst nicht Fleisch, ___ Gemüse.",
+      "answer": "sondern"
+    },
+    {
+      "sentence": "___ du die Aufgabe machst, verstehst du die Grammatik besser.",
+      "answer": "wenn"
+    },
+    {
+      "sentence": "___ wir fertig sind, gehen wir nach Hause.",
+      "answer": "wenn"
+    },
+    {
+      "sentence": "Wir treffen uns um 18 Uhr, ___ gehen wir nach Hause.",
+      "answer": "dann"
+    },
+    {
+      "sentence": "Sie ist sicher, ___ der Zug pünktlich kommt.",
+      "answer": "dass"
+    }
+  ]
+}

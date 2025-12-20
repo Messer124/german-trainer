@@ -568,11 +568,11 @@ body {
   }
 
   .app-header-title {
-    font-size: 20px;
+    font-size: var(--mobile-font-size);
   }
 
   .app-header-subtitle {
-    font-size: 15px;
+    font-size: var(--mobile-header-subtitle-font-size);
   }
 
   .exercise-scroll {
