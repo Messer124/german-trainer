@@ -788,7 +788,7 @@ table.mv-table tbody td {
   font-family: var(--theory-font-family);
 }
 
-/* ===== Сложная таблица предлогов (Prepositions Table) ===== */
+/* ===== Сложная таблица предлогов (PrepositionsTime Table) ===== */
 
 /* Базовые настройки ячеек для этой таблицы */
 .prep-table th,
@@ -893,6 +893,58 @@ table.mv-table tbody td {
   vertical-align: middle;
 }
 
+/* --- Стили для списка предлогов времени */
+
+.prepositions-layout {
+  display: flex;
+  gap: 40px; /* Отступ между большой левой и правой колонкой */
+  align-items: flex-start;
+}
+
+.prep-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Отступ между словами в списке */
+}
+
+.prep-item {
+  display: grid;
+  /* Левая часть (слово+перевод) фиксирована, правая (пример) занимает остаток */
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.prep-label {
+  font-weight: 700;
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.4;
+  color: var(--theory-text-color);
+}
+
+.prep-dash {
+  color: var(--theory-muted-color);
+  margin: 0 4px;
+  font-weight: 400;
+}
+
+.prep-content {
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.5;
+}
+
+/* Принудительный серый цвет для русского перевода в этом блоке */
+.prep-content .theory-text--ru {
+  color: var(--theory-muted-color);
+  display: block; /* Перенос перевода на новую строку (опционально, но так на картинке) */
+  margin-top: 2px;
+  margin-bottom: 8px; /* Отступ если примеров несколько */
+}
+.prep-content .theory-text--ru:last-child {
+  margin-bottom: 0;
+}
+
 /* --- Стили для сложноподчиненных предложений --- */
 
 /* Сетка: Правило (слева) - Пример (справа) */
@@ -984,7 +1036,7 @@ table.mv-table tbody td {
     margin: 0 150px 0 auto;
   }
 
-  /* ===== Сложная таблица предлогов (Prepositions Table) ===== */
+  /* ===== Сложная таблица предлогов (PrepositionsTime Table) ===== */
   .prep-title,
   .prep-desc,
   .prep-table .theory-examples,
@@ -1077,7 +1129,7 @@ table.mv-table tbody td {
     margin-bottom: 24px;
   }
 
-  /* ===== Сложная таблица предлогов (Prepositions Table) ===== */
+  /* ===== Сложная таблица предлогов (PrepositionsTime Table) ===== */
   .prep-title,
   .prep-desc,
   .prep-table .theory-examples,

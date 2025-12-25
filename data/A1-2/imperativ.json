@@ -45,7 +45,7 @@
         "answer": ["fragt"]
       },
       {
-        "sentence": "Wo ist hier eine Apotheke? – ___ Sie ca. 200 Meter geradeaus, dann links.",
+        "sentence": "Wo ist hier eine Apotheke? – ___ ca. 200 Meter geradeaus, dann links.",
         "verb": "fahren",
         "answer": ["Fahren Sie"]
       },
@@ -92,7 +92,7 @@
       },
       {
         "sentence": "___ bitte ruhig, es ist schon spät und die Nachbarn schlafen.",
-        "verb": "sein",
+        "verb": "sein wir",
         "answer": ["Seien wir"]
       },
       {

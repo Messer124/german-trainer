@@ -49,16 +49,8 @@
       "answer": "Ich bin heute nicht sehr müde"
     },
     {
-      "sentence": "Ich bin müde",
-      "answer": "Ich bin nicht müde"
-    },
-    {
       "sentence": "Wir haben Zeit",
       "answer": "Wir haben keine Zeit"
-    },
-    {
-      "sentence": "Sie ist glücklich",
-      "answer": "Sie ist nicht glücklich"
     },
     {
       "sentence": "Er liest ein Buch",
@@ -121,11 +113,11 @@
       "answer": "Du bist kein guter Lehrer für Deutsch"
     },
     {
-      "sentence": "Das ist ganz sicher mein neues Auto",
+      "sentence": "Das ist mein neues Auto",
       "answer": "Das ist nicht mein neues Auto"
     },
     {
-      "sentence": "Ich brauche dringend Hilfe bei den Hausaufgaben",
+      "sentence": "Ich brauche Hilfe bei den Hausaufgaben",
       "answer": "Ich brauche keine Hilfe bei den Hausaufgaben"
     },
     {
@@ -141,36 +133,32 @@
       "answer": "Ich finde den Schlüssel nicht in meiner Tasche"
     },
     {
-      "sentence": "Er kocht sehr gern italienische Gerichte",
+      "sentence": "Er kocht gern italienische Gerichte",
       "answer": "Er kocht nicht gern italienische Gerichte"
     },
     {
-      "sentence": "Du hörst oft klassische Musik beim Lernen",
+      "sentence": "Du hörst klassische Musik beim Lernen",
       "answer": "Du hörst keine klassische Musik beim Lernen"
     },
     {
-      "sentence": "Ich habe gerade richtig viel Hunger",
+      "sentence": "Ich habe gerade Hunger",
       "answer": "Ich habe gerade keinen Hunger"
-    },
-    {
-      "sentence": "Es regnet fast jeden Tag im Herbst",
-      "answer": "Es regnet im Herbst nicht jeden Tag"
     },
     {
       "sentence": "Sie kennt ihn schon seit der Schule",
       "answer": "Sie kennt ihn nicht seit der Schule"
     },
     {
-      "sentence": "Wir spielen am Wochenende gern Fußball im Park",
-      "answer": "Wir spielen am Wochenende keinen Fußball im Park"
+      "sentence": "Wir spielen am Wochenende Fußball",
+      "answer": "Wir spielen am Wochenende keinen Fußball"
     },
     {
       "sentence": "Er trägt bei Kälte eine warme Jacke",
       "answer": "Er trägt bei Kälte keine warme Jacke"
     },
     {
-      "sentence": "Du brauchst das neue Buch für den Unterricht",
-      "answer": "Du brauchst das neue Buch nicht für den Unterricht"
+      "sentence": "Du brauchst das neue Buch",
+      "answer": "Du brauchst kein neues Buch."
     },
     {
       "sentence": "Ich kaufe heute frisches Brot beim Bäcker",
@@ -189,15 +177,15 @@
       "answer": "Ich liebe keine dunkle Schokolade"
     },
     {
-      "sentence": "Das ist wirklich die richtige Antwort",
+      "sentence": "Das ist die richtige Antwort",
       "answer": "Das ist nicht die richtige Antwort"
     },
     {
-      "sentence": "Er hat seit Jahren ein teures Auto",
+      "sentence": "Er hat ein teures Auto",
       "answer": "Er hat kein teures Auto"
     },
     {
-      "sentence": "Du bist wirklich sehr nett zu mir",
+      "sentence": "Du bist nett zu mir",
       "answer": "Du bist nicht nett zu mir"
     },
     {

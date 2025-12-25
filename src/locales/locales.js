@@ -20,7 +20,8 @@ const translations = {
       "personal-pronouns": "Личные местоимения",
       "indefinite-pronouns": "Неопределённые местоимения",
       "imperativ": "Imperativ",
-      "prepositions": "Предлоги",
+      "prepositions-time": "Предлоги времени",
+      "prepositions-place": "Предлоги места",
       "conjunctions": "Союзы"
     },
     labels: {
@@ -49,7 +50,8 @@ const translations = {
       "personal-pronouns": "Personal pronouns",
       "indefinite-pronouns": "Indefinite pronouns",
       "imperativ": "Imperativ",
-      "prepositions": "Prepositions",
+      "prepositions-time": "Prepositions of time",
+      "prepositions-place": "Prepositions of place",
       "conjunctions": "Conjunctions"
     },
     labels: {

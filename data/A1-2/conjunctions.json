@@ -121,10 +121,6 @@
       "answer": "denn"
     },
     {
-      "sentence": "Das ist kein VW, ___ ein Audi.",
-      "answer": "sondern"
-    },
-    {
       "sentence": "___ ich Zeit habe, besuche ich dich.",
       "answer": "wenn"
     },
@@ -135,10 +131,6 @@
     {
       "sentence": "Ich hoffe, ___ du morgen Zeit hast.",
       "answer": "dass"
-    },
-    {
-      "sentence": "Das ist nicht mein Schlüssel, ___ deiner.",
-      "answer": "sondern"
     },
     {
       "sentence": "Zuerst arbeiten wir, ___ machen wir eine Pause.",
@@ -229,10 +221,6 @@
       "answer": "damit"
     },
     {
-      "sentence": "Wir arbeiten nicht zusammen, ___ wir sind gute Freunde.",
-      "answer": "trotzdem"
-    },
-    {
       "sentence": "Sie möchte kommen, ___ hat sie keine Zeit.",
       "answer": "jedoch"
     },
@@ -293,6 +281,10 @@
       "answer": "dann"
     },
     {
+      "sentence": "___ ich diese Musik höre, denke ich an meine Kindheit.",
+      "answer": "wenn"
+    },
+    {
       "sentence": "Er kommt nicht, ___ er keine Zeit hat.",
       "answer": "weil"
     },
@@ -313,12 +305,12 @@
       "answer": "dass"
     },
     {
-      "sentence": "Das ist nicht billig, ___ es ist sehr praktisch.",
-      "answer": "jedoch"
-    },
-    {
       "sentence": "Wir haben kein Geld, ___ bleiben wir zu Hause.",
       "answer": "deswegen"
+    },
+    {
+      "sentence": "___ wir fertig sind, gehen wir nach Hause.",
+      "answer": "wenn"
     },
     {
       "sentence": "Ich habe viel gearbeitet, ___ bin ich jetzt müde.",
@@ -349,10 +341,6 @@
       "answer": "damit"
     },
     {
-      "sentence": "___ ich diese Musik höre, denke ich an meine Kindheit.",
-      "answer": "wenn"
-    },
-    {
       "sentence": "___ du Hilfe brauchst, sag mir bitte Bescheid.",
       "answer": "wenn"
     },
@@ -365,7 +353,7 @@
       "answer": "sondern"
     },
     {
-      "sentence": "Ich bin müde, ___ kaufe ich es.",
+      "sentence": "Ich habe nicht viel Geld, ___ kaufe ich es.",
       "answer": "trotzdem"
     },
     {
@@ -375,14 +363,6 @@
     {
       "sentence": "___ du die Aufgabe machst, verstehst du die Grammatik besser.",
       "answer": "wenn"
-    },
-    {
-      "sentence": "___ wir fertig sind, gehen wir nach Hause.",
-      "answer": "wenn"
-    },
-    {
-      "sentence": "Wir treffen uns um 18 Uhr, ___ gehen wir nach Hause.",
-      "answer": "dann"
     },
     {
       "sentence": "Sie ist sicher, ___ der Zug pünktlich kommt.",

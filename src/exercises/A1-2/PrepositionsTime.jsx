@@ -1,24 +1,16 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
-import data from "../../../data/A1-2/prepositions.json";
-import hintTime from "../../../data/A1-2/images/prepositionsTime.html?raw";
-import hintPlace from "../../../data/A1-2/images/prepositionsPlace.html?raw";
+import data from "../../../data/A1-2/prepositionsTime.json";
+import hint from "../../../data/A1-2/images/prepositionsTime.html?raw";
+import hint2 from "../../../data/A1-2/images/prepositionstime2.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 
-const STORAGE_KEY = "prepositions-answers";
+const STORAGE_KEY = "prepositions-time-answers";
 
-function flattenItems(items) {
-    if (!Array.isArray(items)) return [];
-    if (Array.isArray(items[0])) return items.flat();
-    return items;
-}
-
-export default function Prepositions() {
+export default function PrepositionsTime() {
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
-
-    const items = useMemo(() => flattenItems(data.items), [data.items]);
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);
@@ -97,20 +89,20 @@ export default function Prepositions() {
         <div className="exercise-inner">
             {showHint && (
                 <ModalHtml
-                    slides={[hintTime, hintPlace]}
+                    slides={[hint, hint2]}
                     initialIndex={0}
                     onClose={() => setShowHint(false)}
                 />
             )}
 
             <div className="scroll-container">
-                <ul className="list">{items.map((item, idx) => renderSentence(item, idx))}</ul>
+                <ul className="list">{data.items.map((item, idx) => renderSentence(item, idx))}</ul>
             </div>
         </div>
     );
 }
 
-Prepositions.headerButton = (
+PrepositionsTime.headerButton = (
     <button
         type="button"
         className="hint-button"
@@ -120,6 +112,6 @@ Prepositions.headerButton = (
     </button>
 );
 
-Prepositions.instructions = data.instructions;
-Prepositions.title = data.title;
+PrepositionsTime.instructions = data.instructions;
+PrepositionsTime.title = data.title;
 

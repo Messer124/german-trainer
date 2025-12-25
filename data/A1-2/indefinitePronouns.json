@@ -45,22 +45,19 @@
     { "sentence": "Ich möchte mit ___ sprechen, bitte.", "answer": "jemandem" },
     { "sentence": "Die Lehrerin ist mit ___ sehr zufrieden.", "answer": "jedem" },
     { "sentence": "Am Morgen esse ich ___ und trinke Kaffee.", "answer": "etwas" },
-    { "sentence": "Im Urlaub haben wir ___ Neues gesehen.", "answer": "etwas" },
     { "sentence": "An diesem Tag funktionierte ___.", "answer": "nichts" },
-    { "sentence": "Gestern konnte ich ___ essen.", "answer": "nichts" },
     { "sentence": "In diesem Kurs kennt ___ die Regeln schon gut.", "answer": "jeder" },
     { "sentence": "Im Zug spricht ___ mit mir. Alle sind still.", "answer": "niemand" },
     { "sentence": "Ich möchte ___ fragen, wann der Bus kommt.", "answer": "jemanden" },
 
     { "sentence": "Auf dem Fest kenne ich ___. Das ist langweilig.", "answer": "niemanden" },
     { "sentence": "In der Küche liegt ___ auf dem Tisch. Was ist das?", "answer": "etwas" },
-    { "sentence": "Am Sonntag will ich ___ Besonderes machen.", "answer": "etwas" },
-    { "sentence": "Heute hat ___ Geburtstag in unserer Klasse.", "answer": "niemand" },
     { "sentence": "Unsere Lehrerin ist mit ___ zufrieden.", "answer": "jedem" },
     { "sentence": "Heute will ich ___ sehen, ich bin müde.", "answer": "niemanden" },
     { "sentence": "In der Pause spricht ___ mit dem neuen Jungen.", "answer": "jeder" },
     { "sentence": "Auf der Party hat ___ getanzt, alle hatten Spaß.", "answer": "jeder" },
     { "sentence": "Im Bus sitzt ___ neben mir, ich bin ganz allein.", "answer": "niemand" },
+    { "sentence": "Am Sonntag will ich ___ Besonderes machen.", "answer": "etwas" },
     { "sentence": "Heute habe ich ___ gelernt, der Test war zu leicht.", "answer": "nichts" }
   ]
 }
