@@ -90,10 +90,8 @@
       ]
     },
     {
-      "sentence": "An ___ Geburtstag fahre ich immer nach Hamburg zu ___ Familie. ___ Bruder Heinrich wohnt mit ___ Frau Doris.",
+      "sentence": "___ Bruder Heinrich wohnt mit ___ Frau Doris.",
       "answer": [
-        "meinem",
-        "meiner",
         "Mein",
         "seiner"
       ]
@@ -213,10 +211,9 @@
       ]
     },
     {
-      "sentence": "Die kleine Lisa hat ___ Lieblingsspielzeug in den Kindergarten mitgenommen. Der kleine Otto hat ___ zu Hause vergessen.",
+      "sentence": "Die kleine Lisa hat ___ Lieblingsspielzeug in den Kindergarten mitgenommen.",
       "answer": [
-        "ihr",
-        "seins"
+        "ihr"
       ]
     },
     {
@@ -224,13 +221,6 @@
       "answer": [
         "Mein",
         "deiner"
-      ]
-    },
-    {
-      "sentence": "Sie fittern gerade ___ Hund. ___ haben wir vorhin schon Fressen gegeben.",
-      "answer": [
-        "ihren",
-        "Unserem"
       ]
     }
   ]

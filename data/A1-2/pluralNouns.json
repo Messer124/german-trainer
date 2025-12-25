@@ -10,6 +10,7 @@
   },
   "items": [
     { "word": "das Jahr", "plural": "Jahre" },
+    { "word": "die Uhr", "plural": "Uhren" },
     { "word": "der Mensch", "plural": "Menschen" },
     { "word": "das Prozent", "plural": "Prozente" },
     { "word": "das Kind", "plural": "Kinder" },

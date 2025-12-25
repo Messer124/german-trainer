@@ -1,0 +1,214 @@
+{
+  "title": {
+    "ru": "Предлоги времени",
+    "en": "Prepositions of time"
+  },
+
+  "instructions": {
+    "ru": "Подберите правильный предлог.",
+    "en": "Choose the correct preposition."
+  },
+
+  "items": [
+    {
+      "sentence": "Ich fahre ___ Sommer nach Italien.",
+      "answer": ["im"]
+    },
+    {
+      "sentence": "___ Dezember fliege ich nach Österreich.",
+      "answer": ["Im"]
+    },
+    {
+      "sentence": "Wir treffen uns ___ Samstag im Café.",
+      "answer": ["am"]
+    },
+    {
+      "sentence": "___ 10.08 schreibt Tobias Klassenarbeit.",
+      "answer": ["Am"]
+    },
+    {
+      "sentence": "Ich stehe jeden Tag ___ 7 Uhr auf.",
+      "answer": ["um"]
+    },
+    {
+      "sentence": "___ Morgen trinke ich immer Kaffee.",
+      "answer": ["Am"]
+    },
+    {
+      "sentence": "___ einer Woche bin ich wieder zu Hause.",
+      "answer": ["In"]
+    },
+    {
+      "sentence": "___ einer Woche war ich in Köln.",
+      "answer": ["Vor"]
+    },
+    {
+      "sentence": "___ einer Woche benutze ich kein Auto, sondern fahre mit dem Bus.",
+      "answer": ["Seit"]
+    },
+    {
+      "sentence": "___ nächster Woche habe ich Urlaub.",
+      "answer": ["Ab"]
+    },
+    {
+      "sentence": "Ich fliege nach England ___ eine Woche.",
+      "answer": ["für"]
+    },
+    {
+      "sentence": "Ich bleibe in London ___ Ende der Woche.",
+      "answer": ["bis"]
+    },
+    {
+      "sentence": "___ 3.10 ___ 10.10 bin ich auf einer Dienstreise.",
+      "answer": ["vom", "bis zum"]
+    },
+    {
+      "sentence": "Mein Kollege Martin kommt mit, aber nur ___ 3 Tage.",
+      "answer": ["für"]
+    },
+    {
+      "sentence": "___ 15. Oktober fahren wir nach Nürnberg mit der Bahn.",
+      "answer": ["Am"]
+    },
+    {
+      "sentence": "Der Zug erreicht Nürnberg pünktlich ___ 20.00 Uhr.",
+      "answer": ["um"]
+    },
+    {
+      "sentence": "Ich war bereits in dieser Stadt, und zwar 2015 ___ Sommer.",
+      "answer": ["im"]
+    },
+    {
+      "sentence": "Morgen ___ 10 Uhr beginnt unsere Konferenz.",
+      "answer": ["um"]
+    },
+    {
+      "sentence": "Sehr schade, dass Martin ___ 3 Tagen abreisen muss.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "___ 2 Monaten ist er unser Abteilungsleiter und kann nicht lange abwesend von der Arbeit sein.",
+      "answer": ["seit"]
+    },
+    {
+      "sentence": "Ich komme erst ___ 10. Oktober zurück.",
+      "answer": ["am"]
+    },
+    {
+      "sentence": "Direkt ___ der Dienstreise fliege ich in den Urlaub.",
+      "answer": ["nach"]
+    },
+    {
+      "sentence": "___ Januar gehe ich oft ins Schwimmbad.",
+      "answer": ["Im"]
+    },
+    {
+      "sentence": "Wir haben Urlaub ___ August.",
+      "answer": ["im"]
+    },
+    {
+      "sentence": "___ Sonntag besuche ich meine Eltern.",
+      "answer": ["Am"]
+    },
+    {
+      "sentence": "Der Kurs beginnt ___ 18.30 Uhr.",
+      "answer": ["um"]
+    },
+    {
+      "sentence": "Ich bin ___ 5 Minuten da.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "___ zwei Stunden habe ich einen Termin.",
+      "answer": ["In"]
+    },
+    {
+      "sentence": "___ zwei Tagen war ich noch in München.",
+      "answer": ["Vor"]
+    },
+    {
+      "sentence": "___ 2021 wohne ich in Berlin.",
+      "answer": ["Seit"]
+    },
+    {
+      "sentence": "___ nächstem Monat fange ich einen neuen Job an.",
+      "answer": ["Ab"]
+    },
+    {
+      "sentence": "Ich bleibe ___ Montag in Hamburg.",
+      "answer": ["bis"]
+    },
+    {
+      "sentence": "___ Montag ___ Donnerstag arbeite ich im Büro.",
+      "answer": ["von", "bis"]
+    },
+    {
+      "sentence": "___ 01.03. ___ 15.03. ist die Schule geschlossen.",
+      "answer": ["vom", "bis zum"]
+    },
+    {
+      "sentence": "Wir fahren ___ Wochenende nach Prag.",
+      "answer": ["am"]
+    },
+    {
+      "sentence": "___ Nacht ist es sehr ruhig.",
+      "answer": ["In der"]
+    },
+    {
+      "sentence": "___ Morgen telefoniere ich nicht gern.",
+      "answer": ["Am"]
+    },
+    {
+      "sentence": "___ Sommer gehen wir oft schwimmen.",
+      "answer": ["Im"]
+    },
+    {
+      "sentence": "___ Dienstag ___ Freitag bin ich in Hamburg.",
+      "answer": ["Von", "bis"]
+    },
+    {
+      "sentence": "___ April ___ Juni regnet es oft.",
+      "answer": ["Von", "bis"]
+    },
+    {
+      "sentence": "Ich bleibe ___ 5. Mai in Wien.",
+      "answer": ["bis zum"]
+    },
+    {
+      "sentence": "Wir arbeiten heute ___ 9.00 Uhr ___ 17.00 Uhr.",
+      "answer": ["von", "bis"]
+    },
+    {
+      "sentence": "Ich lerne Deutsch ___ zwei Jahren.",
+      "answer": ["seit"]
+    },
+    {
+      "sentence": "___ einer Stunde beginnt der Film.",
+      "answer": ["In"]
+    },
+    {
+      "sentence": "___ drei Wochen fahren wir in den Urlaub.",
+      "answer": ["In"]
+    },
+    {
+      "sentence": "___ zwei Monaten habe ich die Prüfung.",
+      "answer": ["In"]
+    },
+    {
+      "sentence": "Ich arbeite heute ___ 8 Uhr ___ 16 Uhr.",
+      "answer": ["von", "bis"]
+    },
+    {
+      "sentence": "___ dem Essen mache ich einen Spaziergang.",
+      "answer": ["Nach"]
+    },
+    {
+      "sentence": "___ dem Unterricht gehe ich nach Hause.",
+      "answer": ["Nach"]
+    },
+    {
+      "sentence": "___ einer Woche habe ich wieder Deutschunterricht.",
+      "answer": ["In"]
+    }
+  ]
+}

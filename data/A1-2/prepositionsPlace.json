@@ -1,0 +1,242 @@
+{
+  "title": {
+    "ru": "Предлоги места",
+    "en": "Prepositions of place"
+  },
+
+  "instructions": {
+    "ru": "Подберите правильный предлог.",
+    "en": "Choose the correct preposition."
+  },
+
+  "items": [
+    {
+      "sentence": "Am Montag fliege ich ___ Deutschland.",
+      "answer": ["nach"]
+    },
+    {
+      "sentence": "Ich fahre noch schnell ___ Post.",
+      "answer": ["zur"]
+    },
+    {
+      "sentence": "Im Herbst fahren wir ___ die Türkei.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Warst du schon ___ Arzt?",
+      "answer": ["beim"]
+    },
+    {
+      "sentence": "Heute Abend sind wir ___ Hause.",
+      "answer": ["zu"]
+    },
+    {
+      "sentence": "Lars geht ___ Hause.",
+      "answer": ["nach"]
+    },
+    {
+      "sentence": "Lena arbeitet ___ der Schweiz.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Karl hat ___ Wien studiert.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Im Juni fahre ich ___ Gebirge.",
+      "answer": ["ins"]
+    },
+    {
+      "sentence": "Ich fahre ___ den Bodensee.",
+      "answer": ["an"]
+    },
+    {
+      "sentence": "Am Samstag fahre ich ___ den Großeltern.",
+      "answer": ["zu"]
+    },
+    {
+      "sentence": "Lars fliegt ___ die USA.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Monika ist ___ dem Hausarzt.",
+      "answer": ["bei"]
+    },
+    {
+      "sentence": "Ich packe meinen Koffer und fliege ___ Kroatien.",
+      "answer": ["nach"]
+    },
+    {
+      "sentence": "Herr Martens geht um 8 Uhr ___ dem Haus.",
+      "answer": ["aus"]
+    },
+    {
+      "sentence": "Frau Stein hat bald eine Dienstreise. Sie muss am 10. September ___ Russland, ___ Tomsk fliegen.",
+      "answer": ["nach", "nach"]
+    },
+    {
+      "sentence": "Im Urlaub fliege ich ___ einem Ballon über die Alpen.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Am 1. September geht mein Bruder ___ die Schule.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Fahren wir ___ Meer oder ___ Gebirge?",
+      "answer": ["ans", "ins"]
+    },
+    {
+      "sentence": "Meine Eltern möchten ___ die Ostsee fahren.",
+      "answer": ["an"]
+    },
+    {
+      "sentence": "Morgen fahre ich ___ Berlin.",
+      "answer": ["nach"]
+    },
+    {
+      "sentence": "Nächste Woche fliegen wir ___ Spanien.",
+      "answer": ["nach"]
+    },
+    {
+      "sentence": "Wir fahren ___ die Schweiz.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Sie arbeitet ___ den USA.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Ich gehe heute ___ Supermarkt.",
+      "answer": ["zum"]
+    },
+    {
+      "sentence": "Wir treffen uns ___ Bahnhof.",
+      "answer": ["am"]
+    },
+    {
+      "sentence": "Die Kinder spielen ___ Park.",
+      "answer": ["im"]
+    },
+    {
+      "sentence": "Ich gehe nach der Arbeit ___ den Park.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Das Buch liegt ___ dem Tisch.",
+      "answer": ["auf"]
+    },
+    {
+      "sentence": "Die Katze springt ___ den Tisch.",
+      "answer": ["auf"]
+    },
+    {
+      "sentence": "Wir sitzen ___ Strand.",
+      "answer": ["am"]
+    },
+    {
+      "sentence": "Wir gehen ___ Strand.",
+      "answer": ["ans"]
+    },
+    {
+      "sentence": "Ich war gestern ___ Lisa.",
+      "answer": ["bei"]
+    },
+    {
+      "sentence": "Nach der Arbeit gehe ich ___ Lisa.",
+      "answer": ["zu"]
+    },
+    {
+      "sentence": "Mein Bruder ist schon ___ Arzt.",
+      "answer": ["beim"]
+    },
+    {
+      "sentence": "Morgen muss ich ___ Arzt.",
+      "answer": ["zum"]
+    },
+    {
+      "sentence": "Wir wohnen ___ Deutschland.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Ich komme ___ München.",
+      "answer": ["aus"]
+    },
+    {
+      "sentence": "Wir fahren ___ der Station ab.",
+      "answer": ["von"]
+    },
+    {
+      "sentence": "Ich komme ___ Strand.",
+      "answer": ["vom"]
+    },
+    {
+      "sentence": "Er stellt das Glas ___ den Tisch.",
+      "answer": ["auf"]
+    },
+    {
+      "sentence": "Sie wartet ___ der Haltestelle.",
+      "answer": ["an"]
+    },
+    {
+      "sentence": "Wir gehen jeden Tag ___ die Schule.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Die Kinder sind schon ___ der Schule.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Ich bin heute Abend ___ Hause.",
+      "answer": ["zu"]
+    },
+    {
+      "sentence": "Ich gehe jetzt ___ Hause.",
+      "answer": ["nach"]
+    },
+    {
+      "sentence": "Am Freitag fahre ich ___ meinen Eltern.",
+      "answer": ["zu"]
+    },
+    {
+      "sentence": "Ich arbeite ___ Siemens.",
+      "answer": ["bei"]
+    },
+    {
+      "sentence": "Wir treffen uns ___ Café.",
+      "answer": ["im"]
+    },
+    {
+      "sentence": "Kommst du ___ Party?",
+      "answer": ["zur"]
+    },
+    {
+      "sentence": "Wir gehen ___ Konzert.",
+      "answer": ["zum"]
+    },
+    {
+      "sentence": "Ich fahre ___ Meer.",
+      "answer": ["ans"]
+    },
+    {
+      "sentence": "Im Juli fahren wir ___ den Bodensee.",
+      "answer": ["an"]
+    },
+    {
+      "sentence": "Die Familie fährt ___ die Alpen.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Am Wochenende fahren wir ___ die Berge.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Nächstes Jahr fliege ich ___ die Niederlande.",
+      "answer": ["in"]
+    },
+    {
+      "sentence": "Er kommt ___ der Arbeit und ist müde.",
+      "answer": ["von"]
+    }
+  ]
+}
