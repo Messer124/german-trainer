@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/prepositionsTime.json";
 import hint from "../../../data/A1-2/images/prepositionsTime.html?raw";
-import hint2 from "../../../data/A1-2/images/prepositionstime2.html?raw";
+import hint2 from "../../../data/A1-2/images/prepositionsTime2.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 
