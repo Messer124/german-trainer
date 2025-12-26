@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
-import data from "../../../data/A1-2/prepositionsTime.json";
-import hintTime from "../../../data/A1-2/images/prepositionsTime.html?raw";
-import hintPlace from "../../../data/A1-2/images/prepositionsPlace.html?raw";
+import data from "../../../data/A1-2/prepositionsPlace.json";
+import hint from "../../../data/A1-2/images/prepositionsPlace.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 
@@ -97,8 +96,7 @@ export default function Prepositions() {
         <div className="exercise-inner">
             {showHint && (
                 <ModalHtml
-                    slides={[hintTime, hintPlace]}
-                    initialIndex={0}
+                    html={hint}
                     onClose={() => setShowHint(false)}
                 />
             )}

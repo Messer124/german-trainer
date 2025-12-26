@@ -1,4 +1,4 @@
-import ModalVerbExercise from "../exercises/A1-1/ModalVerbExercise";
+import ModalVerbs from "../exercises/A1-1/ModalVerbs";
 import StrongVerbsConjugation from "../exercises/A1-1/StrongVerbsConjugation";
 import HabenOderSein from "../exercises/A1-1/HabenOderSein";
 import TranslateSentences from "../exercises/A1-1/TranslateSentences";
@@ -35,7 +35,7 @@ export const EXERCISES_BY_LEVEL = {
         },
         "modal-verbs": {
             storageKey: "modal-verbs-answers",
-            component: ModalVerbExercise,
+            component: ModalVerbs,
         },
         articles: {
             storageKey: "articles-answers",

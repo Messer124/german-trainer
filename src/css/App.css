@@ -90,7 +90,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 0;        /* критично для корректной работы overflow у детей */
-  padding: 16px;
+  padding: 20px;
   overflow: hidden;     /* скролл ниже, на .sidebar-middle */
 }
 
@@ -101,7 +101,6 @@ body {
   flex-direction: column;
   min-height: 0;        /* без этого flex-дети не будут сжиматься по высоте */
   overflow-y: auto;
-  padding-right: 4px;
   border-radius: var(--radius);
 
   scrollbar-width: none;        /* Firefox */

@@ -893,34 +893,46 @@ table.mv-table tbody td {
   vertical-align: middle;
 }
 
-/* --- Стили для списка предлогов времени */
+/* --- Улучшенные стили для списка предлогов --- */
 
-.prepositions-layout {
-  display: flex;
-  gap: 40px; /* Отступ между большой левой и правой колонкой */
-  align-items: flex-start;
+.prepositions-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Две равные колонки */
+  gap: 60px; /* Большой отступ между левой и правой частью */
+  align-items: start;
 }
 
+/* Колонка-контейнер */
 .prep-column {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 24px; /* Отступ между словами в списке */
 }
 
-.prep-item {
+/* Строка с предлогом */
+.prep-row-item {
   display: grid;
-  /* Левая часть (слово+перевод) фиксирована, правая (пример) занимает остаток */
-  grid-template-columns: 110px 1fr;
-  gap: 16px;
-  align-items: baseline;
+  /* Левая часть фиксирована (130px), правая (пример) занимает остаток */
+  grid-template-columns: 130px 1fr;
+  gap: 20px;
+
+  /* Воздух и разделение */
+  padding: 16px 0;
+  border-bottom: 1px solid #bcb9b9; /* Легкая разделительная линия */
 }
 
-.prep-label {
-  font-weight: 700;
+/* Убираем линию у последнего элемента в колонке */
+.prep-column .prep-row-item:last-child {
+  border-bottom: none;
+}
+
+/* Левая часть: Предлог - Перевод */
+.prep-left {
   font-size: var(--desktop-modal-font-size);
   line-height: 1.4;
   color: var(--theory-text-color);
+  font-weight: 700;
+  /* Для переноса длинных слов типа "vom - bis zum" */
+  word-wrap: break-word;
 }
 
 .prep-dash {
@@ -929,19 +941,23 @@ table.mv-table tbody td {
   font-weight: 400;
 }
 
-.prep-content {
+.prep-trans {
+  font-weight: 400;
+}
+
+/* Правая часть: Примеры */
+.prep-right {
   font-size: var(--desktop-modal-font-size);
   line-height: 1.5;
 }
 
-/* Принудительный серый цвет для русского перевода в этом блоке */
-.prep-content .theory-text--ru {
+/* Перевод примера (русский) */
+.prep-right .theory-text--ru {
   color: var(--theory-muted-color);
-  display: block; /* Перенос перевода на новую строку (опционально, но так на картинке) */
-  margin-top: 2px;
-  margin-bottom: 8px; /* Отступ если примеров несколько */
+  display: block;
 }
-.prep-content .theory-text--ru:last-child {
+
+.prep-right .theory-text--ru:last-child {
   margin-bottom: 0;
 }
 
@@ -1019,7 +1035,9 @@ table.mv-table tbody td {
   .conjunction-label,
   .conjunction-content,
   .sub-rule,
-  .sub-example {
+  .sub-example,
+  .prep-left,
+  .prep-right {
     font-size: var(--tablet-modal-font-size);
   }
 
@@ -1048,6 +1066,19 @@ table.mv-table tbody td {
   .prep-table th,
   .prep-table td {
     padding: 6px 7px;
+  }
+
+  .prepositions-grid-layout {
+    gap: 10px; /* Большой отступ между левой и правой частью */
+  }
+
+  /* Строка с предлогом */
+  .prep-row-item {
+    /* Левая часть фиксирована, правая (пример) занимает остаток */
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+    /* Воздух и разделение */
+    padding: 10px 0;
   }
 
 }
@@ -1079,7 +1110,9 @@ table.mv-table tbody td {
   .conjunction-label,
   .conjunction-content,
   .sub-rule,
-  .sub-example {
+  .sub-example,
+  .prep-left,
+  .prep-right  {
     font-size: var(--mobile-modal-font-size);
   }
 
@@ -1141,6 +1174,15 @@ table.mv-table tbody td {
   .prep-table th,
   .prep-table td {
     padding: 3px 4px;
+  }
+
+  .prepositions-grid-layout {
+    grid-template-columns: 1fr; /* Одна колонка на мобильных */
+    gap: 0;
+  }
+
+  .prep-column:first-child .prep-row-item:last-child {
+    border-bottom: 1px solid #bcb9b9;
   }
 }
 

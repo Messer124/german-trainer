@@ -6,11 +6,19 @@ import hint2 from "../../../data/A1-2/images/prepositionstime2.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 
+function flattenItems(items) {
+    if (!Array.isArray(items)) return [];
+    if (Array.isArray(items[0])) return items.flat();
+    return items;
+}
+
 const STORAGE_KEY = "prepositions-time-answers";
 
 export default function PrepositionsTime() {
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
+
+    const items = useMemo(() => flattenItems(data.items), [data.items]);
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);

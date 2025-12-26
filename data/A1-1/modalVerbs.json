@@ -1,0 +1,567 @@
+{
+  "title": {
+    "ru": "Модальные глаголы",
+    "en": "Modal verbs"
+  },
+  "instructions": {
+    "ru": "Вставьте нужную форму глагола.",
+    "en": "Insert the correct form of the verb."
+  },
+  "items": [
+    {
+      "sentence": "Sie ___ jetzt mit dem Chef sprechen.",
+      "verb": "wollen",
+      "answer": "wollen"
+    },
+    {
+      "sentence": "Ich ___ nicht ausgehen.",
+      "verb": "dürfen",
+      "answer": "darf"
+    },
+    {
+      "sentence": "___ du keine Schokolade?",
+      "verb": "mögen",
+      "answer": "Magst"
+    },
+    {
+      "sentence": "Wir ___ morgen zusammen lernen.",
+      "verb": "können",
+      "answer": "können"
+    },
+    {
+      "sentence": "Wir ___ im Park spielen.",
+      "verb": "dürfen",
+      "answer": "dürfen"
+    },
+    {
+      "sentence": "Du ___ das bitte wiederholen.",
+      "verb": "sollen",
+      "answer": "sollst"
+    },
+    {
+      "sentence": "Er ___ zum Arzt gehen.",
+      "verb": "sollen",
+      "answer": "soll"
+    },
+    {
+      "sentence": "___ du mich vom Bahnhof abholen?",
+      "verb": "können",
+      "answer": "Kannst"
+    },
+    {
+      "sentence": "Wir ___ um 8 Uhr anfangen.",
+      "verb": "sollen",
+      "answer": "sollen"
+    },
+    {
+      "sentence": "Ich ___ heute länger schlafen.",
+      "verb": "dürfen",
+      "answer": "darf"
+    },
+    {
+      "sentence": "___ ihr heute pünktlich sein?",
+      "verb": "sollen",
+      "answer": "Sollt"
+    },
+    {
+      "sentence": "Du ___ heute nicht so spät raus.",
+      "verb": "dürfen",
+      "answer": "darfst"
+    },
+    {
+      "sentence": "___ ihr in der Klasse trinken?",
+      "verb": "dürfen",
+      "answer": "Dürft"
+    },
+    {
+      "sentence": "Sie ___ ein Ticket kaufen.",
+      "verb": "möchten",
+      "answer": "möchte"
+    },
+    {
+      "sentence": "Ich ___ Tee.",
+      "verb": "mögen",
+      "answer": "mag"
+    },
+    {
+      "sentence": "___ Sie etwas trinken?",
+      "verb": "möchten",
+      "answer": "Möchten"
+    },
+    {
+      "sentence": "Ich ___ heute Pizza essen.",
+      "verb": "wollen",
+      "answer": "will"
+    },
+    {
+      "sentence": "Sie ___ im Bus nicht essen.",
+      "verb": "dürfen",
+      "answer": "darf"
+    },
+    {
+      "sentence": "___ Sie kurz fragen?",
+      "verb": "dürfen",
+      "answer": "Dürfen"
+    },
+    {
+      "sentence": "Wir ___ mit dem Bus fahren.",
+      "verb": "können",
+      "answer": "können"
+    },
+    {
+      "sentence": "Du ___ deine Hausaufgaben machen.",
+      "verb": "müssen",
+      "answer": "musst"
+    },
+    {
+      "sentence": "Du ___ deine Zähne putzen.",
+      "verb": "sollen",
+      "answer": "sollst"
+    },
+    {
+      "sentence": "Sie ___ ein Zimmer reservieren.",
+      "verb": "wollen",
+      "answer": "wollen"
+    },
+    {
+      "sentence": "___ ihr das Spiel sehen?",
+      "verb": "wollen",
+      "answer": "Wollt"
+    },
+    {
+      "sentence": "Sie ___ den Computer ausmachen.",
+      "verb": "sollen",
+      "answer": "sollen"
+    },
+    {
+      "sentence": "Er ___ hier nicht rauchen.",
+      "verb": "dürfen",
+      "answer": "darf"
+    },
+    {
+      "sentence": "___ du mir bitte helfen?",
+      "verb": "können",
+      "answer": "Kannst"
+    },
+    {
+      "sentence": "Sie ___ ein Wasser, bitte.",
+      "verb": "möchten",
+      "answer": "möchte"
+    },
+    {
+      "sentence": "Sie ___ Musik.",
+      "verb": "mögen",
+      "answer": "mag"
+    },
+    {
+      "sentence": "Ich ___ jeden Tag üben.",
+      "verb": "müssen",
+      "answer": "muss"
+    },
+    {
+      "sentence": "___ Sie den Mantel ausziehen?",
+      "verb": "sollen",
+      "answer": "Sollen"
+    },
+    {
+      "sentence": "Wir ___ noch Brot kaufen.",
+      "verb": "müssen",
+      "answer": "müssen"
+    },
+    {
+      "sentence": "___ ihr heute Fußball spielen?",
+      "verb": "können",
+      "answer": "Könnt"
+    },
+    {
+      "sentence": "Du ___ heute nicht lernen.",
+      "verb": "wollen",
+      "answer": "willst"
+    },
+    {
+      "sentence": "___ Sie mir bitte sagen, wo die Toilette ist?",
+      "verb": "können",
+      "answer": "Können"
+    },
+    {
+      "sentence": "___ du das Fenster öffnen?",
+      "verb": "können",
+      "answer": "Kannst"
+    },
+    {
+      "sentence": "___ du hier parken?",
+      "verb": "dürfen",
+      "answer": "Darfst"
+    },
+    {
+      "sentence": "Ich ___ ein Wasser, bitte.",
+      "verb": "möchten",
+      "answer": "möchte"
+    },
+    {
+      "sentence": "___ du ein neues Fahrrad?",
+      "verb": "möchten",
+      "answer": "Möchtest"
+    },
+    {
+      "sentence": "Er ___ gut schwimmen.",
+      "verb": "können",
+      "answer": "kann"
+    },
+    {
+      "sentence": "Sie ___ ein Ticket kaufen.",
+      "verb": "möchten",
+      "answer": "möchte"
+    },
+    {
+      "sentence": "___ ihr ins Schwimmbad gehen?",
+      "verb": "möchten",
+      "answer": "Möchtet"
+    },
+    {
+      "sentence": "Wir ___ jetzt bezahlen.",
+      "verb": "möchten",
+      "answer": "möchten"
+    },
+    {
+      "sentence": "___ du einen Kaffee trinken?",
+      "verb": "wollen",
+      "answer": "Willst"
+    },
+    {
+      "sentence": "Ich ___ früh aufstehen.",
+      "verb": "müssen",
+      "answer": "muss"
+    },
+    {
+      "sentence": "Ich ___ heute nicht kommen.",
+      "verb": "können",
+      "answer": "kann"
+    },
+    {
+      "sentence": "___ du morgen zur Schule gehen?",
+      "verb": "müssen",
+      "answer": "Musst"
+    },
+    {
+      "sentence": "Wir ___ einkaufen.",
+      "verb": "müssen",
+      "answer": "müssen"
+    },
+    {
+      "sentence": "Fritzchen ___ nicht in die Schule gehen.",
+      "verb": "wollen",
+      "answer": "will"
+    },
+    {
+      "sentence": "Marie ___ Pizza.",
+      "verb": "mögen",
+      "answer": "mag"
+    },
+    {
+      "sentence": "___ Sie noch etwas trinken?",
+      "verb": "möchten",
+      "answer": "Möchten"
+    },
+    {
+      "sentence": "Peter ___ dieses Problem nicht lösen.",
+      "verb": "können",
+      "answer": "kann"
+    },
+    {
+      "sentence": "Er ___ heute lange arbeiten.",
+      "verb": "müssen",
+      "answer": "muss"
+    },
+    {
+      "sentence": "Ich ___ nicht kommen.",
+      "verb": "können",
+      "answer": "kann"
+    },
+    {
+      "sentence": "Ich ___ ein neues Buch kaufen.",
+      "verb": "wollen",
+      "answer": "will"
+    },
+    {
+      "sentence": "___ Sie bitte langsamer sprechen?",
+      "verb": "können",
+      "answer": "Können"
+    },
+    {
+      "sentence": "Sie ___ die Speisekarte, bitte.",
+      "verb": "möchten",
+      "answer": "möchten"
+    },
+    {
+      "sentence": "Du ___ heute nicht kochen.",
+      "verb": "möchten",
+      "answer": "möchtest"
+    },
+    {
+      "sentence": "Sie ___ den Film.",
+      "verb": "mögen",
+      "answer": "mögen"
+    },
+    {
+      "sentence": "Ich ___ keine Milch.",
+      "verb": "mögen",
+      "answer": "mag"
+    },
+    {
+      "sentence": "Du ___ sehr gut Deutsch sprechen.",
+      "verb": "können",
+      "answer": "kannst"
+    },
+    {
+      "sentence": "Sie ___ jetzt gehen.",
+      "verb": "müssen",
+      "answer": "müssen"
+    },
+    {
+      "sentence": "Er ___ heute einkaufen.",
+      "verb": "müssen",
+      "answer": "muss"
+    },
+    {
+      "sentence": "Du ___ keinen Fisch.",
+      "verb": "mögen",
+      "answer": "magst"
+    },
+    {
+      "sentence": "___ ihr heute pünktlich kommen?",
+      "verb": "müssen",
+      "answer": "Müsst"
+    },
+    {
+      "sentence": "Sie ___ hier kurz warten.",
+      "verb": "können",
+      "answer": "könnt"
+    },
+    {
+      "sentence": "___ Sie einen Termin machen?",
+      "verb": "wollen",
+      "answer": "Wollen"
+    },
+    {
+      "sentence": "___ Sie hier kurz warten.",
+      "verb": "müssen",
+      "answer": "Müssen"
+    },
+    {
+      "sentence": "Sie ___ hier sitzen.",
+      "verb": "dürfen",
+      "answer": "dürfen"
+    },
+    {
+      "sentence": "___ du kein neues Handy?",
+      "verb": "möchten",
+      "answer": "Möchtest"
+    },
+    {
+      "sentence": "Georg ___ noch viel lernen.",
+      "verb": "müssen",
+      "answer": "muss"
+    },
+    {
+      "sentence": "Er ___ das Fenster nicht öffnen.",
+      "verb": "können",
+      "answer": "kann"
+    },
+    {
+      "sentence": "Wir ___ morgen Freunde besuchen.",
+      "verb": "möchten",
+      "answer": "möchten"
+    },
+    {
+      "sentence": "Sie ___ die Rechnung heute bezahlen.",
+      "verb": "müssen",
+      "answer": "müssen"
+    },
+    {
+      "sentence": "___ du Äpfel?",
+      "verb": "mögen",
+      "answer": "Magst"
+    },
+    {
+      "sentence": "___ Sie heute früher gehen?",
+      "verb": "dürfen",
+      "answer": "Dürfen"
+    },
+    {
+      "sentence": "___ ich dir das mal erklären?",
+      "verb": "sollen",
+      "answer": "Soll"
+    },
+    {
+      "sentence": "Sie ___ die Rechnung heute bezahlen.",
+      "verb": "müssen",
+      "answer": "müssen"
+    },
+    {
+      "sentence": "Sie ___ keine Tomaten.",
+      "verb": "mögen",
+      "answer": "mögen"
+    },
+    {
+      "sentence": "Sie ___ hier mit Karte bezahlen.",
+      "verb": "können",
+      "answer": "können"
+    },
+    {
+      "sentence": "___ ich mal Ihren Kopierer benutzen?",
+      "verb": "dürfen",
+      "answer": "Darf"
+    },
+    {
+      "sentence": "___ du morgen zur Schule gehen?",
+      "verb": "müssen",
+      "answer": "Musst"
+    },
+    {
+      "sentence": "Ihr ___ jetzt essen.",
+      "verb": "dürfen",
+      "answer": "dürft"
+    },
+    {
+      "sentence": "Ihr ___ Schokolade.",
+      "verb": "mögen",
+      "answer": "mögt"
+    },
+    {
+      "sentence": "Ihr ___ das Zimmer aufräumen.",
+      "verb": "sollen",
+      "answer": "sollt"
+    },
+    {
+      "sentence": "___ ihr Eis?",
+      "verb": "mögen",
+      "answer": "Mögt"
+    },
+    {
+      "sentence": "Wann ___ Sie Urlaub nehmen?",
+      "verb": "wollen",
+      "answer": "wollen"
+    },
+    {
+      "sentence": "Wir ___ morgen zusammen einkaufen gehen.",
+      "verb": "können",
+      "answer": "können"
+    },
+    {
+      "sentence": "Er ___ heute zu Hause bleiben.",
+      "verb": "möchten",
+      "answer": "möchte"
+    },
+    {
+      "sentence": "Ich ___ ein Wasser, bitte.",
+      "verb": "möchten",
+      "answer": "möchte"
+    },
+    {
+      "sentence": "Sie ___ Kaffee.",
+      "verb": "mögen",
+      "answer": "mögen"
+    },
+    {
+      "sentence": "Sie ___ ein neues Buch kaufen.",
+      "verb": "wollen",
+      "answer": "will"
+    },
+    {
+      "sentence": "Sie ___ bitte hier warten.",
+      "verb": "sollen",
+      "answer": "sollen"
+    },
+    {
+      "sentence": "___ Sie das Formular lesen?",
+      "verb": "sollen",
+      "answer": "Sollen"
+    },
+    {
+      "sentence": "Wir ___ ins Kino gehen.",
+      "verb": "wollen",
+      "answer": "wollen"
+    },
+    {
+      "sentence": "Sie ___ das Formular ausfüllen.",
+      "verb": "müssen",
+      "answer": "müssen"
+    },
+    {
+      "sentence": "Er ___ heute nicht so spät ins Bett gehen.",
+      "verb": "sollen",
+      "answer": "soll"
+    },
+    {
+      "sentence": "___ Sie die Tür schließen?",
+      "verb": "sollen",
+      "answer": "Sollen"
+    },
+    {
+      "sentence": "Ihr ___ leise sein.",
+      "verb": "müssen",
+      "answer": "müsst"
+    },
+    {
+      "sentence": "Wir ___ morgen früh losfahren.",
+      "verb": "wollen",
+      "answer": "wollen"
+    },
+    {
+      "sentence": "Sie ___ hier Fotos machen.",
+      "verb": "dürfen",
+      "answer": "dürfen"
+    },
+    {
+      "sentence": "Was ___ ich für Sie tun?",
+      "verb": "können",
+      "answer": "kann"
+    },
+    {
+      "sentence": "Ich ___ mehr schlafen.",
+      "verb": "sollen",
+      "answer": "soll"
+    },
+    {
+      "sentence": "Wir ___ morgen Oma anrufen.",
+      "verb": "sollen",
+      "answer": "sollen"
+    },
+    {
+      "sentence": "Sie ___ ein Ticket kaufen.",
+      "verb": "möchten",
+      "answer": "möchte"
+    },
+    {
+      "sentence": "Wir ___ morgen früh losfahren.",
+      "verb": "wollen",
+      "answer": "wollen"
+    },
+    {
+      "sentence": "Ihr ___ mit uns kommen.",
+      "verb": "wollen",
+      "answer": "wollt"
+    },
+    {
+      "sentence": "Sie ___ einen Tisch reservieren.",
+      "verb": "möchten",
+      "answer": "möchten"
+    },
+    {
+      "sentence": "___ Sie heute früher gehen?",
+      "verb": "dürfen",
+      "answer": "Dürfen"
+    },
+    {
+      "sentence": "___ Sie einen Termin machen?",
+      "verb": "wollen",
+      "answer": "Wollen"
+    },
+    {
+      "sentence": "Alle Kollegen ___ arbeiten.",
+      "verb": "müssen",
+      "answer": "müssen"
+    }
+  ]
+}
