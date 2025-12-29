@@ -237,7 +237,8 @@ export default function App() {
                                 onChange={(e) => setLevel(e.target.value)}
                             >
                                 <option value="A1.1">A1.1</option>
-                                <option value="A1.2">A1.2 in progress</option>
+                                <option value="A1.2">A1.2</option>
+                                <option value="A2">A2 in progress</option>
                             </select>
 
                             <label className="sidebar-settings-row sidebar-settings-row--mt">

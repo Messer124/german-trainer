@@ -32,7 +32,7 @@ function HabenSeinPreteritum() {
 
   const handleChange = (index, value) => {
     const correct =
-        data.items[0].items[index].answer.trim().toLowerCase();
+        data.items[index].answer.trim().toLowerCase();
 
     setAnswers((prev) => ({
       ...prev,

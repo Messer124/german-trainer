@@ -22,7 +22,9 @@ const translations = {
       "imperativ": "Imperativ",
       "prepositions-time": "Предлоги времени",
       "prepositions-place": "Предлоги места",
-      "conjunctions": "Союзы"
+      "conjunctions": "Союзы",
+      "subordinating-conjunctions": "Подчинительные союзы",
+      "conjunctive-adverbs": "Союзные слова"
     },
     labels: {
       level: "Уровень",
@@ -52,7 +54,9 @@ const translations = {
       "imperativ": "Imperativ",
       "prepositions-time": "Prepositions of time",
       "prepositions-place": "Prepositions of place",
-      "conjunctions": "Conjunctions"
+      "conjunctions": "Conjunctions",
+      "subordinating-conjunctions": "Subordinating conjunctions",
+      "conjunctive-adverbs": "Conjunctive adverbs"
     },
     labels: {
       level: "Level",

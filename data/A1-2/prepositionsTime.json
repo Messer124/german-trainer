@@ -11,6 +11,10 @@
 
   "items": [
     {
+      "sentence": "___ 6 und 7 bin ich nicht zu Hause.",
+      "answer": ["Zwischen"]
+    },
+    {
       "sentence": "Ich fahre ___ Sommer nach Italien.",
       "answer": ["im"]
     },
@@ -19,8 +23,28 @@
       "answer": ["am"]
     },
     {
+      "sentence": "Wir mieten ein Auto ___ zwei Tage.",
+      "answer": ["für"]
+    },
+    {
+      "sentence": "___ 03.10 ___ 10.10 bin ich auf Dienstreise.",
+      "answer": ["Vom", "bis zum"]
+    },
+    {
       "sentence": "Ich stehe jeden Tag ___ 7 Uhr auf.",
       "answer": ["um"]
+    },
+    {
+      "sentence": "___ der Arbeit gehe ich nach Hause.",
+      "answer": ["Nach"]
+    },
+    {
+      "sentence": "Ich bleibe ___ Freitag zu Hause.",
+      "answer": ["bis"]
+    },
+    {
+      "sentence": "___ heute ___ gilt im Büro ein neues Rauchverbot.",
+      "answer": ["von", "an"]
     },
     {
       "sentence": "___ Morgen trinke ich immer Kaffee.",
@@ -43,6 +67,14 @@
       "answer": ["Seit"]
     },
     {
+      "sentence": "___ dem Essen trinken wir Kaffee.",
+      "answer": ["Nach"]
+    },
+    {
+      "sentence": "___ 8 und 9 Uhr frühstücke ich.",
+      "answer": ["Zwischen"]
+    },
+    {
       "sentence": "___ nächster Woche habe ich Urlaub.",
       "answer": ["Ab"]
     },
@@ -63,12 +95,16 @@
       "answer": ["In"]
     },
     {
-      "sentence": "Mein Kollege Martin kommt mit, aber nur ___ 3 Tage.",
-      "answer": ["für"]
-    },
-    {
       "sentence": "___ 15. Oktober fahren wir nach Nürnberg mit der Bahn.",
       "answer": ["Am"]
+    },
+    {
+      "sentence": "___ zwei Jahren wohne ich in Deutschland.",
+      "answer": ["Seit"]
+    },
+    {
+      "sentence": "___ der Schule mache ich Hausaufgaben.",
+      "answer": ["Nach"]
     },
     {
       "sentence": "Der Zug erreicht Nürnberg pünktlich ___ 20.00 Uhr.",
@@ -79,20 +115,48 @@
       "answer": ["im"]
     },
     {
+      "sentence": "___ morgen mache ich mehr Sport.",
+      "answer": ["Ab"]
+    },
+    {
       "sentence": "Morgen ___ 10 Uhr beginnt unsere Konferenz.",
       "answer": ["um"]
+    },
+    {
+      "sentence": "___ Montag und Mittwoch habe ich Zeit.",
+      "answer": ["Zwischen"]
     },
     {
       "sentence": "___ 10.08 schreibt Tobias Klassenarbeit.",
       "answer": ["Am"]
     },
     {
-      "sentence": "Sehr schade, dass Martin ___ 3 Tagen abreisen muss.",
-      "answer": ["in"]
+      "sentence": "Der Supermarkt ist ___ 20 Uhr geöffnet.",
+      "answer": ["bis"]
+    },
+    {
+      "sentence": "___ der Party kaufe ich Getränke.",
+      "answer": ["Vor"]
+    },
+    {
+      "sentence": "Sie hat Urlaub ___ einen Monat.",
+      "answer": ["für"]
+    },
+    {
+      "sentence": "___ nächster Woche ___ ist die Bibliothek montags geschlossen.",
+      "answer": ["von", "an"]
+    },
+    {
+      "sentence": "___ 1. Juni ___ 15. Juni arbeitet er in Berlin.",
+      "answer": ["Vom", "bis zum"]
     },
     {
       "sentence": "___ 2 Monaten ist er unser Abteilungsleiter und kann nicht lange abwesend von der Arbeit sein.",
       "answer": ["seit"]
+    },
+    {
+      "sentence": "___ dem Film gehen wir noch spazieren.",
+      "answer": ["Nach"]
     },
     {
       "sentence": "Ich komme erst ___ 10. Oktober zurück.",
@@ -103,10 +167,6 @@
       "answer": ["Von", "bis"]
     },
     {
-      "sentence": "Direkt ___ der Dienstreise fliege ich in den Urlaub.",
-      "answer": ["nach"]
-    },
-    {
       "sentence": "___ Januar gehe ich oft ins Schwimmbad.",
       "answer": ["Im"]
     },
@@ -115,12 +175,24 @@
       "answer": ["Am"]
     },
     {
+      "sentence": "___ nächster Woche habe ich Urlaub.",
+      "answer": ["Ab"]
+    },
+    {
       "sentence": "Der Kurs beginnt ___ 18.30 Uhr.",
       "answer": ["um"]
     },
     {
+      "sentence": "___ 12 und 13 Uhr mache ich Mittagspause.",
+      "answer": ["Zwischen"]
+    },
+    {
       "sentence": "Ich bin ___ 5 Minuten da.",
       "answer": ["in"]
+    },
+    {
+      "sentence": "___ 1. Januar ___ werden die Preise erhöht.",
+      "answer": ["von", "an"]
     },
     {
       "sentence": "Wir haben Urlaub ___ August.",
@@ -135,8 +207,20 @@
       "answer": ["Seit"]
     },
     {
+      "sentence": "Er kommt ___ ein Wochenende nach Berlin.",
+      "answer": ["für"]
+    },
+    {
+      "sentence": "___ 20.12 ___ 02.01 ist die Schule geschlossen.",
+      "answer": ["Vom", "bis zum"]
+    },
+    {
       "sentence": "___ nächstem Monat fange ich einen neuen Job an.",
       "answer": ["Ab"]
+    },
+    {
+      "sentence": "___ zwei Stunden bin ich wieder da.",
+      "answer": ["Nach"]
     },
     {
       "sentence": "Ich bleibe ___ Montag in Hamburg.",
@@ -149,6 +233,10 @@
     {
       "sentence": "___ zwei Stunden habe ich einen Termin.",
       "answer": ["In"]
+    },
+    {
+      "sentence": "___ sofort ___ müssen alle Besucher einen Ausweis zeigen.",
+      "answer": ["von", "an"]
     },
     {
       "sentence": "___ 01.03. ___ 15.03. ist die Schule geschlossen.",
@@ -167,6 +255,22 @@
       "answer": ["Am"]
     },
     {
+      "sentence": "___ dem Essen wasche ich mir die Hände.",
+      "answer": ["Vor"]
+    },
+    {
+      "sentence": "___ 18 und 19 Uhr koche ich.",
+      "answer": ["Zwischen"]
+    },
+    {
+      "sentence": "___ zwei Monaten habe ich die Prüfung.",
+      "answer": ["In"]
+    },
+    {
+      "sentence": "___ heute esse ich weniger Süßigkeiten.",
+      "answer": ["Ab"]
+    },
+    {
       "sentence": "___ Sommer gehen wir oft schwimmen.",
       "answer": ["Im"]
     },
@@ -179,28 +283,24 @@
       "answer": ["bis zum"]
     },
     {
+      "sentence": "Ich bin ___ Sonntag in Berlin.",
+      "answer": ["bis"]
+    },
+    {
       "sentence": "Ich lerne Deutsch ___ zwei Jahren.",
       "answer": ["seit"]
     },
     {
-      "sentence": "___ dem Unterricht gehe ich nach Hause.",
-      "answer": ["Nach"]
-    },
-    {
-      "sentence": "___ einer Stunde beginnt der Film.",
-      "answer": ["In"]
-    },
-    {
-      "sentence": "___ zwei Monaten habe ich die Prüfung.",
-      "answer": ["In"]
+      "sentence": "___ einem Jahr hatte ich keinen Job.",
+      "answer": ["Vor"]
     },
     {
       "sentence": "Ich arbeite heute ___ 8 Uhr ___ 16 Uhr.",
       "answer": ["von", "bis"]
     },
     {
-      "sentence": "___ dem Essen mache ich einen Spaziergang.",
-      "answer": ["Nach"]
+      "sentence": "___ Montag ___ findet der Kurs in Raum 3 statt.",
+      "answer": ["von", "an"]
     },
     {
       "sentence": "___ einer Woche habe ich wieder Deutschunterricht.",
@@ -209,6 +309,14 @@
     {
       "sentence": "Wir arbeiten heute ___ 9.00 Uhr ___ 17.00 Uhr.",
       "answer": ["von", "bis"]
+    },
+    {
+      "sentence": "Mein Kollege Martin kommt mit, aber nur ___ 3 Tage.",
+      "answer": ["für"]
+    },
+    {
+      "sentence": "___ Januar lerne ich Deutsch.",
+      "answer": ["Ab"]
     }
   ]
 }

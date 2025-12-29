@@ -920,6 +920,17 @@ table.mv-table tbody td {
   border-bottom: 1px solid #bcb9b9; /* Легкая разделительная линия */
 }
 
+.prep-row-item-conj {
+  display: grid;
+  /* Левая часть фиксирована (130px), правая (пример) занимает остаток */
+  grid-template-columns: 160px 1fr;
+  gap: 20px;
+
+  /* Воздух и разделение */
+  padding: 16px 0;
+  border-bottom: 1px solid #bcb9b9; /* Легкая разделительная линия */
+}
+
 /* Убираем линию у последнего элемента в колонке */
 .prep-column .prep-row-item:last-child {
   border-bottom: none;

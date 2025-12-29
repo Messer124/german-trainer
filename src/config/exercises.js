@@ -18,6 +18,8 @@ import Imperativ from "../exercises/A1-2/Imperativ";
 import PrepositionsTime from "../exercises/A1-2/PrepositionsTime";
 import PrepositionsPlace from "../exercises/A1-2/PrepositionsPlace";
 import Conjunctions from "../exercises/A1-2/Conjunctions";
+import SubordinatingConjunctions from "../exercises/A2/SubordinatingConjunctions";
+import ConjunctiveAdverbs from "../exercises/A2/ConjunctiveAdverbs";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -102,6 +104,16 @@ export const EXERCISES_BY_LEVEL = {
         conjunctions: {
             storageKey: "conjunctions-answers",
             component: Conjunctions,
+        }
+    },
+    "A2": {
+        "subordinating-conjunctions": {
+            storageKey: "subordinating-conjunctions-answers",
+            component: SubordinatingConjunctions,
+        },
+        "conjunctive-adverbs": {
+            storageKey: "conjunctive-adverbs-answers",
+            component: ConjunctiveAdverbs,
         }
     },
 };
