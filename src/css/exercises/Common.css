@@ -210,12 +210,6 @@
     border-bottom-right-radius: var(--radius);
 }
 
-.eye-container {
-    position: relative;
-    display: inline-block;
-    margin-left: 8px;
-}
-
 /* === ПОДСКАЗКА С ОТВЕТОМ ДЛЯ EYE === */
 
 .eye-container {
@@ -226,7 +220,7 @@
     cursor: pointer;
 }
 
-/* базовое состояние: подсказка скрыта, по центру относительно глазка */
+/* базовое состояние: подсказка скрыта */
 .eye {
     position: absolute;
     top: 50%;
@@ -243,16 +237,25 @@
     opacity: 0;
     visibility: hidden;
     z-index: 10;
+
+    /* ключевое: visibility скрываем ПОСЛЕ fade-out */
     transition:
-            opacity 0.18s ease-out,
-            transform 0.18s ease-out;
+            opacity 0.3s ease-out,
+            transform 0.3s ease-out,
+            visibility 0s linear 0.18s;
 }
 
-/* видимое состояние — включаем классом .eye--visible */
+/* видимое состояние */
 .eye.eye--visible {
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
+
+    /* visibility включаем сразу, чтобы был fade-in */
+    transition:
+            opacity 0.3s ease-out,
+            transform 0.3s ease-out,
+            visibility 0s linear 0s;
 }
 
 .hint-button {

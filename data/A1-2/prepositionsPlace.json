@@ -19,8 +19,8 @@
       "answer": ["von"]
     },
     {
-      "sentence": "Ich komme gerade ___ Haus.",
-      "answer": ["aus dem"]
+      "sentence": "Ich komme gerade ___ Haus und gehe ___ Arbeit.",
+      "answer": ["aus dem", "zur"]
     },
     {
       "sentence": "Ich fahre noch schnell ___ Post.",

@@ -1,0 +1,66 @@
+{
+  "title": {
+    "ru": "Haben и Sein для Perfekt",
+    "en": "Haben and Sein for Perfekt"
+  },
+  "instructions": {
+    "ru": "Определи какой вспомогательный глагол подходит.",
+    "en": "Determine which auxiliary verb is appropriate."
+  },
+  "items": [
+    {"sentence":"Ihr ___ gestern ins Kino gegangen.", "answer":["seid"]},
+    {"sentence":"Du ___ mich gestern angerufen.", "answer":["hast"]},
+    {"sentence":"Wo ___ Sie ausgestiegen?", "answer":["sind"]},
+    {"sentence":"Was ___ mit Tanja passiert?", "answer":["ist"]},
+    {"sentence":"Meine Eltern ___ Besuch bekommen.", "answer":["haben"]},
+    {"sentence":"Wir ___ zu spät gekommen.", "answer":["sind"]},
+    {"sentence":"Sie ___ den Tisch gedeckt.", "answer":["hat"]},
+    {"sentence":"Ich ___ müde geworden.", "answer":["bin"]},
+    {"sentence":"___ ihr schon nach Hause gefahren?", "answer":["seid"]},
+    {"sentence":"Wir ___ das Zimmer aufgeräumt.", "answer":["haben"]},
+
+    {"sentence":"Der Unterricht ___ heute schon um 8 Uhr angefangen.", "answer":["hat"]},
+    {"sentence":"Wir ___ gestern ins Museum gegangen.", "answer":["sind"]},
+    {"sentence":"Was ___ ihr im Urlaub gemacht?", "answer":["habt"]},
+    {"sentence":"Sie ___ gestern nicht zur Schule gekommen.", "answer":["ist"]},
+    {"sentence":"Er ___ die Tür geöffnet.", "answer":["hat"]},
+    {"sentence":"Ich ___ letzte Woche in Berlin gewesen.", "answer":["bin"]},
+    {"sentence":"Wir ___ gestern Pizza gegessen.", "answer":["haben"]},
+    {"sentence":"Du ___ deine Tasche verloren.", "answer":["hast"]},
+    {"sentence":"Der Unterricht ___ um 16 Uhr aufgehört.", "answer":["hat"]},
+    {"sentence":"Ihr ___ heute sehr früh aufgestanden.", "answer":["seid"]},
+
+    {"sentence":"Wann ___ du nach Hause gekommen?", "answer":["bist"]},
+    {"sentence":"Sie ___ die Tickets gekauft.", "answer":["haben"]},
+    {"sentence":"___ du gestern im Supermarkt eingekauft?", "answer":["hast"]},
+    {"sentence":"Warum ___ du so spät eingeschlafen?", "answer":["bist"]},
+    {"sentence":"Warum ___ ihr so spät gekommen?", "answer":["seid"]},
+    {"sentence":"Wie lange ___ du gestern auf der Party geblieben?", "answer":["bist"]},
+    {"sentence":"Tim ___ gestern ins Kino gegangen.", "answer":["ist"]},
+    {"sentence":"Ich ___ zu spät gekommen.", "answer":["bin"]},
+    {"sentence":"___ Sie schon in Deutschland gewesen?", "answer":["sind"]},
+    {"sentence":"Zum Geburtstag ___ ich ein schönes Geschenk bekommen.", "answer":["habe"]},
+
+    {"sentence":"Ich ___ gestern nach Hause gegangen.", "answer":["bin"]},
+    {"sentence":"Du ___ heute früh aufgestanden.", "answer":["bist"]},
+    {"sentence":"Ich ___ eine E-Mail geschrieben.", "answer":["habe"]},
+    {"sentence":"___ ihr schon gegessen?", "answer":["habt"]},
+    {"sentence":"Heute ___ ich lange gearbeitet.", "answer":["habe"]},
+    {"sentence":"Ihr ___ heute viel gearbeitet.", "answer":["habt"]},
+    {"sentence":"Ihr ___ lange im Park geblieben.", "answer":["seid"]},
+    {"sentence":"Ihr ___ den Kaffee bezahlt.", "answer":["habt"]},
+    {"sentence":"Gestern ___ ich Brot und Milch gekauft.", "answer":["habe"]},
+    {"sentence":"Karl und Klara ___ im Juni geheiratet.", "answer":["haben"]},
+
+    {"sentence":"Heute ___ ich sehr früh aufgestanden.", "answer":["bin"]},
+    {"sentence":"Der Zug ___ pünktlich angekommen.", "answer":["ist"]},
+    {"sentence":"Du ___ heute viel gelernt.", "answer":["hast"]},
+    {"sentence":"Ich ___ den Film schon gesehen.", "answer":["habe"]},
+    {"sentence":"Was ___ du gestern gemacht?", "answer":["hast"]},
+    {"sentence":"Ihr ___ gestern Fußball gespielt.", "answer":["habt"]},
+    {"sentence":"Er ___ den ganzen Tag zu Hause geblieben.", "answer":["ist"]},
+    {"sentence":"Die Kinder ___ früh eingeschlafen.", "answer":["sind"]},
+    {"sentence":"Du ___ gestern mit dem Bus gefahren.", "answer":["bist"]},
+    {"sentence":"Meine Schwester ___ ein neues Handy gekauft.", "answer":["hat"]}
+  ]
+}

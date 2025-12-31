@@ -1020,10 +1020,27 @@ table.mv-table tbody td {
   margin-top: 4px;
 }
 
+/* Специфичные стили для таблицы сравнения haben/sein */
+.haben-sein-table th {
+  text-align: center;
+  font-size: var(--desktop-modal-header-font-size); /* Чуть крупнее заголовки */
+  width: 50%;       /* Равные колонки */
+  padding-bottom: 12px;
+}
+
+.haben-sein-table td {
+  vertical-align: top; /* Важно: текст прижат к верху */
+  padding: 12px 8px;   /* Немного больше воздуха */
+  line-height: 1.4;
+  font-size: var(--desktop-modal-font-size);
+}
+
+
 @media (max-width: 1200px) {
 
   .theory-title,
-  .theory-case-header {
+  .theory-case-header,
+  .haben-sein-table th {
     font-size: var(--tablet-modal-header-font-size);
   }
   .modal-html-content .theory-card,
@@ -1048,7 +1065,8 @@ table.mv-table tbody td {
   .sub-rule,
   .sub-example,
   .prep-left,
-  .prep-right {
+  .prep-right,
+  .haben-sein-table td {
     font-size: var(--tablet-modal-font-size);
   }
 
@@ -1092,12 +1110,31 @@ table.mv-table tbody td {
     padding: 10px 0;
   }
 
+  /* Стили конкретно для genitiv таблицы, чтобы не ломать другие */
+  .genitiv-table th {
+    font-weight: 700;
+    font-size: 1.1em;
+    padding-bottom: 12px;
+  }
+
+  .genitiv-table td {
+    font-size: 1.1em; /* Чуть крупнее шрифт внутри таблицы */
+    padding: 8px 4px;
+  }
+
+  /* На картинке первая колонка "Genitiv" имеет особый вес */
+  .genitiv-table th:first-child {
+    font-weight: 800;
+    width: 15%; /* Фиксируем ширину заголовка */
+  }
+
 }
 
 @media (max-width: 600px) {
 
   .theory-title,
-  .theory-case-header {
+  .theory-case-header,
+  .haben-sein-table th {
     font-size: var(--mobile-modal-header-font-size);
   }
 
@@ -1123,7 +1160,8 @@ table.mv-table tbody td {
   .sub-rule,
   .sub-example,
   .prep-left,
-  .prep-right  {
+  .prep-right,
+  .haben-sein-table td {
     font-size: var(--mobile-modal-font-size);
   }
 
