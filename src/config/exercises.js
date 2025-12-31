@@ -8,7 +8,6 @@ import NounArticles from "../exercises/A1-2/NounArticles";
 import PossessivePronouns from "../exercises/A1-1/PossessivePronouns";
 import KeinOrNicht from "../exercises/A1-1/KeinOrNicht";
 import PluralNounsExercise from "../exercises/A1-2/PluralNouns";
-import VerbsPreteritumPerfekt from "../exercises/A1-2/VerbsPreteritumPerfekt";
 import HabenSeinPreteritum from "../exercises/A1-2/HabenSeinPreteritum";
 import ModalVerbsPreteritum from "../exercises/A1-2/ModalVerbsPreteritum";
 import TimeExercise from "../exercises/A1-2/TimeExercise";
