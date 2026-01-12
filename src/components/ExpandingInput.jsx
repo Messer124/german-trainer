@@ -27,6 +27,10 @@ export default function ExpandingInput({
     const measureRef = useRef(null);
     const [width, setWidth] = useState(minWidth);
 
+    const hasRealPlaceholder = placeholder != null && String(placeholder).length > 0;
+    const ghostPlaceholder = "\u00A0"; // NBSP
+    const placeholderForRender = hasRealPlaceholder ? placeholder : ghostPlaceholder;
+
     const textToMeasure = useMemo(() => {
         const v = String(value ?? "");
         const ph = String(placeholder ?? "");
@@ -57,15 +61,16 @@ export default function ExpandingInput({
 
     return (
         <span className="expanding-input__wrap">
-      <span ref={measureRef} className="expanding-input__measure" aria-hidden="true" />
-      <input
-          ref={inputRef}
-          value={value}
-          placeholder={placeholder}
-          className={`expanding-input__input ${className}`.trim()}
-          style={{ ...style, width }}
-          {...props}
-      />
-    </span>
+          <span ref={measureRef} className="expanding-input__measure" aria-hidden="true" />
+          <input
+              ref={inputRef}
+              value={value}
+              placeholder={placeholderForRender}
+              data-ghost-placeholder={hasRealPlaceholder ? undefined : "true"}
+              className={`expanding-input__input ${className}`.trim()}
+              style={{ ...style, width }}
+              {...props}
+          />
+        </span>
     );
 }

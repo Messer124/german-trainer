@@ -94,7 +94,7 @@ export default function VerbsPerfekt() {
                         value={value0}
                         onChange={(e) => handleChange(itemIdx, 0, e.target.value, correct0)}
                         className={class0}
-                        minWidth={80}
+                        minWidth={70}
                         maxWidth={220}
                         aria-label={`Perfekt blank 1 (item ${itemIdx + 1})`}
                     />

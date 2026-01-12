@@ -305,6 +305,10 @@
     will-change: width;
 }
 
+.expanding-input__input[data-ghost-placeholder="true"]::placeholder {
+    color: transparent;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .expanding-input__input {
         transition: none;
