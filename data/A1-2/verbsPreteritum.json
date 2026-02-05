@@ -1,76 +1,456 @@
 {
-  "title": {
-    "ru": "Глаголы в Präteritum",
-    "en": "Verbs in Präteritum"
-  },
   "instructions": {
     "ru": "Вставьте форму глагола в Präteritum",
     "en": "Insert the correct form of the verb in the Präteritum"
   },
   "items": [
-    { "sentence": "Gestern ___ ich dir sofort", "verb": "antworten", "answer": ["antwortete"] },
-    { "sentence": "Am Samstag ___ ich einen Kuchen", "verb": "backen", "answer": ["backte"] },
-    { "sentence": "Der Chef ___ mir, früher zu kommen", "verb": "befehlen", "answer": ["befahl"] },
-    { "sentence": "Der Kurs ___ um 9 Uhr", "verb": "beginnen", "answer": ["begann"] },
-    { "sentence": "Der Lehrer ___ den Test um 12 Uhr", "verb": "beenden", "answer": ["beendete"] },
-    { "sentence": "Der Laden ___ gute Preise", "verb": "bieten", "answer": ["bot"] },
-    { "sentence": "Die Kerze ___ die ganze Nacht", "verb": "brennen", "answer": ["brannte"] },
-    { "sentence": "Ich ___ dir Wasser", "verb": "bringen", "answer": ["brachte"] },
-    { "sentence": "Ich ___ an dich", "verb": "denken", "answer": ["dachte"] },
-    { "sentence": "Der Arzt ___ mir Tee", "verb": "empfehlen", "answer": ["empfahl"] },
-    { "sentence": "Das Glas ___ auf den Boden", "verb": "fallen", "answer": ["fiel"] },
-    { "sentence": "Der Hund ___ den Ball", "verb": "fangen", "answer": ["fing"] },
-    { "sentence": "Ich ___ mit dem Bus zur Arbeit", "verb": "fahren", "answer": ["fuhr"] },
-    { "sentence": "Ich ___ den Schlüssel", "verb": "finden", "answer": ["fand"] },
-    { "sentence": "Letztes Jahr ___ ich nach Berlin", "verb": "fliegen", "answer": ["flog"] },
-    { "sentence": "Ich ___ dich etwas", "verb": "fragen", "answer": ["fragte"] },
-    { "sentence": "Der Hund ___ das Fleisch", "verb": "fressen", "answer": ["fraß"] },
-    { "sentence": "Sie ___ mir ein Buch", "verb": "geben", "answer": ["gab"] },
-    { "sentence": "Gestern ___ ich ins Kino", "verb": "gehen", "answer": ["ging"] },
-    { "sentence": "Der Kuchen ___ sehr gut", "verb": "gelingen", "answer": ["gelang"] },
-    { "sentence": "Was ___ gestern?", "verb": "geschehen", "answer": ["geschah"] },
-    { "sentence": "Unsere Mannschaft ___ das Spiel", "verb": "gewinnen", "answer": ["gewann"] },
-    { "sentence": "Ich ___ die Blumen", "verb": "gießen", "answer": ["goss"] },
-    { "sentence": "Er ___ mir", "verb": "helfen", "answer": ["half"] },
-    { "sentence": "Ich ___ Musik", "verb": "hören", "answer": ["hörte"] },
-    { "sentence": "Er ___ spät nach Hause", "verb": "kommen", "answer": ["kam"] },
-    { "sentence": "Ich ___ eine Suppe", "verb": "kochen", "answer": ["kochte"] },
-    { "sentence": "Das Baby ___ unter den Tisch", "verb": "kriechen", "answer": ["kroch"] },
-    { "sentence": "Ich ___ schnell zum Bus", "verb": "laufen", "answer": ["lief"] },
-    { "sentence": "Ich ___ die Zeitung", "verb": "lesen", "answer": ["las"] },
-    { "sentence": "Das Handy ___ auf dem Tisch", "verb": "liegen", "answer": ["lag"] },
-    { "sentence": "Ich ___ viele Fotos", "verb": "machen", "answer": ["machte"] },
-    { "sentence": "Ich ___ den Bus", "verb": "nehmen", "answer": ["nahm"] },
-    { "sentence": "Er ___ mich „Dima“", "verb": "nennen", "answer": ["nannte"] },
-    { "sentence": "Ich ___ das Fenster", "verb": "öffnen", "answer": ["öffnete"] },
-    { "sentence": "Ich ___ nach Hause", "verb": "rennen", "answer": ["rannte"] },
-    { "sentence": "Ich ___ dich an", "verb": "rufen", "answer": ["rief"] },
-    { "sentence": "Er ___ nichts", "verb": "sagen", "answer": ["sagte"] },
-    { "sentence": "Ich ___ schlecht", "verb": "schlafen", "answer": ["schlief"] },
-    { "sentence": "Er ___ den Ball", "verb": "schlagen", "answer": ["schlug"] },
-    { "sentence": "Ich ___ eine E-Mail", "verb": "schreiben", "answer": ["schrieb"] },
-    { "sentence": "Ich ___ den Film", "verb": "sehen", "answer": ["sah"] },
-    { "sentence": "Ich ___ gestern zu Hause", "verb": "sein", "answer": ["war"] },
-    { "sentence": "Ich ___ ein Lied", "verb": "singen", "answer": ["sang"] },
-    { "sentence": "Ich ___ lange im Café", "verb": "sitzen", "answer": ["saß"] },
-    { "sentence": "Ich ___ mit ihm", "verb": "sprechen", "answer": ["sprach"] },
-    { "sentence": "Der Zug ___ um 8 Uhr", "verb": "starten", "answer": ["startete"] },
-    { "sentence": "Er ___ vor der Tür", "verb": "stehen", "answer": ["stand"] },
-    { "sentence": "Ich ___ in den Bus", "verb": "steigen", "answer": ["stieg"] },
-    { "sentence": "Die Pflanze ___ im Winter", "verb": "sterben", "answer": ["starb"] },
-    { "sentence": "Ich ___ eine schwere Tasche", "verb": "tragen", "answer": ["trug"] },
-    { "sentence": "Ich ___ meinen Freund im Park", "verb": "treffen", "answer": ["traf"] },
-    { "sentence": "Ich ___ Wasser", "verb": "trinken", "answer": ["trank"] },
-    { "sentence": "Was ___ du gestern?", "verb": "tun", "answer": ["tatest"] },
-    { "sentence": "Ich ___ den Termin", "verb": "vergessen", "answer": ["vergaß"] },
-    { "sentence": "Er ___ sein Handy", "verb": "verlieren", "answer": ["verlor"] },
-    { "sentence": "Ich ___ dich nicht", "verb": "verstehen", "answer": ["verstand"] },
-    { "sentence": "Ich ___ auf den Bus", "verb": "warten", "answer": ["wartete"] },
-    { "sentence": "Er ___ den Ball weit", "verb": "werfen", "answer": ["warf"] },
-    { "sentence": "Ich ___ müde", "verb": "werden", "answer": ["wurde"] },
-    { "sentence": "Ich ___ das nicht", "verb": "wissen", "answer": ["wusste"] },
-    { "sentence": "Er ___ mir den Weg", "verb": "zeigen", "answer": ["zeigte"] },
-    { "sentence": "Ich ___ in eine neue Wohnung", "verb": "ziehen", "answer": ["zog"] },
-    { "sentence": "Der Chef ___ mich", "verb": "zwingen", "answer": ["zwang"] }
+    {
+      "sentence": "Gestern ___ ich dir sofort",
+      "verb": "antworten",
+      "answer": [
+        "antwortete"
+      ]
+    },
+    {
+      "sentence": "Am Samstag ___ ich einen Kuchen",
+      "verb": "backen",
+      "answer": [
+        "backte"
+      ]
+    },
+    {
+      "sentence": "Der Chef ___ mir, früher zu kommen",
+      "verb": "befehlen",
+      "answer": [
+        "befahl"
+      ]
+    },
+    {
+      "sentence": "Der Kurs ___ um 9 Uhr",
+      "verb": "beginnen",
+      "answer": [
+        "begann"
+      ]
+    },
+    {
+      "sentence": "Der Lehrer ___ den Test um 12 Uhr",
+      "verb": "beenden",
+      "answer": [
+        "beendete"
+      ]
+    },
+    {
+      "sentence": "Der Laden ___ gute Preise",
+      "verb": "bieten",
+      "answer": [
+        "bot"
+      ]
+    },
+    {
+      "sentence": "Die Kerze ___ die ganze Nacht",
+      "verb": "brennen",
+      "answer": [
+        "brannte"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dir Wasser",
+      "verb": "bringen",
+      "answer": [
+        "brachte"
+      ]
+    },
+    {
+      "sentence": "Ich ___ an dich",
+      "verb": "denken",
+      "answer": [
+        "dachte"
+      ]
+    },
+    {
+      "sentence": "Der Arzt ___ mir Tee",
+      "verb": "empfehlen",
+      "answer": [
+        "empfahl"
+      ]
+    },
+    {
+      "sentence": "Das Glas ___ auf den Boden",
+      "verb": "fallen",
+      "answer": [
+        "fiel"
+      ]
+    },
+    {
+      "sentence": "Der Hund ___ den Ball",
+      "verb": "fangen",
+      "answer": [
+        "fing"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mit dem Bus zur Arbeit",
+      "verb": "fahren",
+      "answer": [
+        "fuhr"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Schlüssel",
+      "verb": "finden",
+      "answer": [
+        "fand"
+      ]
+    },
+    {
+      "sentence": "Letztes Jahr ___ ich nach Berlin",
+      "verb": "fliegen",
+      "answer": [
+        "flog"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dich etwas",
+      "verb": "fragen",
+      "answer": [
+        "fragte"
+      ]
+    },
+    {
+      "sentence": "Der Hund ___ das Fleisch",
+      "verb": "fressen",
+      "answer": [
+        "fraß"
+      ]
+    },
+    {
+      "sentence": "Sie ___ mir ein Buch",
+      "verb": "geben",
+      "answer": [
+        "gab"
+      ]
+    },
+    {
+      "sentence": "Gestern ___ ich ins Kino",
+      "verb": "gehen",
+      "answer": [
+        "ging"
+      ]
+    },
+    {
+      "sentence": "Der Kuchen ___ sehr gut",
+      "verb": "gelingen",
+      "answer": [
+        "gelang"
+      ]
+    },
+    {
+      "sentence": "Was ___ gestern?",
+      "verb": "geschehen",
+      "answer": [
+        "geschah"
+      ]
+    },
+    {
+      "sentence": "Unsere Mannschaft ___ das Spiel",
+      "verb": "gewinnen",
+      "answer": [
+        "gewann"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Blumen",
+      "verb": "gießen",
+      "answer": [
+        "goss"
+      ]
+    },
+    {
+      "sentence": "Er ___ mir",
+      "verb": "helfen",
+      "answer": [
+        "half"
+      ]
+    },
+    {
+      "sentence": "Ich ___ Musik",
+      "verb": "hören",
+      "answer": [
+        "hörte"
+      ]
+    },
+    {
+      "sentence": "Er ___ spät nach Hause",
+      "verb": "kommen",
+      "answer": [
+        "kam"
+      ]
+    },
+    {
+      "sentence": "Ich ___ eine Suppe",
+      "verb": "kochen",
+      "answer": [
+        "kochte"
+      ]
+    },
+    {
+      "sentence": "Das Baby ___ unter den Tisch",
+      "verb": "kriechen",
+      "answer": [
+        "kroch"
+      ]
+    },
+    {
+      "sentence": "Ich ___ schnell zum Bus",
+      "verb": "laufen",
+      "answer": [
+        "lief"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Zeitung",
+      "verb": "lesen",
+      "answer": [
+        "las"
+      ]
+    },
+    {
+      "sentence": "Das Handy ___ auf dem Tisch",
+      "verb": "liegen",
+      "answer": [
+        "lag"
+      ]
+    },
+    {
+      "sentence": "Ich ___ viele Fotos",
+      "verb": "machen",
+      "answer": [
+        "machte"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Bus",
+      "verb": "nehmen",
+      "answer": [
+        "nahm"
+      ]
+    },
+    {
+      "sentence": "Er ___ mich „Dima“",
+      "verb": "nennen",
+      "answer": [
+        "nannte"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Fenster",
+      "verb": "öffnen",
+      "answer": [
+        "öffnete"
+      ]
+    },
+    {
+      "sentence": "Ich ___ nach Hause",
+      "verb": "rennen",
+      "answer": [
+        "rannte"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dich an",
+      "verb": "rufen",
+      "answer": [
+        "rief"
+      ]
+    },
+    {
+      "sentence": "Er ___ nichts",
+      "verb": "sagen",
+      "answer": [
+        "sagte"
+      ]
+    },
+    {
+      "sentence": "Ich ___ schlecht",
+      "verb": "schlafen",
+      "answer": [
+        "schlief"
+      ]
+    },
+    {
+      "sentence": "Er ___ den Ball",
+      "verb": "schlagen",
+      "answer": [
+        "schlug"
+      ]
+    },
+    {
+      "sentence": "Ich ___ eine E-Mail",
+      "verb": "schreiben",
+      "answer": [
+        "schrieb"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Film",
+      "verb": "sehen",
+      "answer": [
+        "sah"
+      ]
+    },
+    {
+      "sentence": "Ich ___ gestern zu Hause",
+      "verb": "sein",
+      "answer": [
+        "war"
+      ]
+    },
+    {
+      "sentence": "Ich ___ ein Lied",
+      "verb": "singen",
+      "answer": [
+        "sang"
+      ]
+    },
+    {
+      "sentence": "Ich ___ lange im Café",
+      "verb": "sitzen",
+      "answer": [
+        "saß"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mit ihm",
+      "verb": "sprechen",
+      "answer": [
+        "sprach"
+      ]
+    },
+    {
+      "sentence": "Der Zug ___ um 8 Uhr",
+      "verb": "starten",
+      "answer": [
+        "startete"
+      ]
+    },
+    {
+      "sentence": "Er ___ vor der Tür",
+      "verb": "stehen",
+      "answer": [
+        "stand"
+      ]
+    },
+    {
+      "sentence": "Ich ___ in den Bus",
+      "verb": "steigen",
+      "answer": [
+        "stieg"
+      ]
+    },
+    {
+      "sentence": "Die Pflanze ___ im Winter",
+      "verb": "sterben",
+      "answer": [
+        "starb"
+      ]
+    },
+    {
+      "sentence": "Ich ___ eine schwere Tasche",
+      "verb": "tragen",
+      "answer": [
+        "trug"
+      ]
+    },
+    {
+      "sentence": "Ich ___ meinen Freund im Park",
+      "verb": "treffen",
+      "answer": [
+        "traf"
+      ]
+    },
+    {
+      "sentence": "Ich ___ Wasser",
+      "verb": "trinken",
+      "answer": [
+        "trank"
+      ]
+    },
+    {
+      "sentence": "Was ___ du gestern?",
+      "verb": "tun",
+      "answer": [
+        "tatest"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Termin",
+      "verb": "vergessen",
+      "answer": [
+        "vergaß"
+      ]
+    },
+    {
+      "sentence": "Er ___ sein Handy",
+      "verb": "verlieren",
+      "answer": [
+        "verlor"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dich nicht",
+      "verb": "verstehen",
+      "answer": [
+        "verstand"
+      ]
+    },
+    {
+      "sentence": "Ich ___ auf den Bus",
+      "verb": "warten",
+      "answer": [
+        "wartete"
+      ]
+    },
+    {
+      "sentence": "Er ___ den Ball weit",
+      "verb": "werfen",
+      "answer": [
+        "warf"
+      ]
+    },
+    {
+      "sentence": "Ich ___ müde",
+      "verb": "werden",
+      "answer": [
+        "wurde"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das nicht",
+      "verb": "wissen",
+      "answer": [
+        "wusste"
+      ]
+    },
+    {
+      "sentence": "Er ___ mir den Weg",
+      "verb": "zeigen",
+      "answer": [
+        "zeigte"
+      ]
+    },
+    {
+      "sentence": "Ich ___ in eine neue Wohnung",
+      "verb": "ziehen",
+      "answer": [
+        "zog"
+      ]
+    },
+    {
+      "sentence": "Der Chef ___ mich",
+      "verb": "zwingen",
+      "answer": [
+        "zwang"
+      ]
+    }
   ]
 }

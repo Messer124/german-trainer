@@ -1,8 +1,4 @@
 {
-  "title": {
-    "ru": "Перевод предложений",
-    "en": "Translate sentences"
-  },
   "instructions": {
     "ru": "Переведите предложения на немецкий язык",
     "en": "Translate the sentences into German"

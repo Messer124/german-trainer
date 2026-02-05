@@ -1,63 +1,196 @@
 {
-  "title": {
-    "ru": "Неопределённые местоимения",
-      "en": "Indefinite pronouns"
-  },
   "instructions": {
     "ru": "Подберите неопределенное местоимение в нужном падеже.",
     "en": "Choose an indefinite pronoun in the correct case."
   },
   "items": [
-    { "sentence": "Ich bin hungrig und muss ___ zum Essen kaufen.", "answer": "etwas" },
-    { "sentence": "Ich bin fremd hier und muss ___ nach dem Weg fragen. Leider ist ___ in der Nähe.", "answer": "jemanden, niemand" },
-    { "sentence": "___ kann in die Bücherei kommen und dort ein Buch ausleihen.", "answer": "Jeder" },
-    { "sentence": "Leider konnte ich im Kaufhaus ___ Passendes finden.", "answer": "nichts" },
-    { "sentence": "Unsere Schüler sind die Besten! Ich bin mit ___ zufrieden!", "answer": "jedem" },
-    { "sentence": "Kann ich ___ für Sie tun?", "answer": "etwas" },
-    { "sentence": "Wissen die Mitarbeiter ___ über die Betriebsversammlung? — Ja, ich habe bereits ___ angerufen.", "answer": "etwas, jeden" },
-    { "sentence": "Ich danke Ihnen! — ___ zu danken.", "answer": "Nichts" },
-    { "sentence": "Hat ___ mein Arbeitsbuch gesehen?", "answer": "jemand" },
-    { "sentence": "Unser Restaurant bietet ___ Besonderes für ___.", "answer": "etwas, jeden" },
-
-    { "sentence": "Ich bin durstig. Gibt es ___ zu trinken?", "answer": "etwas" },
-    { "sentence": "Im Kühlschrank ist ___. Wir müssen einkaufen.", "answer": "nichts" },
-    { "sentence": "Kann ___ mir helfen? Meine Tasche ist schwer.", "answer": "jemand" },
-    { "sentence": "Im Büro war heute ___. Alle hatten frei.", "answer": "niemand" },
-    { "sentence": "___ Schüler muss heute den Test schreiben.", "answer": "Jeder" },
-    { "sentence": "Ich kenne ___ in dieser Stadt. Ich bin neu hier.", "answer": "niemanden" },
-    { "sentence": "Im Park sitzt ___ auf der Bank und liest.", "answer": "jemand" },
-    { "sentence": "Wir haben für ___ ein kleines Geschenk.", "answer": "jeden" },
-    { "sentence": "Der Lehrer spricht mit ___ über die Hausaufgaben.", "answer": "jedem" },
-    { "sentence": "Auf der Straße sehe ich ___. Es ist ganz leer.", "answer": "niemanden" },
-
-    { "sentence": "Möchtest du ___ essen?", "answer": "etwas" },
-    { "sentence": "Ich habe heute ___ im Radio gehört.", "answer": "etwas" },
-    { "sentence": "Hat ___ mein Handy gesehen?", "answer": "jemand" },
-    { "sentence": "Im Zimmer war ___. Das Fenster war offen.", "answer": "niemand" },
-    { "sentence": "___ kann heute kommen, der Kurs ist für alle offen.", "answer": "Jeder" },
-    { "sentence": "Nach dem Unfall konnte ___ lachen.", "answer": "niemand" },
-    { "sentence": "Heute habe ich ___ zu tun und bleibe zu Hause.", "answer": "nichts" },
-    { "sentence": "Kann ___ die Tür öffnen, bitte?", "answer": "jemand" },
-    { "sentence": "In unserer Firma kennt ___ den neuen Kollegen.", "answer": "jeder" },
-    { "sentence": "Nach dem Unterricht fragt der Lehrer: Hat ___ noch eine Frage?", "answer": "jemand" },
-
-    { "sentence": "Im Kino war ___. Alle Plätze waren leer.", "answer": "niemand" },
-    { "sentence": "Ich möchte mit ___ sprechen, bitte.", "answer": "jemandem" },
-    { "sentence": "Die Lehrerin ist mit ___ sehr zufrieden.", "answer": "jedem" },
-    { "sentence": "Am Morgen esse ich ___ und trinke Kaffee.", "answer": "etwas" },
-    { "sentence": "An diesem Tag funktionierte ___.", "answer": "nichts" },
-    { "sentence": "In diesem Kurs kennt ___ die Regeln schon gut.", "answer": "jeder" },
-    { "sentence": "Im Zug spricht ___ mit mir. Alle sind still.", "answer": "niemand" },
-    { "sentence": "Ich möchte ___ fragen, wann der Bus kommt.", "answer": "jemanden" },
-
-    { "sentence": "Auf dem Fest kenne ich ___. Das ist langweilig.", "answer": "niemanden" },
-    { "sentence": "In der Küche liegt ___ auf dem Tisch. Was ist das?", "answer": "etwas" },
-    { "sentence": "Unsere Lehrerin ist mit ___ zufrieden.", "answer": "jedem" },
-    { "sentence": "Heute will ich ___ sehen, ich bin müde.", "answer": "niemanden" },
-    { "sentence": "In der Pause spricht ___ mit dem neuen Jungen.", "answer": "jeder" },
-    { "sentence": "Auf der Party hat ___ getanzt, alle hatten Spaß.", "answer": "jeder" },
-    { "sentence": "Im Bus sitzt ___ neben mir, ich bin ganz allein.", "answer": "niemand" },
-    { "sentence": "Am Sonntag will ich ___ Besonderes machen.", "answer": "etwas" },
-    { "sentence": "Heute habe ich ___ gelernt, der Test war zu leicht.", "answer": "nichts" }
+    {
+      "sentence": "Ich bin hungrig und muss ___ zum Essen kaufen.",
+      "answer": "etwas"
+    },
+    {
+      "sentence": "Ich bin fremd hier und muss ___ nach dem Weg fragen. Leider ist ___ in der Nähe.",
+      "answer": "jemanden, niemand"
+    },
+    {
+      "sentence": "___ kann in die Bücherei kommen und dort ein Buch ausleihen.",
+      "answer": "Jeder"
+    },
+    {
+      "sentence": "Leider konnte ich im Kaufhaus ___ Passendes finden.",
+      "answer": "nichts"
+    },
+    {
+      "sentence": "Unsere Schüler sind die Besten! Ich bin mit ___ zufrieden!",
+      "answer": "jedem"
+    },
+    {
+      "sentence": "Kann ich ___ für Sie tun?",
+      "answer": "etwas"
+    },
+    {
+      "sentence": "Wissen die Mitarbeiter ___ über die Betriebsversammlung? — Ja, ich habe bereits ___ angerufen.",
+      "answer": "etwas, jeden"
+    },
+    {
+      "sentence": "Ich danke Ihnen! — ___ zu danken.",
+      "answer": "Nichts"
+    },
+    {
+      "sentence": "Hat ___ mein Arbeitsbuch gesehen?",
+      "answer": "jemand"
+    },
+    {
+      "sentence": "Unser Restaurant bietet ___ Besonderes für ___.",
+      "answer": "etwas, jeden"
+    },
+    {
+      "sentence": "Ich bin durstig. Gibt es ___ zu trinken?",
+      "answer": "etwas"
+    },
+    {
+      "sentence": "Im Kühlschrank ist ___. Wir müssen einkaufen.",
+      "answer": "nichts"
+    },
+    {
+      "sentence": "Kann ___ mir helfen? Meine Tasche ist schwer.",
+      "answer": "jemand"
+    },
+    {
+      "sentence": "Im Büro war heute ___. Alle hatten frei.",
+      "answer": "niemand"
+    },
+    {
+      "sentence": "___ Schüler muss heute den Test schreiben.",
+      "answer": "Jeder"
+    },
+    {
+      "sentence": "Ich kenne ___ in dieser Stadt. Ich bin neu hier.",
+      "answer": "niemanden"
+    },
+    {
+      "sentence": "Im Park sitzt ___ auf der Bank und liest.",
+      "answer": "jemand"
+    },
+    {
+      "sentence": "Wir haben für ___ ein kleines Geschenk.",
+      "answer": "jeden"
+    },
+    {
+      "sentence": "Der Lehrer spricht mit ___ über die Hausaufgaben.",
+      "answer": "jedem"
+    },
+    {
+      "sentence": "Auf der Straße sehe ich ___. Es ist ganz leer.",
+      "answer": "niemanden"
+    },
+    {
+      "sentence": "Möchtest du ___ essen?",
+      "answer": "etwas"
+    },
+    {
+      "sentence": "Ich habe heute ___ im Radio gehört.",
+      "answer": "etwas"
+    },
+    {
+      "sentence": "Hat ___ mein Handy gesehen?",
+      "answer": "jemand"
+    },
+    {
+      "sentence": "Im Zimmer war ___. Das Fenster war offen.",
+      "answer": "niemand"
+    },
+    {
+      "sentence": "___ kann heute kommen, der Kurs ist für alle offen.",
+      "answer": "Jeder"
+    },
+    {
+      "sentence": "Nach dem Unfall konnte ___ lachen.",
+      "answer": "niemand"
+    },
+    {
+      "sentence": "Heute habe ich ___ zu tun und bleibe zu Hause.",
+      "answer": "nichts"
+    },
+    {
+      "sentence": "Kann ___ die Tür öffnen, bitte?",
+      "answer": "jemand"
+    },
+    {
+      "sentence": "In unserer Firma kennt ___ den neuen Kollegen.",
+      "answer": "jeder"
+    },
+    {
+      "sentence": "Nach dem Unterricht fragt der Lehrer: Hat ___ noch eine Frage?",
+      "answer": "jemand"
+    },
+    {
+      "sentence": "Im Kino war ___. Alle Plätze waren leer.",
+      "answer": "niemand"
+    },
+    {
+      "sentence": "Ich möchte mit ___ sprechen, bitte.",
+      "answer": "jemandem"
+    },
+    {
+      "sentence": "Die Lehrerin ist mit ___ sehr zufrieden.",
+      "answer": "jedem"
+    },
+    {
+      "sentence": "Am Morgen esse ich ___ und trinke Kaffee.",
+      "answer": "etwas"
+    },
+    {
+      "sentence": "An diesem Tag funktionierte ___.",
+      "answer": "nichts"
+    },
+    {
+      "sentence": "In diesem Kurs kennt ___ die Regeln schon gut.",
+      "answer": "jeder"
+    },
+    {
+      "sentence": "Im Zug spricht ___ mit mir. Alle sind still.",
+      "answer": "niemand"
+    },
+    {
+      "sentence": "Ich möchte ___ fragen, wann der Bus kommt.",
+      "answer": "jemanden"
+    },
+    {
+      "sentence": "Auf dem Fest kenne ich ___. Das ist langweilig.",
+      "answer": "niemanden"
+    },
+    {
+      "sentence": "In der Küche liegt ___ auf dem Tisch. Was ist das?",
+      "answer": "etwas"
+    },
+    {
+      "sentence": "Unsere Lehrerin ist mit ___ zufrieden.",
+      "answer": "jedem"
+    },
+    {
+      "sentence": "Heute will ich ___ sehen, ich bin müde.",
+      "answer": "niemanden"
+    },
+    {
+      "sentence": "In der Pause spricht ___ mit dem neuen Jungen.",
+      "answer": "jeder"
+    },
+    {
+      "sentence": "Auf der Party hat ___ getanzt, alle hatten Spaß.",
+      "answer": "jeder"
+    },
+    {
+      "sentence": "Im Bus sitzt ___ neben mir, ich bin ganz allein.",
+      "answer": "niemand"
+    },
+    {
+      "sentence": "Am Sonntag will ich ___ Besonderes machen.",
+      "answer": "etwas"
+    },
+    {
+      "sentence": "Heute habe ich ___ gelernt, der Test war zu leicht.",
+      "answer": "nichts"
+    }
   ]
 }

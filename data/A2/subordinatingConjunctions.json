@@ -1,78 +1,393 @@
 {
-  "title": {
-    "ru": "Другие подчинительные союзы",
-    "en": "Another subordinating conjunctions"
-  },
-
   "instructions": {
     "ru": "Подберите нужный подчинительный союз.",
     "en": "Choose the appropriate subordinating conjunction."
   },
-
   "items": [
-    { "sentence": "Du kannst besser schlafen, ___ du das Handy ausmachst.", "answer": ["indem"] },
-    { "sentence": "___ wir umgezogen sind, haben wir einen größeren Balkon.", "answer": ["seitdem"] },
-    { "sentence": "Ich spare Geld, ___ ich weniger im Restaurant esse.", "answer": ["indem"] },
-    { "sentence": "Ich bleibe noch hier, ___ du Hilfe brauchst.", "answer": ["solange"] },
-    { "sentence": "Ich trinke gern Kaffee, ___ meine Schwester lieber Tee trinkt.", "answer": ["wohingegen"] },
-    { "sentence": "Ich bleibe zu Hause, ___ es zu kalt ist, um rauszugehen.", "answer": ["sodass"] },
-    { "sentence": "Ruf mich an, ___ du zu Hause bist.", "answer": ["bevor"] },
-    { "sentence": "___ wir nach Berlin fahren, besuchen wir das Museum.", "answer": ["sooft"] },
-    { "sentence": "Er sagt „Hallo“, ___ er mich sieht.", "answer": ["sooft"] },
-    { "sentence": "Ich habe den Wecker gestellt, ___ ich pünktlich aufstehe.", "answer": ["sodass"] },
-    { "sentence": "___ du das Haus verlässt, nimm bitte den Schlüssel.", "answer": ["bevor"] },
-    { "sentence": "___ es heute regnet, gehen wir spazieren.", "answer": ["obwohl"] },
-    { "sentence": "___ du Fragen hast, schreib mir bitte.", "answer": ["falls"] },
-    { "sentence": "___ ich gegessen habe, mache ich einen Spaziergang.", "answer": ["nachdem"] },
-    { "sentence": "Sie hat viel geübt, ___ sie die Wörter schnell schreiben kann.", "answer": ["sodass"] },
-    { "sentence": "___ ich müde bin, lerne ich noch 30 Minuten.", "answer": ["obwohl"] },
-    { "sentence": "___ ich koche, hört mein Bruder Musik.", "answer": ["während"] },
-    { "sentence": "Er kommt pünktlich, ___ der Weg weit ist.", "answer": ["obwohl"] },
-    { "sentence": "Wir warten, ___ der Arzt Zeit hat.", "answer": ["solange"] },
-    { "sentence": "___ du antwortest, lies bitte die Frage genau.", "answer": ["ehe"] },
-    { "sentence": "Sie liest, ___ sie im Bus sitzt.", "answer": ["während"] },
-    { "sentence": "___ die Küche klein ist, essen wir im Wohnzimmer.", "answer": ["da"] },
-    { "sentence": "___ ich in Deutschland wohne, spreche ich mehr Deutsch.", "answer": ["seitdem"] },
-    { "sentence": "Nimm einen Schirm mit, ___ es regnet.", "answer": ["falls"] },
-    { "sentence": "Der Zug hat Verspätung, ___ wir später ankommen.", "answer": ["sodass"] },
-    { "sentence": "___ ich kein Geld dabei habe, bezahle ich mit Karte.", "answer": ["da"] },
-    { "sentence": "Sie ruft ihre Mutter an, ___ sie einkaufen geht.", "answer": ["ehe"] },
-    { "sentence": "Sie wird nervös, ___ sie eine Prüfung schreibt.", "answer": ["sooft"] },
-    { "sentence": "___ er geduscht hat, zieht er sich an.", "answer": ["nachdem"] },
-    { "sentence": "Ich trinke noch einen Kaffee, ___ ich gehe.", "answer": ["ehe"] },
-    { "sentence": "Wir kommen schneller, ___ wir ein Taxi nehmen.", "answer": ["indem"] },
-    { "sentence": "___ der Bus nicht kommt, gehen wir zu Fuß.", "answer": ["da"] },
-    { "sentence": "___ ich diesen Kurs besuche, verstehe ich die Grammatik besser.", "answer": ["seitdem"] },
-    { "sentence": "___ du die Rechnung nicht bezahlst, bekommst du kein Ticket.", "answer": ["solange"] },
-    { "sentence": "___ sofort ___ müssen alle Besucher einen Ausweis zeigen.", "answer": ["von", "an"] },
-    { "sentence": "Peter kauft selten online, ___ Anna fast alles online bestellt.", "answer": ["wohingegen"] },
-    { "sentence": "Wir frühstücken, ___ wir zur Arbeit fahren.", "answer": ["bevor"] },
-    { "sentence": "___ du lernst, trinke ich einen Tee.", "answer": ["während"] },
-    { "sentence": "___ du heute Zeit hast, können wir uns treffen.", "answer": ["falls"] },
-    { "sentence": "___ wir arbeiten, ist das Handy aus.", "answer": ["während"] },
-    { "sentence": "___ du Hunger hast, ist Brot in der Küche.", "answer": ["falls"] },
-    { "sentence": "___ sie kein Auto hat, fährt sie oft in die Stadt.", "answer": ["obwohl"] },
-    { "sentence": "___ ich Zeit habe, koche ich selbst.", "answer": ["sooft"] },
-    { "sentence": "___ du die Jacke kaufst, probier sie an.", "answer": ["ehe"] },
-    { "sentence": "___ wir die Hausaufgaben gemacht haben, sehen wir einen Film.", "answer": ["nachdem"] },
-    { "sentence": "___ der Fernseher läuft, schläft er.", "answer": ["während"] },
-    { "sentence": "___ wir den Zug verpasst haben, nehmen wir den Bus.", "answer": ["nachdem"] },
-    { "sentence": "Er lernt Deutsch, ___ er jeden Tag Wörter wiederholt.", "answer": ["indem"] },
-    { "sentence": "Er steht früh auf, ___ ich am Wochenende lange schlafe.", "answer": ["wohingegen"] },
-    { "sentence": "___ du ins Bett gehst, putz dir die Zähne.", "answer": ["bevor"] },
-    { "sentence": "Sie macht Tee, ___ sie Wasser kocht.", "answer": ["indem"] },
-    { "sentence": "Sie ist viel ruhiger, ___ sie den neuen Job hat.", "answer": ["seitdem"] },
-    { "sentence": "Ruf mich an, ___ du die Adresse nicht findest.", "answer": ["falls"] },
-    { "sentence": "Er spricht sehr leise, ___ man ihn kaum hören kann.", "answer": ["sodass"] },
-    { "sentence": "___ wir anfangen, erklären wir die Regeln.", "answer": ["ehe"] },
-    { "sentence": "___ ich morgen früh arbeiten muss, gehe ich jetzt ins Bett.", "answer": ["da"] },
-    { "sentence": "Du kannst das Handy benutzen, ___ du im Zug bist.", "answer": ["solange"] },
-    { "sentence": "___ du leise bist, kannst du Musik hören.", "answer": ["solange"] },
-    { "sentence": "___ ich krank bin, bleibe ich heute zu Hause.", "answer": ["da"] },
-    { "sentence": "Er liest die E-Mails, ___ er das Meeting beginnt.", "answer": ["bevor"] },
-    { "sentence": "Im Sommer ist es warm, ___ es im Winter oft kalt ist.", "answer": ["wohingegen"] },
-    { "sentence": "___ sie nach Hause gekommen ist, ruft sie ihre Freundin an.", "answer": ["nachdem"] },
-    { "sentence": "Wir fahren oft mit dem Bus, ___ unsere Freunde lieber mit dem Auto fahren.", "answer": ["wohingegen"] },
-    { "sentence": "Er isst gesund, ___ er Sport macht.", "answer": ["seitdem"] }
+    {
+      "sentence": "Du kannst besser schlafen, ___ du das Handy ausmachst.",
+      "answer": [
+        "indem"
+      ]
+    },
+    {
+      "sentence": "___ wir umgezogen sind, haben wir einen größeren Balkon.",
+      "answer": [
+        "seitdem"
+      ]
+    },
+    {
+      "sentence": "Ich spare Geld, ___ ich weniger im Restaurant esse.",
+      "answer": [
+        "indem"
+      ]
+    },
+    {
+      "sentence": "Ich bleibe noch hier, ___ du Hilfe brauchst.",
+      "answer": [
+        "solange"
+      ]
+    },
+    {
+      "sentence": "Ich trinke gern Kaffee, ___ meine Schwester lieber Tee trinkt.",
+      "answer": [
+        "wohingegen"
+      ]
+    },
+    {
+      "sentence": "Ich bleibe zu Hause, ___ es zu kalt ist, um rauszugehen.",
+      "answer": [
+        "sodass"
+      ]
+    },
+    {
+      "sentence": "Ruf mich an, ___ du zu Hause bist.",
+      "answer": [
+        "bevor"
+      ]
+    },
+    {
+      "sentence": "___ wir nach Berlin fahren, besuchen wir das Museum.",
+      "answer": [
+        "sooft"
+      ]
+    },
+    {
+      "sentence": "Er sagt „Hallo“, ___ er mich sieht.",
+      "answer": [
+        "sooft"
+      ]
+    },
+    {
+      "sentence": "Ich habe den Wecker gestellt, ___ ich pünktlich aufstehe.",
+      "answer": [
+        "sodass"
+      ]
+    },
+    {
+      "sentence": "___ du das Haus verlässt, nimm bitte den Schlüssel.",
+      "answer": [
+        "bevor"
+      ]
+    },
+    {
+      "sentence": "___ es heute regnet, gehen wir spazieren.",
+      "answer": [
+        "obwohl"
+      ]
+    },
+    {
+      "sentence": "___ du Fragen hast, schreib mir bitte.",
+      "answer": [
+        "falls"
+      ]
+    },
+    {
+      "sentence": "___ ich gegessen habe, mache ich einen Spaziergang.",
+      "answer": [
+        "nachdem"
+      ]
+    },
+    {
+      "sentence": "Sie hat viel geübt, ___ sie die Wörter schnell schreiben kann.",
+      "answer": [
+        "sodass"
+      ]
+    },
+    {
+      "sentence": "___ ich müde bin, lerne ich noch 30 Minuten.",
+      "answer": [
+        "obwohl"
+      ]
+    },
+    {
+      "sentence": "___ ich koche, hört mein Bruder Musik.",
+      "answer": [
+        "während"
+      ]
+    },
+    {
+      "sentence": "Er kommt pünktlich, ___ der Weg weit ist.",
+      "answer": [
+        "obwohl"
+      ]
+    },
+    {
+      "sentence": "Wir warten, ___ der Arzt Zeit hat.",
+      "answer": [
+        "solange"
+      ]
+    },
+    {
+      "sentence": "___ du antwortest, lies bitte die Frage genau.",
+      "answer": [
+        "ehe"
+      ]
+    },
+    {
+      "sentence": "Sie liest, ___ sie im Bus sitzt.",
+      "answer": [
+        "während"
+      ]
+    },
+    {
+      "sentence": "___ die Küche klein ist, essen wir im Wohnzimmer.",
+      "answer": [
+        "da"
+      ]
+    },
+    {
+      "sentence": "___ ich in Deutschland wohne, spreche ich mehr Deutsch.",
+      "answer": [
+        "seitdem"
+      ]
+    },
+    {
+      "sentence": "Nimm einen Schirm mit, ___ es regnet.",
+      "answer": [
+        "falls"
+      ]
+    },
+    {
+      "sentence": "Der Zug hat Verspätung, ___ wir später ankommen.",
+      "answer": [
+        "sodass"
+      ]
+    },
+    {
+      "sentence": "___ ich kein Geld dabei habe, bezahle ich mit Karte.",
+      "answer": [
+        "da"
+      ]
+    },
+    {
+      "sentence": "Sie ruft ihre Mutter an, ___ sie einkaufen geht.",
+      "answer": [
+        "ehe"
+      ]
+    },
+    {
+      "sentence": "Sie wird nervös, ___ sie eine Prüfung schreibt.",
+      "answer": [
+        "sooft"
+      ]
+    },
+    {
+      "sentence": "___ er geduscht hat, zieht er sich an.",
+      "answer": [
+        "nachdem"
+      ]
+    },
+    {
+      "sentence": "Ich trinke noch einen Kaffee, ___ ich gehe.",
+      "answer": [
+        "ehe"
+      ]
+    },
+    {
+      "sentence": "Wir kommen schneller, ___ wir ein Taxi nehmen.",
+      "answer": [
+        "indem"
+      ]
+    },
+    {
+      "sentence": "___ der Bus nicht kommt, gehen wir zu Fuß.",
+      "answer": [
+        "da"
+      ]
+    },
+    {
+      "sentence": "___ ich diesen Kurs besuche, verstehe ich die Grammatik besser.",
+      "answer": [
+        "seitdem"
+      ]
+    },
+    {
+      "sentence": "___ du die Rechnung nicht bezahlst, bekommst du kein Ticket.",
+      "answer": [
+        "solange"
+      ]
+    },
+    {
+      "sentence": "___ sofort ___ müssen alle Besucher einen Ausweis zeigen.",
+      "answer": [
+        "von",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Peter kauft selten online, ___ Anna fast alles online bestellt.",
+      "answer": [
+        "wohingegen"
+      ]
+    },
+    {
+      "sentence": "Wir frühstücken, ___ wir zur Arbeit fahren.",
+      "answer": [
+        "bevor"
+      ]
+    },
+    {
+      "sentence": "___ du lernst, trinke ich einen Tee.",
+      "answer": [
+        "während"
+      ]
+    },
+    {
+      "sentence": "___ du heute Zeit hast, können wir uns treffen.",
+      "answer": [
+        "falls"
+      ]
+    },
+    {
+      "sentence": "___ wir arbeiten, ist das Handy aus.",
+      "answer": [
+        "während"
+      ]
+    },
+    {
+      "sentence": "___ du Hunger hast, ist Brot in der Küche.",
+      "answer": [
+        "falls"
+      ]
+    },
+    {
+      "sentence": "___ sie kein Auto hat, fährt sie oft in die Stadt.",
+      "answer": [
+        "obwohl"
+      ]
+    },
+    {
+      "sentence": "___ ich Zeit habe, koche ich selbst.",
+      "answer": [
+        "sooft"
+      ]
+    },
+    {
+      "sentence": "___ du die Jacke kaufst, probier sie an.",
+      "answer": [
+        "ehe"
+      ]
+    },
+    {
+      "sentence": "___ wir die Hausaufgaben gemacht haben, sehen wir einen Film.",
+      "answer": [
+        "nachdem"
+      ]
+    },
+    {
+      "sentence": "___ der Fernseher läuft, schläft er.",
+      "answer": [
+        "während"
+      ]
+    },
+    {
+      "sentence": "___ wir den Zug verpasst haben, nehmen wir den Bus.",
+      "answer": [
+        "nachdem"
+      ]
+    },
+    {
+      "sentence": "Er lernt Deutsch, ___ er jeden Tag Wörter wiederholt.",
+      "answer": [
+        "indem"
+      ]
+    },
+    {
+      "sentence": "Er steht früh auf, ___ ich am Wochenende lange schlafe.",
+      "answer": [
+        "wohingegen"
+      ]
+    },
+    {
+      "sentence": "___ du ins Bett gehst, putz dir die Zähne.",
+      "answer": [
+        "bevor"
+      ]
+    },
+    {
+      "sentence": "Sie macht Tee, ___ sie Wasser kocht.",
+      "answer": [
+        "indem"
+      ]
+    },
+    {
+      "sentence": "Sie ist viel ruhiger, ___ sie den neuen Job hat.",
+      "answer": [
+        "seitdem"
+      ]
+    },
+    {
+      "sentence": "Ruf mich an, ___ du die Adresse nicht findest.",
+      "answer": [
+        "falls"
+      ]
+    },
+    {
+      "sentence": "Er spricht sehr leise, ___ man ihn kaum hören kann.",
+      "answer": [
+        "sodass"
+      ]
+    },
+    {
+      "sentence": "___ wir anfangen, erklären wir die Regeln.",
+      "answer": [
+        "ehe"
+      ]
+    },
+    {
+      "sentence": "___ ich morgen früh arbeiten muss, gehe ich jetzt ins Bett.",
+      "answer": [
+        "da"
+      ]
+    },
+    {
+      "sentence": "Du kannst das Handy benutzen, ___ du im Zug bist.",
+      "answer": [
+        "solange"
+      ]
+    },
+    {
+      "sentence": "___ du leise bist, kannst du Musik hören.",
+      "answer": [
+        "solange"
+      ]
+    },
+    {
+      "sentence": "___ ich krank bin, bleibe ich heute zu Hause.",
+      "answer": [
+        "da"
+      ]
+    },
+    {
+      "sentence": "Er liest die E-Mails, ___ er das Meeting beginnt.",
+      "answer": [
+        "bevor"
+      ]
+    },
+    {
+      "sentence": "Im Sommer ist es warm, ___ es im Winter oft kalt ist.",
+      "answer": [
+        "wohingegen"
+      ]
+    },
+    {
+      "sentence": "___ sie nach Hause gekommen ist, ruft sie ihre Freundin an.",
+      "answer": [
+        "nachdem"
+      ]
+    },
+    {
+      "sentence": "Wir fahren oft mit dem Bus, ___ unsere Freunde lieber mit dem Auto fahren.",
+      "answer": [
+        "wohingegen"
+      ]
+    },
+    {
+      "sentence": "Er isst gesund, ___ er Sport macht.",
+      "answer": [
+        "seitdem"
+      ]
+    }
   ]
 }

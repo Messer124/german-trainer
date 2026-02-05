@@ -1,8 +1,4 @@
 {
-  "title": {
-    "ru": "Kein или nicht",
-    "en": "Kein or nicht"
-  },
   "instructions": {
     "ru": "Постройте предложения, противоположные по смыслу",
     "en": "Construct sentences that are opposite in meaning"
@@ -13,36 +9,36 @@
       "answer": "Ich komme nicht aus Sri Lanka"
     },
     {
-    "sentence": "Du bist 23 Jahre alt",
-    "answer": "Du bist nicht 23 Jahre alt"
+      "sentence": "Du bist 23 Jahre alt",
+      "answer": "Du bist nicht 23 Jahre alt"
     },
     {
-    "sentence": "Sie wohnen in Köln",
-    "answer": "Sie wohnen nicht in Köln"
+      "sentence": "Sie wohnen in Köln",
+      "answer": "Sie wohnen nicht in Köln"
     },
     {
-    "sentence": "Er ist allein",
-    "answer": "Er ist nicht allein"
+      "sentence": "Er ist allein",
+      "answer": "Er ist nicht allein"
     },
     {
-    "sentence": "Sie hat Kinder",
-    "answer": "Sie hat keine Kinder"
+      "sentence": "Sie hat Kinder",
+      "answer": "Sie hat keine Kinder"
     },
     {
-    "sentence": "Das sind ihre Kinder",
-    "answer": "Das sind nicht ihre Kinder"
+      "sentence": "Das sind ihre Kinder",
+      "answer": "Das sind nicht ihre Kinder"
     },
     {
-    "sentence": "Wir haben einen frischen Fisch",
-    "answer": "Wir haben keinen frischen Fisch"
+      "sentence": "Wir haben einen frischen Fisch",
+      "answer": "Wir haben keinen frischen Fisch"
     },
     {
-    "sentence": "Ihr kauft Brot",
-    "answer": "Ihr kauft kein Brot"
+      "sentence": "Ihr kauft Brot",
+      "answer": "Ihr kauft kein Brot"
     },
     {
-    "sentence": "Sie sind glücklich",
-    "answer": "Sie sind nicht glücklich"
+      "sentence": "Sie sind glücklich",
+      "answer": "Sie sind nicht glücklich"
     },
     {
       "sentence": "Ich bin heute sehr müde",

@@ -108,7 +108,6 @@ export default function App() {
 
     const { component: Component, storageKey } = tabsForLevel[currentTab];
 
-    const headerTitle = Component.title?.[locale];
     const instructions = Component.instructions?.[locale];
     const headerButton = Component.headerButton;
 
@@ -261,6 +260,7 @@ export default function App() {
                         <div className="sidebar-exercises-inner">
                             {Object.keys(tabsForLevel).map((key) => {
                                 const isActive = currentTab === key;
+                                const label = tabsForLevel[key]?.label;
 
                                 return (
                                     <motion.button
@@ -285,7 +285,7 @@ export default function App() {
                                                 }}
                                             />
                                         )}
-                                        <span className="sidebar-tab-label">{tabTitles[key]}</span>
+                                        <span className="sidebar-tab-label">{label}</span>
                                     </motion.button>
                                 );
                             })}
@@ -323,7 +323,6 @@ export default function App() {
                 </div>
 
                 <div className="app-header-center">
-                    <h1 className="app-header-title">{headerTitle}</h1>
                     <p className="app-header-subtitle">{instructions}</p>
                 </div>
 

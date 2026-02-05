@@ -408,20 +408,12 @@ body {
   min-width: 0;
 }
 
-.app-header-title {
-  margin: 0;
-  font-size: 35px;
-  line-height: 1.2;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .app-header-subtitle {
   margin: 10px 0 0;
   font-size: 30px;
   line-height: 1.3;
   opacity: 0.85;
+  font-weight: 600;
 }
 
 .app-header-right {
@@ -566,10 +558,6 @@ body {
     height: 40px;
   }
 
-  .app-header-title {
-    font-size: var(--mobile-font-size);
-  }
-
   .app-header-subtitle {
     font-size: var(--mobile-header-subtitle-font-size);
   }
@@ -667,10 +655,6 @@ body {
   .app-header-right > button {
     width: 50px;
     height: 50px;
-  }
-
-  .app-header-title {
-    font-size: 25px;
   }
 
   .app-header-subtitle {

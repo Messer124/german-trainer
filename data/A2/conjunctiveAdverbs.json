@@ -1,158 +1,872 @@
 {
-  "title": {
-    "ru": "Другие союзные слова",
-    "en": "Another conjunctive adverbs"
-  },
-
   "instructions": {
     "ru": "Подберите нужное союзное слово",
     "en": "Choose the appropriate conjunctive adverb"
   },
-
   "items": [
-    {"sentence":"Ich kann morgen kommen, ___ nur am Abend.","answer":["allerdings"]},
-    {"sentence":"Der Bus kommt nicht, ___ nehmen wir die U-Bahn.","answer":["also"]},
-    {"sentence":"Das Restaurant ist lecker, ___ ist es laut.","answer":["andererseits"]},
-    {"sentence":"Ich dusche, ___ frühstücke ich.","answer":["anschließend"]},
-    {"sentence":"Wir bleiben heute zu Hause, ___ ist es draußen kalt.","answer":["außerdem"]},
-    {"sentence":"Er lernt Deutsch, ___ trinkt er einen Kaffee.","answer":["dabei"]},
-    {"sentence":"Wir laufen viel; ___ bleiben wir fit.","answer":["dadurch"]},
-    {"sentence":"Ich kann heute nicht helfen; ___ helfe ich morgen.","answer":["dafür"]},
-    {"sentence":"Mein Zimmer ist klein, ___ ist es ruhig.","answer":["dagegen"]},
-    {"sentence":"Ich stelle den Wecker, ___ ich pünktlich aufstehe.","answer":["damit"]},
-    {"sentence":"Wir treffen uns am Bahnhof, ___ fahren wir zusammen.","answer":["danach"]},
-    {"sentence":"Ich packe den Koffer, ___ fahre ich zum Bahnhof.","answer":["dann"]},
-    {"sentence":"Ich sehe den Termin; ___ schreibe ich dir.","answer":["darauf"]},
-    {"sentence":"Es regnet, ___ nehme ich einen Schirm.","answer":["darum"]},
-    {"sentence":"Ich gehe zur Arbeit; ___ frühstücke ich.","answer":["davor"]},
-    {"sentence":"Ich bestelle eine Suppe; ___ nehme ich Salat.","answer":["dazu"]},
-    {"sentence":"Wir müssen arbeiten, ___ können wir nicht mitkommen.","answer":["deshalb"]},
-    {"sentence":"Der Bus ist voll, ___ gehe ich zu Fuß.","answer":["deswegen"]},
-    {"sentence":"___ ist die Wohnung günstig, aber sie ist klein.","answer":["einerseits"]},
-    {"sentence":"Er arbeitet am Morgen; ___ lernt er am Abend.","answer":["ferner"]},
-    {"sentence":"Der Bus fährt nicht; ___ gehen wir zu Fuß.","answer":["folglich"]},
-    {"sentence":"Du lernst jeden Tag; ___ lerne ich auch.","answer":["genauso"]},
-    {"sentence":"Ich kann nicht lange bleiben, ___ bin ich jetzt da.","answer":["immerhin"]},
-    {"sentence":"Wir warten auf den Bus; ___ trinken wir Wasser.","answer":["inzwischen"]},
-    {"sentence":"Ich kann morgen kommen, ___ nur am Abend.","answer":["allerdings"]},
-    {"sentence":"Ich bin müde, ___ gehe ich früh ins Bett.","answer":["also"]},
-    {"sentence":"Der Film ist schön, ___ ist er sehr lang.","answer":["andererseits"]},
-    {"sentence":"Wir treffen uns um zehn, ___ gehen wir in die Stadt.","answer":["anschließend"]},
-    {"sentence":"Er arbeitet viel; ___ hat er wenig Zeit.","answer":["außerdem"]},
-    {"sentence":"Ich koche, ___ höre ich Musik.","answer":["dabei"]},
-    {"sentence":"Ich lerne jeden Tag; ___ werde ich besser.","answer":["dadurch"]},
-    {"sentence":"Ich esse kein Fleisch; ___ esse ich viel Gemüse.","answer":["dafür"]},
-    {"sentence":"Der Supermarkt ist weit, ___ ist die Bäckerei nah.","answer":["dagegen"]},
-    {"sentence":"Ich nehme einen Schirm mit, ___ ich nicht nass werde.","answer":["damit"]},
-    {"sentence":"Wir essen, ___ gehen wir spazieren.","answer":["danach"]},
-    {"sentence":"Zuerst frühstücke ich, ___ gehe ich zur Arbeit.","answer":["dann"]},
-    {"sentence":"Er erklärt es kurz; ___ verstehe ich es besser.","answer":["darauf"]},
-    {"sentence":"Der Laden ist zu, ___ kommen wir morgen wieder.","answer":["darum"]},
-    {"sentence":"Wir fahren los; ___ tanken wir noch.","answer":["davor"]},
-    {"sentence":"Ich brauche einen Stift; ___ brauche ich Papier.","answer":["dazu"]},
-    {"sentence":"Der Zug kommt später, ___ warten wir noch.","answer":["deshalb"]},
-    {"sentence":"Wir haben keinen Schlüssel, ___ können wir nicht rein.","answer":["deswegen"]},
-    {"sentence":"___ ist der Kurs gut, aber er ist teuer.","answer":["einerseits"]},
-    {"sentence":"Wir besuchen heute Berlin; ___ fahren wir morgen nach Hause.","answer":["ferner"]},
-    {"sentence":"Es gibt keinen Strom; ___ funktioniert der Computer nicht.","answer":["folglich"]},
-    {"sentence":"Sie trinkt gern Tee, ___ trinkt ihr Mann auch Tee.","answer":["genauso"]},
-    {"sentence":"Das Wetter ist schlecht, ___ können wir zu Hause spielen.","answer":["immerhin"]},
-    {"sentence":"Sie arbeitet heute; ___ lernen die Kinder zu Hause.","answer":["inzwischen"]},
-    {"sentence":"Das Hotel ist schön, ___ ist es sehr teuer.","answer":["allerdings"]},
-    {"sentence":"Wir haben frei, ___ fahren wir am Wochenende weg.","answer":["also"]},
-    {"sentence":"Die Stadt ist spannend, ___ ist sie teuer.","answer":["andererseits"]},
-    {"sentence":"Ich mache die Hausaufgaben, ___ schaue ich fern.","answer":["anschließend"]},
-    {"sentence":"Ich trinke Wasser, ___ trinke ich Tee.","answer":["außerdem"]},
-    {"sentence":"Ich räume auf, ___ telefoniere ich kurz.","answer":["dabei"]},
-    {"sentence":"Wir üben oft; ___ sprechen wir sicherer.","answer":["dadurch"]},
-    {"sentence":"Ich habe heute wenig Zeit; ___ habe ich morgen mehr Zeit.","answer":["dafür"]},
-    {"sentence":"Der Bus ist langsam, ___ ist die U-Bahn schnell.","answer":["dagegen"]},
-    {"sentence":"Wir sprechen langsam, ___ du alles verstehst.","answer":["damit"]},
-    {"sentence":"Wir kaufen Brot, ___ gehen wir zur Kasse.","answer":["danach"]},
-    {"sentence":"Wir lernen zwanzig Minuten, ___ machen wir eine Pause.","answer":["dann"]},
-    {"sentence":"Wir machen einen Plan; ___ beginnen wir.","answer":["darauf"]},
-    {"sentence":"Wir haben keine Milch, ___ gehe ich einkaufen.","answer":["darum"]},
-    {"sentence":"Ich koche; ___ wasche ich Gemüse.","answer":["davor"]},
-    {"sentence":"Wir kaufen Brot, ___ kaufen wir Käse.","answer":["dazu"]},
-    {"sentence":"Es ist kalt, ___ ziehe ich eine Jacke an.","answer":["deshalb"]},
-    {"sentence":"Ich habe kein Geld, ___ kaufe ich heute nichts.","answer":["deswegen"]},
-    {"sentence":"___ möchte ich reisen, aber ich muss arbeiten.","answer":["einerseits"]},
-    {"sentence":"Ich brauche Brot; ___ brauche ich Milch.","answer":["ferner"]},
-    {"sentence":"Ich habe den Schlüssel vergessen; ___ kann ich nicht rein.","answer":["folglich"]},
-    {"sentence":"Ich gehe gern spazieren, ___ geht meine Freundin gern spazieren.","answer":["genauso"]},
-    {"sentence":"Der Weg ist weit, ___ haben wir heute ein Auto.","answer":["immerhin"]},
-    {"sentence":"Ich koche; ___ deckst du den Tisch.","answer":["inzwischen"]},
-    {"sentence":"Der Kurs ist interessant, ___ ist er sehr lang.","answer":["allerdings"]},
-    {"sentence":"Ich habe Hunger, ___ koche ich etwas.","answer":["also"]},
-    {"sentence":"Die Wohnung ist günstig, ___ ist sie weit weg.","answer":["andererseits"]},
-    {"sentence":"Wir essen zu Mittag, ___ gehen wir spazieren.","answer":["anschließend"]},
-    {"sentence":"Ich lerne Deutsch; ___ höre ich deutsche Musik.","answer":["außerdem"]},
-    {"sentence":"Wir gehen im Park spazieren, ___ sprechen wir Deutsch.","answer":["dabei"]},
-    {"sentence":"Ich schlafe früh; ___ bin ich morgens nicht müde.","answer":["dadurch"]},
-    {"sentence":"Wir bleiben nicht lange; ___ kommen wir früh.","answer":["dafür"]},
-    {"sentence":"Im Winter ist es kalt, ___ ist es im Sommer warm.","answer":["dagegen"]},
-    {"sentence":"Ich schreibe die Wörter auf, ___ ich sie nicht vergesse.","answer":["damit"]},
-    {"sentence":"Ich dusche, ___ ziehe ich mich an.","answer":["danach"]},
-    {"sentence":"Ich rufe dich an, ___ schreiben wir kurz.","answer":["dann"]},
-    {"sentence":"Ich bekomme eine Nachricht; ___ rufe ich dich an.","answer":["darauf"]},
-    {"sentence":"Ich muss früh aufstehen, ___ gehe ich jetzt ins Bett.","answer":["darum"]},
-    {"sentence":"Wir essen; ___ waschen wir die Hände.","answer":["davor"]},
-    {"sentence":"Er trinkt Tee; ___ isst er ein Brötchen.","answer":["dazu"]},
-    {"sentence":"Ich habe heute viel zu tun, ___ komme ich später.","answer":["deshalb"]},
-    {"sentence":"Es ist schon spät, ___ rufe ich morgen an.","answer":["deswegen"]},
-    {"sentence":"___ will ich Deutsch lernen, aber ich bin oft müde.","answer":["einerseits"]},
-    {"sentence":"Wir gehen zuerst einkaufen; ___ kochen wir zu Hause.","answer":["ferner"]},
-    {"sentence":"Wir sind zu spät; ___ nehmen wir ein Taxi.","answer":["folglich"]},
-    {"sentence":"Ich mag Pizza, ___ mag ich Pasta.","answer":["genauso"]},
-    {"sentence":"Ich bin müde, ___ mache ich die Aufgabe fertig.","answer":["immerhin"]},
-    {"sentence":"Er ruft an; ___ schreibe ich die E-Mail.","answer":["inzwischen"]},
-    {"sentence":"Ich esse gern Pizza, ___ nicht jeden Tag.","answer":["allerdings"]},
-    {"sentence":"Es regnet stark, ___ bleibe ich zu Hause.","answer":["also"]},
-    {"sentence":"Der Film ist schön, ___ ist er sehr lang.","answer":["andererseits"]},
-    {"sentence":"Wir kaufen ein, ___ gehen wir nach Hause.","answer":["anschließend"]},
-    {"sentence":"Ich kaufe Milch, ___ kaufe ich Brot.","answer":["außerdem"]},
-    {"sentence":"Sie arbeitet am Computer, ___ hört sie Radio.","answer":["dabei"]},
-    {"sentence":"Er spart Geld; ___ kann er im Sommer reisen.","answer":["dadurch"]},
-    {"sentence":"Ich habe kein Auto; ___ habe ich ein Fahrrad.","answer":["dafür"]},
-    {"sentence":"Ich mag Tee, ___ mag mein Bruder Kaffee.","answer":["dagegen"]},
-    {"sentence":"Er macht das Licht aus, ___ er sparen kann.","answer":["damit"]},
-    {"sentence":"Ich arbeite bis fünf, ___ gehe ich nach Hause.","answer":["danach"]},
-    {"sentence":"Ich kaufe Obst, ___ gehe ich nach Hause.","answer":["dann"]},
-    {"sentence":"Sie hört die Frage; ___ antwortet sie.","answer":["darauf"]},
-    {"sentence":"Ich bin krank, ___ bleibe ich zu Hause.","answer":["darum"]},
-    {"sentence":"Wir gehen schlafen; ___ putzen wir die Zähne.","answer":["davor"]},
-    {"sentence":"Ich nehme einen Kaffee, ___ ein Stück Kuchen.","answer":["dazu"]},
-    {"sentence":"Ich habe Kopfschmerzen, ___ bleibe ich zu Hause.","answer":["deshalb"]},
-    {"sentence":"Ich bin müde, ___ mache ich heute Pause.","answer":["deswegen"]},
-    {"sentence":"___ habe ich Zeit, aber nicht am Abend.","answer":["einerseits"]},
-    {"sentence":"Ich habe einen Termin; ___ gehe ich zur Bank.","answer":["ferner"]},
-    {"sentence":"Der Laden ist zu; ___ kaufen wir morgen ein.","answer":["folglich"]},
-    {"sentence":"Er arbeitet heute, ___ arbeite ich heute.","answer":["genauso"]},
-    {"sentence":"Ich habe wenig Zeit, ___ kann ich kurz kommen.","answer":["immerhin"]},
-    {"sentence":"Ich putze die Küche; ___ hörst du Musik.","answer":["inzwischen"]},
-    {"sentence":"Ich kann heute kommen, ___ nur am Abend.","answer":["allerdings"]},
-    {"sentence":"Der Bus kommt nicht, ___ nehmen wir die U-Bahn.","answer":["also"]},
-    {"sentence":"Der Job ist gut bezahlt, ___ ist er stressig.","answer":["andererseits"]},
-    {"sentence":"Ich dusche, ___ frühstücke ich.","answer":["anschließend"]},
-    {"sentence":"Wir bleiben heute zu Hause, ___ ist es draußen kalt.","answer":["außerdem"]},
-    {"sentence":"Ich koche, ___ höre ich Musik.","answer":["dabei"]},
-    {"sentence":"Wir laufen viel; ___ bleiben wir fit.","answer":["dadurch"]},
-    {"sentence":"Ich esse kein Fleisch; ___ esse ich viel Gemüse.","answer":["dafür"]},
-    {"sentence":"Der Supermarkt ist weit, ___ ist die Bäckerei nah.","answer":["dagegen"]},
-    {"sentence":"Ich nehme einen Schirm mit, ___ ich nicht nass werde.","answer":["damit"]},
-    {"sentence":"Wir essen, ___ gehen wir spazieren.","answer":["danach"]},
-    {"sentence":"Zuerst frühstücke ich, ___ gehe ich zur Arbeit.","answer":["dann"]},
-    {"sentence":"Er erklärt es kurz; ___ verstehe ich es besser.","answer":["darauf"]},
-    {"sentence":"Es regnet, ___ nehme ich einen Schirm.","answer":["darum"]},
-    {"sentence":"Wir fahren los; ___ tanken wir noch.","answer":["davor"]},
-    {"sentence":"Ich brauche einen Stift; ___ brauche ich Papier.","answer":["dazu"]},
-    {"sentence":"Es ist kalt, ___ ziehe ich eine Jacke an.","answer":["deshalb"]},
-    {"sentence":"Ich habe kein Geld, ___ kaufe ich heute nichts.","answer":["deswegen"]},
-    {"sentence":"___ ist der Kurs gut, aber er ist teuer.","answer":["einerseits"]},
-    {"sentence":"Wir gehen zuerst einkaufen; ___ kochen wir zu Hause.","answer":["ferner"]},
-    {"sentence":"Der Bus fährt nicht; ___ gehen wir zu Fuß.","answer":["folglich"]},
-    {"sentence":"Du lernst jeden Tag; ___ lerne ich auch.","answer":["genauso"]},
-    {"sentence":"Das Wetter ist schlecht, ___ können wir zu Hause spielen.","answer":["immerhin"]},
-    {"sentence":"Wir warten auf den Bus; ___ trinken wir Wasser.","answer":["inzwischen"]}
+    {
+      "sentence": "Ich kann morgen kommen, ___ nur am Abend.",
+      "answer": [
+        "allerdings"
+      ]
+    },
+    {
+      "sentence": "Der Bus kommt nicht, ___ nehmen wir die U-Bahn.",
+      "answer": [
+        "also"
+      ]
+    },
+    {
+      "sentence": "Das Restaurant ist lecker, ___ ist es laut.",
+      "answer": [
+        "andererseits"
+      ]
+    },
+    {
+      "sentence": "Ich dusche, ___ frühstücke ich.",
+      "answer": [
+        "anschließend"
+      ]
+    },
+    {
+      "sentence": "Wir bleiben heute zu Hause, ___ ist es draußen kalt.",
+      "answer": [
+        "außerdem"
+      ]
+    },
+    {
+      "sentence": "Er lernt Deutsch, ___ trinkt er einen Kaffee.",
+      "answer": [
+        "dabei"
+      ]
+    },
+    {
+      "sentence": "Wir laufen viel; ___ bleiben wir fit.",
+      "answer": [
+        "dadurch"
+      ]
+    },
+    {
+      "sentence": "Ich kann heute nicht helfen; ___ helfe ich morgen.",
+      "answer": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Mein Zimmer ist klein, ___ ist es ruhig.",
+      "answer": [
+        "dagegen"
+      ]
+    },
+    {
+      "sentence": "Ich stelle den Wecker, ___ ich pünktlich aufstehe.",
+      "answer": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Wir treffen uns am Bahnhof, ___ fahren wir zusammen.",
+      "answer": [
+        "danach"
+      ]
+    },
+    {
+      "sentence": "Ich packe den Koffer, ___ fahre ich zum Bahnhof.",
+      "answer": [
+        "dann"
+      ]
+    },
+    {
+      "sentence": "Ich sehe den Termin; ___ schreibe ich dir.",
+      "answer": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "Es regnet, ___ nehme ich einen Schirm.",
+      "answer": [
+        "darum"
+      ]
+    },
+    {
+      "sentence": "Ich gehe zur Arbeit; ___ frühstücke ich.",
+      "answer": [
+        "davor"
+      ]
+    },
+    {
+      "sentence": "Ich bestelle eine Suppe; ___ nehme ich Salat.",
+      "answer": [
+        "dazu"
+      ]
+    },
+    {
+      "sentence": "Wir müssen arbeiten, ___ können wir nicht mitkommen.",
+      "answer": [
+        "deshalb"
+      ]
+    },
+    {
+      "sentence": "Der Bus ist voll, ___ gehe ich zu Fuß.",
+      "answer": [
+        "deswegen"
+      ]
+    },
+    {
+      "sentence": "___ ist die Wohnung günstig, aber sie ist klein.",
+      "answer": [
+        "einerseits"
+      ]
+    },
+    {
+      "sentence": "Er arbeitet am Morgen; ___ lernt er am Abend.",
+      "answer": [
+        "ferner"
+      ]
+    },
+    {
+      "sentence": "Der Bus fährt nicht; ___ gehen wir zu Fuß.",
+      "answer": [
+        "folglich"
+      ]
+    },
+    {
+      "sentence": "Du lernst jeden Tag; ___ lerne ich auch.",
+      "answer": [
+        "genauso"
+      ]
+    },
+    {
+      "sentence": "Ich kann nicht lange bleiben, ___ bin ich jetzt da.",
+      "answer": [
+        "immerhin"
+      ]
+    },
+    {
+      "sentence": "Wir warten auf den Bus; ___ trinken wir Wasser.",
+      "answer": [
+        "inzwischen"
+      ]
+    },
+    {
+      "sentence": "Ich kann morgen kommen, ___ nur am Abend.",
+      "answer": [
+        "allerdings"
+      ]
+    },
+    {
+      "sentence": "Ich bin müde, ___ gehe ich früh ins Bett.",
+      "answer": [
+        "also"
+      ]
+    },
+    {
+      "sentence": "Der Film ist schön, ___ ist er sehr lang.",
+      "answer": [
+        "andererseits"
+      ]
+    },
+    {
+      "sentence": "Wir treffen uns um zehn, ___ gehen wir in die Stadt.",
+      "answer": [
+        "anschließend"
+      ]
+    },
+    {
+      "sentence": "Er arbeitet viel; ___ hat er wenig Zeit.",
+      "answer": [
+        "außerdem"
+      ]
+    },
+    {
+      "sentence": "Ich koche, ___ höre ich Musik.",
+      "answer": [
+        "dabei"
+      ]
+    },
+    {
+      "sentence": "Ich lerne jeden Tag; ___ werde ich besser.",
+      "answer": [
+        "dadurch"
+      ]
+    },
+    {
+      "sentence": "Ich esse kein Fleisch; ___ esse ich viel Gemüse.",
+      "answer": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Der Supermarkt ist weit, ___ ist die Bäckerei nah.",
+      "answer": [
+        "dagegen"
+      ]
+    },
+    {
+      "sentence": "Ich nehme einen Schirm mit, ___ ich nicht nass werde.",
+      "answer": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Wir essen, ___ gehen wir spazieren.",
+      "answer": [
+        "danach"
+      ]
+    },
+    {
+      "sentence": "Zuerst frühstücke ich, ___ gehe ich zur Arbeit.",
+      "answer": [
+        "dann"
+      ]
+    },
+    {
+      "sentence": "Er erklärt es kurz; ___ verstehe ich es besser.",
+      "answer": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "Der Laden ist zu, ___ kommen wir morgen wieder.",
+      "answer": [
+        "darum"
+      ]
+    },
+    {
+      "sentence": "Wir fahren los; ___ tanken wir noch.",
+      "answer": [
+        "davor"
+      ]
+    },
+    {
+      "sentence": "Ich brauche einen Stift; ___ brauche ich Papier.",
+      "answer": [
+        "dazu"
+      ]
+    },
+    {
+      "sentence": "Der Zug kommt später, ___ warten wir noch.",
+      "answer": [
+        "deshalb"
+      ]
+    },
+    {
+      "sentence": "Wir haben keinen Schlüssel, ___ können wir nicht rein.",
+      "answer": [
+        "deswegen"
+      ]
+    },
+    {
+      "sentence": "___ ist der Kurs gut, aber er ist teuer.",
+      "answer": [
+        "einerseits"
+      ]
+    },
+    {
+      "sentence": "Wir besuchen heute Berlin; ___ fahren wir morgen nach Hause.",
+      "answer": [
+        "ferner"
+      ]
+    },
+    {
+      "sentence": "Es gibt keinen Strom; ___ funktioniert der Computer nicht.",
+      "answer": [
+        "folglich"
+      ]
+    },
+    {
+      "sentence": "Sie trinkt gern Tee, ___ trinkt ihr Mann auch Tee.",
+      "answer": [
+        "genauso"
+      ]
+    },
+    {
+      "sentence": "Das Wetter ist schlecht, ___ können wir zu Hause spielen.",
+      "answer": [
+        "immerhin"
+      ]
+    },
+    {
+      "sentence": "Sie arbeitet heute; ___ lernen die Kinder zu Hause.",
+      "answer": [
+        "inzwischen"
+      ]
+    },
+    {
+      "sentence": "Das Hotel ist schön, ___ ist es sehr teuer.",
+      "answer": [
+        "allerdings"
+      ]
+    },
+    {
+      "sentence": "Wir haben frei, ___ fahren wir am Wochenende weg.",
+      "answer": [
+        "also"
+      ]
+    },
+    {
+      "sentence": "Die Stadt ist spannend, ___ ist sie teuer.",
+      "answer": [
+        "andererseits"
+      ]
+    },
+    {
+      "sentence": "Ich mache die Hausaufgaben, ___ schaue ich fern.",
+      "answer": [
+        "anschließend"
+      ]
+    },
+    {
+      "sentence": "Ich trinke Wasser, ___ trinke ich Tee.",
+      "answer": [
+        "außerdem"
+      ]
+    },
+    {
+      "sentence": "Ich räume auf, ___ telefoniere ich kurz.",
+      "answer": [
+        "dabei"
+      ]
+    },
+    {
+      "sentence": "Wir üben oft; ___ sprechen wir sicherer.",
+      "answer": [
+        "dadurch"
+      ]
+    },
+    {
+      "sentence": "Ich habe heute wenig Zeit; ___ habe ich morgen mehr Zeit.",
+      "answer": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Der Bus ist langsam, ___ ist die U-Bahn schnell.",
+      "answer": [
+        "dagegen"
+      ]
+    },
+    {
+      "sentence": "Wir sprechen langsam, ___ du alles verstehst.",
+      "answer": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Wir kaufen Brot, ___ gehen wir zur Kasse.",
+      "answer": [
+        "danach"
+      ]
+    },
+    {
+      "sentence": "Wir lernen zwanzig Minuten, ___ machen wir eine Pause.",
+      "answer": [
+        "dann"
+      ]
+    },
+    {
+      "sentence": "Wir machen einen Plan; ___ beginnen wir.",
+      "answer": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "Wir haben keine Milch, ___ gehe ich einkaufen.",
+      "answer": [
+        "darum"
+      ]
+    },
+    {
+      "sentence": "Ich koche; ___ wasche ich Gemüse.",
+      "answer": [
+        "davor"
+      ]
+    },
+    {
+      "sentence": "Wir kaufen Brot, ___ kaufen wir Käse.",
+      "answer": [
+        "dazu"
+      ]
+    },
+    {
+      "sentence": "Es ist kalt, ___ ziehe ich eine Jacke an.",
+      "answer": [
+        "deshalb"
+      ]
+    },
+    {
+      "sentence": "Ich habe kein Geld, ___ kaufe ich heute nichts.",
+      "answer": [
+        "deswegen"
+      ]
+    },
+    {
+      "sentence": "___ möchte ich reisen, aber ich muss arbeiten.",
+      "answer": [
+        "einerseits"
+      ]
+    },
+    {
+      "sentence": "Ich brauche Brot; ___ brauche ich Milch.",
+      "answer": [
+        "ferner"
+      ]
+    },
+    {
+      "sentence": "Ich habe den Schlüssel vergessen; ___ kann ich nicht rein.",
+      "answer": [
+        "folglich"
+      ]
+    },
+    {
+      "sentence": "Ich gehe gern spazieren, ___ geht meine Freundin gern spazieren.",
+      "answer": [
+        "genauso"
+      ]
+    },
+    {
+      "sentence": "Der Weg ist weit, ___ haben wir heute ein Auto.",
+      "answer": [
+        "immerhin"
+      ]
+    },
+    {
+      "sentence": "Ich koche; ___ deckst du den Tisch.",
+      "answer": [
+        "inzwischen"
+      ]
+    },
+    {
+      "sentence": "Der Kurs ist interessant, ___ ist er sehr lang.",
+      "answer": [
+        "allerdings"
+      ]
+    },
+    {
+      "sentence": "Ich habe Hunger, ___ koche ich etwas.",
+      "answer": [
+        "also"
+      ]
+    },
+    {
+      "sentence": "Die Wohnung ist günstig, ___ ist sie weit weg.",
+      "answer": [
+        "andererseits"
+      ]
+    },
+    {
+      "sentence": "Wir essen zu Mittag, ___ gehen wir spazieren.",
+      "answer": [
+        "anschließend"
+      ]
+    },
+    {
+      "sentence": "Ich lerne Deutsch; ___ höre ich deutsche Musik.",
+      "answer": [
+        "außerdem"
+      ]
+    },
+    {
+      "sentence": "Wir gehen im Park spazieren, ___ sprechen wir Deutsch.",
+      "answer": [
+        "dabei"
+      ]
+    },
+    {
+      "sentence": "Ich schlafe früh; ___ bin ich morgens nicht müde.",
+      "answer": [
+        "dadurch"
+      ]
+    },
+    {
+      "sentence": "Wir bleiben nicht lange; ___ kommen wir früh.",
+      "answer": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Im Winter ist es kalt, ___ ist es im Sommer warm.",
+      "answer": [
+        "dagegen"
+      ]
+    },
+    {
+      "sentence": "Ich schreibe die Wörter auf, ___ ich sie nicht vergesse.",
+      "answer": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Ich dusche, ___ ziehe ich mich an.",
+      "answer": [
+        "danach"
+      ]
+    },
+    {
+      "sentence": "Ich rufe dich an, ___ schreiben wir kurz.",
+      "answer": [
+        "dann"
+      ]
+    },
+    {
+      "sentence": "Ich bekomme eine Nachricht; ___ rufe ich dich an.",
+      "answer": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "Ich muss früh aufstehen, ___ gehe ich jetzt ins Bett.",
+      "answer": [
+        "darum"
+      ]
+    },
+    {
+      "sentence": "Wir essen; ___ waschen wir die Hände.",
+      "answer": [
+        "davor"
+      ]
+    },
+    {
+      "sentence": "Er trinkt Tee; ___ isst er ein Brötchen.",
+      "answer": [
+        "dazu"
+      ]
+    },
+    {
+      "sentence": "Ich habe heute viel zu tun, ___ komme ich später.",
+      "answer": [
+        "deshalb"
+      ]
+    },
+    {
+      "sentence": "Es ist schon spät, ___ rufe ich morgen an.",
+      "answer": [
+        "deswegen"
+      ]
+    },
+    {
+      "sentence": "___ will ich Deutsch lernen, aber ich bin oft müde.",
+      "answer": [
+        "einerseits"
+      ]
+    },
+    {
+      "sentence": "Wir gehen zuerst einkaufen; ___ kochen wir zu Hause.",
+      "answer": [
+        "ferner"
+      ]
+    },
+    {
+      "sentence": "Wir sind zu spät; ___ nehmen wir ein Taxi.",
+      "answer": [
+        "folglich"
+      ]
+    },
+    {
+      "sentence": "Ich mag Pizza, ___ mag ich Pasta.",
+      "answer": [
+        "genauso"
+      ]
+    },
+    {
+      "sentence": "Ich bin müde, ___ mache ich die Aufgabe fertig.",
+      "answer": [
+        "immerhin"
+      ]
+    },
+    {
+      "sentence": "Er ruft an; ___ schreibe ich die E-Mail.",
+      "answer": [
+        "inzwischen"
+      ]
+    },
+    {
+      "sentence": "Ich esse gern Pizza, ___ nicht jeden Tag.",
+      "answer": [
+        "allerdings"
+      ]
+    },
+    {
+      "sentence": "Es regnet stark, ___ bleibe ich zu Hause.",
+      "answer": [
+        "also"
+      ]
+    },
+    {
+      "sentence": "Der Film ist schön, ___ ist er sehr lang.",
+      "answer": [
+        "andererseits"
+      ]
+    },
+    {
+      "sentence": "Wir kaufen ein, ___ gehen wir nach Hause.",
+      "answer": [
+        "anschließend"
+      ]
+    },
+    {
+      "sentence": "Ich kaufe Milch, ___ kaufe ich Brot.",
+      "answer": [
+        "außerdem"
+      ]
+    },
+    {
+      "sentence": "Sie arbeitet am Computer, ___ hört sie Radio.",
+      "answer": [
+        "dabei"
+      ]
+    },
+    {
+      "sentence": "Er spart Geld; ___ kann er im Sommer reisen.",
+      "answer": [
+        "dadurch"
+      ]
+    },
+    {
+      "sentence": "Ich habe kein Auto; ___ habe ich ein Fahrrad.",
+      "answer": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Ich mag Tee, ___ mag mein Bruder Kaffee.",
+      "answer": [
+        "dagegen"
+      ]
+    },
+    {
+      "sentence": "Er macht das Licht aus, ___ er sparen kann.",
+      "answer": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Ich arbeite bis fünf, ___ gehe ich nach Hause.",
+      "answer": [
+        "danach"
+      ]
+    },
+    {
+      "sentence": "Ich kaufe Obst, ___ gehe ich nach Hause.",
+      "answer": [
+        "dann"
+      ]
+    },
+    {
+      "sentence": "Sie hört die Frage; ___ antwortet sie.",
+      "answer": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "Ich bin krank, ___ bleibe ich zu Hause.",
+      "answer": [
+        "darum"
+      ]
+    },
+    {
+      "sentence": "Wir gehen schlafen; ___ putzen wir die Zähne.",
+      "answer": [
+        "davor"
+      ]
+    },
+    {
+      "sentence": "Ich nehme einen Kaffee, ___ ein Stück Kuchen.",
+      "answer": [
+        "dazu"
+      ]
+    },
+    {
+      "sentence": "Ich habe Kopfschmerzen, ___ bleibe ich zu Hause.",
+      "answer": [
+        "deshalb"
+      ]
+    },
+    {
+      "sentence": "Ich bin müde, ___ mache ich heute Pause.",
+      "answer": [
+        "deswegen"
+      ]
+    },
+    {
+      "sentence": "___ habe ich Zeit, aber nicht am Abend.",
+      "answer": [
+        "einerseits"
+      ]
+    },
+    {
+      "sentence": "Ich habe einen Termin; ___ gehe ich zur Bank.",
+      "answer": [
+        "ferner"
+      ]
+    },
+    {
+      "sentence": "Der Laden ist zu; ___ kaufen wir morgen ein.",
+      "answer": [
+        "folglich"
+      ]
+    },
+    {
+      "sentence": "Er arbeitet heute, ___ arbeite ich heute.",
+      "answer": [
+        "genauso"
+      ]
+    },
+    {
+      "sentence": "Ich habe wenig Zeit, ___ kann ich kurz kommen.",
+      "answer": [
+        "immerhin"
+      ]
+    },
+    {
+      "sentence": "Ich putze die Küche; ___ hörst du Musik.",
+      "answer": [
+        "inzwischen"
+      ]
+    },
+    {
+      "sentence": "Ich kann heute kommen, ___ nur am Abend.",
+      "answer": [
+        "allerdings"
+      ]
+    },
+    {
+      "sentence": "Der Bus kommt nicht, ___ nehmen wir die U-Bahn.",
+      "answer": [
+        "also"
+      ]
+    },
+    {
+      "sentence": "Der Job ist gut bezahlt, ___ ist er stressig.",
+      "answer": [
+        "andererseits"
+      ]
+    },
+    {
+      "sentence": "Ich dusche, ___ frühstücke ich.",
+      "answer": [
+        "anschließend"
+      ]
+    },
+    {
+      "sentence": "Wir bleiben heute zu Hause, ___ ist es draußen kalt.",
+      "answer": [
+        "außerdem"
+      ]
+    },
+    {
+      "sentence": "Ich koche, ___ höre ich Musik.",
+      "answer": [
+        "dabei"
+      ]
+    },
+    {
+      "sentence": "Wir laufen viel; ___ bleiben wir fit.",
+      "answer": [
+        "dadurch"
+      ]
+    },
+    {
+      "sentence": "Ich esse kein Fleisch; ___ esse ich viel Gemüse.",
+      "answer": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Der Supermarkt ist weit, ___ ist die Bäckerei nah.",
+      "answer": [
+        "dagegen"
+      ]
+    },
+    {
+      "sentence": "Ich nehme einen Schirm mit, ___ ich nicht nass werde.",
+      "answer": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Wir essen, ___ gehen wir spazieren.",
+      "answer": [
+        "danach"
+      ]
+    },
+    {
+      "sentence": "Zuerst frühstücke ich, ___ gehe ich zur Arbeit.",
+      "answer": [
+        "dann"
+      ]
+    },
+    {
+      "sentence": "Er erklärt es kurz; ___ verstehe ich es besser.",
+      "answer": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "Es regnet, ___ nehme ich einen Schirm.",
+      "answer": [
+        "darum"
+      ]
+    },
+    {
+      "sentence": "Wir fahren los; ___ tanken wir noch.",
+      "answer": [
+        "davor"
+      ]
+    },
+    {
+      "sentence": "Ich brauche einen Stift; ___ brauche ich Papier.",
+      "answer": [
+        "dazu"
+      ]
+    },
+    {
+      "sentence": "Es ist kalt, ___ ziehe ich eine Jacke an.",
+      "answer": [
+        "deshalb"
+      ]
+    },
+    {
+      "sentence": "Ich habe kein Geld, ___ kaufe ich heute nichts.",
+      "answer": [
+        "deswegen"
+      ]
+    },
+    {
+      "sentence": "___ ist der Kurs gut, aber er ist teuer.",
+      "answer": [
+        "einerseits"
+      ]
+    },
+    {
+      "sentence": "Wir gehen zuerst einkaufen; ___ kochen wir zu Hause.",
+      "answer": [
+        "ferner"
+      ]
+    },
+    {
+      "sentence": "Der Bus fährt nicht; ___ gehen wir zu Fuß.",
+      "answer": [
+        "folglich"
+      ]
+    },
+    {
+      "sentence": "Du lernst jeden Tag; ___ lerne ich auch.",
+      "answer": [
+        "genauso"
+      ]
+    },
+    {
+      "sentence": "Das Wetter ist schlecht, ___ können wir zu Hause spielen.",
+      "answer": [
+        "immerhin"
+      ]
+    },
+    {
+      "sentence": "Wir warten auf den Bus; ___ trinken wir Wasser.",
+      "answer": [
+        "inzwischen"
+      ]
+    }
   ]
 }

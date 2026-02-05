@@ -1,123 +1,448 @@
 {
-  "title": {
-    "ru": "Существительные во множественном числе",
-    "en": "Plural nouns"
-  },
-
   "instructions": {
     "ru": "Введите слово во множественном числе.",
     "en": "Enter plural form."
   },
   "items": [
-    { "word": "das Jahr", "plural": "Jahre" },
-    { "word": "die Uhr", "plural": "Uhren" },
-    { "word": "der Mensch", "plural": "Menschen" },
-    { "word": "das Prozent", "plural": "Prozente" },
-    { "word": "das Kind", "plural": "Kinder" },
-    { "word": "die Frau", "plural": "Frauen" },
-    { "word": "der Mann", "plural": "Männer" },
-    { "word": "der Tag", "plural": "Tage" },
-    { "word": "die Stunde", "plural": "Stunden" },
-    { "word": "die Woche", "plural": "Wochen" },
-    { "word": "die Tasse", "plural": "Tassen" },
-    { "word": "der Monat", "plural": "Monate" },
-    { "word": "das Land", "plural": "Länder" },
-    { "word": "die Information", "plural": "Informationen" },
-    { "word": "das Problem", "plural": "Probleme" },
-    { "word": "die Frage", "plural": "Fragen" },
-    { "word": "die Antwort", "plural": "Antworten" },
-    { "word": "die Fahrkarte", "plural": "Fahrkarten" },
-    { "word": "das Wort", "plural": "Wörter" },
-    { "word": "das Bild", "plural": "Bilder" },
-    { "word": "das Buch", "plural": "Bücher" },
-    { "word": "die Nation", "plural": "Nationen" },
-    { "word": "das Haus", "plural": "Häuser" },
-    { "word": "die Stadt", "plural": "Städte" },
-    { "word": "der Schüler", "plural": "Schüler" },
-    { "word": "der Student", "plural": "Studenten" },
-    { "word": "der Lehrer", "plural": "Lehrer" },
-    { "word": "die Familie", "plural": "Familien" },
-    { "word": "der Freund", "plural": "Freunde" },
-    { "word": "die Gesellschaft", "plural": "Gesellschaften" },
-    { "word": "die Gruppe", "plural": "Gruppen" },
-    { "word": "das Unternehmen", "plural": "Unternehmen" },
-    { "word": "die Firma", "plural": "Firmen" },
-    { "word": "die Lampe", "plural": "Lampen" },
-    { "word": "die Organisation", "plural": "Organisationen" },
-    { "word": "die Behörde", "plural": "Behörden" },
-    { "word": "der Kunde", "plural": "Kunden" },
-    { "word": "der Mitarbeiter", "plural": "Mitarbeiter" },
-    { "word": "das Produkt", "plural": "Produkte" },
-    { "word": "das Handy", "plural": "Handys" },
-    { "word": "das Ergebnis", "plural": "Ergebnisse" },
-    { "word": "das Thema", "plural": "Themen" },
-    { "word": "die Idee", "plural": "Ideen" },
-    { "word": "der Grund", "plural": "Gründe" },
-    { "word": "die Möglichkeit", "plural": "Möglichkeiten" },
-    { "word": "der Fall", "plural": "Fälle" },
-    { "word": "der Sessel", "plural": "Sessel" },
-    { "word": "das Beispiel", "plural": "Beispiele" },
-    { "word": "das System", "plural": "Systeme" },
-    { "word": "das Programm", "plural": "Programme" },
-    { "word": "der Artikel", "plural": "Artikel" },
-    { "word": "der Text", "plural": "Texte" },
-    { "word": "die Seite", "plural": "Seiten" },
-    { "word": "der Film", "plural": "Filme" },
-    { "word": "das Spiel", "plural": "Spiele" },
-    { "word": "das Auto", "plural": "Autos" },
-    { "word": "das Gerät", "plural": "Geräte" },
-    { "word": "die Maschine", "plural": "Maschinen" },
-    { "word": "das Tier", "plural": "Tiere" },
-    { "word": "die Pflanze", "plural": "Pflanzen" },
-    { "word": "der Patient", "plural": "Patienten" },
-    { "word": "der Arzt", "plural": "Ärzte" },
-    { "word": "der Besucher", "plural": "Besucher" },
-    { "word": "der Tourist", "plural": "Touristen" },
-    { "word": "der Computer", "plural": "Computer" },
-    { "word": "die Regel", "plural": "Regeln" },
-    { "word": "das Gesetz", "plural": "Gesetze" },
-    { "word": "das Recht", "plural": "Rechte" },
-    { "word": "das Büro", "plural": "Büros" },
-    { "word": "die Pflicht", "plural": "Pflichten" },
-    { "word": "die Aufgabe", "plural": "Aufgaben" },
-    { "word": "die Übung", "plural": "Übungen" },
-    { "word": "der Staat", "plural": "Staaten" },
-    { "word": "der Schlüssel", "plural": "Schlüssel" },
-    { "word": "die Partei", "plural": "Parteien" },
-    { "word": "das Mitglied", "plural": "Mitglieder" },
-    { "word": "die Körperschaft", "plural": "Körperschaften" },
-    { "word": "der Wert", "plural": "Werte" },
-    { "word": "die Zahl", "plural": "Zahlen" },
-    { "word": "der Preis", "plural": "Preise" },
-    { "word": "das Mittel", "plural": "Mittel" },
-    { "word": "der Teil", "plural": "Teile" },
-    { "word": "die Form", "plural": "Formen" },
-    { "word": "die Situation", "plural": "Situationen" },
-    { "word": "die Entscheidung", "plural": "Entscheidungen" },
-    { "word": "das Projekt", "plural": "Projekte" },
-    { "word": "der Plan", "plural": "Pläne" },
-    { "word": "die Fraktion", "plural": "Fraktionen" },
-    { "word": "die Stimme", "plural": "Stimmen" },
-    { "word": "das Ding", "plural": "Dinge" },
-    { "word": "die Sache", "plural": "Sachen" },
-    { "word": "das Auge", "plural": "Augen" },
-    { "word": "die Hand", "plural": "Hände" },
-    { "word": "der Fuß", "plural": "Füße" },
-    { "word": "der Kopf", "plural": "Köpfe" },
-    { "word": "die Armee", "plural": "Armeen" },
-    { "word": "das Modell", "plural": "Modelle" },
-    { "word": "die Methode", "plural": "Methoden" },
-    { "word": "das Argument", "plural": "Argumente" },
-    { "word": "der Bericht", "plural": "Berichte" },
-    { "word": "das Kleid", "plural": "Kleider" },
-    { "word": "das T-Shirt", "plural": "T-Shirts" },
-    { "word": "der Mantel", "plural": "Mäntel" },
-    { "word": "die Jacke", "plural": "Jacken" },
-    { "word": "der Anzug", "plural": "Anzüge" },
-    { "word": "die Hose", "plural": "Hosen" },
-    { "word": "das Hemd", "plural": "Hemden" },
-    { "word": "der Rock", "plural": "Röcke" },
-    { "word": "der Stiefel", "plural": "Stiefel" },
-    { "word": "die Brille", "plural": "Brillen" }
+    {
+      "word": "das Jahr",
+      "plural": "Jahre"
+    },
+    {
+      "word": "die Uhr",
+      "plural": "Uhren"
+    },
+    {
+      "word": "der Mensch",
+      "plural": "Menschen"
+    },
+    {
+      "word": "das Prozent",
+      "plural": "Prozente"
+    },
+    {
+      "word": "das Kind",
+      "plural": "Kinder"
+    },
+    {
+      "word": "die Frau",
+      "plural": "Frauen"
+    },
+    {
+      "word": "der Mann",
+      "plural": "Männer"
+    },
+    {
+      "word": "der Tag",
+      "plural": "Tage"
+    },
+    {
+      "word": "die Stunde",
+      "plural": "Stunden"
+    },
+    {
+      "word": "die Woche",
+      "plural": "Wochen"
+    },
+    {
+      "word": "die Tasse",
+      "plural": "Tassen"
+    },
+    {
+      "word": "der Monat",
+      "plural": "Monate"
+    },
+    {
+      "word": "das Land",
+      "plural": "Länder"
+    },
+    {
+      "word": "die Information",
+      "plural": "Informationen"
+    },
+    {
+      "word": "das Problem",
+      "plural": "Probleme"
+    },
+    {
+      "word": "die Frage",
+      "plural": "Fragen"
+    },
+    {
+      "word": "die Antwort",
+      "plural": "Antworten"
+    },
+    {
+      "word": "die Fahrkarte",
+      "plural": "Fahrkarten"
+    },
+    {
+      "word": "das Wort",
+      "plural": "Wörter"
+    },
+    {
+      "word": "das Bild",
+      "plural": "Bilder"
+    },
+    {
+      "word": "das Buch",
+      "plural": "Bücher"
+    },
+    {
+      "word": "die Nation",
+      "plural": "Nationen"
+    },
+    {
+      "word": "das Haus",
+      "plural": "Häuser"
+    },
+    {
+      "word": "die Stadt",
+      "plural": "Städte"
+    },
+    {
+      "word": "der Schüler",
+      "plural": "Schüler"
+    },
+    {
+      "word": "der Student",
+      "plural": "Studenten"
+    },
+    {
+      "word": "der Lehrer",
+      "plural": "Lehrer"
+    },
+    {
+      "word": "die Familie",
+      "plural": "Familien"
+    },
+    {
+      "word": "der Freund",
+      "plural": "Freunde"
+    },
+    {
+      "word": "die Gesellschaft",
+      "plural": "Gesellschaften"
+    },
+    {
+      "word": "die Gruppe",
+      "plural": "Gruppen"
+    },
+    {
+      "word": "das Unternehmen",
+      "plural": "Unternehmen"
+    },
+    {
+      "word": "die Firma",
+      "plural": "Firmen"
+    },
+    {
+      "word": "die Lampe",
+      "plural": "Lampen"
+    },
+    {
+      "word": "die Organisation",
+      "plural": "Organisationen"
+    },
+    {
+      "word": "die Behörde",
+      "plural": "Behörden"
+    },
+    {
+      "word": "der Kunde",
+      "plural": "Kunden"
+    },
+    {
+      "word": "der Mitarbeiter",
+      "plural": "Mitarbeiter"
+    },
+    {
+      "word": "das Produkt",
+      "plural": "Produkte"
+    },
+    {
+      "word": "das Handy",
+      "plural": "Handys"
+    },
+    {
+      "word": "das Ergebnis",
+      "plural": "Ergebnisse"
+    },
+    {
+      "word": "das Thema",
+      "plural": "Themen"
+    },
+    {
+      "word": "die Idee",
+      "plural": "Ideen"
+    },
+    {
+      "word": "der Grund",
+      "plural": "Gründe"
+    },
+    {
+      "word": "die Möglichkeit",
+      "plural": "Möglichkeiten"
+    },
+    {
+      "word": "der Fall",
+      "plural": "Fälle"
+    },
+    {
+      "word": "der Sessel",
+      "plural": "Sessel"
+    },
+    {
+      "word": "das Beispiel",
+      "plural": "Beispiele"
+    },
+    {
+      "word": "das System",
+      "plural": "Systeme"
+    },
+    {
+      "word": "das Programm",
+      "plural": "Programme"
+    },
+    {
+      "word": "der Artikel",
+      "plural": "Artikel"
+    },
+    {
+      "word": "der Text",
+      "plural": "Texte"
+    },
+    {
+      "word": "die Seite",
+      "plural": "Seiten"
+    },
+    {
+      "word": "der Film",
+      "plural": "Filme"
+    },
+    {
+      "word": "das Spiel",
+      "plural": "Spiele"
+    },
+    {
+      "word": "das Auto",
+      "plural": "Autos"
+    },
+    {
+      "word": "das Gerät",
+      "plural": "Geräte"
+    },
+    {
+      "word": "die Maschine",
+      "plural": "Maschinen"
+    },
+    {
+      "word": "das Tier",
+      "plural": "Tiere"
+    },
+    {
+      "word": "die Pflanze",
+      "plural": "Pflanzen"
+    },
+    {
+      "word": "der Patient",
+      "plural": "Patienten"
+    },
+    {
+      "word": "der Arzt",
+      "plural": "Ärzte"
+    },
+    {
+      "word": "der Besucher",
+      "plural": "Besucher"
+    },
+    {
+      "word": "der Tourist",
+      "plural": "Touristen"
+    },
+    {
+      "word": "der Computer",
+      "plural": "Computer"
+    },
+    {
+      "word": "die Regel",
+      "plural": "Regeln"
+    },
+    {
+      "word": "das Gesetz",
+      "plural": "Gesetze"
+    },
+    {
+      "word": "das Recht",
+      "plural": "Rechte"
+    },
+    {
+      "word": "das Büro",
+      "plural": "Büros"
+    },
+    {
+      "word": "die Pflicht",
+      "plural": "Pflichten"
+    },
+    {
+      "word": "die Aufgabe",
+      "plural": "Aufgaben"
+    },
+    {
+      "word": "die Übung",
+      "plural": "Übungen"
+    },
+    {
+      "word": "der Staat",
+      "plural": "Staaten"
+    },
+    {
+      "word": "der Schlüssel",
+      "plural": "Schlüssel"
+    },
+    {
+      "word": "die Partei",
+      "plural": "Parteien"
+    },
+    {
+      "word": "das Mitglied",
+      "plural": "Mitglieder"
+    },
+    {
+      "word": "die Körperschaft",
+      "plural": "Körperschaften"
+    },
+    {
+      "word": "der Wert",
+      "plural": "Werte"
+    },
+    {
+      "word": "die Zahl",
+      "plural": "Zahlen"
+    },
+    {
+      "word": "der Preis",
+      "plural": "Preise"
+    },
+    {
+      "word": "das Mittel",
+      "plural": "Mittel"
+    },
+    {
+      "word": "der Teil",
+      "plural": "Teile"
+    },
+    {
+      "word": "die Form",
+      "plural": "Formen"
+    },
+    {
+      "word": "die Situation",
+      "plural": "Situationen"
+    },
+    {
+      "word": "die Entscheidung",
+      "plural": "Entscheidungen"
+    },
+    {
+      "word": "das Projekt",
+      "plural": "Projekte"
+    },
+    {
+      "word": "der Plan",
+      "plural": "Pläne"
+    },
+    {
+      "word": "die Fraktion",
+      "plural": "Fraktionen"
+    },
+    {
+      "word": "die Stimme",
+      "plural": "Stimmen"
+    },
+    {
+      "word": "das Ding",
+      "plural": "Dinge"
+    },
+    {
+      "word": "die Sache",
+      "plural": "Sachen"
+    },
+    {
+      "word": "das Auge",
+      "plural": "Augen"
+    },
+    {
+      "word": "die Hand",
+      "plural": "Hände"
+    },
+    {
+      "word": "der Fuß",
+      "plural": "Füße"
+    },
+    {
+      "word": "der Kopf",
+      "plural": "Köpfe"
+    },
+    {
+      "word": "die Armee",
+      "plural": "Armeen"
+    },
+    {
+      "word": "das Modell",
+      "plural": "Modelle"
+    },
+    {
+      "word": "die Methode",
+      "plural": "Methoden"
+    },
+    {
+      "word": "das Argument",
+      "plural": "Argumente"
+    },
+    {
+      "word": "der Bericht",
+      "plural": "Berichte"
+    },
+    {
+      "word": "das Kleid",
+      "plural": "Kleider"
+    },
+    {
+      "word": "das T-Shirt",
+      "plural": "T-Shirts"
+    },
+    {
+      "word": "der Mantel",
+      "plural": "Mäntel"
+    },
+    {
+      "word": "die Jacke",
+      "plural": "Jacken"
+    },
+    {
+      "word": "der Anzug",
+      "plural": "Anzüge"
+    },
+    {
+      "word": "die Hose",
+      "plural": "Hosen"
+    },
+    {
+      "word": "das Hemd",
+      "plural": "Hemden"
+    },
+    {
+      "word": "der Rock",
+      "plural": "Röcke"
+    },
+    {
+      "word": "der Stiefel",
+      "plural": "Stiefel"
+    },
+    {
+      "word": "die Brille",
+      "plural": "Brillen"
+    }
   ]
 }

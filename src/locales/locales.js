@@ -1,34 +1,6 @@
 
 const translations = {
   ru: {
-    tabs: {
-      "noun-articles": "Артикли существительных",
-      "haben-sein": "Haben или Sein",
-      "verb-conjugation": "Слабые глаголы",
-      "irregular-verbs": "Сильные глаголы",
-      "modal-verbs": "Модальные глаголы",
-      "past-tense": "Прошедшее время",
-      "articles": "Склонение артиклей",
-      "possessive-pronouns": "Притяжательные местоимения",
-      "keinOrNicht-sentences": "Kein или Nicht",
-      "translate-sentences": "Перевод предложений",
-      "time": "Время",
-      "plural-nouns": "Множественное число",
-      "haben-sein-preteritum": "Haben и Sein в Präteritum",
-      "auxiliary-verbs": "Haben и Sein для Perfekt",
-      "verbs-perfekt": "Глаголы в Perfekt",
-      "verbs-preteritum": "Глаголы в Präteritum",
-      "modal-verbs-preteritum": "Модальные глаголы",
-      "personal-pronouns": "Личные местоимения",
-      "indefinite-pronouns": "Неопределённые местоимения",
-      "imperativ": "Imperativ",
-      "prepositions-time": "Предлоги времени",
-      "prepositions-place": "Предлоги места",
-      "conjunctions": "Союзы",
-      "subordinating-conjunctions": "Подчинительные союзы",
-      "conjunctive-adverbs": "Союзные слова",
-      "wechselpraepositionen": "Wechselpräpositionen"
-    },
     labels: {
       level: "Уровень",
       language: "Язык",

@@ -1,8 +1,4 @@
 {
-  "title": {
-    "ru": "Imperativ",
-    "en": "Imperativ"
-  },
   "instructions": {
     "ru": "Поставьте глагол в Imperativ в нужной форме.",
     "en": "Put the verb in the Imperative in the correct form."
@@ -12,183 +8,260 @@
       {
         "sentence": "Frau Schmidt, ___ bitte Herrn Krause ___!",
         "verb": "anrufen",
-        "answer": ["rufen Sie", "an"]
+        "answer": [
+          "rufen Sie",
+          "an"
+        ]
       },
       {
         "sentence": "Jürgen und Franz, ___ bitte geduldig, wir warten schon seit zehn Minuten!",
         "verb": "sein",
-        "answer": ["seid"]
+        "answer": [
+          "seid"
+        ]
       },
       {
         "sentence": "Herr Müller, ___ bitte hier Platz, ich komme gleich zu Ihnen.",
         "verb": "nehmen",
-        "answer": ["nehmen Sie"]
+        "answer": [
+          "nehmen Sie"
+        ]
       },
       {
         "sentence": "___ bitte nicht böse, Paula, ich habe das nicht absichtlich gemacht!",
         "verb": "sein",
-        "answer": ["sei"]
+        "answer": [
+          "sei"
+        ]
       },
       {
         "sentence": "Mutti, ___ mir bitte kurz, ich finde meine Tasche nicht!",
         "verb": "helfen",
-        "answer": ["hilf"]
+        "answer": [
+          "hilf"
+        ]
       },
       {
         "sentence": "___ doch schneller, Paul, sonst kommen wir zu spät zur Schule!",
         "verb": "fahren",
-        "answer": ["fahr"]
+        "answer": [
+          "fahr"
+        ]
       },
       {
         "sentence": "Kinder, ___ lieber diesen Mann nach dem Weg, wir sind hier fremd.",
         "verb": "fragen",
-        "answer": ["fragt"]
+        "answer": [
+          "fragt"
+        ]
       },
       {
         "sentence": "Wo ist hier eine Apotheke? – ___ ca. 200 Meter geradeaus, dann links.",
         "verb": "fahren",
-        "answer": ["Fahren Sie"]
+        "answer": [
+          "Fahren Sie"
+        ]
       },
-
       {
         "sentence": "Paul, ___ bitte heute nicht so nervös, wir haben genug Zeit.",
         "verb": "sein",
-        "answer": ["sei"]
+        "answer": [
+          "sei"
+        ]
       },
       {
         "sentence": "Kinder, ___ bitte leise in der Bücherei, dort lesen viele Leute.",
         "verb": "sein",
-        "answer": ["seid"]
+        "answer": [
+          "seid"
+        ]
       },
       {
         "sentence": "Tom, ___ bitte die Tür ___!",
         "verb": "zumachen",
-        "answer": ["mach", "zu"]
+        "answer": [
+          "mach",
+          "zu"
+        ]
       },
       {
         "sentence": "Paul, ___ bitte langsam!",
         "verb": "sprechen",
-        "answer": ["sprich"]
+        "answer": [
+          "sprich"
+        ]
       },
       {
         "sentence": "Herr Lehrer, ___ bitte nicht so streng, wir sind noch Anfänger.",
         "verb": "sein",
-        "answer": ["seien Sie"]
+        "answer": [
+          "seien Sie"
+        ]
       },
       {
         "sentence": "Paul, ___ bitte keine Angst, ich bin gleich wieder da.",
         "verb": "haben",
-        "answer": ["hab"]
+        "answer": [
+          "hab"
+        ]
       },
       {
         "sentence": "Kinder, ___ bitte eure Hefte und Stifte dabei, wir schreiben heute einen Test.",
         "verb": "haben",
-        "answer": ["habt"]
+        "answer": [
+          "habt"
+        ]
       },
       {
         "sentence": "Lisa, ___ mir bitte Wasser!",
         "verb": "geben",
-        "answer": ["gib"]
+        "answer": [
+          "gib"
+        ]
       },
       {
         "sentence": "___ bitte ruhig, es ist schon spät und die Nachbarn schlafen.",
         "verb": "sein wir",
-        "answer": ["Seien wir"]
+        "answer": [
+          "Seien wir"
+        ]
       },
       {
         "sentence": "Anna, ___ bitte das Buch!",
         "verb": "lesen",
-        "answer": ["lies"]
+        "answer": [
+          "lies"
+        ]
       },
       {
         "sentence": "Kinder, ___ bitte den Text!",
         "verb": "lesen",
-        "answer": ["lest"]
+        "answer": [
+          "lest"
+        ]
       },
       {
         "sentence": "Anna, ___ bitte die Musik ___!",
         "verb": "anmachen",
-        "answer": ["mach", "an"]
+        "answer": [
+          "mach",
+          "an"
+        ]
       },
       {
         "sentence": "Paula, ___ mir bitte ___!",
         "verb": "zuhören",
-        "answer": ["hör", "zu"]
+        "answer": [
+          "hör",
+          "zu"
+        ]
       },
       {
         "sentence": "Lisa, ___ bitte hier!",
         "verb": "bleiben",
-        "answer": ["bleib"]
+        "answer": [
+          "bleib"
+        ]
       },
       {
         "sentence": "___ bitte keine Angst, wir finden den Weg.",
         "verb": "haben",
-        "answer": ["Haben wir"]
+        "answer": [
+          "Haben wir"
+        ]
       },
       {
         "sentence": "Paul, ___ bitte nicht so streng mit dir, du lernst schnell.",
         "verb": "sein",
-        "answer": ["sei"]
+        "answer": [
+          "sei"
+        ]
       },
       {
         "sentence": "Kinder, ___ bitte nicht so wild im Wohnzimmer, die Lampe ist teuer.",
         "verb": "sein",
-        "answer": ["seid"]
+        "answer": [
+          "seid"
+        ]
       },
       {
         "sentence": "Paul, ___ bitte Ruhe, ich telefoniere gerade mit dem Chef.",
         "verb": "haben",
-        "answer": ["hab"]
+        "answer": [
+          "hab"
+        ]
       },
       {
         "sentence": "Kinder, ___ bitte eure Hausaufgaben dabei, ich kontrolliere sie jetzt.",
         "verb": "haben",
-        "answer": ["habt"]
+        "answer": [
+          "habt"
+        ]
       },
       {
         "sentence": "Max, ___ bitte das Telefon ___, es klingelt schon lange.",
         "verb": "abnehmen",
-        "answer": ["nimm", "ab"]
+        "answer": [
+          "nimm",
+          "ab"
+        ]
       },
       {
         "sentence": "Herr Wagner, ___ bitte vorsichtig!",
         "verb": "sein",
-        "answer": ["seien Sie"]
+        "answer": [
+          "seien Sie"
+        ]
       },
       {
         "sentence": "Kinder, ___ bitte nicht zu spät, das Abendessen ist schon fertig.",
         "verb": "sein",
-        "answer": ["seid"]
+        "answer": [
+          "seid"
+        ]
       },
       {
         "sentence": "Nina, ___ bitte die Tasche ___!",
         "verb": "mitnehmen",
-        "answer": ["nimm", "mit"]
+        "answer": [
+          "nimm",
+          "mit"
+        ]
       },
       {
         "sentence": "Kinder, ___ bitte eure Mützen dabei, draußen schneit es.",
         "verb": "haben",
-        "answer": ["habt"]
+        "answer": [
+          "habt"
+        ]
       },
       {
         "sentence": "___ bitte noch fünf Minuten Zeit, dann gehen wir nach Hause.",
         "verb": "haben",
-        "answer": ["Haben wir"]
+        "answer": [
+          "Haben wir"
+        ]
       },
       {
         "sentence": "Kinder, ___ bitte nicht böse, ich habe die Schokolade vergessen.",
         "verb": "sein",
-        "answer": ["seid"]
+        "answer": [
+          "seid"
+        ]
       },
       {
         "sentence": "Jana, ___ bitte deine Brille, du brauchst sie für die Schule.",
         "verb": "suchen",
-        "answer": ["such"]
+        "answer": [
+          "such"
+        ]
       },
       {
         "sentence": "Paul, ___ bitte nach links, dann siehst du die Apotheke.",
         "verb": "gehen",
-        "answer": ["geh"]
+        "answer": [
+          "geh"
+        ]
       }
     ]
   ]

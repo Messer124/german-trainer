@@ -1,85 +1,592 @@
 {
-  "title": {
-    "ru": "Глаголы в Perfekt",
-    "en": "Verbs in Perfekt"
-  },
   "instructions": {
     "ru": "Вставьте нужный вспомогательный глагол и глагол в Perfect",
     "en": "Insert the required auxiliary verb and verb into the Perfect"
   },
   "items": [
-    { "sentence": "Wir ___ einen Kuchen ___", "verb": "essen", "answer": ["haben", "gegessen"] },
-    { "sentence": "Die Kinder ___ in der Schule ___", "verb": "sein", "answer": ["sind", "gewesen"] },
-    { "sentence": "Er ___ den Hund ___", "verb": "füttern", "answer": ["hat", "gefüttert"] },
-    { "sentence": "Wir ___ ins Kino ___", "verb": "gehen", "answer": ["sind", "gegangen"] },
-    { "sentence": "Ihr ___ die Zeitung ___", "verb": "lesen", "answer": ["habt", "gelesen"] },
-    { "sentence": "Ich ___ mit ihm ___", "verb": "telefonieren", "answer": ["habe", "telefoniert"] },
-    { "sentence": "Der Bus ___ eine Verspätung ___", "verb": "haben", "answer": ["hat", "gehabt"] },
-    { "sentence": "Der Zug ___ pünktlich ___", "verb": "ankommen", "answer": ["ist", "angekommen"] },
-    { "sentence": "Er ___ auf uns ___", "verb": "warten", "answer": ["hat", "gewartet"] },
-    { "sentence": "Ich ___ dich ___", "verb": "vermissen", "answer": ["habe", "vermisst"] },
-    { "sentence": "Ich ___ dir sofort ___", "verb": "antworten", "answer": ["habe", "geantwortet"] },
-    { "sentence": "Sie ___ gestern einen Kuchen ___", "verb": "backen", "answer": ["hat", "gebacken"] },
-    { "sentence": "Der Chef ___ mir ____, früher zu kommen", "verb": "befehlen", "answer": ["hat", "befohlen"] },
-    { "sentence": "Der Film ___ um 20 Uhr ___", "verb": "beginnen", "answer": ["hat", "begonnen"] },
-    { "sentence": "Wir ___ das Spiel ___", "verb": "beenden", "answer": ["haben", "beendet"] },
-    { "sentence": "Der Laden ___ mir Hilfe ___", "verb": "bieten", "answer": ["hat", "geboten"] },
-    { "sentence": "Die Kerze ___ die ganze Nacht ___", "verb": "brennen", "answer": ["hat", "gebrannt"] },
-    { "sentence": "Ich ___ dir das Buch ___", "verb": "bringen", "answer": ["habe", "gebracht"] },
-    { "sentence": "Ich ___ an dich ___", "verb": "denken", "answer": ["habe", "gedacht"] },
-    { "sentence": "Der Arzt ___ mir Tee ___", "verb": "empfehlen", "answer": ["hat", "empfohlen"] },
-    { "sentence": "Das Glas ___ auf den Boden ___", "verb": "fallen", "answer": ["ist", "gefallen"] },
-    { "sentence": "Der Hund ___ den Ball ___", "verb": "fangen", "answer": ["hat", "gefangen"] },
-    { "sentence": "Wir ___ nach Hause ___", "verb": "fahren", "answer": ["sind", "gefahren"] },
-    { "sentence": "Ich ___ den Schlüssel ___", "verb": "finden", "answer": ["habe", "gefunden"] },
-    { "sentence": "Wir ___ nach Spanien ___", "verb": "fliegen", "answer": ["sind", "geflogen"] },
-    { "sentence": "Ich ___ dich etwas ___", "verb": "fragen", "answer": ["habe", "gefragt"] },
-    { "sentence": "Der Hund ___ das Fleisch ___", "verb": "fressen", "answer": ["hat", "gefressen"] },
-    { "sentence": "Er ___ mir ein Buch ___", "verb": "geben", "answer": ["hat", "gegeben"] },
-    { "sentence": "Ich ___ gestern früh ___", "verb": "gehen", "answer": ["bin", "gegangen"] },
-    { "sentence": "Der Kuchen ___ gut ___", "verb": "gelingen", "answer": ["ist", "gelungen"] },
-    { "sentence": "Was ___ gestern ___?", "verb": "geschehen", "answer": ["ist", "geschehen"] },
-    { "sentence": "Unsere Mannschaft ___ ___", "verb": "gewinnen", "answer": ["hat", "gewonnen"] },
-    { "sentence": "Ich ___ die Blumen ___", "verb": "gießen", "answer": ["habe", "gegossen"] },
-    { "sentence": "Du ___ mir ___", "verb": "helfen", "answer": ["hast", "geholfen"] },
-    { "sentence": "Wir ___ Musik ___", "verb": "hören", "answer": ["haben", "gehört"] },
-    { "sentence": "Er ___ spät ___", "verb": "kommen", "answer": ["ist", "gekommen"] },
-    { "sentence": "Ich ___ Suppe ___", "verb": "kochen", "answer": ["habe", "gekocht"] },
-    { "sentence": "Das Baby ___ unter den Tisch ___", "verb": "kriechen", "answer": ["ist", "gekrochen"] },
-    { "sentence": "Wir ___ im Park ___", "verb": "laufen", "answer": ["sind", "gelaufen"] },
-    { "sentence": "Ich ___ das Buch ___", "verb": "lesen", "answer": ["habe", "gelesen"] },
-    { "sentence": "Mein Handy ___ auf dem Tisch ___", "verb": "liegen", "answer": ["hat", "gelegen"] },
-    { "sentence": "Wir ___ Fotos ___", "verb": "machen", "answer": ["haben", "gemacht"] },
-    { "sentence": "Sie ___ den Bus ___", "verb": "nehmen", "answer": ["hat", "genommen"] },
-    { "sentence": "Er ___ mich „Dima“ ___", "verb": "nennen", "answer": ["hat", "genannt"] },
-    { "sentence": "Ich ___ das Fenster ___", "verb": "öffnen", "answer": ["habe", "geöffnet"] },
-    { "sentence": "Die Kinder ___ nach Hause ___", "verb": "rennen", "answer": ["sind", "gerannt"] },
-    { "sentence": "Ich ___ dich ___", "verb": "rufen", "answer": ["habe", "gerufen"] },
-    { "sentence": "Er ___ nichts ___", "verb": "sagen", "answer": ["hat", "gesagt"] },
-    { "sentence": "Ich ___ gut ___", "verb": "schlafen", "answer": ["habe", "geschlafen"] },
-    { "sentence": "Er ___ den Ball ___", "verb": "schlagen", "answer": ["hat", "geschlagen"] },
-    { "sentence": "Ich ___ einen Brief ___", "verb": "schreiben", "answer": ["habe", "geschrieben"] },
-    { "sentence": "Wir ___ den Film ___", "verb": "sehen", "answer": ["haben", "gesehen"] },
-    { "sentence": "Ich ___ heute zu Hause ___", "verb": "sein", "answer": ["bin", "gewesen"] },
-    { "sentence": "Wir ___ ein Lied ___", "verb": "singen", "answer": ["haben", "gesungen"] },
-    { "sentence": "Wir ___ lange im Café ___", "verb": "sitzen", "answer": ["haben", "gesessen"] },
-    { "sentence": "Ich ___ mit ihm ___", "verb": "sprechen", "answer": ["habe", "gesprochen"] },
-    { "sentence": "Das Flugzeug ___ um 9 Uhr ___", "verb": "starten", "answer": ["ist", "gestartet"] },
-    { "sentence": "Er ___ vor der Tür ___", "verb": "stehen", "answer": ["hat", "gestanden"] },
-    { "sentence": "Wir ___ in den Bus ___", "verb": "steigen", "answer": ["sind", "gestiegen"] },
-    { "sentence": "Sein Hund ___ ___", "verb": "sterben", "answer": ["ist", "gestorben"] },
-    { "sentence": "Sie ___ eine schwere Tasche ___", "verb": "tragen", "answer": ["hat", "getragen"] },
-    { "sentence": "Wir ___ uns gestern ___", "verb": "treffen", "answer": ["haben", "getroffen"] },
-    { "sentence": "Ich ___ Wasser ___", "verb": "trinken", "answer": ["habe", "getrunken"] },
-    { "sentence": "Was ___ du ___?", "verb": "tun", "answer": ["hast", "getan"] },
-    { "sentence": "Ich ___ den Termin ___", "verb": "vergessen", "answer": ["habe", "vergessen"] },
-    { "sentence": "Er ___ sein Handy ___", "verb": "verlieren", "answer": ["hat", "verloren"] },
-    { "sentence": "Ich ___ dich nicht ___", "verb": "verstehen", "answer": ["habe", "verstanden"] },
-    { "sentence": "Er ___ den Ball weit ___", "verb": "werfen", "answer": ["hat", "geworfen"] },
-    { "sentence": "Ich ___ müde ___", "verb": "werden", "answer": ["bin", "geworden"] },
-    { "sentence": "Ich ___ es nicht ___", "verb": "wissen", "answer": ["habe", "gewusst"] },
-    { "sentence": "Sie ___ mir den Weg ___", "verb": "zeigen", "answer": ["hat", "gezeigt"] },
-    { "sentence": "Wir ___ in eine neue Wohnung ___", "verb": "ziehen", "answer": ["sind", "gezogen"] },
-    { "sentence": "Der Chef ___ mich ___", "verb": "zwingen", "answer": ["hat", "gezwungen"] }
+    {
+      "sentence": "Wir ___ einen Kuchen ___",
+      "verb": "essen",
+      "answer": [
+        "haben",
+        "gegessen"
+      ]
+    },
+    {
+      "sentence": "Die Kinder ___ in der Schule ___",
+      "verb": "sein",
+      "answer": [
+        "sind",
+        "gewesen"
+      ]
+    },
+    {
+      "sentence": "Er ___ den Hund ___",
+      "verb": "füttern",
+      "answer": [
+        "hat",
+        "gefüttert"
+      ]
+    },
+    {
+      "sentence": "Wir ___ ins Kino ___",
+      "verb": "gehen",
+      "answer": [
+        "sind",
+        "gegangen"
+      ]
+    },
+    {
+      "sentence": "Ihr ___ die Zeitung ___",
+      "verb": "lesen",
+      "answer": [
+        "habt",
+        "gelesen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mit ihm ___",
+      "verb": "telefonieren",
+      "answer": [
+        "habe",
+        "telefoniert"
+      ]
+    },
+    {
+      "sentence": "Der Bus ___ eine Verspätung ___",
+      "verb": "haben",
+      "answer": [
+        "hat",
+        "gehabt"
+      ]
+    },
+    {
+      "sentence": "Der Zug ___ pünktlich ___",
+      "verb": "ankommen",
+      "answer": [
+        "ist",
+        "angekommen"
+      ]
+    },
+    {
+      "sentence": "Er ___ auf uns ___",
+      "verb": "warten",
+      "answer": [
+        "hat",
+        "gewartet"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dich ___",
+      "verb": "vermissen",
+      "answer": [
+        "habe",
+        "vermisst"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dir sofort ___",
+      "verb": "antworten",
+      "answer": [
+        "habe",
+        "geantwortet"
+      ]
+    },
+    {
+      "sentence": "Sie ___ gestern einen Kuchen ___",
+      "verb": "backen",
+      "answer": [
+        "hat",
+        "gebacken"
+      ]
+    },
+    {
+      "sentence": "Der Chef ___ mir ____, früher zu kommen",
+      "verb": "befehlen",
+      "answer": [
+        "hat",
+        "befohlen"
+      ]
+    },
+    {
+      "sentence": "Der Film ___ um 20 Uhr ___",
+      "verb": "beginnen",
+      "answer": [
+        "hat",
+        "begonnen"
+      ]
+    },
+    {
+      "sentence": "Wir ___ das Spiel ___",
+      "verb": "beenden",
+      "answer": [
+        "haben",
+        "beendet"
+      ]
+    },
+    {
+      "sentence": "Der Laden ___ mir Hilfe ___",
+      "verb": "bieten",
+      "answer": [
+        "hat",
+        "geboten"
+      ]
+    },
+    {
+      "sentence": "Die Kerze ___ die ganze Nacht ___",
+      "verb": "brennen",
+      "answer": [
+        "hat",
+        "gebrannt"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dir das Buch ___",
+      "verb": "bringen",
+      "answer": [
+        "habe",
+        "gebracht"
+      ]
+    },
+    {
+      "sentence": "Ich ___ an dich ___",
+      "verb": "denken",
+      "answer": [
+        "habe",
+        "gedacht"
+      ]
+    },
+    {
+      "sentence": "Der Arzt ___ mir Tee ___",
+      "verb": "empfehlen",
+      "answer": [
+        "hat",
+        "empfohlen"
+      ]
+    },
+    {
+      "sentence": "Das Glas ___ auf den Boden ___",
+      "verb": "fallen",
+      "answer": [
+        "ist",
+        "gefallen"
+      ]
+    },
+    {
+      "sentence": "Der Hund ___ den Ball ___",
+      "verb": "fangen",
+      "answer": [
+        "hat",
+        "gefangen"
+      ]
+    },
+    {
+      "sentence": "Wir ___ nach Hause ___",
+      "verb": "fahren",
+      "answer": [
+        "sind",
+        "gefahren"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Schlüssel ___",
+      "verb": "finden",
+      "answer": [
+        "habe",
+        "gefunden"
+      ]
+    },
+    {
+      "sentence": "Wir ___ nach Spanien ___",
+      "verb": "fliegen",
+      "answer": [
+        "sind",
+        "geflogen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dich etwas ___",
+      "verb": "fragen",
+      "answer": [
+        "habe",
+        "gefragt"
+      ]
+    },
+    {
+      "sentence": "Der Hund ___ das Fleisch ___",
+      "verb": "fressen",
+      "answer": [
+        "hat",
+        "gefressen"
+      ]
+    },
+    {
+      "sentence": "Er ___ mir ein Buch ___",
+      "verb": "geben",
+      "answer": [
+        "hat",
+        "gegeben"
+      ]
+    },
+    {
+      "sentence": "Ich ___ gestern früh ___",
+      "verb": "gehen",
+      "answer": [
+        "bin",
+        "gegangen"
+      ]
+    },
+    {
+      "sentence": "Der Kuchen ___ gut ___",
+      "verb": "gelingen",
+      "answer": [
+        "ist",
+        "gelungen"
+      ]
+    },
+    {
+      "sentence": "Was ___ gestern ___?",
+      "verb": "geschehen",
+      "answer": [
+        "ist",
+        "geschehen"
+      ]
+    },
+    {
+      "sentence": "Unsere Mannschaft ___ ___",
+      "verb": "gewinnen",
+      "answer": [
+        "hat",
+        "gewonnen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Blumen ___",
+      "verb": "gießen",
+      "answer": [
+        "habe",
+        "gegossen"
+      ]
+    },
+    {
+      "sentence": "Du ___ mir ___",
+      "verb": "helfen",
+      "answer": [
+        "hast",
+        "geholfen"
+      ]
+    },
+    {
+      "sentence": "Wir ___ Musik ___",
+      "verb": "hören",
+      "answer": [
+        "haben",
+        "gehört"
+      ]
+    },
+    {
+      "sentence": "Er ___ spät ___",
+      "verb": "kommen",
+      "answer": [
+        "ist",
+        "gekommen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ Suppe ___",
+      "verb": "kochen",
+      "answer": [
+        "habe",
+        "gekocht"
+      ]
+    },
+    {
+      "sentence": "Das Baby ___ unter den Tisch ___",
+      "verb": "kriechen",
+      "answer": [
+        "ist",
+        "gekrochen"
+      ]
+    },
+    {
+      "sentence": "Wir ___ im Park ___",
+      "verb": "laufen",
+      "answer": [
+        "sind",
+        "gelaufen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Buch ___",
+      "verb": "lesen",
+      "answer": [
+        "habe",
+        "gelesen"
+      ]
+    },
+    {
+      "sentence": "Mein Handy ___ auf dem Tisch ___",
+      "verb": "liegen",
+      "answer": [
+        "hat",
+        "gelegen"
+      ]
+    },
+    {
+      "sentence": "Wir ___ Fotos ___",
+      "verb": "machen",
+      "answer": [
+        "haben",
+        "gemacht"
+      ]
+    },
+    {
+      "sentence": "Sie ___ den Bus ___",
+      "verb": "nehmen",
+      "answer": [
+        "hat",
+        "genommen"
+      ]
+    },
+    {
+      "sentence": "Er ___ mich „Dima“ ___",
+      "verb": "nennen",
+      "answer": [
+        "hat",
+        "genannt"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Fenster ___",
+      "verb": "öffnen",
+      "answer": [
+        "habe",
+        "geöffnet"
+      ]
+    },
+    {
+      "sentence": "Die Kinder ___ nach Hause ___",
+      "verb": "rennen",
+      "answer": [
+        "sind",
+        "gerannt"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dich ___",
+      "verb": "rufen",
+      "answer": [
+        "habe",
+        "gerufen"
+      ]
+    },
+    {
+      "sentence": "Er ___ nichts ___",
+      "verb": "sagen",
+      "answer": [
+        "hat",
+        "gesagt"
+      ]
+    },
+    {
+      "sentence": "Ich ___ gut ___",
+      "verb": "schlafen",
+      "answer": [
+        "habe",
+        "geschlafen"
+      ]
+    },
+    {
+      "sentence": "Er ___ den Ball ___",
+      "verb": "schlagen",
+      "answer": [
+        "hat",
+        "geschlagen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ einen Brief ___",
+      "verb": "schreiben",
+      "answer": [
+        "habe",
+        "geschrieben"
+      ]
+    },
+    {
+      "sentence": "Wir ___ den Film ___",
+      "verb": "sehen",
+      "answer": [
+        "haben",
+        "gesehen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ heute zu Hause ___",
+      "verb": "sein",
+      "answer": [
+        "bin",
+        "gewesen"
+      ]
+    },
+    {
+      "sentence": "Wir ___ ein Lied ___",
+      "verb": "singen",
+      "answer": [
+        "haben",
+        "gesungen"
+      ]
+    },
+    {
+      "sentence": "Wir ___ lange im Café ___",
+      "verb": "sitzen",
+      "answer": [
+        "haben",
+        "gesessen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mit ihm ___",
+      "verb": "sprechen",
+      "answer": [
+        "habe",
+        "gesprochen"
+      ]
+    },
+    {
+      "sentence": "Das Flugzeug ___ um 9 Uhr ___",
+      "verb": "starten",
+      "answer": [
+        "ist",
+        "gestartet"
+      ]
+    },
+    {
+      "sentence": "Er ___ vor der Tür ___",
+      "verb": "stehen",
+      "answer": [
+        "hat",
+        "gestanden"
+      ]
+    },
+    {
+      "sentence": "Wir ___ in den Bus ___",
+      "verb": "steigen",
+      "answer": [
+        "sind",
+        "gestiegen"
+      ]
+    },
+    {
+      "sentence": "Sein Hund ___ ___",
+      "verb": "sterben",
+      "answer": [
+        "ist",
+        "gestorben"
+      ]
+    },
+    {
+      "sentence": "Sie ___ eine schwere Tasche ___",
+      "verb": "tragen",
+      "answer": [
+        "hat",
+        "getragen"
+      ]
+    },
+    {
+      "sentence": "Wir ___ uns gestern ___",
+      "verb": "treffen",
+      "answer": [
+        "haben",
+        "getroffen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ Wasser ___",
+      "verb": "trinken",
+      "answer": [
+        "habe",
+        "getrunken"
+      ]
+    },
+    {
+      "sentence": "Was ___ du ___?",
+      "verb": "tun",
+      "answer": [
+        "hast",
+        "getan"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Termin ___",
+      "verb": "vergessen",
+      "answer": [
+        "habe",
+        "vergessen"
+      ]
+    },
+    {
+      "sentence": "Er ___ sein Handy ___",
+      "verb": "verlieren",
+      "answer": [
+        "hat",
+        "verloren"
+      ]
+    },
+    {
+      "sentence": "Ich ___ dich nicht ___",
+      "verb": "verstehen",
+      "answer": [
+        "habe",
+        "verstanden"
+      ]
+    },
+    {
+      "sentence": "Er ___ den Ball weit ___",
+      "verb": "werfen",
+      "answer": [
+        "hat",
+        "geworfen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ müde ___",
+      "verb": "werden",
+      "answer": [
+        "bin",
+        "geworden"
+      ]
+    },
+    {
+      "sentence": "Ich ___ es nicht ___",
+      "verb": "wissen",
+      "answer": [
+        "habe",
+        "gewusst"
+      ]
+    },
+    {
+      "sentence": "Sie ___ mir den Weg ___",
+      "verb": "zeigen",
+      "answer": [
+        "hat",
+        "gezeigt"
+      ]
+    },
+    {
+      "sentence": "Wir ___ in eine neue Wohnung ___",
+      "verb": "ziehen",
+      "answer": [
+        "sind",
+        "gezogen"
+      ]
+    },
+    {
+      "sentence": "Der Chef ___ mich ___",
+      "verb": "zwingen",
+      "answer": [
+        "hat",
+        "gezwungen"
+      ]
+    }
   ]
 }

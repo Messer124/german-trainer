@@ -1,64 +1,208 @@
 {
-  "title": {
-    "ru": "Время",
-    "en": "Time"
-  },
-
   "instructions": {
     "ru": "Введите выражение времени в разговорном стиле.",
     "en": "Enter the expression of time in a conversational style."
   },
-
   "items": [
-    { "time": "07:30", "answer": "halb acht" },
-    { "time": "10:20", "answer": "zwanzig nach zehn" },
-    { "time": "09:35", "answer": "fünf nach halb zehn" },
-    { "time": "15:30", "answer": "halb vier" },
-    { "time": "02:40", "answer": "zwanzig vor drei" },
-    { "time": "07:55", "answer": "fünf vor acht" },
-    { "time": "11:58", "answer": "kurz vor zwölf" },
-    { "time": "16:20", "answer": "zwanzig nach vier" },
-    { "time": "03:05", "answer": "fünf nach drei" },
-    { "time": "14:15", "answer": "Viertel nach zwei" },
-    { "time": "17:10", "answer": "zehn nach fünf" },
-    { "time": "15:25", "answer": "fünf vor halb vier" },
-    { "time": "09:45", "answer": "Viertel vor zehn" },
-    { "time": "08:50", "answer": "zehn vor neun" },
-    { "time": "01:02", "answer": "kurz nach eins" },
-    { "time": "06:15", "answer": "Viertel nach sechs" },
-    { "time": "12:45", "answer": "Viertel vor eins" },
-    { "time": "04:10", "answer": "zehn nach vier" },
-    { "time": "13:50", "answer": "zehn vor zwei" },
-    { "time": "18:30", "answer": "halb sieben" },
-    { "time": "21:20", "answer": "zwanzig nach neun" },
-    { "time": "22:40", "answer": "zwanzig vor elf" },
-    { "time": "05:55", "answer": "fünf vor sechs" },
-    { "time": "19:35", "answer": "fünf nach halb acht" },
-    { "time": "23:25", "answer": "fünf vor halb zwölf" },
-    { "time": "10:05", "answer": "fünf nach zehn" },
-    { "time": "11:30", "answer": "halb zwölf" },
-    { "time": "02:15", "answer": "Viertel nach zwei" },
-    { "time": "03:45", "answer": "Viertel vor vier" },
-    { "time": "17:50", "answer": "zehn vor sechs" },
-    { "time": "08:12", "answer": "zwölf nach acht" },
-    { "time": "14:58", "answer": "kurz vor drei" },
-    { "time": "00:03", "answer": "kurz nach zwölf" },
-    { "time": "16:45", "answer": "Viertel vor fünf" },
-    { "time": "20:35", "answer": "fünf nach halb neun" },
-    { "time": "07:22", "answer": "zweiundzwanzig nach sieben" },
-    { "time": "09:18", "answer": "achtzehn nach neun" },
-    { "time": "12:05", "answer": "fünf nach zwölf" },
-    { "time": "13:28", "answer": "achtundzwanzig nach eins" },
-    { "time": "04:50", "answer": "zehn vor fünf" },
-    { "time": "15:12", "answer": "zwölf nach drei" },
-    { "time": "05:40", "answer": "zwanzig vor sechs" },
-    { "time": "18:05", "answer": "fünf nach sechs" },
-    { "time": "22:15", "answer": "Viertel nach zehn" },
-    { "time": "06:42", "answer": "achtzehn vor sieben" },
-    { "time": "17:30", "answer": "halb sechs" },
-    { "time": "03:55", "answer": "fünf vor vier" },
-    { "time": "11:18", "answer": "achtzehn nach elf" },
-    { "time": "19:45", "answer": "Viertel vor acht" },
-    { "time": "02:32", "answer": "zwei nach halb drei" }
+    {
+      "time": "07:30",
+      "answer": "halb acht"
+    },
+    {
+      "time": "10:20",
+      "answer": "zwanzig nach zehn"
+    },
+    {
+      "time": "09:35",
+      "answer": "fünf nach halb zehn"
+    },
+    {
+      "time": "15:30",
+      "answer": "halb vier"
+    },
+    {
+      "time": "02:40",
+      "answer": "zwanzig vor drei"
+    },
+    {
+      "time": "07:55",
+      "answer": "fünf vor acht"
+    },
+    {
+      "time": "11:58",
+      "answer": "kurz vor zwölf"
+    },
+    {
+      "time": "16:20",
+      "answer": "zwanzig nach vier"
+    },
+    {
+      "time": "03:05",
+      "answer": "fünf nach drei"
+    },
+    {
+      "time": "14:15",
+      "answer": "Viertel nach zwei"
+    },
+    {
+      "time": "17:10",
+      "answer": "zehn nach fünf"
+    },
+    {
+      "time": "15:25",
+      "answer": "fünf vor halb vier"
+    },
+    {
+      "time": "09:45",
+      "answer": "Viertel vor zehn"
+    },
+    {
+      "time": "08:50",
+      "answer": "zehn vor neun"
+    },
+    {
+      "time": "01:02",
+      "answer": "kurz nach eins"
+    },
+    {
+      "time": "06:15",
+      "answer": "Viertel nach sechs"
+    },
+    {
+      "time": "12:45",
+      "answer": "Viertel vor eins"
+    },
+    {
+      "time": "04:10",
+      "answer": "zehn nach vier"
+    },
+    {
+      "time": "13:50",
+      "answer": "zehn vor zwei"
+    },
+    {
+      "time": "18:30",
+      "answer": "halb sieben"
+    },
+    {
+      "time": "21:20",
+      "answer": "zwanzig nach neun"
+    },
+    {
+      "time": "22:40",
+      "answer": "zwanzig vor elf"
+    },
+    {
+      "time": "05:55",
+      "answer": "fünf vor sechs"
+    },
+    {
+      "time": "19:35",
+      "answer": "fünf nach halb acht"
+    },
+    {
+      "time": "23:25",
+      "answer": "fünf vor halb zwölf"
+    },
+    {
+      "time": "10:05",
+      "answer": "fünf nach zehn"
+    },
+    {
+      "time": "11:30",
+      "answer": "halb zwölf"
+    },
+    {
+      "time": "02:15",
+      "answer": "Viertel nach zwei"
+    },
+    {
+      "time": "03:45",
+      "answer": "Viertel vor vier"
+    },
+    {
+      "time": "17:50",
+      "answer": "zehn vor sechs"
+    },
+    {
+      "time": "08:12",
+      "answer": "zwölf nach acht"
+    },
+    {
+      "time": "14:58",
+      "answer": "kurz vor drei"
+    },
+    {
+      "time": "00:03",
+      "answer": "kurz nach zwölf"
+    },
+    {
+      "time": "16:45",
+      "answer": "Viertel vor fünf"
+    },
+    {
+      "time": "20:35",
+      "answer": "fünf nach halb neun"
+    },
+    {
+      "time": "07:22",
+      "answer": "zweiundzwanzig nach sieben"
+    },
+    {
+      "time": "09:18",
+      "answer": "achtzehn nach neun"
+    },
+    {
+      "time": "12:05",
+      "answer": "fünf nach zwölf"
+    },
+    {
+      "time": "13:28",
+      "answer": "achtundzwanzig nach eins"
+    },
+    {
+      "time": "04:50",
+      "answer": "zehn vor fünf"
+    },
+    {
+      "time": "15:12",
+      "answer": "zwölf nach drei"
+    },
+    {
+      "time": "05:40",
+      "answer": "zwanzig vor sechs"
+    },
+    {
+      "time": "18:05",
+      "answer": "fünf nach sechs"
+    },
+    {
+      "time": "22:15",
+      "answer": "Viertel nach zehn"
+    },
+    {
+      "time": "06:42",
+      "answer": "achtzehn vor sieben"
+    },
+    {
+      "time": "17:30",
+      "answer": "halb sechs"
+    },
+    {
+      "time": "03:55",
+      "answer": "fünf vor vier"
+    },
+    {
+      "time": "11:18",
+      "answer": "achtzehn nach elf"
+    },
+    {
+      "time": "19:45",
+      "answer": "Viertel vor acht"
+    },
+    {
+      "time": "02:32",
+      "answer": "zwei nach halb drei"
+    }
   ]
 }
