@@ -1035,6 +1035,90 @@ table.mv-table tbody td {
   font-size: var(--desktop-modal-font-size);
 }
 
+/* Основная сетка 3x3 */
+.cats-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Карточка */
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-color: #ccc;
+}
+
+/* Визуал */
+.cat-card-visual {
+  width: 100%;
+  max-width: 110px; /* Чуть увеличили */
+  aspect-ratio: 1 / 1;
+}
+
+.cat-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  /* drop-shadow помогает отделить SVG от фона */
+  filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.1));
+}
+
+/* Подпись */
+.cat-card-label {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #333643;
+}
+
+
+/* Разделитель между группами глаголов */
+.theory-divider {
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  margin: 16px 0;
+}
+
+/* Контейнер для группы глагола (действие + состояние) */
+.theory-group {
+  margin-bottom: 20px;
+}
+
+/* Специфический отступ для курсивных примеров */
+.theory-group em {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--theory-text-color);
+}
+
+/* Адаптив для мобилок (чтобы колонки стали друг под друга) */
+@media (max-width: 768px) {
+  .theory-section--two-cols {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Адаптив */
+@media (max-width: 500px) {
+  .cats-visual-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 @media (max-width: 1200px) {
 

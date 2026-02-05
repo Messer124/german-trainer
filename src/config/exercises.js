@@ -22,6 +22,7 @@ import ConjunctiveAdverbs from "../exercises/A2/ConjunctiveAdverbs";
 import AuxiliaryVerbs from "../exercises/A1-2/AuxiliaryVerbs";
 import VerbsPerfekt from "../exercises/A1-2/VerbsPerfekt";
 import VerbsPreteritum from "../exercises/A1-2/VerbsPreteritum";
+import Wechselpraepositionen from "../exercises/A2/Wechselpraepositionen";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -124,6 +125,10 @@ export const EXERCISES_BY_LEVEL = {
         "conjunctive-adverbs": {
             storageKey: "conjunctive-adverbs-answers",
             component: ConjunctiveAdverbs,
+        },
+        "wechselpraepositionen": {
+            storageKey: "wechselpraepositionen-answers",
+            component: Wechselpraepositionen,
         }
     },
 };

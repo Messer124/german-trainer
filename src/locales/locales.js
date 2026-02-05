@@ -26,7 +26,8 @@ const translations = {
       "prepositions-place": "Предлоги места",
       "conjunctions": "Союзы",
       "subordinating-conjunctions": "Подчинительные союзы",
-      "conjunctive-adverbs": "Союзные слова"
+      "conjunctive-adverbs": "Союзные слова",
+      "wechselpraepositionen": "Wechselpräpositionen"
     },
     labels: {
       level: "Уровень",
@@ -60,7 +61,8 @@ const translations = {
       "prepositions-place": "Prepositions of place",
       "conjunctions": "Conjunctions",
       "subordinating-conjunctions": "Subordinating conjunctions",
-      "conjunctive-adverbs": "Conjunctive adverbs"
+      "conjunctive-adverbs": "Conjunctive adverbs",
+      "wechselpraepositionen": "Wechselpräpositionen"
     },
     labels: {
       level: "Level",

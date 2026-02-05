@@ -1,0 +1,362 @@
+{
+  "title": {
+    "ru": "Wechselpräpositionen",
+    "en": "Wechselpräpositionen"
+  },
+  "instructions": {
+    "ru": "Определите, какой глагол и предлог необходимы",
+    "en": "Determine which verb and preposition are needed"
+  },
+  "items": [
+    {
+      "sentence": "Der Schlüssel ___ ___ der Tür. Aber ich stecke ihn in das Schloss.",
+      "answer": [
+        "liegt",
+        "vor"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Karte ___ das Buch. Aber jetzt steckt sie in der Tasche.",
+      "answer": [
+        "stecke",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Rucksack ___ den Stuhl. Aber später steht er neben dem Bett.",
+      "answer": [
+        "stelle",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Die Lampe ___ ___ dem Tisch. Aber ich hänge sie an die Wand.",
+      "answer": [
+        "hängt",
+        "über"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Zeitung ___ den Tisch. Aber Gerd legt sie auf den Boden.",
+      "answer": [
+        "lege",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Vase ___ die Bücher. Aber jetzt steht sie neben dem Fernseher.",
+      "answer": [
+        "stelle",
+        "zwischen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Tasche ___ den Tisch. Aber jetzt steht sie neben der Tür.",
+      "answer": [
+        "stelle",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Der Stift ___ ___ den Büchern. Aber ich stecke ihn in die Tasche.",
+      "answer": [
+        "steckt",
+        "zwischen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Glas ___ den Tisch. Aber jetzt steht es neben dem Teller.",
+      "answer": [
+        "stelle",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Der Schlüssel ___ ___ dem Schloss. Aber ich stecke ihn in die Tasche.",
+      "answer": [
+        "steckt",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Tassen ___ den Tisch. Aber Olaf hängt sie an das Fenster.",
+      "answer": [
+        "stelle",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Schlüssel ___ das Schloss. Aber Georg legt ihn in die Ecke.",
+      "answer": [
+        "stecke",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Lampe ___ den Tisch. Aber danach steht sie neben dem Sofa.",
+      "answer": [
+        "stelle",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mich ___ den Stuhl. Aber Thomas legt sich auf das Bett.",
+      "answer": [
+        "setze",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Bild ___ die Wand. Aber Ute legt es auf den Boden.",
+      "answer": [
+        "hänge",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mich ___ den Stuhl. Aber jetzt sitze ich auf dem Sofa.",
+      "answer": [
+        "setze",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Die Schuhe ___ ___ den Stühlen. Aber ich stelle sie unter das Bett.",
+      "answer": [
+        "stehen",
+        "zwischen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Fahrrad ___ die Garage. Aber jetzt steht es vor dem Haus.",
+      "answer": [
+        "stelle",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Der Mantel ___ ___ der Garderobe. Aber ich hänge ihn in den Schrank.",
+      "answer": [
+        "hängt",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Handy ___ den Schrank. Aber jetzt liegt es neben dem Bett.",
+      "answer": [
+        "lege",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Der Koffer ___ ___ der Tür. Aber ich stelle ihn in den Flur.",
+      "answer": [
+        "steht",
+        "vor"
+      ]
+    },
+    {
+      "sentence": "Das Buch ___ ___ dem Bett. Aber ich lege es auf den Tisch.",
+      "answer": [
+        "liegt",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Die Flaschen ___ ___ dem Keller. Aber ich stelle sie in die Küche.",
+      "answer": [
+        "stehen",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Flaschen ___ den Keller. Aber Udo legt sie in die Badewanne.",
+      "answer": [
+        "stelle",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Schuhe ___ das Bett. Aber jetzt stehen sie vor der Tür.",
+      "answer": [
+        "stelle",
+        "unter"
+      ]
+    },
+    {
+      "sentence": "Die Jacke ___ ___ dem Stuhl. Aber ich hänge sie in den Schrank.",
+      "answer": [
+        "liegt",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Tom ___ ___ dem Fenster. Aber ich setze ihn an den Tisch.",
+      "answer": [
+        "sitzt",
+        "neben"
+      ]
+    },
+    {
+      "sentence": "Die Hemden ___ ___ dem Schrank. Aber ich hänge sie an die Wäscheleine.",
+      "answer": [
+        "hängen",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Jacke ___ den Stuhl. Aber später hängt sie an der Garderobe.",
+      "answer": [
+        "hänge",
+        "über"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Buch ___ das Regal. Aber jetzt liegt es auf dem Tisch.",
+      "answer": [
+        "stelle",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Das Handy ___ ___ dem Sofa. Aber ich lege es auf den Tisch.",
+      "answer": [
+        "liegt",
+        "hinter"
+      ]
+    },
+    {
+      "sentence": "Der Ball ___ ___ dem Tisch. Aber ich lege ihn auf das Sofa.",
+      "answer": [
+        "liegt",
+        "unter"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Ball ___ den Tisch. Aber jetzt liegt er vor der Tür.",
+      "answer": [
+        "lege",
+        "unter"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Flasche ___ den Kühlschrank. Aber jetzt steht sie auf dem Tisch.",
+      "answer": [
+        "stelle",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mich ___ das Bett. Aber später sitze ich auf dem Bett.",
+      "answer": [
+        "setze",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Kissen ___ das Sofa. Aber später liegt es auf dem Boden.",
+      "answer": [
+        "lege",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Handy ___ die Tasche. Aber jetzt liegt es auf dem Tisch.",
+      "answer": [
+        "lege",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Wäsche ___ die Wäscheleine. Aber Ilse legt sie auf die Wiese.",
+      "answer": [
+        "hänge",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Die Bücher ___ ___ dem Tisch. Aber ich stelle sie in das Regal.",
+      "answer": [
+        "liegen",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mich ___ die Bank. Aber jetzt sitze ich auf der Bank.",
+      "answer": [
+        "setze",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Das Bild ___ ___ der Wand. Aber ich hänge es über das Bett.",
+      "answer": [
+        "hängt",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Bild ___ das Fenster. Aber jetzt hängt es an der Wand.",
+      "answer": [
+        "hänge",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Teller ___ den Schrank. Aber jetzt liegen sie auf dem Tisch.",
+      "answer": [
+        "stelle",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Anna ___ ___ dem Auto. Aber ich setze sie auf den Stuhl.",
+      "answer": [
+        "sitzt",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Hose ___ den Schrank. Aber jetzt liegt sie auf dem Bett.",
+      "answer": [
+        "hänge",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Stecker ___ die Steckdose. Aber jetzt steckt er in der Tasche.",
+      "answer": [
+        "stecke",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Poster ___ die Wand. Aber Theo legt es auf das Bett.",
+      "answer": [
+        "hänge",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Kind ___ das Auto. Aber jetzt sitzt es in dem Auto.",
+      "answer": [
+        "setze",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Hemden ___ den Schrank. Aber Ralf legt sie auf das Sofa.",
+      "answer": [
+        "hänge",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mich ___ den Tisch. Aber Jochen legt sich auf den Tisch.",
+      "answer": [
+        "setze",
+        "an"
+      ]
+    }
+  ]
+}
