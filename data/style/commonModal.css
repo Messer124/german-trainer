@@ -1104,6 +1104,27 @@ table.mv-table tbody td {
   color: var(--theory-text-color);
 }
 
+
+.theory-section--three-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.theory-section--three-cols .theory-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+/* Центрирование заголовка секции внимания */
+.theory-text-center {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 /* Адаптив для мобилок (чтобы колонки стали друг под друга) */
 @media (max-width: 768px) {
   .theory-section--two-cols {

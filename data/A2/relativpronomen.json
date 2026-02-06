@@ -1,0 +1,208 @@
+{
+  "instructions": {
+    "ru": "Определите, какое относительное местоимение необходимо",
+    "en": "Determine which relative pronoun is needed"
+  },
+  "items": [
+    {
+      "sentence": "Das ist die Straße, in ___ wir nicht parken dürfen.",
+      "answer": "der"
+    },
+    {
+      "sentence": "Das ist das Kind, ___ Name ich nicht kenne.",
+      "answer": "dessen"
+    },
+    {
+      "sentence": "Woher kommt die Studentin, ___ das Studium so schnell beendet hat?",
+      "answer": "die"
+    },
+    {
+      "sentence": "Das ist das Foto, ___ du gemacht hast.",
+      "answer": "das"
+    },
+    {
+      "sentence": "Das sind die Fragen, ___ ich nicht verstehe.",
+      "answer": "die"
+    },
+    {
+      "sentence": "Das ist der Tisch, auf ___ ich die Tasche lege.",
+      "answer": "den"
+    },
+    {
+      "sentence": "Das ist Karl-Heinz, ___ in seiner Jugend in Claudia verliebt war.",
+      "answer": "der"
+    },
+    {
+      "sentence": "Das ist die Kollegin, mit ___ ich heute Mittag esse.",
+      "answer": "der"
+    },
+    {
+      "sentence": "Das ist das Hotel, in ___ wir letzte Woche übernachtet haben.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist die Reise, auf ___ ich mich freue.",
+      "answer": "die"
+    },
+    {
+      "sentence": "Hast du auch den Wagen gesehen, ___ so schnell um die Kurve gefahren ist?",
+      "answer": "der"
+    },
+    {
+      "sentence": "Das ist die Wohnung, in ___ wir jetzt wohnen.",
+      "answer": "der"
+    },
+    {
+      "sentence": "Der Patient, ___ man operiert hatte, ist wieder gesund.",
+      "answer": "den"
+    },
+    {
+      "sentence": "Das ist der Bus, ___ wir nehmen.",
+      "answer": "den"
+    },
+    {
+      "sentence": "Das sind die Kinder, ___ ich ein Eis gebe.",
+      "answer": "denen"
+    },
+    {
+      "sentence": "Das ist die Nachbarin, ___ ich oft helfe.",
+      "answer": "der"
+    },
+    {
+      "sentence": "Kennst du die hübsche Frau, mit ___ Thomas schon seit Stunden spricht?",
+      "answer": "der"
+    },
+    {
+      "sentence": "Das sind die Leute, ___ Kinder schon groß sind.",
+      "answer": "deren"
+    },
+    {
+      "sentence": "Das ist der Bus, ___ jeden Morgen zu spät kommt.",
+      "answer": "der"
+    },
+    {
+      "sentence": "Das sind die Übungen, ___ wir heute machen.",
+      "answer": "die"
+    },
+    {
+      "sentence": "Das ist die Frau, ___ im Supermarkt arbeitet.",
+      "answer": "die"
+    },
+    {
+      "sentence": "Das ist die Reise, von ___ ich dir erzählt habe.",
+      "answer": "der"
+    },
+    {
+      "sentence": "Das ist das Café, in ___ wir uns treffen.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Ist das der Mann, ___ du zu deinem Geburtstag eingeladen hast?",
+      "answer": "den"
+    },
+    {
+      "sentence": "Das ist der Mann, ___ du schon kennst.",
+      "answer": "den"
+    },
+    {
+      "sentence": "Wie heißt eigentlich das Restaurant, in ___ man so gut bedient wird?",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist das Café, in ___ wir morgen gehen.",
+      "answer": "das"
+    },
+    {
+      "sentence": "Das ist das Buch, aus ___ ich lerne.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das sind die Schuhe, ___ ich kaufen möchte.",
+      "answer": "die"
+    },
+    {
+      "sentence": "Warum sind die Aufgaben, ___ uns unser Lehrer stellt, immer so schwierig?",
+      "answer": "die"
+    },
+    {
+      "sentence": "Das ist das Zimmer, in ___ ich heute schlafe.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist der Kollege, ___ ich vertraue.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist die Frau, ___ ich gestern getroffen habe.",
+      "answer": "die"
+    },
+    {
+      "sentence": "Das ist die Frau, ___ Tasche auf dem Stuhl liegt.",
+      "answer": "deren"
+    },
+    {
+      "sentence": "Das ist der Laden, in ___ ich Brot kaufe.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist der Film, über ___ wir sprechen.",
+      "answer": "den"
+    },
+    {
+      "sentence": "Kennst du die Leute, ___ neben uns wohnen?",
+      "answer": "die"
+    },
+    {
+      "sentence": "Das ist der Tisch, auf ___ die Tassen stehen.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist der Laden, aus ___ ich gerade komme.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist der Freund, mit ___ ich oft Fußball spiele.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist das Kind, mit ___ wir im Park sind.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist das Problem, von ___ du mir erzählt hast.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Das ist der Park, in ___ wir heute gehen.",
+      "answer": "den"
+    },
+    {
+      "sentence": "Wo ist das Handy, ___ du mir gegeben hast?",
+      "answer": "das"
+    },
+    {
+      "sentence": "Das ist der Mann, ___ Auto vor der Tür steht.",
+      "answer": "dessen"
+    },
+    {
+      "sentence": "Das ist das Haus, in ___ meine Oma wohnt.",
+      "answer": "dem"
+    },
+    {
+      "sentence": "Ich suche den Schlüssel, ___ ich gestern verloren habe.",
+      "answer": "den"
+    },
+    {
+      "sentence": "Beates Kinder, mit ___ wir nach Italien gefahren sind, sind sehr nett.",
+      "answer": "denen"
+    },
+    {
+      "sentence": "Der Fotograf, ___ Fotos wir gesehen haben, erhielt einen Preis.",
+      "answer": "dessen"
+    },
+    {
+      "sentence": "Das ist der Lehrer, ___ uns immer hilft.",
+      "answer": "der"
+    }
+  ]
+}

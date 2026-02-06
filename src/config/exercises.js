@@ -24,6 +24,7 @@ import VerbsPerfekt from "../exercises/A1-2/VerbsPerfekt";
 import VerbsPreteritum from "../exercises/A1-2/VerbsPreteritum";
 import Wechselpraepositionen from "../exercises/A2/Wechselpraepositionen";
 import Adverbien from "../exercises/A2/Adverbien";
+import Relativpronomen from "../exercises/A2/Relativpronomen";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -160,6 +161,11 @@ export const EXERCISES_BY_LEVEL = {
             label: "Adverbien",
             storageKey: "adverbien-answers",
             component: Adverbien,
+        },
+        "relativpronomen": {
+            label: "Relativpronomen",
+            storageKey: "relativpronomen-answers",
+            component: Relativpronomen,
         }
     },
 };
