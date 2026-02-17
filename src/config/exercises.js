@@ -25,6 +25,8 @@ import VerbsPreteritum from "../exercises/A1-2/VerbsPreteritum";
 import Wechselpraepositionen from "../exercises/A2/Wechselpraepositionen";
 import Adverbien from "../exercises/A2/Adverbien";
 import Relativpronomen from "../exercises/A2/Relativpronomen";
+import Ersatzartikel from "../exercises/A2/Ersatzartikel";
+import Wortstellung from "../exercises/A2/Wortstellung";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -148,7 +150,7 @@ export const EXERCISES_BY_LEVEL = {
             component: SubordinatingConjunctions,
         },
         "conjunctive-adverbs": {
-            label: "Konjunktionaladverbien",
+            label: "Konjunktional adverbien",
             storageKey: "conjunctive-adverbs-answers",
             component: ConjunctiveAdverbs,
         },
@@ -158,7 +160,7 @@ export const EXERCISES_BY_LEVEL = {
             component: Wechselpraepositionen,
         },
         "adverbien": {
-            label: "Adverbien",
+            label: "Direktionaladverb",
             storageKey: "adverbien-answers",
             component: Adverbien,
         },
@@ -166,6 +168,16 @@ export const EXERCISES_BY_LEVEL = {
             label: "Relativpronomen",
             storageKey: "relativpronomen-answers",
             component: Relativpronomen,
+        },
+        "ersatzartikel": {
+            label: "Ersatzartikel",
+            storageKey: "ersatzartikel-answers",
+            component: Ersatzartikel,
+        },
+        "wortstellung": {
+            label: "Wortstellung",
+            storageKey: "wortstellung-answers",
+            component: Wortstellung,
         }
     },
 };

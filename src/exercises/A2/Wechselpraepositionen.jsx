@@ -6,6 +6,7 @@ import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A2/prepositions.json";
 import slide1 from "../../../data/A2/images/prepositions.html?raw";
 import slide2 from "../../../data/A2/images/prepVerbs.html?raw";
+import slide3 from "../../../data/A2/images/articles.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -27,7 +28,7 @@ export default function Wechselpraepositionen() {
   const [showHint, setShowHint] = useState(false);
 
   const items = useMemo(() => normalizeItems(data.items), []);
-  const slides = useMemo(() => [slide1, slide2], []);
+  const slides = useMemo(() => [slide1, slide2, slide3], []);
 
   useEffect(() => {
     const handleShowHint = () => setShowHint(true);

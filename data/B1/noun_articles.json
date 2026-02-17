@@ -1,0 +1,360 @@
+{
+  "instructions": {
+    "ru": "Впишите артикль для слов с несовпадением рода в русском языке (der, die, das).",
+    "en": "Type the correct article (der, die or das)."
+  },
+  "items": [
+    {
+      "word": "___ Art",
+      "article": "die",
+      "translation": {
+        "ru": "вид",
+        "en": "kind/type"
+      }
+    },
+    {
+      "word": "___ Beziehung",
+      "article": "die",
+      "translation": {
+        "ru": "отношение",
+        "en": "relationship"
+      }
+    },
+    {
+      "word": "___ Bedeutung",
+      "article": "die",
+      "translation": {
+        "ru": "значение",
+        "en": "meaning"
+      }
+    },
+    {
+      "word": "___ Beruf",
+      "article": "der",
+      "translation": {
+        "ru": "профессия",
+        "en": "profession"
+      }
+    },
+    {
+      "word": "___ Bild",
+      "article": "das",
+      "translation": {
+        "ru": "картина",
+        "en": "picture"
+      }
+    },
+    {
+      "word": "___ Chance",
+      "article": "die",
+      "translation": {
+        "ru": "шанс",
+        "en": "chance"
+      }
+    },
+    {
+      "word": "___ Eindruck",
+      "article": "der",
+      "translation": {
+        "ru": "впечатление",
+        "en": "impression"
+      }
+    },
+    {
+      "word": "___ Entdeckung",
+      "article": "die",
+      "translation": {
+        "ru": "открытие",
+        "en": "discovery"
+      }
+    },
+    {
+      "word": "___ Entwicklung",
+      "article": "die",
+      "translation": {
+        "ru": "развитие",
+        "en": "development"
+      }
+    },
+    {
+      "word": "___ Ernährung",
+      "article": "die",
+      "translation": {
+        "ru": "питание",
+        "en": "nutrition/diet"
+      }
+    },
+    {
+      "word": "___ Erklärung",
+      "article": "die",
+      "translation": {
+        "ru": "объяснение",
+        "en": "explanation"
+      }
+    },
+    {
+      "word": "___ Eröffnung",
+      "article": "die",
+      "translation": {
+        "ru": "открытие",
+        "en": "opening"
+      }
+    },
+    {
+      "word": "___ Erzählung",
+      "article": "die",
+      "translation": {
+        "ru": "рассказ",
+        "en": "story"
+      }
+    },
+    {
+      "word": "___ Geheimnis",
+      "article": "das",
+      "translation": {
+        "ru": "тайна",
+        "en": "secret"
+      }
+    },
+    {
+      "word": "___ Interesse",
+      "article": "das",
+      "translation": {
+        "ru": "интерес",
+        "en": "interest"
+      }
+    },
+    {
+      "word": "___ Kontrolle",
+      "article": "die",
+      "translation": {
+        "ru": "контроль",
+        "en": "check/control"
+      }
+    },
+    {
+      "word": "___ Kunst",
+      "article": "die",
+      "translation": {
+        "ru": "искусство",
+        "en": "art"
+      }
+    },
+    {
+      "word": "___ Lage",
+      "article": "die",
+      "translation": {
+        "ru": "положение",
+        "en": "situation"
+      }
+    },
+    {
+      "word": "___ Lücke",
+      "article": "die",
+      "translation": {
+        "ru": "пробел",
+        "en": "gap"
+      }
+    },
+    {
+      "word": "___ Lunge",
+      "article": "die",
+      "translation": {
+        "ru": "лёгкое",
+        "en": "lung"
+      }
+    },
+    {
+      "word": "___ Mühe",
+      "article": "die",
+      "translation": {
+        "ru": "труд",
+        "en": "effort"
+      }
+    },
+    {
+      "word": "___ Mut",
+      "article": "der",
+      "translation": {
+        "ru": "смелость",
+        "en": "courage"
+      }
+    },
+    {
+      "word": "___ Pech",
+      "article": "das",
+      "translation": {
+        "ru": "неудача",
+        "en": "bad luck"
+      }
+    },
+    {
+      "word": "___ Problem",
+      "article": "das",
+      "translation": {
+        "ru": "проблема",
+        "en": "problem"
+      }
+    },
+    {
+      "word": "___ Reihe",
+      "article": "die",
+      "translation": {
+        "ru": "ряд",
+        "en": "row/series"
+      }
+    },
+    {
+      "word": "___ Schatten",
+      "article": "der",
+      "translation": {
+        "ru": "тень",
+        "en": "shadow"
+      }
+    },
+    {
+      "word": "___ Sicht",
+      "article": "die",
+      "translation": {
+        "ru": "вид",
+        "en": "view"
+      }
+    },
+    {
+      "word": "___ Spur",
+      "article": "die",
+      "translation": {
+        "ru": "след",
+        "en": "trace"
+      }
+    },
+    {
+      "word": "___ Staat",
+      "article": "der",
+      "translation": {
+        "ru": "государство",
+        "en": "state"
+      }
+    },
+    {
+      "word": "___ Stelle",
+      "article": "die",
+      "translation": {
+        "ru": "место",
+        "en": "place/position"
+      }
+    },
+    {
+      "word": "___ Stimme",
+      "article": "die",
+      "translation": {
+        "ru": "голос",
+        "en": "voice"
+      }
+    },
+    {
+      "word": "___ Streit",
+      "article": "der",
+      "translation": {
+        "ru": "ссора",
+        "en": "quarrel"
+      }
+    },
+    {
+      "word": "___ Suche",
+      "article": "die",
+      "translation": {
+        "ru": "поиск",
+        "en": "search"
+      }
+    },
+    {
+      "word": "___ Talent",
+      "article": "das",
+      "translation": {
+        "ru": "талант",
+        "en": "talent"
+      }
+    },
+    {
+      "word": "___ Thema",
+      "article": "das",
+      "translation": {
+        "ru": "тема",
+        "en": "topic"
+      }
+    },
+    {
+      "word": "___ Traum",
+      "article": "der",
+      "translation": {
+        "ru": "мечта",
+        "en": "dream"
+      }
+    },
+    {
+      "word": "___ Unfall",
+      "article": "der",
+      "translation": {
+        "ru": "авария",
+        "en": "accident"
+      }
+    },
+    {
+      "word": "___ Veranstaltung",
+      "article": "die",
+      "translation": {
+        "ru": "мероприятие",
+        "en": "event"
+      }
+    },
+    {
+      "word": "___ Vergangenheit",
+      "article": "die",
+      "translation": {
+        "ru": "прошлое",
+        "en": "past"
+      }
+    },
+    {
+      "word": "___ Vorstellung",
+      "article": "die",
+      "translation": {
+        "ru": "представление",
+        "en": "idea/presentation"
+      }
+    },
+    {
+      "word": "___ Wahl",
+      "article": "die",
+      "translation": {
+        "ru": "выбор",
+        "en": "choice"
+      }
+    },
+    {
+      "word": "___ Wirkung",
+      "article": "die",
+      "translation": {
+        "ru": "эффект",
+        "en": "effect"
+      }
+    },
+    {
+      "word": "___ Ziel",
+      "article": "das",
+      "translation": {
+        "ru": "цель",
+        "en": "goal"
+      }
+    },
+    {
+      "word": "___ Zukunft",
+      "article": "die",
+      "translation": {
+        "ru": "будущее",
+        "en": "future"
+      }
+    }
+  ]
+}

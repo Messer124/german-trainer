@@ -1084,7 +1084,6 @@ table.mv-table tbody td {
   color: #333643;
 }
 
-
 /* Разделитель между группами глаголов */
 .theory-divider {
   border: none;
@@ -1104,11 +1103,9 @@ table.mv-table tbody td {
   color: var(--theory-text-color);
 }
 
-
 .theory-section--three-cols {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-between;
   margin-top: 20px;
 }
@@ -1125,21 +1122,35 @@ table.mv-table tbody td {
   margin-bottom: 20px;
 }
 
-/* Адаптив для мобилок (чтобы колонки стали друг под друга) */
-@media (max-width: 768px) {
-  .theory-section--two-cols {
-    flex-direction: column;
-    gap: 16px;
-  }
+
+/* Компактный визуальный блок */
+.theory-visual-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 16px 0;
 }
 
-/* Адаптив */
-@media (max-width: 500px) {
-  .cats-visual-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.theory-visual-divider {
+  width: 1px;
+  height: 100px;
+  background: #ddd;
 }
 
+/* Сетка для списка слов */
+.theory-grid-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 колонки на десктопе */
+  gap: 12px;
+}
+
+.theory-group {
+  margin-bottom: 4px;
+}
 
 @media (max-width: 1200px) {
 
@@ -1338,5 +1349,237 @@ table.mv-table tbody td {
   .prep-column:first-child .prep-row-item:last-child {
     border-bottom: 1px solid #bcb9b9;
   }
+
+  .theory-section--two-cols {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cats-visual-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+/* ===== ein-/kein- als Ersatzartikel ===== */
+
+.theory-card--ein-kein {
+  line-height: 1.28;
+}
+
+.ek-intro {
+  margin: 0;
+}
+
+.ek-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.ek-item + .ek-item {
+  margin-top: 8px;
+}
+
+.ek-line {
+  display: block;
+}
+
+.ek-line--sub {
+  padding-left: 30px;
+}
+
+.ek-bullet {
+  color: var(--theory-muted-color);
+  margin-right: 8px;
+}
+
+.ek-table-title {
+  margin: 24px 0 8px;
+  text-align: center;
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+  font-size: calc(var(--desktop-modal-header-font-size) * 0.95);
+}
+
+.theory-table--ein-kein th,
+.theory-table--ein-kein td {
+  border-color: #d6d6d8;
+  padding: 7px 12px;
+}
+
+.theory-table--ein-kein th + th,
+.theory-table--ein-kein td + td {
+  border-left: 1px solid #d6d6d8;
+}
+
+.theory-table--ein-kein thead th {
+  font-size: calc(var(--desktop-modal-header-font-size) * 0.92);
+}
+
+.theory-table--ein-kein thead th:first-child,
+.theory-table--ein-kein tbody th {
+  white-space: nowrap;
+}
+
+.ek-attention {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.ek-attention-title {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .ek-line--sub {
+    padding-left: 22px;
+  }
+
+  .ek-table-title {
+    margin-top: 16px;
+    font-size: var(--mobile-modal-header-font-size);
+  }
+
+  .theory-table--ein-kein th,
+  .theory-table--ein-kein td {
+    padding: 5px 6px;
+  }
+
+  .theory-table--ein-kein {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .theory-table--ein-kein thead th {
+    font-size: 11px;
+    line-height: 1.15;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .theory-table--ein-kein thead th:first-child {
+    width: 24%;
+    white-space: nowrap;
+  }
+
+  .theory-table--ein-kein thead th:not(:first-child) {
+    width: 19%;
+  }
+}
+
+/* ===== Порядок объектов в предложении ===== */
+
+.theory-card--object-order .theory-title {
+  margin-bottom: 14px;
+}
+
+.oo-lead {
+  margin-top: 0;
+}
+
+.oo-list {
+  margin: 8px 0 0;
+  padding-left: 28px;
+}
+
+.oo-item + .oo-item {
+  margin-top: 12px;
+}
+
+.oo-item p {
+  margin: 0;
+}
+
+.oo-example {
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .oo-list {
+    padding-left: 20px;
+  }
+}
+
+/* ===== TeKaMoLo ===== */
+
+.theory-card--tekamolo .theory-title {
+  margin-bottom: 14px;
+}
+
+.tkm-title-part {
+  font-weight: 700;
+}
+
+.tkm-title-part--te {
+  color: var(--theory-accent-yellow);
+}
+
+.tkm-title-part--ka {
+  color: var(--theory-accent-red);
+}
+
+.tkm-title-part--mo {
+  color: #6a72b5;
+}
+
+.tkm-title-part--lo {
+  color: #2f3441;
+}
+
+.tkm-list {
+  margin: 8px 0 18px;
+  padding-left: 26px;
+}
+
+.tkm-list li + li {
+  margin-top: 8px;
+}
+
+.tkm-table {
+  margin-top: 8px;
+}
+
+.tkm-table th,
+.tkm-table td {
+  padding: 8px 10px;
+  border-color: #d6d6d8;
+  text-align: center;
+}
+
+.tkm-table th {
+  font-weight: 700;
+}
+
+.tkm-table th + th,
+.tkm-table td + td {
+  border-left: 1px solid #d6d6d8;
+}
+
+.tkm-col--te {
+  color: var(--theory-accent-yellow);
+}
+
+.tkm-col--ka {
+  color: var(--theory-accent-red);
+}
+
+.tkm-col--mo {
+  color: #6a72b5;
+}
+
+@media (max-width: 600px) {
+  .tkm-list {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  .tkm-table {
+    min-width: 700px;
+  }
+
+  .tkm-table th,
+  .tkm-table td {
+    padding: 6px 8px;
+  }
+}

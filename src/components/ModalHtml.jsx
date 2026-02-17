@@ -99,59 +99,61 @@ export default function ModalHtml({ html, slides, images, initialIndex = 0, onCl
             role="dialog"
             aria-modal="true"
         >
-            <div className="modal-html-content-wrapper" onClick={(e) => e.stopPropagation()}>
-                <button
-                    type="button"
-                    className="modal-close-button"
-                    onClick={(e) => {
-                        e.stopPropagation();
-                        startClose();
-                    }}
-                    aria-label="Close"
-                    title="Close"
-                >
-                    ×
-                </button>
+            <div className="modal-html-shell" onClick={(e) => e.stopPropagation()}>
+                <div className="modal-html-content-wrapper">
+                    <button
+                        type="button"
+                        className="modal-close-button"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            startClose();
+                        }}
+                        aria-label="Close"
+                        title="Close"
+                    >
+                        ×
+                    </button>
 
-                <div className="modal-html-content">
-                    {hasPages ? (
-                        <div className="modal-slider">
-                            <div className="modal-slider__stage">
-                                <div
-                                    className="modal-slider__page"
-                                    dangerouslySetInnerHTML={{ __html: pages[index] }}
-                                />
-
-                                {hasMultiple ? (
-                                    <>
-                                        <button
-                                            type="button"
-                                            className="modal-slider__nav modal-slider__nav--prev"
-                                            onClick={goPrev}
-                                            aria-label="Previous"
-                                            title="Previous"
-                                        >
-                                            ‹
-                                        </button>
-                                        <button
-                                            type="button"
-                                            className="modal-slider__nav modal-slider__nav--next"
-                                            onClick={goNext}
-                                            aria-label="Next"
-                                            title="Next"
-                                        >
-                                            ›
-                                        </button>
-
-                                        <div className="modal-slider__counter">
-                                            {index + 1} / {pages.length}
-                                        </div>
-                                    </>
-                                ) : null}
+                    <div className="modal-html-content">
+                        {hasPages ? (
+                            <div className="modal-slider">
+                                <div className="modal-slider__stage">
+                                    <div
+                                        className="modal-slider__page"
+                                        dangerouslySetInnerHTML={{ __html: pages[index] }}
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    ) : null}
+                        ) : null}
+                    </div>
                 </div>
+
+                {hasMultiple ? (
+                    <>
+                        <button
+                            type="button"
+                            className="modal-slider__nav modal-slider__nav--prev"
+                            onClick={goPrev}
+                            aria-label="Previous"
+                            title="Previous"
+                        >
+                            ‹
+                        </button>
+                        <button
+                            type="button"
+                            className="modal-slider__nav modal-slider__nav--next"
+                            onClick={goNext}
+                            aria-label="Next"
+                            title="Next"
+                        >
+                            ›
+                        </button>
+
+                        <div className="modal-slider__counter">
+                            {index + 1} / {pages.length}
+                        </div>
+                    </>
+                ) : null}
             </div>
         </div>
     );

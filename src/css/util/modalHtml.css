@@ -32,6 +32,13 @@
   table-layout: auto;
 }
 
+.modal-html-shell {
+  position: relative;
+  box-sizing: border-box;
+  width: min(1200px, 96vw);
+  max-width: 100%;
+}
+
 .modal-html-content-wrapper {
   position: relative;
 
@@ -43,7 +50,7 @@
   /* ключевое */
   display: block;
   box-sizing: border-box;
-  width: min(1200px, 96vw);
+  width: 100%;
   max-width: 100%;
 
   max-height: calc(100dvh - 48px);
@@ -119,6 +126,10 @@
 
 /* ===== HTML-слайдер (стрелки + свайпы) ===== */
 
+.modal-slider {
+  position: relative;
+}
+
 .modal-slider__stage {
   position: relative;
   touch-action: auto;
@@ -142,13 +153,13 @@
   color: #fff;
   font-size: 22px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 6;
 }
 
 /* счётчик (как на скрине 1/2) */
 .modal-slider__counter {
   position: absolute;
-  top: 0;
+  top: -24px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.4);
@@ -156,10 +167,10 @@
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 12px;
-  z-index: 2;
+  z-index: 6;
 }
-.modal-slider__nav--prev { left: 0; }
-.modal-slider__nav--next { right: 0; }
+.modal-slider__nav--prev { left: -28px; }
+.modal-slider__nav--next { right: -28px; }
 
 .modal-close-button {
   position: absolute;
@@ -269,6 +280,18 @@
     width: 32px;
     height: 32px;
     font-size: 22px;
+  }
+
+  .modal-slider__counter {
+    top: -18px;
+  }
+
+  .modal-slider__nav--prev {
+    left: -14px;
+  }
+
+  .modal-slider__nav--next {
+    right: -14px;
   }
 
 }
