@@ -27,6 +27,7 @@ import Adverbien from "../exercises/A2/Adverbien";
 import Relativpronomen from "../exercises/A2/Relativpronomen";
 import Ersatzartikel from "../exercises/A2/Ersatzartikel";
 import Wortstellung from "../exercises/A2/Wortstellung";
+import TeKaMoLo from "../exercises/A2/TeKaMoLo";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -178,6 +179,11 @@ export const EXERCISES_BY_LEVEL = {
             label: "Wortstellung",
             storageKey: "wortstellung-answers",
             component: Wortstellung,
+        },
+        "tekamolo": {
+            label: "TeKaMoLo",
+            storageKey: "tekamolo-answers",
+            component: TeKaMoLo,
         }
     },
 };
