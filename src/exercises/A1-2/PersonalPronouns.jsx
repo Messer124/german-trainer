@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/personal-pronouns.json";
-import hint from "../../../data/A1-2/images/personal-pronouns.html?raw";
+import hintRu from "../../../data/A1-2/images/personal-pronouns.html?raw";
+import hintEn from "../../../data/A1-2/images/en/personal-pronouns.html?raw";
 import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "personal-pronouns-answers";
@@ -27,6 +29,7 @@ function renderSentenceWithBoldQuotes(sentence) {
 }
 
 function PersonalPronouns() {
+    const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showImage, setShowImage] = useState(false);
 
@@ -53,7 +56,7 @@ function PersonalPronouns() {
         <div>
             {showImage && (
                 <ModalHtml
-                    html={hint}
+                    html={locale === "en" ? hintEn : hintRu}
                     onClose={() => setShowImage(false)}
                 />
             )}

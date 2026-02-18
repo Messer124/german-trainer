@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-2/prepositionsPlace.json";
-import hint from "../../../data/A1-2/images/prepositionsPlace.html?raw";
+import hintRu from "../../../data/A1-2/images/prepositionsPlace.html?raw";
+import hintEn from "../../../data/A1-2/images/en/prepositionsPlace.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
@@ -15,6 +17,7 @@ function flattenItems(items) {
 }
 
 export default function Prepositions() {
+    const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
 
@@ -99,7 +102,7 @@ export default function Prepositions() {
         <div className="exercise-inner">
             {showHint && (
                 <ModalHtml
-                    html={hint}
+                    html={locale === "en" ? hintEn : hintRu}
                     onClose={() => setShowHint(false)}
                 />
             )}

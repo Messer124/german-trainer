@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/modalVerbsPreteritum.json";
-import hint from "../../../data/A1-2/images/modalVersPreteritum.html?raw"
+import hintRu from "../../../data/A1-2/images/modalVersPreteritum.html?raw";
+import hintEn from "../../../data/A1-2/images/en/modalVersPreteritum.html?raw";
 import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "modal-verbs-preteritum-answers";
 
 function ModalVerbsPreteritum() {
+  const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showImage, setShowImage] = useState(false);
 
@@ -36,7 +39,7 @@ function ModalVerbsPreteritum() {
       <div className="exercise-inner">
           {showImage && (
               <ModalHtml
-                  html={hint}
+                  html={locale === "en" ? hintEn : hintRu}
                   onClose={() => setShowImage(false)}
               />
           )}

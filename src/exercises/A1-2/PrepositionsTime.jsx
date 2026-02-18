@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-2/prepositionsTime.json";
 import hint from "../../../data/A1-2/images/prepositionsTime.html?raw";
-import hint2 from "../../../data/A1-2/images/prepositionsTime2.html?raw";
+import hint2Ru from "../../../data/A1-2/images/prepositionsTime2.html?raw";
+import hint2En from "../../../data/A1-2/images/en/prepositionsTime2.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
@@ -16,6 +18,7 @@ function flattenItems(items) {
 const STORAGE_KEY = "prepositions-time-answers";
 
 export default function PrepositionsTime() {
+    const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
 
@@ -100,7 +103,7 @@ export default function PrepositionsTime() {
         <div className="exercise-inner">
             {showHint && (
                 <ModalHtml
-                    slides={[hint, hint2]}
+                    slides={locale === "en" ? [hint, hint2En] : [hint, hint2Ru]}
                     initialIndex={0}
                     onClose={() => setShowHint(false)}
                 />

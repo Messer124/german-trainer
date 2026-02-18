@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/conjunctiveAdverbs.json";
-import hint from "../../../data/A2/images/conjunctiveAdverbs.html?raw";
+import hintRu from "../../../data/A2/images/conjunctiveAdverbs.html?raw";
+import hintEn from "../../../data/A2/images/en/conjunctiveAdverbs.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -15,8 +17,10 @@ function normalize(s) {
 }
 
 export default function ConjunctiveAdverbs() {
+  const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
+  const hint = locale === "en" ? hintEn : hintRu;
 
   const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
 

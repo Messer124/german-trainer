@@ -2,11 +2,15 @@ import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 
 import data from "../../../data/A1-2/imperativ.json";
-import hint1 from "../../../data/A1-2/images/imperativ1.html?raw";
-import hint2 from "../../../data/A1-2/images/imperativ2.html?raw";
-import hint3 from "../../../data/A1-2/images/imperativ3.html?raw";
+import hint1Ru from "../../../data/A1-2/images/imperativ1.html?raw";
+import hint2Ru from "../../../data/A1-2/images/imperativ2.html?raw";
+import hint3Ru from "../../../data/A1-2/images/imperativ3.html?raw";
+import hint1En from "../../../data/A1-2/images/en/imperativ1.html?raw";
+import hint2En from "../../../data/A1-2/images/en/imperativ2.html?raw";
+import hint3En from "../../../data/A1-2/images/en/imperativ3.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -21,10 +25,14 @@ function normalizeItems(rawItems) {
 }
 
 function Imperativ() {
+  const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
 
-  const hintSlides = useMemo(() => [hint1, hint2, hint3], []);
+  const hintSlides = useMemo(
+      () => (locale === "en" ? [hint1En, hint2En, hint3En] : [hint1Ru, hint2Ru, hint3Ru]),
+      [locale]
+  );
   const items = useMemo(() => normalizeItems(data.items), []);
 
   useEffect(() => {

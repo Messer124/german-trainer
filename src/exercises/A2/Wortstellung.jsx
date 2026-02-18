@@ -6,7 +6,8 @@ import ExpandingInput from "../../components/ExpandingInput";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/wortstellung.json";
-import hint from "../../../data/A2/images/wortstellung.html?raw";
+import hintRu from "../../../data/A2/images/wortstellung.html?raw";
+import hintEn from "../../../data/A2/images/en/wortstellung.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -32,6 +33,7 @@ export default function Wortstellung() {
     const [showHint, setShowHint] = useState(false);
     const [previewValues, setPreviewValues] = useState({});
     const previewTimersRef = useRef({});
+    const hint = locale === "en" ? hintEn : hintRu;
 
     const items = useMemo(() => normalizeItems(data.items), []);
 

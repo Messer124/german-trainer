@@ -1,0 +1,291 @@
+<section class="theory-card">
+
+    <!-- Gradients and filters -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <!-- Cardboard (light top face) -->
+            <linearGradient id="boxTop" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#ebd5b3;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#dcb085;stop-opacity:1" />
+            </linearGradient>
+            <!-- Cardboard (front face) -->
+            <linearGradient id="boxFront" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#dcb085;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#c69c72;stop-opacity:1" />
+            </linearGradient>
+            <!-- Cardboard (side face) -->
+            <linearGradient id="boxSide" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#b58b61;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#8d6e4e;stop-opacity:1" />
+            </linearGradient>
+            <!-- Inside of the box (dark) -->
+            <linearGradient id="boxInner" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#5d4037;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#3e2723;stop-opacity:1" />
+            </linearGradient>
+
+            <!-- Cat (volumetric gray) -->
+            <radialGradient id="catBody" cx="40%" cy="40%" r="80%">
+                <stop offset="0%" style="stop-color:#5e626e;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#2d2f36;stop-opacity:1" />
+            </radialGradient>
+        </defs>
+    </svg>
+
+    <!-- Theory text -->
+    <div class="theory-text">
+        <span class="theory-word--bold">Wechselpräpositionen</span> — two-way prepositions, that is, prepositions that can require different cases depending on the question.
+    </div>
+    <div class="theory-text">
+        If we ask “wo?” (where?), we need the dative case — <span class="theory-word--red theory-word--bold">Dativ</span>, and if “wohin?” (to where?), we need the accusative case — <span class="theory-word--yellow theory-word--bold">Akkusativ</span>.
+    </div>
+
+    <!-- Setka 3x3 -->
+    <div class="cats-visual-grid">
+
+        <!-- HINTER (BEHIND) -->
+        <div class="cat-card">
+            <div class="cat-card-visual">
+                <svg viewBox="0 0 100 100" class="cat-svg">
+                    <!-- Cat (behind) -->
+                    <g transform="translate(0, 0)">
+                        <!-- Tail sticking out to the side -->
+                        <path d="M75,70 Q85,60 85,50" fill="none" stroke="#2d2f36" stroke-width="4" stroke-linecap="round"/>
+                        <ellipse cx="65" cy="60" rx="12" ry="10" fill="url(#catBody)" />
+                        <circle cx="65" cy="45" r="11" fill="url(#catBody)" />
+                        <path d="M58,38 L55,28 L63,39 M72,38 L75,28 L67,39" fill="url(#catBody)" />
+                        <circle cx="61" cy="44" r="2.5" fill="#fff" /><circle cx="61" cy="44" r="1" fill="#000" />
+                        <circle cx="69" cy="44" r="2.5" fill="#fff" /><circle cx="69" cy="44" r="1" fill="#000" />
+                    </g>
+                    <!-- Box (in front) -->
+                    <g transform="translate(5, 10)">
+                        <path d="M10,40 L20,30 L70,30 L60,40 Z" fill="url(#boxTop)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M10,40 L60,40 L60,80 L10,80 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M60,40 L70,30 L70,70 L60,80 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="cat-card-label">hinter</div>
+        </div>
+
+        <!-- ÜBER (ABOVE) -->
+        <div class="cat-card">
+            <div class="cat-card-visual">
+                <svg viewBox="0 0 100 100" class="cat-svg">
+                    <!-- Box (below) -->
+                    <g transform="translate(10, 20)">
+                        <path d="M10,50 L20,40 L70,40 L60,50 Z" fill="url(#boxTop)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M10,50 L60,50 L60,80 L10,80 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M60,50 L70,40 L70,70 L60,80 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                    </g>
+                    <!-- Cat (floating) -->
+                    <g transform="translate(10, -10)">
+                        <path d="M65,35 Q75,30 75,20" fill="none" stroke="#2d2f36" stroke-width="4" stroke-linecap="round"/> <!-- Tail up -->
+                        <ellipse cx="50" cy="35" rx="14" ry="9" fill="url(#catBody)" />
+                        <circle cx="50" cy="27" r="10" fill="url(#catBody)" />
+                        <path d="M43,20 L40,10 L48,21 M57,20 L60,10 L52,21" fill="url(#catBody)" />
+                        <circle cx="46" cy="26" r="2" fill="#fff" /><circle cx="46" cy="26" r="1" fill="#000" />
+                        <circle cx="54" cy="26" r="2" fill="#fff" /><circle cx="54" cy="26" r="1" fill="#000" />
+
+                    </g>
+                </svg>
+            </div>
+            <div class="cat-card-label">über</div>
+        </div>
+
+        <!-- IN (INSIDE) -->
+        <div class="cat-card">
+            <div class="cat-card-visual">
+                <svg viewBox="0 0 100 100" class="cat-svg">
+                    <!-- Back wall and bottom -->
+                    <g transform="translate(10, 10)">
+                        <path d="M10,40 L60,40 L60,80 L10,80 Z" fill="url(#boxInner)" /> <!-- Back wall (in shadow) -->
+                        <path d="M60,40 L70,30 L70,70 L60,80 Z" fill="url(#boxInner)" opacity="0.7"/> <!-- Inner side -->
+                    </g>
+
+                    <!-- Cat inside -->
+                    <g transform="translate(10, 10)">
+                        <circle cx="45" cy="45" r="12" fill="url(#catBody)" />
+                        <path d="M38,38 L35,28 L43,39 M52,38 L55,28 L47,39" fill="url(#catBody)" />
+                        <circle cx="41" cy="44" r="2.5" fill="#fff" /><circle cx="41" cy="44" r="1" fill="#000" />
+                        <circle cx="49" cy="44" r="2.5" fill="#fff" /><circle cx="49" cy="44" r="1" fill="#000" />
+                        <!-- Paws on the edge -->
+                        <ellipse cx="38" cy="55" rx="4" ry="3" fill="#fff" />
+                        <ellipse cx="52" cy="55" rx="4" ry="3" fill="#fff" />
+                    </g>
+
+                    <!-- Front walls (create volume) -->
+                    <g transform="translate(10, 10)">
+                        <path d="M10,55 L60,55 L60,80 L10,80 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/> <!-- Front lower part -->
+                        <path d="M60,40 L70,30 L70,70 L60,80 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round" opacity="0.9"/> <!-- Outer side -->
+                        <path d="M10,55 L20,45 L70,45" fill="none" stroke="#8d6e4e" stroke-width="1"/> <!-- Fold lines -->
+                    </g>
+                </svg>
+            </div>
+            <div class="cat-card-label">in</div>
+        </div>
+
+        <!-- NEBEN (NEXT TO) -->
+        <div class="cat-card">
+            <div class="cat-card-visual">
+                <svg viewBox="0 0 100 100" class="cat-svg">
+                    <!-- Box (shifted right) -->
+                    <g transform="translate(30, 10)">
+                        <path d="M10,40 L20,30 L60,30 L50,40 Z" fill="url(#boxTop)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M10,40 L50,40 L50,80 L10,80 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M50,40 L60,30 L60,70 L50,80 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                    </g>
+                    <!-- Cat (left) -->
+                    <g transform="translate(-5, 10)">
+                        <path d="M35,70 Q40,60 38,50" fill="none" stroke="#2d2f36" stroke-width="4" stroke-linecap="round"/> <!-- Tail -->
+                        <ellipse cx="25" cy="70" rx="12" ry="9" fill="url(#catBody)" />
+                        <circle cx="25" cy="58" r="10" fill="url(#catBody)" />
+                        <path d="M18,52 L15,42 L23,53 M32,52 L35,42 L27,53" fill="url(#catBody)" />
+                        <circle cx="21" cy="57" r="2.5" fill="#fff" /><circle cx="21" cy="57" r="1" fill="#000" />
+                        <circle cx="29" cy="57" r="2.5" fill="#fff" /><circle cx="29" cy="57" r="1" fill="#000" />
+                    </g>
+                </svg>
+            </div>
+            <div class="cat-card-label">neben</div>
+        </div>
+
+        <!-- UNTER (UNDER) -->
+        <div class="cat-card">
+            <div class="cat-card-visual">
+                <svg viewBox="0 0 100 100" class="cat-svg">
+                    <!-- Cat (below) -->
+                    <g transform="translate(10, 15)">
+                        <path d="M55,70 Q75,75 75,65" fill="none" stroke="#2d2f36" stroke-width="4" stroke-linecap="round"/> <!-- Tail torchit -->
+                        <ellipse cx="45" cy="70" rx="15" ry="6" fill="url(#catBody)" />
+                        <circle cx="30" cy="70" r="9" fill="url(#catBody)" />
+                        <path d="M23,65 L20,55 L28,66 M37,65 L40,55 L32,66" fill="url(#catBody)" />
+                        <circle cx="27" cy="69" r="2" fill="#fff" /><circle cx="27" cy="69" r="1" fill="#000" />
+                        <circle cx="33" cy="69" r="2" fill="#fff" /><circle cx="33" cy="69" r="1" fill="#000" />
+                    </g>
+                    <!-- Box (standing slightly higher) -->
+                    <g transform="translate(10, -5)">
+                        <path d="M10,40 L20,30 L70,30 L60,40 Z" fill="url(#boxTop)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M10,40 L60,40 L60,70 L10,70 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M60,40 L70,30 L70,60 L60,70 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="cat-card-label">unter</div>
+        </div>
+
+        <!-- ZWISCHEN (BETWEEN) -->
+        <div class="cat-card">
+            <div class="cat-card-visual">
+                <svg viewBox="0 0 100 100" class="cat-svg">
+                    <!-- Box 1 (left) -->
+                    <g transform="translate(-5, 10)">
+                        <path d="M5,40 L10,35 L30,35 L25,40 Z" fill="url(#boxTop)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M5,40 L25,40 L25,75 L5,75 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M25,40 L30,35 L30,70 L25,75 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                    </g>
+
+                    <!-- Cat (center) -->
+                    <g transform="translate(5, 5)">
+                        <path d="M40,75 Q50,85 60,75" fill="none" stroke="#2d2f36" stroke-width="4" stroke-linecap="round" /> <!-- Tail lying down -->
+                        <ellipse cx="50" cy="70" rx="10" ry="8" fill="url(#catBody)" />
+                        <circle cx="50" cy="60" r="10" fill="url(#catBody)" />
+                        <path d="M43,54 L40,44 L48,55 M57,54 L60,44 L52,55" fill="url(#catBody)" />
+                        <circle cx="46" cy="59" r="2.5" fill="#fff" /><circle cx="46" cy="59" r="1" fill="#000" />
+                        <circle cx="54" cy="59" r="2.5" fill="#fff" /><circle cx="54" cy="59" r="1" fill="#000" />
+                    </g>
+
+                    <!-- Box 2 (right) -->
+                    <g transform="translate(65, 10)">
+                        <path d="M5,40 L10,35 L30,35 L25,40 Z" fill="url(#boxTop)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M5,40 L25,40 L25,75 L5,75 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M25,40 L30,35 L30,70 L25,75 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="cat-card-label">zwischen</div>
+        </div>
+
+        <!-- VOR (IN FRONT OF) -->
+        <div class="cat-card">
+            <div class="cat-card-visual">
+                <svg viewBox="0 0 100 100" class="cat-svg">
+                    <!-- Box (behind) -->
+                    <g transform="translate(10, 5)">
+                        <path d="M10,40 L20,30 L70,30 L60,40 Z" fill="url(#boxTop)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M10,40 L60,40 L60,80 L10,80 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M60,40 L70,30 L70,70 L60,80 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                    </g>
+
+                    <!-- Kot (in front) -->
+                    <g transform="translate(15, 15)">
+                        <path d="M55,65 Q75,60 75,50" fill="none" stroke="#2d2f36" stroke-width="4" stroke-linecap="round"/> <!-- Tail -->
+                        <ellipse cx="45" cy="65" rx="14" ry="10" fill="url(#catBody)" />
+                        <circle cx="45" cy="55" r="11" fill="url(#catBody)" />
+                        <path d="M38,48 L35,38 L43,49 M52,48 L55,38 L47,49" fill="url(#catBody)" />
+                        <circle cx="41" cy="54" r="2.5" fill="#fff" /><circle cx="41" cy="54" r="1" fill="#000" />
+                        <circle cx="49" cy="54" r="2.5" fill="#fff" /><circle cx="49" cy="54" r="1" fill="#000" />
+                    </g>
+                </svg>
+            </div>
+            <div class="cat-card-label">vor</div>
+        </div>
+
+        <!-- AUF (ON TOP) -->
+        <div class="cat-card">
+            <div class="cat-card-visual">
+                <svg viewBox="0 0 100 100" class="cat-svg">
+                    <!-- Korobka 3D -->
+                    <g transform="translate(10, 10)">
+                        <path d="M10,40 L20,30 L70,30 L60,40 Z" fill="url(#boxTop)" stroke="#8d6e4e" stroke-linejoin="round"/> <!-- Top -->
+                        <path d="M10,40 L60,40 L60,80 L10,80 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/> <!-- Front -->
+                        <path d="M60,40 L70,30 L70,70 L60,80 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round"/> <!-- Side -->
+                    </g>
+                    <!-- Cat on top -->
+                    <g transform="translate(15, -12)">
+                        <!-- Tail svisaet -->
+                        <path d="M55,45 Q75,55 70,70" fill="none" stroke="#2d2f36" stroke-width="4" stroke-linecap="round"/>
+                        <!-- Body -->
+                        <ellipse cx="45" cy="45" rx="15" ry="10" fill="url(#catBody)" />
+                        <!-- Head -->
+                        <circle cx="45" cy="35" r="10" fill="url(#catBody)" />
+                        <path d="M38,28 L35,18 L43,29 M52,28 L55,18 L47,29" fill="url(#catBody)" />
+                        <!-- Face -->
+                        <circle cx="41" cy="34" r="2.5" fill="#fff" /><circle cx="41" cy="34" r="1" fill="#000" />
+                        <circle cx="49" cy="34" r="2.5" fill="#fff" /><circle cx="49" cy="34" r="1" fill="#000" />
+                    </g>
+                </svg>
+            </div>
+            <div class="cat-card-label">auf - on (horizontal)</div>
+        </div>
+
+        <!-- AN (AT / ON vertical) -->
+        <div class="cat-card">
+            <div class="cat-card-visual">
+                <svg viewBox="0 0 100 100" class="cat-svg">
+                    <!-- Korobka -->
+                    <g transform="translate(5, 5)">
+                        <path d="M10,30 L20,20 L60,20 L50,30 Z" fill="url(#boxTop)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M10,30 L50,30 L50,80 L10,80 Z" fill="url(#boxFront)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                        <path d="M50,30 L60,20 L60,70 L50,80 Z" fill="url(#boxSide)" stroke="#8d6e4e" stroke-linejoin="round"/>
+                    </g>
+
+                    <!-- Cat (hanging on the side face) -->
+                    <g transform="translate(10, 5)">
+                        <!-- Tail visit vniz -->
+                        <path d="M60,65 L60,78" fill="none" stroke="#2d2f36" stroke-width="4" stroke-linecap="round"/>
+                        <!-- Body youtInuto -->
+                        <ellipse cx="60" cy="50" rx="9" ry="15" fill="url(#catBody)" />
+                        <circle cx="60" cy="35" r="10" fill="url(#catBody)" />
+                        <path d="M53,29 L50,19 L58,30 M67,29 L70,19 L62,30" fill="url(#catBody)" />
+                        <circle cx="57" cy="34" r="2.5" fill="#fff" /><circle cx="57" cy="34" r="1" fill="#000" />
+                        <circle cx="63" cy="34" r="2.5" fill="#fff" /><circle cx="63" cy="34" r="1" fill="#000" />
+                        <!-- Paws holding the edge -->
+                        <path d="M50,35 L45,35 M50,55 L45,55" stroke="#2d2f36" stroke-width="3" stroke-linecap="round" />
+                    </g>
+                </svg>
+            </div>
+            <div class="cat-card-label">an - on (vertical), at</div>
+        </div>
+
+    </div>
+</section>

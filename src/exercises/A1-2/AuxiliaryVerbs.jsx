@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A1-2/auxiliaryVerbs.json";
-import hint from "../../../data/A1-2/images/auxiliaryVerbs.html?raw";
+import hintRu from "../../../data/A1-2/images/auxiliaryVerbs.html?raw";
+import hintEn from "../../../data/A1-2/images/en/auxiliaryVerbs.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -33,6 +35,7 @@ function getAcceptableAnswers(answer) {
 }
 
 function AuxiliaryVerbs() {
+  const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
 
@@ -56,7 +59,7 @@ function AuxiliaryVerbs() {
 
   return (
       <div className="exercise-inner">
-        {showHint && <ModalHtml html={hint} onClose={() => setShowHint(false)} />}
+        {showHint && <ModalHtml html={locale === "en" ? hintEn : hintRu} onClose={() => setShowHint(false)} />}
 
         <div className="scroll-container">
           <ul className="list">

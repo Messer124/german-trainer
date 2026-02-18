@@ -1,12 +1,16 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/prepositions.json";
-import slide1 from "../../../data/A2/images/prepositions.html?raw";
-import slide2 from "../../../data/A2/images/prepVerbs.html?raw";
-import slide3 from "../../../data/A2/images/articles.html?raw";
+import slide1Ru from "../../../data/A2/images/prepositions.html?raw";
+import slide2Ru from "../../../data/A2/images/prepVerbs.html?raw";
+import slide3Ru from "../../../data/A2/images/articles.html?raw";
+import slide1En from "../../../data/A2/images/en/prepositions.html?raw";
+import slide2En from "../../../data/A2/images/en/prepVerbs.html?raw";
+import slide3En from "../../../data/A2/images/en/articles.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -24,11 +28,15 @@ function normalize(v) {
 }
 
 export default function Wechselpraepositionen() {
+  const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
 
   const items = useMemo(() => normalizeItems(data.items), []);
-  const slides = useMemo(() => [slide1, slide2, slide3], []);
+  const slides = useMemo(
+      () => (locale === "en" ? [slide1En, slide2En, slide3En] : [slide1Ru, slide2Ru, slide3Ru]),
+      [locale]
+  );
 
   useEffect(() => {
     const handleShowHint = () => setShowHint(true);

@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { Eye } from "lucide-react";
 import data from "../../../data/A1-1/kein-nicht.json";
 import "../../css/exercises/Common.css";
-import hint from "../../../data/A1-1/images/kein-nicht.html?raw";
+import { useLocale } from "../../contexts/LocaleContext";
+import hintRu from "../../../data/A1-1/images/kein-nicht.html?raw";
+import hintEn from "../../../data/A1-1/images/en/kein-nicht.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
@@ -10,6 +12,7 @@ import ExpandingInput from "../../components/ExpandingInput";
 const STORAGE_KEY = "keinOrNicht-sentences-answers";
 
 function KeinOrNichtSentences() {
+    const { locale } = useLocale();
     const [showImage, setShowImage] = useState(false);
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [previewValues, setPreviewValues] = useState({});
@@ -83,7 +86,7 @@ function KeinOrNichtSentences() {
         <div className="exercise-inner">
             {showImage && (
                 <ModalHtml
-                    html={hint}
+                    html={locale === "en" ? hintEn : hintRu}
                     onClose={() => setShowImage(false)}
                 />
             )}

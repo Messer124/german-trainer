@@ -1,13 +1,18 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A1-2/conjunctions.json";
-import slide1 from "../../../data/A1-2/images/conjunctions1.html?raw";
-import slide2 from "../../../data/A1-2/images/conjunctions2.html?raw";
-import slide3 from "../../../data/A1-2/images/conjunctions3.html?raw";
-import slide4 from "../../../data/A1-2/images/conjunctions4.html?raw";
+import slide1Ru from "../../../data/A1-2/images/conjunctions1.html?raw";
+import slide2Ru from "../../../data/A1-2/images/conjunctions2.html?raw";
+import slide3Ru from "../../../data/A1-2/images/conjunctions3.html?raw";
+import slide4Ru from "../../../data/A1-2/images/conjunctions4.html?raw";
+import slide1En from "../../../data/A1-2/images/en/conjunctions1.html?raw";
+import slide2En from "../../../data/A1-2/images/en/conjunctions2.html?raw";
+import slide3En from "../../../data/A1-2/images/en/conjunctions3.html?raw";
+import slide4En from "../../../data/A1-2/images/en/conjunctions4.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -18,10 +23,14 @@ function normalize(s) {
 }
 
 export default function Conjunctions() {
+  const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
 
-  const slides = useMemo(() => [slide1, slide2, slide3, slide4], []);
+  const slides = useMemo(
+      () => (locale === "en" ? [slide1En, slide2En, slide3En, slide4En] : [slide1Ru, slide2Ru, slide3Ru, slide4Ru]),
+      [locale]
+  );
   const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
 
   useEffect(() => {

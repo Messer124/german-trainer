@@ -5,7 +5,8 @@ import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import hint1 from "../../../data/A1-2/images/wordGender1.html?raw";
+import hint1Ru from "../../../data/A1-2/images/wordGender1.html?raw";
+import hint1En from "../../../data/A1-2/images/en/wordGender1.html?raw";
 import hint2 from "../../../data/A1-2/images/wordGender2.html?raw";
 
 const STORAGE_KEY = "noun-articles-answers";
@@ -14,7 +15,7 @@ function NounArticles() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
-  const hintSlides = [hint1, hint2];
+  const hintSlides = locale === "en" ? [hint1En, hint2] : [hint1Ru, hint2];
 
   useEffect(() => {
     const handleShowHint = () => setShowHint(true);

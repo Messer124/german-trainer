@@ -3,9 +3,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Eye } from "lucide-react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/verbsPreteritum.json";
-import hint from "../../../data/A1-2/images/preteritum.html?raw";
+import hintRu from "../../../data/A1-2/images/preteritum.html?raw";
+import hintEn from "../../../data/A1-2/images/en/preteritum.html?raw";
 import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "verbs-preteritum-answers";
@@ -20,6 +22,7 @@ function getCorrectAnswer(answer) {
 }
 
 export default function VerbsPreteritum() {
+    const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
     const [previewValues, setPreviewValues] = useState({});
@@ -82,7 +85,7 @@ export default function VerbsPreteritum() {
 
     return (
         <div className="exercise-inner">
-            {showHint && <ModalHtml html={hint} onClose={() => setShowHint(false)} />}
+            {showHint && <ModalHtml html={locale === "en" ? hintEn : hintRu} onClose={() => setShowHint(false)} />}
 
             <div className="scroll-container">
                 <ul className="list">

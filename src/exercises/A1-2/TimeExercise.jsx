@@ -2,14 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import { Eye } from "lucide-react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import data from "../../../data/A1-2/time.json";
-import hint from "../../../data/A1-2/images/timeRules.html?raw";
+import hintRu from "../../../data/A1-2/images/timeRules.html?raw";
+import hintEn from "../../../data/A1-2/images/en/timeRules.html?raw";
 import "../../css/exercises/Common.css";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "time-answers";
 
 function TimeExercise() {
+  const { locale } = useLocale();
   const [showImage, setShowImage] = useState(false);
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [previewValues, setPreviewValues] = useState({});
@@ -78,7 +81,7 @@ function TimeExercise() {
       <div className="exercise-inner">
           {showImage && (
               <ModalHtml
-                  html={hint}
+                  html={locale === "en" ? hintEn : hintRu}
                   onClose={() => setShowImage(false)}
               />
           )}

@@ -3,10 +3,12 @@ import { Eye } from "lucide-react";
 
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A1-2/verbsPerfekt.json";
-import hint from "../../../data/A1-2/images/partizip2.html?raw";
+import hintRu from "../../../data/A1-2/images/partizip2.html?raw";
+import hintEn from "../../../data/A1-2/images/en/partizip2.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -24,6 +26,7 @@ function normalize(v) {
 }
 
 export default function VerbsPerfekt() {
+  const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
   const [previewValues, setPreviewValues] = useState({});
@@ -88,7 +91,7 @@ export default function VerbsPerfekt() {
 
   return (
       <div className="exercise-inner">
-        {showHint && <ModalHtml html={hint} onClose={() => setShowHint(false)} />}
+        {showHint && <ModalHtml html={locale === "en" ? hintEn : hintRu} onClose={() => setShowHint(false)} />}
 
         <div className="scroll-container">
           <ul className="list">

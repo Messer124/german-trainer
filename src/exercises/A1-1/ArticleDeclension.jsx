@@ -3,12 +3,15 @@ import data from "../../../data/A1-1/articleDeclension.json";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import "../../css/exercises/Common.css";
-import hint from "../../../data/A1-1/images/cases.html?raw";
+import { useLocale } from "../../contexts/LocaleContext";
+import hintRu from "../../../data/A1-1/images/cases.html?raw";
+import hintEn from "../../../data/A1-1/images/en/cases.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "articles-answers";
 
 function ArticleDeclension() {
+    const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showImage, setShowImage] = useState(false);
 
@@ -77,7 +80,7 @@ function ArticleDeclension() {
         <div className="exercise-inner">
             {showImage && (
                 <ModalHtml
-                    html={hint}
+                    html={locale === "en" ? hintEn : hintRu}
                     onClose={() => setShowImage(false)}
                 />
             )}

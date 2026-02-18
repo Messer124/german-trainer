@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/indefinitePronouns.json"
-import hintHtml from "../../../data/A1-2/images/indefinitePronouns.html?raw";
+import { useLocale } from "../../contexts/LocaleContext";
+import hintHtmlRu from "../../../data/A1-2/images/indefinitePronouns.html?raw";
+import hintHtmlEn from "../../../data/A1-2/images/en/indefinitePronouns.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
@@ -9,6 +11,7 @@ import ExpandingInput from "../../components/ExpandingInput";
 const STORAGE_KEY = "indefinite-pronouns-answers";
 
 function IndefinitePronouns() {
+    const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showImage, setShowImage] = useState(false);
 
@@ -89,7 +92,7 @@ function IndefinitePronouns() {
         <div className="exercise-inner">
             {showImage && (
                 <ModalHtml
-                    html={hintHtml}
+                    html={locale === "en" ? hintHtmlEn : hintHtmlRu}
                     onClose={() => setShowImage(false)}
                 />
             )}

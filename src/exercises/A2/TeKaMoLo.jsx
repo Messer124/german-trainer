@@ -3,10 +3,12 @@ import { DndContext, closestCenter, KeyboardSensor, PointerSensor, TouchSensor, 
 import { SortableContext, sortableKeyboardCoordinates, useSortable, arrayMove, rectSortingStrategy } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import ModalHtml from "../../components/ModalHtml";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/teKaMoLo.json";
-import hint from "../../../data/A2/images/teKaMoLo.html?raw";
+import hintRu from "../../../data/A2/images/tekamolo.html?raw";
+import hintEn from "../../../data/A2/images/en/tekamolo.html?raw";
 
 import "../../css/exercises/Common.css";
 import "../../css/exercises/TeKaMoLo.css";
@@ -53,8 +55,10 @@ function SortableWord({ id, text, colorClass, isCorrect }) {
 }
 
 export default function TeKaMoLo() {
+    const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
+    const hint = locale === "en" ? hintEn : hintRu;
 
     const sensors = useSensors(
         useSensor(PointerSensor, {

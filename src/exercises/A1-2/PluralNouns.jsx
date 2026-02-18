@@ -2,20 +2,24 @@ import { useEffect, useRef, useState } from "react";
 import { Eye } from "lucide-react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/pluralNouns.json";
 import "../../css/exercises/Common.css";
-import hint1 from "../../../data/A1-2/images/pluralNouns1.html?raw";
-import hint2 from "../../../data/A1-2/images/pluralNouns2.html?raw";
+import hint1Ru from "../../../data/A1-2/images/pluralNouns1.html?raw";
+import hint2Ru from "../../../data/A1-2/images/pluralNouns2.html?raw";
+import hint1En from "../../../data/A1-2/images/en/pluralNouns1.html?raw";
+import hint2En from "../../../data/A1-2/images/en/pluralNouns2.html?raw";
 
 const STORAGE_KEY = "plural-nouns-answers";
 
 function PluralNounsExercise() {
+  const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
   const [previewValues, setPreviewValues] = useState({});
   const previewTimersRef = useRef({});
-  const hintSlides = [hint1, hint2];
+  const hintSlides = locale === "en" ? [hint1En, hint2En] : [hint1Ru, hint2Ru];
 
   useEffect(() => {
     const handleShowHint = () => setShowHint(true);

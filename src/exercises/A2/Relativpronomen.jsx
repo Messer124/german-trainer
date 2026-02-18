@@ -1,11 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/relativpronomen.json";
-import slide1 from "../../../data/A2/images/relativpronomen.html?raw";
-import slide2 from "../../../data/A2/images/articles.html?raw";
+import slide1Ru from "../../../data/A2/images/relativpronomen.html?raw";
+import slide2Ru from "../../../data/A2/images/articles.html?raw";
+import slide1En from "../../../data/A2/images/en/relativpronomen.html?raw";
+import slide2En from "../../../data/A2/images/en/articles.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -25,10 +28,14 @@ function toAnswerArray(answer) {
 }
 
 export default function Relativpronomen() {
+    const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
 
-    const slides = useMemo(() => [slide1, slide2], []);
+    const slides = useMemo(
+        () => (locale === "en" ? [slide1En, slide2En] : [slide1Ru, slide2Ru]),
+        [locale]
+    );
     const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
 
     useEffect(() => {
