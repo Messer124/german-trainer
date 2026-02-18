@@ -37,6 +37,10 @@
   line-height: 1.2;
   white-space: nowrap;
   box-sizing: border-box;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .tkm-word.color-orange {

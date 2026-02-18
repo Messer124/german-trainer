@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { DndContext, closestCenter, KeyboardSensor, PointerSensor, TouchSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { DndContext, closestCenter, KeyboardSensor, MouseSensor, TouchSensor, useSensor, useSensors } from "@dnd-kit/core";
 import { SortableContext, sortableKeyboardCoordinates, useSortable, arrayMove, rectSortingStrategy } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import ModalHtml from "../../components/ModalHtml";
@@ -8,7 +8,7 @@ import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/tekamolo.json";
 import hintRu from "../../../data/A2/images/tekamolo.html?raw";
-import hintEn from "../../../data/A2/images/en/tekamolo.html?raw";
+import hintEn from "../../../data/A2/images/en/teKaMoLo.html?raw";
 
 import "../../css/exercises/Common.css";
 import "../../css/exercises/TeKaMoLo.css";
@@ -61,11 +61,11 @@ export default function TeKaMoLo() {
     const hint = locale === "en" ? hintEn : hintRu;
 
     const sensors = useSensors(
-        useSensor(PointerSensor, {
+        useSensor(MouseSensor, {
             activationConstraint: { distance: 8 },
         }),
         useSensor(TouchSensor, {
-            activationConstraint: { delay: 120, tolerance: 8 },
+            activationConstraint: { delay: 100, tolerance: 10 },
         }),
         useSensor(KeyboardSensor, {
             coordinateGetter: sortableKeyboardCoordinates,
