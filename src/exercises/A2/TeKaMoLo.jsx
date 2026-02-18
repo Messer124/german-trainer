@@ -6,7 +6,7 @@ import ModalHtml from "../../components/ModalHtml";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
-import data from "../../../data/A2/teKaMoLo.json";
+import data from "../../../data/A2/tekamolo.json";
 import hintRu from "../../../data/A2/images/tekamolo.html?raw";
 import hintEn from "../../../data/A2/images/en/tekamolo.html?raw";
 
