@@ -37,6 +37,19 @@ body {
   height: 100dvh;
 }
 
+.mobile-stage {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main--mobile-panel {
+  position: absolute;
+  inset: 0;
+}
+
 .main {
   flex: 1;
   display: flex;
@@ -566,9 +579,11 @@ body {
   }
 
   .sidebar--mobile {
+    position: absolute;
+    inset: 0;
     width: 100%;
     flex: 1 0 auto;
-    border-radius: var(--radius)
+    border-radius: var(--radius);
   }
 
   .sidebar-settings-button {

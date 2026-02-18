@@ -65,7 +65,7 @@ export default function TeKaMoLo() {
             activationConstraint: { distance: 8 },
         }),
         useSensor(TouchSensor, {
-            activationConstraint: { delay: 100, tolerance: 10 },
+            activationConstraint: { tolerance: 10 },
         }),
         useSensor(KeyboardSensor, {
             coordinateGetter: sortableKeyboardCoordinates,

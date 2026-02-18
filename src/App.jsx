@@ -126,7 +126,6 @@ export default function App() {
     const sidebar = (
         <motion.aside
             key="sidebar"
-            layout={isMobile}
             className={`sidebar ${
                 isMobile ? "sidebar--mobile" : "sidebar--desktop"
             } ${!isMobile && !isSidebarOpen ? "sidebar--collapsed" : ""}`}
@@ -135,7 +134,7 @@ export default function App() {
                     initial: {opacity: 0, x: -20},
                     animate: {opacity: 1, x: 0},
                     exit: {opacity: 0, x: -20},
-                    transition: {duration: 0.35, ease: "easeInOut"},
+                    transition: {duration: 0.2, ease: "easeOut"},
                 }
                 : {})}
         >
@@ -267,8 +266,8 @@ export default function App() {
 
     // ---------- MAIN (header + exercise-container) ----------
 
-    const main = (
-        <div className="main">
+    const mainContent = (
+        <>
             <header className="app-header">
                 <div className="app-header-left">
                     {(!isSidebarOpen || isMobile) && (
@@ -296,7 +295,26 @@ export default function App() {
                     </div>
                 </div>
             </main>
+        </>
+    );
+
+    const main = (
+        <div className="main">
+            {mainContent}
         </div>
+    );
+
+    const mobileMain = (
+        <motion.div
+            key="main"
+            className="main main--mobile-panel"
+            initial={{opacity: 0, x: 20}}
+            animate={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: 20}}
+            transition={{duration: 0.2, ease: "easeOut"}}
+        >
+            {mainContent}
+        </motion.div>
     );
 
     // ---------- MOBILE: полноэкранный сайдбар или контент ----------
@@ -304,9 +322,11 @@ export default function App() {
     if (isMobile) {
         return (
             <div className="app-layout app-layout--mobile">
-                <AnimatePresence mode="wait">
-                    {isSidebarOpen ? sidebar : main}
-                </AnimatePresence>
+                <div className="mobile-stage">
+                    <AnimatePresence initial={false} mode="sync">
+                        {isSidebarOpen ? sidebar : mobileMain}
+                    </AnimatePresence>
+                </div>
             </div>
         );
     }
