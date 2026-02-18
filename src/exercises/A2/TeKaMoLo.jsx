@@ -5,8 +5,8 @@ import { CSS } from "@dnd-kit/utilities";
 import ModalHtml from "../../components/ModalHtml";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
-import data from "../../../data/A2/TeKaMoLo.json";
-import hint from "../../../data/A2/images/TeKaMoLo.html?raw";
+import data from "../../../data/A2/teKaMoLo.json";
+import hint from "../../../data/A2/images/teKaMoLo.html?raw";
 
 import "../../css/exercises/Common.css";
 import "../../css/exercises/TeKaMoLo.css";

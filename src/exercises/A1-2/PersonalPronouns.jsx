@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/personal-pronouns.json";
 import hint from "../../../data/A1-2/images/personal-pronouns.html?raw";
@@ -75,11 +76,13 @@ function PersonalPronouns() {
                 {renderSentenceWithBoldQuotes(item.sentence)}
               </span>
 
-                            <input
+                            <ExpandingInput
                                 type="text"
                                 value={value}
                                 onChange={(e) => handleChange(index, e.target.value)}
                                 className={inputClass}
+                                minWidth={120}
+                                maxWidth={260}
                             />
                         </li>
                     );

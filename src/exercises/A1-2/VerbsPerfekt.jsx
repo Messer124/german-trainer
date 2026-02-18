@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Eye } from "lucide-react";
 
 import ModalHtml from "../../components/ModalHtml";
@@ -26,6 +26,8 @@ function normalize(v) {
 export default function VerbsPerfekt() {
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
+  const [previewValues, setPreviewValues] = useState({});
+  const previewTimersRef = useRef({});
 
   const items = useMemo(() => normalizeItems(data.items), []);
 
@@ -35,14 +37,53 @@ export default function VerbsPerfekt() {
     return () => document.removeEventListener("show-hint", handleShowHint);
   }, []);
 
+  useEffect(() => {
+    return () => {
+      Object.values(previewTimersRef.current).forEach((id) => clearTimeout(id));
+    };
+  }, []);
+
   const handleChange = (itemIdx, fieldIdx, value, correct) => {
     const key = `${itemIdx}-${fieldIdx}`;
     const isCorrect = normalize(value) === normalize(correct);
+
+    if (previewTimersRef.current[key]) {
+      clearTimeout(previewTimersRef.current[key]);
+      delete previewTimersRef.current[key];
+    }
+    if (previewValues[key] != null) {
+      setPreviewValues((prev) => {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      });
+    }
 
     setAnswers((prev) => ({
       ...prev,
       [key]: { value, isCorrect },
     }));
+  };
+
+  const showAnswerPreview = (itemIdx, fieldIdx, answer) => {
+    const key = `${itemIdx}-${fieldIdx}`;
+    const value = String(answer ?? "");
+    if (!value) return;
+
+    if (previewTimersRef.current[key]) {
+      clearTimeout(previewTimersRef.current[key]);
+    }
+
+    setPreviewValues((prev) => ({ ...prev, [key]: value }));
+
+    previewTimersRef.current[key] = setTimeout(() => {
+      setPreviewValues((prev) => {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      });
+      delete previewTimersRef.current[key];
+    }, 2000);
   };
 
   return (
@@ -70,6 +111,8 @@ export default function VerbsPerfekt() {
 
               const value0 = stored0?.value ?? "";
               const value1 = stored1?.value ?? "";
+              const visibleValue0 = previewValues[key0] ?? value0;
+              const visibleValue1 = previewValues[key1] ?? value1;
 
               const class0 =
                   value0.trim() === ""
@@ -91,11 +134,12 @@ export default function VerbsPerfekt() {
 
                     <ExpandingInput
                         type="text"
-                        value={value0}
+                        value={visibleValue0}
                         onChange={(e) => handleChange(itemIdx, 0, e.target.value, correct0)}
                         className={class0}
                         minWidth={70}
                         maxWidth={220}
+                        readOnly={previewValues[key0] != null}
                         aria-label={`Perfekt blank 1 (item ${itemIdx + 1})`}
                     />
 
@@ -103,24 +147,30 @@ export default function VerbsPerfekt() {
 
                     <ExpandingInput
                         type="text"
-                        value={value1}
+                        value={visibleValue1}
                         onChange={(e) => handleChange(itemIdx, 1, e.target.value, correct1)}
                         className={class1}
                         // требование: инфинитив (verb) в placeholder второго поля
                         placeholder={item.verb}
                         maxWidth={260}
+                        readOnly={previewValues[key1] != null}
                         aria-label={`Perfekt blank 2 (item ${itemIdx + 1})`}
                     />
 
                     {right}
 
                     {/* глазок только для второго поля — в конце предложения */}
-                    <span className="eye-container" title="Show answer">
-                  <span>
-                    <Eye size={18} />
-                  </span>
-                  <span className="eye">{correct1}</span>
-                </span>
+                    <button
+                        type="button"
+                        className="eye-container eye-container--button"
+                        title="Show answer"
+                        onClick={() => showAnswerPreview(itemIdx, 1, correct1)}
+                        aria-label={`Show answer for item ${itemIdx + 1}`}
+                    >
+                      <span>
+                        <Eye size={18} />
+                      </span>
+                    </button>
                   </li>
               );
             })}

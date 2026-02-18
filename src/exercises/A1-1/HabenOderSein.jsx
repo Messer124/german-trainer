@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/haben-sein.json";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 import hint from "../../../data/A1-1/images/haben-sein.html?raw";
 import "../../css/exercises/Common.css";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
@@ -51,11 +52,13 @@ function HabenOderSein() {
                 return (
                     <li key={index}>
                       {parts[0]}
-                      <input
+                      <ExpandingInput
                           type="text"
                           value={value}
                           onChange={(e) => handleChange(index, e.target.value)}
                           className={`input ${value === "" ? "" : isCorrect ? "correct" : "incorrect"}`}
+                          minWidth={110}
+                          maxWidth={240}
                       />
                       {parts[1]}
                     </li>

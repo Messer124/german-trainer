@@ -4,6 +4,7 @@ import data from "../../../data/A1-2/indefinitePronouns.json"
 import hintHtml from "../../../data/A1-2/images/indefinitePronouns.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 
 const STORAGE_KEY = "indefinite-pronouns-answers";
 
@@ -66,13 +67,15 @@ function IndefinitePronouns() {
                         <span key={idx}>
               {part}
                             {idx < answerArray.length && (
-                                <input
+                                <ExpandingInput
                                     type="text"
                                     value={inputValue}
                                     onChange={(e) =>
                                         handleChange(sentenceIdx, idx, e.target.value)
                                     }
                                     className={inputClass}
+                                    minWidth={110}
+                                    maxWidth={260}
                                 />
                             )}
             </span>

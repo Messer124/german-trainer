@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-1/modalVerbs.json";
 import hint1 from "../../../data/A1-1/images/modal-verbs.html?raw";
@@ -61,12 +62,14 @@ function ModalVerbs() {
                         return (
                             <li key={index}>
                                 {parts[0]}
-                                <input
+                                <ExpandingInput
                                     type="text"
                                     value={value}
                                     onChange={(e) => handleChange(index, e.target.value)}
                                     className={inputClass}
                                     placeholder={item.verb}
+                                    minWidth={120}
+                                    maxWidth={260}
                                 />
                                 {parts[1]}
                             </li>

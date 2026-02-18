@@ -4,6 +4,7 @@ import data from "../../../data/A1-2/prepositionsPlace.json";
 import hint from "../../../data/A1-2/images/prepositionsPlace.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 
 const STORAGE_KEY = "prepositions-place-answers";
 
@@ -76,13 +77,15 @@ export default function Prepositions() {
                         <span key={idx}>
               {part}
                             {idx < answerArray.length && (
-                                <input
+                                <ExpandingInput
                                     type="text"
                                     value={inputValue}
                                     onChange={(e) => handleChange(sentenceIdx, idx, e.target.value)}
                                     className={inputClass}
                                     autoComplete="off"
                                     spellCheck={false}
+                                    minWidth={110}
+                                    maxWidth={260}
                                 />
                             )}
             </span>
@@ -120,4 +123,3 @@ Prepositions.headerButton = (
 
 Prepositions.instructions = data.instructions;
 Prepositions.title = data.title;
-

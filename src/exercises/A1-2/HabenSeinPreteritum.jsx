@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/habenSeinPreteritum.json";
 import hint from "../../../data/A1-2/images/habenSeinPreteritum.html?raw";
@@ -63,7 +64,7 @@ function HabenSeinPreteritum() {
                 return (
                     <li key={index}>
                       {parts[0]}
-                      <input
+                      <ExpandingInput
                           type="text"
                           value={value}
                           onChange={(e) => handleChange(index, e.target.value)}
@@ -74,6 +75,8 @@ function HabenSeinPreteritum() {
                                       ? "correct"
                                       : "incorrect"
                           }`}
+                          minWidth={110}
+                          maxWidth={240}
                       />
                       {parts[1]}
                     </li>
@@ -102,4 +105,3 @@ HabenSeinPreteritum.instructions = data.instructions;
 HabenSeinPreteritum.title = data.title;
 
 export default HabenSeinPreteritum;
-

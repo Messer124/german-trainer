@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Eye } from "lucide-react";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 import data from "../../../data/A1-2/time.json";
 import hint from "../../../data/A1-2/images/timeRules.html?raw";
 import "../../css/exercises/Common.css";
@@ -11,6 +12,8 @@ const STORAGE_KEY = "time-answers";
 function TimeExercise() {
   const [showImage, setShowImage] = useState(false);
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
+  const [previewValues, setPreviewValues] = useState({});
+  const previewTimersRef = useRef({});
 
   useEffect(() => {
     const handleShowHint = () => {
@@ -23,14 +26,52 @@ function TimeExercise() {
     };
   }, []);
 
+  useEffect(() => {
+    return () => {
+      Object.values(previewTimersRef.current).forEach((id) => clearTimeout(id));
+    };
+  }, []);
+
   const handleChange = (index, value) => {
     const correct = data.items[index].answer.trim().toLowerCase();
     const isCorrect = value.trim().toLowerCase() === correct;
+
+    if (previewTimersRef.current[index]) {
+      clearTimeout(previewTimersRef.current[index]);
+      delete previewTimersRef.current[index];
+    }
+    if (previewValues[index] != null) {
+      setPreviewValues((prev) => {
+        const next = { ...prev };
+        delete next[index];
+        return next;
+      });
+    }
 
     setAnswers((prev) => ({
       ...prev,
       [index]: { value, isCorrect },
     }));
+  };
+
+  const showAnswerPreview = (index) => {
+    const answer = String(data.items[index]?.answer ?? "");
+    if (!answer) return;
+
+    if (previewTimersRef.current[index]) {
+      clearTimeout(previewTimersRef.current[index]);
+    }
+
+    setPreviewValues((prev) => ({ ...prev, [index]: answer }));
+
+    previewTimersRef.current[index] = setTimeout(() => {
+      setPreviewValues((prev) => {
+        const next = { ...prev };
+        delete next[index];
+        return next;
+      });
+      delete previewTimersRef.current[index];
+    }, 2000);
   };
 
   return (
@@ -47,7 +88,8 @@ function TimeExercise() {
               {data.items.map((item, index) => {
                 const stored = answers[index];
                 const value = stored?.value || "";
-                const trimmed = value.trim();
+                const visibleValue = previewValues[index] ?? value;
+                const trimmed = visibleValue.trim();
                 const isCorrect = stored?.isCorrect;
 
                 let inputClass = "autosize-input";
@@ -55,29 +97,30 @@ function TimeExercise() {
                   inputClass += isCorrect ? " correct" : " incorrect";
                 }
 
-                // ширина считается на каждом рендере, как в KeinOrNicht
-                const widthCh = Math.max(trimmed.length + 1, 6);
-
                 return (
                     <li key={index}>
                       <span className="sentence">{item.time}</span>
 
-                      <input
+                      <ExpandingInput
                           type="text"
                           className={inputClass}
-                          value={value}
+                          value={visibleValue}
                           onChange={(e) => handleChange(index, e.target.value)}
-                          style={{
-                            width: `${widthCh}ch`,
-                          }}
+                          readOnly={previewValues[index] != null}
+                          minWidth={140}
+                          maxWidth={460}
                       />
 
-                      <span className="eye-container">
-                                    <span>
-                                        <Eye size={18} />
-                                    </span>
-                                    <span className="eye">{item.answer}</span>
-                                </span>
+                      <button
+                          type="button"
+                          className="eye-container eye-container--button"
+                          onClick={() => showAnswerPreview(index)}
+                          aria-label={`Show answer for item ${index + 1}`}
+                      >
+                        <span>
+                          <Eye size={18} />
+                        </span>
+                      </button>
                     </li>
                 );
               })}

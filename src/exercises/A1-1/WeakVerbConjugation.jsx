@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/weak-verb-conjugation.json";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 import hint from "../../../data/A1-1/images/weak-verbs-conj.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -53,7 +54,7 @@ function WeakVerbConjugation() {
 
                                 return (
                                     <td key={pronoun}>
-                                        <input
+                                        <ExpandingInput
                                             type="text"
                                             value={answers[inputKey]?.value || ""}
                                             placeholder={verb.infinitive}
@@ -72,6 +73,8 @@ function WeakVerbConjugation() {
                                                         ? "correct"
                                                         : "incorrect"
                                             }`}
+                                            minWidth={100}
+                                            maxWidth={240}
                                         />
                                     </td>
                                 );

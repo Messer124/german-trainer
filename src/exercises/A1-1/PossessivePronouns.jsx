@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/posessive_pronouns.json";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 import "../../css/exercises/Common.css";
 import hint from "../../../data/A1-1/images/posessive_pronouns.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
@@ -53,13 +54,15 @@ function PossessivePronouns() {
                         <span key={idx}>
               {part}
                             {idx < answerArray.length && (
-                                <input
+                                <ExpandingInput
                                     type="text"
                                     value={inputValue}
                                     onChange={(e) =>
                                         handleChange(sentenceIdx, idx, e.target.value)
                                     }
                                     className={inputClass}
+                                    minWidth={110}
+                                    maxWidth={260}
                                 />
                             )}
             </span>

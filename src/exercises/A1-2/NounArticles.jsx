@@ -4,6 +4,7 @@ import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 import hint1 from "../../../data/A1-2/images/wordGender1.html?raw";
 import hint2 from "../../../data/A1-2/images/wordGender2.html?raw";
 
@@ -60,11 +61,13 @@ function NounArticles() {
 
               return (
                   <li key={index}>
-                    <input
+                    <ExpandingInput
                         type="text"
                         value={value}
                         onChange={(e) => handleChange(index, e.target.value)}
                         className={inputClassName}
+                        minWidth={90}
+                        maxWidth={180}
                     />
                     {item.word.replace(/^_+/, "").trim()} —{" "}
                     {item.translation[locale]}

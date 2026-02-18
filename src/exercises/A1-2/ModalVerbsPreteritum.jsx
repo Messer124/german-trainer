@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/modalVerbsPreteritum.json";
 import hint from "../../../data/A1-2/images/modalVersPreteritum.html?raw"
@@ -59,12 +60,14 @@ function ModalVerbsPreteritum() {
                 return (
                     <li key={index}>
                       {parts[0]}
-                      <input
+                      <ExpandingInput
                           type="text"
                           value={value}
                           onChange={(e) => handleChange(index, e.target.value)}
                           className={inputClass}
                           placeholder={item.verb}
+                          minWidth={120}
+                          maxWidth={260}
                       />
                       {parts[1]}
                     </li>

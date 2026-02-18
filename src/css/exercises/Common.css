@@ -220,6 +220,12 @@
     cursor: pointer;
 }
 
+.eye-container--button {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
 /* базовое состояние: подсказка скрыта */
 .eye {
     position: absolute;

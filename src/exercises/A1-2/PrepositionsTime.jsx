@@ -5,6 +5,7 @@ import hint from "../../../data/A1-2/images/prepositionsTime.html?raw";
 import hint2 from "../../../data/A1-2/images/prepositionsTime2.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
+import ExpandingInput from "../../components/ExpandingInput";
 
 function flattenItems(items) {
     if (!Array.isArray(items)) return [];
@@ -77,13 +78,15 @@ export default function PrepositionsTime() {
                         <span key={idx}>
               {part}
                             {idx < answerArray.length && (
-                                <input
+                                <ExpandingInput
                                     type="text"
                                     value={inputValue}
                                     onChange={(e) => handleChange(sentenceIdx, idx, e.target.value)}
                                     className={inputClass}
                                     autoComplete="off"
                                     spellCheck={false}
+                                    minWidth={110}
+                                    maxWidth={260}
                                 />
                             )}
             </span>
@@ -122,4 +125,3 @@ PrepositionsTime.headerButton = (
 
 PrepositionsTime.instructions = data.instructions;
 PrepositionsTime.title = data.title;
-

@@ -121,46 +121,6 @@ export default function App() {
 
     useColoredInputs(currentTab);
 
-    useEffect(() => {
-        if (typeof window === "undefined") return;
-
-        const handleClick = (event) => {
-            const target = event.target;
-            // важно: Element, а не HTMLElement — чтобы svg тоже проходили
-            if (!(target instanceof Element)) return;
-
-            // ищем ближайший .eye-container
-            const container = target.closest(".eye-container");
-            if (!container) return;
-
-            const popup = container.querySelector(".eye");
-            if (!popup) return;
-
-            // показываем подсказку
-            popup.classList.add("eye--visible");
-
-            // если уже был таймер — очищаем
-            const prevId = popup.getAttribute("data-eye-timeout-id");
-            if (prevId) {
-                window.clearTimeout(Number(prevId));
-            }
-
-            // скрываем через 2 секунды
-            const timeoutId = window.setTimeout(() => {
-                popup.classList.remove("eye--visible");
-                popup.removeAttribute("data-eye-timeout-id");
-            }, 1500);
-
-            popup.setAttribute("data-eye-timeout-id", String(timeoutId));
-        };
-
-        document.addEventListener("click", handleClick);
-
-        return () => {
-            document.removeEventListener("click", handleClick);
-        };
-    }, []);
-
     // ---------- SIDEBAR (одна разметка для desktop + mobile) ----------
 
     const sidebar = (
