@@ -8,7 +8,7 @@ import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/tekamolo.json";
 import hintRu from "../../../data/A2/images/tekamolo.html?raw";
-import hintEn from "../../../data/A2/images/en/teKaMoLo.html?raw";
+import hintEn from "../../../data/A2/images/en/tekamolo.html?raw";
 
 import "../../css/exercises/Common.css";
 import "../../css/exercises/TeKaMoLo.css";
