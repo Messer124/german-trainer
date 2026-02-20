@@ -6,23 +6,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: var(--size-24);
   overflow: auto;
   z-index: 1000;
 
   /* плавное появление затемнённого фона */
   opacity: 0;
-  animation: modalOverlayFadeIn 0.25s ease-out forwards;
+  animation: modalOverlayFadeIn var(--duration-025) ease-out forwards;
 
   overflow-x: hidden;
 }
 
 /* Белый прямоугольник модалки */
 .modal-dialog {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
-  padding: 16px 24px;
+  background: var(--color-white);
+  border-radius: var(--size-16);
+  box-shadow: 0 var(--size-22) var(--size-60) var(--color-black-35);
+  padding: var(--size-16) var(--size-24);
   max-width: min(1200px, 96vw);
   width: 100%;
 }
@@ -42,10 +42,10 @@
 .modal-html-content-wrapper {
   position: relative;
 
-  background: #fff;
+  background: var(--color-white);
   border-radius: var(--radius);
-  padding: 16px 24px;
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+  padding: var(--size-16) var(--size-24);
+  box-shadow: 0 var(--size-22) var(--size-60) var(--color-black-35);
 
   /* ключевое */
   display: block;
@@ -53,7 +53,7 @@
   width: 100%;
   max-width: 100%;
 
-  max-height: calc(100dvh - 48px);
+  max-height: calc(100dvh - var(--size-48));
 
   /* ключевое: только вертикальный скролл */
   overflow-y: auto;
@@ -61,8 +61,8 @@
   -webkit-overflow-scrolling: touch;
 
   opacity: 0;
-  transform: translateY(10px) scale(0.96);
-  animation: modalDialogZoomIn 0.25s ease-out forwards;
+  transform: translateY(var(--size-10)) scale(0.96);
+  animation: modalDialogZoomIn var(--duration-025) ease-out forwards;
 }
 
 .modal-table-scroll {
@@ -98,7 +98,7 @@
 @keyframes modalDialogZoomIn {
   from {
     opacity: 0;
-    transform: translateY(10px) scale(0.96);
+    transform: translateY(var(--size-10)) scale(0.96);
   }
   to {
     opacity: 1;
@@ -109,19 +109,19 @@
 /* ===== анимации открытия / закрытия ===== */
 
 .modal-overlay--open {
-  animation: modalFadeIn 0.3s ease-out forwards;
+  animation: modalFadeIn var(--duration-03) ease-out forwards;
 }
 
 .modal-overlay--closing {
-  animation: modalFadeOut 0.3s ease-in forwards;
+  animation: modalFadeOut var(--duration-03) ease-in forwards;
 }
 
 .modal-overlay--open .modal-html-content-wrapper {
-  animation: modalZoomIn 0.3s ease-out forwards;
+  animation: modalZoomIn var(--duration-03) ease-out forwards;
 }
 
 .modal-overlay--closing .modal-html-content-wrapper {
-  animation: modalZoomOut 0.3s ease-in forwards;
+  animation: modalZoomOut var(--duration-03) ease-in forwards;
 }
 
 /* ===== HTML-слайдер (стрелки + свайпы) ===== */
@@ -147,11 +147,11 @@
   top: 50%;
   transform: translateY(-50%);
   border: none;
-  border-radius: 36px;
-  padding: 4px 6px;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  font-size: 22px;
+  border-radius: var(--size-36);
+  padding: var(--size-4) var(--size-6);
+  background: var(--color-black-40);
+  color: var(--color-white);
+  font-size: var(--size-22);
   cursor: pointer;
   z-index: 6;
 }
@@ -159,30 +159,30 @@
 /* счётчик (как на скрине 1/2) */
 .modal-slider__counter {
   position: absolute;
-  top: -24px;
+  top: calc(-1 * var(--size-24));
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 12px;
+  background: var(--color-black-40);
+  color: var(--color-white);
+  padding: var(--size-4) var(--size-10);
+  border-radius: var(--size-999);
+  font-size: var(--size-12);
   z-index: 6;
 }
-.modal-slider__nav--prev { left: -28px; }
-.modal-slider__nav--next { right: -28px; }
+.modal-slider__nav--prev { left: calc(-1 * var(--size-28)); }
+.modal-slider__nav--next { right: calc(-1 * var(--size-28)); }
 
 .modal-close-button {
   position: absolute;
-  top: 10px;
-  right: 12px;
-  width: 36px;
-  height: 36px;
+  top: var(--size-10);
+  right: var(--size-12);
+  width: var(--size-36);
+  height: var(--size-36);
   border: none;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  font-size: 24px;
+  border-radius: var(--size-999);
+  background: var(--color-black-40);
+  color: var(--color-white);
+  font-size: var(--size-24);
   line-height: 1;
   cursor: pointer;
   display: grid;
@@ -195,8 +195,8 @@
 }
 
 .modal-close-button:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.7);
-  outline-offset: 2px;
+  outline: var(--size-2) solid var(--color-white-70);
+  outline-offset: var(--size-2);
 }
 
 @keyframes modalFadeIn {
@@ -212,7 +212,7 @@
 @keyframes modalZoomIn {
   from {
     opacity: 0;
-    transform: scale(0.95) translateY(10px);
+    transform: scale(0.95) translateY(var(--size-10));
   }
   to {
     opacity: 1;
@@ -227,7 +227,7 @@
   }
   to {
     opacity: 0;
-    transform: scale(0.95) translateY(10px);
+    transform: scale(0.95) translateY(var(--size-10));
   }
 }
 
@@ -251,9 +251,9 @@
 @media (max-width: 1200px) {
   :root {
     font-size: var(--tablet-modal-font-size);
-    --modal-overlay-padding: 16px;
-    --modal-wrapper-padding-y: 14px;
-    --modal-wrapper-padding-x: 16px;
+    --modal-overlay-padding: var(--size-16);
+    --modal-wrapper-padding-y: var(--size-14);
+    --modal-wrapper-padding-x: var(--size-16);
     --modal-wrapper-max-w: 94vw;
   }
 
@@ -268,30 +268,30 @@
 @media (max-width: 600px) {
   :root {
     font-size: var(--mobile-modal-font-size);
-    --modal-overlay-padding: 10px;
-    --modal-wrapper-padding-y: 12px;
-    --modal-wrapper-padding-x: 12px;
+    --modal-overlay-padding: var(--size-10);
+    --modal-wrapper-padding-y: var(--size-12);
+    --modal-wrapper-padding-x: var(--size-12);
     --modal-wrapper-max-w: 100%;
   }
 
   .modal-close-button {
-    top: 8px;
-    right: 8px;
-    width: 32px;
-    height: 32px;
-    font-size: 22px;
+    top: var(--size-8);
+    right: var(--size-8);
+    width: var(--size-32);
+    height: var(--size-32);
+    font-size: var(--size-22);
   }
 
   .modal-slider__counter {
-    top: -18px;
+    top: calc(-1 * var(--size-18));
   }
 
   .modal-slider__nav--prev {
-    left: -14px;
+    left: calc(-1 * var(--size-14));
   }
 
   .modal-slider__nav--next {
-    right: -14px;
+    right: calc(-1 * var(--size-14));
   }
 
 }

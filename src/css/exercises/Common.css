@@ -5,13 +5,13 @@
 }
 
 .list li {
-    margin-bottom: 16px;
+    margin-bottom: var(--size-16);
     line-height: 1.6;
 }
 
 .sentence {
     display: inline;
-    margin-right: 8px;
+    margin-right: var(--size-8);
 }
 
 .scroll-container {
@@ -19,7 +19,7 @@
     overflow-y: auto;       /* Вертикальный скролл при переполнении */
     width: 100%;
     min-height: 0;          /* Фикс для flex-контейнеров */
-    padding-right: 4px;     /* Небольшой отступ от скроллбара */
+    padding-right: var(--size-4);     /* Небольшой отступ от скроллбара */
 
     /* Опционально: чтобы контент не прилипал к краям при скролле */
     box-sizing: border-box;
@@ -29,28 +29,28 @@
 .input,
 .autosize-input,
 .table-input {
-    padding: 8px 18px;
+    padding: var(--size-8) var(--size-18);
     border-radius: var(--radius);
-    border: 3px solid #ccc;
+    border: var(--size-3) solid var(--color-border-light);
     outline: none;
 
-    font-size: 30px;
+    font-size: var(--size-30);
     line-height: 1.2;
     text-align: center;
 
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--color-white-90);
     box-sizing: border-box;
 
     transition:
-            border-color 0.2s ease,
-            background-color 0.2s ease,
-            box-shadow 0.2s ease;
+            border-color var(--duration-02) ease,
+            background-color var(--duration-02) ease,
+            box-shadow var(--duration-02) ease;
 }
 
-/* 1) обычный input фиксированной ширины 140px */
+/* 1) обычный input фиксированной ширины var(--size-140) */
 .input {
-    width: 140px;
-    margin: 0 6px;
+    width: var(--size-140);
+    margin: 0 var(--size-6);
 }
 
 /* 2) table-input — ширина ячейки, но не более 300px */
@@ -60,9 +60,9 @@
 }
 
 /* 3) autosize-input — чисто CSS:
-   базово 140px, дальше растягивается за счёт fit-content */
+   базово var(--size-140), дальше растягивается за счёт fit-content */
 .autosize-input {
-    min-width: 140px;
+    min-width: var(--size-140);
     width: fit-content;
     max-width: 100%;
 }
@@ -71,42 +71,42 @@
 .input.empty,
 .autosize-input.empty,
 .table-input.empty {
-    box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 0 0 var(--size-1) rgba(15, 23, 42, 0.06);
 }
 
 /* оранжевый — чуть ярче */
 .input.empty.color-orange,
 .autosize-input.empty.color-orange,
 .table-input.empty.color-orange {
-    border-color: #ffb86c;
+    border-color: var(--color-word-orange);
 }
 
 /* жёлтый */
 .input.empty.color-yellow,
 .autosize-input.empty.color-yellow,
 .table-input.empty.color-yellow {
-    border-color: #ffe66d;
+    border-color: var(--color-word-yellow);
 }
 
 /* фиалковый */
 .input.empty.color-violet,
 .autosize-input.empty.color-violet,
 .table-input.empty.color-violet {
-    border-color: #d0b3ff;
+    border-color: var(--color-word-violet);
 }
 
 /* салатовый */
 .input.empty.color-green,
 .autosize-input.empty.color-green,
 .table-input.empty.color-green {
-    border-color: #9ae6b4;
+    border-color: var(--color-word-green);
 }
 
 /* бирюзовый */
 .input.empty.color-teal,
 .autosize-input.empty.color-teal,
 .table-input.empty.color-teal {
-    border-color: #81e6d9;
+    border-color: var(--color-word-teal);
 }
 
 /* ПРАВИЛЬНО / НЕПРАВИЛЬНО — поверх любых цветов пустого */
@@ -115,7 +115,7 @@
 .table-input.correct {
     border-color: var(--color-correct);
     background-color: var(--color-correct-bg);
-    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);
+    box-shadow: 0 0 0 var(--size-2) rgba(34, 197, 94, 0.3);
 }
 
 .input.incorrect,
@@ -123,7 +123,7 @@
 .table-input.incorrect {
     border-color: var(--color-incorrect);
     background-color: var(--color-incorrect-bg);
-    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.3);
+    box-shadow: 0 0 0 var(--size-2) rgba(239, 68, 68, 0.3);
 }
 
 .input.correct,
@@ -161,8 +161,8 @@
     min-height: 0;
 
     border-radius: var(--radius);
-    /*border: 1px solid #ccc;*/
-    /*background: #fff;*/
+    /*border: var(--size-1) solid var(--color-border-light);*/
+    /*background: var(--color-white);*/
 }
 
 .table {
@@ -174,22 +174,22 @@
 .table thead {
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--color-white-90);
     z-index: 2;
 }
 
 .table th {
-    border: 1px solid #cccccc;
-    padding: 8px;
+    border: var(--size-1) solid var(--color-border-light);
+    padding: var(--size-8);
     font-weight: bold;
     text-align: center;
 }
 
 .table td {
-    border: 1px solid #ccc;
-    padding: 8px;
+    border: var(--size-1) solid var(--color-border-light);
+    padding: var(--size-8);
     text-align: center;
-    min-width: 140px;
+    min-width: var(--size-140);
     background: var(--color-bg-surface);
 
 }
@@ -216,7 +216,7 @@
     position: relative;
     display: inline-flex;
     align-items: center;
-    margin-left: 8px;
+    margin-left: var(--size-8);
     cursor: pointer;
 }
 
@@ -234,8 +234,8 @@
     transform-origin: center center;
 
     background: #fefefe;
-    border: 2px solid #73ff2c;
-    padding: 6px 12px;
+    border: var(--size-2) solid #73ff2c;
+    padding: var(--size-6) var(--size-12);
     border-radius: var(--radius);
     white-space: nowrap;
     font-size: var(--desktop-font-size);
@@ -246,9 +246,9 @@
 
     /* ключевое: visibility скрываем ПОСЛЕ fade-out */
     transition:
-            opacity 0.3s ease-out,
-            transform 0.3s ease-out,
-            visibility 0s linear 0.18s;
+            opacity var(--duration-03) ease-out,
+            transform var(--duration-03) ease-out,
+            visibility 0s linear var(--duration-018);
 }
 
 /* видимое состояние */
@@ -259,26 +259,26 @@
 
     /* visibility включаем сразу, чтобы был fade-in */
     transition:
-            opacity 0.3s ease-out,
-            transform 0.3s ease-out,
+            opacity var(--duration-03) ease-out,
+            transform var(--duration-03) ease-out,
             visibility 0s linear 0s;
 }
 
 .hint-button {
-    font-size: 18px;
+    font-size: var(--size-18);
     background: none;
-    border: 2px solid #000000;
+    border: var(--size-2) solid var(--color-black);
     border-radius: 50%;
-    width: 28px;
-    height: 28px;
+    width: var(--size-28);
+    height: var(--size-28);
     padding: 0;
     cursor: pointer;
-    color: #000000;
+    color: var(--color-black);
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 12px;
+    margin-left: var(--size-12);
 }
 
 .expanding-input {
@@ -289,8 +289,8 @@
 
 .expanding-input__measure {
     position: fixed;
-    top: -9999px;
-    left: -9999px;
+    top: calc(-1 * var(--size-9999));
+    left: calc(-1 * var(--size-9999));
     visibility: hidden;
     white-space: pre;
     pointer-events: none;
@@ -326,18 +326,18 @@
     .input,
     .autosize-input,
     .table-input {
-        padding: 5px;
-        border: 2px solid #ccc;
+        padding: var(--size-5);
+        border: var(--size-2) solid var(--color-border-light);
         font-size: var(--mobile-font-size);
     }
 
     .input {
-        width: 70px;
-        margin: 3px;
+        width: var(--size-70);
+        margin: var(--size-3);
     }
 
     .autosize-input {
-        min-width: 70px;
+        min-width: var(--size-70);
     }
 
     .eye {
@@ -350,19 +350,19 @@
     .input,
     .autosize-input,
     .table-input {
-        padding: 5px;
-        border: 2px solid #ccc;
+        padding: var(--size-5);
+        border: var(--size-2) solid var(--color-border-light);
         font-size: var(--tablet-font-size);
 
     }
 
     .input {
-        width: 100px;
-        margin: 3px;
+        width: var(--size-100);
+        margin: var(--size-3);
     }
 
     .autosize-input {
-        min-width: 100px;
+        min-width: var(--size-100);
     }
 
     .eye {

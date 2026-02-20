@@ -156,7 +156,7 @@ export const EXERCISES_BY_LEVEL = {
             component: ConjunctiveAdverbs,
         },
         "wechselpraepositionen": {
-            label: "Wechselpräpositionen",
+            label: "Wechsel präpositionen",
             storageKey: "wechselpraepositionen-answers",
             component: Wechselpraepositionen,
         },
