@@ -2,8 +2,12 @@
 const translations = {
   ru: {
     labels: {
+      settings: "Настройки",
       level: "Уровень",
       language: "Язык",
+      theme: "Тема",
+      themeLight: "Светлая",
+      themeDark: "Тёмная",
       clearAnswers: "Удалить ответы"
     }
   },
@@ -37,8 +41,12 @@ const translations = {
       "wechselpraepositionen": "Wechselpräpositionen"
     },
     labels: {
+      settings: "Settings",
       level: "Level",
       language: "Language",
+      theme: "Theme",
+      themeLight: "Light",
+      themeDark: "Dark",
       clearAnswers: "Delete answers"
     }
   }

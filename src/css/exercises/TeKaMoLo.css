@@ -10,7 +10,7 @@
 
 .tkm-card {
   padding: var(--size-10) 0;
-  border-bottom: var(--size-2) solid rgba(15, 23, 42, 0.14);
+  border-bottom: var(--size-2) solid var(--color-tekamolo-divider);
 }
 
 .tkm-card:last-child {
@@ -28,10 +28,12 @@
 .tkm-word {
   display: inline-flex;
   flex: 0 0 auto;
-  border: var(--size-2) solid #bfc2cc;
+  border: var(--size-2) solid var(--color-tekamolo-word-border-base);
   border-radius: var(--size-32);
   padding: var(--size-6) var(--size-12);
-  background-color: var(--color-white);
+  background-color: var(--color-tekamolo-word-bg);
+  color: var(--color-input-text);
+  box-shadow: var(--shadow-tekamolo-word);
   cursor: grab;
   font-size: inherit;
   line-height: 1.2;

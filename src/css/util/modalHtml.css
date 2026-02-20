@@ -2,7 +2,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: var(--color-modal-overlay);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +19,10 @@
 
 /* Белый прямоугольник модалки */
 .modal-dialog {
-  background: var(--color-white);
+  background: var(--color-modal-surface);
   border-radius: var(--size-16);
-  box-shadow: 0 var(--size-22) var(--size-60) var(--color-black-35);
+  border: var(--size-2) solid var(--color-modal-border);
+  box-shadow: var(--color-modal-shadow), var(--shadow-modal-neon);
   padding: var(--size-16) var(--size-24);
   max-width: min(1200px, 96vw);
   width: 100%;
@@ -42,10 +43,11 @@
 .modal-html-content-wrapper {
   position: relative;
 
-  background: var(--color-white);
+  background: var(--color-modal-surface);
   border-radius: var(--radius);
+  border: var(--size-2) solid var(--color-modal-border);
   padding: var(--size-16) var(--size-24);
-  box-shadow: 0 var(--size-22) var(--size-60) var(--color-black-35);
+  box-shadow: var(--color-modal-shadow), var(--shadow-modal-neon);
 
   /* ключевое */
   display: block;
@@ -149,8 +151,8 @@
   border: none;
   border-radius: var(--size-36);
   padding: var(--size-4) var(--size-6);
-  background: var(--color-black-40);
-  color: var(--color-white);
+  background: var(--color-modal-nav-bg);
+  color: var(--color-modal-nav-text);
   font-size: var(--size-22);
   cursor: pointer;
   z-index: 6;
@@ -162,8 +164,8 @@
   top: calc(-1 * var(--size-24));
   left: 50%;
   transform: translateX(-50%);
-  background: var(--color-black-40);
-  color: var(--color-white);
+  background: var(--color-modal-nav-bg);
+  color: var(--color-modal-nav-text);
   padding: var(--size-4) var(--size-10);
   border-radius: var(--size-999);
   font-size: var(--size-12);
@@ -180,8 +182,8 @@
   height: var(--size-36);
   border: none;
   border-radius: var(--size-999);
-  background: var(--color-black-40);
-  color: var(--color-white);
+  background: var(--color-modal-nav-bg);
+  color: var(--color-modal-nav-text);
   font-size: var(--size-24);
   line-height: 1;
   cursor: pointer;
@@ -191,11 +193,11 @@
 }
 
 .modal-close-button:hover {
-  background: rgba(0, 0, 0, 0.72);
+  background: var(--color-modal-close-hover-bg);
 }
 
 .modal-close-button:focus-visible {
-  outline: var(--size-2) solid var(--color-white-70);
+  outline: var(--size-2) solid var(--color-modal-focus-outline);
   outline-offset: var(--size-2);
 }
 

@@ -17,6 +17,21 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
   sans-serif;
+  background: var(--color-bg-body);
+  color: var(--color-text-primary);
+}
+
+:root.theme-transition *,
+:root.theme-transition *::before,
+:root.theme-transition *::after {
+  transition:
+          background-color var(--duration-theme-switch) ease,
+          color var(--duration-theme-switch) ease,
+          border-color var(--duration-theme-switch) ease,
+          box-shadow var(--duration-theme-switch) ease,
+          fill var(--duration-theme-switch) ease,
+          stroke var(--duration-theme-switch) ease,
+          opacity var(--duration-theme-switch) ease;
 }
 
 /* общий layout */
@@ -26,9 +41,10 @@ body {
   width: 100vw;
   display: flex;
   padding: var(--layout-gap);
-  background: linear-gradient(to bottom, #6ecfff 0%, #4ade80 100%) fixed;
+  background: var(--color-app-bg) fixed;
   overflow: hidden;
   font-size: var(--desktop-font-size);
+  color: var(--color-text-primary);
 }
 
 .app-layout--mobile {
@@ -65,7 +81,7 @@ body {
   flex-direction: column;
   height: 100%;
   border-radius: var(--radius);
-  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
+  background-color: var(--color-surface-glass);
   backdrop-filter: blur(var(--size-12));
   -webkit-backdrop-filter: blur(var(--size-12));
   overflow: hidden;
@@ -126,7 +142,7 @@ body {
 
 .sidebar-middle::-webkit-scrollbar-thumb {
   border-radius: var(--size-999);
-  background-color: var(--color-black-20);
+  background-color: var(--color-scrollbar-thumb);
 }
 
 /* верх сайдбара */
@@ -149,11 +165,21 @@ body {
   padding: 0 var(--size-22);         /* вертикальные паддинги убрали, центр по flex */
   gap: var(--size-6);
   border-radius: var(--radius);
-  border: none;
-  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
+  border: var(--size-1) solid var(--color-sidebar-button-border);
+  background-color: var(--color-control-surface);
+  box-shadow: var(--shadow-sidebar-button);
   cursor: pointer;
   font: inherit;
   font-weight: 600;
+  color: var(--color-text-primary);
+  transition:
+          box-shadow var(--duration-02) ease,
+          border-color var(--duration-02) ease,
+          background-color var(--duration-02) ease;
+}
+
+.sidebar-settings-button:hover {
+  box-shadow: var(--shadow-sidebar-button-hover);
 }
 
 .sidebar-settings-icon {
@@ -173,14 +199,21 @@ body {
   width: var(--size-70);
   height: var(--size-70);
   border-radius: 50%;
-  border: none;
+  border: var(--size-1) solid var(--color-sidebar-button-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
+  background-color: var(--color-control-surface);
+  box-shadow: var(--shadow-sidebar-button);
+  color: var(--color-text-primary);
   cursor: pointer;
   transition: transform var(--duration-015) ease,
-  background-color var(--duration-015) ease;
+  background-color var(--duration-015) ease,
+  box-shadow var(--duration-015) ease;
+}
+
+.sidebar-close-icon-button:hover {
+  box-shadow: var(--shadow-sidebar-button-hover);
 }
 
 @media (min-width: 1201px) {
@@ -195,8 +228,10 @@ body {
   margin-top: var(--size-10);
 
   border-radius: var(--radius);
-  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
+  background-color: var(--color-control-surface);
   padding: var(--size-18) var(--size-20);
+  border: var(--size-1) solid var(--color-sidebar-button-border);
+  box-shadow: var(--shadow-sidebar-button);
 }
 
 /* заголовки секций (Уровень, Язык) */
@@ -208,10 +243,21 @@ body {
 
   font-weight: 700;
   margin-bottom: var(--size-10);
+  color: var(--color-text-primary);
 }
 
 .sidebar-settings-row--mt {
   margin-top: var(--size-18);
+}
+
+.sidebar-settings-row--between {
+  justify-content: space-between;
+}
+
+.sidebar-settings-row-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-8);
 }
 
 /* селекты с "капсулой" */
@@ -221,11 +267,12 @@ body {
   padding: var(--size-12) var(--size-48) var(--size-12) var(--size-18); /* справа больше отступ под стрелку */
 
   border-radius: var(--radius);
-  border: 0;
+  border: var(--size-1) solid var(--color-border-subtle);
   background-color: var(--color-bg-button-glass);
 
   font-size: smaller;
   font-weight: 500;
+  color: var(--color-select-text);
 
   outline: none;
   margin-bottom: var(--size-4);
@@ -233,7 +280,7 @@ body {
   -moz-appearance: none;
   appearance: none;
 
-  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='rgba(0,0,0,0.6)' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: var(--sidebar-select-arrow);
   background-repeat: no-repeat;
   background-position: right var(--size-18) center; /* расстояние стрелки от правого края */
   background-size: var(--size-10) var(--size-6);
@@ -241,7 +288,57 @@ body {
 
 
 .sidebar-select:focus {
-  border-color: rgba(0, 0, 0, 0.25);
+  border-color: var(--color-select-focus-border);
+}
+
+.sidebar-select option {
+  color: var(--color-text-primary);
+  background: var(--color-bg-surface-muted);
+}
+
+.theme-toggle {
+  position: relative;
+  width: calc(var(--size-80) + var(--size-50));
+  height: var(--size-50);
+  border: var(--size-1) solid var(--color-border-subtle);
+  border-radius: var(--radius);
+  padding: 0;
+  background: var(--color-theme-switch-track);
+  box-shadow: var(--shadow-theme-switch);
+  cursor: pointer;
+  transition:
+          background-color var(--duration-03) ease,
+          box-shadow var(--duration-03) ease,
+          border-color var(--duration-03) ease;
+}
+
+.theme-toggle:focus-visible {
+  outline: var(--size-2) solid var(--color-select-focus-border);
+  outline-offset: var(--size-2);
+}
+
+.theme-toggle__thumb {
+  position: absolute;
+  left: var(--size-6);
+  top: 50%;
+  width: var(--size-36);
+  height: var(--size-36);
+  border-radius: 50%;
+  background: var(--color-theme-switch-thumb-light);
+  transform: translateY(-50%);
+  transition:
+          left var(--duration-03) ease,
+          background-color var(--duration-03) ease;
+}
+
+.theme-toggle--dark {
+  background: var(--color-theme-switch-track-active);
+  box-shadow: var(--shadow-theme-switch-active);
+}
+
+.theme-toggle--dark .theme-toggle__thumb {
+  left: calc(100% - var(--size-6) - var(--size-36));
+  background: var(--color-theme-switch-thumb-dark);
 }
 
 /* ===== СПИСОК УПРАЖНЕНИЙ ===== */
@@ -254,16 +351,19 @@ body {
 }
 
 .sidebar-exercises-inner {
+  position: relative;
   border-radius: var(--radius);
-  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
+  background-color: var(--color-control-surface);
   padding: 0;
   overflow: hidden;     /* скролл общий на .sidebar-middle, тут не нужен */
+  box-shadow: var(--shadow-sidebar-button);
 }
 
 /* сам элемент упражнения */
 
 .sidebar-tab {
   position: relative;
+  --tab-neon-fill: var(--color-sidebar-active-bg);
   width: 100%;
 
   display: flex;
@@ -272,17 +372,42 @@ body {
   height: var(--size-100);                /* фиксированная высота */
   padding: 0 var(--size-18) 0 var(--size-32);      /* вертикальные убираем, центрируем по flex */
 
-  background: transparent;
-  border: none;
+  background: var(--color-sidebar-tab-bg);
+  border: var(--size-1) solid var(--color-sidebar-tab-border);
   cursor: pointer;
 
   font: inherit;
   text-align: left;
   color: var(--color-text-primary);
+  box-shadow: var(--shadow-sidebar-tab);
 
   outline: none;
   -webkit-appearance: none;
   appearance: none;
+  transition:
+          background-color var(--duration-02) ease,
+          border-color var(--duration-02) ease,
+          box-shadow var(--duration-02) ease;
+}
+
+.sidebar-tab:first-child {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.sidebar-tab:last-child {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+.sidebar-tab:first-child .sidebar-tab-active-bg {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.sidebar-tab:last-child .sidebar-tab-active-bg {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 
 .sidebar-tab-label {
@@ -298,9 +423,9 @@ body {
   position: absolute;
   left: var(--size-32);
   right: 0;
-  top: 0;
+  top: calc(-1 * var(--size-1));
   height: var(--size-1);
-  background: rgba(60, 60, 67, 0.26);
+  background: var(--color-sidebar-divider);
 }
 
 /* активная полоса, плавно переезжающая между пунктами */
@@ -308,7 +433,47 @@ body {
 .sidebar-tab-active-bg {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.06);
+  background: var(--tab-neon-fill);
+}
+
+.sidebar-tab--active {
+  box-shadow: var(--shadow-sidebar-tab-active);
+}
+
+:root[data-theme="dark"] .sidebar-tab:nth-child(5n + 1) {
+  --tab-neon-fill: var(--color-tab-neon-1-fill);
+}
+
+:root[data-theme="dark"] .sidebar-tab:nth-child(5n + 2) {
+  --tab-neon-fill: var(--color-tab-neon-2-fill);
+}
+
+:root[data-theme="dark"] .sidebar-tab:nth-child(5n + 3) {
+  --tab-neon-fill: var(--color-tab-neon-3-fill);
+}
+
+:root[data-theme="dark"] .sidebar-tab:nth-child(5n + 4) {
+  --tab-neon-fill: var(--color-tab-neon-4-fill);
+}
+
+:root[data-theme="dark"] .sidebar-tab:nth-child(5n + 5) {
+  --tab-neon-fill: var(--color-tab-neon-5-fill);
+}
+
+:root[data-theme="dark"] .sidebar-tab.sidebar-tab--adverbien {
+  --tab-neon-fill: #ff8a00;
+}
+
+:root[data-theme="dark"] .sidebar-exercises-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  pointer-events: none;
+  box-shadow:
+          inset 0 0 0 var(--size-1) rgba(131, 225, 255, 0.4),
+          0 0 20px rgba(64, 188, 255, 0.25),
+          0 0 24px rgba(255, 91, 209, 0.2);
 }
 
 /* кнопка очистки внизу */
@@ -320,16 +485,17 @@ body {
   margin-top: var(--size-16); /* просто небольшой отступ от списка */
 
   border-radius: var(--radius);
-  border: none;
+  border: var(--size-1) solid var(--color-sidebar-button-border);
 
   padding: var(--size-16) 0;
-  background-color: rgba(255, 255, 255, var(--sidebar-bg-alpha));
+  background: var(--color-clear-button-bg);
 
   font: inherit;
   font-weight: 700;
-  color: var(--color-text-primary);
+  color: var(--color-clear-button-text);
 
   cursor: pointer;
+  box-shadow: var(--shadow-sidebar-button);
   transition:
           background-color var(--duration-018) ease,
           transform var(--duration-018) ease,
@@ -338,12 +504,12 @@ body {
 
 .sidebar-clear-button:hover {
   transform: translateY(var(--size-1));
-  box-shadow: 0 var(--size-6) var(--size-24) rgba(0, 0, 0, 0.16);
+  box-shadow: var(--shadow-clear-button-hover);
 }
 
 .sidebar-clear-button:active {
   transform: translateY(0) scale(0.97);
-  box-shadow: 0 var(--size-2) var(--size-10) rgba(0, 0, 0, 0.18);
+  box-shadow: var(--shadow-clear-button-active);
 }
 
 /* ---------- header ---------- */
@@ -353,47 +519,7 @@ body {
   min-height: 90px;
   border-radius: var(--radius);
   padding: var(--size-16) var(--size-24);
-  background-color: var(--color-white);
-  background-image: radial-gradient(
-          circle at 5% 90%,
-          rgba(77, 208, 225, 0.5) 12%,
-          transparent 12.5%
-  ),
-  radial-gradient(
-          circle at 18% 10%,
-          rgba(197, 225, 165, 0.6) 14%,
-          transparent 14.5%
-  ),
-  radial-gradient(
-          circle at 32% 85%,
-          rgba(255, 245, 157, 0.7) 16%,
-          transparent 16.5%
-  ),
-  radial-gradient(
-          circle at 48% 0%,
-          rgba(255, 171, 145, 0.6) 18%,
-          transparent 18.5%
-  ),
-  radial-gradient(
-          circle at 62% 95%,
-          rgba(128, 222, 234, 0.6) 13%,
-          transparent 13.5%
-  ),
-  radial-gradient(
-          circle at 76% 15%,
-          rgba(255, 238, 88, 0.5) 15%,
-          transparent 15.5%
-  ),
-  radial-gradient(
-          circle at 90% 80%,
-          rgba(179, 229, 252, 0.6) 12%,
-          transparent 12.5%
-  ),
-  radial-gradient(
-          circle at 100% 0%,
-          rgba(255, 171, 145, 0.8) 22%,
-          transparent 22.5%
-  );
+  background: var(--color-header-bg);
   display: flex;
   align-items: center;
 }
@@ -408,11 +534,13 @@ body {
   width: var(--size-56);
   height: var(--size-56);
   border-radius: var(--radius);
-  border: none;
+  border: var(--size-1) solid var(--color-sidebar-button-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-white-90);
+  background-color: var(--color-header-button-bg);
+  color: var(--color-text-primary);
+  box-shadow: var(--shadow-sidebar-button);
   cursor: pointer;
 }
 
@@ -424,8 +552,9 @@ body {
 .app-header-subtitle {
   font-size: var(--size-30);
   line-height: 1.3;
-  opacity: 0.85;
+  opacity: 0.92;
   font-weight: 600;
+  color: var(--color-text-primary);
 }
 
 .app-header-right {
@@ -453,7 +582,7 @@ body {
   outline: none;
 
   /* яркий градиентный фон */
-  background: radial-gradient(circle at 30% 20%, var(--color-white) 0, #fde68a 20%, #f97316 55%, #ec4899 100%);
+  background: var(--color-info-button-bg);
 
   /* прячем оригинальный контент визуально */
   color: transparent;
@@ -475,16 +604,14 @@ body {
   font-weight: 800;
   line-height: 1;
 
-  color: #111827;
+  color: var(--color-info-button-icon);
 }
 
 /* HOVER: лёгкий подъём и усиление свечения */
 
 .app-header-right > button:hover {
   transform: translateY(var(--size-1)) scale(1.03);
-  box-shadow:
-          0 0 0 var(--size-2) var(--color-white-90),
-          0 var(--size-16) var(--size-32) rgba(15, 23, 42, 0.45);
+  box-shadow: var(--shadow-info-button-hover);
   filter: saturate(1.15);
 }
 
@@ -496,9 +623,7 @@ body {
 
 .app-header-right > button:active {
   transform: translateY(var(--size-1)) scale(0.96);
-  box-shadow:
-          0 0 0 var(--size-1) var(--color-white-70),
-          0 var(--size-6) var(--size-16) rgba(15, 23, 42, 0.4);
+  box-shadow: var(--shadow-info-button-active);
   filter: saturate(1);
 }
 
@@ -507,7 +632,7 @@ body {
 .exercise-container {
   flex: 1;
   border-radius: var(--radius);
-  background-color: var(--color-bg-button-glass);
+  background-color: var(--color-exercise-container-bg);
   padding: var(--size-6);
   overflow: hidden;
 }
@@ -531,7 +656,7 @@ body {
 
 .exercise-scroll::-webkit-scrollbar-thumb {
   border-radius: var(--radius);
-  background-color: var(--color-black-20);
+  background-color: var(--color-scrollbar-thumb);
 }
 
 /* плавное появление контента упражнений */
@@ -601,6 +726,21 @@ body {
 
   .sidebar-clear-button {
     height: var(--size-50);
+  }
+
+  .theme-toggle {
+    width: var(--size-100);
+    height: var(--size-40);
+  }
+
+  .theme-toggle__thumb {
+    width: var(--size-28);
+    height: var(--size-28);
+    left: var(--size-5);
+  }
+
+  .theme-toggle--dark .theme-toggle__thumb {
+    left: calc(100% - var(--size-5) - var(--size-28));
   }
 }
 
@@ -686,5 +826,20 @@ body {
 
   .sidebar-clear-button {
     height: var(--size-70);
+  }
+
+  .theme-toggle {
+    width: var(--size-100);
+    height: var(--size-40);
+  }
+
+  .theme-toggle__thumb {
+    width: var(--size-28);
+    height: var(--size-28);
+    left: var(--size-5);
+  }
+
+  .theme-toggle--dark .theme-toggle__thumb {
+    left: calc(100% - var(--size-5) - var(--size-28));
   }
 }

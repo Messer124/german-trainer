@@ -4,6 +4,7 @@ import {
     Globe2,
     SignalHigh,
     Settings,
+    Palette,
     ArrowLeft,
     Menu,
 } from "lucide-react";
@@ -17,6 +18,7 @@ import "./css/App.css";
 
 const DEFAULT_LEVEL = "A1.1";
 const MOBILE_BREAKPOINT = 600;
+const THEME_STORAGE_KEY = "app-theme";
 
 function getTabsForLevel(level) {
     return EXERCISES_BY_LEVEL[level] || EXERCISES_BY_LEVEL[DEFAULT_LEVEL];
@@ -43,8 +45,17 @@ export default function App() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [settingsOpen, setSettingsOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const [theme, setTheme] = useState(() => {
+        if (typeof window === "undefined") {
+            return "light";
+        }
+
+        const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+        return savedTheme === "dark" ? "dark" : "light";
+    });
 
     const contentRef = useRef(null);
+    const hasThemeMountedRef = useRef(false);
     const tabsForLevel = getTabsForLevel(level);
     const labels = translations[locale].labels;
     const tabTitles = translations[locale].tabs;
@@ -83,6 +94,32 @@ export default function App() {
         node.classList.add("fade-in");
     }, [currentTab, level]);
 
+    useEffect(() => {
+        if (typeof document === "undefined") return;
+
+        const root = document.documentElement;
+        root.setAttribute("data-theme", theme);
+
+        if (typeof window !== "undefined") {
+            localStorage.setItem(THEME_STORAGE_KEY, theme);
+        }
+
+        if (!hasThemeMountedRef.current) {
+            hasThemeMountedRef.current = true;
+            return;
+        }
+
+        root.classList.add("theme-transition");
+        const timer = window.setTimeout(() => {
+            root.classList.remove("theme-transition");
+        }, 1000);
+
+        return () => {
+            window.clearTimeout(timer);
+            root.classList.remove("theme-transition");
+        };
+    }, [theme]);
+
 // адаптив: только определяем, мобильный layout или нет
     useEffect(() => {
         if (typeof window === "undefined") return;
@@ -110,6 +147,7 @@ export default function App() {
 
     const instructions = Component.instructions?.[locale];
     const headerButton = Component.headerButton;
+    const isDarkTheme = theme === "dark";
 
     const handleClearAnswers = () => {
         if (!storageKey) return;
@@ -148,7 +186,7 @@ export default function App() {
                     >
                         <Settings size={25} className="sidebar-settings-icon"/>
                         <span className="sidebar-settings-label-text">
-                            {locale === "ru" ? "Настройки" : "Settings"}
+                            {labels.settings}
                         </span>
                     </button>
 
@@ -211,6 +249,26 @@ export default function App() {
                                 <option value="ru">Русский</option>
                                 <option value="en">English</option>
                             </select>
+
+                            <div className="sidebar-settings-row sidebar-settings-row--mt sidebar-settings-row--between">
+                                <span className="sidebar-settings-row-label">
+                                    <Palette size={30}/>
+                                    <span>{labels.theme}</span>
+                                </span>
+                                <button
+                                    type="button"
+                                    className={`theme-toggle ${
+                                        isDarkTheme ? "theme-toggle--dark" : ""
+                                    }`}
+                                    onClick={() =>
+                                        setTheme((prev) => (prev === "dark" ? "light" : "dark"))
+                                    }
+                                    aria-label={labels.theme}
+                                    aria-pressed={isDarkTheme}
+                                >
+                                    <span className="theme-toggle__thumb"/>
+                                </button>
+                            </div>
                         </div>
                     </motion.div>
 
@@ -225,7 +283,9 @@ export default function App() {
                                     <motion.button
                                         key={key}
                                         type="button"
-                                        className="sidebar-tab"
+                                        className={`sidebar-tab sidebar-tab--${key} ${
+                                            isActive ? "sidebar-tab--active" : ""
+                                        }`}
                                         onClick={() => {
                                             setCurrentTab(key);
                                             if (isMobile) closeSidebar();

@@ -37,8 +37,10 @@
     font-size: var(--size-30);
     line-height: 1.2;
     text-align: center;
+    color: var(--color-input-text);
 
-    background-color: var(--color-white-90);
+    background-color: var(--color-input-bg);
+    box-shadow: var(--shadow-input-surface);
     box-sizing: border-box;
 
     transition:
@@ -71,7 +73,7 @@
 .input.empty,
 .autosize-input.empty,
 .table-input.empty {
-    box-shadow: 0 0 0 var(--size-1) rgba(15, 23, 42, 0.06);
+    box-shadow: var(--shadow-input-empty);
 }
 
 /* оранжевый — чуть ярче */
@@ -79,6 +81,7 @@
 .autosize-input.empty.color-orange,
 .table-input.empty.color-orange {
     border-color: var(--color-word-orange);
+    box-shadow: var(--shadow-input-empty-orange);
 }
 
 /* жёлтый */
@@ -86,6 +89,7 @@
 .autosize-input.empty.color-yellow,
 .table-input.empty.color-yellow {
     border-color: var(--color-word-yellow);
+    box-shadow: var(--shadow-input-empty-yellow);
 }
 
 /* фиалковый */
@@ -93,6 +97,7 @@
 .autosize-input.empty.color-violet,
 .table-input.empty.color-violet {
     border-color: var(--color-word-violet);
+    box-shadow: var(--shadow-input-empty-violet);
 }
 
 /* салатовый */
@@ -100,6 +105,7 @@
 .autosize-input.empty.color-green,
 .table-input.empty.color-green {
     border-color: var(--color-word-green);
+    box-shadow: var(--shadow-input-empty-green);
 }
 
 /* бирюзовый */
@@ -107,6 +113,7 @@
 .autosize-input.empty.color-teal,
 .table-input.empty.color-teal {
     border-color: var(--color-word-teal);
+    box-shadow: var(--shadow-input-empty-teal);
 }
 
 /* ПРАВИЛЬНО / НЕПРАВИЛЬНО — поверх любых цветов пустого */
@@ -115,7 +122,7 @@
 .table-input.correct {
     border-color: var(--color-correct);
     background-color: var(--color-correct-bg);
-    box-shadow: 0 0 0 var(--size-2) rgba(34, 197, 94, 0.3);
+    box-shadow: var(--shadow-input-correct);
 }
 
 .input.incorrect,
@@ -123,7 +130,7 @@
 .table-input.incorrect {
     border-color: var(--color-incorrect);
     background-color: var(--color-incorrect-bg);
-    box-shadow: 0 0 0 var(--size-2) rgba(239, 68, 68, 0.3);
+    box-shadow: var(--shadow-input-incorrect);
 }
 
 .input.correct,
@@ -174,7 +181,7 @@
 .table thead {
     position: sticky;
     top: 0;
-    background: var(--color-white-90);
+    background: var(--color-table-head-bg);
     z-index: 2;
 }
 
@@ -190,7 +197,7 @@
     padding: var(--size-8);
     text-align: center;
     min-width: var(--size-140);
-    background: var(--color-bg-surface);
+    background: var(--color-table-cell-bg);
 
 }
 
@@ -224,6 +231,20 @@
     border: none;
     background: transparent;
     padding: 0;
+    color: var(--color-hint-button-text);
+}
+
+.eye-container--button svg {
+    stroke: currentColor;
+}
+
+:root[data-theme="dark"] .eye-container--button,
+:root[data-theme="dark"] .eye-container--button * {
+    color: var(--color-white) !important;
+}
+
+:root[data-theme="dark"] .eye-container--button svg {
+    stroke: var(--color-white) !important;
 }
 
 /* базовое состояние: подсказка скрыта */
@@ -233,8 +254,8 @@
     transform: translate(-50%, -50%) scale(0.96);
     transform-origin: center center;
 
-    background: #fefefe;
-    border: var(--size-2) solid #73ff2c;
+    background: var(--color-eye-bg);
+    border: var(--size-2) solid var(--color-eye-border);
     padding: var(--size-6) var(--size-12);
     border-radius: var(--radius);
     white-space: nowrap;
@@ -267,13 +288,13 @@
 .hint-button {
     font-size: var(--size-18);
     background: none;
-    border: var(--size-2) solid var(--color-black);
+    border: var(--size-2) solid var(--color-hint-button-border);
     border-radius: 50%;
     width: var(--size-28);
     height: var(--size-28);
     padding: 0;
     cursor: pointer;
-    color: var(--color-black);
+    color: var(--color-hint-button-text);
     font-weight: bold;
     display: flex;
     align-items: center;
