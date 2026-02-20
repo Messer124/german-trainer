@@ -5,124 +5,124 @@
   },
   "items": [
     {
-      "sentence": { "ru": "Он показывает ему видео", "en": "He shows him the video." },
-      "answer": "Er zeigt ihm das Video."
+      "sentence": { "ru": "Он показывает ему видео", "en": "He shows him the video" },
+      "answer": "Er zeigt ihm das Video"
     },
     {
-      "sentence": { "ru": "Родители покупают дочери велосипед", "en": "The parents buy the daughter a bicycle." },
-      "answer": "Die Eltern kaufen der Tochter das Fahrrad."
+      "sentence": { "ru": "Родители покупают дочери велосипед", "en": "The parents buy the daughter a bicycle" },
+      "answer": "Die Eltern kaufen der Tochter das Fahrrad"
     },
     {
-      "sentence": { "ru": "Она даёт это мне", "en": "She gives it to me." },
-      "answer": "Sie gibt es mir."
+      "sentence": { "ru": "Она даёт это мне", "en": "She gives it to me" },
+      "answer": "Sie gibt es mir"
     },
     {
-      "sentence": { "ru": "Отец даёт ребёнку мяч", "en": "The father gives the child the ball." },
-      "answer": "Der Vater gibt dem Kind den Ball."
+      "sentence": { "ru": "Отец даёт ребёнку мяч", "en": "The father gives the child the ball" },
+      "answer": "Der Vater gibt dem Kind den Ball"
     },
     {
-      "sentence": { "ru": "Продавец упаковывает её покупателю", "en": "The salesman packs it for the buyer." },
-      "answer": "Der Verkäufer packt sie dem Käufer ein."
+      "sentence": { "ru": "Продавец упаковывает её покупателю", "en": "The salesman packs it for the buyer" },
+      "answer": "Der Verkäufer packt sie dem Käufer ein"
     },
     {
-      "sentence": { "ru": "Он заказывает его тебе", "en": "He orders it for you." },
-      "answer": "Er bestellt ihn dir."
+      "sentence": { "ru": "Он заказывает его тебе", "en": "He orders it for you" },
+      "answer": "Er bestellt ihn dir"
     },
     {
-      "sentence": { "ru": "Врач даёт пациентке таблетки", "en": "The doctor gives the patient tablets." },
-      "answer": "Der Arzt gibt der Patientin die Tabletten."
+      "sentence": { "ru": "Врач даёт пациентке таблетки", "en": "The doctor gives the patient tablets" },
+      "answer": "Der Arzt gibt der Patientin die Tabletten"
     },
     {
-      "sentence": { "ru": "Вы покупаете их нам", "en": "You buy them for us." },
-      "answer": "Ihr kauft sie uns."
+      "sentence": { "ru": "Вы покупаете их нам", "en": "You buy them for us" },
+      "answer": "Ihr kauft sie uns"
     },
     {
-      "sentence": { "ru": "Они пекут маме булочки", "en": "They bake buns for the mother." },
-      "answer": "Sie backen der Mutter die Brötchen."
+      "sentence": { "ru": "Они пекут маме булочки", "en": "They bake buns for the mother" },
+      "answer": "Sie backen der Mutter die Brötchen"
     },
     {
-      "sentence": { "ru": "Он дарит ей куклу", "en": "He gives her the doll as a gift." },
-      "answer": "Er schenkt ihr die Puppe."
+      "sentence": { "ru": "Он дарит ей куклу", "en": "He gives her the doll as a gift" },
+      "answer": "Er schenkt ihr die Puppe"
     },
     {
-      "sentence": { "ru": "Учитель объясняет ученику правила", "en": "The teacher explains the rules to the student." },
-      "answer": "Der Lehrer erklärt dem Schüler die Regeln."
+      "sentence": { "ru": "Учитель объясняет ученику правила", "en": "The teacher explains the rules to the student" },
+      "answer": "Der Lehrer erklärt dem Schüler die Regeln"
     },
     {
-      "sentence": { "ru": "Мы приносим это вам", "en": "We bring it to you (plural)." },
-      "answer": "Wir bringen es euch."
+      "sentence": { "ru": "Мы приносим это вам", "en": "We bring it to you (plural)" },
+      "answer": "Wir bringen es euch"
     },
     {
-      "sentence": { "ru": "Родители отправляют нам приглашение", "en": "The parents send us the invitation." },
-      "answer": "Die Eltern schicken uns die Einladung."
+      "sentence": { "ru": "Родители отправляют нам приглашение", "en": "The parents send us the invitation" },
+      "answer": "Die Eltern schicken uns die Einladung"
     },
     {
-      "sentence": { "ru": "Муж приносит соседке сумку", "en": "The man brings the bag to the neighbor." },
-      "answer": "Der Mann bringt der Nachbarin die Tasche."
+      "sentence": { "ru": "Муж приносит соседке сумку", "en": "The man brings the bag to the neighbor" },
+      "answer": "Der Mann bringt der Nachbarin die Tasche"
     },
     {
-      "sentence": { "ru": "Он дарит её ей", "en": "He gives it to her as a gift." },
-      "answer": "Er schenkt sie ihr."
+      "sentence": { "ru": "Он дарит её ей", "en": "He gives it to her as a gift" },
+      "answer": "Er schenkt sie ihr"
     },
     {
-      "sentence": { "ru": "Шеф отправляет команде сообщение", "en": "The boss sends the team a message." },
-      "answer": "Der Chef schickt dem Team die Nachricht."
+      "sentence": { "ru": "Шеф отправляет команде сообщение", "en": "The boss sends the team a message" },
+      "answer": "Der Chef schickt dem Team die Nachricht"
     },
     {
-      "sentence": { "ru": "Они пекут их маме", "en": "They bake them for the mother." },
-      "answer": "Sie backen sie der Mutter."
+      "sentence": { "ru": "Они пекут их маме", "en": "They bake them for the mother" },
+      "answer": "Sie backen sie der Mutter"
     },
     {
-      "sentence": { "ru": "Она рекомендует нас ему", "en": "She recommends us to him." },
-      "answer": "Sie empfiehlt uns ihm."
+      "sentence": { "ru": "Она рекомендует нас ему", "en": "She recommends us to him" },
+      "answer": "Sie empfiehlt uns ihm"
     },
     {
-      "sentence": { "ru": "Мы покупаем тебе билет", "en": "We buy you a ticket." },
-      "answer": "Wir kaufen dir ein Ticket."
+      "sentence": { "ru": "Мы покупаем тебе билет", "en": "We buy you a ticket" },
+      "answer": "Wir kaufen dir ein Ticket"
     },
     {
-      "sentence": { "ru": "Продавец показывает клиентке рубашку", "en": "The salesman shows the shirt to the customer." },
-      "answer": "Der Verkäufer zeigt der Kundin das Hemd."
+      "sentence": { "ru": "Продавец показывает клиентке рубашку", "en": "The salesman shows the shirt to the customer" },
+      "answer": "Der Verkäufer zeigt der Kundin das Hemd"
     },
     {
-      "sentence": { "ru": "Ты отправляешь его мне", "en": "You send it to me." },
-      "answer": "Du schickst ihn mir."
+      "sentence": { "ru": "Ты отправляешь его мне", "en": "You send it to me" },
+      "answer": "Du schickst ihn mir"
     },
     {
-      "sentence": { "ru": "Бабушка готовит внуку суп", "en": "Grandma cooks soup for the grandson." },
-      "answer": "Die Oma kocht dem Enkel eine Suppe."
+      "sentence": { "ru": "Бабушка готовит внуку суп", "en": "Grandma cooks soup for the grandson" },
+      "answer": "Die Oma kocht dem Enkel eine Suppe"
     },
     {
-      "sentence": { "ru": "Она даёт мне ложку", "en": "She gives me the spoon." },
-      "answer": "Sie gibt mir den Löffel."
+      "sentence": { "ru": "Она даёт мне ложку", "en": "She gives me the spoon" },
+      "answer": "Sie gibt mir den Löffel"
     },
     {
-      "sentence": { "ru": "Подруга дарит коллеге книгу", "en": "The friend gives the colleague a book as a gift." },
-      "answer": "Die Freundin schenkt dem Kollegen ein Buch."
+      "sentence": { "ru": "Подруга дарит коллеге книгу", "en": "The friend gives the colleague a book as a gift" },
+      "answer": "Die Freundin schenkt dem Kollegen ein Buch"
     },
     {
-      "sentence": { "ru": "Я показываю это тебе", "en": "I show it to you." },
-      "answer": "Ich zeige es dir."
+      "sentence": { "ru": "Я показываю это тебе", "en": "I show it to you" },
+      "answer": "Ich zeige es dir"
     },
     {
-      "sentence": { "ru": "Он объясняет ему правила", "en": "He explains the rules to him." },
-      "answer": "Er erklärt ihm die Regeln."
+      "sentence": { "ru": "Он объясняет ему правила", "en": "He explains the rules to him" },
+      "answer": "Er erklärt ihm die Regeln"
     },
     {
-      "sentence": { "ru": "Я приношу его моей сестре", "en": "I bring it to my sister." },
-      "answer": "Ich bringe ihn meiner Schwester."
+      "sentence": { "ru": "Я приношу его моей сестре", "en": "I bring it to my sister" },
+      "answer": "Ich bringe ihn meiner Schwester"
     },
     {
-      "sentence": { "ru": "Я даю ей полотенце", "en": "I give her the towel." },
-      "answer": "Ich gebe ihr das Tuch."
+      "sentence": { "ru": "Я даю ей полотенце", "en": "I give her the towel" },
+      "answer": "Ich gebe ihr das Tuch"
     },
     {
-      "sentence": { "ru": "Он объясняет их ему", "en": "He explains them to him." },
-      "answer": "Er erklärt sie ihm."
+      "sentence": { "ru": "Он объясняет их ему", "en": "He explains them to him" },
+      "answer": "Er erklärt sie ihm"
     },
     {
-      "sentence": { "ru": "Ты показываешь его мне", "en": "You show it to me." },
-      "answer": "Du zeigst ihn mir."
+      "sentence": { "ru": "Ты показываешь его мне", "en": "You show it to me" },
+      "answer": "Du zeigst ihn mir"
     }
   ]
 }

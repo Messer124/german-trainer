@@ -27,6 +27,19 @@ function getAcceptableAnswers(raw) {
   return [];
 }
 
+function getSentenceText(rawSentence, locale) {
+  if (typeof rawSentence === "string") return rawSentence;
+  if (rawSentence && typeof rawSentence === "object") {
+    return (
+      rawSentence[locale] ??
+      rawSentence.ru ??
+      rawSentence.en ??
+      ""
+    );
+  }
+  return "";
+}
+
 export default function Adverbien() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
@@ -45,7 +58,9 @@ export default function Adverbien() {
   }, []);
 
   const handleChange = (index, value) => {
-    const acceptable = getAcceptableAnswers(items[index]?.answers);
+    const acceptable = getAcceptableAnswers(
+      items[index]?.answers ?? items[index]?.answer
+    );
     const normalizedValue = normalize(value);
     const isCorrect = acceptable.some((a) => normalize(a) === normalizedValue);
 
@@ -74,7 +89,9 @@ export default function Adverbien() {
 
             return (
               <li key={index} className="list-item">
-                <span className="sentence">{item.sentence} —</span>
+                <span className="sentence">
+                  {getSentenceText(item.sentence, locale)} —
+                </span>
 
                 <ExpandingInput
                   type="text"

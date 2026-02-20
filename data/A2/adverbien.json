@@ -4,345 +4,495 @@
     "en": "Translate the sentences using adverbs of place and direction"
   },
   "items": [
-  {
-    "sentence": "Едь направо",
-    "answers": [
-      "Fahr nach rechts"
-    ]
-  },
-  {
-    "sentence": "Выйди на улицу",
-    "answers": [
-      "Geh nach draußen",
-      "Geh raus"
-    ]
-  },
-  {
-    "sentence": "Иди внутрь",
-    "answers": [
-      "Geh nach drinnen",
-      "Geh rein"
-    ]
-  },
-  {
-    "sentence": "Передай мне телефон",
-    "answers": [
-      "Gib mir das Handy herüber",
-      "Gib mir das Handy rüber"
-    ]
-  },
-  {
-    "sentence": "Передай ей книгу",
-    "answers": [
-      "Gib ihr das Buch hinüber",
-      "Gib ihr das Buch rüber"
-    ]
-  },
-  {
-    "sentence": "Вынесите стол",
-    "answers": [
-      "Tragt den Tisch hinaus",
-      "Tragt den Tisch raus"
-    ]
-  },
-  {
-    "sentence": "Выйди ко мне наружу, пожалуйста",
-    "answers": [
-      "Komm heraus, bitte",
-      "Komm raus, bitte"
-    ]
-  },
-  {
-    "sentence": "Иди туда внутрь, пожалуйста",
-    "answers": [
-      "Geh hinein, bitte",
-      "Geh rein, bitte"
-    ]
-  },
-  {
-    "sentence": "Вынеси мусор наружу",
-    "answers": [
-      "Trag den Müll hinaus",
-      "Trag den Müll raus"
-    ]
-  },
-  {
-    "sentence": "Поставь это туда",
-    "answers": [
-      "Stell das dorthin",
-      "Stell das dahin"
-    ]
-  },
-  {
-    "sentence": "Иди туда внутрь (в комнату)",
-    "answers": [
-      "Geh hinein",
-      "Geh rein"
-    ]
-  },
-  {
-    "sentence": "Заходите внутрь",
-    "answers": [
-      "Kommen Sie herein",
-      "Kommen Sie rein"
-    ]
-  },
-  {
-    "sentence": "Иди ко мне сюда вниз",
-    "answers": [
-      "Komm herunter",
-      "Komm runter"
-    ]
-  },
-  {
-    "sentence": "Поднимись ко мне наверх, пожалуйста",
-    "answers": [
-      "Komm herauf, bitte",
-      "Komm rauf, bitte"
-    ]
-  },
-  {
-    "sentence": "Дети снаружи",
-    "answers": [
-      "Die Kinder sind draußen"
-    ]
-  },
-  {
-    "sentence": "Иди туда",
-    "answers": [
-      "Geh dorthin",
-      "Geh dahin"
-    ]
-  },
-  {
-    "sentence": "Поверни налево",
-    "answers": [
-      "Geh nach links",
-      "Fahr nach links"
-    ]
-  },
-  {
-    "sentence": "Он там, у двери",
-    "answers": [
-      "Er ist da",
-      "Er ist dort"
-    ]
-  },
-  {
-    "sentence": "Иди туда наружу, пожалуйста",
-    "answers": [
-      "Geh hinaus, bitte",
-      "Geh raus, bitte"
-    ]
-  },
-  {
-    "sentence": "Спустись ко мне вниз",
-    "answers": [
-      "Komm herunter",
-      "Komm runter"
-    ]
-  },
-  {
-    "sentence": "Поднимись туда наверх",
-    "answers": [
-      "Geh hinauf",
-      "Geh rauf"
-    ]
-  },
-  {
-    "sentence": "Зайди ко мне внутрь, пожалуйста",
-    "answers": [
-      "Komm herein, bitte",
-      "Komm rein, bitte"
-    ]
-  },
-  {
-    "sentence": "Занеси сумку внутрь",
-    "answers": [
-      "Trag die Tasche hinein",
-      "Trag die Tasche rein"
-    ]
-  },
-  {
-    "sentence": "Зайди ко мне внутрь",
-    "answers": [
-      "Komm herein",
-      "Komm rein"
-    ]
-  },
-  {
-    "sentence": "Иди туда вниз",
-    "answers": [
-      "Geh hinunter",
-      "Geh runter"
-    ]
-  },
-  {
-    "sentence": "Мой друг стоит сзади",
-    "answers": [
-      "Mein Freund steht hinten"
-    ]
-  },
-  {
-    "sentence": "Посмотри наверх",
-    "answers": [
-      "Schau nach oben"
-    ]
-  },
-  {
-    "sentence": "Иди ко мне сюда наверх",
-    "answers": [
-      "Komm herauf",
-      "Komm rauf"
-    ]
-  },
-  {
-    "sentence": "Перейди туда через улицу",
-    "answers": [
-      "Geh hinüber",
-      "Geh rüber"
-    ]
-  },
-  {
-    "sentence": "Выйди ко мне наружу",
-    "answers": [
-      "Komm heraus",
-      "Komm raus"
-    ]
-  },
-  {
-    "sentence": "Спустись туда вниз",
-    "answers": [
-      "Geh hinunter",
-      "Geh runter"
-    ]
-  },
-  {
-    "sentence": "Кошка наверху",
-    "answers": [
-      "Die Katze ist oben"
-    ]
-  },
-  {
-    "sentence": "Собака внизу",
-    "answers": [
-      "Der Hund ist unten"
-    ]
-  },
-  {
-    "sentence": "Подожди там, пожалуйста",
-    "answers": [
-      "Warte da, bitte",
-      "Warte dort, bitte"
-    ]
-  },
-  {
-    "sentence": "Он идет наверх",
-    "answers": [
-      "Er geht nach oben",
-      "Er geht rauf"
-    ]
-  },
-  {
-    "sentence": "Иди туда наверх",
-    "answers": [
-      "Geh hinauf",
-      "Geh rauf"
-    ]
-  },
-  {
-    "sentence": "Спустись, пожалуйста, вниз",
-    "answers": [
-      "Geh, bitte, nach unten",
-      "Geh, bitte, runter"
-    ]
-  },
-  {
-    "sentence": "Мы внутри",
-    "answers": [
-      "Wir sind drinnen"
-    ]
-  },
-  {
-    "sentence": "Принеси мне стул сюда",
-    "answers": [
-      "Bring den Stuhl herüber",
-      "Bring den Stuhl rüber"
-    ]
-  },
-  {
-    "sentence": "Иди наружу",
-    "answers": [
-      "Geh nach draußen",
-      "Geh raus"
-    ]
-  },
-  {
-    "sentence": "Подойди ко мне через улицу",
-    "answers": [
-      "Komm herüber",
-      "Komm rüber"
-    ]
-  },
-  {
-    "sentence": "Мы стоим сзади",
-    "answers": [
-      "Wir stehen hinten"
-    ]
-  },
-  {
-    "sentence": "Вся семья ждет внизу",
-    "answers": [
-      "Die ganze Familie wartet unten"
-    ]
-  },
-  {
-    "sentence": "Стань вперед",
-    "answers": [
-      "Stell dich nach vorne",
-      "Geh nach vorne"
-    ]
-  },
-  {
-    "sentence": "Поверни направо",
-    "answers": [
-      "Geh nach rechts",
-      "Fahr nach rechts"
-    ]
-  },
-  {
-    "sentence": "Мы стоим спереди",
-    "answers": [
-      "Wir stehen vorn",
-      "Wir stehen vorne"
-    ]
-  },
-  {
-    "sentence": "Иди туда наружу",
-    "answers": [
-      "Geh hinaus",
-      "Geh raus"
-    ]
-  },
-  {
-    "sentence": "Передай ему ручку",
-    "answers": [
-      "Gib ihm den Kuli herüber",
-      "Gib ihm den Kuli rüber"
-    ]
-  },
-  {
-    "sentence": "Унеси коробку туда",
-    "answers": [
-      "Bring die Kiste hinüber",
-      "Bring die Kiste rüber"
-    ]
-  },
-  {
-    "sentence": "Посмотри вниз",
-    "answers": [
-      "Schau nach unten"
-    ]
-  }
-]
+    {
+      "sentence": {
+        "ru": "Едь направо",
+        "en": "Drive to the right"
+      },
+      "answers": [
+        "Fahr nach rechts"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Выйди на улицу",
+        "en": "Go outside"
+      },
+      "answers": [
+        "Geh nach draußen",
+        "Geh raus"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди внутрь",
+        "en": "Go inside"
+      },
+      "answers": [
+        "Geh nach drinnen",
+        "Geh rein"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Передай мне телефон",
+        "en": "Pass me the phone"
+      },
+      "answers": [
+        "Gib mir das Handy herüber",
+        "Gib mir das Handy rüber"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Передай ей книгу",
+        "en": "Pass her the book"
+      },
+      "answers": [
+        "Gib ihr das Buch hinüber",
+        "Gib ihr das Buch rüber"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вынесите стол",
+        "en": "Take the table outside"
+      },
+      "answers": [
+        "Tragt den Tisch hinaus",
+        "Tragt den Tisch raus"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Выйди ко мне наружу, пожалуйста",
+        "en": "Come outside to me, please"
+      },
+      "answers": [
+        "Komm heraus, bitte",
+        "Komm raus, bitte"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди туда внутрь, пожалуйста",
+        "en": "Go inside there, please"
+      },
+      "answers": [
+        "Geh hinein, bitte",
+        "Geh rein, bitte"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вынеси мусор наружу",
+        "en": "Take the trash outside"
+      },
+      "answers": [
+        "Trag den Müll hinaus",
+        "Trag den Müll raus"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Поставь это туда",
+        "en": "Put it there"
+      },
+      "answers": [
+        "Stell das dorthin",
+        "Stell das dahin"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди туда внутрь (в комнату)",
+        "en": "Go inside there (into the room)"
+      },
+      "answers": [
+        "Geh hinein",
+        "Geh rein"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Заходите внутрь",
+        "en": "Come in"
+      },
+      "answers": [
+        "Kommen Sie herein",
+        "Kommen Sie rein"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди ко мне сюда вниз",
+        "en": "Come down here to me"
+      },
+      "answers": [
+        "Komm herunter",
+        "Komm runter"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Поднимись ко мне наверх, пожалуйста",
+        "en": "Come up to me, please"
+      },
+      "answers": [
+        "Komm herauf, bitte",
+        "Komm rauf, bitte"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Дети снаружи",
+        "en": "The children are outside"
+      },
+      "answers": [
+        "Die Kinder sind draußen"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди туда",
+        "en": "Go there"
+      },
+      "answers": [
+        "Geh dorthin",
+        "Geh dahin"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Поверни налево",
+        "en": "Turn left"
+      },
+      "answers": [
+        "Geh nach links",
+        "Fahr nach links"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Он там, у двери",
+        "en": "He is there, by the door"
+      },
+      "answers": [
+        "Er ist da",
+        "Er ist dort"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди туда наружу, пожалуйста",
+        "en": "Go out there, please"
+      },
+      "answers": [
+        "Geh hinaus, bitte",
+        "Geh raus, bitte"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Спустись ко мне вниз",
+        "en": "Come down to me"
+      },
+      "answers": [
+        "Komm herunter",
+        "Komm runter"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Поднимись туда наверх",
+        "en": "Go up there"
+      },
+      "answers": [
+        "Geh hinauf",
+        "Geh rauf"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Зайди ко мне внутрь, пожалуйста",
+        "en": "Come in to me, please"
+      },
+      "answers": [
+        "Komm herein, bitte",
+        "Komm rein, bitte"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Занеси сумку внутрь",
+        "en": "Bring the bag inside"
+      },
+      "answers": [
+        "Trag die Tasche hinein",
+        "Trag die Tasche rein"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Зайди ко мне внутрь",
+        "en": "Come in to me"
+      },
+      "answers": [
+        "Komm herein",
+        "Komm rein"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди туда вниз",
+        "en": "Go down there"
+      },
+      "answers": [
+        "Geh hinunter",
+        "Geh runter"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Мой друг стоит сзади",
+        "en": "My friend is standing behind"
+      },
+      "answers": [
+        "Mein Freund steht hinten"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Посмотри наверх",
+        "en": "Look up"
+      },
+      "answers": [
+        "Schau nach oben"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди ко мне сюда наверх",
+        "en": "Come up here to me"
+      },
+      "answers": [
+        "Komm herauf",
+        "Komm rauf"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Перейди туда через улицу",
+        "en": "Go across the street over there"
+      },
+      "answers": [
+        "Geh hinüber",
+        "Geh rüber"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Выйди ко мне наружу",
+        "en": "Come outside to me"
+      },
+      "answers": [
+        "Komm heraus",
+        "Komm raus"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Спустись туда вниз",
+        "en": "Go down there"
+      },
+      "answers": [
+        "Geh hinunter",
+        "Geh runter"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Кошка наверху",
+        "en": "The cat is upstairs"
+      },
+      "answers": [
+        "Die Katze ist oben"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Собака внизу",
+        "en": "The dog is downstairs"
+      },
+      "answers": [
+        "Der Hund ist unten"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Подожди там, пожалуйста",
+        "en": "Wait there, please"
+      },
+      "answers": [
+        "Warte da, bitte",
+        "Warte dort, bitte"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Он идет наверх",
+        "en": "He is going upstairs"
+      },
+      "answers": [
+        "Er geht nach oben",
+        "Er geht rauf"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди туда наверх",
+        "en": "Go up there"
+      },
+      "answers": [
+        "Geh hinauf",
+        "Geh rauf"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Спустись, пожалуйста, вниз",
+        "en": "Go down, please"
+      },
+      "answers": [
+        "Geh, bitte, nach unten",
+        "Geh, bitte, runter"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Мы внутри",
+        "en": "We are inside"
+      },
+      "answers": [
+        "Wir sind drinnen"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Принеси мне стул сюда",
+        "en": "Bring me the chair here"
+      },
+      "answers": [
+        "Bring den Stuhl herüber",
+        "Bring den Stuhl rüber"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди наружу",
+        "en": "Go outside"
+      },
+      "answers": [
+        "Geh nach draußen",
+        "Geh raus"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Подойди ко мне через улицу",
+        "en": "Come over to me across the street"
+      },
+      "answers": [
+        "Komm herüber",
+        "Komm rüber"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Мы стоим сзади",
+        "en": "We are standing behind"
+      },
+      "answers": [
+        "Wir stehen hinten"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вся семья ждет внизу",
+        "en": "The whole family is waiting downstairs"
+      },
+      "answers": [
+        "Die ganze Familie wartet unten"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Стань вперед",
+        "en": "Stand in front"
+      },
+      "answers": [
+        "Stell dich nach vorne",
+        "Geh nach vorne"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Поверни направо",
+        "en": "Turn right"
+      },
+      "answers": [
+        "Geh nach rechts",
+        "Fahr nach rechts"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Мы стоим спереди",
+        "en": "We are standing in front"
+      },
+      "answers": [
+        "Wir stehen vorn",
+        "Wir stehen vorne"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди туда наружу",
+        "en": "Go out there"
+      },
+      "answers": [
+        "Geh hinaus",
+        "Geh raus"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Передай ему ручку",
+        "en": "Pass him the pen"
+      },
+      "answers": [
+        "Gib ihm den Kuli herüber",
+        "Gib ihm den Kuli rüber"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Унеси коробку туда",
+        "en": "Take the box over there"
+      },
+      "answers": [
+        "Bring die Kiste hinüber",
+        "Bring die Kiste rüber"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Посмотри вниз",
+        "en": "Look down"
+      },
+      "answers": [
+        "Schau nach unten"
+      ]
+    }
+  ]
 }

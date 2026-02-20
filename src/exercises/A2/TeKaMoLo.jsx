@@ -1,20 +1,21 @@
-import { useEffect, useMemo, useState } from "react";
-import { DndContext, closestCenter, KeyboardSensor, MouseSensor, TouchSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { DndContext, DragOverlay, closestCenter, KeyboardSensor, MouseSensor, TouchSensor, useSensor, useSensors } from "@dnd-kit/core";
 import { SortableContext, sortableKeyboardCoordinates, useSortable, arrayMove, rectSortingStrategy } from "@dnd-kit/sortable";
-import { CSS } from "@dnd-kit/utilities";
+import { motion } from "framer-motion";
 import ModalHtml from "../../components/ModalHtml";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/tekamolo.json";
 import hintRu from "../../../data/A2/images/tekamolo.html?raw";
-import hintEn from "../../../data/A2/images/en/tekamolo.html?raw";
+import hintEn from "../../../data/A2/images/en/teKaMoLo.html?raw";
 
 import "../../css/exercises/Common.css";
 import "../../css/exercises/TeKaMoLo.css";
 
 const STORAGE_KEY = "tekamolo-answers";
 const COLOR_CLASSES = ["color-orange", "color-yellow", "color-violet", "color-green", "color-teal"];
+const DRAG_INSERT_DELAY_MS = 200;
 
 function normalizeItems(rawItems) {
     if (Array.isArray(rawItems) && rawItems.length > 0 && Array.isArray(rawItems[0])) {
@@ -30,27 +31,31 @@ function normalize(value) {
         .replace(/\s+/g, " ");
 }
 
-function SortableWord({ id, text, colorClass, isCorrect }) {
-    const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id });
-    const stableTransform = transform
-        ? { ...transform, scaleX: 1, scaleY: 1 }
-        : null;
-    const style = {
-        transform: CSS.Transform.toString(stableTransform),
-        transition,
-    };
+function SortableWord({ id, text, colorClass, isCorrect, activeDragId, isDraggingSession }) {
+    const { attributes, listeners, setNodeRef, isDragging } = useSortable({
+        id,
+        transition: null,
+    });
+    const isActiveDragItem = isDraggingSession && activeDragId === id;
 
     return (
-        <button
+        <motion.button
             ref={setNodeRef}
-            style={style}
             type="button"
             className={`tkm-word ${colorClass} ${isCorrect ? "tkm-word--correct" : ""} ${isDragging ? "tkm-word--dragging" : ""}`}
+            layout
+            transition={{
+                type: "spring",
+                stiffness: 560,
+                damping: 38,
+                mass: 0.7,
+            }}
+            style={{ opacity: isActiveDragItem ? 0 : 1 }}
             {...attributes}
             {...listeners}
         >
             {text}
-        </button>
+        </motion.button>
     );
 }
 
@@ -58,6 +63,9 @@ export default function TeKaMoLo() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
+    const [activeDragId, setActiveDragId] = useState(null);
+    const [isDraggingSession, setIsDraggingSession] = useState(false);
+    const pendingReorderRef = useRef({ timeoutId: null, signature: "" });
     const hint = locale === "en" ? hintEn : hintRu;
 
     const sensors = useSensors(
@@ -109,8 +117,8 @@ export default function TeKaMoLo() {
         return () => document.removeEventListener("show-hint", handleShowHint);
     }, []);
 
-    const getCurrentOrder = (itemIdx) => {
-        const stored = answers[itemIdx]?.order;
+    const getCurrentOrder = (itemIdx, sourceAnswers = answers) => {
+        const stored = sourceAnswers[itemIdx]?.order;
         const defaultOrder = items[itemIdx]?.defaultOrder ?? [];
 
         if (!Array.isArray(stored) || stored.length !== defaultOrder.length) {
@@ -134,46 +142,107 @@ export default function TeKaMoLo() {
         return actualNormalized.every((word, idx) => word === expected[idx]);
     };
 
-    const handleDragEnd = (itemIdx, event) => {
-        const { active, over } = event;
-        if (!over || active.id === over.id) return;
+    const clearPendingReorder = () => {
+        if (pendingReorderRef.current.timeoutId) {
+            clearTimeout(pendingReorderRef.current.timeoutId);
+        }
+        pendingReorderRef.current = { timeoutId: null, signature: "" };
+    };
 
-        const currentOrder = getCurrentOrder(itemIdx);
-        const oldIndex = currentOrder.indexOf(active.id);
-        const newIndex = currentOrder.indexOf(over.id);
-        if (oldIndex === -1 || newIndex === -1) return;
+    useEffect(() => clearPendingReorder, []);
 
-        const nextOrder = arrayMove(currentOrder, oldIndex, newIndex);
-        const isCorrect = getIsCorrect(nextOrder, itemIdx);
+    useEffect(() => {
+        const resetDragState = () => {
+            clearPendingReorder();
+            setActiveDragId(null);
+            setIsDraggingSession(false);
+        };
 
-        setAnswers((prev) => ({
-            ...prev,
-            [itemIdx]: {
-                order: nextOrder,
-                isCorrect,
-            },
-        }));
+        const handleVisibility = () => {
+            if (document.hidden) resetDragState();
+        };
+
+        window.addEventListener("pointerup", resetDragState);
+        window.addEventListener("touchend", resetDragState);
+        window.addEventListener("touchcancel", resetDragState);
+        window.addEventListener("blur", resetDragState);
+        document.addEventListener("visibilitychange", handleVisibility);
+
+        return () => {
+            window.removeEventListener("pointerup", resetDragState);
+            window.removeEventListener("touchend", resetDragState);
+            window.removeEventListener("touchcancel", resetDragState);
+            window.removeEventListener("blur", resetDragState);
+            document.removeEventListener("visibilitychange", handleVisibility);
+        };
+    }, []);
+
+    const applyReorder = (itemIdx, activeId, overId) => {
+        if (!overId || activeId === overId) return;
+
+        setAnswers((prev) => {
+            const currentOrder = getCurrentOrder(itemIdx, prev);
+            const oldIndex = currentOrder.indexOf(activeId);
+            const newIndex = currentOrder.indexOf(overId);
+            if (oldIndex === -1 || newIndex === -1 || oldIndex === newIndex) return prev;
+
+            const nextOrder = arrayMove(currentOrder, oldIndex, newIndex);
+            const isCorrect = getIsCorrect(nextOrder, itemIdx);
+            return {
+                ...prev,
+                [itemIdx]: {
+                    order: nextOrder,
+                    isCorrect,
+                },
+            };
+        });
+    };
+
+    const scheduleReorder = (itemIdx, activeId, overId) => {
+        if (!overId || activeId === overId) return;
+        const signature = `${itemIdx}:${activeId}->${overId}`;
+        if (pendingReorderRef.current.signature === signature) return;
+
+        clearPendingReorder();
+        pendingReorderRef.current = {
+            timeoutId: setTimeout(() => {
+                applyReorder(itemIdx, activeId, overId);
+                pendingReorderRef.current = { timeoutId: null, signature: "" };
+            }, DRAG_INSERT_DELAY_MS),
+            signature,
+        };
+    };
+
+    const handleDragStart = (event) => {
+        clearPendingReorder();
+        setIsDraggingSession(true);
+        setActiveDragId(String(event.active.id));
     };
 
     const handleDragOver = (itemIdx, event) => {
         const { active, over } = event;
         if (!over || active.id === over.id) return;
+        scheduleReorder(itemIdx, String(active.id), String(over.id));
+    };
 
-        const currentOrder = getCurrentOrder(itemIdx);
-        const oldIndex = currentOrder.indexOf(active.id);
-        const newIndex = currentOrder.indexOf(over.id);
-        if (oldIndex === -1 || newIndex === -1) return;
+    const handleDragEnd = (itemIdx, event) => {
+        const { active, over } = event;
+        setIsDraggingSession(false);
+        setActiveDragId(null);
+        if (!over || active.id === over.id) {
+            clearPendingReorder();
+            return;
+        }
 
-        const nextOrder = arrayMove(currentOrder, oldIndex, newIndex);
-        const isCorrect = getIsCorrect(nextOrder, itemIdx);
+        const activeId = String(active.id);
+        const overId = String(over.id);
+        scheduleReorder(itemIdx, activeId, overId);
+    };
 
-        setAnswers((prev) => ({
-            ...prev,
-            [itemIdx]: {
-                order: nextOrder,
-                isCorrect,
-            },
-        }));
+    const handleDragCancel = () => {
+        setIsDraggingSession(false);
+        setActiveDragId(null);
+        clearPendingReorder();
     };
 
     return (
@@ -191,8 +260,10 @@ export default function TeKaMoLo() {
                                 <DndContext
                                     sensors={sensors}
                                     collisionDetection={closestCenter}
+                                    onDragStart={handleDragStart}
                                     onDragOver={(event) => handleDragOver(itemIdx, event)}
                                     onDragEnd={(event) => handleDragEnd(itemIdx, event)}
+                                    onDragCancel={handleDragCancel}
                                 >
                                     <SortableContext items={order} strategy={rectSortingStrategy}>
                                         <div className="tkm-words-wrap">
@@ -206,11 +277,26 @@ export default function TeKaMoLo() {
                                                         text={word}
                                                         colorClass={item.tokenColorMap[id]}
                                                         isCorrect={isSentenceCorrect}
+                                                        activeDragId={activeDragId}
+                                                        isDraggingSession={isDraggingSession}
                                                     />
                                                 );
                                             })}
                                         </div>
                                     </SortableContext>
+                                    <DragOverlay>
+                                        {isDraggingSession && activeDragId && activeDragId.startsWith(`${itemIdx}-`) ? (
+                                            <motion.span
+                                                className={`tkm-word ${item.tokenColorMap[activeDragId] ?? ""}`}
+                                                initial={{ scale: 1 }}
+                                                animate={{ scale: 1 }}
+                                                transition={{ duration: 0 }}
+                                                style={{ pointerEvents: "none" }}
+                                            >
+                                                {item.tokenMap[activeDragId]}
+                                            </motion.span>
+                                        ) : null}
+                                    </DragOverlay>
                                 </DndContext>
                             </li>
                         );

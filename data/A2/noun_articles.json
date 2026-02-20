@@ -309,6 +309,14 @@
       }
     },
     {
+      "word": "___ Spiegel",
+      "article": "der",
+      "translation": {
+        "ru": "зеркало",
+        "en": "mirror"
+      }
+    },
+    {
       "word": "___ Menge",
       "article": "die",
       "translation": {
@@ -341,11 +349,27 @@
       }
     },
     {
+      "word": "___ Ernährung",
+      "article": "die",
+      "translation": {
+        "ru": "питание",
+        "en": "nutrition"
+      }
+    },
+    {
       "word": "___ Nachricht",
       "article": "die",
       "translation": {
         "ru": "сообщение",
         "en": "message"
+      }
+    },
+    {
+      "word": "___ Kindheit",
+      "article": "die",
+      "translation": {
+        "ru": "детство",
+        "en": "childhood"
       }
     },
     {

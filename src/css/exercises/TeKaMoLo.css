@@ -27,13 +27,10 @@
 
 .tkm-word {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   flex: 0 0 auto;
   border: 2px solid #bfc2cc;
   border-radius: 32px;
-  padding: 10px 14px;
-  min-height: 44px;
+  padding: 6px 12px;
   background-color: #fff;
   cursor: grab;
   font-size: inherit;
@@ -44,6 +41,7 @@
   -webkit-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
+  will-change: transform;
 }
 
 .tkm-word.color-orange {
@@ -71,7 +69,6 @@
 }
 
 .tkm-word--dragging {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
   opacity: 1;
 }
 
@@ -87,7 +84,6 @@
 
 @media (max-width: 600px) {
   .tkm-word {
-    padding: 10px 14px;
-    min-height: 46px;
+    padding: 5px 10px;
   }
 }
