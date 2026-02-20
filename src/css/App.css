@@ -21,17 +21,35 @@ body {
   color: var(--color-text-primary);
 }
 
-:root.theme-transition *,
-:root.theme-transition *::before,
-:root.theme-transition *::after {
+:root.theme-transition body,
+:root.theme-transition .app-layout,
+:root.theme-transition .sidebar,
+:root.theme-transition .sidebar-settings-button,
+:root.theme-transition .sidebar-close-icon-button,
+:root.theme-transition .sidebar-settings-dropdown,
+:root.theme-transition .sidebar-exercises-inner,
+:root.theme-transition .sidebar-tab,
+:root.theme-transition .sidebar-clear-button,
+:root.theme-transition .app-header,
+:root.theme-transition .header-sidebar-button,
+:root.theme-transition .exercise-container,
+:root.theme-transition .exercise-card,
+:root.theme-transition .exercise-scroll,
+:root.theme-transition .theme-toggle,
+:root.theme-transition .theme-toggle__thumb,
+:root.theme-transition .modal-dialog,
+:root.theme-transition .modal-html-content-wrapper,
+:root.theme-transition .modal-close-button,
+:root.theme-transition .modal-slider__nav,
+:root.theme-transition .modal-slider__counter,
+:root.theme-transition .modal-html-content,
+:root.theme-transition .exercise-input,
+:root.theme-transition .tkm-word {
   transition:
           background-color var(--duration-theme-switch) ease,
-          color var(--duration-theme-switch) ease,
           border-color var(--duration-theme-switch) ease,
-          box-shadow var(--duration-theme-switch) ease,
           fill var(--duration-theme-switch) ease,
-          stroke var(--duration-theme-switch) ease,
-          opacity var(--duration-theme-switch) ease;
+          stroke var(--duration-theme-switch) ease;
 }
 
 /* общий layout */
@@ -364,6 +382,7 @@ body {
 .sidebar-tab {
   position: relative;
   --tab-neon-fill: var(--color-sidebar-active-bg);
+  z-index: 0;
   width: 100%;
 
   display: flex;
@@ -437,7 +456,20 @@ body {
 }
 
 .sidebar-tab--active {
+  z-index: 2;
   box-shadow: var(--shadow-sidebar-tab-active);
+  border-bottom-color: transparent;
+}
+
+.sidebar-tab--active .sidebar-tab-active-bg {
+  top: calc(-1 * var(--size-1));
+  left: calc(-1 * var(--size-1));
+  right: calc(-1 * var(--size-1));
+  bottom: calc(-1 * var(--size-1));
+}
+
+.sidebar-tab--active + .sidebar-tab::after {
+  opacity: 0;
 }
 
 :root[data-theme="dark"] .sidebar-tab:nth-child(5n + 1) {

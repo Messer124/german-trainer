@@ -73,7 +73,7 @@ function WeakVerbConjugation() {
                                                         ? "correct"
                                                         : "incorrect"
                                             }`}
-                                            minWidth={100}
+                                            minWidth={200}
                                             maxWidth={240}
                                         />
                                     </td>
