@@ -28,6 +28,7 @@ import Relativpronomen from "../exercises/A2/Relativpronomen";
 import Ersatzartikel from "../exercises/A2/Ersatzartikel";
 import Wortstellung from "../exercises/A2/Wortstellung";
 import TeKaMoLo from "../exercises/A2/TeKaMoLo";
+import Verbrektion from "../exercises/A2/Verbrektion";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -184,6 +185,11 @@ export const EXERCISES_BY_LEVEL = {
             label: "TeKaMoLo",
             storageKey: "tekamolo-answers",
             component: TeKaMoLo,
+        },
+        "verbrektion": {
+            label: "Verbrektion",
+            storageKey: "verbrektion-answers",
+            component: Verbrektion,
         }
     },
 };
