@@ -118,4 +118,4 @@ Ersatzartikel.headerButton = (
 );
 
 Ersatzartikel.instructions = data.instructions;
-Ersatzartikel.title = { ru: "Ersatzartikel", en: "Ersatzartikel" };
+Ersatzartikel.title = data.title;

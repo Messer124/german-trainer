@@ -1,4 +1,8 @@
 {
+  "title": {
+    "ru": "Artikeldeklination",
+    "en": "Artikeldeklination"
+  },
   "instructions": {
     "ru": "Вставьте правильный артикль в пропуск.",
     "en": "Insert the correct article into the blank."

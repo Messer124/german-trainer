@@ -1,4 +1,8 @@
 {
+  "title": {
+    "ru": "Indefinitpronomen",
+    "en": "Indefinitpronomen"
+  },
   "instructions": {
     "ru": "Подберите неопределенное местоимение в нужном падеже.",
     "en": "Choose an indefinite pronoun in the correct case."

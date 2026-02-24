@@ -1,359 +1,819 @@
 {
+  "title": {
+    "ru": "Nomenartikel",
+    "en": "Nomenartikel"
+  },
   "instructions": {
     "ru": "Впишите артикль для слов с несовпадением рода в русском языке (der, die, das).",
     "en": "Type the correct article (der, die or das)."
   },
   "items": [
     {
-      "word": "___ Art",
+      "word": "___ Absicht",
       "article": "die",
       "translation": {
-        "ru": "вид",
-        "en": "kind/type"
+        "ru": "намерение",
+        "en": "intention"
       }
     },
     {
-      "word": "___ Beziehung",
+      "word": "___ Angabe",
       "article": "die",
       "translation": {
-        "ru": "отношение",
-        "en": "relationship"
+        "ru": "указание",
+        "en": "statement"
       }
     },
     {
-      "word": "___ Bedeutung",
-      "article": "die",
-      "translation": {
-        "ru": "значение",
-        "en": "meaning"
-      }
-    },
-    {
-      "word": "___ Beruf",
+      "word": "___ Angriff",
       "article": "der",
       "translation": {
-        "ru": "профессия",
-        "en": "profession"
+        "ru": "атака",
+        "en": "attack"
       }
     },
     {
-      "word": "___ Bild",
-      "article": "das",
-      "translation": {
-        "ru": "картина",
-        "en": "picture"
-      }
-    },
-    {
-      "word": "___ Chance",
-      "article": "die",
-      "translation": {
-        "ru": "шанс",
-        "en": "chance"
-      }
-    },
-    {
-      "word": "___ Eindruck",
+      "word": "___ Ausflug",
       "article": "der",
       "translation": {
-        "ru": "впечатление",
-        "en": "impression"
+        "ru": "поездка",
+        "en": "excursion"
       }
     },
     {
-      "word": "___ Entdeckung",
+      "word": "___ Ausnahme",
       "article": "die",
       "translation": {
-        "ru": "открытие",
-        "en": "discovery"
+        "ru": "исключение",
+        "en": "exception"
       }
     },
     {
-      "word": "___ Entwicklung",
-      "article": "die",
-      "translation": {
-        "ru": "развитие",
-        "en": "development"
-      }
-    },
-    {
-      "word": "___ Ernährung",
-      "article": "die",
-      "translation": {
-        "ru": "питание",
-        "en": "nutrition/diet"
-      }
-    },
-    {
-      "word": "___ Erklärung",
-      "article": "die",
-      "translation": {
-        "ru": "объяснение",
-        "en": "explanation"
-      }
-    },
-    {
-      "word": "___ Eröffnung",
-      "article": "die",
-      "translation": {
-        "ru": "открытие",
-        "en": "opening"
-      }
-    },
-    {
-      "word": "___ Erzählung",
-      "article": "die",
-      "translation": {
-        "ru": "рассказ",
-        "en": "story"
-      }
-    },
-    {
-      "word": "___ Geheimnis",
-      "article": "das",
-      "translation": {
-        "ru": "тайна",
-        "en": "secret"
-      }
-    },
-    {
-      "word": "___ Interesse",
-      "article": "das",
-      "translation": {
-        "ru": "интерес",
-        "en": "interest"
-      }
-    },
-    {
-      "word": "___ Kontrolle",
-      "article": "die",
-      "translation": {
-        "ru": "контроль",
-        "en": "check/control"
-      }
-    },
-    {
-      "word": "___ Kunst",
-      "article": "die",
-      "translation": {
-        "ru": "искусство",
-        "en": "art"
-      }
-    },
-    {
-      "word": "___ Lage",
-      "article": "die",
-      "translation": {
-        "ru": "положение",
-        "en": "situation"
-      }
-    },
-    {
-      "word": "___ Lücke",
-      "article": "die",
-      "translation": {
-        "ru": "пробел",
-        "en": "gap"
-      }
-    },
-    {
-      "word": "___ Lunge",
-      "article": "die",
-      "translation": {
-        "ru": "лёгкое",
-        "en": "lung"
-      }
-    },
-    {
-      "word": "___ Mühe",
-      "article": "die",
-      "translation": {
-        "ru": "труд",
-        "en": "effort"
-      }
-    },
-    {
-      "word": "___ Mut",
+      "word": "___ Ausweis",
       "article": "der",
       "translation": {
-        "ru": "смелость",
-        "en": "courage"
+        "ru": "удостоверение",
+        "en": "id card"
       }
     },
     {
-      "word": "___ Pech",
-      "article": "das",
-      "translation": {
-        "ru": "неудача",
-        "en": "bad luck"
-      }
-    },
-    {
-      "word": "___ Problem",
-      "article": "das",
-      "translation": {
-        "ru": "проблема",
-        "en": "problem"
-      }
-    },
-    {
-      "word": "___ Reihe",
-      "article": "die",
-      "translation": {
-        "ru": "ряд",
-        "en": "row/series"
-      }
-    },
-    {
-      "word": "___ Schatten",
+      "word": "___ Bedarf",
       "article": "der",
       "translation": {
-        "ru": "тень",
-        "en": "shadow"
+        "ru": "потребность",
+        "en": "need/demand"
       }
     },
     {
-      "word": "___ Sicht",
-      "article": "die",
-      "translation": {
-        "ru": "вид",
-        "en": "view"
-      }
-    },
-    {
-      "word": "___ Spur",
-      "article": "die",
-      "translation": {
-        "ru": "след",
-        "en": "trace"
-      }
-    },
-    {
-      "word": "___ Staat",
-      "article": "der",
-      "translation": {
-        "ru": "государство",
-        "en": "state"
-      }
-    },
-    {
-      "word": "___ Stelle",
-      "article": "die",
-      "translation": {
-        "ru": "место",
-        "en": "place/position"
-      }
-    },
-    {
-      "word": "___ Stimme",
-      "article": "die",
-      "translation": {
-        "ru": "голос",
-        "en": "voice"
-      }
-    },
-    {
-      "word": "___ Streit",
-      "article": "der",
-      "translation": {
-        "ru": "ссора",
-        "en": "quarrel"
-      }
-    },
-    {
-      "word": "___ Suche",
-      "article": "die",
-      "translation": {
-        "ru": "поиск",
-        "en": "search"
-      }
-    },
-    {
-      "word": "___ Talent",
+      "word": "___ Benzin",
       "article": "das",
       "translation": {
-        "ru": "талант",
-        "en": "talent"
+        "ru": "бензин",
+        "en": "petrol"
       }
     },
     {
-      "word": "___ Thema",
-      "article": "das",
-      "translation": {
-        "ru": "тема",
-        "en": "topic"
-      }
-    },
-    {
-      "word": "___ Traum",
+      "word": "___ Betrieb",
       "article": "der",
       "translation": {
-        "ru": "мечта",
-        "en": "dream"
+        "ru": "предприятие",
+        "en": "operation/business"
       }
     },
     {
-      "word": "___ Unfall",
+      "word": "___ Couch",
+      "article": "die",
+      "translation": {
+        "ru": "диван",
+        "en": "couch"
+      }
+    },
+    {
+      "word": "___ Durst",
       "article": "der",
       "translation": {
-        "ru": "авария",
-        "en": "accident"
+        "ru": "жажда",
+        "en": "thirst"
       }
     },
     {
-      "word": "___ Veranstaltung",
-      "article": "die",
+      "word": "___ Einkauf",
+      "article": "der",
       "translation": {
-        "ru": "мероприятие",
-        "en": "event"
+        "ru": "покупка",
+        "en": "shopping"
       }
     },
     {
-      "word": "___ Vergangenheit",
-      "article": "die",
-      "translation": {
-        "ru": "прошлое",
-        "en": "past"
-      }
-    },
-    {
-      "word": "___ Vorstellung",
-      "article": "die",
-      "translation": {
-        "ru": "представление",
-        "en": "idea/presentation"
-      }
-    },
-    {
-      "word": "___ Wahl",
-      "article": "die",
-      "translation": {
-        "ru": "выбор",
-        "en": "choice"
-      }
-    },
-    {
-      "word": "___ Wirkung",
-      "article": "die",
-      "translation": {
-        "ru": "эффект",
-        "en": "effect"
-      }
-    },
-    {
-      "word": "___ Ziel",
+      "word": "___ Erdgeschoss",
       "article": "das",
       "translation": {
-        "ru": "цель",
-        "en": "goal"
+        "ru": "этаж",
+        "en": "ground floor"
       }
     },
     {
-      "word": "___ Zukunft",
+      "word": "___ Erlaubnis",
       "article": "die",
       "translation": {
-        "ru": "будущее",
-        "en": "future"
+        "ru": "разрешение",
+        "en": "permission"
+      }
+    },
+    {
+      "word": "___ Festplatte",
+      "article": "die",
+      "translation": {
+        "ru": "диск",
+        "en": "hard drive"
+      }
+    },
+    {
+      "word": "___ Fleck",
+      "article": "der",
+      "translation": {
+        "ru": "пятно",
+        "en": "stain"
+      }
+    },
+    {
+      "word": "___ Formular",
+      "article": "das",
+      "translation": {
+        "ru": "бланк",
+        "en": "form"
+      }
+    },
+    {
+      "word": "___ Frist",
+      "article": "die",
+      "translation": {
+        "ru": "срок",
+        "en": "deadline"
+      }
+    },
+    {
+      "word": "___ Frucht",
+      "article": "die",
+      "translation": {
+        "ru": "фрукт",
+        "en": "fruit"
+      }
+    },
+    {
+      "word": "___ Garage",
+      "article": "die",
+      "translation": {
+        "ru": "гараж",
+        "en": "garage"
+      }
+    },
+    {
+      "word": "___ Gebühr",
+      "article": "die",
+      "translation": {
+        "ru": "сбор",
+        "en": "fee"
+      }
+    },
+    {
+      "word": "___ Genuss",
+      "article": "der",
+      "translation": {
+        "ru": "удовольствие",
+        "en": "enjoyment"
+      }
+    },
+    {
+      "word": "___ Gepäck",
+      "article": "das",
+      "translation": {
+        "ru": "багаж",
+        "en": "luggage"
+      }
+    },
+    {
+      "word": "___ Getränk",
+      "article": "das",
+      "translation": {
+        "ru": "напиток",
+        "en": "drink"
+      }
+    },
+    {
+      "word": "___ Gewitter",
+      "article": "das",
+      "translation": {
+        "ru": "гроза",
+        "en": "thunderstorm"
+      }
+    },
+    {
+      "word": "___ Gift",
+      "article": "das",
+      "translation": {
+        "ru": "яд",
+        "en": "poison"
+      }
+    },
+    {
+      "word": "___ Gleis",
+      "article": "das",
+      "translation": {
+        "ru": "путь",
+        "en": "track"
+      }
+    },
+    {
+      "word": "___ Grippe",
+      "article": "die",
+      "translation": {
+        "ru": "грипп",
+        "en": "flu"
+      }
+    },
+    {
+      "word": "___ Hemd",
+      "article": "das",
+      "translation": {
+        "ru": "рубашка",
+        "en": "shirt"
+      }
+    },
+    {
+      "word": "___ Herd",
+      "article": "der",
+      "translation": {
+        "ru": "плита",
+        "en": "stove"
+      }
+    },
+    {
+      "word": "___ Kante",
+      "article": "die",
+      "translation": {
+        "ru": "край",
+        "en": "edge"
+      }
+    },
+    {
+      "word": "___ Kenntnis",
+      "article": "die",
+      "translation": {
+        "ru": "знание",
+        "en": "knowledge"
+      }
+    },
+    {
+      "word": "___ Kern",
+      "article": "der",
+      "translation": {
+        "ru": "ядро",
+        "en": "core"
+      }
+    },
+    {
+      "word": "___ Kissen",
+      "article": "das",
+      "translation": {
+        "ru": "подушка",
+        "en": "pillow"
+      }
+    },
+    {
+      "word": "___ Kita",
+      "article": "die",
+      "translation": {
+        "ru": "детсад",
+        "en": "daycare center"
+      }
+    },
+    {
+      "word": "___ Kneipe",
+      "article": "die",
+      "translation": {
+        "ru": "бар",
+        "en": "pub"
+      }
+    },
+    {
+      "word": "___ Knopf",
+      "article": "der",
+      "translation": {
+        "ru": "кнопка",
+        "en": "button"
+      }
+    },
+    {
+      "word": "___ Kostüm",
+      "article": "das",
+      "translation": {
+        "ru": "костюм",
+        "en": "suit"
+      }
+    },
+    {
+      "word": "___ Krieg",
+      "article": "der",
+      "translation": {
+        "ru": "война",
+        "en": "war"
+      }
+    },
+    {
+      "word": "___ Kälte",
+      "article": "die",
+      "translation": {
+        "ru": "холод",
+        "en": "cold"
+      }
+    },
+    {
+      "word": "___ Labor",
+      "article": "das",
+      "translation": {
+        "ru": "лаборатория",
+        "en": "laboratory"
+      }
+    },
+    {
+      "word": "___ Lebenslauf",
+      "article": "der",
+      "translation": {
+        "ru": "резюме",
+        "en": "cv"
+      }
+    },
+    {
+      "word": "___ Leder",
+      "article": "das",
+      "translation": {
+        "ru": "кожа",
+        "en": "leather"
+      }
+    },
+    {
+      "word": "___ Löffel",
+      "article": "der",
+      "translation": {
+        "ru": "ложка",
+        "en": "spoon"
+      }
+    },
+    {
+      "word": "___ Magazin",
+      "article": "das",
+      "translation": {
+        "ru": "журнал",
+        "en": "magazine"
+      }
+    },
+    {
+      "word": "___ Mangel",
+      "article": "der",
+      "translation": {
+        "ru": "нехватка",
+        "en": "shortage"
+      }
+    },
+    {
+      "word": "___ Mantel",
+      "article": "der",
+      "translation": {
+        "ru": "пальто",
+        "en": "coat"
+      }
+    },
+    {
+      "word": "___ Mehl",
+      "article": "das",
+      "translation": {
+        "ru": "мука",
+        "en": "flour"
+      }
+    },
+    {
+      "word": "___ Muttersprache",
+      "article": "die",
+      "translation": {
+        "ru": "родной язык",
+        "en": "native language"
+      }
+    },
+    {
+      "word": "___ Niveau",
+      "article": "das",
+      "translation": {
+        "ru": "уровень",
+        "en": "level"
+      }
+    },
+    {
+      "word": "___ Nutzen",
+      "article": "der",
+      "translation": {
+        "ru": "польза",
+        "en": "benefit"
+      }
+    },
+    {
+      "word": "___ Ofen",
+      "article": "der",
+      "translation": {
+        "ru": "печь",
+        "en": "oven"
+      }
+    },
+    {
+      "word": "___ Opfer",
+      "article": "das",
+      "translation": {
+        "ru": "жертва",
+        "en": "victim"
+      }
+    },
+    {
+      "word": "___ Orange",
+      "article": "die",
+      "translation": {
+        "ru": "апельсин",
+        "en": "orange"
+      }
+    },
+    {
+      "word": "___ Orchester",
+      "article": "das",
+      "translation": {
+        "ru": "оркестр",
+        "en": "orchestra"
+      }
+    },
+    {
+      "word": "___ Pflanze",
+      "article": "die",
+      "translation": {
+        "ru": "растение",
+        "en": "plant"
+      }
+    },
+    {
+      "word": "___ Pflaster",
+      "article": "das",
+      "translation": {
+        "ru": "пластырь",
+        "en": "bandage"
+      }
+    },
+    {
+      "word": "___ Plastik",
+      "article": "das",
+      "translation": {
+        "ru": "пластик",
+        "en": "plastic"
+      }
+    },
+    {
+      "word": "___ Quartal",
+      "article": "das",
+      "translation": {
+        "ru": "квартал",
+        "en": "quarter"
+      }
+    },
+    {
+      "word": "___ Quelle",
+      "article": "die",
+      "translation": {
+        "ru": "источник",
+        "en": "source"
+      }
+    },
+    {
+      "word": "___ Rabatt",
+      "article": "der",
+      "translation": {
+        "ru": "скидка",
+        "en": "discount"
+      }
+    },
+    {
+      "word": "___ Regal",
+      "article": "das",
+      "translation": {
+        "ru": "полка",
+        "en": "shelf"
+      }
+    },
+    {
+      "word": "___ Reparatur",
+      "article": "die",
+      "translation": {
+        "ru": "ремонт",
+        "en": "repair"
+      }
+    },
+    {
+      "word": "___ Schnitzel",
+      "article": "das",
+      "translation": {
+        "ru": "шницель",
+        "en": "schnitzel"
+      }
+    },
+    {
+      "word": "___ Schraube",
+      "article": "die",
+      "translation": {
+        "ru": "винт",
+        "en": "screw"
+      }
+    },
+    {
+      "word": "___ Schutz",
+      "article": "der",
+      "translation": {
+        "ru": "защита",
+        "en": "protection"
+      }
+    },
+    {
+      "word": "___ Schwein",
+      "article": "das",
+      "translation": {
+        "ru": "свинья",
+        "en": "pig"
+      }
+    },
+    {
+      "word": "___ Schwimmbad",
+      "article": "das",
+      "translation": {
+        "ru": "бассейн",
+        "en": "swimming pool"
+      }
+    },
+    {
+      "word": "___ Semester",
+      "article": "das",
+      "translation": {
+        "ru": "семестр",
+        "en": "semester"
+      }
+    },
+    {
+      "word": "___ Sessel",
+      "article": "der",
+      "translation": {
+        "ru": "кресло",
+        "en": "armchair"
+      }
+    },
+    {
+      "word": "___ Signal",
+      "article": "das",
+      "translation": {
+        "ru": "сигнал",
+        "en": "signal"
+      }
+    },
+    {
+      "word": "___ Sofa",
+      "article": "das",
+      "translation": {
+        "ru": "диван",
+        "en": "sofa"
+      }
+    },
+    {
+      "word": "___ Soße",
+      "article": "die",
+      "translation": {
+        "ru": "соус",
+        "en": "sauce"
+      }
+    },
+    {
+      "word": "___ Spaziergang",
+      "article": "der",
+      "translation": {
+        "ru": "прогулка",
+        "en": "walk"
+      }
+    },
+    {
+      "word": "___ Spielzeug",
+      "article": "das",
+      "translation": {
+        "ru": "игрушка",
+        "en": "toy"
+      }
+    },
+    {
+      "word": "___ Standpunkt",
+      "article": "der",
+      "translation": {
+        "ru": "точка зрения",
+        "en": "point of view"
+      }
+    },
+    {
+      "word": "___ Stau",
+      "article": "der",
+      "translation": {
+        "ru": "пробка",
+        "en": "traffic jam"
+      }
+    },
+    {
+      "word": "___ Staub",
+      "article": "der",
+      "translation": {
+        "ru": "пыль",
+        "en": "dust"
+      }
+    },
+    {
+      "word": "___ Steuer",
+      "article": "die",
+      "translation": {
+        "ru": "налог",
+        "en": "tax"
+      }
+    },
+    {
+      "word": "___ Stirn",
+      "article": "die",
+      "translation": {
+        "ru": "лоб",
+        "en": "forehead"
+      }
+    },
+    {
+      "word": "___ Suppe",
+      "article": "die",
+      "translation": {
+        "ru": "суп",
+        "en": "soup"
+      }
+    },
+    {
+      "word": "___ Symptom",
+      "article": "das",
+      "translation": {
+        "ru": "симптом",
+        "en": "symptom"
+      }
+    },
+    {
+      "word": "___ Tat",
+      "article": "die",
+      "translation": {
+        "ru": "поступок",
+        "en": "deed"
+      }
+    },
+    {
+      "word": "___ Topf",
+      "article": "der",
+      "translation": {
+        "ru": "кастрюля",
+        "en": "pot"
+      }
+    },
+    {
+      "word": "___ Treffpunkt",
+      "article": "der",
+      "translation": {
+        "ru": "место встречи",
+        "en": "meeting point"
+      }
+    },
+    {
+      "word": "___ Tropfen",
+      "article": "der",
+      "translation": {
+        "ru": "капля",
+        "en": "drop"
+      }
+    },
+    {
+      "word": "___ Turm",
+      "article": "der",
+      "translation": {
+        "ru": "башня",
+        "en": "tower"
+      }
+    },
+    {
+      "word": "___ Tüte",
+      "article": "die",
+      "translation": {
+        "ru": "пакет",
+        "en": "bag"
+      }
+    },
+    {
+      "word": "___ Unterkunft",
+      "article": "die",
+      "translation": {
+        "ru": "жильё",
+        "en": "accommodation"
+      }
+    },
+    {
+      "word": "___ Vitamin",
+      "article": "das",
+      "translation": {
+        "ru": "витамин",
+        "en": "vitamin"
+      }
+    },
+    {
+      "word": "___ Vorname",
+      "article": "der",
+      "translation": {
+        "ru": "имя",
+        "en": "first name"
+      }
+    },
+    {
+      "word": "___ Vorschrift",
+      "article": "die",
+      "translation": {
+        "ru": "предписание",
+        "en": "regulation"
+      }
+    },
+    {
+      "word": "___ Wiese",
+      "article": "die",
+      "translation": {
+        "ru": "луг",
+        "en": "meadow"
+      }
+    },
+    {
+      "word": "___ Wille",
+      "article": "der",
+      "translation": {
+        "ru": "воля",
+        "en": "will"
+      }
+    },
+    {
+      "word": "___ Wohnort",
+      "article": "der",
+      "translation": {
+        "ru": "место жительства",
+        "en": "place of residence"
+      }
+    },
+    {
+      "word": "___ Wolke",
+      "article": "die",
+      "translation": {
+        "ru": "облако",
+        "en": "cloud"
+      }
+    },
+    {
+      "word": "___ Wörterbuch",
+      "article": "das",
+      "translation": {
+        "ru": "словарь",
+        "en": "dictionary"
+      }
+    },
+    {
+      "word": "___ Zelt",
+      "article": "das",
+      "translation": {
+        "ru": "палатка",
+        "en": "tent"
+      }
+    },
+    {
+      "word": "___ Zentrale",
+      "article": "die",
+      "translation": {
+        "ru": "центр",
+        "en": "headquarters"
+      }
+    },
+    {
+      "word": "___ Zertifikat",
+      "article": "das",
+      "translation": {
+        "ru": "сертификат",
+        "en": "certificate"
+      }
+    },
+    {
+      "word": "___ Zweifel",
+      "article": "der",
+      "translation": {
+        "ru": "сомнение",
+        "en": "doubt"
       }
     }
   ]

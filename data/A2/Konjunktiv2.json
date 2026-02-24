@@ -1,0 +1,446 @@
+{
+  "title": {
+    "ru": "Konjunktiv II",
+    "en": "Konjunktiv II"
+  },
+  "instructions": {
+    "ru": "Переведите предложения на немецкий язык",
+    "en": "Translate the sentences into German"
+  },
+  "items": [
+    {
+      "id": "present",
+      "label": {
+        "ru": "Konjunktiv II в настоящем времени",
+        "en": "Konjunktiv II in the present tense"
+      }
+    },
+    {
+      "sentence": {
+        "ru": "Ты бы купил этот ноутбук?",
+        "en": "Would you buy this laptop?"
+      },
+      "answer": "Würdest du diesen Laptop kaufen?"
+    },
+    {
+      "sentence": {
+        "ru": "Были бы мои родители сейчас дома",
+        "en": "If my parents were at home now"
+      },
+      "answer": "Wären meine Eltern jetzt zu Hause"
+    },
+    {
+      "sentence": {
+        "ru": "Они бы встретили нас на вокзале",
+        "en": "They would pick us up at the station"
+      },
+      "answer": "Sie würden uns am Bahnhof abholen"
+    },
+    {
+      "sentence": {
+        "ru": "Был бы я такой же сильный, как ты",
+        "en": "If I were as strong as you"
+      },
+      "answer": "Wäre ich so stark wie du"
+    },
+    {
+      "sentence": {
+        "ru": "Я бы не спорил с ним",
+        "en": "I would not argue with him"
+      },
+      "answer": "Ich würde nicht mit ihm streiten"
+    },
+    {
+      "sentence": {
+        "ru": "Мы бы начали раньше, если бы знали адрес",
+        "en": "We would start earlier if we knew the address"
+      },
+      "answer": "Wir würden früher anfangen, wenn wir die Adresse wüssten"
+    },
+    {
+      "sentence": {
+        "ru": "Говорила бы она медленнее, я понимал бы больше",
+        "en": "If she spoke more slowly, I would understand more"
+      },
+      "answer": "Spräche sie langsamer, verstünde ich mehr"
+    },
+    {
+      "sentence": {
+        "ru": "Пришел бы автобус вовремя, мы были бы там раньше",
+        "en": "If the bus came on time, we would be there earlier"
+      },
+      "answer": "Käme der Bus pünktlich, wären wir früher dort"
+    },
+    {
+      "sentence": {
+        "ru": "Если бы он часто гулял, он бы лучше себя чувствовал",
+        "en": "If he went for walks often, he would feel better"
+      },
+      "answer": "Wenn er oft spazieren gehen würde, würde er sich besser fühlen"
+    },
+    {
+      "sentence": {
+        "ru": "Имел бы я больше свободного времени",
+        "en": "If I had more free time"
+      },
+      "answer": "Hätte ich mehr Freizeit"
+    },
+    {
+      "sentence": {
+        "ru": "Нужна ли была бы мне действительно новая машина",
+        "en": "Would I really need a new car?"
+      },
+      "answer": "Bräuchte ich wirklich ein neues Auto?"
+    },
+    {
+      "sentence": {
+        "ru": "Если бы дорога была свободна, ты бы доехал вовремя",
+        "en": "If the road were clear, you would arrive on time"
+      },
+      "answer": "Wenn der Weg frei wäre, würdest du pünktlich ankommen"
+    },
+    {
+      "sentence": {
+        "ru": "Мы бы сняли квартиру поближе к центру",
+        "en": "We would rent an apartment closer to the center"
+      },
+      "answer": "Wir würden eine Wohnung näher am Zentrum mieten"
+    },
+    {
+      "sentence": {
+        "ru": "Можно было бы мне здесь сесть?",
+        "en": "May I sit here?"
+      },
+      "answer": "Dürfte ich hier sitzen?"
+    },
+    {
+      "sentence": {
+        "ru": "Я бы чаще готовил дома, если бы у меня было время",
+        "en": "I would cook at home more often if I had time"
+      },
+      "answer": "Ich würde öfter zu Hause kochen, wenn ich Zeit hätte"
+    },
+    {
+      "sentence": {
+        "ru": "Вы бы остались дома в такую погоду?",
+        "en": "Would you stay at home in this weather?"
+      },
+      "answer": "Würdet ihr bei diesem Wetter zu Hause bleiben?"
+    },
+    {
+      "sentence": {
+        "ru": "Мы бы купили машину, если бы могли",
+        "en": "We would buy a car if we could"
+      },
+      "answer": "Wir würden ein Auto kaufen, wenn wir könnten"
+    },
+    {
+      "sentence": {
+        "ru": "Я бы не стал ей помогать, если бы она не была моей сестрой",
+        "en": "I would not help her if she were not my sister"
+      },
+      "answer": "Ich würde ihr nicht helfen, wenn sie nicht meine Schwester wäre"
+    },
+    {
+      "sentence": {
+        "ru": "Был бы здесь супермаркет поблизости",
+        "en": "If there were a supermarket nearby"
+      },
+      "answer": "Gäbe es hier einen Supermarkt in der Nähe"
+    },
+    {
+      "sentence": {
+        "ru": "Имел бы я дом у моря",
+        "en": "If I had a house by the sea"
+      },
+      "answer": "Hätte ich ein Haus am Meer"
+    },
+    {
+      "sentence": {
+        "ru": "Были бы мы только довольны проектом",
+        "en": "If only we were satisfied with the project"
+      },
+      "answer": "Wären wir nur mit dem Projekt zufrieden"
+    },
+    {
+      "sentence": {
+        "ru": "Должны ли мы были бы сегодня действительно работать?",
+        "en": "Would we really have to work today?"
+      },
+      "answer": "Müssten wir heute wirklich arbeiten?"
+    },
+    {
+      "sentence": {
+        "ru": "Имели бы мы шанс",
+        "en": "If we had a chance"
+      },
+      "answer": "Hätten wir eine Chance"
+    },
+    {
+      "sentence": {
+        "ru": "Если бы она написала мне адрес, я мог бы ей прислать посылку",
+        "en": "If she wrote me the address, I could send her the package"
+      },
+      "answer": "Wenn sie mir die Adresse schreiben würde, könnte ich ihr das Paket senden"
+    },
+    {
+      "sentence": {
+        "ru": "Была бы она сейчас здесь!",
+        "en": "If only she were here now!"
+      },
+      "answer": "Wäre sie jetzt nur hier!"
+    },
+    {
+      "sentence": {
+        "ru": "Я бы с удовольствием тебе помог, если бы у меня было больше времени",
+        "en": "I would gladly help you if I had more time"
+      },
+      "answer": "Ich würde dir gerne helfen, wenn ich mehr Zeit hätte"
+    },
+    {
+      "sentence": {
+        "ru": "Я бы заказал суп, но у меня нет наличных",
+        "en": "I would order soup, but I have no cash"
+      },
+      "answer": "Ich würde eine Suppe bestellen, aber ich habe kein Bargeld"
+    },
+    {
+      "sentence": {
+        "ru": "Имел бы он больше терпения",
+        "en": "If he had more patience"
+      },
+      "answer": "Hätte er mehr Geduld"
+    },
+    {
+      "sentence": {
+        "ru": "Она бы работала меньше, если бы у нее было больше денег",
+        "en": "She would work less if she had more money"
+      },
+      "answer": "Sie würde weniger arbeiten, wenn sie mehr Geld hätte"
+    },
+    {
+      "sentence": {
+        "ru": "Нашел бы я недорогую квартиру в Берлине",
+        "en": "If I found an affordable apartment in Berlin"
+      },
+      "answer": "Fände ich eine günstige Wohnung in Berlin"
+    },
+    {
+      "sentence": {
+        "ru": "Если бы я поехал на поезде, я бы приехал быстрее",
+        "en": "If I took the train, I would arrive faster"
+      },
+      "answer": "Nähme ich den Zug, käme ich schneller an"
+    },
+    {
+      "sentence": {
+        "ru": "Не мог бы ты мне помочь?",
+        "en": "Could you help me?"
+      },
+      "answer": "Könntest du mir helfen?"
+    },
+    {
+      "sentence": {
+        "ru": "Был бы отель ближе к центру",
+        "en": "If the hotel were closer to the center"
+      },
+      "answer": "Läge das Hotel näher am Zentrum"
+    },
+    {
+      "sentence": {
+        "ru": "Знал бы ты его номер телефона",
+        "en": "If you knew his phone number"
+      },
+      "answer": "Wüsstest du seine Telefonnummer"
+    },
+    {
+      "sentence": {
+        "ru": "Мы бы поехали летом на море",
+        "en": "We would go to the sea in summer"
+      },
+      "answer": "Wir würden im Sommer ans Meer fahren"
+    },
+    {
+      "sentence": {
+        "ru": "Он бы поехал в отпуск, если бы ему не нужно было так много работать",
+        "en": "He would go on vacation if he did not have to work so much"
+      },
+      "answer": "Er würde in den Urlaub fahren, wenn er nicht so viel arbeiten müsste"
+    },
+    {
+      "sentence": {
+        "ru": "Она бы с тобой поговорила, если бы ты не был таким злым",
+        "en": "She would talk to you if you were not so angry"
+      },
+      "answer": "Sie würde mit dir sprechen, wenn du nicht so böse wärst"
+    },
+    {
+      "sentence": {
+        "ru": "Если бы она регулярно занималась спортом, она смогла бы улучшить свое здоровье",
+        "en": "If she exercised regularly, she could improve her health"
+      },
+      "answer": "Wenn sie regelmäßig Sport treiben würde, könnte sie ihre Gesundheit verbessern"
+    },
+    {
+      "sentence": {
+        "ru": "Тебе следовало бы меньше курить",
+        "en": "You should smoke less"
+      },
+      "answer": "Du solltest weniger rauchen"
+    },
+    {
+      "sentence": {
+        "ru": "Он бы учил немецкий каждый день, если бы хотел сдать экзамен",
+        "en": "He would study German every day if he wanted to pass the exam"
+      },
+      "answer": "Er würde jeden Tag Deutsch lernen, wenn er die Prüfung bestehen wollte"
+    },
+    {
+      "id": "past",
+      "label": {
+        "ru": "Konjunktiv II в прошедшем времени",
+        "en": "Konjunktiv II in the past tense"
+      }
+    },
+    {
+      "sentence": {
+        "ru": "Нашел бы я вовремя квартиру в Мюнхене",
+        "en": "If I had found an apartment in Munich in time"
+      },
+      "answer": "Hätte ich eine Wohnung in München rechtzeitig gefunden"
+    },
+    {
+      "sentence": {
+        "ru": "Была бы машина не такой дорогой",
+        "en": "If the car had not been so expensive"
+      },
+      "answer": "Wäre das Auto nicht so teuer gewesen"
+    },
+    {
+      "sentence": {
+        "ru": "Не переехали бы только мои соседи",
+        "en": "If only my neighbors had not moved"
+      },
+      "answer": "Wären meine Nachbarn nicht umgezogen"
+    },
+    {
+      "sentence": {
+        "ru": "Пошел бы я вчера в кино",
+        "en": "If I had gone to the cinema yesterday"
+      },
+      "answer": "Wäre ich gestern ins Kino gegangen"
+    },
+    {
+      "sentence": {
+        "ru": "Была бы погода на выходных лучше",
+        "en": "If the weather had been better at the weekend"
+      },
+      "answer": "Wäre das Wetter am Wochenende besser gewesen"
+    },
+    {
+      "sentence": {
+        "ru": "Если бы он только не жаловался",
+        "en": "If only he had not complained"
+      },
+      "answer": "Hätte er sich doch nicht beschwert"
+    },
+    {
+      "sentence": {
+        "ru": "Мы бы тогда купили эту квартиру, если бы она была дешевле",
+        "en": "We would have bought that apartment then if it had been cheaper"
+      },
+      "answer": "Wir hätten damals diese Wohnung gekauft, wenn sie billiger gewesen wäre"
+    },
+    {
+      "sentence": {
+        "ru": "Они бы приехали прошлым летом, если бы у них было время",
+        "en": "They would have come last summer if they had had time"
+      },
+      "answer": "Sie wären letzten Sommer gekommen, wenn sie Zeit gehabt hätten"
+    },
+    {
+      "sentence": {
+        "ru": "Я бы вчера раньше лег спать",
+        "en": "I would have gone to bed earlier yesterday"
+      },
+      "answer": "Ich wäre gestern früher schlafen gegangen"
+    },
+    {
+      "sentence": {
+        "ru": "Мы бы купили билеты заранее",
+        "en": "We would have bought the tickets in advance"
+      },
+      "answer": "Wir hätten die Tickets im Voraus gekauft"
+    },
+    {
+      "sentence": {
+        "ru": "Она бы пришла вовремя, если бы автобус не опоздал",
+        "en": "She would have arrived on time if the bus had not been late"
+      },
+      "answer": "Sie wäre pünktlich gekommen, wenn der Bus sich nicht verspätet hätte"
+    },
+    {
+      "sentence": {
+        "ru": "Я бы не забыл ключи, если бы не спешил",
+        "en": "I would not have forgotten the keys if I had not been in a hurry"
+      },
+      "answer": "Ich hätte die Schlüssel nicht vergessen, wenn ich nicht in Eile gewesen wäre"
+    },
+    {
+      "sentence": {
+        "ru": "Мы бы остались дома, если бы шел дождь",
+        "en": "We would have stayed at home if it had rained"
+      },
+      "answer": "Wir wären zu Hause geblieben, wenn es geregnet hätte"
+    },
+    {
+      "sentence": {
+        "ru": "Он бы закончил проект раньше",
+        "en": "He would have finished the project earlier"
+      },
+      "answer": "Er hätte das Projekt früher abgeschlossen"
+    },
+    {
+      "sentence": {
+        "ru": "Ты бы лучше себя чувствовал, если бы больше спал",
+        "en": "You would have felt better if you had slept more"
+      },
+      "answer": "Du hättest dich besser gefühlt, wenn du mehr geschlafen hättest"
+    },
+    {
+      "sentence": {
+        "ru": "Они бы приехали на поезде, если бы нашли билеты",
+        "en": "They would have come by train if they had found tickets"
+      },
+      "answer": "Sie wären mit dem Zug gekommen, wenn sie Tickets gefunden hätten"
+    },
+    {
+      "sentence": {
+        "ru": "Я бы позвонил тебе, если бы у меня был твой номер",
+        "en": "I would have called you if I had had your number"
+      },
+      "answer": "Ich hätte dich angerufen, wenn ich deine Nummer gehabt hätte"
+    },
+    {
+      "sentence": {
+        "ru": "Мы бы не опоздали, если бы вышли раньше",
+        "en": "We would not have been late if we had left earlier"
+      },
+      "answer": "Wir wären nicht zu spät gekommen, wenn wir früher losgegangen wären"
+    },
+    {
+      "sentence": {
+        "ru": "Она бы купила это платье, если бы оно было дешевле",
+        "en": "She would have bought this dress if it had been cheaper"
+      },
+      "answer": "Sie hätte dieses Kleid gekauft, wenn es billiger gewesen wäre"
+    },
+    {
+      "sentence": {
+        "ru": "Я бы остался в Кёльне, если бы нашел работу",
+        "en": "I would have stayed in Cologne if I had found a job"
+      },
+      "answer": "Ich wäre in Köln geblieben, wenn ich eine Arbeit gefunden hätte"
+    }
+  ]
+}

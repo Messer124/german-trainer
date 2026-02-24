@@ -1,4 +1,8 @@
 {
+  "title": {
+    "ru": "Schwache Verben",
+    "en": "Schwache Verben"
+  },
   "instructions": {
     "ru": "Проспрягайте слабые глаголы по местоимениям",
     "en": "Conjugate weak verbs by pronoun groups"

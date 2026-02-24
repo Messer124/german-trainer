@@ -1,4 +1,8 @@
 {
+  "title": {
+    "ru": "Uhrzeit",
+    "en": "Uhrzeit"
+  },
   "instructions": {
     "ru": "Введите выражение времени в разговорном стиле.",
     "en": "Enter the expression of time in a conversational style."

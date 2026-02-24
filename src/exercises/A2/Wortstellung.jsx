@@ -154,4 +154,4 @@ Wortstellung.headerButton = (
 );
 
 Wortstellung.instructions = data.instructions;
-Wortstellung.title = { ru: "Wortstellung", en: "Word order" };
+Wortstellung.title = data.title;

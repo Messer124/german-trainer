@@ -9,6 +9,31 @@
     line-height: 1.6;
 }
 
+.exercise-section-divider {
+    display: flex;
+    align-items: center;
+    gap: var(--size-12);
+    margin: var(--size-20) 0 var(--size-18);
+    color: var(--color-text-primary);
+    font-size: var(--size-24);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.exercise-section-divider::before,
+.exercise-section-divider::after {
+    content: "";
+    flex: 1;
+    height: var(--size-1);
+    background: var(--color-sidebar-divider);
+}
+
+.exercise-section-divider span {
+    max-width: 100%;
+    text-wrap: balance;
+}
+
 .sentence {
     display: inline;
     margin-right: var(--size-8);

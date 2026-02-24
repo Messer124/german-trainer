@@ -58,7 +58,6 @@ export default function App() {
     const hasThemeMountedRef = useRef(false);
     const tabsForLevel = getTabsForLevel(level);
     const labels = translations[locale].labels;
-    const tabTitles = translations[locale].tabs;
 
     // переключение вкладок при смене уровня
     useEffect(() => {
@@ -277,7 +276,7 @@ export default function App() {
                         <div className="sidebar-exercises-inner">
                             {Object.keys(tabsForLevel).map((key) => {
                                 const isActive = currentTab === key;
-                                const label = tabsForLevel[key]?.label;
+                                const label = tabsForLevel[key]?.component?.title?.[locale] ?? key;
 
                                 return (
                                     <motion.button

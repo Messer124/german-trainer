@@ -138,4 +138,4 @@ Verbrektion.headerButton = (
 );
 
 Verbrektion.instructions = data.instructions;
-Verbrektion.title = { ru: "Verbrektion", en: "Verbrektion" };
+Verbrektion.title = data.title;

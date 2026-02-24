@@ -1,9 +1,21 @@
 {
+  "title": {
+    "ru": "Nomenartikel",
+    "en": "Nomenartikel"
+  },
   "instructions": {
     "ru": "Впишите артикль для слов с несовпадением рода в русском языке (der, die, das).",
     "en": "Type the correct article (der, die or das)."
   },
   "items": [
+    {
+      "word": "___ Alter",
+      "article": "das",
+      "translation": {
+        "ru": "возраст",
+        "en": "age"
+      }
+    },
     {
       "word": "___ Anfang",
       "article": "der",
@@ -37,6 +49,14 @@
       }
     },
     {
+      "word": "___ Aufgabe",
+      "article": "die",
+      "translation": {
+        "ru": "задание",
+        "en": "task"
+      }
+    },
+    {
       "word": "___ Auge",
       "article": "das",
       "translation": {
@@ -45,11 +65,11 @@
       }
     },
     {
-      "word": "___ Baby",
+      "word": "___ Auto",
       "article": "das",
       "translation": {
-        "ru": "младенец",
-        "en": "baby"
+        "ru": "машина",
+        "en": "car"
       }
     },
     {
@@ -61,19 +81,27 @@
       }
     },
     {
+      "word": "___ Beginn",
+      "article": "der",
+      "translation": {
+        "ru": "начало",
+        "en": "beginning"
+      }
+    },
+    {
+      "word": "___ Beispiel",
+      "article": "das",
+      "translation": {
+        "ru": "пример",
+        "en": "example"
+      }
+    },
+    {
       "word": "___ Bett",
       "article": "das",
       "translation": {
         "ru": "кровать",
         "en": "bed"
-      }
-    },
-    {
-      "word": "___ Boot",
-      "article": "das",
-      "translation": {
-        "ru": "лодка",
-        "en": "boat"
       }
     },
     {
@@ -85,19 +113,19 @@
       }
     },
     {
+      "word": "___ Buch",
+      "article": "das",
+      "translation": {
+        "ru": "книга",
+        "en": "book"
+      }
+    },
+    {
       "word": "___ Ding",
       "article": "das",
       "translation": {
         "ru": "вещь",
         "en": "thing"
-      }
-    },
-    {
-      "word": "___ Durst",
-      "article": "der",
-      "translation": {
-        "ru": "жажда",
-        "en": "thirst"
       }
     },
     {
@@ -109,6 +137,22 @@
       }
     },
     {
+      "word": "___ Ehe",
+      "article": "die",
+      "translation": {
+        "ru": "брак",
+        "en": "marriage"
+      }
+    },
+    {
+      "word": "___ Einfluss",
+      "article": "der",
+      "translation": {
+        "ru": "влияние",
+        "en": "influence"
+      }
+    },
+    {
       "word": "___ Ende",
       "article": "das",
       "translation": {
@@ -117,8 +161,32 @@
       }
     },
     {
+      "word": "___ Ergebnis",
+      "article": "das",
+      "translation": {
+        "ru": "результат",
+        "en": "result"
+      }
+    },
+    {
+      "word": "___ Essen",
+      "article": "das",
+      "translation": {
+        "ru": "еда",
+        "en": "food"
+      }
+    },
+    {
       "word": "___ Feier",
       "article": "die",
+      "translation": {
+        "ru": "праздник",
+        "en": "celebration"
+      }
+    },
+    {
+      "word": "___ Fest",
+      "article": "das",
       "translation": {
         "ru": "праздник",
         "en": "celebration"
@@ -133,11 +201,59 @@
       }
     },
     {
+      "word": "___ Fuß",
+      "article": "der",
+      "translation": {
+        "ru": "нога",
+        "en": "foot"
+      }
+    },
+    {
       "word": "___ Geld",
       "article": "das",
       "translation": {
         "ru": "деньги",
         "en": "money"
+      }
+    },
+    {
+      "word": "___ Gesetz",
+      "article": "das",
+      "translation": {
+        "ru": "закон",
+        "en": "law"
+      }
+    },
+    {
+      "word": "___ Gespräch",
+      "article": "das",
+      "translation": {
+        "ru": "разговор",
+        "en": "conversation"
+      }
+    },
+    {
+      "word": "___ Grund",
+      "article": "der",
+      "translation": {
+        "ru": "причина",
+        "en": "reason"
+      }
+    },
+    {
+      "word": "___ Größe",
+      "article": "die",
+      "translation": {
+        "ru": "размер",
+        "en": "size"
+      }
+    },
+    {
+      "word": "___ Halt",
+      "article": "der",
+      "translation": {
+        "ru": "остановка",
+        "en": "stop"
       }
     },
     {
@@ -149,11 +265,59 @@
       }
     },
     {
+      "word": "___ Haus",
+      "article": "das",
+      "translation": {
+        "ru": "дом",
+        "en": "house"
+      }
+    },
+    {
       "word": "___ Herbst",
       "article": "der",
       "translation": {
         "ru": "осень",
         "en": "autumn"
+      }
+    },
+    {
+      "word": "___ Himmel",
+      "article": "der",
+      "translation": {
+        "ru": "небо",
+        "en": "sky"
+      }
+    },
+    {
+      "word": "___ Hotel",
+      "article": "das",
+      "translation": {
+        "ru": "отель",
+        "en": "hotel"
+      }
+    },
+    {
+      "word": "___ Hund",
+      "article": "der",
+      "translation": {
+        "ru": "собака",
+        "en": "dog"
+      }
+    },
+    {
+      "word": "___ Interesse",
+      "article": "das",
+      "translation": {
+        "ru": "интерес",
+        "en": "interest"
+      }
+    },
+    {
+      "word": "___ Internet",
+      "article": "das",
+      "translation": {
+        "ru": "интернет",
+        "en": "internet"
       }
     },
     {
@@ -165,11 +329,35 @@
       }
     },
     {
+      "word": "___ Job",
+      "article": "der",
+      "translation": {
+        "ru": "работа",
+        "en": "job"
+      }
+    },
+    {
+      "word": "___ Kampf",
+      "article": "der",
+      "translation": {
+        "ru": "борьба",
+        "en": "fight"
+      }
+    },
+    {
       "word": "___ Kind",
       "article": "das",
       "translation": {
         "ru": "ребёнок",
         "en": "child"
+      }
+    },
+    {
+      "word": "___ Klasse",
+      "article": "die",
+      "translation": {
+        "ru": "класс",
+        "en": "class"
       }
     },
     {
@@ -189,6 +377,22 @@
       }
     },
     {
+      "word": "___ Kunst",
+      "article": "die",
+      "translation": {
+        "ru": "искусство",
+        "en": "art"
+      }
+    },
+    {
+      "word": "___ Lage",
+      "article": "die",
+      "translation": {
+        "ru": "положение",
+        "en": "situation"
+      }
+    },
+    {
       "word": "___ Land",
       "article": "das",
       "translation": {
@@ -205,14 +409,6 @@
       }
     },
     {
-      "word": "___ Lied",
-      "article": "das",
-      "translation": {
-        "ru": "песня",
-        "en": "song"
-      }
-    },
-    {
       "word": "___ Licht",
       "article": "das",
       "translation": {
@@ -221,11 +417,51 @@
       }
     },
     {
-      "word": "___ Mädchen",
-      "article": "das",
+      "word": "___ Liste",
+      "article": "die",
       "translation": {
-        "ru": "девочка",
-        "en": "girl"
+        "ru": "список",
+        "en": "list"
+      }
+    },
+    {
+      "word": "___ Luft",
+      "article": "die",
+      "translation": {
+        "ru": "воздух",
+        "en": "air"
+      }
+    },
+    {
+      "word": "___ Lust",
+      "article": "die",
+      "translation": {
+        "ru": "желание",
+        "en": "desire"
+      }
+    },
+    {
+      "word": "___ Menge",
+      "article": "die",
+      "translation": {
+        "ru": "количество",
+        "en": "quantity"
+      }
+    },
+    {
+      "word": "___ Nachricht",
+      "article": "die",
+      "translation": {
+        "ru": "сообщение",
+        "en": "message"
+      }
+    },
+    {
+      "word": "___ Name",
+      "article": "der",
+      "translation": {
+        "ru": "имя",
+        "en": "name"
       }
     },
     {
@@ -237,14 +473,6 @@
       }
     },
     {
-      "word": "___ Orange",
-      "article": "die",
-      "translation": {
-        "ru": "апельсин",
-        "en": "orange"
-      }
-    },
-    {
       "word": "___ Ort",
       "article": "der",
       "translation": {
@@ -253,11 +481,11 @@
       }
     },
     {
-      "word": "___ Papier",
+      "word": "___ Paar",
       "article": "das",
       "translation": {
-        "ru": "бумага",
-        "en": "paper"
+        "ru": "пара",
+        "en": "pair"
       }
     },
     {
@@ -269,11 +497,43 @@
       }
     },
     {
+      "word": "___ Platz",
+      "article": "der",
+      "translation": {
+        "ru": "место",
+        "en": "place"
+      }
+    },
+    {
       "word": "___ Preis",
       "article": "der",
       "translation": {
         "ru": "цена",
         "en": "price"
+      }
+    },
+    {
+      "word": "___ Problem",
+      "article": "das",
+      "translation": {
+        "ru": "проблема",
+        "en": "problem"
+      }
+    },
+    {
+      "word": "___ Programm",
+      "article": "das",
+      "translation": {
+        "ru": "программа",
+        "en": "program"
+      }
+    },
+    {
+      "word": "___ Projekt",
+      "article": "das",
+      "translation": {
+        "ru": "проект",
+        "en": "project"
       }
     },
     {
@@ -285,35 +545,91 @@
       }
     },
     {
-      "word": "___ Regal",
-      "article": "das",
-      "translation": {
-        "ru": "полка",
-        "en": "shelf"
-      }
-    },
-    {
-      "word": "___ Rock",
-      "article": "der",
-      "translation": {
-        "ru": "юбка",
-        "en": "skirt"
-      }
-    },
-    {
-      "word": "___ Salz",
-      "article": "das",
-      "translation": {
-        "ru": "соль",
-        "en": "salt"
-      }
-    },
-    {
-      "word": "___ Sprache",
+      "word": "___ Regel",
       "article": "die",
       "translation": {
-        "ru": "язык",
-        "en": "language"
+        "ru": "правило",
+        "en": "rule"
+      }
+    },
+    {
+      "word": "___ Region",
+      "article": "die",
+      "translation": {
+        "ru": "регион",
+        "en": "region"
+      }
+    },
+    {
+      "word": "___ Reihe",
+      "article": "die",
+      "translation": {
+        "ru": "ряд",
+        "en": "row"
+      }
+    },
+    {
+      "word": "___ Saison",
+      "article": "die",
+      "translation": {
+        "ru": "сезон",
+        "en": "season"
+      }
+    },
+    {
+      "word": "___ Satz",
+      "article": "der",
+      "translation": {
+        "ru": "предложение",
+        "en": "sentence"
+      }
+    },
+    {
+      "word": "___ Schloss",
+      "article": "das",
+      "translation": {
+        "ru": "замок",
+        "en": "castle"
+      }
+    },
+    {
+      "word": "___ See",
+      "article": "der",
+      "translation": {
+        "ru": "озеро",
+        "en": "lake"
+      }
+    },
+    {
+      "word": "___ See",
+      "article": "die",
+      "translation": {
+        "ru": "море",
+        "en": "sea"
+      }
+    },
+    {
+      "word": "___ Sieg",
+      "article": "der",
+      "translation": {
+        "ru": "победа",
+        "en": "victory"
+      }
+    },
+    {
+      "word": "___ Sonne",
+      "article": "die",
+      "translation": {
+        "ru": "солнце",
+        "en": "sun"
+      }
+    },
+    {
+      "word": "___ Spaß",
+      "article": "der",
+      "translation": {
+        "ru": "удовольствие",
+        "en": "fun"
       }
     },
     {
@@ -325,27 +641,91 @@
       }
     },
     {
-      "word": "___ Sofa",
-      "article": "das",
-      "translation": {
-        "ru": "диван",
-        "en": "sofa"
-      }
-    },
-    {
-      "word": "___ Suppe",
+      "word": "___ Sprache",
       "article": "die",
       "translation": {
-        "ru": "суп",
-        "en": "soup"
+        "ru": "язык",
+        "en": "language"
       }
     },
     {
-      "word": "___ Telefon",
+      "word": "___ Staat",
+      "article": "der",
+      "translation": {
+        "ru": "государство",
+        "en": "state"
+      }
+    },
+    {
+      "word": "___ Stadt",
+      "article": "die",
+      "translation": {
+        "ru": "город",
+        "en": "city"
+      }
+    },
+    {
+      "word": "___ Stimme",
+      "article": "die",
+      "translation": {
+        "ru": "голос",
+        "en": "voice"
+      }
+    },
+    {
+      "word": "___ Stunde",
+      "article": "die",
+      "translation": {
+        "ru": "час",
+        "en": "hour"
+      }
+    },
+    {
+      "word": "___ System",
       "article": "das",
       "translation": {
-        "ru": "телефон",
-        "en": "telephone"
+        "ru": "система",
+        "en": "system"
+      }
+    },
+    {
+      "word": "___ Team",
+      "article": "das",
+      "translation": {
+        "ru": "команда",
+        "en": "team"
+      }
+    },
+    {
+      "word": "___ Teil",
+      "article": "das",
+      "translation": {
+        "ru": "часть",
+        "en": "part"
+      }
+    },
+    {
+      "word": "___ Teil",
+      "article": "der",
+      "translation": {
+        "ru": "часть",
+        "en": "part"
+      }
+    },
+    {
+      "word": "___ Tod",
+      "article": "der",
+      "translation": {
+        "ru": "смерть",
+        "en": "death"
+      }
+    },
+    {
+      "word": "___ Toilette",
+      "article": "die",
+      "translation": {
+        "ru": "туалет",
+        "en": "toilet"
       }
     },
     {
@@ -357,11 +737,35 @@
       }
     },
     {
-      "word": "___ Welt",
+      "word": "___ Unterschied",
+      "article": "der",
+      "translation": {
+        "ru": "разница",
+        "en": "difference"
+      }
+    },
+    {
+      "word": "___ Versuch",
+      "article": "der",
+      "translation": {
+        "ru": "попытка",
+        "en": "attempt"
+      }
+    },
+    {
+      "word": "___ Wahl",
       "article": "die",
       "translation": {
-        "ru": "мир",
-        "en": "world"
+        "ru": "выбор",
+        "en": "choice"
+      }
+    },
+    {
+      "word": "___ Wasser",
+      "article": "das",
+      "translation": {
+        "ru": "вода",
+        "en": "water"
       }
     },
     {
@@ -373,11 +777,19 @@
       }
     },
     {
-      "word": "___ Winter",
-      "article": "der",
+      "word": "___ Welt",
+      "article": "die",
       "translation": {
-        "ru": "зима",
-        "en": "winter"
+        "ru": "мир",
+        "en": "world"
+      }
+    },
+    {
+      "word": "___ Zahl",
+      "article": "die",
+      "translation": {
+        "ru": "число",
+        "en": "number"
       }
     },
     {
@@ -389,11 +801,11 @@
       }
     },
     {
-      "word": "___ Zahl",
-      "article": "die",
+      "word": "___ Ziel",
+      "article": "das",
       "translation": {
-        "ru": "число",
-        "en": "number"
+        "ru": "цель",
+        "en": "goal"
       }
     },
     {
@@ -410,6 +822,14 @@
       "translation": {
         "ru": "лимон",
         "en": "lemon"
+      }
+    },
+    {
+      "word": "___ Zukunft",
+      "article": "die",
+      "translation": {
+        "ru": "будущее",
+        "en": "future"
       }
     }
   ]

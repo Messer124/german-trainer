@@ -122,5 +122,5 @@ Adverbien.headerButton = (
 );
 
 // В JSON нет поля title — задаём локально, чтобы заголовок не был пустым.
-Adverbien.title = { ru: "Adverbien", en: "Adverbien" };
+Adverbien.title = data.title;
 Adverbien.instructions = data.instructions;

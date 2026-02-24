@@ -1,4 +1,8 @@
 {
+  "title": {
+    "ru": "Personalpronomen",
+    "en": "Personalpronomen"
+  },
   "instructions": {
     "ru": "Замените выделенные выражения местоимением в нужном падеже.",
     "en": "Replace the highlighted expressions with pronouns in the required case."

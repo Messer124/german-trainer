@@ -1,4 +1,8 @@
 {
+  "title": {
+    "ru": "Прошедшее время",
+    "en": "Past tense"
+  },
   "instructions": "Напишите правильную форму глагола в Präteritum или Perfekt.",
   "items": [
     {

@@ -1,4 +1,8 @@
 {
+  "title": {
+    "ru": "Kein oder Nicht",
+    "en": "Kein oder Nicht"
+  },
   "instructions": {
     "ru": "Постройте предложения, противоположные по смыслу",
     "en": "Construct sentences that are opposite in meaning"

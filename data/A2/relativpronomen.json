@@ -1,4 +1,8 @@
 {
+  "title": {
+    "ru": "Relativpronomen",
+    "en": "Relativpronomen"
+  },
   "instructions": {
     "ru": "Определите, какое относительное местоимение необходимо",
     "en": "Determine which relative pronoun is needed"

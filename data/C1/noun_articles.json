@@ -1,4 +1,8 @@
 {
+  "title": {
+    "ru": "Nomenartikel",
+    "en": "Nomenartikel"
+  },
   "instructions": {
     "ru": "Впишите артикль для слов с несовпадением рода в русском языке (der, die, das).",
     "en": "Type the correct article (der, die or das)."
@@ -47,252 +51,402 @@
     {
       "word": "___ Analyse",
       "article": "die",
-      "translation": { "ru": "анализ", "en": "analysis" }
+      "translation": {
+        "ru": "анализ",
+        "en": "analysis"
+      }
     },
     {
       "word": "___ Begriff",
       "article": "der",
-      "translation": { "ru": "понятие", "en": "concept/term" }
+      "translation": {
+        "ru": "понятие",
+        "en": "concept/term"
+      }
     },
     {
       "word": "___ Chaos",
       "article": "das",
-      "translation": { "ru": "хаос", "en": "chaos" }
+      "translation": {
+        "ru": "хаос",
+        "en": "chaos"
+      }
     },
     {
       "word": "___ Defizit",
       "article": "das",
-      "translation": { "ru": "дефицит", "en": "deficit" }
+      "translation": {
+        "ru": "дефицит",
+        "en": "deficit"
+      }
     },
     {
       "word": "___ Definition",
       "article": "die",
-      "translation": { "ru": "определение", "en": "definition" }
+      "translation": {
+        "ru": "определение",
+        "en": "definition"
+      }
     },
     {
       "word": "___ Dilemma",
       "article": "das",
-      "translation": { "ru": "дилемма", "en": "dilemma" }
+      "translation": {
+        "ru": "дилемма",
+        "en": "dilemma"
+      }
     },
     {
       "word": "___ Dogma",
       "article": "das",
-      "translation": { "ru": "догма", "en": "dogma" }
+      "translation": {
+        "ru": "догма",
+        "en": "dogma"
+      }
     },
     {
       "word": "___ Drama",
       "article": "das",
-      "translation": { "ru": "драма", "en": "drama" }
+      "translation": {
+        "ru": "драма",
+        "en": "drama"
+      }
     },
     {
       "word": "___ Evaluation",
       "article": "die",
-      "translation": { "ru": "оценивание", "en": "evaluation" }
+      "translation": {
+        "ru": "оценивание",
+        "en": "evaluation"
+      }
     },
     {
       "word": "___ Experiment",
       "article": "das",
-      "translation": { "ru": "эксперимент", "en": "experiment" }
+      "translation": {
+        "ru": "эксперимент",
+        "en": "experiment"
+      }
     },
     {
       "word": "___ Format",
       "article": "das",
-      "translation": { "ru": "формат", "en": "format" }
+      "translation": {
+        "ru": "формат",
+        "en": "format"
+      }
     },
     {
       "word": "___ Fundament",
       "article": "das",
-      "translation": { "ru": "фундамент", "en": "foundation" }
+      "translation": {
+        "ru": "фундамент",
+        "en": "foundation"
+      }
     },
     {
       "word": "___ Genus",
       "article": "das",
-      "translation": { "ru": "род", "en": "grammatical gender" }
+      "translation": {
+        "ru": "род",
+        "en": "grammatical gender"
+      }
     },
     {
       "word": "___ Ideal",
       "article": "das",
-      "translation": { "ru": "идеал", "en": "ideal" }
+      "translation": {
+        "ru": "идеал",
+        "en": "ideal"
+      }
     },
     {
       "word": "___ Implementierung",
       "article": "die",
-      "translation": { "ru": "внедрение", "en": "implementation" }
+      "translation": {
+        "ru": "внедрение",
+        "en": "implementation"
+      }
     },
     {
       "word": "___ Individuum",
       "article": "das",
-      "translation": { "ru": "индивидуум", "en": "individual" }
+      "translation": {
+        "ru": "индивидуум",
+        "en": "individual"
+      }
     },
     {
       "word": "___ Intervention",
       "article": "die",
-      "translation": { "ru": "вмешательство", "en": "intervention" }
+      "translation": {
+        "ru": "вмешательство",
+        "en": "intervention"
+      }
     },
     {
       "word": "___ Kapital",
       "article": "das",
-      "translation": { "ru": "капитал", "en": "capital" }
+      "translation": {
+        "ru": "капитал",
+        "en": "capital"
+      }
     },
     {
       "word": "___ Komitee",
       "article": "das",
-      "translation": { "ru": "комитет", "en": "committee" }
+      "translation": {
+        "ru": "комитет",
+        "en": "committee"
+      }
     },
     {
       "word": "___ Konsortium",
       "article": "das",
-      "translation": { "ru": "консорциум", "en": "consortium" }
+      "translation": {
+        "ru": "консорциум",
+        "en": "consortium"
+      }
     },
     {
       "word": "___ Krise",
       "article": "die",
-      "translation": { "ru": "кризис", "en": "crisis" }
+      "translation": {
+        "ru": "кризис",
+        "en": "crisis"
+      }
     },
     {
       "word": "___ Kriterium",
       "article": "das",
-      "translation": { "ru": "критерий", "en": "criterion" }
+      "translation": {
+        "ru": "критерий",
+        "en": "criterion"
+      }
     },
     {
       "word": "___ Lexikon",
       "article": "das",
-      "translation": { "ru": "лексикон", "en": "lexicon" }
+      "translation": {
+        "ru": "лексикон",
+        "en": "lexicon"
+      }
     },
     {
       "word": "___ Mandat",
       "article": "das",
-      "translation": { "ru": "мандат", "en": "mandate" }
+      "translation": {
+        "ru": "мандат",
+        "en": "mandate"
+      }
     },
     {
       "word": "___ Manifest",
       "article": "das",
-      "translation": { "ru": "манифест", "en": "manifesto" }
+      "translation": {
+        "ru": "манифест",
+        "en": "manifesto"
+      }
     },
     {
       "word": "___ Maximum",
       "article": "das",
-      "translation": { "ru": "максимум", "en": "maximum" }
+      "translation": {
+        "ru": "максимум",
+        "en": "maximum"
+      }
     },
     {
       "word": "___ Mineral",
       "article": "das",
-      "translation": { "ru": "минерал", "en": "mineral" }
+      "translation": {
+        "ru": "минерал",
+        "en": "mineral"
+      }
     },
     {
       "word": "___ Minimum",
       "article": "das",
-      "translation": { "ru": "минимум", "en": "minimum" }
+      "translation": {
+        "ru": "минимум",
+        "en": "minimum"
+      }
     },
     {
       "word": "___ Motiv",
       "article": "das",
-      "translation": { "ru": "мотив", "en": "motive" }
+      "translation": {
+        "ru": "мотив",
+        "en": "motive"
+      }
     },
     {
       "word": "___ Narrativ",
       "article": "das",
-      "translation": { "ru": "нарратив", "en": "narrative" }
+      "translation": {
+        "ru": "нарратив",
+        "en": "narrative"
+      }
     },
     {
       "word": "___ Optimierung",
       "article": "die",
-      "translation": { "ru": "улучшение", "en": "optimization" }
+      "translation": {
+        "ru": "улучшение",
+        "en": "optimization"
+      }
     },
     {
       "word": "___ Paradigma",
       "article": "das",
-      "translation": { "ru": "парадигма", "en": "paradigm" }
+      "translation": {
+        "ru": "парадигма",
+        "en": "paradigm"
+      }
     },
     {
       "word": "___ Paradox",
       "article": "das",
-      "translation": { "ru": "парадокс", "en": "paradox" }
+      "translation": {
+        "ru": "парадокс",
+        "en": "paradox"
+      }
     },
     {
       "word": "___ Patent",
       "article": "das",
-      "translation": { "ru": "патент", "en": "patent" }
+      "translation": {
+        "ru": "патент",
+        "en": "patent"
+      }
     },
     {
       "word": "___ Potenzial",
       "article": "das",
-      "translation": { "ru": "потенциал", "en": "potential" }
+      "translation": {
+        "ru": "потенциал",
+        "en": "potential"
+      }
     },
     {
       "word": "___ Prinzip",
       "article": "das",
-      "translation": { "ru": "принцип", "en": "principle" }
+      "translation": {
+        "ru": "принцип",
+        "en": "principle"
+      }
     },
     {
       "word": "___ Privileg",
       "article": "das",
-      "translation": { "ru": "привилегия", "en": "privilege" }
+      "translation": {
+        "ru": "привилегия",
+        "en": "privilege"
+      }
     },
     {
       "word": "___ Profil",
       "article": "das",
-      "translation": { "ru": "профиль", "en": "profile" }
+      "translation": {
+        "ru": "профиль",
+        "en": "profile"
+      }
     },
     {
       "word": "___ Protokoll",
       "article": "das",
-      "translation": { "ru": "протокол", "en": "protocol" }
+      "translation": {
+        "ru": "протокол",
+        "en": "protocol"
+      }
     },
     {
       "word": "___ Relevanz",
       "article": "die",
-      "translation": { "ru": "значение", "en": "relevance" }
+      "translation": {
+        "ru": "значение",
+        "en": "relevance"
+      }
     },
     {
       "word": "___ Schema",
       "article": "das",
-      "translation": { "ru": "схема", "en": "schema" }
+      "translation": {
+        "ru": "схема",
+        "en": "schema"
+      }
     },
     {
       "word": "___ Segment",
       "article": "das",
-      "translation": { "ru": "сегмент", "en": "segment" }
+      "translation": {
+        "ru": "сегмент",
+        "en": "segment"
+      }
     },
     {
       "word": "___ Spektrum",
       "article": "das",
-      "translation": { "ru": "спектр", "en": "spectrum" }
+      "translation": {
+        "ru": "спектр",
+        "en": "spectrum"
+      }
     },
     {
       "word": "___ Studie",
       "article": "die",
-      "translation": { "ru": "исследование", "en": "study" }
+      "translation": {
+        "ru": "исследование",
+        "en": "study"
+      }
     },
     {
       "word": "___ Symposium",
       "article": "das",
-      "translation": { "ru": "симпозиум", "en": "symposium" }
+      "translation": {
+        "ru": "симпозиум",
+        "en": "symposium"
+      }
     },
     {
       "word": "___ Syntax",
       "article": "die",
-      "translation": { "ru": "синтаксис", "en": "syntax" }
+      "translation": {
+        "ru": "синтаксис",
+        "en": "syntax"
+      }
     },
     {
       "word": "___ Trauma",
       "article": "das",
-      "translation": { "ru": "травма", "en": "trauma" }
+      "translation": {
+        "ru": "травма",
+        "en": "trauma"
+      }
     },
     {
       "word": "___ Tribunal",
       "article": "das",
-      "translation": { "ru": "трибунал", "en": "tribunal" }
+      "translation": {
+        "ru": "трибунал",
+        "en": "tribunal"
+      }
     },
     {
       "word": "___ Vokabular",
       "article": "das",
-      "translation": { "ru": "лексика", "en": "vocabulary" }
+      "translation": {
+        "ru": "лексика",
+        "en": "vocabulary"
+      }
     },
     {
       "word": "___ Wandel",
       "article": "der",
-      "translation": { "ru": "изменение", "en": "change" }
+      "translation": {
+        "ru": "изменение",
+        "en": "change"
+      }
     }
   ]
 }

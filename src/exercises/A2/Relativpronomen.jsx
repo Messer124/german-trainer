@@ -107,3 +107,4 @@ Relativpronomen.headerButton = (
 );
 
 Relativpronomen.instructions = data.instructions;
+Relativpronomen.title = data.title;

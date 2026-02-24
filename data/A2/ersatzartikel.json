@@ -1,196 +1,304 @@
 {
+  "title": {
+    "ru": "Ersatzartikel",
+    "en": "Ersatzartikel"
+  },
   "instructions": {
     "ru": "Вставьте Ersatzartikel",
     "en": "Enter Ersatzartikel"
   },
   "items": [
-      {
-        "sentence": "Ich brauche bitte eine Tasse. — Hier ist doch ___.",
-        "answers": ["eine"]
-      },
-      {
-        "sentence": "Haben wir eigentlich noch Nüsse? — Ja, hier sind ___.",
-        "answers": ["welche"]
-      },
-      {
-        "sentence": "Gibst du mir bitte ein Brötchen? — Tut mir leid, hier ist ___ mehr.",
-        "answers": ["keins"]
-      },
-      {
-        "sentence": "Gib mir bitte einen Löffel. — Dort liegt doch ___.",
-        "answers": ["einer"]
-      },
-      {
-        "sentence": "Haben wir noch Eier? — Nein, im Kühlschrank sind ___ mehr.",
-        "answers": ["keine"]
-      },
-      {
-        "sentence": "Ich brauche bitte ein Messer. — Schau, hier liegt doch ___.",
-        "answers": ["eins"]
-      },
-      {
-        "sentence": "Gibst du mir bitte eine Zwiebel? — Tut mir leid, aber hier ist ___.",
-        "answers": ["keine"]
-      },
-      {
-        "sentence": "Gibst du mir bitte einen Apfel? — Tut mir leid, hier ist ___.",
-        "answers": ["keiner"]
-      },
-      {
-        "sentence": "Ich brauche sechs Eier für den Kuchen. Weißt du, ob wir noch ___ haben? — Nein, wir haben ___ mehr. Kannst du bitte ___ mitbringen?",
-        "answers": ["welche", "keine", "welche"]
-      },
-      {
-        "sentence": "Ich brauche ein scharfes Messer und ich finde ___. — Da liegt doch ___, genau vor deiner Nase.",
-        "answers": ["keins", "eins"]
-      },
-      {
-        "sentence": "Ich wollte Tomaten kaufen, aber es gab ___ mehr. — Dann nehmen wir ___ aus der Dose. — Tust du auch Oliven in die Suppe? — Nein, Sabine mag ___. Man kann vielleicht ___ auf den Tisch stellen.",
-        "answers": ["keine", "welche", "keine", "welche"]
-      },
-      {
-        "sentence": "Hast du ein Auto? — Nein, ich habe ___. Aber mein Vater hat doch ___. — Wo sind die Zitronen? — Wir haben ___ mehr.",
-        "answers": ["keins", "eins", "keine"]
-      },
-      {
-        "sentence": "Ich möchte einen Tee. Du auch? — Ja, ich trinke auch gern ___.",
-        "answers": ["einen"]
-      },
-      {
-        "sentence": "Ich esse jetzt ein Müsli. — Gute Idee. Ich esse auch ___.",
-        "answers": ["eins"]
-      },
-      {
-        "sentence": "Möchtest du noch einen Kuchen? — Nein, ich möchte ___ mehr.",
-        "answers": ["keinen"]
-      },
-      {
-        "sentence": "Wo ist denn meine Tasse? — Keine Ahnung. Ich sehe hier ___.",
-        "answers": ["keine"]
-      },
-      {
-        "sentence": "Ich brauche ein Glas. — Im Schrank steht doch ___.",
-        "answers": ["eins"]
-      },
-      {
-        "sentence": "Gib mir bitte eine Gabel. — Klar, hier ist ___.",
-        "answers": ["eine"]
-      },
-      {
-        "sentence": "Ich suche einen Stift. — Hier liegt doch ___.",
-        "answers": ["einer"]
-      },
-      {
-        "sentence": "Hast du noch Brot? — Nein, ich habe ___ mehr.",
-        "answers": ["keins"]
-      },
-      {
-        "sentence": "Haben wir noch Milch? — Ja, wir haben noch ___.",
-        "answers": ["welche"]
-      },
-      {
-        "sentence": "Ich möchte einen Kaffee. Du auch? — Ja, ich nehme auch ___.",
-        "answers": ["einen"]
-      },
-      {
-        "sentence": "Wo sind meine Schlüssel? — Ich sehe ___.",
-        "answers": ["keine"]
-      },
-      {
-        "sentence": "Hast du eine Jacke? — Nein, ich habe ___.",
-        "answers": ["keine"]
-      },
-      {
-        "sentence": "Wir brauchen noch einen Teller. — Da steht doch ___.",
-        "answers": ["einer"]
-      },
-      {
-        "sentence": "Ich brauche eine Serviette. — Hier nimm ___.",
-        "answers": ["eine"]
-      },
-      {
-        "sentence": "Gibt es noch Bananen? — Ja, hier sind ___.",
-        "answers": ["welche"]
-      },
-      {
-        "sentence": "Ich finde meine Brille nicht. — Ich sehe auch ___.",
-        "answers": ["keine"]
-      },
-      {
-        "sentence": "Ich brauche ein Ladegerät. — Tut mir leid, ich habe ___.",
-        "answers": ["keins"]
-      },
-      {
-        "sentence": "Wir brauchen noch Batterien. — Ich habe keine, aber ich kaufe ___.",
-        "answers": ["welche"]
-      },
-      {
-        "sentence": "Hast du einen Pass? — Nein, ich finde ___.",
-        "answers": ["keinen"]
-      },
-      {
-        "sentence": "Hast du eine Wohnung? — Ja, ich habe ___.",
-        "answers": ["eine"]
-      },
-      {
-        "sentence": "Brauchst du noch ein Ticket? — Ja, ich brauche noch ___.",
-        "answers": ["eins"]
-      },
-      {
-        "sentence": "Gibt es hier noch Parkplätze? — Nein, hier sind ___ mehr.",
-        "answers": ["keine"]
-      },
-      {
-        "sentence": "Möchtest du noch ein Stück Kuchen? — Nein danke, ich möchte ___ mehr.",
-        "answers": ["keins"]
-      },
-      {
-        "sentence": "Hast du Lust auf einen Film? — Ja, aber ich habe ___ Zeit.",
-        "answers": ["keine"]
-      },
-      {
-        "sentence": "Brauchst du eine Pause? — Ja, ich brauche wirklich ___.",
-        "answers": ["eine"]
-      },
-      {
-        "sentence": "Ich suche eine gute App. Kennst du ___?",
-        "answers": ["eine"]
-      },
-      {
-        "sentence": "Suchst du einen neuen Job? — Ja, ich suche ___.",
-        "answers": ["einen"]
-      },
-      {
-        "sentence": "Wo ist mein Handy? — Hier liegt ___ auf dem Tisch.",
-        "answers": ["eins"]
-      },
-      {
-        "sentence": "Kannst du mir bitte eine Adresse geben? — Ja, ich schicke dir gleich ___.",
-        "answers": ["eine"]
-      },
-      {
-        "sentence": "Hast du noch ein paar Euro? — Nein, ich habe ___ mehr.",
-        "answers": ["keine"]
-      },
-      {
-        "sentence": "Hast du noch Kekse? — Ja, hier sind ___.",
-        "answers": ["welche"]
-      },
-      {
-        "sentence": "Ich brauche ein Handtuch. — Im Bad liegt ___.",
-        "answers": ["eins"]
-      },
-      {
-        "sentence": "Haben wir noch Bleistifte? — Nein, wir haben ___ mehr. Ich bringe morgen ___ mit.",
-        "answers": ["keine", "welche"]
-      },
-      {
-        "sentence": "Ich möchte keinen Nachtisch mehr. — Wirklich? Ich nehme noch ___.",
-        "answers": ["einen"]
-      },
-      {
-        "sentence": "Wo sind die Äpfel? — Ich sehe ___, aber im Korb sind ___.",
-        "answers": ["keine", "welche"]
-      }
-    ]
+    {
+      "sentence": "Ich brauche bitte eine Tasse. — Hier ist doch ___.",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Haben wir eigentlich noch Nüsse? — Ja, hier sind ___.",
+      "answers": [
+        "welche"
+      ]
+    },
+    {
+      "sentence": "Gibst du mir bitte ein Brötchen? — Tut mir leid, hier ist ___ mehr.",
+      "answers": [
+        "keins"
+      ]
+    },
+    {
+      "sentence": "Gib mir bitte einen Löffel. — Dort liegt doch ___.",
+      "answers": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Haben wir noch Eier? — Nein, im Kühlschrank sind ___ mehr.",
+      "answers": [
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Ich brauche bitte ein Messer. — Schau, hier liegt doch ___.",
+      "answers": [
+        "eins"
+      ]
+    },
+    {
+      "sentence": "Gibst du mir bitte eine Zwiebel? — Tut mir leid, aber hier ist ___.",
+      "answers": [
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Gibst du mir bitte einen Apfel? — Tut mir leid, hier ist ___.",
+      "answers": [
+        "keiner"
+      ]
+    },
+    {
+      "sentence": "Ich brauche sechs Eier für den Kuchen. Weißt du, ob wir noch ___ haben? — Nein, wir haben ___ mehr. Kannst du bitte ___ mitbringen?",
+      "answers": [
+        "welche",
+        "keine",
+        "welche"
+      ]
+    },
+    {
+      "sentence": "Ich brauche ein scharfes Messer und ich finde ___. — Da liegt doch ___, genau vor deiner Nase.",
+      "answers": [
+        "keins",
+        "eins"
+      ]
+    },
+    {
+      "sentence": "Ich wollte Tomaten kaufen, aber es gab ___ mehr. — Dann nehmen wir ___ aus der Dose. — Tust du auch Oliven in die Suppe? — Nein, Sabine mag ___. Man kann vielleicht ___ auf den Tisch stellen.",
+      "answers": [
+        "keine",
+        "welche",
+        "keine",
+        "welche"
+      ]
+    },
+    {
+      "sentence": "Hast du ein Auto? — Nein, ich habe ___. Aber mein Vater hat doch ___. — Wo sind die Zitronen? — Wir haben ___ mehr.",
+      "answers": [
+        "keins",
+        "eins",
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Ich möchte einen Tee. Du auch? — Ja, ich trinke auch gern ___.",
+      "answers": [
+        "einen"
+      ]
+    },
+    {
+      "sentence": "Ich esse jetzt ein Müsli. — Gute Idee. Ich esse auch ___.",
+      "answers": [
+        "eins"
+      ]
+    },
+    {
+      "sentence": "Möchtest du noch einen Kuchen? — Nein, ich möchte ___ mehr.",
+      "answers": [
+        "keinen"
+      ]
+    },
+    {
+      "sentence": "Wo ist denn meine Tasse? — Keine Ahnung. Ich sehe hier ___.",
+      "answers": [
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Ich brauche ein Glas. — Im Schrank steht doch ___.",
+      "answers": [
+        "eins"
+      ]
+    },
+    {
+      "sentence": "Gib mir bitte eine Gabel. — Klar, hier ist ___.",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Ich suche einen Stift. — Hier liegt doch ___.",
+      "answers": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Hast du noch Brot? — Nein, ich habe ___ mehr.",
+      "answers": [
+        "keins"
+      ]
+    },
+    {
+      "sentence": "Haben wir noch Milch? — Ja, wir haben noch ___.",
+      "answers": [
+        "welche"
+      ]
+    },
+    {
+      "sentence": "Ich möchte einen Kaffee. Du auch? — Ja, ich nehme auch ___.",
+      "answers": [
+        "einen"
+      ]
+    },
+    {
+      "sentence": "Wo sind meine Schlüssel? — Ich sehe ___.",
+      "answers": [
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Hast du eine Jacke? — Nein, ich habe ___.",
+      "answers": [
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Wir brauchen noch einen Teller. — Da steht doch ___.",
+      "answers": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Ich brauche eine Serviette. — Hier nimm ___.",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Gibt es noch Bananen? — Ja, hier sind ___.",
+      "answers": [
+        "welche"
+      ]
+    },
+    {
+      "sentence": "Ich finde meine Brille nicht. — Ich sehe auch ___.",
+      "answers": [
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Ich brauche ein Ladegerät. — Tut mir leid, ich habe ___.",
+      "answers": [
+        "keins"
+      ]
+    },
+    {
+      "sentence": "Wir brauchen noch Batterien. — Ich habe keine, aber ich kaufe ___.",
+      "answers": [
+        "welche"
+      ]
+    },
+    {
+      "sentence": "Hast du einen Pass? — Nein, ich finde ___.",
+      "answers": [
+        "keinen"
+      ]
+    },
+    {
+      "sentence": "Hast du eine Wohnung? — Ja, ich habe ___.",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Brauchst du noch ein Ticket? — Ja, ich brauche noch ___.",
+      "answers": [
+        "eins"
+      ]
+    },
+    {
+      "sentence": "Gibt es hier noch Parkplätze? — Nein, hier sind ___ mehr.",
+      "answers": [
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Möchtest du noch ein Stück Kuchen? — Nein danke, ich möchte ___ mehr.",
+      "answers": [
+        "keins"
+      ]
+    },
+    {
+      "sentence": "Hast du Lust auf einen Film? — Ja, aber ich habe ___ Zeit.",
+      "answers": [
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Brauchst du eine Pause? — Ja, ich brauche wirklich ___.",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Ich suche eine gute App. Kennst du ___?",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Suchst du einen neuen Job? — Ja, ich suche ___.",
+      "answers": [
+        "einen"
+      ]
+    },
+    {
+      "sentence": "Wo ist mein Handy? — Hier liegt ___ auf dem Tisch.",
+      "answers": [
+        "eins"
+      ]
+    },
+    {
+      "sentence": "Kannst du mir bitte eine Adresse geben? — Ja, ich schicke dir gleich ___.",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Hast du noch ein paar Euro? — Nein, ich habe ___ mehr.",
+      "answers": [
+        "keine"
+      ]
+    },
+    {
+      "sentence": "Hast du noch Kekse? — Ja, hier sind ___.",
+      "answers": [
+        "welche"
+      ]
+    },
+    {
+      "sentence": "Ich brauche ein Handtuch. — Im Bad liegt ___.",
+      "answers": [
+        "eins"
+      ]
+    },
+    {
+      "sentence": "Haben wir noch Bleistifte? — Nein, wir haben ___ mehr. Ich bringe morgen ___ mit.",
+      "answers": [
+        "keine",
+        "welche"
+      ]
+    },
+    {
+      "sentence": "Ich möchte keinen Nachtisch mehr. — Wirklich? Ich nehme noch ___.",
+      "answers": [
+        "einen"
+      ]
+    },
+    {
+      "sentence": "Wo sind die Äpfel? — Ich sehe ___, aber im Korb sind ___.",
+      "answers": [
+        "keine",
+        "welche"
+      ]
+    }
+  ]
 }

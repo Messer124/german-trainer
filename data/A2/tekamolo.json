@@ -1,128 +1,554 @@
 {
+  "title": {
+    "ru": "TeKaMoLo",
+    "en": "TeKaMoLo"
+  },
   "instructions": {
     "ru": "Составьте предложения в правильном порядке",
     "en": "Put the sentences in the correct order"
   },
   "items": [
     {
-      "wordsSet": ["in die Disco", "wie immer", "gestern", "gegangen", "sie", "sind"],
-      "correctOrder": ["sie", "sind", "gestern", "wie immer", "in die Disco", "gegangen"]
+      "wordsSet": [
+        "in die Disco",
+        "wie immer",
+        "gestern",
+        "gegangen",
+        "sie",
+        "sind"
+      ],
+      "correctOrder": [
+        "sie",
+        "sind",
+        "gestern",
+        "wie immer",
+        "in die Disco",
+        "gegangen"
+      ]
     },
     {
-      "wordsSet": ["auf der Bühne", "getanzt", "Samstagnacht", "er", "mit Nina", "hat"],
-      "correctOrder": ["er", "hat", "Samstagnacht", "mit Nina", "auf der Bühne", "getanzt"]
+      "wordsSet": [
+        "auf der Bühne",
+        "getanzt",
+        "Samstagnacht",
+        "er",
+        "mit Nina",
+        "hat"
+      ],
+      "correctOrder": [
+        "er",
+        "hat",
+        "Samstagnacht",
+        "mit Nina",
+        "auf der Bühne",
+        "getanzt"
+      ]
     },
     {
-      "wordsSet": ["ins Kino", "sie", "zusammen", "am Sonntagabend", "gehen", "wollen"],
-      "correctOrder": ["sie", "wollen", "am Sonntagabend", "zusammen", "ins Kino", "gehen"]
+      "wordsSet": [
+        "ins Kino",
+        "sie",
+        "zusammen",
+        "am Sonntagabend",
+        "gehen",
+        "wollen"
+      ],
+      "correctOrder": [
+        "sie",
+        "wollen",
+        "am Sonntagabend",
+        "zusammen",
+        "ins Kino",
+        "gehen"
+      ]
     },
     {
-      "wordsSet": ["zu einem Drink", "eingeladen", "alle seine Freunde", "in der Disco", "er", "hat", "vor Freude"],
-      "correctOrder": ["er", "hat", "alle seine Freunde", "vor Freude", "in der Disco", "zu einem Drink", "eingeladen"]
+      "wordsSet": [
+        "zu einem Drink",
+        "eingeladen",
+        "alle seine Freunde",
+        "in der Disco",
+        "er",
+        "hat",
+        "vor Freude"
+      ],
+      "correctOrder": [
+        "er",
+        "hat",
+        "alle seine Freunde",
+        "vor Freude",
+        "in der Disco",
+        "zu einem Drink",
+        "eingeladen"
+      ]
     },
     {
-      "wordsSet": ["in die Stadt", "fahre", "mit dem Bus", "ich", "morgen"],
-      "correctOrder": ["ich", "fahre", "morgen", "mit dem Bus", "in die Stadt"]
+      "wordsSet": [
+        "in die Stadt",
+        "fahre",
+        "mit dem Bus",
+        "ich",
+        "morgen"
+      ],
+      "correctOrder": [
+        "ich",
+        "fahre",
+        "morgen",
+        "mit dem Bus",
+        "in die Stadt"
+      ]
     },
     {
-      "wordsSet": ["zu Hause", "geblieben", "wir", "heute", "wegen der Arbeit", "sind"],
-      "correctOrder": ["wir", "sind", "heute", "wegen der Arbeit", "zu Hause", "geblieben"]
+      "wordsSet": [
+        "zu Hause",
+        "geblieben",
+        "wir",
+        "heute",
+        "wegen der Arbeit",
+        "sind"
+      ],
+      "correctOrder": [
+        "wir",
+        "sind",
+        "heute",
+        "wegen der Arbeit",
+        "zu Hause",
+        "geblieben"
+      ]
     },
     {
-      "wordsSet": ["im Park", "hat", "aus Spaß", "sie", "gestern", "getanzt"],
-      "correctOrder": ["sie", "hat", "gestern", "aus Spaß", "im Park", "getanzt"]
+      "wordsSet": [
+        "im Park",
+        "hat",
+        "aus Spaß",
+        "sie",
+        "gestern",
+        "getanzt"
+      ],
+      "correctOrder": [
+        "sie",
+        "hat",
+        "gestern",
+        "aus Spaß",
+        "im Park",
+        "getanzt"
+      ]
     },
     {
-      "wordsSet": ["mit meiner Freundin", "am Morgen", "gefrühstückt", "im Café", "ich", "habe"],
-      "correctOrder": ["ich", "habe", "am Morgen", "mit meiner Freundin", "im Café", "gefrühstückt"]
+      "wordsSet": [
+        "mit meiner Freundin",
+        "am Morgen",
+        "gefrühstückt",
+        "im Café",
+        "ich",
+        "habe"
+      ],
+      "correctOrder": [
+        "ich",
+        "habe",
+        "am Morgen",
+        "mit meiner Freundin",
+        "im Café",
+        "gefrühstückt"
+      ]
     },
     {
-      "wordsSet": ["mit dem Auto", "ins Büro", "er", "kommt", "heute", "wegen der Arbeit"],
-      "correctOrder": ["er", "kommt", "heute", "wegen der Arbeit", "mit dem Auto", "ins Büro"]
+      "wordsSet": [
+        "mit dem Auto",
+        "ins Büro",
+        "er",
+        "kommt",
+        "heute",
+        "wegen der Arbeit"
+      ],
+      "correctOrder": [
+        "er",
+        "kommt",
+        "heute",
+        "wegen der Arbeit",
+        "mit dem Auto",
+        "ins Büro"
+      ]
     },
     {
-      "wordsSet": ["gehen", "nach Hause", "am Abend", "wir", "zu Fuß"],
-      "correctOrder": ["wir", "gehen", "am Abend", "zu Fuß", "nach Hause"]
+      "wordsSet": [
+        "gehen",
+        "nach Hause",
+        "am Abend",
+        "wir",
+        "zu Fuß"
+      ],
+      "correctOrder": [
+        "wir",
+        "gehen",
+        "am Abend",
+        "zu Fuß",
+        "nach Hause"
+      ]
     },
     {
-      "wordsSet": ["mit ihrer Familie", "gefahren", "nach Italien", "letzten Sommer", "sie", "ist"],
-      "correctOrder": ["sie", "ist", "letzten Sommer", "mit ihrer Familie", "nach Italien", "gefahren"]
+      "wordsSet": [
+        "mit ihrer Familie",
+        "gefahren",
+        "nach Italien",
+        "letzten Sommer",
+        "sie",
+        "ist"
+      ],
+      "correctOrder": [
+        "sie",
+        "ist",
+        "letzten Sommer",
+        "mit ihrer Familie",
+        "nach Italien",
+        "gefahren"
+      ]
     },
     {
-      "wordsSet": ["eingekauft", "ich", "gestern", "im Supermarkt", "schnell", "habe"],
-      "correctOrder": ["ich", "habe", "gestern", "schnell", "im Supermarkt", "eingekauft"]
+      "wordsSet": [
+        "eingekauft",
+        "ich",
+        "gestern",
+        "im Supermarkt",
+        "schnell",
+        "habe"
+      ],
+      "correctOrder": [
+        "ich",
+        "habe",
+        "gestern",
+        "schnell",
+        "im Supermarkt",
+        "eingekauft"
+      ]
     },
     {
-      "wordsSet": ["wegen der Prüfung", "gelernt", "lange", "er", "hat", "heute früh"],
-      "correctOrder": ["er", "hat", "heute früh", "wegen der Prüfung", "lange", "gelernt"]
+      "wordsSet": [
+        "wegen der Prüfung",
+        "gelernt",
+        "lange",
+        "er",
+        "hat",
+        "heute früh"
+      ],
+      "correctOrder": [
+        "er",
+        "hat",
+        "heute früh",
+        "wegen der Prüfung",
+        "lange",
+        "gelernt"
+      ]
     },
     {
-      "wordsSet": ["morgen um 18 Uhr", "treffen", "wir", "zusammen", "im Restaurant", "uns"],
-      "correctOrder": ["wir", "treffen", "uns", "morgen um 18 Uhr", "zusammen", "im Restaurant"]
+      "wordsSet": [
+        "morgen um 18 Uhr",
+        "treffen",
+        "wir",
+        "zusammen",
+        "im Restaurant",
+        "uns"
+      ],
+      "correctOrder": [
+        "wir",
+        "treffen",
+        "uns",
+        "morgen um 18 Uhr",
+        "zusammen",
+        "im Restaurant"
+      ]
     },
     {
-      "wordsSet": ["im Büro", "konzentriert", "sie", "arbeitet", "jeden Tag"],
-      "correctOrder": ["sie", "arbeitet", "jeden Tag", "konzentriert", "im Büro"]
+      "wordsSet": [
+        "im Büro",
+        "konzentriert",
+        "sie",
+        "arbeitet",
+        "jeden Tag"
+      ],
+      "correctOrder": [
+        "sie",
+        "arbeitet",
+        "jeden Tag",
+        "konzentriert",
+        "im Büro"
+      ]
     },
     {
-      "wordsSet": ["mit dem Zug", "gefahren", "nach Berlin", "ich", "bin", "gestern"],
-      "correctOrder": ["ich", "bin", "gestern", "mit dem Zug", "nach Berlin", "gefahren"]
+      "wordsSet": [
+        "mit dem Zug",
+        "gefahren",
+        "nach Berlin",
+        "ich",
+        "bin",
+        "gestern"
+      ],
+      "correctOrder": [
+        "ich",
+        "bin",
+        "gestern",
+        "mit dem Zug",
+        "nach Berlin",
+        "gefahren"
+      ]
     },
     {
-      "wordsSet": ["zu Hause", "er", "letzte Woche", "wegen des Wetters", "geblieben", "ist"],
-      "correctOrder": ["er", "ist", "letzte Woche", "wegen des Wetters", "zu Hause", "geblieben"]
+      "wordsSet": [
+        "zu Hause",
+        "er",
+        "letzte Woche",
+        "wegen des Wetters",
+        "geblieben",
+        "ist"
+      ],
+      "correctOrder": [
+        "er",
+        "ist",
+        "letzte Woche",
+        "wegen des Wetters",
+        "zu Hause",
+        "geblieben"
+      ]
     },
     {
-      "wordsSet": ["gegrillt", "am Sonntag", "wir", "im Garten", "haben", "mit Freunden"],
-      "correctOrder": ["wir", "haben", "am Sonntag", "mit Freunden", "im Garten", "gegrillt"]
+      "wordsSet": [
+        "gegrillt",
+        "am Sonntag",
+        "wir",
+        "im Garten",
+        "haben",
+        "mit Freunden"
+      ],
+      "correctOrder": [
+        "wir",
+        "haben",
+        "am Sonntag",
+        "mit Freunden",
+        "im Garten",
+        "gegrillt"
+      ]
     },
     {
-      "wordsSet": ["in der Bibliothek", "lernt", "sie", "wegen der Prüfung", "allein", "jetzt"],
-      "correctOrder": ["sie", "lernt", "jetzt", "wegen der Prüfung", "allein", "in der Bibliothek"]
+      "wordsSet": [
+        "in der Bibliothek",
+        "lernt",
+        "sie",
+        "wegen der Prüfung",
+        "allein",
+        "jetzt"
+      ],
+      "correctOrder": [
+        "sie",
+        "lernt",
+        "jetzt",
+        "wegen der Prüfung",
+        "allein",
+        "in der Bibliothek"
+      ]
     },
     {
-      "wordsSet": ["an", "kurz", "von zu Hause", "ruft", "er", "mich", "heute Abend"],
-      "correctOrder": ["er", "ruft", "mich", "heute Abend", "kurz", "von zu Hause", "an"]
+      "wordsSet": [
+        "an",
+        "kurz",
+        "von zu Hause",
+        "ruft",
+        "er",
+        "mich",
+        "heute Abend"
+      ],
+      "correctOrder": [
+        "er",
+        "ruft",
+        "mich",
+        "heute Abend",
+        "kurz",
+        "von zu Hause",
+        "an"
+      ]
     },
     {
-      "wordsSet": ["geschlafen", "ich", "wegen des Stresses", "gestern", "habe", "schlecht"],
-      "correctOrder": ["ich", "habe", "gestern", "wegen des Stresses", "schlecht", "geschlafen"]
+      "wordsSet": [
+        "geschlafen",
+        "ich",
+        "wegen des Stresses",
+        "gestern",
+        "habe",
+        "schlecht"
+      ],
+      "correctOrder": [
+        "ich",
+        "habe",
+        "gestern",
+        "wegen des Stresses",
+        "schlecht",
+        "geschlafen"
+      ]
     },
     {
-      "wordsSet": ["in die Wohnung", "die Möbel", "bringen", "wir", "mit dem Auto", "morgen"],
-      "correctOrder": ["wir", "bringen", "morgen", "mit dem Auto", "die Möbel", "in die Wohnung"]
+      "wordsSet": [
+        "in die Wohnung",
+        "die Möbel",
+        "bringen",
+        "wir",
+        "mit dem Auto",
+        "morgen"
+      ],
+      "correctOrder": [
+        "wir",
+        "bringen",
+        "morgen",
+        "mit dem Auto",
+        "die Möbel",
+        "in die Wohnung"
+      ]
     },
     {
-      "wordsSet": ["geduscht", "im Bad", "hat", "sie", "gestern", "schnell"],
-      "correctOrder": ["sie", "hat", "gestern", "schnell", "im Bad", "geduscht"]
+      "wordsSet": [
+        "geduscht",
+        "im Bad",
+        "hat",
+        "sie",
+        "gestern",
+        "schnell"
+      ],
+      "correctOrder": [
+        "sie",
+        "hat",
+        "gestern",
+        "schnell",
+        "im Bad",
+        "geduscht"
+      ]
     },
     {
-      "wordsSet": ["heute Abend", "in eine Bar", "geht", "mit seinen Kollegen", "er"],
-      "correctOrder": ["er", "geht", "heute Abend", "mit seinen Kollegen", "in eine Bar"]
+      "wordsSet": [
+        "heute Abend",
+        "in eine Bar",
+        "geht",
+        "mit seinen Kollegen",
+        "er"
+      ],
+      "correctOrder": [
+        "er",
+        "geht",
+        "heute Abend",
+        "mit seinen Kollegen",
+        "in eine Bar"
+      ]
     },
     {
-      "wordsSet": ["gesehen", "zu Hause", "wegen des Regens", "wir", "gestern", "Filme", "haben", "zusammen"],
-      "correctOrder": ["wir", "haben", "gestern", "wegen des Regens", "zusammen", "zu Hause", "Filme", "gesehen"]
+      "wordsSet": [
+        "gesehen",
+        "zu Hause",
+        "wegen des Regens",
+        "wir",
+        "gestern",
+        "Filme",
+        "haben",
+        "zusammen"
+      ],
+      "correctOrder": [
+        "wir",
+        "haben",
+        "gestern",
+        "wegen des Regens",
+        "zusammen",
+        "zu Hause",
+        "Filme",
+        "gesehen"
+      ]
     },
     {
-      "wordsSet": ["eine E-Mail", "heute", "schnell", "im Büro", "ich", "schreibe"],
-      "correctOrder": ["ich", "schreibe", "heute", "schnell", "im Büro", "eine E-Mail"]
+      "wordsSet": [
+        "eine E-Mail",
+        "heute",
+        "schnell",
+        "im Büro",
+        "ich",
+        "schreibe"
+      ],
+      "correctOrder": [
+        "ich",
+        "schreibe",
+        "heute",
+        "schnell",
+        "im Büro",
+        "eine E-Mail"
+      ]
     },
     {
-      "wordsSet": ["am Morgen", "im Park", "spazieren gegangen", "mit einem Freund", "sie", "ist"],
-      "correctOrder": ["sie", "ist", "am Morgen", "mit einem Freund", "im Park", "spazieren gegangen"]
+      "wordsSet": [
+        "am Morgen",
+        "im Park",
+        "spazieren gegangen",
+        "mit einem Freund",
+        "sie",
+        "ist"
+      ],
+      "correctOrder": [
+        "sie",
+        "ist",
+        "am Morgen",
+        "mit einem Freund",
+        "im Park",
+        "spazieren gegangen"
+      ]
     },
     {
-      "wordsSet": ["nach Hause", "mit dem Bus", "gefahren", "nach der Arbeit", "er", "ist", "gestern"],
-      "correctOrder": ["er", "ist", "gestern", "nach der Arbeit", "mit dem Bus", "nach Hause", "gefahren"]
+      "wordsSet": [
+        "nach Hause",
+        "mit dem Bus",
+        "gefahren",
+        "nach der Arbeit",
+        "er",
+        "ist",
+        "gestern"
+      ],
+      "correctOrder": [
+        "er",
+        "ist",
+        "gestern",
+        "nach der Arbeit",
+        "mit dem Bus",
+        "nach Hause",
+        "gefahren"
+      ]
     },
     {
-      "wordsSet": ["mit der Familie", "Pizza", "essen", "zu Hause", "wir", "heute Abend"],
-      "correctOrder": ["wir", "essen", "heute Abend", "mit der Familie", "zu Hause", "Pizza"]
+      "wordsSet": [
+        "mit der Familie",
+        "Pizza",
+        "essen",
+        "zu Hause",
+        "wir",
+        "heute Abend"
+      ],
+      "correctOrder": [
+        "wir",
+        "essen",
+        "heute Abend",
+        "mit der Familie",
+        "zu Hause",
+        "Pizza"
+      ]
     },
     {
-      "wordsSet": ["im Garten", "mit dem Hund", "am Wochenende", "sie", "spielt", "gern"],
-      "correctOrder": ["sie", "spielt", "am Wochenende", "gern", "mit dem Hund", "im Garten"]
+      "wordsSet": [
+        "im Garten",
+        "mit dem Hund",
+        "am Wochenende",
+        "sie",
+        "spielt",
+        "gern"
+      ],
+      "correctOrder": [
+        "sie",
+        "spielt",
+        "am Wochenende",
+        "gern",
+        "mit dem Hund",
+        "im Garten"
+      ]
     }
   ]
 }

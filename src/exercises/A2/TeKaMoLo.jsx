@@ -318,4 +318,4 @@ TeKaMoLo.headerButton = (
 );
 
 TeKaMoLo.instructions = data.instructions;
-TeKaMoLo.title = { ru: "TeKaMoLo", en: "TeKaMoLo" };
+TeKaMoLo.title = data.title;
