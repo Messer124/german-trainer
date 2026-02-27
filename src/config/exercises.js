@@ -30,6 +30,7 @@ import Wortstellung from "../exercises/A2/Wortstellung";
 import TeKaMoLo from "../exercises/A2/TeKaMoLo";
 import Verbrektion from "../exercises/A2/Verbrektion";
 import Konjunktiv2 from "../exercises/A2/Konjunktiv2";
+import Adjektivdeklination from "../exercises/A2/Adjektivdeklination";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -164,6 +165,10 @@ export const EXERCISES_BY_LEVEL = {
         "konjunktiv2": {
             storageKey: "konjunktiv2-answers",
             component: Konjunktiv2,
+        },
+        "adjektivdeklination": {
+            storageKey: "adjektivdeklination-answers",
+            component: Adjektivdeklination,
         }
     },
 };

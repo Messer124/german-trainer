@@ -1,0 +1,1216 @@
+{
+  "title": {
+    "ru": "Adjektivdeklination",
+    "en": "Adjektivdeklination"
+  },
+  "instructions": {
+    "ru": "Добавьте правильные окончания к прилагательным",
+    "en": "Add the correct endings to the adjectives"
+  },
+  "items": [
+    {
+      "sentence": "Mit billig___ Preis und gut___ Angebot klappt der Plan.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Außerdem besuchen wir die alt___ Oma und die neu___ Nachbarn.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Beim Spazierengehen sehe ich nett___ Frau und bunt___ Blumen.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Heute kommt keine schlecht___ Nachricht und keine unnötig___ Fragen.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie erzählt einem streng___ Lehrer und einem klein___ Kind.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Kurz___ Pause und nett___ Leute machen den Tag leichter.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit leis___ Lärm und schlecht___ Licht geht es mir besser.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Da kommt mein nett___ Nachbar.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Gut___ Kaffee und frisch___ Brot sind im Café wichtig.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Außerdem schreibe ich der jung___ Schwester und den gut___ Freunden.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wegen frisch___ Luft und wegen sauber___ Hände geht es mir besser.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Vielen Dank für das schön___ Geschenk.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wichtig___ Anruf und neu___ Handy machen den Tag leichter.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Außerdem danken wir der hilfsbereit___ Kollegin und den neu___ Kunden.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Zu Hause warten eine schön___ Lampe und deine sauber___ Schuhe.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit stark___ Kaffee und gut___ WLAN arbeite ich besser.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Nach der Arbeit will ich leis___ Musik und nett___ Leute.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Ich kenne den Namen des neu___ Deutschlehrers und des klein___ Kindes.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Er gehört zu einem groß___ Team und einem neu___ Projekt bei der Arbeit.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ruhig___ Straße und freundlich___ Nachbarn sind für mich perfekt.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Im Hotel sind der frei___ Parkplatz und das ruhig___ Zimmer.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Außerdem erzählt Sie einer nervös___ Frau und ihren alt___ Freunden alles.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Auf dem Foto sieht man das Auto die Tasche der jung___ Frau und die Wohnung der neu___ Freunde.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Stark___ Regen und schlecht___ Wetter machen den Weg zur Arbeit schwer.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Trotz früh___ Zuges und wegen kurz___ Treffens komme ich spät heim.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist die Tasche die Wohnung einer jung___ Frau und das Auto meiner neu___ Nachbarn.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wir haben neu___ Nachbarn.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Heute kommt kein streng___ Chef und kein laut___ Geräusch.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Wie heißen die neu___ Mitschüler?",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem erinnere ich mich an den Namen die Musik einer schön___ Feier und die Fotos meiner jung___ Freunde.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Die Antwort eines ruhig___ Lehrers und das Angebot eines billig___ Hotels helfen mir.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wegen heiß___ Tees und wegen kalt___ Wassers bleibe ich ruhig.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Auf dem Tisch liegen die lecker___ Suppe und die kalt___ Getränke.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wegen ruhig___ Musik und wegen frisch___ Blumen bleibe ich ruhig.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Die Antwort die Info einer nett___ Person und die Tipps meiner alt___ Freunde helfen mir.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Für den Abend bestelle ich eine lecker___ Suppe und meine gut___ Rezepte.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Bei der Feier sind die jung___ Tante und die gut___ Freunde zusammen.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit stark___ Regen und schlecht___ Wetter dauert die Fahrt länger.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Wegen lang___ Urlaubs und wegen gut___ Essens bleibe ich gern zu Hause.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit sauber___ Luft und neu___ Möbeln fühle ich mich zu Hause.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem kenne ich den Namen der nett___ Nachbarin und der gut___ Freunde.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Heute brauche ich keine lang___ Erklärung und keine unnötig___ Fragen.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ich wünsche mir lang___ Urlaub und gut___ Essen.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Die Adresse der schön___ Stadt und der gut___ Restaurants steht hier.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ich schreibe keinem laut___ Nachbarn und keinem schlecht___ Chef.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Heute repariere ich den kaputt___ Computer und das neu___ Handy.",
+      "answers": [
+        "en",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Für den Abend bestelle ich einen frisch___ Salat und ein kalt___ Getränk.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Die Adresse des freundlich___ Arztes und des ruhig___ Hotels steht hier.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Schön___ Aussicht und neu___ Städte machen die Reise spannender.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Er hat ein neu___ Auto gekauft.",
+      "answers": [
+        "es"
+      ]
+    },
+    {
+      "sentence": "Im Supermarkt kaufe ich kalt___ Milch und süß___ Früchte.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Außerdem wünsche ich mir ruhig___ Zeit und neu___ Möbel.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Im Winter mag ich warm___ Kleidung und dick___ Socken.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Außerdem gehört das zu einer gut___ Idee und zu meinen wichtig___ Aufgaben.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit kurz___ Pause und nett___ Leuten bleibt man ruhig.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Heute sind die nett___ Mitschülerin und die gut___ Regeln schon da.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Unsere gut___n Freunde stehen dort.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Bei der Feier sind der lustig___ Onkel und das klein___ Kind.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wegen schön___ Aussicht und wegen neu___ Städte lohnt sich die Reise.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Heute sind der neu___ Deutschlehrer und das klein___ Klassenzimmer.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit schön___ Aussicht und neu___ Städten macht die Reise Spaß.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Leis___ Lärm und schlecht___ Licht sind mir wichtig.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Stark___ Kaffee und gut___ WLAN sind für mich perfekt.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Zu Hause warten ein alt___ Fernseher und ein neu___ Handy.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Heiß___ Tee und kalt___ Wasser passen gut zusammen.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Mit wichtig___ Anruf und neu___ Handy bleibt man ruhig.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Wegen lang___ Weges und wegen klein___ Zimmers lohnt sich die Reise.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ruhig___ Musik und frisch___ Blumen passen gut zusammen.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Die Prüfung ist in einem halb___n Jahr.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Heute repariere ich die klein___ Lampe und die alt___ Kabel.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Im Sommer genieße ich frisch___ Luft und lang___ Abende.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Trotz stark___ Regens und wegen schlecht___ Wetters fahren wir später los.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Im Kurs sind eine kurz___ Übung und unsere neu___ Mitschüler dabei.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wegen kalt___ Luft und wegen voll___ Straßen fahren wir später los.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Frisch___ Kaffee und warm___ Essen machen den Abend besser.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Auf dem Foto sieht man das Auto des alt___ Nachbarn und das Spielzeug des klein___ Kindes.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ich helfe einem neu___ Kollegen und einem krank___ Kind.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Fürs Büro nehme ich klar___ Antwort und neu___ Ideen.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wegen ruhig___ Straße und wegen freundlich___ Nachbarn arbeite ich gern hier.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Wir danken einem freundlich___ Verkäufer und einem ruhig___ Chef.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Im Büro sind ein neu___ Kollege und ein klein___ Problem.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Außerdem brauchen wir frisch___ Luft und sauber___ Handtücher.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Am Bahnhof finde ich die kurz___ Pause und die spät___ Züge.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wegen kurz___ Pause und wegen nett___ Leute bin ich besser gelaunt.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Für die Reise suche ich schön___ Stadt und neu___ Orte.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit lang___ Schlange und müde___ Leuten komme ich spät an.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit ruhig___ Musik und frisch___ Blumen wird es gemütlich.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Im Supermarkt kaufe ich den frisch___ Käse und das warm___ Brot.",
+      "answers": [
+        "en",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wir suchen einen ruhig___ Platz und ein billig___ Ticket.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Dank gut___ Kaffees und dank frisch___ Brotes geht es schneller.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das Ende der kurz___ Pause und der gut___ Pläne kommt bald.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ich erinnere mich an den Namen eines gut___ Arztes und das Zimmer eines groß___ Hotels.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit gut___ Kaffee und frisch___ Brot geht alles leichter.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Dank schnell___ Hilfe und dank frei___ Plätze geht es schneller.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Auf dem Tisch liegen der frisch___ Apfel und das warm___ Brot.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Im Meeting bespreche ich eine gut___ Idee und meine wichtig___ Notizen.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wegen leis___ Lärms und wegen schlecht___ Lichts geht es mir besser.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Nach der Arbeit will ich ruhig___ Abend und gut___ Essen.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "In unserer Straße stehen der alt___ Baum und das neu___ Haus zusammen.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Er erklärt dem streng___ Polizisten und dem müde___ Kind alles.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Heute brauche ich wichtig___ Termin und teuer___ Ticket.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Wegen ruhig___ Zeit und wegen neu___ Möbel bleibe ich gern zu Hause.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Im Kurs sind ein nett___ Lehrer und ein schwierig___ Wort.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Mit frisch___ Kaffee und warm___ Essen fühle ich mich zu Hause.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Wir sprechen über den Plan eines streng___ Chefs und das Ende eines lang___ Tages.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem brauche ich die Nummer die Adresse einer nett___ Nachbarin und die Fotos meiner gut___ Freunde.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit heiß___ Tee und kalt___ Wasser wird es gemütlich.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Mit frisch___ Luft und sauber___ Händen geht es mir besser.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit lang___ Weg und klein___ Zimmer macht die Reise Spaß.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Lang___ Weg und klein___ Zimmer können auf einer Reise anstrengend sein.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Heute brauche ich kurz___ Pause und frei___ Plätze.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Ich kaufe einen warm___ Mantel und ein neu___ Handy.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Billig___ Preis und gut___ Angebot helfen beim Planen.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Klar___ Antwort und neu___ Regeln helfen beim Planen.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit kalt___ Luft und voll___ Straßen dauert die Fahrt länger.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem danken wir einer hilfsbereit___ Kollegin und unseren neu___ Kunden.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit schnell___ Hilfe und frei___ Plätzen geht alles leichter.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem schreibe ich keiner böse___ Person und keinen fremd___ Leuten.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Im Supermarkt kaufe ich frisch___ Käse und warm___ Brot.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Ich habe drei klein___ Kinder.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit ruhig___ Straße und freundlich___ Nachbarn arbeite ich besser.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Für die Reise sind ein groß___ Koffer und ein billig___ Ticket.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Im Winter mag ich heiß___ Tee und kalt___ Wasser.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Im Hotel sind die groß___ Dusche und die sauber___ Handtücher bereit.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem suchen wir eine kurz___ Pause und unsere neu___ Mitschüler.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Seine klein___ Schwester hat mich angerufen.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wegen lang___ Schlange und wegen müde___ Leute komme ich spät heim.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Ich helfe dem neu___ Deutschlehrer und dem klein___ Kind.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie gehört zu der gut___ Idee und den wichtig___ Aufgaben.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie braucht kein neu___ Handy.",
+      "answers": [
+        "es"
+      ]
+    },
+    {
+      "sentence": "Ich schreibe dem krank___ Vater und dem alt___ Opa.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Fürs Büro nehme ich stark___ Kaffee und schnell___ Internet.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Außerdem sehe ich die nett___ Nachbarin und die gut___ Freunde im Park.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wir gehen bei schlecht___m Wetter nicht spazieren.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Wegen stark___ Kaffees und wegen gut___ WLANs arbeite ich gern hier.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem helfe ich einer nett___ Nachbarin und meinen gut___ Freunden.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wir warten auf die Antwort des streng___ Chefs und des müde___ Kindes.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Im Büro sind eine gut___ Idee und meine wichtig___ Notizen das Thema.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Morgen besucht mich ein gut___ Freund von mir.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Heute brauche ich keinen streng___ Chef und kein teuer___ Auto.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Außerdem helfe ich der nett___ Nachbarin und den gut___ Freunden.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Für die Reise sind eine lang___ Route und meine neu___ Pläne wichtig.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das Ende des lang___ Tages und des schwierig___ Gesprächs kommt bald.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist der neu___ Deutschlehrer.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Sie gehört zu dem groß___ Team und dem neu___ Projekt bei der Arbeit.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist die Tasche eines alt___ Mannes und das Spielzeug eines klein___ Kindes.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ich sehe den neu___ Deutschlehrer und das klein___ Kind im Park.",
+      "answers": [
+        "en",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wegen klar___ Antwort und wegen neu___ Regeln treffe ich schnell eine Entscheidung.",
+      "answers": [
+        "er",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Außerdem warten wir auf die Antwort der krank___ Mutter und der neu___ Kollegen.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wir danken dem freundlich___ Verkäufer und dem ruhig___ Chef.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wegen billig___ Preises und wegen gut___ Angebots treffe ich schnell eine Entscheidung.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Kalt___ Luft und voll___ Straßen machen den Weg zur Arbeit schwer.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wir brauchen stark___ Kaffee und warm___ Essen.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Lang___ Schlange und müde___ Leute sind heute normal.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit früh___ Zug und kurz___ Gespräch komme ich spät an.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Für die Reise suche ich billig___ Flug und gut___ Hotel.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Schnell___ Hilfe und frei___ Plätze sind im Café wichtig.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "In unserer Straße stehen die schön___ Bank und alle freundlich___ Nachbarn zusammen.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Früh___ Zug und kurz___ Gespräch sind heute normal.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Beim Spazierengehen sehe ich groß___ Hund und klein___ Kind.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Am Bahnhof finde ich den frei___ Platz und das billig___ Ticket.",
+      "answers": [
+        "en",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit der neu___n Brille siehst du sehr gut aus.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem sprechen wir über den Plan die Hilfe einer freundlich___ Kollegin und die Ideen meiner gut___ Freunde.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Frisch___ Luft und sauber___ Hände sind mir wichtig.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit klar___ Antwort und neu___ Regeln klappt der Plan.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem erklärt er der nervös___ Frau und den spät___ Gästen alles.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wir besuchen den krank___ Vater und das groß___ Haus.",
+      "answers": [
+        "en",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Ich brauche die Nummer eines neu___ Kollegen und den Namen eines krank___ Kindes.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Im Supermarkt kaufe ich die lecker___ Suppe und die kalt___ Getränke.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Außerdem kaufe ich eine schön___ Lampe und deine sauber___ Schuhe.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Im Meeting bespreche ich einen neu___ Plan und ein klein___ Problem.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Sauber___ Luft und neu___ Möbel machen den Abend besser.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Im Sommer genieße ich warm___ Wind und kalt___ Wasser.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Wegen wichtig___ Anrufs und wegen neu___ Handys bin ich besser gelaunt.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    }
+  ]
+}
