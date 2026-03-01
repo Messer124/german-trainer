@@ -4,17 +4,17 @@ import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
-import data from "../../../data/A2/adjektivdeklination.json";
-import slide1Ru from "../../../data/A2/images/adjektivdeklination1.html?raw";
-import slide2Ru from "../../../data/A2/images/adjektivdeklination2.html?raw";
-import slide3Ru from "../../../data/A2/images/adjektivdeklination3.html?raw";
-import slide1En from "../../../data/A2/images/en/adjektivdeklination1.html?raw";
-import slide2En from "../../../data/A2/images/en/adjektivdeklination2.html?raw";
-import slide3En from "../../../data/A2/images/en/adjektivdeklination3.html?raw";
+import data from "../../../data/A2/steigerungDerAdjektive.json";
+import slide1Ru from "../../../data/A2/images/steigerungderadjektive1.html?raw";
+import slide2Ru from "../../../data/A2/images/steigerungderadjektive2.html?raw";
+import slide3Ru from "../../../data/A2/images/steigerungderadjektive3.html?raw";
+import slide1En from "../../../data/A2/images/en/steigerungderadjektive1.html?raw";
+import slide2En from "../../../data/A2/images/en/steigerungderadjektive2.html?raw";
+import slide3En from "../../../data/A2/images/en/steigerungderadjektive3.html?raw";
 
 import "../../css/exercises/Common.css";
 
-const STORAGE_KEY = "adjektivdeklination-answers";
+const STORAGE_KEY = "steigerung-der-adjektive-answers";
 
 function normalize(value) {
     return String(value ?? "")
@@ -37,7 +37,7 @@ function getAnswerArray(item) {
     return [];
 }
 
-export default function Adjektivdeklination() {
+export default function SteigerungDerAdjektive() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
@@ -54,8 +54,8 @@ export default function Adjektivdeklination() {
         return () => document.removeEventListener("show-hint", handleShowHint);
     }, []);
 
-    const handleChange = (sentenceIdx, blankIdx, value, correctAnswer) => {
-        const key = `${sentenceIdx}-${blankIdx}`;
+    const handleChange = (itemIdx, blankIdx, value, correctAnswer) => {
+        const key = `${itemIdx}-${blankIdx}`;
         const isCorrect = normalize(value) === normalize(correctAnswer);
 
         setAnswers((prev) => ({
@@ -75,15 +75,15 @@ export default function Adjektivdeklination() {
 
             <div className="scroll-container">
                 <ul className="list">
-                    {items.map((item, sentenceIdx) => {
+                    {items.map((item, itemIdx) => {
                         const sentence = getSentenceText(item.sentence, locale);
                         const answerArray = getAnswerArray(item);
                         const parts = sentence.split(/_{3,}/);
 
                         return (
-                            <li key={sentenceIdx} className="list-item">
-                                {parts.map((part, idx) => {
-                                    const key = `${sentenceIdx}-${idx}`;
+                            <li key={itemIdx} className="list-item">
+                                {parts.map((part, partIdx) => {
+                                    const key = `${itemIdx}-${partIdx}`;
                                     const value = answers[key]?.value ?? "";
                                     const isCorrect = answers[key]?.isCorrect;
 
@@ -93,26 +93,26 @@ export default function Adjektivdeklination() {
                                     }
 
                                     return (
-                                        <span key={idx}>
+                                        <span key={partIdx}>
                                             {part}
-                                            {idx < answerArray.length ? (
+                                            {partIdx < answerArray.length ? (
                                                 <ExpandingInput
                                                     type="text"
                                                     value={value}
                                                     onChange={(e) =>
                                                         handleChange(
-                                                            sentenceIdx,
-                                                            idx,
+                                                            itemIdx,
+                                                            partIdx,
                                                             e.target.value,
-                                                            answerArray[idx]
+                                                            answerArray[partIdx]
                                                         )
                                                     }
                                                     className={inputClass}
-                                                    minWidth={80}
-                                                    mobileMinWidth={35}
-                                                    tabletMinWidth={40}
-                                                    maxWidth={100}
-                                                    aria-label={`Adjektivdeklination blank ${idx + 1} (sentence ${sentenceIdx + 1})`}
+                                                    minWidth={120}
+                                                    mobileMinWidth={60}
+                                                    tabletMinWidth={90}
+                                                    maxWidth={220}
+                                                    aria-label={`Steigerung der Adjektive blank ${partIdx + 1} (item ${itemIdx + 1})`}
                                                 />
                                             ) : null}
                                         </span>
@@ -127,7 +127,7 @@ export default function Adjektivdeklination() {
     );
 }
 
-Adjektivdeklination.headerButton = (
+SteigerungDerAdjektive.headerButton = (
     <button
         type="button"
         className="hint-button"
@@ -137,5 +137,5 @@ Adjektivdeklination.headerButton = (
     </button>
 );
 
-Adjektivdeklination.instructions = data.instructions;
-Adjektivdeklination.title = data.title;
+SteigerungDerAdjektive.instructions = data.instructions;
+SteigerungDerAdjektive.title = data.title;

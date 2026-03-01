@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 
 const pickFontStyles = (cs) => ({
     fontFamily: cs.fontFamily,
@@ -19,13 +19,26 @@ export default function ExpandingInput({
                                            className = "",
                                            style,
                                            minWidth = 40,
+                                           mobileMinWidth,
+                                           tabletMinWidth,
                                            maxWidth = 280,
                                            extraWidth = 2,
                                            ...props
                                        }) {
     const inputRef = useRef(null);
     const measureRef = useRef(null);
-    const [width, setWidth] = useState(minWidth);
+    const [viewportWidth, setViewportWidth] = useState(() =>
+        typeof window !== "undefined" ? window.innerWidth : 1201
+    );
+    const isMobile = viewportWidth <= 600;
+    const isTablet = viewportWidth > 600 && viewportWidth <= 1200;
+
+    const effectiveMinWidth = isMobile && mobileMinWidth != null
+        ? mobileMinWidth
+        : isTablet && tabletMinWidth != null
+            ? tabletMinWidth
+            : minWidth;
+    const [width, setWidth] = useState(effectiveMinWidth);
 
     const hasRealPlaceholder = placeholder != null && String(placeholder).length > 0;
     const ghostPlaceholder = "\u00A0"; // NBSP
@@ -37,6 +50,16 @@ export default function ExpandingInput({
         const src = v.length > 0 ? v : ph;
         return (src || "\u00A0").replace(/ /g, "\u00A0");
     }, [value, placeholder]);
+
+    useEffect(() => {
+        if (typeof window === "undefined") return undefined;
+
+        const handleResize = () => setViewportWidth(window.innerWidth);
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     useLayoutEffect(() => {
         const input = inputRef.current;
@@ -56,8 +79,8 @@ export default function ExpandingInput({
         const measuredTextWidth = Math.ceil(measure.getBoundingClientRect().width);
         const nextWidth = measuredTextWidth + paddingLeft + paddingRight + borders + extraWidth;
 
-        setWidth(Math.min(maxWidth, Math.max(minWidth, nextWidth)));
-    }, [textToMeasure, minWidth, maxWidth, extraWidth]);
+        setWidth(Math.min(maxWidth, Math.max(effectiveMinWidth, nextWidth)));
+    }, [textToMeasure, effectiveMinWidth, maxWidth, extraWidth]);
 
     return (
         <span className="expanding-input__wrap">

@@ -1,0 +1,323 @@
+<article class="modal-html-content">
+    <section class="theory-card steigerung-sheet">
+        <style>
+            .steigerung-sheet {
+                --steigerung-line: #d2d5da;
+                --steigerung-violet: #7a78bf;
+                --steigerung-yellow: #f0bf45;
+                --steigerung-red: #ea5b57;
+                --steigerung-green: #9fcc5f;
+            }
+
+            .steigerung-sheet .steigerung-arrows {
+                max-width: 1040px;
+                margin: 0 auto 14px;
+            }
+
+            .steigerung-sheet .steigerung-wide {
+                min-width: 1040px;
+                margin: 0 auto;
+            }
+
+            .steigerung-sheet .steigerung-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .steigerung-sheet .steigerung-table th,
+            .steigerung-sheet .steigerung-table td {
+                border-bottom: 1px solid var(--steigerung-line);
+                padding: 12px 10px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .steigerung-sheet .steigerung-table thead th {
+                font-size: var(--desktop-modal-header-font-size);
+                font-weight: 700;
+                padding-top: 0;
+                padding-bottom: 10px;
+            }
+
+            .steigerung-sheet .steigerung-table .formula-row td {
+                font-size: 0.95em;
+                line-height: 1.25;
+            }
+
+            .steigerung-sheet .steigerung-table .word-row td {
+                font-size: var(--desktop-modal-font-size);
+                white-space: nowrap;
+            }
+
+            .steigerung-sheet .steigerung-dash {
+                width: 56px;
+            }
+
+            .steigerung-sheet .steigerung-note {
+                max-width: 1120px;
+                margin: 18px auto 12px;
+                text-align: center;
+                line-height: 1.35;
+            }
+
+            .steigerung-sheet .steigerung-footnote {
+                max-width: 1100px;
+                margin: 18px auto 0;
+                text-align: center;
+                line-height: 1.3;
+            }
+
+            @media (max-width: 1200px) {
+                .steigerung-sheet .theory-title {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+
+                .steigerung-sheet .steigerung-arrows {
+                    max-width: 860px;
+                    margin-bottom: 10px;
+                }
+
+                .steigerung-sheet .steigerung-wide,
+                .steigerung-sheet .steigerung-table {
+                    width: 860px;
+                    min-width: 860px;
+                }
+
+                .steigerung-sheet .steigerung-table th,
+                .steigerung-sheet .steigerung-table td {
+                    padding: 10px 8px;
+                }
+
+                .steigerung-sheet .steigerung-table thead th {
+                    font-size: 1.85rem;
+                }
+
+                .steigerung-sheet .steigerung-table .formula-row td {
+                    font-size: 1rem;
+                }
+
+                .steigerung-sheet .steigerung-table .word-row td {
+                    font-size: 1.2rem;
+                }
+
+                .steigerung-sheet .steigerung-note,
+                .steigerung-sheet .steigerung-footnote {
+                    font-size: 1rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .steigerung-sheet .theory-title {
+                    font-size: 1.45rem;
+                    margin-bottom: 8px;
+                }
+
+                .steigerung-sheet .steigerung-arrows {
+                    max-width: 100%;
+                    margin-bottom: 6px;
+                }
+
+                .steigerung-sheet .steigerung-wide,
+                .steigerung-sheet .steigerung-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-sheet .steigerung-table th,
+                .steigerung-sheet .steigerung-table td {
+                    padding: 8px 4px;
+                }
+
+                .steigerung-sheet .steigerung-table thead th {
+                    font-size: 0.92rem;
+                }
+
+                .steigerung-sheet .steigerung-table .formula-row td {
+                    font-size: 0.72rem;
+                    line-height: 1.2;
+                }
+
+                .steigerung-sheet .steigerung-table .word-row td {
+                    font-size: 0.82rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .steigerung-sheet .steigerung-note,
+                .steigerung-sheet .steigerung-footnote {
+                    font-size: 0.8rem;
+                    line-height: 1.25;
+                    margin-top: 12px;
+                }
+            }
+        </style>
+
+        <h2 class="theory-title">Формы прилагательных</h2>
+
+        <div class="steigerung-arrows">
+            <svg viewBox="0 0 1000 150" style="display:block; width:100%; height:auto;" aria-hidden="true">
+                <defs>
+                    <marker id="steigerung-arrow-ru" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+                        <polygon points="0 0, 8 3, 0 6" fill="#f0bf45"></polygon>
+                    </marker>
+                </defs>
+                <line x1="500" y1="18" x2="155" y2="116" stroke="#f0bf45" stroke-width="6" marker-end="url(#steigerung-arrow-ru)"></line>
+                <line x1="500" y1="18" x2="500" y2="116" stroke="#f0bf45" stroke-width="6" marker-end="url(#steigerung-arrow-ru)"></line>
+                <line x1="500" y1="18" x2="845" y2="116" stroke="#f0bf45" stroke-width="6" marker-end="url(#steigerung-arrow-ru)"></line>
+            </svg>
+        </div>
+
+        <div class="modal-table-scroll">
+            <div class="steigerung-wide">
+                <table class="steigerung-table">
+                    <colgroup>
+                        <col style="width:30%;">
+                        <col style="width:4%;">
+                        <col style="width:30%;">
+                        <col style="width:4%;">
+                        <col style="width:32%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Positiv</th>
+                            <th class="steigerung-dash"></th>
+                            <th class="theory-word--violet">Komparativ</th>
+                            <th class="steigerung-dash"></th>
+                            <th class="theory-word--yellow">Superlativ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="formula-row">
+                            <td>Прилагательное</td>
+                            <td></td>
+                            <td>Прилагательное + <span class="theory-word--violet">-er</span></td>
+                            <td></td>
+                            <td><span style="white-space:nowrap;"><span class="theory-word--yellow">am</span> + прилаг. + <span class="theory-word--yellow">-sten</span></span></td>
+                        </tr>
+                        <tr class="word-row">
+                            <td>schön</td>
+                            <td>–</td>
+                            <td>schön<span class="theory-word--violet">er</span></td>
+                            <td>–</td>
+                            <td><span class="theory-word--yellow">am</span> schön<span class="theory-word--yellow">sten</span></td>
+                        </tr>
+                        <tr class="word-row">
+                            <td>schnell</td>
+                            <td>–</td>
+                            <td>schnell<span class="theory-word--violet">er</span></td>
+                            <td>–</td>
+                            <td><span class="theory-word--yellow">am</span> schnell<span class="theory-word--yellow">sten</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <p class="steigerung-note">
+            Если прилагательное односложное, то в его корне
+            <span class="theory-word--bold">a</span> → <span class="theory-word--red">ä</span>,
+            <span class="theory-word--bold">o</span> → <span class="theory-word--red">ö</span>,
+            <span class="theory-word--bold">u</span> → <span class="theory-word--red">ü</span>
+        </p>
+
+        <div class="modal-table-scroll">
+            <div class="steigerung-wide">
+                <table class="steigerung-table">
+                    <colgroup>
+                        <col style="width:30%;">
+                        <col style="width:4%;">
+                        <col style="width:30%;">
+                        <col style="width:4%;">
+                        <col style="width:32%;">
+                    </colgroup>
+                    <tbody>
+                        <tr class="word-row">
+                            <td>j<span class="theory-word--red">u</span>ng</td>
+                            <td>–</td>
+                            <td>j<span class="theory-word--red">ü</span>ng<span class="theory-word--violet">er</span></td>
+                            <td>–</td>
+                            <td><span class="theory-word--yellow">am</span> j<span class="theory-word--red">ü</span>ng<span class="theory-word--yellow">sten</span></td>
+                        </tr>
+                        <tr class="word-row">
+                            <td><span class="theory-word--red">o</span>ft</td>
+                            <td>–</td>
+                            <td><span class="theory-word--red">ö</span>ft<span class="theory-word--violet">er</span></td>
+                            <td>–</td>
+                            <td><span class="theory-word--yellow">am</span> <span class="theory-word--red">ö</span>ft<span style="color:#9fcc5f; font-weight:700;">e</span><span class="theory-word--yellow">sten</span>*</td>
+                        </tr>
+                        <tr class="word-row">
+                            <td><span class="theory-word--red">a</span>lt</td>
+                            <td>–</td>
+                            <td><span class="theory-word--red">ä</span>lt<span class="theory-word--violet">er</span></td>
+                            <td>–</td>
+                            <td><span class="theory-word--yellow">am</span> <span class="theory-word--red">ä</span>lt<span style="color:#9fcc5f; font-weight:700;">e</span><span class="theory-word--yellow">sten</span>*</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <p class="steigerung-note">
+            Если прилагательное заканчивается на
+            <span style="color:#9fcc5f; font-weight:700;">-en</span>,
+            <span style="color:#9fcc5f; font-weight:700;">-el</span>,
+            <span style="color:#9fcc5f; font-weight:700;">-er</span>,
+            то в <span class="theory-word--violet">Komparativ</span> оно утрачивает
+            <span class="theory-word--bold">-e</span> перед
+            <span class="theory-word--bold">-n</span>, <span class="theory-word--bold">-l</span>,
+            <span class="theory-word--bold">-r</span>
+        </p>
+
+        <div class="modal-table-scroll">
+            <div class="steigerung-wide">
+                <table class="steigerung-table">
+                    <colgroup>
+                        <col style="width:30%;">
+                        <col style="width:4%;">
+                        <col style="width:30%;">
+                        <col style="width:4%;">
+                        <col style="width:32%;">
+                    </colgroup>
+                    <tbody>
+                        <tr class="word-row">
+                            <td>dunk<span style="color:#9fcc5f; font-weight:700;">el</span></td>
+                            <td>–</td>
+                            <td>dunk<span class="theory-word--violet">ler</span></td>
+                            <td>–</td>
+                            <td><span class="theory-word--yellow">am</span> dunkel<span class="theory-word--yellow">sten</span></td>
+                        </tr>
+                        <tr class="word-row">
+                            <td>sau<span style="color:#9fcc5f; font-weight:700;">er</span></td>
+                            <td>–</td>
+                            <td>sau<span class="theory-word--violet">rer</span></td>
+                            <td>–</td>
+                            <td><span class="theory-word--yellow">am</span> sauer<span class="theory-word--yellow">sten</span>*</td>
+                        </tr>
+                        <tr class="word-row">
+                            <td>trock<span style="color:#9fcc5f; font-weight:700;">en</span></td>
+                            <td>–</td>
+                            <td>trockn<span class="theory-word--violet">er</span></td>
+                            <td>–</td>
+                            <td><span class="theory-word--yellow">am</span> trocken<span class="theory-word--yellow">sten</span>*</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <p class="steigerung-footnote">
+            *Если прилагательное оканчивается на
+            <span class="theory-word--bold">-s</span>, <span class="theory-word--bold">-ß</span>,
+            <span class="theory-word--bold">-st</span>, <span class="theory-word--bold">-t</span>,
+            <span class="theory-word--bold">-tz</span>, <span class="theory-word--bold">-z</span>,
+            <span class="theory-word--bold">-x</span>, то перед суффиксом
+            <span class="theory-word--yellow">-sten</span> добавляется дополнительная буква
+            <span class="theory-word--bold">-e</span>.
+        </p>
+    </section>
+</article>

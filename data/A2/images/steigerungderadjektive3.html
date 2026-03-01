@@ -1,0 +1,169 @@
+<article class="modal-html-content">
+    <section class="theory-card steigerung-usage">
+        <style>
+            .steigerung-usage {
+                --steigerung-line: #d2d5da;
+            }
+
+            .steigerung-usage .steigerung-intro {
+                max-width: 1120px;
+                margin: 0 auto;
+                line-height: 1.35;
+            }
+
+            .steigerung-usage .steigerung-usage-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 20px auto 0;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .steigerung-usage .steigerung-usage-table th,
+            .steigerung-usage .steigerung-usage-table td {
+                border-bottom: 1px solid var(--steigerung-line);
+                padding: 12px 14px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+
+            .steigerung-usage .steigerung-usage-table thead th {
+                font-size: var(--desktop-modal-header-font-size);
+                font-weight: 700;
+                padding-top: 0;
+                padding-bottom: 10px;
+            }
+
+            .steigerung-usage .steigerung-note {
+                max-width: 1120px;
+                margin: 18px auto 0;
+                line-height: 1.35;
+            }
+
+            @media (max-width: 1200px) {
+                .steigerung-usage .steigerung-intro,
+                .steigerung-usage .steigerung-note,
+                .steigerung-usage .theory-list li {
+                    font-size: 1rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table {
+                    width: 860px;
+                    min-width: 860px;
+                }
+
+                .steigerung-usage .steigerung-usage-table thead th {
+                    font-size: 1.7rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table th,
+                .steigerung-usage .steigerung-usage-table td {
+                    padding: 10px 10px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .steigerung-usage .steigerung-intro,
+                .steigerung-usage .steigerung-note,
+                .steigerung-usage .theory-list li {
+                    font-size: 0.82rem;
+                    line-height: 1.25;
+                }
+
+                .steigerung-usage .steigerung-usage-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-usage .steigerung-usage-table thead th {
+                    font-size: 0.95rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table th,
+                .steigerung-usage .steigerung-usage-table td {
+                    padding: 8px 6px;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                    font-size: 0.8rem;
+                }
+            }
+        </style>
+
+        <p class="steigerung-intro">
+            Если прилагательное в любой форме
+            (<span class="theory-word--bold">Positiv</span>,
+            <span class="theory-word--violet">Komparativ</span> или
+            <span class="theory-word--yellow">Superlativ</span>) стоит
+            <span class="theory-word--bold">справа</span> от
+            <span class="theory-word--bold">имени существительного</span>, то оно не склоняется и не добавляет
+            никаких окончаний. Если же оно стоит <span class="theory-word--bold">слева</span> от
+            <span class="theory-word--bold">имени существительного</span>, то оно склоняется и добавляет окончания
+            в зависимости от артикля, падежа и рода имени существительного.
+        </p>
+
+        <div class="modal-table-scroll">
+            <table class="steigerung-usage-table">
+                <colgroup>
+                    <col style="width:24%;">
+                    <col style="width:38%;">
+                    <col style="width:38%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Прилагательное справа</th>
+                        <th>Прилагательное слева</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Positiv</th>
+                        <td>Das <span class="theory-word--bold">Auto</span> ist schnell.</td>
+                        <td>Das ist <span class="theory-word--bold">ein</span> schnell<span class="theory-word--bold">es</span> <span class="theory-word--bold">Auto</span>.</td>
+                    </tr>
+                    <tr>
+                        <th class="theory-word--violet">Komparativ</th>
+                        <td>Das <span class="theory-word--bold">Auto</span> ist schnell<span class="theory-word--violet">er</span>.</td>
+                        <td>Das ist <span class="theory-word--bold">ein</span> schnell<span class="theory-word--violet">er</span><span class="theory-word--bold">es</span> <span class="theory-word--bold">Auto</span>.</td>
+                    </tr>
+                    <tr>
+                        <th class="theory-word--yellow">Superlativ</th>
+                        <td>Das <span class="theory-word--bold">Auto</span> ist <span class="theory-word--yellow">am</span> schnell<span class="theory-word--yellow">sten</span>.</td>
+                        <td>Das ist <span class="theory-word--yellow">das</span> schnell<span class="theory-word--yellow">ste</span> <span class="theory-word--bold">Auto</span>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="steigerung-note">
+            <span class="theory-word--red">Внимание!</span> В форме
+            <span class="theory-word--bold">Superlativ</span>, когда прилагательное стоит
+            <span class="theory-word--bold">перед существительным</span>, частица
+            <span class="theory-word--bold">am</span> не употребляется, а вместо нее используется
+            <span class="theory-word--bold">определенный артикль</span>.
+        </p>
+
+        <p class="steigerung-note">
+            Сравнительная степень часто используется с союзом
+            <span class="theory-word--bold">“als”</span> (чем):
+        </p>
+        <ul class="theory-list" style="margin-top: 4px;">
+            <li>Er ist j<span class="theory-word--violet">ünger</span> <span class="theory-word--bold">als</span> ich. — Он моложе, чем я;</li>
+            <li>Mein Auto ist schnell<span class="theory-word--violet">er</span> <span class="theory-word--bold">als</span> dein Auto. — Моя машина быстрее, чем твоя.</li>
+        </ul>
+
+        <p class="steigerung-note">
+            Для того, чтобы сказать, что что-то обладает тем же свойством, что и другой объект,
+            используется структура <span class="theory-word--bold">“gleich so...”</span> или
+            <span class="theory-word--bold">“genauso...”</span> +
+            <span class="theory-word--bold">“...wie”</span>. Прилагательное при этом остается в форме
+            <span class="theory-word--bold">Positiv</span> — в начальной форме:
+        </p>
+        <ul class="theory-list" style="margin-top: 4px;">
+            <li>Mein Auto ist <span class="theory-word--bold">gleich so</span> schnell <span class="theory-word--bold">wie</span> deins. — Моя машина такая же быстрая, как и твоя;</li>
+            <li>Mein Haus ist <span class="theory-word--bold">genauso</span> schön <span class="theory-word--bold">wie</span> seins. — Мой дом такой же красивый, как и твой.</li>
+        </ul>
+    </section>
+</article>

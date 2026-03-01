@@ -31,6 +31,7 @@ import TeKaMoLo from "../exercises/A2/TeKaMoLo";
 import Verbrektion from "../exercises/A2/Verbrektion";
 import Konjunktiv2 from "../exercises/A2/Konjunktiv2";
 import Adjektivdeklination from "../exercises/A2/Adjektivdeklination";
+import SteigerungDerAdjektive from "../exercises/A2/SteigerungDerAdjektive";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -169,6 +170,10 @@ export const EXERCISES_BY_LEVEL = {
         "adjektivdeklination": {
             storageKey: "adjektivdeklination-answers",
             component: Adjektivdeklination,
+        },
+        "steigerung-der-adjektive": {
+            storageKey: "steigerung-der-adjektive-answers",
+            component: SteigerungDerAdjektive,
         }
     },
 };

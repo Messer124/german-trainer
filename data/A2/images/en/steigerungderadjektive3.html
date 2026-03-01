@@ -1,0 +1,169 @@
+<article class="modal-html-content">
+    <section class="theory-card steigerung-usage">
+        <style>
+            .steigerung-usage {
+                --steigerung-line: #d2d5da;
+            }
+
+            .steigerung-usage .steigerung-intro {
+                max-width: 1120px;
+                margin: 0 auto;
+                line-height: 1.35;
+            }
+
+            .steigerung-usage .steigerung-usage-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 20px auto 0;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .steigerung-usage .steigerung-usage-table th,
+            .steigerung-usage .steigerung-usage-table td {
+                border-bottom: 1px solid var(--steigerung-line);
+                padding: 12px 14px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+
+            .steigerung-usage .steigerung-usage-table thead th {
+                font-size: var(--desktop-modal-header-font-size);
+                font-weight: 700;
+                padding-top: 0;
+                padding-bottom: 10px;
+            }
+
+            .steigerung-usage .steigerung-note {
+                max-width: 1120px;
+                margin: 18px auto 0;
+                line-height: 1.35;
+            }
+
+            @media (max-width: 1200px) {
+                .steigerung-usage .steigerung-intro,
+                .steigerung-usage .steigerung-note,
+                .steigerung-usage .theory-list li {
+                    font-size: 1rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table {
+                    width: 860px;
+                    min-width: 860px;
+                }
+
+                .steigerung-usage .steigerung-usage-table thead th {
+                    font-size: 1.7rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table th,
+                .steigerung-usage .steigerung-usage-table td {
+                    padding: 10px 10px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .steigerung-usage .steigerung-intro,
+                .steigerung-usage .steigerung-note,
+                .steigerung-usage .theory-list li {
+                    font-size: 0.82rem;
+                    line-height: 1.25;
+                }
+
+                .steigerung-usage .steigerung-usage-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-usage .steigerung-usage-table thead th {
+                    font-size: 0.95rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table th,
+                .steigerung-usage .steigerung-usage-table td {
+                    padding: 8px 6px;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                    font-size: 0.8rem;
+                }
+            }
+        </style>
+
+        <p class="steigerung-intro">
+            If the adjective in any form
+            (<span class="theory-word--bold">Positiv</span>,
+            <span class="theory-word--violet">Komparativ</span> or
+            <span class="theory-word--yellow">Superlativ</span>) stands to the
+            <span class="theory-word--bold">right</span> of the
+            <span class="theory-word--bold">noun</span>, it is not declined and does not add any endings.
+            If it stands to the <span class="theory-word--bold">left</span> of the
+            <span class="theory-word--bold">noun</span>, it is declined and adds endings depending on the article,
+            case and gender of the noun.
+        </p>
+
+        <div class="modal-table-scroll">
+            <table class="steigerung-usage-table">
+                <colgroup>
+                    <col style="width:24%;">
+                    <col style="width:38%;">
+                    <col style="width:38%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Adjective on the right</th>
+                        <th>Adjective on the left</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Positiv</th>
+                        <td>Das <span class="theory-word--bold">Auto</span> ist schnell.</td>
+                        <td>Das ist <span class="theory-word--bold">ein</span> schnell<span class="theory-word--bold">es</span> <span class="theory-word--bold">Auto</span>.</td>
+                    </tr>
+                    <tr>
+                        <th class="theory-word--violet">Komparativ</th>
+                        <td>Das <span class="theory-word--bold">Auto</span> ist schnell<span class="theory-word--violet">er</span>.</td>
+                        <td>Das ist <span class="theory-word--bold">ein</span> schnell<span class="theory-word--violet">er</span><span class="theory-word--bold">es</span> <span class="theory-word--bold">Auto</span>.</td>
+                    </tr>
+                    <tr>
+                        <th class="theory-word--yellow">Superlativ</th>
+                        <td>Das <span class="theory-word--bold">Auto</span> ist <span class="theory-word--yellow">am</span> schnell<span class="theory-word--yellow">sten</span>.</td>
+                        <td>Das ist <span class="theory-word--yellow">das</span> schnell<span class="theory-word--yellow">ste</span> <span class="theory-word--bold">Auto</span>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="steigerung-note">
+            <span class="theory-word--red">Attention!</span> In the
+            <span class="theory-word--bold">Superlativ</span>, when the adjective stands
+            <span class="theory-word--bold">before a noun</span>, the particle
+            <span class="theory-word--bold">am</span> is not used; instead, the
+            <span class="theory-word--bold">definite article</span> is used.
+        </p>
+
+        <p class="steigerung-note">
+            The comparative degree is often used with the conjunction
+            <span class="theory-word--bold">“als”</span> (than):
+        </p>
+        <ul class="theory-list" style="margin-top: 4px;">
+            <li>Er ist j<span class="theory-word--violet">ünger</span> <span class="theory-word--bold">als</span> ich. — He is younger than me;</li>
+            <li>Mein Auto ist schnell<span class="theory-word--violet">er</span> <span class="theory-word--bold">als</span> dein Auto. — My car is faster than yours.</li>
+        </ul>
+
+        <p class="steigerung-note">
+            To say that something has the same quality as another object, the structure
+            <span class="theory-word--bold">“gleich so...”</span> or
+            <span class="theory-word--bold">“genauso...”</span> +
+            <span class="theory-word--bold">“...wie”</span> is used. In this case the adjective remains in the
+            <span class="theory-word--bold">Positiv</span> form — the basic form:
+        </p>
+        <ul class="theory-list" style="margin-top: 4px;">
+            <li>Mein Auto ist <span class="theory-word--bold">gleich so</span> schnell <span class="theory-word--bold">wie</span> deins. — My car is just as fast as yours;</li>
+            <li>Mein Haus ist <span class="theory-word--bold">genauso</span> schön <span class="theory-word--bold">wie</span> seins. — My house is just as beautiful as his.</li>
+        </ul>
+    </section>
+</article>

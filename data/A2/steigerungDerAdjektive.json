@@ -1,0 +1,250 @@
+{
+  "title": {
+    "ru": "Steigerung der Adjektive",
+    "en": "Steigerung der Adjektive"
+  },
+  "instructions": {
+    "ru": "Напишите формы Komparativ, Superlativ от прилагательных",
+    "en": "Write the comparative and superlative forms of the adjectives."
+  },
+  "items": [
+    {
+      "sentence": "klein — ___ — ___",
+      "answers": [
+        "kleiner",
+        "am kleinsten"
+      ]
+    },
+    {
+      "sentence": "langsam — ___ — ___",
+      "answers": [
+        "langsamer",
+        "am langsamsten"
+      ]
+    },
+    {
+      "sentence": "langweilig — ___ — ___",
+      "answers": [
+        "langweiliger",
+        "am langweiligsten"
+      ]
+    },
+    {
+      "sentence": "interessant — ___ — ___",
+      "answers": [
+        "interessanter",
+        "am interessantesten"
+      ]
+    },
+    {
+      "sentence": "schlecht — ___ — ___",
+      "answers": [
+        "schlechter",
+        "am schlechtesten"
+      ]
+    },
+    {
+      "sentence": "alt — ___ — ___",
+      "answers": [
+        "älter",
+        "am ältesten"
+      ]
+    },
+    {
+      "sentence": "gesund — ___ — ___",
+      "answers": [
+        "gesünder",
+        "am gesündesten"
+      ]
+    },
+    {
+      "sentence": "groß — ___ — ___",
+      "answers": [
+        "größer",
+        "am größten"
+      ]
+    },
+    {
+      "sentence": "hoch — ___ — ___",
+      "answers": [
+        "höher",
+        "am höchsten"
+      ]
+    },
+    {
+      "sentence": "gut — ___ — ___",
+      "answers": [
+        "besser",
+        "am besten"
+      ]
+    },
+    {
+      "sentence": "viel — ___ — ___",
+      "answers": [
+        "mehr",
+        "am meisten"
+      ]
+    },
+    {
+      "sentence": "gern — ___ — ___",
+      "answers": [
+        "lieber",
+        "am liebsten"
+      ]
+    },
+    {
+      "sentence": "teuer — ___ — ___",
+      "answers": [
+        "teurer",
+        "am teuersten"
+      ]
+    },
+    {
+      "sentence": "schnell — ___ — ___",
+      "answers": [
+        "schneller",
+        "am schnellsten"
+      ]
+    },
+    {
+      "sentence": "jung — ___ — ___",
+      "answers": [
+        "jünger",
+        "am jüngsten"
+      ]
+    },
+    {
+      "sentence": "klar — ___ — ___",
+      "answers": [
+        "klarer",
+        "am klarsten"
+      ]
+    },
+    {
+      "sentence": "schön — ___ — ___",
+      "answers": [
+        "schöner",
+        "am schönsten"
+      ]
+    },
+    {
+      "sentence": "kurz — ___ — ___",
+      "answers": [
+        "kürzer",
+        "am kürzesten"
+      ]
+    },
+    {
+      "sentence": "lang — ___ — ___",
+      "answers": [
+        "länger",
+        "am längsten"
+      ]
+    },
+    {
+      "sentence": "warm — ___ — ___",
+      "answers": [
+        "wärmer",
+        "am wärmsten"
+      ]
+    },
+    {
+      "sentence": "laut — ___ — ___",
+      "answers": [
+        "lauter",
+        "am lautesten"
+      ]
+    },
+    {
+      "sentence": "kalt — ___ — ___",
+      "answers": [
+        "kälter",
+        "am kältesten"
+      ]
+    },
+    {
+      "sentence": "billig — ___ — ___",
+      "answers": [
+        "billiger",
+        "am billigsten"
+      ]
+    },
+    {
+      "sentence": "früh — ___ — ___",
+      "answers": [
+        "früher",
+        "am frühesten"
+      ]
+    },
+    {
+      "sentence": "spät — ___ — ___",
+      "answers": [
+        "später",
+        "am spätesten"
+      ]
+    },
+    {
+      "sentence": "leicht — ___ — ___",
+      "answers": [
+        "leichter",
+        "am leichtesten"
+      ]
+    },
+    {
+      "sentence": "faul — ___ — ___",
+      "answers": [
+        "fauler",
+        "am faulsten"
+      ]
+    },
+    {
+      "sentence": "schwer — ___ — ___",
+      "answers": [
+        "schwerer",
+        "am schwersten"
+      ]
+    },
+    {
+      "sentence": "stark — ___ — ___",
+      "answers": [
+        "stärker",
+        "am stärksten"
+      ]
+    },
+    {
+      "sentence": "nah — ___ — ___",
+      "answers": [
+        "näher",
+        "am nächsten"
+      ]
+    },
+    {
+      "sentence": "weit — ___ — ___",
+      "answers": [
+        "weiter",
+        "am weitesten"
+      ]
+    },
+    {
+      "sentence": "neu — ___ — ___",
+      "answers": [
+        "neuer",
+        "am neuesten"
+      ]
+    },
+    {
+      "sentence": "wichtig — ___ — ___",
+      "answers": [
+        "wichtiger",
+        "am wichtigsten"
+      ]
+    },
+    {
+      "sentence": "einfach — ___ — ___",
+      "answers": [
+        "einfacher",
+        "am einfachsten"
+      ]
+    }
+  ]
+}
