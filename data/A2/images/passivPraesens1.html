@@ -1,0 +1,163 @@
+<article class="modal-html-content">
+    <section class="theory-card passiv-praesens-intro">
+        <style>
+            .passiv-praesens-intro {
+                --passiv-line: #d9d9de;
+                --passiv-blue: #6a70be;
+                --passiv-red: #ef615c;
+                --passiv-yellow: #f0bc3f;
+            }
+
+            .passiv-praesens-intro .passiv-lead {
+                line-height: 1.32;
+            }
+
+            .passiv-praesens-intro .passiv-lead .theory-list {
+                margin-top: 6px;
+                margin-bottom: 14px;
+            }
+
+            .passiv-praesens-intro .passiv-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 18px 0 18px;
+                border-top: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-cell {
+                padding: 12px 18px 10px;
+                border-bottom: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-cell:nth-child(odd) {
+                border-right: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-label {
+                margin: 0 0 4px;
+                font-size: 0.96em;
+                line-height: 1.1;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-intro .passiv-label--blue {
+                color: var(--passiv-blue);
+            }
+
+            .passiv-praesens-intro .passiv-label--red {
+                color: var(--passiv-red);
+            }
+
+            .passiv-praesens-intro .passiv-label--yellow {
+                color: var(--passiv-yellow);
+            }
+
+            .passiv-praesens-intro .passiv-example {
+                margin: 0;
+                line-height: 1.18;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-intro .passiv-cell {
+                    padding: 10px 14px 9px;
+                }
+
+                .passiv-praesens-intro .passiv-label {
+                    font-size: 0.92em;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-intro .passiv-grid {
+                    grid-template-columns: 1fr;
+                    margin-top: 14px;
+                }
+
+                .passiv-praesens-intro .passiv-cell {
+                    padding: 9px 8px 8px;
+                }
+
+                .passiv-praesens-intro .passiv-cell:nth-child(odd) {
+                    border-right: none;
+                }
+
+                .passiv-praesens-intro .passiv-label {
+                    font-size: 0.84em;
+                }
+
+                .passiv-praesens-intro .passiv-example,
+                .passiv-praesens-intro .passiv-lead,
+                .passiv-praesens-intro .theory-text {
+                    font-size: 0.84rem;
+                    line-height: 1.25;
+                }
+            }
+        </style>
+
+        <div class="passiv-lead">
+            <p class="theory-text">
+                Страдательный залог (<span class="theory-word--bold">Passiv</span>) обозначает действие,
+                направленное на лицо или предмет, выполняемое кем-то другим:
+            </p>
+
+            <ul class="theory-list">
+                <li><span class="theory-word--italic">Машина сейчас ремонтируется</span> (кто-то ремонтирует сейчас машину).</li>
+                <li><span class="theory-word--italic">Дом строится</span> (кто-то строит сейчас дом).</li>
+                <li><span class="theory-word--italic">Почему эта комната не убирается</span> (почему кто-то не убирает эту комнату?).</li>
+            </ul>
+
+            <p class="theory-text">
+                Т.е. существительное (или заменяющее его местоимение) в предложении является подлежащим,
+                но само оно действий не производит,
+                <span class="theory-word--bold">действие производится кем-то над ним</span>.
+            </p>
+        </div>
+
+        <p class="theory-text" style="margin-top: 18px;">Действие может:</p>
+
+        <div class="passiv-grid">
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--blue">Производиться в настоящем времени</p>
+                <p class="passiv-example"><span class="theory-word--italic">Дом строится.</span></p>
+            </div>
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--blue">Быть произведённым к настоящему времени</p>
+                <p class="passiv-example"><span class="theory-word--italic">Дом построен.</span> (Ура, наконец!)</p>
+            </div>
+
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--red">Производиться в будущем</p>
+                <p class="passiv-example"><span class="theory-word--italic">Дом будет строиться.</span></p>
+            </div>
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--red">Быть произведённым в будущем</p>
+                <p class="passiv-example"><span class="theory-word--italic">Дом будет построен.</span> (Надо подождать)</p>
+            </div>
+
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--yellow">Производиться в прошлом</p>
+                <p class="passiv-example"><span class="theory-word--italic">Дом строился.</span></p>
+            </div>
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--yellow">Быть произведённым в прошлом</p>
+                <p class="passiv-example"><span class="theory-word--italic">Дом был построен.</span></p>
+            </div>
+        </div>
+
+        <p class="theory-text">
+            Итак, <span class="theory-word--bold">Passiv</span> употребляется именно тогда, когда в речи
+            необходимо выделить именно <span class="theory-word--bold">действие</span>, а не того,
+            <span class="theory-word--bold">кто</span> производит это действие. Сравните:
+        </p>
+        <p class="theory-text">
+            Der Lehrer erklärt uns das Passiv. —
+            <span class="theory-word--italic">Учитель объясняет нам страдательный залог</span>
+            («герой» этого высказывания — учитель).
+        </p>
+        <p class="theory-text">
+            Uns wird das Passiv erklärt. —
+            <span class="theory-word--italic">Нам объясняют страдательный залог</span>
+            («герой» этого высказывания — страдательный залог).
+        </p>
+    </section>
+</article>

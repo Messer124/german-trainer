@@ -1,0 +1,125 @@
+<article class="modal-html-content">
+    <section class="theory-card n-deklination-intro">
+        <style>
+            .n-deklination-intro {
+                --n-line: #d9d9de;
+                --n-blue: #6a70be;
+            }
+
+            .n-deklination-intro .n-title {
+                color: var(--n-blue);
+            }
+
+            .n-deklination-intro .n-example {
+                margin: 6px 0;
+                line-height: 1.24;
+            }
+
+            .n-deklination-intro .n-note {
+                margin: 18px 0 16px;
+                line-height: 1.28;
+            }
+
+            .n-deklination-intro .n-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 8px;
+            }
+
+            .n-deklination-intro .n-table td {
+                padding: 10px 20px;
+                border-bottom: 1px solid var(--n-line);
+                vertical-align: middle;
+            }
+
+            .n-deklination-intro .n-table td + td {
+                border-left: 1px solid var(--n-line);
+            }
+
+            .n-deklination-intro .n-case {
+                width: 32%;
+                white-space: nowrap;
+            }
+
+            @media (max-width: 1200px) {
+                .n-deklination-intro .n-table td {
+                    padding: 9px 12px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .n-deklination-intro .n-table td {
+                    padding: 8px 6px;
+                    font-size: 0.82rem;
+                }
+
+                .n-deklination-intro .n-case {
+                    width: 28%;
+                    white-space: normal;
+                }
+
+                .n-deklination-intro .n-example,
+                .n-deklination-intro .n-note {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+        </style>
+
+        <h2 class="theory-title n-title">Слабое склонение имен существительных (N-Deklination)</h2>
+
+        <p class="theory-text">
+            Некоторые <span class="theory-word--bold">имена существительные мужского рода</span>* при склонении
+            по падежам получают окончания <span class="theory-word--red">“-n”</span> либо же
+            <span class="theory-word--red">“-en”</span> во всех падежах, кроме именительного
+            (<span class="theory-word--bold">Nominativ</span>) в
+            <span class="theory-word--bold">единственном числе</span>.
+        </p>
+
+        <p class="theory-text" style="margin-top: 18px;">Примеры:</p>
+        <p class="n-example">
+            Könnten Sie Ihren Namen buchstabieren? —
+            <span class="theory-word--italic">Могли бы Вы произнести по буквам Ваше имя?</span>
+            (Nominativ — der Name)
+        </p>
+        <p class="n-example">
+            Das Mädchen hat mit dem Junge<span class="theory-word--red">n</span> getanzt. —
+            <span class="theory-word--italic">Девочка танцевала с мальчиком.</span>
+            (Nominativ — der Junge)
+        </p>
+
+        <p class="n-note">
+            <span class="theory-word--red">* Примечание:</span> единственное исключение —
+            существительное среднего рода <span class="theory-word--bold">das Herz</span> (сердце),
+            и оно не получает окончание <span class="theory-word--bold">-en</span> в
+            <span class="theory-word--bold">Akkusativ</span>.
+        </p>
+
+        <div class="modal-table-scroll">
+            <table class="n-table">
+                <tbody>
+                    <tr>
+                        <td class="n-case">Nominativ</td>
+                        <td>der Junge</td>
+                        <td>das Herz</td>
+                    </tr>
+                    <tr>
+                        <td class="n-case">Akkusativ</td>
+                        <td>den Junge<span class="theory-word--red">n</span></td>
+                        <td>das Herz</td>
+                    </tr>
+                    <tr>
+                        <td class="n-case">Dativ</td>
+                        <td>dem Junge<span class="theory-word--red">n</span></td>
+                        <td>dem Herz<span class="theory-word--red">en</span></td>
+                    </tr>
+                    <tr>
+                        <td class="n-case">Genitiv</td>
+                        <td>des Junge<span class="theory-word--red">n</span></td>
+                        <td>des Herz<span class="theory-word--red">ens</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</article>

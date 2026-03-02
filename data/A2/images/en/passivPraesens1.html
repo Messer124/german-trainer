@@ -1,0 +1,163 @@
+<article class="modal-html-content">
+    <section class="theory-card passiv-praesens-intro">
+        <style>
+            .passiv-praesens-intro {
+                --passiv-line: #d9d9de;
+                --passiv-blue: #6a70be;
+                --passiv-red: #ef615c;
+                --passiv-yellow: #f0bc3f;
+            }
+
+            .passiv-praesens-intro .passiv-lead {
+                line-height: 1.32;
+            }
+
+            .passiv-praesens-intro .passiv-lead .theory-list {
+                margin-top: 6px;
+                margin-bottom: 14px;
+            }
+
+            .passiv-praesens-intro .passiv-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 18px 0 18px;
+                border-top: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-cell {
+                padding: 12px 18px 10px;
+                border-bottom: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-cell:nth-child(odd) {
+                border-right: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-label {
+                margin: 0 0 4px;
+                font-size: 0.96em;
+                line-height: 1.1;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-intro .passiv-label--blue {
+                color: var(--passiv-blue);
+            }
+
+            .passiv-praesens-intro .passiv-label--red {
+                color: var(--passiv-red);
+            }
+
+            .passiv-praesens-intro .passiv-label--yellow {
+                color: var(--passiv-yellow);
+            }
+
+            .passiv-praesens-intro .passiv-example {
+                margin: 0;
+                line-height: 1.18;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-intro .passiv-cell {
+                    padding: 10px 14px 9px;
+                }
+
+                .passiv-praesens-intro .passiv-label {
+                    font-size: 0.92em;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-intro .passiv-grid {
+                    grid-template-columns: 1fr;
+                    margin-top: 14px;
+                }
+
+                .passiv-praesens-intro .passiv-cell {
+                    padding: 9px 8px 8px;
+                }
+
+                .passiv-praesens-intro .passiv-cell:nth-child(odd) {
+                    border-right: none;
+                }
+
+                .passiv-praesens-intro .passiv-label {
+                    font-size: 0.84em;
+                }
+
+                .passiv-praesens-intro .passiv-example,
+                .passiv-praesens-intro .passiv-lead,
+                .passiv-praesens-intro .theory-text {
+                    font-size: 0.84rem;
+                    line-height: 1.25;
+                }
+            }
+        </style>
+
+        <div class="passiv-lead">
+            <p class="theory-text">
+                The passive voice (<span class="theory-word--bold">Passiv</span>) describes an action directed at a
+                person or object and performed by someone else:
+            </p>
+
+            <ul class="theory-list">
+                <li><span class="theory-word--italic">The car is being repaired now</span> (someone is repairing the car now).</li>
+                <li><span class="theory-word--italic">The house is being built</span> (someone is building the house now).</li>
+                <li><span class="theory-word--italic">Why isn't this room being cleaned</span> (why isn't someone cleaning this room?).</li>
+            </ul>
+
+            <p class="theory-text">
+                In other words, the noun (or the pronoun replacing it) is the subject of the sentence,
+                but it does not perform the action itself:
+                <span class="theory-word--bold">the action is performed on it by someone else</span>.
+            </p>
+        </div>
+
+        <p class="theory-text" style="margin-top: 18px;">An action can:</p>
+
+        <div class="passiv-grid">
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--blue">Be carried out in the present</p>
+                <p class="passiv-example"><span class="theory-word--italic">The house is being built.</span></p>
+            </div>
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--blue">Already be completed by the present moment</p>
+                <p class="passiv-example"><span class="theory-word--italic">The house is built.</span> (Finally!)</p>
+            </div>
+
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--red">Be carried out in the future</p>
+                <p class="passiv-example"><span class="theory-word--italic">The house will be built.</span></p>
+            </div>
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--red">Be completed in the future</p>
+                <p class="passiv-example"><span class="theory-word--italic">The house will be completed.</span> (We need to wait.)</p>
+            </div>
+
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--yellow">Be carried out in the past</p>
+                <p class="passiv-example"><span class="theory-word--italic">The house was being built.</span></p>
+            </div>
+            <div class="passiv-cell">
+                <p class="passiv-label passiv-label--yellow">Be completed in the past</p>
+                <p class="passiv-example"><span class="theory-word--italic">The house had been built.</span></p>
+            </div>
+        </div>
+
+        <p class="theory-text">
+            So, <span class="theory-word--bold">Passiv</span> is used when we need to emphasize the
+            <span class="theory-word--bold">action</span> itself rather than
+            <span class="theory-word--bold">who</span> performs it. Compare:
+        </p>
+        <p class="theory-text">
+            Der Lehrer erklärt uns das Passiv. —
+            <span class="theory-word--italic">The teacher explains the passive voice to us</span>
+            (the “hero” of the statement is the teacher).
+        </p>
+        <p class="theory-text">
+            Uns wird das Passiv erklärt. —
+            <span class="theory-word--italic">The passive voice is explained to us</span>
+            (the “hero” of the statement is the passive voice).
+        </p>
+    </section>
+</article>

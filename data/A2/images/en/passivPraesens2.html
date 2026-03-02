@@ -1,0 +1,197 @@
+<article class="modal-html-content">
+    <section class="theory-card passiv-praesens-forms">
+        <style>
+            .passiv-praesens-forms {
+                --passiv-line: #d9d9de;
+            }
+
+            .passiv-praesens-forms .passiv-intro {
+                max-width: 1120px;
+                margin: 0 auto 14px;
+                line-height: 1.35;
+            }
+
+            .passiv-praesens-forms .passiv-compare-table,
+            .passiv-praesens-forms .passiv-pronouns-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .passiv-praesens-forms .passiv-compare-table td,
+            .passiv-praesens-forms .passiv-compare-table th,
+            .passiv-praesens-forms .passiv-pronouns-table td {
+                border-bottom: 1px solid var(--passiv-line);
+                padding: 10px 16px;
+                vertical-align: middle;
+            }
+
+            .passiv-praesens-forms .passiv-compare-table td + td,
+            .passiv-praesens-forms .passiv-pronouns-table td + td {
+                border-left: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-forms .passiv-head {
+                text-align: center;
+                font-size: 0.98em;
+                line-height: 1.12;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-forms .passiv-section-title {
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.08em;
+            }
+
+            .passiv-praesens-forms .passiv-formula {
+                text-align: center;
+                font-size: 1em;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-forms .passiv-example {
+                line-height: 1.14;
+            }
+
+            .passiv-praesens-forms .passiv-pronouns-table td {
+                font-size: 0.98em;
+                line-height: 1.18;
+                white-space: nowrap;
+            }
+
+            .passiv-praesens-forms .passiv-note {
+                max-width: 1120px;
+                margin: 18px auto 10px;
+                line-height: 1.35;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-forms .passiv-compare-table,
+                .passiv-praesens-forms .passiv-pronouns-table {
+                    width: 860px;
+                    min-width: 860px;
+                }
+
+                .passiv-praesens-forms .passiv-compare-table td,
+                .passiv-praesens-forms .passiv-compare-table th,
+                .passiv-praesens-forms .passiv-pronouns-table td {
+                    padding: 9px 10px;
+                }
+
+                .passiv-praesens-forms .passiv-head {
+                    font-size: 0.92em;
+                }
+
+                .passiv-praesens-forms .passiv-pronouns-table td,
+                .passiv-praesens-forms .passiv-note,
+                .passiv-praesens-forms .passiv-intro {
+                    font-size: 0.96rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-forms .passiv-compare-table,
+                .passiv-praesens-forms .passiv-pronouns-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-forms .passiv-compare-table td,
+                .passiv-praesens-forms .passiv-compare-table th,
+                .passiv-praesens-forms .passiv-pronouns-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-forms .passiv-head {
+                    font-size: 0.86em;
+                }
+
+                .passiv-praesens-forms .passiv-section-title {
+                    font-size: 1em;
+                }
+
+                .passiv-praesens-forms .passiv-formula,
+                .passiv-praesens-forms .passiv-note,
+                .passiv-praesens-forms .passiv-intro {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+        </style>
+
+        <h2 class="theory-title">The Passive in the Present Tense</h2>
+
+        <p class="passiv-intro">
+            Passiv can express both an <span class="theory-word--red">action</span> and a
+            <span class="theory-word--yellow">state</span>:
+        </p>
+
+        <div class="modal-table-scroll">
+            <table class="passiv-compare-table">
+                <colgroup>
+                    <col style="width:50%;">
+                    <col style="width:50%;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td class="passiv-head">
+                            <span class="theory-word--red">Vorgangspassiv / Werden-Passiv</span><br>
+                            <span style="font-weight:400;">(action or process)</span>
+                        </td>
+                        <td class="passiv-head">
+                            <span class="theory-word--yellow">Zustandspassiv / Sein-Passiv</span><br>
+                            <span style="font-weight:400;">(result of an action or process)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="passiv-section-title">Formation</td>
+                    </tr>
+                    <tr>
+                        <td class="passiv-formula"><span class="theory-word--red">werden</span> + <span class="theory-word--violet">Partizip II</span></td>
+                        <td class="passiv-formula"><span class="theory-word--yellow">sein</span> + <span class="theory-word--violet">Partizip II</span></td>
+                    </tr>
+                    <tr>
+                        <td class="passiv-example">Das Haus <span class="theory-word--red">wird</span> <span class="theory-word--violet">gebaut</span>. — <span class="theory-word--italic">The house is being built.</span><br>Die Probleme <span class="theory-word--red">werden</span> <span class="theory-word--violet">gelöst</span>. — <span class="theory-word--italic">The problems are being solved.</span></td>
+                        <td class="passiv-example">Das Haus <span class="theory-word--yellow">ist</span> <span class="theory-word--violet">gebaut</span>. — <span class="theory-word--italic">The house is built.</span><br>Die Probleme <span class="theory-word--yellow">sind</span> <span class="theory-word--violet">gelöst</span>. — <span class="theory-word--italic">The problems are solved.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="passiv-note">
+            The auxiliary verbs <span class="theory-word--red">werden</span> and
+            <span class="theory-word--yellow">sein</span> change according to person and number,
+            while the main verb in <span class="theory-word--violet">Partizip II</span> remains unchanged:
+        </p>
+
+        <div class="modal-table-scroll">
+            <table class="passiv-pronouns-table">
+                <colgroup>
+                    <col style="width:50%;">
+                    <col style="width:50%;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>ich <span class="theory-word--red">werde</span>/<span class="theory-word--yellow">bin</span> <span class="theory-word--violet">beobachtet</span></td>
+                        <td>wir <span class="theory-word--red">werden</span>/<span class="theory-word--yellow">sind</span> <span class="theory-word--violet">beobachtet</span></td>
+                    </tr>
+                    <tr>
+                        <td>du <span class="theory-word--red">wirst</span>/<span class="theory-word--yellow">bist</span> <span class="theory-word--violet">beobachtet</span></td>
+                        <td>ihr <span class="theory-word--red">werdet</span>/<span class="theory-word--yellow">seid</span> <span class="theory-word--violet">beobachtet</span></td>
+                    </tr>
+                    <tr>
+                        <td>er, sie, es <span class="theory-word--red">wird</span>/<span class="theory-word--yellow">ist</span> <span class="theory-word--violet">beobachtet</span></td>
+                        <td>sie, Sie <span class="theory-word--red">werden</span>/<span class="theory-word--yellow">sind</span> <span class="theory-word--violet">beobachtet</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</article>

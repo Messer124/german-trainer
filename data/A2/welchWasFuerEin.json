@@ -1,0 +1,212 @@
+{
+  "title": {
+    "ru": "Welch / Was für ein",
+    "en": "Welch / Was für ein"
+  },
+  "instructions": {
+    "ru": "Подберите нужный вопрос was für ein/e или welche",
+    "en": "Select the correct question: was für ein/e or welche"
+  },
+  "items": [
+    {
+      "sentence": "___ Referat muss schon geschrieben sein?",
+      "answer": "Welches"
+    },
+    {
+      "sentence": "___ Buch willst du deinem Freund schenken? — Einen Krimi.",
+      "answer": "Was für ein"
+    },
+    {
+      "sentence": "___ Stadtteil gefällt dir in Köln am besten? — Ehrenfeld.",
+      "answer": "Welcher"
+    },
+    {
+      "sentence": "___ Leute arbeiten in deiner Firma? — Viele nette Kollegen.",
+      "answer": "Was für"
+    },
+    {
+      "sentence": "___ Kaffee möchtest du? — Einen Cappuccino.",
+      "answer": "Welchen"
+    },
+    {
+      "sentence": "___ Wohnung suchst du? — Eine helle in der Nähe.",
+      "answer": "Was für eine"
+    },
+    {
+      "sentence": "___ Leute sind deine Nachbarn? — Sie sind sehr nett und freundlich.",
+      "answer": "Was für"
+    },
+    {
+      "sentence": "___ Termin passt dir besser: Montag oder Dienstag? — Dienstag.",
+      "answer": "Welcher"
+    },
+    {
+      "sentence": "___ Jacke soll ich nehmen? — Die blaue.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Sprachen lernst du gerade? — Deutsch und Englisch.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Kurs machst du jetzt? — Einen Deutschkurs.",
+      "answer": "Welchen"
+    },
+    {
+      "sentence": "___ Freund kommt heute mit? — Mein bester Freund.",
+      "answer": "Welcher"
+    },
+    {
+      "sentence": "___ Typ ist euer Professor? — Er ist ein strenger Mensch.",
+      "answer": "Was für ein"
+    },
+    {
+      "sentence": "___ Musik hörst du gern? — Pop und Rock.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Sprache ist für dich am schwierigsten? — Deutsch.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Schüler besuchen den Deutschkurs? — Julia und Maxim.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Fernsehsendung findest du interessant? — Die Nachrichten.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Vortrag ist besonders interessant? — Der Vortrag dieses Studenten.",
+      "answer": "Welcher"
+    },
+    {
+      "sentence": "___ Handy hast du? — Ein Samsung.",
+      "answer": "Welches"
+    },
+    {
+      "sentence": "___ App benutzt du für Tickets? — Die DB-App.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Ausbildung willst du machen? — Eine kaufmännische.",
+      "answer": "Was für eine"
+    },
+    {
+      "sentence": "___ Schuhe möchtest du? — Bequeme Sportschuhe.",
+      "answer": "Was für"
+    },
+    {
+      "sentence": "___ Berufsschule besuchst du? — Die Hans-Böckler-Berufsschule in meiner Stadt.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Leute kommen zur Party? — Freunde aus dem Kurs.",
+      "answer": "Was für"
+    },
+    {
+      "sentence": "___ Ausbildung möchtest du bekommen? — Eine technische.",
+      "answer": "Was für eine"
+    },
+    {
+      "sentence": "___ Note muss man haben, um die Abschlussprüfung zu bestehen? — Mindestens eine Vier.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Wetter haben wir heute? — Sonniges Wetter.",
+      "answer": "Was für ein"
+    },
+    {
+      "sentence": "___ Zimmer ist deins? — Das hinten links.",
+      "answer": "Welches"
+    },
+    {
+      "sentence": "___ Mensch ist der Journalist Ingo Weiß? — Leider kenne ich diesen Journalisten nicht.",
+      "answer": "Was für ein"
+    },
+    {
+      "sentence": "___ Bücher liest du gern? — Krimis.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Auto möchtest du kaufen? — Ein kleines, günstiges.",
+      "answer": "Was für ein"
+    },
+    {
+      "sentence": "___ Bus fährt zum Bahnhof? — Der 5er.",
+      "answer": "Welcher"
+    },
+    {
+      "sentence": "___ Opern dieses Komponisten kennst du?",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Arbeit suchst du? — Eine Teilzeitstelle.",
+      "answer": "Was für eine"
+    },
+    {
+      "sentence": "___ Restaurant können wir heute ausprobieren? — Das italienische um die Ecke.",
+      "answer": "Welches"
+    },
+    {
+      "sentence": "___ Sport machst du am liebsten? — Schwimmen.",
+      "answer": "Welchen"
+    },
+    {
+      "sentence": "___ Fächer magst du? — Mathe und Englisch.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Farbe gefällt dir besser: rot oder blau? — Blau.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Stadt möchtest du einmal besuchen? — Barcelona.",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Fächer magst du am liebsten?",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Problem hast du genau? — Ein kleines mit dem Drucker.",
+      "answer": "Was für ein"
+    },
+    {
+      "sentence": "___ Stadt ist Berlin? — Eine internationale.",
+      "answer": "Was für eine"
+    },
+    {
+      "sentence": "___ Essen magst du am meisten? — Pasta.",
+      "answer": "Was für ein"
+    },
+    {
+      "sentence": "___ Prüfung wird heute durchgeführt?",
+      "answer": "Welche"
+    },
+    {
+      "sentence": "___ Leute sind deine Eltern? — Sie sind sehr intelligente Leute.",
+      "answer": "Was für"
+    },
+    {
+      "sentence": "___ Geschenk soll ich für deine Mutter kaufen? — Vielleicht Blumen.",
+      "answer": "Was für ein"
+    },
+    {
+      "sentence": "___ Film schaust du heute Abend? — Eine Komödie.",
+      "answer": "Welchen"
+    },
+    {
+      "sentence": "___ Gymnasium besuchst du?",
+      "answer": "Welches"
+    },
+    {
+      "sentence": "___ Mensch war Karl der Große? — Er war ein wichtiger Kaiser.",
+      "answer": "Was für ein"
+    },
+    {
+      "sentence": "___ Beruf passt zu mir? — Den Beruf eines Architekten finde ich passend.",
+      "answer": "Welcher"
+    }
+  ]
+}

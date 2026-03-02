@@ -1,0 +1,351 @@
+{
+  "title": {
+    "ru": "N-Deklination",
+    "en": "N-Deklination"
+  },
+  "instructions": {
+    "ru": "Допишите окончания у существительных там, где нужно",
+    "en": "Add endings to nouns where necessary"
+  },
+  "items": [
+    {
+      "sentence": "Wer hat sich den ___ des ___ gemerkt?",
+      "noun": [
+        "Name",
+        "Professor"
+      ],
+      "answer": [
+        "Namen",
+        "Professors"
+      ]
+    },
+    {
+      "sentence": "Der Sohn meines ___ wohnt in der Nähe.",
+      "noun": [
+        "Lehrer"
+      ],
+      "answer": [
+        "Lehrers"
+      ]
+    },
+    {
+      "sentence": "Das Buch „Die Königin des ___“ wurde von Tom Krikovski geschrieben.",
+      "noun": [
+        "Herz"
+      ],
+      "answer": [
+        "Herzens"
+      ]
+    },
+    {
+      "sentence": "Johann Galle entdeckte 1846 einen ___.",
+      "noun": [
+        "Planet"
+      ],
+      "answer": [
+        "Planeten"
+      ]
+    },
+    {
+      "sentence": "Ich habe noch nie einen ___ gesehen.",
+      "noun": [
+        "Bär"
+      ],
+      "answer": [
+        "Bären"
+      ]
+    },
+    {
+      "sentence": "Im Urlaub habe ich einen ___ gelesen.",
+      "noun": [
+        "Roman"
+      ],
+      "answer": [
+        "Roman"
+      ]
+    },
+    {
+      "sentence": "Ich habe diesen ___ in Tomsk kennengelernt.",
+      "noun": [
+        "Russe"
+      ],
+      "answer": [
+        "Russen"
+      ]
+    },
+    {
+      "sentence": "Mir gefällt der Beruf eines ___.",
+      "noun": [
+        "Architekt"
+      ],
+      "answer": [
+        "Architekten"
+      ]
+    },
+    {
+      "sentence": "Da drüben sehen Sie das Haus des ___.",
+      "noun": [
+        "Graf"
+      ],
+      "answer": [
+        "Grafen"
+      ]
+    },
+    {
+      "sentence": "Ich bedanke mich von ganzem ___.",
+      "noun": [
+        "Herz"
+      ],
+      "answer": [
+        "Herzen"
+      ]
+    },
+    {
+      "sentence": "Die Lehrerin hilft den ___ viel.",
+      "noun": [
+        "Student"
+      ],
+      "answer": [
+        "Studenten"
+      ]
+    },
+    {
+      "sentence": "Du kannst den Ball nicht mitnehmen. Er gehört dem ___ dort.",
+      "noun": [
+        "Junge"
+      ],
+      "answer": [
+        "Jungen"
+      ]
+    },
+    {
+      "sentence": "Heute Abend koche ich mit meinem spanischen ___ eine Paella.",
+      "noun": [
+        "Freund"
+      ],
+      "answer": [
+        "Freund"
+      ]
+    },
+    {
+      "sentence": "Diese Uhr habe ich von meinen ___ zum Geburtstag bekommen.",
+      "noun": [
+        "Eltern"
+      ],
+      "answer": [
+        "Eltern"
+      ]
+    },
+    {
+      "sentence": "Die Aussprache des ___ ist sehr gut.",
+      "noun": [
+        "Student"
+      ],
+      "answer": [
+        "Studenten"
+      ]
+    },
+    {
+      "sentence": "Im Tierpark haben wir einen kleinen ___ gesehen.",
+      "noun": [
+        "Affe"
+      ],
+      "answer": [
+        "Affen"
+      ]
+    },
+    {
+      "sentence": "Euer Fußballclub hat einen sehr guten ___.",
+      "noun": [
+        "Präsident"
+      ],
+      "answer": [
+        "Präsidenten"
+      ]
+    },
+    {
+      "sentence": "Die Demonstranten hörten nicht auf die Befehle der ___.",
+      "noun": [
+        "Polizist"
+      ],
+      "answer": [
+        "Polizisten"
+      ]
+    },
+    {
+      "sentence": "Wir kommen am Ende der ___.",
+      "noun": [
+        "Woche"
+      ],
+      "answer": [
+        "Woche"
+      ]
+    },
+    {
+      "sentence": "Wir könnten den ___ fragen, ob er uns hilft",
+      "noun": [
+        "Student"
+      ],
+      "answer": [
+        "Studenten"
+      ]
+    },
+    {
+      "sentence": "Von diesem bekannten ___ habe ich schon viel gelesen.",
+      "noun": [
+        "Biologe"
+      ],
+      "answer": [
+        "Biologen"
+      ]
+    },
+    {
+      "sentence": "Das Gutachten des ___ ist schockierend.",
+      "noun": [
+        "Experte"
+      ],
+      "answer": [
+        "Experten"
+      ]
+    },
+    {
+      "sentence": "Die Bilder des ___ sind wundervoll.",
+      "noun": [
+        "Fotograf"
+      ],
+      "answer": [
+        "Fotografen"
+      ]
+    },
+    {
+      "sentence": "Er hatte den ___, sich weiterzubilden.",
+      "noun": [
+        "Gedanke"
+      ],
+      "answer": [
+        "Gedanken"
+      ]
+    },
+    {
+      "sentence": "Der Arzt schickte den ___ ins Krankenhaus.",
+      "noun": [
+        "Patient"
+      ],
+      "answer": [
+        "Patienten"
+      ]
+    },
+    {
+      "sentence": "Die Aussagen des ___ waren falsch.",
+      "noun": [
+        "Zeuge"
+      ],
+      "answer": [
+        "Zeugen"
+      ]
+    },
+    {
+      "sentence": "Wir trafen im Supermarkt einen ___.",
+      "noun": [
+        "Schotte"
+      ],
+      "answer": [
+        "Schotten"
+      ]
+    },
+    {
+      "sentence": "Ich kenne diesen ___ nicht",
+      "noun": [
+        "Herr"
+      ],
+      "answer": [
+        "Herrn"
+      ]
+    },
+    {
+      "sentence": "Die Rede des ___ war schön",
+      "noun": [
+        "Präsident"
+      ],
+      "answer": [
+        "Präsidenten"
+      ]
+    },
+    {
+      "sentence": "Der Beruf eines ___ ist für mich uninteressant",
+      "noun": [
+        "Agronom"
+      ],
+      "answer": [
+        "Agronomen"
+      ]
+    },
+    {
+      "sentence": "Hast du den Vortrag dieses ___ gelesen?",
+      "noun": [
+        "Experte"
+      ],
+      "answer": [
+        "Experten"
+      ]
+    },
+    {
+      "sentence": "Hast du Bilder dieses ___ gesehen?",
+      "noun": [
+        "Fotograf"
+      ],
+      "answer": [
+        "Fotografen"
+      ]
+    },
+    {
+      "sentence": "Er braucht Hilfe des ___.",
+      "noun": [
+        "Student"
+      ],
+      "answer": [
+        "Studenten"
+      ]
+    },
+    {
+      "sentence": "Die Arbeit eines ___ ist sehr kompliziert",
+      "noun": [
+        "Journalist"
+      ],
+      "answer": [
+        "Journalisten"
+      ]
+    },
+    {
+      "sentence": "An der Uni habe ich einen ___ und einen ___ kennengelernt",
+      "noun": [
+        "Franzose",
+        "Pole"
+      ],
+      "answer": [
+        "Franzosen",
+        "Polen"
+      ]
+    },
+    {
+      "sentence": "Die Schreibung seines ___ ist sehr kompliziert",
+      "noun": [
+        "Name"
+      ],
+      "answer": [
+        "Namens"
+      ]
+    },
+    {
+      "sentence": "Ich werde von einem ___ beobachtet. Das ist der Affe unseres ___.",
+      "noun": [
+        "Affe",
+        "Biologe"
+      ],
+      "answer": [
+        "Affen",
+        "Biologen"
+      ]
+    }
+  ]
+}

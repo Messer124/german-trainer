@@ -32,6 +32,9 @@ import Verbrektion from "../exercises/A2/Verbrektion";
 import Konjunktiv2 from "../exercises/A2/Konjunktiv2";
 import Adjektivdeklination from "../exercises/A2/Adjektivdeklination";
 import SteigerungDerAdjektive from "../exercises/A2/SteigerungDerAdjektive";
+import PassivPraesens from "../exercises/A2/PassivPraesens";
+import NDeklination from "../exercises/A2/NDeklination";
+import WelchWasFuerEin from "../exercises/A2/WelchWasFuerEin";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -174,6 +177,18 @@ export const EXERCISES_BY_LEVEL = {
         "steigerung-der-adjektive": {
             storageKey: "steigerung-der-adjektive-answers",
             component: SteigerungDerAdjektive,
+        },
+        "passiv-praesens": {
+            storageKey: "passiv-praesens-answers",
+            component: PassivPraesens,
+        },
+        "n-deklination": {
+            storageKey: "n-deklination-answers",
+            component: NDeklination,
+        },
+        "welch-was-fuer-ein": {
+            storageKey: "welch-was-fuer-ein-answers",
+            component: WelchWasFuerEin,
         }
     },
 };

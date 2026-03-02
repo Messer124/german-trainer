@@ -1,0 +1,125 @@
+<article class="modal-html-content">
+    <section class="theory-card n-deklination-intro">
+        <style>
+            .n-deklination-intro {
+                --n-line: #d9d9de;
+                --n-blue: #6a70be;
+            }
+
+            .n-deklination-intro .n-title {
+                color: var(--n-blue);
+            }
+
+            .n-deklination-intro .n-example {
+                margin: 6px 0;
+                line-height: 1.24;
+            }
+
+            .n-deklination-intro .n-note {
+                margin: 18px 0 16px;
+                line-height: 1.28;
+            }
+
+            .n-deklination-intro .n-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 8px;
+            }
+
+            .n-deklination-intro .n-table td {
+                padding: 10px 20px;
+                border-bottom: 1px solid var(--n-line);
+                vertical-align: middle;
+            }
+
+            .n-deklination-intro .n-table td + td {
+                border-left: 1px solid var(--n-line);
+            }
+
+            .n-deklination-intro .n-case {
+                width: 32%;
+                white-space: nowrap;
+            }
+
+            @media (max-width: 1200px) {
+                .n-deklination-intro .n-table td {
+                    padding: 9px 12px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .n-deklination-intro .n-table td {
+                    padding: 8px 6px;
+                    font-size: 0.82rem;
+                }
+
+                .n-deklination-intro .n-case {
+                    width: 28%;
+                    white-space: normal;
+                }
+
+                .n-deklination-intro .n-example,
+                .n-deklination-intro .n-note {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+        </style>
+
+        <h2 class="theory-title n-title">Weak noun declension (N-Deklination)</h2>
+
+        <p class="theory-text">
+            Some <span class="theory-word--bold">masculine nouns</span>* receive the endings
+            <span class="theory-word--red">“-n”</span> or
+            <span class="theory-word--red">“-en”</span> in all cases except the nominative
+            (<span class="theory-word--bold">Nominativ</span>) in the
+            <span class="theory-word--bold">singular</span>.
+        </p>
+
+        <p class="theory-text" style="margin-top: 18px;">Examples:</p>
+        <p class="n-example">
+            Könnten Sie Ihren Namen buchstabieren? —
+            <span class="theory-word--italic">Could you spell your name?</span>
+            (Nominativ — der Name)
+        </p>
+        <p class="n-example">
+            Das Mädchen hat mit dem Junge<span class="theory-word--red">n</span> getanzt. —
+            <span class="theory-word--italic">The girl danced with the boy.</span>
+            (Nominativ — der Junge)
+        </p>
+
+        <p class="n-note">
+            <span class="theory-word--red">* Note:</span> the only singular exception is the neuter noun
+            <span class="theory-word--bold">das Herz</span> (heart), and it does not take the ending
+            <span class="theory-word--bold">-en</span> in the
+            <span class="theory-word--bold">Akkusativ</span>.
+        </p>
+
+        <div class="modal-table-scroll">
+            <table class="n-table">
+                <tbody>
+                    <tr>
+                        <td class="n-case">Nominative</td>
+                        <td>der Junge</td>
+                        <td>das Herz</td>
+                    </tr>
+                    <tr>
+                        <td class="n-case">Accusative</td>
+                        <td>den Junge<span class="theory-word--red">n</span></td>
+                        <td>das Herz</td>
+                    </tr>
+                    <tr>
+                        <td class="n-case">Dative</td>
+                        <td>dem Junge<span class="theory-word--red">n</span></td>
+                        <td>dem Herz<span class="theory-word--red">en</span></td>
+                    </tr>
+                    <tr>
+                        <td class="n-case">Genitive</td>
+                        <td>des Junge<span class="theory-word--red">n</span></td>
+                        <td>des Herz<span class="theory-word--red">ens</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</article>
