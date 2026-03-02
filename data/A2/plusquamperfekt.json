@@ -1,0 +1,300 @@
+{
+  "title": {
+    "ru": "Plusquamperfekt",
+    "en": "Plusquamperfekt"
+  },
+  "instructions": {
+    "ru": "Образуйте сложные предложения с Plusquamperfekt",
+    "en": "Form complex sentences with Plusquamperfekt"
+  },
+  "items": [
+    {
+      "id": "nachdem",
+      "label": {
+        "ru": "Образуйте сложное предложение, используя союз nachdem",
+        "en": "Form a complex sentence using the conjunction nachdem"
+      }
+    },
+    {
+      "sentence": "Er hatte acht Grillwürstchen gegessen. Ihm war schlecht",
+      "answer": "Ihm war schlecht, nachdem er acht Grillwürstchen gegessen hatte."
+    },
+    {
+      "sentence": "Niki hatte viel gelernt. Er bekam gute Noten",
+      "answer": "Nachdem Niki viel gelernt hatte, bekam er gute Noten."
+    },
+    {
+      "sentence": "Eva hatte eine Einkaufsliste gemacht. Dimi ging einkaufen",
+      "answer": "Nachdem Eva eine Einkaufsliste gemacht hatte, ging Dimi einkaufen."
+    },
+    {
+      "sentence": "Peter hatte zu viel Bier getrunken. Er hatte einen Unfall",
+      "answer": "Peter hatte einen Unfall, nachdem er zu viel Bier getrunken hatte."
+    },
+    {
+      "sentence": "Er hatte gegessen. Er hat ferngesehen",
+      "answer": "Nachdem er gegessen hatte, hat er ferngesehen."
+    },
+    {
+      "sentence": "Ich hatte eine Fahrkarte gekauft. Ich stieg in den Zug",
+      "answer": "Ich stieg in den Zug, nachdem ich eine Fahrkarte gekauft hatte."
+    },
+    {
+      "sentence": "Ich hatte meine Hausaufgaben gemacht. Ich bin rausgegangen",
+      "answer": "Nachdem ich meine Hausaufgaben gemacht hatte, bin ich rausgegangen."
+    },
+    {
+      "sentence": "Die Chefin hatte Tim ein Appartement angeboten. Er sollte ihr eine Antwort geben",
+      "answer": "Nachdem die Chefin Tim ein Appartement angeboten hatte, sollte er ihr eine Antwort geben."
+    },
+    {
+      "sentence": "Sie hatte gegessen. Sie ging ins Bett",
+      "answer": "Nachdem sie gegessen hatte, ging sie ins Bett."
+    },
+    {
+      "sentence": "Die Nachbarn hatten alles organisiert. Sie haben gefeiert",
+      "answer": "Nachdem die Nachbarn alles organisiert hatten, haben sie gefeiert."
+    },
+    {
+      "id": "bevor",
+      "label": {
+        "ru": "Образуйте сложное предложение, используя союз bevor",
+        "en": "Form a complex sentence using the conjunction bevor"
+      }
+    },
+    {
+      "sentence": "Niki bekam gute Noten. Er hatte viel gelernt",
+      "answer": "Bevor Niki gute Noten bekam, hatte er viel gelernt."
+    },
+    {
+      "sentence": "Sie ging in die Schule. Sie hatte gefrühstückt",
+      "answer": "Bevor sie in die Schule ging, hatte sie gefrühstückt."
+    },
+    {
+      "sentence": "Dimi ging einkaufen. Eva hatte eine Einkaufsliste gemacht",
+      "answer": "Bevor Dimi einkaufen ging, hatte Eva eine Einkaufsliste gemacht."
+    },
+    {
+      "sentence": "Tim hat seiner Chefin eine Antwort gegeben. Er hat sich lange überlegt",
+      "answer": "Bevor Tim seiner Chefin eine Antwort gegeben hat, hat er sich lange überlegt"
+    },
+    {
+      "sentence": "Die Nachbarn haben gefeiert. Sie hatten alles organisiert",
+      "answer": "Bevor die Nachbarn gefeiert haben, hatten sie alles organisiert."
+    },
+    {
+      "sentence": "Wir sind losgefahren. Wir hatten getankt",
+      "answer": "Bevor wir losgefahren sind, hatten wir getankt."
+    },
+    {
+      "sentence": "Ich bin ins Büro gegangen. Ich hatte Kaffee getrunken",
+      "answer": "Bevor ich ins Büro gegangen bin, hatte ich Kaffee getrunken."
+    },
+    {
+      "sentence": "Sie ging ins Bett. Sie hatte gegessen",
+      "answer": "Bevor sie ins Bett ging, hatte sie gegessen."
+    },
+    {
+      "sentence": "Ich bin einkaufen gegangen. Ich hatte dich angerufen",
+      "answer": "Bevor ich einkaufen gegangen bin, hatte ich dich angerufen."
+    },
+    {
+      "sentence": "Sie hat das Haus verlassen. Sie hatte die Tür abgeschlossen",
+      "answer": "Bevor sie das Haus verlassen hat, hatte sie die Tür abgeschlossen."
+    },
+    {
+      "id": "als",
+      "label": {
+        "ru": "Образуйте сложное предложение, используя союз als",
+        "en": "Form a complex sentence using the conjunction als"
+      }
+    },
+    {
+      "sentence": "Wir kamen ins Restaurant. Wir hatten nicht reserviert",
+      "answer": "Als wir ins Restaurant kamen, hatten wir nicht reserviert."
+    },
+    {
+      "sentence": "Ich rief ihn an. Er hatte schon geschlafen",
+      "answer": "Als ich ihn anrief, hatte er schon geschlafen."
+    },
+    {
+      "sentence": "Sie erreichte die Bushaltestelle. Der Bus war schon abgefahren",
+      "answer": "Als sie die Bushaltestelle erreichte, war der Bus schon abgefahren."
+    },
+    {
+      "sentence": "Ich kam nach Hause. Meine Freundin hatte schon gekocht",
+      "answer": "Als ich nach Hause kam, hatte meine Freundin schon gekocht."
+    },
+    {
+      "sentence": "Der Film begann. Wir hatten noch keine Plätze gefunden",
+      "answer": "Als der Film begann, hatten wir noch keine Plätze gefunden."
+    },
+    {
+      "sentence": "Ich wollte bezahlen. Ich hatte meine Karte vergessen",
+      "answer": "Als ich bezahlen wollte, hatte ich meine Karte vergessen."
+    },
+    {
+      "sentence": "Der Chef fragte nach ihm. Der Mitarbeiter war schon gegangen",
+      "answer": "Der Mitarbeiter war schon gegangen, als der Chef nach ihm fragte."
+    },
+    {
+      "sentence": "Sie öffnete die Tür. Der Besuch war schon gegangen",
+      "answer": "Als sie die Tür öffnete, war der Besuch schon gegangen."
+    },
+    {
+      "sentence": "Wir kamen am Bahnhof an. Der Zug war schon abgefahren",
+      "answer": "Als wir am Bahnhof ankamen, war der Zug schon abgefahren."
+    },
+    {
+      "sentence": "Er kam ins Büro. Das Meeting hatte schon angefangen",
+      "answer": "Als er ins Büro kam, hatte das Meeting schon angefangen."
+    },
+    {
+      "id": "other",
+      "label": {
+        "ru": "Переведите предложения",
+        "en": "Translate sentences"
+      }
+    },
+    {
+      "sentence": {
+        "ru": "Он долго работал, потом рано лёг спать.",
+        "en": "He worked for a long time, then he went to bed early."
+      },
+      "answer": "Er hatte lange gearbeitet, dann ist er früh ins Bett gegangen."
+    },
+    {
+      "sentence": {
+        "ru": "Мы включили телевизор, и потом отключили электричество.",
+        "en": "We turned on the TV, then there was a power outage."
+      },
+      "answer": "Wir hatten den Fernseher eingeschaltet, dann gab es einen Stromausfall."
+    },
+    {
+      "sentence": {
+        "ru": "Она оплатила счёт, затем получила чек.",
+        "en": "She paid the bill, then she received the receipt."
+      },
+      "answer": "Sie hatte die Rechnung bezahlt, danach bekam sie die Quittung."
+    },
+    {
+      "sentence": {
+        "ru": "Она потеряла телефон, позже она его нашла.",
+        "en": "She lost her phone, later she found it."
+      },
+      "answer": "Sie hatte ihr Handy verloren, später hat sie es gefunden."
+    },
+    {
+      "sentence": {
+        "ru": "Я прочитал книгу, затем я выпил чай.",
+        "en": "I read the book, then I drank tea."
+      },
+      "answer": "Ich hatte das Buch gelesen, danach habe ich Tee getrunken."
+    },
+    {
+      "sentence": {
+        "ru": "Мы пропустили автобус, поэтому пошли пешком.",
+        "en": "We missed the bus, so we went on foot."
+      },
+      "answer": "Wir hatten den Bus verpasst, deshalb sind wir zu Fuß gegangen."
+    },
+    {
+      "sentence": {
+        "ru": "Я собрал сумку, затем поехал в аэропорт.",
+        "en": "I packed my bag, then I drove to the airport."
+      },
+      "answer": "Ich hatte die Tasche gepackt, danach bin ich zum Flughafen gefahren."
+    },
+    {
+      "sentence": {
+        "ru": "Он открыл окно, и вскоре стало холодно.",
+        "en": "He opened the window, and shortly after it got cold."
+      },
+      "answer": "Er hatte das Fenster geöffnet, kurz danach wurde es kalt."
+    },
+    {
+      "sentence": {
+        "ru": "Она заполнила форму, затем сдала её.",
+        "en": "She filled out the form, then she handed it in."
+      },
+      "answer": "Sie hatte das Formular ausgefüllt, danach hat sie es abgegeben."
+    },
+    {
+      "sentence": {
+        "ru": "Она успела на поезд, затем позвонила подруге.",
+        "en": "She caught the train, then she called her friend."
+      },
+      "answer": "Sie hatte den Zug erreicht, danach hat sie ihre Freundin angerufen."
+    },
+    {
+      "sentence": {
+        "ru": "Она нашла квартиру, затем подписала договор.",
+        "en": "She found the apartment, then she signed the contract."
+      },
+      "answer": "Sie hatte die Wohnung gefunden, danach hat sie den Vertrag unterschrieben."
+    },
+    {
+      "sentence": {
+        "ru": "Мы припарковали машину, потом пошли в город.",
+        "en": "We parked the car, then we went into town."
+      },
+      "answer": "Wir hatten das Auto geparkt, dann sind wir in die Stadt gegangen."
+    },
+    {
+      "sentence": {
+        "ru": "Я как раз закончил завтрак, и тут зазвонил телефон.",
+        "en": "I had just finished my breakfast when the phone rang."
+      },
+      "answer": "Ich hatte gerade mein Frühstück beendet, da klingelte das Telefon."
+    },
+    {
+      "sentence": {
+        "ru": "Он забыл ключ, поэтому ему пришлось ждать.",
+        "en": "He forgot the key, so he had to wait."
+      },
+      "answer": "Er hatte den Schlüssel vergessen, also musste er warten."
+    },
+    {
+      "sentence": {
+        "ru": "У меня было слишком мало денег, поэтому я не смог заплатить.",
+        "en": "I had too little money with me, so I couldn’t pay."
+      },
+      "answer": "Ich hatte zu wenig Geld dabei, deshalb konnte ich nicht bezahlen."
+    },
+    {
+      "sentence": {
+        "ru": "Мы уже поели, но всё равно купили мороженое.",
+        "en": "We had already eaten, but we still bought an ice cream."
+      },
+      "answer": "Wir hatten schon gegessen, trotzdem haben wir noch ein Eis gekauft."
+    },
+    {
+      "sentence": {
+        "ru": "Я не видел письмо, поэтому ответил слишком поздно.",
+        "en": "I didn’t see the email, so I replied too late."
+      },
+      "answer": "Ich hatte die E-Mail nicht gesehen, dann habe ich zu spät geantwortet."
+    },
+    {
+      "sentence": {
+        "ru": "Я записал встречу, но позже снова забыл.",
+        "en": "I noted the appointment, but later I forgot it again."
+      },
+      "answer": "Ich hatte den Termin notiert, später habe ich ihn wieder vergessen."
+    },
+    {
+      "sentence": {
+        "ru": "Мы убрали комнату, и вскоре пришли гости.",
+        "en": "We tidied the room, and shortly after that guests arrived."
+      },
+      "answer": "Wir hatten das Zimmer aufgeräumt, kurz danach kamen Gäste."
+    },
+    {
+      "sentence": {
+        "ru": "Он понял задание, затем быстро его решил.",
+        "en": "He understood the task, then he solved it quickly."
+      },
+      "answer": "Er hatte die Aufgabe verstanden, danach hat er sie schnell gelöst."
+    }
+  ]
+}

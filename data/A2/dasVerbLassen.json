@@ -1,0 +1,280 @@
+{
+  "title": {
+    "ru": "Das Verb lassen",
+    "en": "Das Verb lassen"
+  },
+  "instructions": {
+    "ru": "Выполните задания с глаголом lassen",
+    "en": "Complete the tasks with the verb lassen"
+  },
+  "items": [
+    {
+      "id": "perfekt",
+      "label": {
+        "ru": "Образуйте Perfekt в зависимости от значения глагола lassen",
+        "en": "Form the perfect tense depending on the meaning of the verb lassen"
+      }
+    },
+    {
+      "sentence": "Ich lasse mein Handy zu Hause",
+      "answer": "Ich habe mein Handy zu Hause gelassen."
+    },
+    {
+      "sentence": "Er lässt sein Auto reparieren",
+      "answer": "Er hat sein Auto reparieren lassen."
+    },
+    {
+      "sentence": "Monika lässt sich den Kaffee kochen",
+      "answer": "Monika hat sich den Kaffee kochen lassen."
+    },
+    {
+      "sentence": "Dieses Problem lässt mich nicht in Ruhe",
+      "answer": "Dieses Problem hat mich nicht in Ruhe gelassen."
+    },
+    {
+      "sentence": "Der Chef lässt das Meeting organisieren",
+      "answer": "Der Chef hat das Meeting organisieren lassen."
+    },
+    {
+      "sentence": "Er lässt auf sich warten",
+      "answer": "Er hat auf sich warten lassen."
+    },
+    {
+      "sentence": "Ich lasse meine Tasche im Büro",
+      "answer": "Ich habe meine Tasche im Büro gelassen."
+    },
+    {
+      "sentence": "Wir lassen den Regenschirm im Auto",
+      "answer": "Wir haben den Regenschirm im Auto gelassen."
+    },
+    {
+      "sentence": "Sie lässt das Fenster offen",
+      "answer": "Sie hat das Fenster offen gelassen."
+    },
+    {
+      "sentence": "Er lässt die Tür zu",
+      "answer": "Er hat die Tür zu gelassen."
+    },
+    {
+      "sentence": "Ich lasse meinen Schlüssel zu Hause",
+      "answer": "Ich habe meinen Schlüssel zu Hause gelassen."
+    },
+    {
+      "sentence": "Wir lassen die Kinder kurz allein",
+      "answer": "Wir haben die Kinder kurz allein gelassen."
+    },
+    {
+      "sentence": "Ich lasse mir die Haare schneiden",
+      "answer": "Ich habe mir die Haare schneiden lassen."
+    },
+    {
+      "sentence": "Sie lässt sich eine neue Brille machen",
+      "answer": "Sie hat sich eine neue Brille machen lassen."
+    },
+    {
+      "sentence": "Er lässt sein Fahrrad reparieren",
+      "answer": "Er hat sein Fahrrad reparieren lassen."
+    },
+    {
+      "sentence": "Wir lassen die Wohnung streichen",
+      "answer": "Wir haben die Wohnung streichen lassen."
+    },
+    {
+      "sentence": "Ich lasse mein Paket zur Nachbarin liefern",
+      "answer": "Ich habe mein Paket zur Nachbarin liefern lassen."
+    },
+    {
+      "sentence": "Sie lässt den Vertrag prüfen",
+      "answer": "Sie hat den Vertrag prüfen lassen."
+    },
+    {
+      "sentence": "Er lässt den Kuchen backen",
+      "answer": "Er hat den Kuchen backen lassen."
+    },
+    {
+      "sentence": "Wir lassen die Fotos ausdrucken",
+      "answer": "Wir haben die Fotos ausdrucken lassen."
+    },
+    {
+      "sentence": "Ich lasse mich nicht stressen",
+      "answer": "Ich habe mich nicht stressen lassen."
+    },
+    {
+      "sentence": "Sie lässt sich nicht helfen",
+      "answer": "Sie hat sich nicht helfen lassen."
+    },
+    {
+      "sentence": "Der Verkehr lässt uns nicht pünktlich ankommen",
+      "answer": "Der Verkehr hat uns nicht pünktlich ankommen lassen."
+    },
+    {
+      "sentence": "Das Wetter lässt uns nicht spazieren gehen",
+      "answer": "Das Wetter hat uns nicht spazieren gehen lassen."
+    },
+    {
+      "sentence": "Er lässt mich lange warten",
+      "answer": "Er hat mich lange warten lassen."
+    },
+    {
+      "id": "translate",
+      "label": {
+        "ru": "Переведите предложения, используя глагол lassen",
+        "en": "Translate the sentences using the verb lassen"
+      }
+    },
+    {
+      "sentence": {
+        "ru": "Давайте организуем дворовый праздник",
+        "en": "Let's organize a courtyard party"
+      },
+      "answer": "Lassen wir uns ein Hoffest organisieren."
+    },
+    {
+      "sentence": {
+        "ru": "Позвольте (ihr) мне испечь пирог",
+        "en": "Let me bake a cake"
+      },
+      "answer": "Lasst mich einen Kuchen backen."
+    },
+    {
+      "sentence": {
+        "ru": "Пусть Бетти смастерит поздравительную открытку",
+        "en": "Let Betty make a birthday card"
+      },
+      "answer": "Lasst Betty eine Geburtstagskarte basteln."
+    },
+    {
+      "sentence": {
+        "ru": "Эту проблему легко решить — стулья и столы стоят в подвале",
+        "en": "This problem is easy to solve — the chairs and tables are in the basement"
+      },
+      "answer": "Dieses Problem lässt sich leicht lösen — Stühle und Tische stehen im Keller."
+    },
+    {
+      "sentence": {
+        "ru": "Давайте (ihr) танцевать!",
+        "en": "Let's dance!"
+      },
+      "answer": "Lasst uns tanzen!"
+    },
+    {
+      "sentence": {
+        "ru": "Соседи не разрешают Тиму переехать",
+        "en": "The neighbors don’t let Tim move"
+      },
+      "answer": "Die Nachbarn lassen Tim nicht umziehen."
+    },
+    {
+      "sentence": {
+        "ru": "Завтра отдам машину в ремонт",
+        "en": "Tomorrow I’ll take my car for repairs"
+      },
+      "answer": "Morgen lasse ich mein Auto reparieren."
+    },
+    {
+      "sentence": {
+        "ru": "Госпожа Мюллер, пожалуйста, не заставляйте нас ждать",
+        "en": "Mrs. Müller, please don’t make us wait"
+      },
+      "answer": "Frau Müller, lassen Sie uns bitte nicht warten."
+    },
+    {
+      "sentence": {
+        "ru": "Давай посмотрим фильм дома",
+        "en": "Let’s watch a movie at home"
+      },
+      "answer": "Lass uns zu Hause einen Film schauen."
+    },
+    {
+      "sentence": {
+        "ru": "Пусть он объяснит это ещё раз",
+        "en": "Let him explain it again"
+      },
+      "answer": "Lass ihn das noch einmal erklären."
+    },
+    {
+      "sentence": {
+        "ru": "Не мешай мне, пожалуйста",
+        "en": "Please don’t bother me"
+      },
+      "answer": "Lass mich bitte in Ruhe."
+    },
+    {
+      "sentence": {
+        "ru": "Оставь дверь открытой",
+        "en": "Leave the door open"
+      },
+      "answer": "Lass die Tür offen."
+    },
+    {
+      "sentence": {
+        "ru": "Не оставляй телефон на столе",
+        "en": "Don’t leave the phone on the table"
+      },
+      "answer": "Lass das Handy nicht auf dem Tisch liegen."
+    },
+    {
+      "sentence": {
+        "ru": "Давайте проверим билет",
+        "en": "Let’s check the ticket"
+      },
+      "answer": "Lassen wir die Fahrkarte kontrollieren."
+    },
+    {
+      "sentence": {
+        "ru": "Я распечатаю документы",
+        "en": "I will print the documents"
+      },
+      "answer": "Ich lasse die Dokumente ausdrucken."
+    },
+    {
+      "sentence": {
+        "ru": "Пусть посылку доставят на работу",
+        "en": "Have the parcel delivered to work"
+      },
+      "answer": "Lass das Paket zur Arbeit liefern."
+    },
+    {
+      "sentence": {
+        "ru": "Эту задачу можно быстро решить",
+        "en": "This task can be solved quickly"
+      },
+      "answer": "Diese Aufgabe lässt sich schnell lösen."
+    },
+    {
+      "sentence": {
+        "ru": "Пусть меня разбудят в семь",
+        "en": "Have me woken up at seven"
+      },
+      "answer": "Lass mich um sieben wecken."
+    },
+    {
+      "sentence": {
+        "ru": "Не позволяй детям смотреть телевизор так поздно",
+        "en": "Don’t let the kids watch TV so late"
+      },
+      "answer": "Lass die Kinder nicht so spät fernsehen."
+    },
+    {
+      "sentence": {
+        "ru": "Давайте начнём сейчас",
+        "en": "Let’s start now"
+      },
+      "answer": "Lassen wir uns jetzt anfangen."
+    },
+    {
+      "sentence": {
+        "ru": "Пусть она подстрижёт себе волосы",
+        "en": "Let her get her hair cut"
+      },
+      "answer": "Lass sie sich die Haare schneiden."
+    },
+    {
+      "sentence": {
+        "ru": "Пожалуйста, не заставляйте меня ждать",
+        "en": "Please don’t make me wait"
+      },
+      "answer": "Bitte lassen Sie mich nicht warten."
+    }
+  ]
+}

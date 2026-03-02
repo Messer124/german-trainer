@@ -5,21 +5,17 @@ import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
-import data from "../../../data/A2/konjunktiv2.json";
-import slide1Ru from "../../../data/A2/images/konjunktiv2-1.html?raw";
-import slide2Ru from "../../../data/A2/images/konjunktiv2-2.html?raw";
-import slide3Ru from "../../../data/A2/images/konjunktiv2-3.html?raw";
-import slide4Ru from "../../../data/A2/images/konjunktiv2-4.html?raw";
-import slide5Ru from "../../../data/A2/images/konjunktiv2-5.html?raw";
-import slide1En from "../../../data/A2/images/en/konjunktiv2-1.html?raw";
-import slide2En from "../../../data/A2/images/en/konjunktiv2-2.html?raw";
-import slide3En from "../../../data/A2/images/en/konjunktiv2-3.html?raw";
-import slide4En from "../../../data/A2/images/en/konjunktiv2-4.html?raw";
-import slide5En from "../../../data/A2/images/en/konjunktiv2-5.html?raw";
+import data from "../../../data/A2/dasVerbLassen.json";
+import slide1Ru from "../../../data/A2/images/dasVerbLassen1.html?raw";
+import slide2Ru from "../../../data/A2/images/dasVerbLassen2.html?raw";
+import slide3Ru from "../../../data/A2/images/dasVerbLassen3.html?raw";
+import slide1En from "../../../data/A2/images/en/dasVerbLassen1.html?raw";
+import slide2En from "../../../data/A2/images/en/dasVerbLassen2.html?raw";
+import slide3En from "../../../data/A2/images/en/dasVerbLassen3.html?raw";
 
 import "../../css/exercises/Common.css";
 
-const STORAGE_KEY = "konjunktiv2-answers";
+const STORAGE_KEY = "das-verb-lassen-answers";
 
 function normalize(value) {
     return String(value ?? "")
@@ -53,7 +49,7 @@ function getRows(rawItems, locale) {
 
             rows.push({
                 type: "divider",
-                key: `konj2-divider-${rawIndex}-${item.id}`,
+                key: `das-verb-lassen-divider-${rawIndex}-${item.id}`,
                 label,
             });
             return;
@@ -63,7 +59,7 @@ function getRows(rawItems, locale) {
 
         rows.push({
             type: "sentence",
-            key: `konj2-sentence-${sentenceIndex}`,
+            key: `das-verb-lassen-sentence-${sentenceIndex}`,
             sentenceIndex,
             sentence: getLocalizedText(item.sentence, locale),
             answer: String(item.answer ?? ""),
@@ -74,7 +70,7 @@ function getRows(rawItems, locale) {
     return rows;
 }
 
-export default function Konjunktiv2() {
+export default function DasVerbLassen() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
@@ -82,13 +78,9 @@ export default function Konjunktiv2() {
     const previewTimersRef = useRef({});
 
     const slides = useMemo(
-        () =>
-            locale === "en"
-                ? [slide1En, slide2En, slide3En, slide4En, slide5En]
-                : [slide1Ru, slide2Ru, slide3Ru, slide4Ru, slide5Ru],
+        () => (locale === "en" ? [slide1En, slide2En, slide3En] : [slide1Ru, slide2Ru, slide3Ru]),
         [locale]
     );
-
     const rows = useMemo(() => getRows(data.items, locale), [locale]);
 
     useEffect(() => {
@@ -104,7 +96,7 @@ export default function Konjunktiv2() {
     }, []);
 
     const handleChange = (sentenceIndex, value, correctAnswer) => {
-        const key = `konjunktiv2-${sentenceIndex}`;
+        const key = `das-verb-lassen-${sentenceIndex}`;
         const isCorrect = normalize(value) === normalize(correctAnswer);
 
         if (previewTimersRef.current[key]) {
@@ -126,7 +118,7 @@ export default function Konjunktiv2() {
     };
 
     const showAnswerPreview = (sentenceIndex, answer) => {
-        const key = `konjunktiv2-${sentenceIndex}`;
+        const key = `das-verb-lassen-${sentenceIndex}`;
         const value = String(answer ?? "");
         if (!value) return;
 
@@ -163,7 +155,7 @@ export default function Konjunktiv2() {
                             );
                         }
 
-                        const key = `konjunktiv2-${row.sentenceIndex}`;
+                        const key = `das-verb-lassen-${row.sentenceIndex}`;
                         const value = answers[key]?.value ?? "";
                         const visibleValue = previewValues[key] ?? value;
                         const isCorrect = answers[key]?.isCorrect;
@@ -176,7 +168,7 @@ export default function Konjunktiv2() {
 
                         return (
                             <li key={row.key}>
-                                <span className="sentence">{row.sentence}</span>
+                                <span className="sentence">{row.sentence} —</span>
                                 <ExpandingInput
                                     type="text"
                                     className={inputClass}
@@ -184,10 +176,12 @@ export default function Konjunktiv2() {
                                     onChange={(event) =>
                                         handleChange(row.sentenceIndex, event.target.value, row.answer)
                                     }
-                                    minWidth={180}
-                                    maxWidth={760}
+                                    minWidth={220}
+                                    tabletMinWidth={170}
+                                    mobileMinWidth={110}
+                                    maxWidth={860}
                                     readOnly={previewValues[key] != null}
-                                    aria-label={`Konjunktiv II answer ${row.sentenceIndex + 1}`}
+                                    aria-label={`Das Verb lassen answer ${row.sentenceIndex + 1}`}
                                 />
                                 <button
                                     type="button"
@@ -206,7 +200,7 @@ export default function Konjunktiv2() {
     );
 }
 
-Konjunktiv2.headerButton = (
+DasVerbLassen.headerButton = (
     <button
         type="button"
         className="hint-button"
@@ -216,5 +210,5 @@ Konjunktiv2.headerButton = (
     </button>
 );
 
-Konjunktiv2.instructions = data.instructions;
-Konjunktiv2.title = data.title;
+DasVerbLassen.instructions = data.instructions;
+DasVerbLassen.title = data.title;

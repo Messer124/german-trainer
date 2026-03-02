@@ -35,6 +35,8 @@ import SteigerungDerAdjektive from "../exercises/A2/SteigerungDerAdjektive";
 import PassivPraesens from "../exercises/A2/PassivPraesens";
 import NDeklination from "../exercises/A2/NDeklination";
 import WelchWasFuerEin from "../exercises/A2/WelchWasFuerEin";
+import Plusquamperfekt from "../exercises/A2/Plusquamperfekt";
+import DasVerbLassen from "../exercises/A2/DasVerbLassen";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -189,6 +191,14 @@ export const EXERCISES_BY_LEVEL = {
         "welch-was-fuer-ein": {
             storageKey: "welch-was-fuer-ein-answers",
             component: WelchWasFuerEin,
+        },
+        "plusquamperfekt": {
+            storageKey: "plusquamperfekt-answers",
+            component: Plusquamperfekt,
+        },
+        "das-verb-lassen": {
+            storageKey: "das-verb-lassen-answers",
+            component: DasVerbLassen,
         }
     },
 };

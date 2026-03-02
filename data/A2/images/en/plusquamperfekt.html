@@ -1,0 +1,132 @@
+<article class="modal-html-content">
+    <section class="theory-card plusquamperfekt-card">
+        <style>
+            .plusquamperfekt-card {
+                --plusquam-line: #dadbe2;
+                --plusquam-violet: #6b71bf;
+                --plusquam-yellow: #efbc3f;
+                --plusquam-red: #f06a61;
+                --plusquam-blue: #6da0de;
+            }
+
+            .plusquamperfekt-card .plusquam-grid {
+                display: grid;
+                grid-template-columns: 22% 78%;
+                gap: 0 18px;
+                margin-top: 18px;
+            }
+
+            .plusquamperfekt-card .plusquam-label {
+                margin: 0;
+                font-weight: 500;
+                line-height: 1.16;
+            }
+
+            .plusquamperfekt-card .plusquam-example {
+                margin: 0;
+                line-height: 1.16;
+            }
+
+            .plusquamperfekt-card .plusquam-blue {
+                color: var(--plusquam-blue);
+                font-weight: 700;
+            }
+
+            .plusquamperfekt-card .plusquam-divider {
+                grid-column: 1 / -1;
+                height: 18px;
+            }
+
+            @media (max-width: 1200px) {
+                .plusquamperfekt-card .plusquam-grid {
+                    grid-template-columns: 24% 76%;
+                    gap: 0 14px;
+                    margin-top: 14px;
+                }
+
+                .plusquamperfekt-card .plusquam-label,
+                .plusquamperfekt-card .plusquam-example,
+                .plusquamperfekt-card .theory-text {
+                    font-size: 0.9rem;
+                    line-height: 1.22;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .plusquamperfekt-card .plusquam-grid {
+                    grid-template-columns: 1fr;
+                    gap: 6px 0;
+                    margin-top: 10px;
+                }
+
+                .plusquamperfekt-card .plusquam-divider {
+                    height: 8px;
+                }
+
+                .plusquamperfekt-card .plusquam-label,
+                .plusquamperfekt-card .plusquam-example,
+                .plusquamperfekt-card .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+        </style>
+
+        <p class="theory-text">
+            <span class="theory-word--violet">Plusquamperfekt</span> is used to coordinate two actions that both happened in the past,
+            but one of them was completed earlier.
+        </p>
+
+        <h3 class="theory-heading" style="margin-top: 16px;">Typical usage patterns:</h3>
+
+        <div class="plusquam-grid">
+            <p class="plusquam-label">With the conjunction <span class="theory-word--yellow">als</span></p>
+            <p class="plusquam-example">
+                <span class="theory-word--yellow">Als</span> ich nach Hause gekommen bin,
+                <span class="theory-word--violet">hatte</span> er den Anruf bereits
+                <span class="theory-word--violet">beendet</span>. —
+                <span class="theory-word--italic">When I came home, he had already finished the call.</span><br />
+                First he <span class="theory-word--violet">finished the call</span>, then I arrived.
+            </p>
+
+            <div class="plusquam-divider"></div>
+
+            <p class="plusquam-label">With the conjunction <span class="theory-word--red">nachdem</span></p>
+            <p class="plusquam-example">
+                <span class="theory-word--red">Nachdem</span> ich nach Hause
+                <span class="theory-word--violet">gekommen war</span>, hat er den Anruf beendet. —
+                <span class="theory-word--italic">After I had come home, he finished the call.</span><br />
+                First I <span class="theory-word--violet">came home</span>, then he finished the call.
+            </p>
+
+            <div class="plusquam-divider"></div>
+
+            <p class="plusquam-label">With the conjunction <span class="plusquam-blue">bevor</span></p>
+            <p class="plusquam-example">
+                <span class="plusquam-blue">Bevor</span> ich nach Hause gekommen bin,
+                <span class="theory-word--violet">hatte</span> er den Anruf
+                <span class="theory-word--violet">beendet</span>. —
+                <span class="theory-word--italic">Before I came home, he had finished the call.</span><br />
+                First <span class="theory-word--violet">he finished the call</span>, then I arrived.
+            </p>
+
+            <div class="plusquam-divider"></div>
+
+            <p class="plusquam-label">
+                In any other situation where two actions happened in the past.
+            </p>
+            <div>
+                <p class="plusquam-example">
+                    Ich <span class="theory-word--violet">hatte</span> das Buch
+                    <span class="theory-word--violet">gelesen</span>, danach habe ich Tee getrunken. —
+                    <span class="theory-word--italic">I had read the book, then I drank tea.</span>
+                </p>
+                <p class="plusquam-example" style="margin-top: 10px;">
+                    Ich <span class="theory-word--violet">hatte</span> gerade mein Frühstück
+                    <span class="theory-word--violet">beendet</span>, da klingelte das Telefon. —
+                    <span class="theory-word--italic">I had just finished my breakfast when the phone rang.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+</article>
