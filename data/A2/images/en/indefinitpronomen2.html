@@ -1,0 +1,243 @@
+<article class="theory-card idp-card idp-card--slide2">
+  <style>
+    .idp-card--slide2 {
+      --idp-line: #d9d9de;
+    }
+
+    .idp-card--slide2 .idp-lead {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-poss-grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 240px) minmax(280px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 14px 0 16px;
+      border-top: 1px solid var(--idp-line);
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+      margin: 14px 0 16px;
+    }
+
+    .idp-card--slide2 .idp-poss-grid > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card--slide2 .idp-poss-left {
+      font-weight: 700;
+      line-height: 1.18;
+    }
+
+    .idp-card--slide2 .idp-poss-desc {
+      line-height: 1.26;
+    }
+
+    .idp-card--slide2 .idp-poss-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card--slide2 .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card--slide2 .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card--slide2 .idp-tr {
+      display: block;
+      margin-top: 2px;
+      color: var(--theory-muted-color);
+    }
+
+    .idp-card--slide2 .idp-note {
+      margin: 0 0 16px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-table-title {
+      text-align: center;
+      margin: 10px 0 10px;
+      font-weight: 800;
+    }
+
+    .idp-card--slide2 .idp-decl {
+      margin-top: 6px;
+    }
+
+    .idp-card--slide2 .idp-table th,
+    .idp-card--slide2 .idp-table td {
+      text-align: center;
+      border-bottom: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th + th,
+    .idp-card--slide2 .idp-table td + td {
+      border-left: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th:first-child,
+    .idp-card--slide2 .idp-table td:first-child {
+      text-align: left;
+      white-space: nowrap;
+      padding-left: 8px;
+      padding-right: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: minmax(170px, 220px) 1fr;
+        grid-template-areas:
+          "left desc"
+          "left examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card--slide2 .idp-poss-grid > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        grid-area: left;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card--slide2 .idp-poss-desc {
+        grid-area: desc;
+      }
+
+      .idp-card--slide2 .idp-poss-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "left"
+          "desc"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+  </style>
+
+  <p class="theory-text idp-lead">
+    In a similar way, nouns can be replaced by <span class="theory-word--bold">possessive pronouns</span>:
+  </p>
+
+  <div class="idp-poss-grid">
+    <div class="idp-poss-left">
+      mein/dein/sein/<br />
+      ihr/unser/euer
+    </div>
+
+    <div class="idp-poss-desc">
+      Used in both singular and plural; decline by gender and case
+    </div>
+
+    <div class="idp-poss-examples">
+      <p class="idp-ex">
+        <span class="idp-de">
+          Mein Tisch ist groß, und <span class="theory-word--bold">deiner</span>?
+        </span>
+        <span class="idp-tr">My table is big, and yours?</span>
+      </p>
+
+      <p class="idp-ex">
+        <span class="idp-de">
+          Ist das dein Kind? — Ja, das ist <span class="theory-word--bold">meins</span>.
+        </span>
+        <span class="idp-tr">Is that your child? — Yes, that's mine.</span>
+      </p>
+    </div>
+  </div>
+
+  <p class="theory-text idp-note">
+    All the pronouns above decline like the indefinite article, but there are some exceptions.
+    In the masculine <span class="theory-word--bold">Nominativ</span>, and in the neuter
+    <span class="theory-word--bold">Nominativ</span> and <span class="theory-word--bold">Akkusativ</span>,
+    extra endings are added to show the gender of the noun being replaced:
+  </p>
+
+  <h3 class="idp-table-title">
+    Declension of
+    <span class="theory-word--red"> einer</span> /
+    <span class="theory-word--violet"> keiner</span> /
+    <span class="theory-word--bold"> meiner</span> /
+    <span class="theory-word--yellow"> welche</span>
+  </h3>
+
+  <div class="modal-table-scroll idp-decl">
+    <table class="theory-table idp-table">
+      <thead>
+        <tr>
+          <th>Case</th>
+          <th>Masculine</th>
+          <th>Neuter</th>
+          <th>Feminine</th>
+          <th>Plural</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Nominativ</th>
+          <td>
+            <span class="theory-word--red">einer</span>/<span class="theory-word--violet">keiner</span>/<span class="theory-word--bold">meiner</span>
+          </td>
+          <td>
+            <span class="theory-word--red">eins</span>/<span class="theory-word--violet">keins</span>/<span class="theory-word--bold">meins</span>
+          </td>
+          <td>
+            <span class="theory-word--red">eine</span>/<span class="theory-word--violet">keine</span>/<span class="theory-word--bold">meine</span>
+          </td>
+          <td>
+            <span class="theory-word--violet">keine</span>/<span class="theory-word--bold">meine</span>/<span class="theory-word--yellow">welche</span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">Akkusativ</th>
+          <td>
+            <span class="theory-word--red">einen</span>/<span class="theory-word--violet">keinen</span>/<span class="theory-word--bold">meinen</span>
+          </td>
+          <td>
+            <span class="theory-word--red">eins</span>/<span class="theory-word--violet">keins</span>/<span class="theory-word--bold">meins</span>
+          </td>
+          <td>
+            <span class="theory-word--red">eine</span>/<span class="theory-word--violet">keine</span>/<span class="theory-word--bold">meine</span>
+          </td>
+          <td>
+            <span class="theory-word--violet">keine</span>/<span class="theory-word--bold">meine</span>/<span class="theory-word--yellow">welche</span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">Dativ</th>
+          <td>
+            <span class="theory-word--red">einem</span>/<span class="theory-word--violet">keinem</span>/<span class="theory-word--bold">meinem</span>
+          </td>
+          <td>
+            <span class="theory-word--red">einem</span>/<span class="theory-word--violet">keinem</span>/<span class="theory-word--bold">meinem</span>
+          </td>
+          <td>
+            <span class="theory-word--red">einer</span>/<span class="theory-word--violet">keiner</span>/<span class="theory-word--bold">meiner</span>
+          </td>
+          <td>
+            <span class="theory-word--violet">keinen</span>/<span class="theory-word--bold">meinen</span>/<span class="theory-word--yellow">welchen</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</article>

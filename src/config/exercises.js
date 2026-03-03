@@ -38,6 +38,7 @@ import WelchWasFuerEin from "../exercises/A2/WelchWasFuerEin";
 import Plusquamperfekt from "../exercises/A2/Plusquamperfekt";
 import DasVerbLassen from "../exercises/A2/DasVerbLassen";
 import Infinitivsaetze from "../exercises/A2/Infinitivsaetze";
+import Indefinitpronomen from "../exercises/A2/Indefinitpronomen";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -204,6 +205,11 @@ export const EXERCISES_BY_LEVEL = {
         "infinitivsaetze": {
             storageKey: "infinitivsaetze-answers",
             component: Infinitivsaetze,
+        },
+        "indefinitpronomen": {
+            storageKey: "indefinitpronomen-answers",
+            component: Indefinitpronomen,
         }
     },
+    "B1": {}
 };

@@ -1,0 +1,286 @@
+{
+  "title": {
+    "ru": "Indefinitpronomen",
+    "en": "Indefinitpronomen"
+  },
+  "instructions": {
+    "ru": "Выполните задания",
+    "en": "Complete the tasks"
+  },
+  "items": [
+    {
+      "id": "insert",
+      "label": {
+        "ru": "Дополните предложения c помощью ein-, kein- , welch-",
+        "en": "Complete the sentences using ein-, kein-, welch-"
+      }
+    },
+    {
+      "sentence": "Gehört das Handy dir? — Ja, das ist ___",
+      "answer": "meins"
+    },
+    {
+      "sentence": "Mutti, ich brauche noch ein Ei. — Leider habe ich ___ mehr",
+      "answer": "keins"
+    },
+    {
+      "sentence": "Hast du einen Stift? — Ja, ich habe ___",
+      "answer": "einen"
+    },
+    {
+      "sentence": "Ist das eure Wohnung? — Ja, das ist ___",
+      "answer": "unsere"
+    },
+    {
+      "sentence": "Hast du ein paar Äpfel? — Ja, ich habe noch ___",
+      "answer": "welche"
+    },
+    {
+      "sentence": "Ist das das Büro vom Chef? — Ja, das ist ___",
+      "answer": "seins"
+    },
+    {
+      "sentence": "Ich brauche noch einen Teller. — Im Schrank steht noch ___",
+      "answer": "einer"
+    },
+    {
+      "sentence": "Haben Sie etwas Milch, Frau Müller? — Ja, ich habe ___",
+      "answer": "welche"
+    },
+    {
+      "sentence": "Auf dem Tisch liegt eine Brille. Ist das ___, Herr Krause?",
+      "answer": "Ihre"
+    },
+    {
+      "sentence": "Hast du einen Taschenrechner? — Nein, ich habe ___",
+      "answer": "keinen"
+    },
+    {
+      "sentence": "Ich brauche eine Schüssel. — Aber hier steht doch schon ___",
+      "answer": "eine"
+    },
+    {
+      "sentence": "Haben wir noch Zitronen? — Ja, dort in der Schüssel liegen noch ___",
+      "answer": "welche"
+    },
+    {
+      "sentence": "Wo ist denn das große Messer? — Auf dem Tisch. Wo? Ich sehe ___. — Da links. — Ach da!",
+      "answer": "keins"
+    },
+    {
+      "sentence": "Gibst du mir bitte einen Suppenlöffel? — Aber da liegt doch ___! Schau doch!",
+      "answer": "einer"
+    },
+    {
+      "sentence": "Haben wir noch Eier? — Ja, im Kühlschrank sind, glaube ich, noch ___",
+      "answer": "welche"
+    },
+    {
+      "sentence": "Gibst du mir das Salz bitte? — Wir haben ___ mehr",
+      "answer": "keins"
+    },
+    {
+      "sentence": "Ist das dein Rucksack? — Ja, das ist ___",
+      "answer": "meins"
+    },
+    {
+      "sentence": "Ist das ihre Jacke? — Ja, das ist ___",
+      "answer": "ihre"
+    },
+    {
+      "sentence": "Ist das unser Tisch? — Ja, das ist ___",
+      "answer": "unserer"
+    },
+    {
+      "sentence": "Hast du noch Brot? — Ja, ich habe noch ___",
+      "answer": "welches"
+    },
+    {
+      "sentence": "Hast du noch Wasser? — Nein, ich habe ___ mehr",
+      "answer": "keins"
+    },
+    {
+      "sentence": "Brauchst du einen Bleistift? — Ja, gib mir bitte ___",
+      "answer": "einen"
+    },
+    {
+      "sentence": "Brauchst du eine Tasse? — Nein, ich habe schon ___",
+      "answer": "eine"
+    },
+    {
+      "sentence": "Haben wir noch Tomaten? — Ja, da sind noch ___",
+      "answer": "welche"
+    },
+    {
+      "sentence": "Gehört das Fahrrad ihm? — Ja, das ist ___",
+      "answer": "seins"
+    },
+    {
+      "sentence": "Ist das euer Auto? — Ja, das ist ___",
+      "answer": "unseres"
+    },
+    {
+      "sentence": "Hast du Zeit? — Leider habe ich ___ heute",
+      "answer": "keine"
+    },
+    {
+      "sentence": "Hast du ein Ticket? — Nein, ich habe ___",
+      "answer": "keins"
+    },
+    {
+      "sentence": "Ist das dein Platz? — Ja, das ist ___",
+      "answer": "meiner"
+    },
+    {
+      "sentence": "Hast du noch Kekse? — Ja, ich habe noch ___",
+      "answer": "welche"
+    },
+    {
+      "id": "translate",
+      "label": {
+        "ru": "Переведите, используя ein-, kein-, welch- и притяжательные местоимения",
+        "en": "Translate using ein-, kein-, welch- and possessive pronouns"
+      }
+    },
+    {
+      "sentence": {
+        "ru": "Это Ваша машина? Нет, не моя",
+        "en": "Is this your car? No, it's not mine"
+      },
+      "answer": "Ist das Ihr Auto? Nein, das ist nicht meins"
+    },
+    {
+      "sentence": {
+        "ru": "Мне нужно еще немного сахара. Здесь есть еще немного",
+        "en": "I still need a little sugar. There is still some here"
+      },
+      "answer": "Ich brauche noch etwas Zucker. Hier gibt es noch welchen"
+    },
+    {
+      "sentence": {
+        "ru": "У тебя есть молоток? Да, есть",
+        "en": "Do you have a hammer? Yes, I do"
+      },
+      "answer": "Hast du einen Hammer? Ja, ich habe einen"
+    },
+    {
+      "sentence": {
+        "ru": "У меня много книг. У тебя тоже?",
+        "en": "I have many books. Do you have some too?"
+      },
+      "answer": "Ich habe viele Bücher. Hast du auch welche?"
+    },
+    {
+      "sentence": {
+        "ru": "Тим, еще чашку чая? Да, спасибо, но только одну",
+        "en": "Tim, another cup of tea? Yes, thanks, but only one"
+      },
+      "answer": "Tim, noch eine Tasse Tee? Ja, danke, aber nur eine"
+    },
+    {
+      "sentence": {
+        "ru": "Пауль, может еще кусок пирога? Нет, спасибо, я больше не хочу",
+        "en": "Paul, maybe another piece of cake? No thanks, I don't want any more"
+      },
+      "answer": "Paul, noch ein Stück Kuchen vielleicht? Nein, danke, ich will keinen mehr"
+    },
+    {
+      "sentence": {
+        "ru": "Это его чашка? Да, это его",
+        "en": "Is this his cup? Yes, it's his"
+      },
+      "answer": "Ist das seine Tasse? Ja, das ist seine"
+    },
+    {
+      "sentence": {
+        "ru": "Возьмёшь с собой пару яблок? Нет, у меня дома еще есть",
+        "en": "Will you take a couple of apples with you? No, I still have some at home"
+      },
+      "answer": "Nimmst du ein Paar Äpfel mit? Nein, ich habe noch welche zu Hause"
+    },
+    {
+      "sentence": {
+        "ru": "Возможно тебе нужен хлеб? Нет, я вчера купил немного. Мне больше не нужно",
+        "en": "Do you maybe need bread? No, I bought some yesterday. I don't need any more"
+      },
+      "answer": "Brauchst du vielleicht Brot? Nein, ich habe gestern welches gekauft. Ich brauche keins mehr"
+    },
+    {
+      "sentence": {
+        "ru": "Кому принадлежит этот чемодан? Это наш",
+        "en": "Whose suitcase is this? It's ours"
+      },
+      "answer": "Wem gehört dieser Koffer? Das ist unserer"
+    },
+    {
+      "sentence": {
+        "ru": "Это твой ключ? Да, он мой",
+        "en": "Is this your key? Yes, it's mine"
+      },
+      "answer": "Ist das dein Schlüssel? Ja, das ist meiner"
+    },
+    {
+      "sentence": {
+        "ru": "Это её сумка? Да, это её",
+        "en": "Is this her bag? Yes, it's hers"
+      },
+      "answer": "Ist das ihre Tasche? Ja, das ist ihre"
+    },
+    {
+      "sentence": {
+        "ru": "У вас есть ещё помидоры? Да, у меня есть ещё какие-то",
+        "en": "Do you still have tomatoes? Yes, I still have some"
+      },
+      "answer": "Haben Sie noch Tomaten? Ja, ich habe noch welche"
+    },
+    {
+      "sentence": {
+        "ru": "У меня нет карандаша. Но у меня есть ручка",
+        "en": "I don’t have a pencil. But I have a pen"
+      },
+      "answer": "Ich habe keinen Bleistift. Aber ich habe einen"
+    },
+    {
+      "sentence": {
+        "ru": "Тебе нужен ещё один стул? Нет, у меня уже есть один",
+        "en": "Do you need another chair? No, I already have one"
+      },
+      "answer": "Brauchst du noch einen Stuhl? Nein, ich habe schon einen"
+    },
+    {
+      "sentence": {
+        "ru": "У меня нет молока. Есть ли у тебя немного?",
+        "en": "I don't have any milk. Do you have some?"
+      },
+      "answer": "Ich habe keine Milch. Hast du welche?"
+    },
+    {
+      "sentence": {
+        "ru": "Это её телефон? Нет, это не её",
+        "en": "Is this her phone? No, it's not hers"
+      },
+      "answer": "Ist das ihr Handy? Nein, das ist nicht ihres"
+    },
+    {
+      "sentence": {
+        "ru": "Я хочу ещё одно яблоко. К сожалению, у меня больше нет",
+        "en": "I want another apple. Unfortunately, I don't have any more"
+      },
+      "answer": "Ich möchte noch einen Apfel. Leider habe ich keinen mehr"
+    },
+    {
+      "sentence": {
+        "ru": "У вас есть ещё стулья? Да, в комнате стоят ещё какие-то",
+        "en": "Do you still have chairs? Yes, there are still some in the room"
+      },
+      "answer": "Haben Sie noch Stühle? Ja, im Zimmer stehen noch welche"
+    },
+    {
+      "sentence": {
+        "ru": "Это наш билет? Да, он наш",
+        "en": "Is this our ticket? Yes, it's ours"
+      },
+      "answer": "Ist das unser Ticket? Ja, das ist unseres"
+    }
+  ]
+}

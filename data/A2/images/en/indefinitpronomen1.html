@@ -1,0 +1,183 @@
+<article class="theory-card idp-card idp-card--slide1">
+  <style>
+    .idp-card {
+      --idp-line: #d9d9de;
+    }
+
+    .idp-card .idp-intro {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card .idp-grid {
+      border-top: 1px solid var(--idp-line);
+    }
+
+    .idp-card .idp-row {
+      display: grid;
+      grid-template-columns: minmax(90px, 120px) minmax(260px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+    }
+
+    .idp-card .idp-row > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card .idp-pronoun {
+      font-weight: 700;
+      font-size: 1.25em;
+      line-height: 1.05;
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+
+    .idp-card .idp-rule {
+      line-height: 1.26;
+    }
+
+    .idp-card .idp-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card .idp-de {
+      display: block;
+    }
+
+    .idp-card .idp-tr {
+      display: block;
+      margin-top: 2px;
+      color: var(--theory-muted-color);
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card .idp-row {
+        grid-template-columns: minmax(86px, 110px) 1fr;
+        grid-template-areas:
+          "pron rule"
+          "pron examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card .idp-row > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card .idp-pronoun {
+        grid-area: pron;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card .idp-rule {
+        grid-area: rule;
+      }
+
+      .idp-card .idp-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card .idp-row {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "pron"
+          "rule"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card .idp-pronoun {
+        border-right: none;
+        padding-right: 0;
+        font-size: 1.18em;
+      }
+    }
+  </style>
+
+  <p class="theory-text idp-intro">
+    Nouns can be replaced by the pronouns
+    <span class="theory-word--red">einer</span> /
+    <span class="theory-word--violet">keiner</span> /
+    <span class="theory-word--yellow">welche</span>
+    when it is clear from the previous context which noun is meant.
+  </p>
+
+  <section class="idp-grid">
+    <div class="idp-row">
+      <div class="idp-pronoun"><span class="theory-word--red">einer</span></div>
+      <div class="idp-rule">
+        Used only in the singular; declines by gender and case
+      </div>
+      <div class="idp-examples">
+        <p class="idp-ex">
+          <span class="idp-de">
+            Hast du ein Buch? — Ja, ich habe <span class="theory-word--red">eins</span>.
+          </span>
+          <span class="idp-tr">Do you have a book? — Yes, I have one.</span>
+        </p>
+        <p class="idp-ex">
+          <span class="idp-de">
+            Ist das ein MP3-Player? — Ja, das ist <span class="theory-word--red">einer</span>.
+          </span>
+          <span class="idp-tr">Is that an MP3 player? — Yes, it is one.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="idp-row">
+      <div class="idp-pronoun"><span class="theory-word--violet">keiner</span></div>
+      <div class="idp-rule">
+        Used in both singular and plural; declines by gender and case
+      </div>
+      <div class="idp-examples">
+        <p class="idp-ex">
+          <span class="idp-de">
+            Hast du ein Buch? — Nein, ich habe <span class="theory-word--violet">keins</span>.
+          </span>
+          <span class="idp-tr">Do you have a book? — No, I don't have one.</span>
+        </p>
+        <p class="idp-ex">
+          <span class="idp-de">
+            Hast du noch Äpfel? — Nein, ich habe <span class="theory-word--violet">keine</span>.
+          </span>
+          <span class="idp-tr">Do you still have apples? — No, I don't have any.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="idp-row">
+      <div class="idp-pronoun"><span class="theory-word--yellow">welche</span></div>
+      <div class="idp-rule">
+        Used in the plural and with uncountable nouns; declines by gender and case
+      </div>
+      <div class="idp-examples">
+        <p class="idp-ex">
+          <span class="idp-de">
+            Hast du noch Äpfel? — Ja, ich habe noch <span class="theory-word--yellow">welche</span>.
+          </span>
+          <span class="idp-tr">Do you still have apples? — Yes, I still have some.</span>
+        </p>
+        <p class="idp-ex">
+          <span class="idp-de">
+            Ich brauche Milch, hast du <span class="theory-word--yellow">welche</span>?
+          </span>
+          <span class="idp-tr">I need milk, do you have any?</span>
+        </p>
+      </div>
+    </div>
+  </section>
+</article>
