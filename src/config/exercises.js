@@ -37,6 +37,7 @@ import NDeklination from "../exercises/A2/NDeklination";
 import WelchWasFuerEin from "../exercises/A2/WelchWasFuerEin";
 import Plusquamperfekt from "../exercises/A2/Plusquamperfekt";
 import DasVerbLassen from "../exercises/A2/DasVerbLassen";
+import Infinitivsaetze from "../exercises/A2/Infinitivsaetze";
 
 export const EXERCISES_BY_LEVEL = {
     "A1.1": {
@@ -132,14 +133,14 @@ export const EXERCISES_BY_LEVEL = {
         }
     },
     "A2": {
-        "subordinating-conjunctions": {
-            storageKey: "subordinating-conjunctions-answers",
-            component: SubordinatingConjunctions,
-        },
-        "conjunctive-adverbs": {
-            storageKey: "conjunctive-adverbs-answers",
-            component: ConjunctiveAdverbs,
-        },
+        // "subordinating-conjunctions": {
+        //     storageKey: "subordinating-conjunctions-answers",
+        //     component: SubordinatingConjunctions,
+        // },
+        // "conjunctive-adverbs": {
+        //     storageKey: "conjunctive-adverbs-answers",
+        //     component: ConjunctiveAdverbs,
+        // },
         "wechselpraepositionen": {
             storageKey: "wechselpraepositionen-answers",
             component: Wechselpraepositionen,
@@ -199,6 +200,10 @@ export const EXERCISES_BY_LEVEL = {
         "das-verb-lassen": {
             storageKey: "das-verb-lassen-answers",
             component: DasVerbLassen,
+        },
+        "infinitivsaetze": {
+            storageKey: "infinitivsaetze-answers",
+            component: Infinitivsaetze,
         }
     },
 };

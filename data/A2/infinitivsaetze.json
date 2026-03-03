@@ -1,0 +1,387 @@
+{
+  "title": {
+    "ru": "Infinitivsätze",
+    "en": "Infinitivsätze"
+  },
+  "instructions": {
+    "ru": "Выполните задания",
+    "en": "Complete the tasks"
+  },
+  "items": [
+    {
+      "id": "zuNoZu",
+      "label": {
+        "ru": "Вставьте частицу zu или “-” там, где необходимо",
+        "en": "Insert the particle zu or “-” where necessary"
+      }
+    },
+    {
+      "sentence": "Tim hat Betty gebeten, die Musik leiser ___ machen",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Tim konnte nicht ___ lernen",
+      "answer": "-"
+    },
+    {
+      "sentence": "Paul hat Tim eingeladen, eine Tasse Tee ___ trinken",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Betty hat angeboten, irgendwas ___ spielen",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Betty und Tim wollten Poker ___ spielen",
+      "answer": "-"
+    },
+    {
+      "sentence": "Paul hatte keine Lust, Poker ___ spielen",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Dann hat Tim vorgeschlagen, Scharade ___ spielen",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Betty sah Niki vor der Tür ___ stehen",
+      "answer": "-"
+    },
+    {
+      "sentence": "Er sollte Bettys Werkzeugkoffer aus___leihen",
+      "answer": "-"
+    },
+    {
+      "sentence": "Nikis Mutter wollte ihre kaputte Spülmaschine ___ reparieren",
+      "answer": "-"
+    },
+    {
+      "sentence": "Heute möchte ich gern zu Hause ___ bleiben",
+      "answer": "-"
+    },
+    {
+      "sentence": "Mein Freund empfiehlt mir, Sport ___ treiben",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Ich rate dir, deine Schulsachen zu Hause ___ lassen",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Er ging los, aber plötzlich blieb er vor der Tür ___ stehen",
+      "answer": "-"
+    },
+    {
+      "sentence": "Meine Nachbarn hören mich jeden Morgen ___ singen",
+      "answer": "-"
+    },
+    {
+      "sentence": "Es ist schwierig, jeden Morgen so früh ___ aufzustehen",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Hör bitte auf, ___ singen!",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Es ist sehr wichtig, dem Lehrer zu___hören",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Mein Vater hat mir empfohlen, das Auto reparieren ___ lassen",
+      "answer": "zu"
+    },
+    {
+      "sentence": "Lass bitte den Koffer hier ___ stehen",
+      "answer": "-"
+    },
+    {
+      "id": "infinitivkonstruktionen",
+      "label": {
+        "ru": "Подберите правильную инфинитивную конструкцию",
+        "en": "Choose the correct infinitive construction"
+      }
+    },
+    {
+      "sentence": "Tim hat mit seinen Nachbarn gespielt, ___ zu lernen",
+      "answer": "statt"
+    },
+    {
+      "sentence": "Tim verbrachte seinen Tag, ___ rauszugehen",
+      "answer": "ohne"
+    },
+    {
+      "sentence": "Betty war zu langsam, ___ zu gewinnen",
+      "answer": "um"
+    },
+    {
+      "sentence": "Eva sollte auch mitspielen, ___ die kaputte Spülmaschine zu reparieren",
+      "answer": "statt"
+    },
+    {
+      "sentence": "Eva hat die Spülmaschine repariert, ___ darüber ihrem Mann zu erzählen",
+      "answer": "ohne"
+    },
+    {
+      "sentence": "Trotz des Regens geht Tim raus, ___ einen Regenschirm mitzunehmen",
+      "answer": "ohne"
+    },
+    {
+      "sentence": "Paul muss in die Bäckerei gehen, ___ frische Brötchen zu holen",
+      "answer": "um"
+    },
+    {
+      "sentence": "Ich suche mein Werkzeug, ___ das Fahrrad reparieren zu können",
+      "answer": "um"
+    },
+    {
+      "sentence": "___ rauszugehen, spielten sie den ganzen Tag Poker",
+      "answer": "Statt"
+    },
+    {
+      "sentence": "Paul hat gewonnen, ___ lange zu denken",
+      "answer": "ohne"
+    },
+    {
+      "sentence": "Ich lese deutsche Bücher, ___ ein Wörterbuch zu benutzen",
+      "answer": "ohne"
+    },
+    {
+      "sentence": "Mia zieht ihr neues Kleid an, ___ heute Abend schick auszusehen",
+      "answer": "um"
+    },
+    {
+      "sentence": "Frau Schmidt hat ihre Wohnung verlassen, ___ den Nachbarn ein Wort zu sagen",
+      "answer": "ohne"
+    },
+    {
+      "sentence": "Paul sieht die ganze Nacht fern, ___ zu schlafen",
+      "answer": "statt"
+    },
+    {
+      "sentence": "Nächste Woche fliegt er nach Deutschland, ___ seine Freunde zu besuchen",
+      "answer": "um"
+    },
+    {
+      "sentence": "In Deutschland trennt man den Müll, ___ alles in einen Mülleimer zu werfen",
+      "answer": "statt"
+    },
+    {
+      "sentence": "Die Oma hat Suppe zubereitet, ___ sie zu salzen",
+      "answer": "ohne"
+    },
+    {
+      "sentence": "Herr Meier raucht und trinkt viel Kaffee, ___ gesund zu leben",
+      "answer": "statt"
+    },
+    {
+      "sentence": "Ich muss in den Keller gehen, ___ mein Fahrrad zu holen",
+      "answer": "um"
+    },
+    {
+      "sentence": "Wir nehmen den Bus, ___ zu spät zu kommen",
+      "answer": "um"
+    },
+    {
+      "id": "join",
+      "label": {
+        "ru": "Объедините предложения, используя um...zu или damit",
+        "en": "Combine the sentences using um...zu or damit"
+      }
+    },
+    {
+      "sentence": "Ich bekomme gute Noten. Meine Eltern freuen sich",
+      "answer": "Ich bekomme gute Noten, damit sich meine Eltern freuen"
+    },
+    {
+      "sentence": "Ich nehme Tabletten. Ich werde gesund",
+      "answer": "Ich nehme Tabletten, um gesund zu werden"
+    },
+    {
+      "sentence": "Ich nehme Tabletten. Mein Zahn tut nicht mehr weh",
+      "answer": "Ich nehme Tabletten, damit mein Zahn nicht mehr weh tut"
+    },
+    {
+      "sentence": "Tim und seine Nachbarn spielen Scharade. Sie verbringen die Zeit lustig",
+      "answer": "Tim und seine Nachbarn spielen Scharade, um die Zeit lustig zu verbringen"
+    },
+    {
+      "sentence": "Die Eltern kaufen dem Sohn viele Tischspiele. Er spielt mit seinen Freunden ruhige Spiele",
+      "answer": "Die Eltern kaufen dem Sohn viele Tischspiele, damit er mit seinen Freunden ruhige Spiele spielt"
+    },
+    {
+      "sentence": "Ich spare Geld. Ich kaufe mir später einen Wagen",
+      "answer": "Ich spare Geld, um mir später einen Wagen zu kaufen"
+    },
+    {
+      "sentence": "Ich lerne Deutsch. Ich möchte in Deutschland arbeiten",
+      "answer": "Ich lerne Deutsch, um in Deutschland zu arbeiten"
+    },
+    {
+      "sentence": "Wir gehen früh los. Wir kommen pünktlich an",
+      "answer": "Wir gehen früh los, damit wir pünktlich ankommen"
+    },
+    {
+      "sentence": "Ich mache Sport. Ich will fit bleiben",
+      "answer": "Ich mache Sport, um fit zu bleiben"
+    },
+    {
+      "sentence": "Er schreibt eine Liste. Er vergisst nichts",
+      "answer": "Er schreibt eine Liste, damit er nichts vergisst"
+    },
+    {
+      "id": "infinitivkonstruktionenTranslate",
+      "label": {
+        "ru": "Переведите предложения, используя инфинитивные конструкции um...zu / statt…zu / ohne…zu",
+        "en": "Translate the sentences using the infinitive constructions um...zu / statt…zu / ohne…zu"
+      }
+    },
+    {
+      "sentence": {
+        "ru": "Я читаю немецкие тексты, не используя словаря",
+        "en": "I read German texts without using a dictionary"
+      },
+      "answer": "Ich lese deutsche Texte, ohne ein Wörterbuch zu benutzen"
+    },
+    {
+      "sentence": {
+        "ru": "Я учу немецкий, чтобы свободно говорить",
+        "en": "I learn German in order to speak freely"
+      },
+      "answer": "Ich lerne Deutsch, um frei zu sprechen"
+    },
+    {
+      "sentence": {
+        "ru": "Вместо того чтобы учить английский, я учу немецкий",
+        "en": "Instead of learning English, I learn German"
+      },
+      "answer": "Statt Englisch zu lernen, lerne ich Deutsch"
+    },
+    {
+      "sentence": {
+        "ru": "Мы сегодня учимся вместо того, чтобы смотреть телевизор",
+        "en": "Today we study instead of watching TV"
+      },
+      "answer": "Wir lernen heute, statt fernzusehen"
+    },
+    {
+      "sentence": {
+        "ru": "Мастер отремонтировал стиральную машину, не используя инструмента",
+        "en": "The craftsman repaired the dishwasher without using the tool"
+      },
+      "answer": "Der Handwerker hat die Spülmaschine repariert, ohne das Werkzeug zu benutzen"
+    },
+    {
+      "sentence": {
+        "ru": "Вместо того чтобы играть, дети должны были помогать своим родителям",
+        "en": "Instead of playing, the children had to help their parents"
+      },
+      "answer": "Statt zu spielen, sollten die Kinder ihren Eltern helfen"
+    },
+    {
+      "sentence": {
+        "ru": "Пауль играет уже три часа в шахматы, ни разу не выиграв",
+        "en": "Paul has been playing chess for three hours without winning once"
+      },
+      "answer": "Paul spielt schon drei Stunden Schach, ohne einmal zu gewinnen"
+    },
+    {
+      "sentence": {
+        "ru": "Мы купили торт, вместо того чтобы испечь его самим",
+        "en": "We bought the cake instead of baking it ourselves"
+      },
+      "answer": "Wir haben die Torte gekauft, statt sie selbst zu backen"
+    },
+    {
+      "sentence": {
+        "ru": "Не говоря ни слова, Лара выключила музыку",
+        "en": "Without saying a word, Lara turned off the music"
+      },
+      "answer": "Ohne ein Wort zu sagen, hat Lara die Musik ausgemacht"
+    },
+    {
+      "sentence": {
+        "ru": "Он идет на рынок, чтобы купить фрукты",
+        "en": "He goes to the market to buy fruit"
+      },
+      "answer": "Er geht auf den Markt, um Obst zu kaufen"
+    },
+    {
+      "id": "translate",
+      "label": {
+        "ru": "Переведите предложения",
+        "en": "Translate the sentences"
+      }
+    },
+    {
+      "sentence": {
+        "ru": "У меня нет времени играть",
+        "en": "I don't have time to play"
+      },
+      "answer": "Ich habe keine Zeit zu spielen"
+    },
+    {
+      "sentence": {
+        "ru": "У него нет желания играть в покер",
+        "en": "He doesn't feel like playing poker"
+      },
+      "answer": "Er hat keine Lust, Poker zu spielen"
+    },
+    {
+      "sentence": {
+        "ru": "Я хотел бы предложить поиграть в шахматы",
+        "en": "I would like to suggest playing chess"
+      },
+      "answer": "Ich würde vorschlagen, Schach zu spielen"
+    },
+    {
+      "sentence": {
+        "ru": "Давайте (ihr) пить чай",
+        "en": "Let's drink tea"
+      },
+      "answer": "Lasst uns Tee trinken"
+    },
+    {
+      "sentence": {
+        "ru": "Сегодня идет дождь. Я лучше останусь сидеть дома",
+        "en": "It's raining today. I'd rather stay at home sitting"
+      },
+      "answer": "Heute regnet es. Ich bleibe lieber zu Hause sitzen"
+    },
+    {
+      "sentence": {
+        "ru": "Тим должен был учиться",
+        "en": "Tim had to study"
+      },
+      "answer": "Tim musste lernen"
+    },
+    {
+      "sentence": {
+        "ru": "Он попросил выключить музыку",
+        "en": "He asked to turn off the music"
+      },
+      "answer": "Er hat gebeten, Musik auszumachen"
+    },
+    {
+      "sentence": {
+        "ru": "У тебя есть желание выйти погулять?",
+        "en": "Do you feel like going out for a walk?"
+      },
+      "answer": "Hast du Lust rauszugehen?"
+    },
+    {
+      "sentence": {
+        "ru": "У него нет возможности учиться",
+        "en": "He has no possibility to study"
+      },
+      "answer": "Er hat keine Möglichkeit zu lernen"
+    },
+    {
+      "sentence": {
+        "ru": "У Евы нет времени играть с друзьями",
+        "en": "Eva doesn't have time to play with friends"
+      },
+      "answer": "Eva hat keine Zeit mit den Freunden zu spielen"
+    }
+  ]
+}
