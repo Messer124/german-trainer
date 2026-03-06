@@ -56,8 +56,6 @@ export default function App() {
 
     const contentRef = useRef(null);
     const hasThemeMountedRef = useRef(false);
-    const lastEnterHandledAtRef = useRef(0);
-    const lastFocusedInputRef = useRef(null);
     const tabsForLevel = getTabsForLevel(level);
     const labels = translations[locale].labels;
 
@@ -124,14 +122,10 @@ export default function App() {
     useEffect(() => {
         if (typeof document === "undefined") return;
 
-        const shouldHandleEnter = (event) => {
-            const isEnter = event.key === "Enter" || event.code === "Enter" || event.keyCode === 13;
-            if (!isEnter || event.defaultPrevented || event.isComposing) return false;
-            if (event.shiftKey || event.altKey || event.ctrlKey || event.metaKey) return false;
-            return true;
-        };
+        const handleEnterFocus = (event) => {
+            if (event.key !== "Enter" || event.defaultPrevented || event.isComposing) return;
+            if (event.shiftKey || event.altKey || event.ctrlKey || event.metaKey) return;
 
-        const moveFocusToNextInput = (event) => {
             const target = event.target;
             if (!(target instanceof HTMLInputElement)) return;
             if (target.disabled || target.readOnly) return;
@@ -145,70 +139,35 @@ export default function App() {
             if (currentIndex === -1 || currentIndex === inputs.length - 1) return;
 
             event.preventDefault();
-            lastEnterHandledAtRef.current = Date.now();
 
             const nextInput = inputs[currentIndex + 1];
-            nextInput.focus({ preventScroll: true });
+            nextInput.focus();
             nextInput.select?.();
         };
 
-        const handleKeydown = (event) => {
-            if (!shouldHandleEnter(event)) return;
-            moveFocusToNextInput(event);
-        };
-
-        const handleKeypressFallback = (event) => {
-            if (!shouldHandleEnter(event)) return;
-            if (Date.now() - lastEnterHandledAtRef.current < 80) return;
-            moveFocusToNextInput(event);
-        };
-
-        document.addEventListener("keydown", handleKeydown);
-        document.addEventListener("keypress", handleKeypressFallback);
+        document.addEventListener("keydown", handleEnterFocus);
         return () => {
-            document.removeEventListener("keydown", handleKeydown);
-            document.removeEventListener("keypress", handleKeypressFallback);
+            document.removeEventListener("keydown", handleEnterFocus);
         };
     }, [currentTab]);
 
     useEffect(() => {
         if (typeof document === "undefined") return;
 
-        const rememberFocusedInput = (event) => {
-            if (event.target instanceof HTMLInputElement && !event.target.disabled && !event.target.readOnly) {
-                lastFocusedInputRef.current = event.target;
-            }
-        };
-
         const keepKeyboardOpenOnEyeTap = (event) => {
             const eyeButton = event.target instanceof Element
                 ? event.target.closest(".eye-container--button")
                 : null;
 
-            if (!eyeButton) return;
-
-            event.preventDefault();
-
-            const lastFocusedInput = lastFocusedInputRef.current;
-            if (!(lastFocusedInput instanceof HTMLInputElement) || lastFocusedInput.disabled || lastFocusedInput.readOnly) {
-                return;
+            if (eyeButton) {
+                event.preventDefault();
             }
-
-            requestAnimationFrame(() => {
-                lastFocusedInput.focus({ preventScroll: true });
-                const valueLength = lastFocusedInput.value?.length ?? 0;
-                lastFocusedInput.setSelectionRange?.(valueLength, valueLength);
-            });
         };
 
-        document.addEventListener("focusin", rememberFocusedInput);
         document.addEventListener("pointerdown", keepKeyboardOpenOnEyeTap, { capture: true });
-        document.addEventListener("mousedown", keepKeyboardOpenOnEyeTap, { capture: true });
 
         return () => {
-            document.removeEventListener("focusin", rememberFocusedInput);
             document.removeEventListener("pointerdown", keepKeyboardOpenOnEyeTap, { capture: true });
-            document.removeEventListener("mousedown", keepKeyboardOpenOnEyeTap, { capture: true });
         };
     }, []);
 

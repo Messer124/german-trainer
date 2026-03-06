@@ -409,6 +409,7 @@
     .eye-container--button {
         width: var(--size-40);
         height: var(--size-40);
+        padding: var(--size-8);
     }
 }
 
