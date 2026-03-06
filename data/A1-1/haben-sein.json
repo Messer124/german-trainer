@@ -25,10 +25,6 @@
       "answer": "haben"
     },
     {
-      "sentence": "Sie ___ eine Familie.",
-      "answer": "haben"
-    },
-    {
       "sentence": "ich ___ einen Fernseher.",
       "answer": "habe"
     },
@@ -123,6 +119,10 @@
     {
       "sentence": "du ___ in der Küche.",
       "answer": "bist"
+    },
+    {
+      "sentence": "Sie ___ eine Familie.",
+      "answer": "haben"
     },
     {
       "sentence": "wir ___ im Laden.",

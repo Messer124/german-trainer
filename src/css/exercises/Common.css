@@ -248,6 +248,7 @@
     position: relative;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     margin-left: var(--size-8);
     cursor: pointer;
 }
@@ -255,11 +256,17 @@
 .eye-container--button {
     border: none;
     background: transparent;
-    padding: 0;
+    width: var(--size-36);
+    height: var(--size-36);
+    padding: var(--size-6);
+    border-radius: var(--size-999);
     color: var(--color-hint-button-text);
+    touch-action: manipulation;
 }
 
 .eye-container--button svg {
+    width: 18px;
+    height: 18px;
     stroke: currentColor;
 }
 
@@ -391,8 +398,18 @@
         min-width: var(--size-70);
     }
 
+    .eye-container {
+        transform: translateY(5px);
+    }
+
     .eye {
         font-size: var(--mobile-font-size);
+    }
+
+    .eye-container--button {
+        width: var(--size-40);
+        height: var(--size-40);
+        padding: var(--size-8);
     }
 }
 
@@ -422,5 +439,9 @@
 
     .eye {
         font-size: var(--tablet-font-size);
+    }
+
+    .eye-container {
+        transform: translateY(3px);
     }
 }

@@ -119,6 +119,58 @@ export default function App() {
         };
     }, [theme]);
 
+    useEffect(() => {
+        if (typeof document === "undefined") return;
+
+        const handleEnterFocus = (event) => {
+            if (event.key !== "Enter" || event.defaultPrevented || event.isComposing) return;
+            if (event.shiftKey || event.altKey || event.ctrlKey || event.metaKey) return;
+
+            const target = event.target;
+            if (!(target instanceof HTMLInputElement)) return;
+            if (target.disabled || target.readOnly) return;
+
+            const scope = target.closest(".exercise-card") ?? document;
+            const inputs = Array.from(
+                scope.querySelectorAll("input:not([type='hidden']):not([disabled]):not([readonly])")
+            ).filter((input) => input.offsetParent !== null);
+
+            const currentIndex = inputs.indexOf(target);
+            if (currentIndex === -1 || currentIndex === inputs.length - 1) return;
+
+            event.preventDefault();
+
+            const nextInput = inputs[currentIndex + 1];
+            nextInput.focus();
+            nextInput.select?.();
+        };
+
+        document.addEventListener("keydown", handleEnterFocus);
+        return () => {
+            document.removeEventListener("keydown", handleEnterFocus);
+        };
+    }, [currentTab]);
+
+    useEffect(() => {
+        if (typeof document === "undefined") return;
+
+        const keepKeyboardOpenOnEyeTap = (event) => {
+            const eyeButton = event.target instanceof Element
+                ? event.target.closest(".eye-container--button")
+                : null;
+
+            if (eyeButton) {
+                event.preventDefault();
+            }
+        };
+
+        document.addEventListener("pointerdown", keepKeyboardOpenOnEyeTap, { capture: true });
+
+        return () => {
+            document.removeEventListener("pointerdown", keepKeyboardOpenOnEyeTap, { capture: true });
+        };
+    }, []);
+
 // адаптив: только определяем, мобильный layout или нет
     useEffect(() => {
         if (typeof window === "undefined") return;
@@ -233,7 +285,8 @@ export default function App() {
                             >
                                 <option value="A1.1">A1.1</option>
                                 <option value="A1.2">A1.2</option>
-                                <option value="A2">A2 in progress</option>
+                                <option value="A2">A2</option>
+                                {/*<option value="B1">B1 in progress</option>*/}
                             </select>
 
                             <label className="sidebar-settings-row sidebar-settings-row--mt">

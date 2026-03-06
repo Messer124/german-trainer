@@ -27,6 +27,10 @@
       ]
     },
     {
+      "sentence": "Ich ___ mich sehr für Deutschland interessiert.",
+      "answer": ["habe"]
+    },
+    {
       "sentence": "Was ___ mit Tanja passiert?",
       "answer": [
         "ist"
@@ -45,7 +49,7 @@
       ]
     },
     {
-      "sentence": "Sie ___ den Tisch gedeckt.",
+      "sentence": "sie ___ den Tisch gedeckt.",
       "answer": [
         "hat"
       ]
@@ -69,6 +73,10 @@
       ]
     },
     {
+      "sentence": "Wir ___ uns über die guten Nachrichten gefreut.",
+      "answer": ["haben"]
+    },
+    {
       "sentence": "Der Unterricht ___ heute schon um 8 Uhr angefangen.",
       "answer": [
         "hat"
@@ -87,7 +95,7 @@
       ]
     },
     {
-      "sentence": "Sie ___ gestern nicht zur Schule gekommen.",
+      "sentence": "sie ___ gestern nicht zur Schule gekommen.",
       "answer": [
         "ist"
       ]
@@ -135,6 +143,16 @@
       ]
     },
     {
+      "sentence": "Ihr ___ euch gestern mit Freunden getroffen.",
+      "answer": ["habt"]
+    },
+    {
+      "sentence": "Ihr ___ heute viel gearbeitet.",
+      "answer": [
+        "habt"
+      ]
+    },
+    {
       "sentence": "Sie ___ die Tickets gekauft.",
       "answer": [
         "haben"
@@ -169,6 +187,10 @@
       "answer": [
         "ist"
       ]
+    },
+    {
+      "sentence": "Hast du dich an seinen Namen erinnert? — Ja, ich ___ mich erinnert.",
+      "answer": ["habe"]
     },
     {
       "sentence": "Ich ___ zu spät gekommen.",
@@ -207,6 +229,10 @@
       ]
     },
     {
+      "sentence": "Wer ___ sich um das Kind gekümmert?",
+      "answer": ["hat"]
+    },
+    {
       "sentence": "___ ihr schon gegessen?",
       "answer": [
         "habt"
@@ -216,12 +242,6 @@
       "sentence": "Heute ___ ich lange gearbeitet.",
       "answer": [
         "habe"
-      ]
-    },
-    {
-      "sentence": "Ihr ___ heute viel gearbeitet.",
-      "answer": [
-        "habt"
       ]
     },
     {
@@ -277,6 +297,10 @@
       "answer": [
         "hast"
       ]
+    },
+    {
+      "sentence": "Du ___ dich heute Morgen sehr beeilt.",
+      "answer": ["hast"]
     },
     {
       "sentence": "Ihr ___ gestern Fußball gespielt.",

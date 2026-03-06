@@ -1,0 +1,151 @@
+<article class="theory-card prp-card prp-card--akk">
+  <style>
+    .prp-card {
+      --prp-line: #d9d9de;
+      --prp-gap: 18px;
+    }
+
+    .prp-title {
+      margin: 2px 0 14px;
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      font-size: clamp(22px, 3.2vw, 38px);
+      line-height: 1.05;
+    }
+
+    .prp-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      border-top: 1px solid var(--prp-line);
+      border-left: 1px solid var(--prp-line);
+    }
+
+    .prp-cell {
+      padding: 16px 18px;
+      border-right: 1px solid var(--prp-line);
+      border-bottom: 1px solid var(--prp-line);
+      min-width: 0;
+    }
+
+    .prp-head {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: baseline;
+      margin: 0 0 8px;
+    }
+
+    .prp-prep {
+      font-weight: 900;
+      font-size: clamp(22px, 3vw, 40px);
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .prp-dash {
+      opacity: 0.75;
+      font-weight: 700;
+      font-size: clamp(18px, 2.4vw, 28px);
+      line-height: 1;
+    }
+
+    .prp-meaning {
+      font-weight: 800;
+      font-size: clamp(18px, 2.4vw, 30px);
+      line-height: 1.05;
+      color: var(--theory-text-color);
+    }
+
+    .prp-ex {
+      margin: 0;
+      line-height: 1.18;
+      font-size: clamp(18px, 2.2vw, 34px);
+    }
+
+    .prp-ex .de { display: block; }
+    .prp-ex .ru { display: block; margin-top: 4px; opacity: 0.92; }
+
+    /* phone */
+    @media (max-width: 720px) {
+      .prp-grid {
+        grid-template-columns: 1fr;
+      }
+      .prp-cell {
+        padding: 14px 14px;
+      }
+    }
+
+    /* extra-small */
+    @media (max-width: 420px) {
+      .prp-cell { padding: 12px 12px; }
+      .prp-ex .ru { margin-top: 2px; }
+    }
+  </style>
+
+  <h2 class="prp-title">
+    Предлог + <span class="theory-word--yellow">Akkusativ</span>
+  </h2>
+
+  <section class="prp-grid">
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--yellow">Für</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">для</span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Das Geschenk ist für die Mutter. —</span>
+        <span class="ru">Подарок для мамы.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--yellow">Um</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">вокруг</span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Die Katze geht um den Tisch. —</span>
+        <span class="ru">Кошка ходит вокруг стола.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--yellow">Durch</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">через</span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Die Brücke ist durch den Fluss. —</span>
+        <span class="ru">Мост через реку.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--yellow">Ohne</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">без <span style="font-weight: 600; opacity: 0.9;">(часто без артикля)</span></span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Du bleibst ohne Abendessen. —</span>
+        <span class="ru">Ты остаёшься без ужина.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell" style="grid-column: 1 / -1;">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--yellow">Gegen</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">против</span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Ich bin gegen den Hund. —</span>
+        <span class="ru">Я против собаки.</span>
+      </p>
+    </div>
+  </section>
+</article>

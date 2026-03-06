@@ -150,12 +150,16 @@
   transform: translateY(-50%);
   border: none;
   border-radius: var(--size-36);
-  padding: var(--size-4) var(--size-6);
+  width: var(--size-36);
+  height: var(--size-36);
+  padding: 0;
   background: var(--color-modal-nav-bg);
   color: var(--color-modal-nav-text);
   font-size: var(--size-22);
   cursor: pointer;
   z-index: 6;
+  display: grid;
+  place-items: center;
 }
 
 /* счётчик (как на скрине 1/2) */
@@ -171,8 +175,8 @@
   font-size: var(--size-12);
   z-index: 6;
 }
-.modal-slider__nav--prev { left: calc(-1 * var(--size-28)); }
-.modal-slider__nav--next { right: calc(-1 * var(--size-28)); }
+.modal-slider__nav--prev { left: calc(-1 * var(--size-36)); }
+.modal-slider__nav--next { right: calc(-1 * var(--size-36)); }
 
 .modal-close-button {
   position: absolute;
@@ -259,6 +263,10 @@
     --modal-wrapper-max-w: 94vw;
   }
 
+  .modal-html-shell {
+    width: min(93vw);
+  }
+
   .modal-slider__stage {
     position: relative;
     touch-action: pan-y;
@@ -288,12 +296,17 @@
     top: calc(-1 * var(--size-18));
   }
 
+  .modal-slider__nav {
+    width: var(--size-40);
+    height: var(--size-40);
+  }
+
   .modal-slider__nav--prev {
-    left: calc(-1 * var(--size-14));
+    left: calc(-1 * var(--size-20));
   }
 
   .modal-slider__nav--next {
-    right: calc(-1 * var(--size-14));
+    right: calc(-1 * var(--size-20));
   }
 
 }

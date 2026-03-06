@@ -1,0 +1,262 @@
+{
+  "title": {
+    "ru": "Personalpronomen",
+    "en": "Personalpronomen"
+  },
+  "instructions": {
+    "ru": "Напишите местоимения в нужном падеже",
+    "en": "Write the pronouns in the required case"
+  },
+  "items": [
+    {
+      "sentence": "Ich sehe ___ gar nicht",
+      "answer": "ihn",
+      "placeholder": "den Turm"
+    },
+    {
+      "sentence": "Wo finde ich ___?",
+      "answer": "sie",
+      "placeholder": "die Bücherei"
+    },
+    {
+      "sentence": "Wie geht es ___?",
+      "answer": "ihnen",
+      "placeholder": "deinen Eltern"
+    },
+    {
+      "sentence": "Peter trifft sich mit ___ in der Pizzeria",
+      "answer": "ihm",
+      "placeholder": "seinem Freund"
+    },
+    {
+      "sentence": "___ wohnen nicht weit vom Krankenhaus",
+      "answer": "sie",
+      "placeholder": "Max und Jana"
+    },
+    {
+      "sentence": "Herr Bauer kennt ___ sehr gut",
+      "answer": "sie",
+      "placeholder": "diese Stadt"
+    },
+    {
+      "sentence": "Am Wochenende fahren wir zu ___",
+      "answer": "ihnen",
+      "placeholder": "unseren Großeltern"
+    },
+    {
+      "sentence": "Ich habe ___ schon lange nicht gesehen",
+      "answer": "ihn",
+      "placeholder": "meinen Onkel"
+    },
+    {
+      "sentence": "Klaus bringt ___ zum Bahnhof",
+      "answer": "sie",
+      "placeholder": "Frau und Herrn Krause"
+    },
+    {
+      "sentence": "Meine Nachbarn helfen immer ___",
+      "answer": "ihm",
+      "placeholder": "diesem Mädchen"
+    },
+    {
+      "sentence": "Ich kenne ___ gut",
+      "answer": "sie",
+      "placeholder": "deine Schwester"
+    },
+    {
+      "sentence": "Wir besuchen ___ am Sonntag",
+      "answer": "ihn",
+      "placeholder": "unseren Opa"
+    },
+    {
+      "sentence": "Lisa ruft ___ jeden Tag an",
+      "answer": "sie",
+      "placeholder": "ihre Freundin"
+    },
+    {
+      "sentence": "Ich helfe ___ bei den Hausaufgaben",
+      "answer": "ihm",
+      "placeholder": "meinem Bruder"
+    },
+    {
+      "sentence": "Gib ___ bitte die Schokolade",
+      "answer": "ihm",
+      "placeholder": "dem Kind"
+    },
+    {
+      "sentence": "Frau Meier zeigt ___ die Stadt",
+      "answer": "ihnen",
+      "placeholder": "den Gästen"
+    },
+    {
+      "sentence": "Siehst du ___ dort?",
+      "answer": "es",
+      "placeholder": "das Auto"
+    },
+    {
+      "sentence": "Wir brauchen ___ jetzt",
+      "answer": "sie",
+      "placeholder": "die Schlüssel"
+    },
+    {
+      "sentence": "Ich warte auf ___",
+      "answer": "ihn",
+      "placeholder": "meinen Bus"
+    },
+    {
+      "sentence": "Der Lehrer erklärt ___ die Aufgabe",
+      "answer": "ihnen",
+      "placeholder": "den Schülern"
+    },
+    {
+      "sentence": "Markus wohnt mit ___ in Berlin",
+      "answer": "ihnen",
+      "placeholder": "seinen Eltern"
+    },
+    {
+      "sentence": "Ich kaufe ___ Blumen",
+      "answer": "ihr",
+      "placeholder": "meiner Mutter"
+    },
+    {
+      "sentence": "Wir hören ___ nicht",
+      "answer": "sie",
+      "placeholder": "die Musik"
+    },
+    {
+      "sentence": "Kennst du ___?",
+      "answer": "ihn",
+      "placeholder": "diesen Mann"
+    },
+    {
+      "sentence": "Ich schreibe ___ eine E-Mail",
+      "answer": "ihm",
+      "placeholder": "meinem Freund"
+    },
+    {
+      "sentence": "Anna besucht ___ in den Ferien",
+      "answer": "sie",
+      "placeholder": "ihre Großeltern"
+    },
+    {
+      "sentence": "___ ist sehr teuer",
+      "answer": "es",
+      "placeholder": "Mein neues Handy"
+    },
+    {
+      "sentence": "___ spielen im Garten",
+      "answer": "sie",
+      "placeholder": "Meine Kinder"
+    },
+    {
+      "sentence": "Morgen kommt ___",
+      "answer": "sie",
+      "placeholder": "unsere Lehrerin"
+    },
+    {
+      "sentence": "Ich sehe ___ schon",
+      "answer": "ihn",
+      "placeholder": "den Zug"
+    },
+    {
+      "sentence": "Wir fahren oft mit ___ zum See",
+      "answer": "ihm",
+      "placeholder": "unserem Hund"
+    },
+    {
+      "sentence": "Der Lehrer erklärt ___ die Grammatik",
+      "answer": "uns",
+      "placeholder": "mir und meiner Schwester"
+    },
+    {
+      "sentence": "Die Verkäuferin gibt ___ das Wechselgeld",
+      "answer": "ihm",
+      "placeholder": "dem Kunden"
+    },
+    {
+      "sentence": "Ich suche ___",
+      "answer": "sie",
+      "placeholder": "meine Brille"
+    },
+    {
+      "sentence": "Wir erzählen ___ eine Geschichte",
+      "answer": "ihnen",
+      "placeholder": "den Kindern"
+    },
+    {
+      "sentence": "Bringst du ___ mit?",
+      "answer": "ihn",
+      "placeholder": "deinen Laptop"
+    },
+    {
+      "sentence": "Ich nehme ___ mit in den Urlaub",
+      "answer": "es",
+      "placeholder": "dieses Buch"
+    },
+    {
+      "sentence": "Wie geht es ___?",
+      "answer": "ihm",
+      "placeholder": "deinem Opa"
+    },
+    {
+      "sentence": "Heute Abend treffen wir ___ im Kino",
+      "answer": "sie",
+      "placeholder": "unsere Freunde"
+    },
+    {
+      "sentence": "Frau Klein dankt immer ___",
+      "answer": "ihm",
+      "placeholder": "dem Arzt"
+    },
+    {
+      "sentence": "Ich mag ___ sehr",
+      "answer": "sie",
+      "placeholder": "diese Stadt"
+    },
+    {
+      "sentence": "Die Lehrerin fragt ___ etwas",
+      "answer": "ihn",
+      "placeholder": "den Schüler"
+    },
+    {
+      "sentence": "Wir fahren zu ___",
+      "answer": "ihr",
+      "placeholder": "unserer Tante"
+    },
+    {
+      "sentence": "Peter spricht oft mit ___",
+      "answer": "ihr",
+      "placeholder": "seiner Schwester"
+    },
+    {
+      "sentence": "Ich kenne ___ nicht",
+      "answer": "es",
+      "placeholder": "dieses Mädchen"
+    },
+    {
+      "sentence": "Hast du ___ gesehen?",
+      "answer": "es",
+      "placeholder": "mein Handy"
+    },
+    {
+      "sentence": "Der Busfahrer hilft ___",
+      "answer": "ihr",
+      "placeholder": "der alten Frau"
+    },
+    {
+      "sentence": "Am Wochenende gehen wir mit ___ ins Kino",
+      "answer": "ihnen",
+      "placeholder": "unseren Freunden"
+    },
+    {
+      "sentence": "Ich rufe ___ später an",
+      "answer": "sie",
+      "placeholder": "meine Freunde"
+    },
+    {
+      "sentence": "Kannst du ___ bitte antworten?",
+      "answer": "ihm",
+      "placeholder": "dem Lehrer"
+    }
+  ]
+}

@@ -74,34 +74,19 @@
       "answer": "Dürft"
     },
     {
-      "sentence": "Sie ___ ein Ticket kaufen.",
-      "verb": "möchten",
-      "answer": "möchte"
-    },
-    {
       "sentence": "Ich ___ Tee.",
       "verb": "mögen",
       "answer": "mag"
     },
     {
-      "sentence": "___ Sie etwas trinken?",
+      "sentence": "___ sie etwas trinken?",
       "verb": "möchten",
-      "answer": "Möchten"
+      "answer": "Möchte"
     },
     {
       "sentence": "Ich ___ heute Pizza essen.",
       "verb": "wollen",
       "answer": "will"
-    },
-    {
-      "sentence": "Sie ___ im Bus nicht essen.",
-      "verb": "dürfen",
-      "answer": "darf"
-    },
-    {
-      "sentence": "___ Sie kurz fragen?",
-      "verb": "dürfen",
-      "answer": "Dürfen"
     },
     {
       "sentence": "Wir ___ mit dem Bus fahren.",
@@ -144,24 +129,14 @@
       "answer": "Kannst"
     },
     {
-      "sentence": "Sie ___ ein Wasser, bitte.",
-      "verb": "möchten",
-      "answer": "möchte"
-    },
-    {
-      "sentence": "Sie ___ Musik.",
-      "verb": "mögen",
-      "answer": "mag"
-    },
-    {
       "sentence": "Ich ___ jeden Tag üben.",
       "verb": "müssen",
       "answer": "muss"
     },
     {
-      "sentence": "___ Sie den Mantel ausziehen?",
+      "sentence": "___ sie den Mantel ausziehen?",
       "verb": "sollen",
-      "answer": "Sollen"
+      "answer": "Soll"
     },
     {
       "sentence": "Wir ___ noch Brot kaufen.",
@@ -179,9 +154,9 @@
       "answer": "willst"
     },
     {
-      "sentence": "___ Sie mir bitte sagen, wo die Toilette ist?",
+      "sentence": "___ sie mir bitte sagen, wo die Toilette ist?",
       "verb": "können",
-      "answer": "Können"
+      "answer": "Kann"
     },
     {
       "sentence": "___ du das Fenster öffnen?",
@@ -207,11 +182,6 @@
       "sentence": "Er ___ gut schwimmen.",
       "verb": "können",
       "answer": "kann"
-    },
-    {
-      "sentence": "Sie ___ ein Ticket kaufen.",
-      "verb": "möchten",
-      "answer": "möchte"
     },
     {
       "sentence": "___ ihr ins Schwimmbad gehen?",
@@ -257,11 +227,6 @@
       "sentence": "Marie ___ Pizza.",
       "verb": "mögen",
       "answer": "mag"
-    },
-    {
-      "sentence": "___ Sie noch etwas trinken?",
-      "verb": "möchten",
-      "answer": "Möchten"
     },
     {
       "sentence": "Peter ___ dieses Problem nicht lösen.",
@@ -314,11 +279,6 @@
       "answer": "kannst"
     },
     {
-      "sentence": "Sie ___ jetzt gehen.",
-      "verb": "müssen",
-      "answer": "müssen"
-    },
-    {
       "sentence": "Er ___ heute einkaufen.",
       "verb": "müssen",
       "answer": "muss"
@@ -335,23 +295,8 @@
     },
     {
       "sentence": "Sie ___ hier kurz warten.",
-      "verb": "können",
-      "answer": "könnt"
-    },
-    {
-      "sentence": "___ Sie einen Termin machen?",
-      "verb": "wollen",
-      "answer": "Wollen"
-    },
-    {
-      "sentence": "___ Sie hier kurz warten.",
       "verb": "müssen",
       "answer": "Müssen"
-    },
-    {
-      "sentence": "Sie ___ hier sitzen.",
-      "verb": "dürfen",
-      "answer": "dürfen"
     },
     {
       "sentence": "___ du kein neues Handy?",
@@ -384,24 +329,9 @@
       "answer": "Magst"
     },
     {
-      "sentence": "___ Sie heute früher gehen?",
-      "verb": "dürfen",
-      "answer": "Dürfen"
-    },
-    {
       "sentence": "___ ich dir das mal erklären?",
       "verb": "sollen",
       "answer": "Soll"
-    },
-    {
-      "sentence": "Sie ___ die Rechnung heute bezahlen.",
-      "verb": "müssen",
-      "answer": "müssen"
-    },
-    {
-      "sentence": "Sie ___ keine Tomaten.",
-      "verb": "mögen",
-      "answer": "mögen"
     },
     {
       "sentence": "Sie ___ hier mit Karte bezahlen.",
@@ -459,26 +389,6 @@
       "answer": "möchte"
     },
     {
-      "sentence": "Sie ___ Kaffee.",
-      "verb": "mögen",
-      "answer": "mögen"
-    },
-    {
-      "sentence": "Sie ___ ein neues Buch kaufen.",
-      "verb": "wollen",
-      "answer": "will"
-    },
-    {
-      "sentence": "Sie ___ bitte hier warten.",
-      "verb": "sollen",
-      "answer": "sollen"
-    },
-    {
-      "sentence": "___ Sie das Formular lesen?",
-      "verb": "sollen",
-      "answer": "Sollen"
-    },
-    {
       "sentence": "Wir ___ ins Kino gehen.",
       "verb": "wollen",
       "answer": "wollen"
@@ -509,11 +419,6 @@
       "answer": "wollen"
     },
     {
-      "sentence": "Sie ___ hier Fotos machen.",
-      "verb": "dürfen",
-      "answer": "dürfen"
-    },
-    {
       "sentence": "Was ___ ich für Sie tun?",
       "verb": "können",
       "answer": "kann"
@@ -529,11 +434,6 @@
       "answer": "sollen"
     },
     {
-      "sentence": "Sie ___ ein Ticket kaufen.",
-      "verb": "möchten",
-      "answer": "möchte"
-    },
-    {
       "sentence": "Wir ___ morgen früh losfahren.",
       "verb": "wollen",
       "answer": "wollen"
@@ -544,19 +444,9 @@
       "answer": "wollt"
     },
     {
-      "sentence": "Sie ___ einen Tisch reservieren.",
-      "verb": "möchten",
-      "answer": "möchten"
-    },
-    {
       "sentence": "___ Sie heute früher gehen?",
       "verb": "dürfen",
       "answer": "Dürfen"
-    },
-    {
-      "sentence": "___ Sie einen Termin machen?",
-      "verb": "wollen",
-      "answer": "Wollen"
     },
     {
       "sentence": "Alle Kollegen ___ arbeiten.",

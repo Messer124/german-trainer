@@ -9,79 +9,126 @@
   },
   "items": [
     {
-      "sentence": "(ich) ___ Freunde sind langweilig.",
-      "answer": [
-        "Meine"
-      ]
+      "sentence": "___ Freunde sind langweilig.",
+      "placeholder": "ich",
+      "answer": ["Meine"]
     },
     {
-      "sentence": "(du) ___ Kleidung ist zu kurz.",
-      "answer": [
-        "Deine"
-      ]
+      "sentence": "___ Kleidung ist zu kurz.",
+      "placeholder": "du",
+      "answer": ["Deine"]
     },
     {
-      "sentence": "(Sie) ___ Kuchen ist kalt.",
-      "answer": [
-        "Ihr"
-      ]
+      "sentence": "___ Kuchen ist kalt.",
+      "placeholder": "Sie",
+      "answer": ["Ihr"]
     },
     {
-      "sentence": "(ihr) ___ Zeitungen sind neu.",
-      "answer": [
-        "Eure"
-      ]
+      "sentence": "___ Zeitungen sind neu.",
+      "placeholder": "ihr",
+      "answer": ["Eure"]
     },
     {
-      "sentence": "(er) ___ Schwester ist 34 Jahre alt.",
-      "answer": [
-        "Seine"
-      ]
+      "sentence": "___ Schwester ist 34 Jahre alt.",
+      "placeholder": "er",
+      "answer": ["Seine"]
     },
     {
-      "sentence": "(wir) ___ Lehrerin hat heute Geburtstag.",
-      "answer": [
-        "Unsere"
-      ]
+      "sentence": "___ Lehrerin hat heute Geburtstag.",
+      "placeholder": "wir",
+      "answer": ["Unsere"]
     },
     {
-      "sentence": "(wir) ___ Enkel geht im Herbst in die erste Klasse.",
-      "answer": [
-        "Unser"
-      ]
+      "sentence": "___ Enkel geht im Herbst in die erste Klasse.",
+      "placeholder": "wir",
+      "answer": ["Unser"]
     },
     {
-      "sentence": "(ich) ___ Eltern erlauben das nie.",
-      "answer": [
-        "Meine"
-      ]
+      "sentence": "___ Eltern erlauben das nie.",
+      "placeholder": "ich",
+      "answer": ["Meine"]
     },
     {
-      "sentence": "(du) ___ Wecker klingelt um 6 Uhr.",
-      "answer": [
-        "Dein"
-      ]
+      "sentence": "___ Wecker klingelt um 6 Uhr.",
+      "placeholder": "du",
+      "answer": ["Dein"]
     },
     {
-      "sentence": "(er) ___ Kinder sind schon erwachsen.",
-      "answer": [
-        "Seine"
-      ]
+      "sentence": "___ Kinder sind schon erwachsen.",
+      "placeholder": "er",
+      "answer": ["Seine"]
     },
     {
-      "sentence": "(ich) ___ Freund schwimmt gern im Sommer.",
-      "answer": [
-        "Mein"
-      ]
+      "sentence": "___ Freund schwimmt gern im Sommer.",
+      "placeholder": "ich",
+      "answer": ["Mein"]
     },
     {
-      "sentence": "(du) ___ Vater hat Geburtstag im Frühling.",
-      "answer": [
-        "Dein"
-      ]
+      "sentence": "___ Vater hat Geburtstag im Frühling.",
+      "placeholder": "du",
+      "answer": ["Dein"]
+    },{
+      "sentence": "___ Freunde sind langweilig.",
+      "placeholder": "ich",
+      "answer": ["Meine"]
     },
     {
-      "sentence": "Thomas und Susi, wo ist ___ Vater? ___ Vater ist in der Bank. Und wo ist ___ Mutter? ___ Mutter ist bei der Arbeit.",
+      "sentence": "___ Kleidung ist zu kurz.",
+      "placeholder": "du",
+      "answer": ["Deine"]
+    },
+    {
+      "sentence": "___ Kuchen ist kalt.",
+      "placeholder": "Sie",
+      "answer": ["Ihr"]
+    },
+    {
+      "sentence": "___ Zeitungen sind neu.",
+      "placeholder": "ihr",
+      "answer": ["Eure"]
+    },
+    {
+      "sentence": "___ Schwester ist 34 Jahre alt.",
+      "placeholder": "er",
+      "answer": ["Seine"]
+    },
+    {
+      "sentence": "___ Lehrerin hat heute Geburtstag.",
+      "placeholder": "wir",
+      "answer": ["Unsere"]
+    },
+    {
+      "sentence": "___ Enkel geht im Herbst in die erste Klasse.",
+      "placeholder": "wir",
+      "answer": ["Unser"]
+    },
+    {
+      "sentence": "___ Eltern erlauben das nie.",
+      "placeholder": "ich",
+      "answer": ["Meine"]
+    },
+    {
+      "sentence": "___ Wecker klingelt um 6 Uhr.",
+      "placeholder": "du",
+      "answer": ["Dein"]
+    },
+    {
+      "sentence": "___ Kinder sind schon erwachsen.",
+      "placeholder": "er",
+      "answer": ["Seine"]
+    },
+    {
+      "sentence": "___ Freund schwimmt gern im Sommer.",
+      "placeholder": "ich",
+      "answer": ["Mein"]
+    },
+    {
+      "sentence": "___ Vater hat Geburtstag im Frühling.",
+      "placeholder": "du",
+      "answer": ["Dein"]
+    },
+    {
+      "sentence": "Thomas und Susi, wo ist ___ Vater? —___ Vater ist in der Bank. — Und wo ist ___ Mutter? —___ Mutter ist bei der Arbeit.",
       "answer": [
         "euer",
         "Unser",
@@ -169,7 +216,7 @@
       ]
     },
     {
-      "sentence": "Kinder, ihr müsst ___ Vater zuhören!",
+      "sentence": "Kinder, ihr müsst ___ Vater zuhören(Dativ)!",
       "answer": [
         "eurem"
       ]

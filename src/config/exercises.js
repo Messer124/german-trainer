@@ -11,7 +11,7 @@ import PluralNounsExercise from "../exercises/A1-2/PluralNouns";
 import HabenSeinPreteritum from "../exercises/A1-2/HabenSeinPreteritum";
 import ModalVerbsPreteritum from "../exercises/A1-2/ModalVerbsPreteritum";
 import TimeExercise from "../exercises/A1-2/TimeExercise";
-import PersonalPronouns from "../exercises/A1-2/PersonalPronouns";
+import Personalpronomen from "../exercises/A1-2/Personalpronomen";
 import IndefinitePronouns from "../exercises/A1-2/IndefinitePronouns";
 import Imperativ from "../exercises/A1-2/Imperativ";
 import PrepositionsTime from "../exercises/A1-2/PrepositionsTime";
@@ -110,7 +110,7 @@ export const EXERCISES_BY_LEVEL = {
         },
         "personal-pronouns": {
             storageKey: "personal-pronouns-answers",
-            component: PersonalPronouns,
+            component: Personalpronomen,
         },
         "indefinite-pronouns": {
             storageKey: "indefinite-pronouns-answers",
@@ -211,5 +211,6 @@ export const EXERCISES_BY_LEVEL = {
             component: Indefinitpronomen,
         }
     },
-    "B1": {}
+    "B1": {
+    }
 };

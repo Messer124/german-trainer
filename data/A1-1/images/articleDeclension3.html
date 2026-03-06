@@ -1,0 +1,185 @@
+<article class="theory-card prp-card prp-card--dat">
+  <style>
+    .prp-card {
+      --prp-line: #d9d9de;
+      --prp-gap: 18px;
+    }
+
+    .prp-title {
+      margin: 2px 0 14px;
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      font-size: clamp(22px, 3.2vw, 38px);
+      line-height: 1.05;
+    }
+
+    .prp-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      border-top: 1px solid var(--prp-line);
+      border-left: 1px solid var(--prp-line);
+    }
+
+    .prp-cell {
+      padding: 16px 18px;
+      border-right: 1px solid var(--prp-line);
+      border-bottom: 1px solid var(--prp-line);
+      min-width: 0;
+    }
+
+    .prp-head {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: baseline;
+      margin: 0 0 8px;
+    }
+
+    .prp-prep {
+      font-weight: 900;
+      font-size: clamp(22px, 3vw, 40px);
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .prp-dash {
+      opacity: 0.75;
+      font-weight: 700;
+      font-size: clamp(18px, 2.4vw, 28px);
+      line-height: 1;
+    }
+
+    .prp-meaning {
+      font-weight: 800;
+      font-size: clamp(18px, 2.4vw, 30px);
+      line-height: 1.05;
+      color: var(--theory-text-color);
+    }
+
+    .prp-ex {
+      margin: 0;
+      line-height: 1.18;
+      font-size: clamp(18px, 2.2vw, 34px);
+    }
+
+    .prp-ex .de { display: block; }
+    .prp-ex .ru { display: block; margin-top: 4px; opacity: 0.92; }
+
+    .prp-note {
+      margin: 6px 0 0;
+      font-size: clamp(16px, 2vw, 26px);
+      opacity: 0.9;
+      line-height: 1.15;
+    }
+
+    @media (max-width: 720px) {
+      .prp-grid { grid-template-columns: 1fr; }
+      .prp-cell { padding: 14px 14px; }
+    }
+
+    @media (max-width: 420px) {
+      .prp-cell { padding: 12px 12px; }
+      .prp-ex .ru { margin-top: 2px; }
+    }
+  </style>
+
+  <h2 class="prp-title">
+    Предлог + <span class="theory-word--red">Dativ</span>
+  </h2>
+
+  <section class="prp-grid">
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--red">Mit</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">с, на, с помощью чего-то</span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Ich fahre mit dem Auto. —</span>
+        <span class="ru">Я еду на машине.</span>
+      </p>
+      <p class="prp-ex" style="margin-top: 10px;">
+        <span class="de">Du schreibst mit dem Kuli. —</span>
+        <span class="ru">Ты пишешь ручкой.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--red">Nach</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">после, в</span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Du kommst immer nach der Mutter. —</span>
+        <span class="ru">Ты приходишь всегда после мамы.</span>
+      </p>
+      <p class="prp-ex" style="margin-top: 10px;">
+        <span class="de">Ich fahre nach Deutschland. —</span>
+        <span class="ru">Я еду в Германию.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--red">Aus</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">из</span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Um 16 Uhr komme ich aus dem Büro. —</span>
+        <span class="ru">В 16 часов я иду из офиса.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--red">Zu</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">к</span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Du gehst zu dem Lehrer. —</span>
+        <span class="ru">Ты идёшь к учителю.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--red">Von</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">от</span>
+      </p>
+      <p class="prp-note">(показывает принадлежность)</p>
+      <p class="prp-ex" style="margin-top: 10px;">
+        <span class="de">Das Auto von dem Vater ist neu. —</span>
+        <span class="ru">Машина отца новая.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--red">Bei</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">у, при</span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Ich bin bei der Freundin. —</span>
+        <span class="ru">Я у подруги.</span>
+      </p>
+    </div>
+
+    <div class="prp-cell" style="grid-column: 1 / -1;">
+      <p class="prp-head">
+        <span class="prp-prep theory-word--red">Seit</span>
+        <span class="prp-dash">—</span>
+        <span class="prp-meaning">с <span style="font-weight: 600; opacity: 0.9;">(действие началось в прошлом времени и длится до настоящего момента)</span></span>
+      </p>
+      <p class="prp-ex">
+        <span class="de">Seit zwei Jahren wohne ich in Deutschland. —</span>
+        <span class="ru">Уже два года я живу в Германии.</span>
+      </p>
+    </div>
+  </section>
+</article>

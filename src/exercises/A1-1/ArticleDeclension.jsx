@@ -4,8 +4,12 @@ import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import "../../css/exercises/Common.css";
 import { useLocale } from "../../contexts/LocaleContext";
-import hintRu from "../../../data/A1-1/images/cases.html?raw";
-import hintEn from "../../../data/A1-1/images/en/cases.html?raw";
+import hint1Ru from "../../../data/A1-1/images/articleDeclension1.html?raw";
+import hint2Ru from "../../../data/A1-1/images/articleDeclension2.html?raw";
+import hint3Ru from "../../../data/A1-1/images/articleDeclension3.html?raw";
+import hint1En from "../../../data/A1-1/images/en/articleDeclension1.html?raw";
+import hint2En from "../../../data/A1-1/images/en/articleDeclension2.html?raw";
+import hint3En from "../../../data/A1-1/images/en/articleDeclension3.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "articles-answers";
@@ -80,7 +84,12 @@ function ArticleDeclension() {
         <div className="exercise-inner">
             {showImage && (
                 <ModalHtml
-                    html={locale === "en" ? hintEn : hintRu}
+                    images={
+                        locale === "en"
+                            ? [hint1En, hint2En, hint3En]
+                            : [hint1Ru, hint2Ru, hint3Ru]
+                    }
+                    initialIndex={0}
                     onClose={() => setShowImage(false)}
                 />
             )}

@@ -125,12 +125,6 @@
       ]
     },
     {
-      "sentence": "Die Kinder kommen ___ Schule.",
-      "answer": [
-        "von der"
-      ]
-    },
-    {
       "sentence": "Frau Stein hat bald eine Dienstreise. Sie muss am 10. September ___ Russland, ___ Moscow fliegen.",
       "answer": [
         "nach",
@@ -163,9 +157,9 @@
       ]
     },
     {
-      "sentence": "Meine Eltern möchten ___ Ostsee fahren.",
+      "sentence": "Meine Eltern möchten ___ Bodensee fahren.",
       "answer": [
-        "an die"
+        "an den"
       ]
     },
     {
@@ -267,7 +261,7 @@
     {
       "sentence": "Wir gehen ___ Strand.",
       "answer": [
-        "ans"
+        "an den"
       ]
     },
     {
@@ -337,7 +331,7 @@
       ]
     },
     {
-      "sentence": "Kannst du das Brot ___ dem Ofen holen?",
+      "sentence": "Kannst du das Brot ___ Ofen holen?",
       "answer": [
         "aus dem"
       ]
