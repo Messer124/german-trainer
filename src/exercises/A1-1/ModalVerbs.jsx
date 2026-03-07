@@ -4,14 +4,17 @@ import ExpandingInput from "../../components/ExpandingInput";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-1/modalVerbs.json";
 import hint1 from "../../../data/A1-1/images/modal-verbs.html?raw";
-import hint2 from "../../../data/A1-1/images/modal-verbs-2.html?raw";
+import hint2Ru from "../../../data/A1-1/images/modal-verbs-2.html?raw";
+import hint2En from "../../../data/A1-1/images/en/modal-verbs-2.html?raw";
 import "../../css/exercises/Common.css";
+import {useLocale} from "../../contexts/LocaleContext";
 
 const STORAGE_KEY = "modal-verbs-answers";
 
 function ModalVerbs() {
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
+    const { locale } = useLocale();
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);
@@ -37,7 +40,7 @@ function ModalVerbs() {
         <div className="exercise-inner">
             {showHint && (
                 <ModalHtml
-                    images={[hint1, hint2]}
+                    images={[hint1, locale === "en" ? hint2En : hint2Ru]}
                     initialIndex={0}
                     onClose={() => setShowHint(false)}
                 />

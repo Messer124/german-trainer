@@ -526,7 +526,7 @@
 table.mv-table {
   border-collapse: collapse;
   margin-top: 0;
-  background: #fff;
+  background: transparent;
 }
 
 table.mv-table caption {
@@ -567,6 +567,16 @@ table.mv-table tbody td {
   font-weight: 300;
   color: #2e313b;
   white-space: nowrap;
+}
+
+:root[data-theme="dark"] table.mv-table thead th,
+:root[data-theme="dark"] table.mv-table tbody th,
+:root[data-theme="dark"] table.mv-table tbody td {
+  color: #eef6ff;
+}
+
+:root[data-theme="dark"] .mv-gray {
+  color: #eef6ff;
 }
 
 /* Цветные буквы, как на картинке */
