@@ -1,84 +1,154 @@
-<div class="theory-card">
-    <div class="theory-title">
-        Образование Präteritum
-    </div>
+<!-- data/A1-2/images/preteritum.html -->
+<article class="theory-card pret-modal-card">
+    <style>
+        .pret-modal-card {
+            --pret-line: #dadbe2;
+        }
 
-    <div class="theory-arrow-roof">
-        <div class="theory-arrow-line theory-arrow-line--left"></div>
-        <div class="theory-arrow-line theory-arrow-line--right"></div>
-    </div>
+        .pret-modal-card .pret-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 18px;
+        }
 
-    <div class="theory-section theory-section--two-cols theory-section--divided">
+        .pret-modal-card .pret-panel {
+            border: 1px solid var(--pret-line);
+            border-radius: 18px;
+            padding: 16px 18px;
+            min-width: 0;
+        }
 
-        <div class="theory-column">
-            <div class="theory-heading theory-text-center">Правильные глаголы</div>
+        .pret-modal-card .pret-formula {
+            margin: 10px 0 12px;
+            line-height: 1.28;
+            text-align: center;
+            color: var(--theory-muted-color);
+        }
 
-            <div class="theory-formula">
+        .pret-modal-card .pret-table-wrap {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .pret-modal-card .pret-table {
+            margin-top: 0;
+            min-width: 260px;
+        }
+
+        .pret-modal-card .pret-table td:first-child {
+            width: 42%;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 900px) {
+            .pret-modal-card .pret-grid {
+                gap: 14px;
+                margin-top: 14px;
+            }
+
+            .pret-modal-card .pret-panel {
+                padding: 14px 14px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .pret-modal-card .pret-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin-top: 12px;
+            }
+
+            .pret-modal-card .pret-panel {
+                border-radius: 14px;
+                padding: 12px;
+            }
+
+            .pret-modal-card .pret-formula {
+                margin-bottom: 10px;
+                line-height: 1.24;
+            }
+
+            .pret-modal-card .pret-table td:first-child,
+            .pret-modal-card .pret-table td:last-child {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+        }
+    </style>
+
+    <h2 class="theory-title">Образование Präteritum</h2>
+
+    <section class="pret-grid">
+        <div class="pret-panel">
+            <h3 class="theory-heading theory-text-center">Правильные глаголы</h3>
+            <p class="pret-formula">
                 <span class="theory-word--bold">корень глагола</span> +
                 <span class="theory-word--yellow">t</span> +
                 <span class="theory-muted">личное окончание</span>
-            </div>
+            </p>
 
-            <table class="theory-table theory-table--conjugation">
-                <tbody>
-                <tr>
-                    <td>ich</td>
-                    <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--red">e</span></td>
-                </tr>
-                <tr>
-                    <td>du</td>
-                    <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--bold">e</span><span class="theory-word--red">st</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>er, sie, es</td>
-                    <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--red">e</span></td>
-                </tr>
-                <tr>
-                    <td>wir, Sie, sie</td>
-                    <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--red">en</span></td>
-                </tr>
-                <tr>
-                    <td>ihr</td>
-                    <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--red">et</span></td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="pret-table-wrap">
+                <table class="theory-table theory-table--conjugation pret-table">
+                    <tbody>
+                    <tr>
+                        <td>ich</td>
+                        <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--red">e</span></td>
+                    </tr>
+                    <tr>
+                        <td>du</td>
+                        <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--bold">e</span><span class="theory-word--red">st</span></td>
+                    </tr>
+                    <tr>
+                        <td>er, sie, es</td>
+                        <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--red">e</span></td>
+                    </tr>
+                    <tr>
+                        <td>wir, Sie, sie</td>
+                        <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--red">en</span></td>
+                    </tr>
+                    <tr>
+                        <td>ihr</td>
+                        <td><span class="theory-word--bold">spiel</span><span class="theory-word--yellow">t</span><span class="theory-word--red">et</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <div class="theory-column">
-            <div class="theory-heading theory-text-center">Неправильные глаголы</div>
-
-            <div class="theory-formula">
+        <div class="pret-panel">
+            <h3 class="theory-heading theory-text-center">Неправильные глаголы</h3>
+            <p class="pret-formula">
                 <span class="theory-muted">Табличное значение</span> +
                 <span class="theory-muted">личное окончание</span>
+            </p>
+
+            <div class="pret-table-wrap">
+                <table class="theory-table theory-table--conjugation pret-table">
+                    <tbody>
+                    <tr>
+                        <td>ich</td>
+                        <td><span class="theory-word--bold">kam</span></td>
+                    </tr>
+                    <tr>
+                        <td>du</td>
+                        <td><span class="theory-word--bold">kam</span><span class="theory-word--red">st</span></td>
+                    </tr>
+                    <tr>
+                        <td>er, sie, es</td>
+                        <td><span class="theory-word--bold">kam</span></td>
+                    </tr>
+                    <tr>
+                        <td>wir, Sie, sie</td>
+                        <td><span class="theory-word--bold">kam</span><span class="theory-word--red">en</span></td>
+                    </tr>
+                    <tr>
+                        <td>ihr</td>
+                        <td><span class="theory-word--bold">kam</span><span class="theory-word--red">t</span></td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-
-            <table class="theory-table theory-table--conjugation">
-                <tbody>
-                <tr>
-                    <td>ich</td>
-                    <td><span class="theory-word--bold">kam</span></td>
-                </tr>
-                <tr>
-                    <td>du</td>
-                    <td><span class="theory-word--bold">kam</span><span class="theory-word--red">st</span></td>
-                </tr>
-                <tr>
-                    <td>er, sie, es</td>
-                    <td><span class="theory-word--bold">kam</span></td>
-                </tr>
-                <tr>
-                    <td>wir, Sie, sie</td>
-                    <td><span class="theory-word--bold">kam</span><span class="theory-word--red">en</span></td>
-                </tr>
-                <tr>
-                    <td>ihr</td>
-                    <td><span class="theory-word--bold">kam</span><span class="theory-word--red">t</span></td>
-                </tr>
-                </tbody>
-            </table>
         </div>
-
-    </div>
-</div>
+    </section>
+</article>
