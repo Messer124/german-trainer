@@ -29,8 +29,8 @@
     },
     {
       "sentence": {
-        "ru": "Иди внутрь",
-        "en": "Go inside"
+        "ru": "Иди внутрь (в помещение)",
+        "en": "Go inside (go in)"
       },
       "answers": [
         "Geh nach drinnen",
@@ -39,8 +39,8 @@
     },
     {
       "sentence": {
-        "ru": "Передай мне телефон",
-        "en": "Pass me the phone"
+        "ru": "Передай мне телефон сюда",
+        "en": "Pass the phone over to me"
       },
       "answers": [
         "Gib mir das Handy herüber",
@@ -49,8 +49,8 @@
     },
     {
       "sentence": {
-        "ru": "Передай ей книгу",
-        "en": "Pass her the book"
+        "ru": "Передай ей книгу туда, на ту сторону",
+        "en": "Pass the book over to her"
       },
       "answers": [
         "Gib ihr das Buch hinüber",
@@ -80,7 +80,7 @@
     {
       "sentence": {
         "ru": "Иди туда внутрь, пожалуйста",
-        "en": "Go inside there, please"
+        "en": "Go in there, please"
       },
       "answers": [
         "Geh hinein, bitte",
@@ -99,8 +99,8 @@
     },
     {
       "sentence": {
-        "ru": "Поставь это туда",
-        "en": "Put it there"
+        "ru": "Поставь это туда, в то место",
+        "en": "Put it there, to that place"
       },
       "answers": [
         "Stell das dorthin",
@@ -109,8 +109,8 @@
     },
     {
       "sentence": {
-        "ru": "Иди туда внутрь (в комнату)",
-        "en": "Go inside there (into the room)"
+        "ru": "Иди туда внутрь, в комнату",
+        "en": "Go in there, into the room"
       },
       "answers": [
         "Geh hinein",
@@ -119,8 +119,8 @@
     },
     {
       "sentence": {
-        "ru": "Заходите внутрь",
-        "en": "Come in"
+        "ru": "Заходите сюда внутрь",
+        "en": "Come in here"
       },
       "answers": [
         "Kommen Sie herein",
@@ -158,8 +158,8 @@
     },
     {
       "sentence": {
-        "ru": "Иди туда",
-        "en": "Go there"
+        "ru": "Иди туда, в то место",
+        "en": "Go there, to that place"
       },
       "answers": [
         "Geh dorthin",
@@ -228,8 +228,8 @@
     },
     {
       "sentence": {
-        "ru": "Занеси сумку внутрь",
-        "en": "Bring the bag inside"
+        "ru": "Занеси сумку туда внутрь",
+        "en": "Carry the bag inside"
       },
       "answers": [
         "Trag die Tasche hinein",
@@ -286,8 +286,8 @@
     },
     {
       "sentence": {
-        "ru": "Перейди туда через улицу",
-        "en": "Go across the street over there"
+        "ru": "Перейди туда, на ту сторону улицы",
+        "en": "Go over there across the street"
       },
       "answers": [
         "Geh hinüber",
@@ -334,8 +334,8 @@
     },
     {
       "sentence": {
-        "ru": "Подожди там, пожалуйста",
-        "en": "Wait there, please"
+        "ru": "Подожди там, в том месте, пожалуйста",
+        "en": "Wait there, in that place, please"
       },
       "answers": [
         "Warte da, bitte",
@@ -383,8 +383,8 @@
     },
     {
       "sentence": {
-        "ru": "Принеси мне стул сюда",
-        "en": "Bring me the chair here"
+        "ru": "Принеси мне стул сюда, ко мне",
+        "en": "Bring the chair over here to me"
       },
       "answers": [
         "Bring den Stuhl herüber",
@@ -403,7 +403,7 @@
     },
     {
       "sentence": {
-        "ru": "Подойди ко мне через улицу",
+        "ru": "Подойди ко мне сюда, перейдя через улицу",
         "en": "Come over to me across the street"
       },
       "answers": [
@@ -461,7 +461,7 @@
     },
     {
       "sentence": {
-        "ru": "Иди туда наружу",
+        "ru": "Иди наружу",
         "en": "Go out there"
       },
       "answers": [
@@ -471,8 +471,8 @@
     },
     {
       "sentence": {
-        "ru": "Передай ему ручку",
-        "en": "Pass him the pen"
+        "ru": "Передай ему ручку туда",
+        "en": "Pass the pen over to him"
       },
       "answers": [
         "Gib ihm den Kuli herüber",
@@ -481,8 +481,8 @@
     },
     {
       "sentence": {
-        "ru": "Унеси коробку туда",
-        "en": "Take the box over there"
+        "ru": "Унеси коробку туда, на ту сторону",
+        "en": "Take the box over there / across"
       },
       "answers": [
         "Bring die Kiste hinüber",

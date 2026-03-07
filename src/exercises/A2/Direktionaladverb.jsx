@@ -4,7 +4,7 @@ import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
-import data from "../../../data/A2/adverbien.json";
+import data from "../../../data/A2/direktionaladverb.json";
 import slide1Ru from "../../../data/A2/images/adverbien.html?raw";
 import slide2Ru from "../../../data/A2/images/prefixes.html?raw";
 import slide1En from "../../../data/A2/images/en/adverbien.html?raw";
@@ -40,7 +40,7 @@ function getSentenceText(rawSentence, locale) {
   return "";
 }
 
-export default function Adverbien() {
+export default function Direktionaladverb() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
@@ -111,7 +111,7 @@ export default function Adverbien() {
   );
 }
 
-Adverbien.headerButton = (
+Direktionaladverb.headerButton = (
   <button
     type="button"
     className="hint-button"
@@ -122,5 +122,5 @@ Adverbien.headerButton = (
 );
 
 // В JSON нет поля title — задаём локально, чтобы заголовок не был пустым.
-Adverbien.title = data.title;
-Adverbien.instructions = data.instructions;
+Direktionaladverb.title = data.title;
+Direktionaladverb.instructions = data.instructions;

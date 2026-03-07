@@ -1,4 +1,7 @@
 /* базовые сбросы */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
 
 *,
 *::before,

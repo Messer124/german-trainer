@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
+import { Eye } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
@@ -76,6 +77,8 @@ export default function Wechselpraepositionen() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
+  const [previewValues, setPreviewValues] = useState({});
+  const previewTimersRef = useRef({});
 
   const rows = useMemo(() => getRows(data.items), []);
   const slides = useMemo(
@@ -89,14 +92,62 @@ export default function Wechselpraepositionen() {
     return () => document.removeEventListener("show-hint", handleShowHint);
   }, []);
 
+  useEffect(() => {
+    return () => {
+      Object.values(previewTimersRef.current).forEach((timerId) => clearTimeout(timerId));
+    };
+  }, []);
+
+  const clearPreview = (key) => {
+    if (previewTimersRef.current[key]) {
+      clearTimeout(previewTimersRef.current[key]);
+      delete previewTimersRef.current[key];
+    }
+
+    if (previewValues[key] != null) {
+      setPreviewValues((prev) => {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      });
+    }
+  };
+
   const setBlankValue = (sentenceIndex, blankIdx, value, correct) => {
     const key = `${sentenceIndex}-${blankIdx}`;
+    clearPreview(key);
+
     const isCorrect = normalize(value) === normalize(correct);
 
     setAnswers((prev) => ({
       ...prev,
       [key]: { value, isCorrect },
     }));
+  };
+
+  const showAnswerPreview = (sentenceIndex, answer) => {
+    const key = `${sentenceIndex}-0`;
+    const value = String(answer ?? "");
+    if (!value) return;
+
+    if (previewTimersRef.current[key]) {
+      clearTimeout(previewTimersRef.current[key]);
+    }
+
+    setPreviewValues((prev) => ({ ...prev, [key]: value }));
+
+    previewTimersRef.current[key] = setTimeout(() => {
+      setPreviewValues((prev) => {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      });
+      delete previewTimersRef.current[key];
+    }, 2000);
+  };
+
+  const preventStealFocus = (event) => {
+    event.preventDefault();
   };
 
   const renderInsert = (row) => {
@@ -112,48 +163,48 @@ export default function Wechselpraepositionen() {
           {translation ? <span className="sentence">{translation} — </span> : null}
 
           <span>
-        {parts.map((part, idx) => {
-          const showInput = idx < blanksCount;
-          if (!showInput) return <span key={idx}>{part}</span>;
+          {parts.map((part, idx) => {
+            const showInput = idx < blanksCount;
+            if (!showInput) return <span key={idx}>{part}</span>;
 
-          const key = `${row.sentenceIndex}-${idx}`;
-          const stored = answers[key];
-          const value = stored?.value ?? "";
-          const trimmed = value.trim();
-          const isCorrect = stored?.isCorrect;
+            const key = `${row.sentenceIndex}-${idx}`;
+            const stored = answers[key];
+            const value = stored?.value ?? "";
+            const trimmed = value.trim();
+            const isCorrect = stored?.isCorrect;
 
-          const inputClass =
-              trimmed === ""
-                  ? "input"
-                  : isCorrect
-                      ? "input correct"
-                      : "input incorrect";
+            const inputClass =
+                trimmed === ""
+                    ? "input"
+                    : isCorrect
+                        ? "input correct"
+                        : "input incorrect";
 
-          const correct = correctAnswers[idx] ?? "";
+            const correct = correctAnswers[idx] ?? "";
 
-          return (
-              <span key={idx}>
-              {part}
-                <ExpandingInput
-                    type="text"
-                    value={value}
-                    onChange={(e) =>
-                        setBlankValue(row.sentenceIndex, idx, e.target.value, correct)
-                    }
-                    className={inputClass}
-                    minWidth={90}
-                    tabletMinWidth={75}
-                    mobileMinWidth={65}
-                    maxWidth={220}
-                    enterKeyHint="next"
-                    aria-label={`Wechselpraepositionen insert blank ${idx + 1} (item ${
-                        row.sentenceIndex + 1
-                    })`}
-                />
-            </span>
-          );
-        })}
-      </span>
+            return (
+                <span key={idx}>
+                {part}
+                  <ExpandingInput
+                      type="text"
+                      value={value}
+                      onChange={(e) =>
+                          setBlankValue(row.sentenceIndex, idx, e.target.value, correct)
+                      }
+                      className={inputClass}
+                      minWidth={90}
+                      tabletMinWidth={75}
+                      mobileMinWidth={65}
+                      maxWidth={220}
+                      enterKeyHint="next"
+                      aria-label={`Wechselpraepositionen insert blank ${idx + 1} (item ${
+                          row.sentenceIndex + 1
+                      })`}
+                  />
+              </span>
+            );
+          })}
+        </span>
         </li>
     );
   };
@@ -164,12 +215,15 @@ export default function Wechselpraepositionen() {
 
     const key = `${row.sentenceIndex}-0`;
     const stored = answers[key];
-    const value = stored?.value ?? "";
-    const trimmed = value.trim();
+    const savedValue = stored?.value ?? "";
+    const visibleValue = previewValues[key] ?? savedValue;
+    const trimmed = visibleValue.trim();
+    const isPreviewing = previewValues[key] != null;
     const isCorrect = stored?.isCorrect;
 
-    const inputClass =
-        trimmed === ""
+    const inputClass = isPreviewing
+        ? "input"
+        : trimmed === ""
             ? "input"
             : isCorrect
                 ? "input correct"
@@ -180,7 +234,7 @@ export default function Wechselpraepositionen() {
           <span className="sentence">{sentence} —</span>
           <ExpandingInput
               type="text"
-              value={value}
+              value={visibleValue}
               onChange={(e) => setBlankValue(row.sentenceIndex, 0, e.target.value, correct)}
               className={inputClass}
               minWidth={220}
@@ -188,8 +242,22 @@ export default function Wechselpraepositionen() {
               mobileMinWidth={110}
               maxWidth={860}
               enterKeyHint="next"
+              readOnly={isPreviewing}
               aria-label={`Wechselpraepositionen translate answer (item ${row.sentenceIndex + 1})`}
           />
+          <button
+              type="button"
+              className="eye-container eye-container--button"
+              onPointerDown={preventStealFocus}
+              onTouchStart={preventStealFocus}
+              onMouseDown={preventStealFocus}
+              onClick={() => showAnswerPreview(row.sentenceIndex, row.answer)}
+              aria-label={`Show answer for sentence ${row.sentenceIndex + 1}`}
+          >
+          <span>
+            <Eye size={18} />
+          </span>
+          </button>
         </li>
     );
   };
@@ -231,4 +299,4 @@ Wechselpraepositionen.headerButton = (
 );
 
 Wechselpraepositionen.instructions = data.instructions;
-Wechselpraepositionen.title = data.title;
+Wechselpraepositionen.title = data.title

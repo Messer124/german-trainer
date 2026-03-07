@@ -319,7 +319,7 @@
       ]
     },
     {
-      "sentence": "Sie kommt ___ Schule.",
+      "sentence": "Sie kommt zurück ___ Schule.",
       "answers": [
         [
           "aus der"
@@ -426,7 +426,7 @@
       ]
     },
     {
-      "sentence": "Ich komme ___ Strand.",
+      "sentence": "Ich komme zurück ___ Strand.",
       "answers": [
         [
           "vom",

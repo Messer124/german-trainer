@@ -16,87 +16,10 @@
       }
     },
     {
-      "sentence": "Der Schlüssel ___ ___ der Tür",
+      "sentence": "Das Foto ___ ___ den Büchern",
       "translation": {
-        "ru": "Ключ лежит перед дверью",
-        "en": "The key lays in front of the door"
-      },
-      "answer": [
-        "liegt",
-        "vor"
-      ]
-    },
-    {
-      "sentence": "Ich ___ ein Lesezeichen ___ das Buch",
-      "translation": {
-        "ru": "Я кладу закладку в книгу",
-        "en": "I put bookmark in a book"
-      },
-      "answer": [
-        "lege",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Ich ___ den Rucksack ___ den Tisch",
-      "translation": {
-        "ru": "Я ставлю рюкзак на стол",
-        "en": "I put backpack on the table"
-      },
-      "answer": [
-        "stelle",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Die Lampe ___ ___ dem Tisch",
-      "translation": {
-        "ru": "Лампа висит над стол",
-        "en": "The lamp is above the table"
-      },
-      "answer": [
-        "hängt",
-        "über"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Zeitung ___ den Tisch",
-      "translation": {
-        "ru": "Я кладу газету на стол",
-        "en": "I put newspaper on the table"
-      },
-      "answer": [
-        "lege",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Vase ___ die Bücher",
-      "translation": {
-        "ru": "Я ставлю вазу между книгами",
-        "en": "I put vase between the books"
-      },
-      "answer": [
-        "stelle",
-        "zwischen"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Tasche ___ den Tisch",
-      "translation": {
-        "ru": "Я ставлю сумку на стол",
-        "en": "I put bag on the table"
-      },
-      "answer": [
-        "stelle",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Der Stift ___ ___ den Büchern",
-      "translation": {
-        "ru": "Ручка находится между книгами",
-        "en": "The pen is between the books"
+        "ru": "Фотография торчит между книгами",
+        "en": "The photo is stuck between the books"
       },
       "answer": [
         "steckt",
@@ -104,219 +27,65 @@
       ]
     },
     {
-      "sentence": "Ich ___ das Glas ___ den Tisch",
+      "sentence": "Ich ___ die Serviette ___ die Teller",
       "translation": {
-        "ru": "Я ставлю стакан на стол",
-        "en": "I put glass on the table"
+        "ru": "Я кладу салфетку между тарелками",
+        "en": "I lay the napkin between the plates"
       },
       "answer": [
-        "stelle",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Flaschen ___ den Keller",
-      "translation": {
-        "ru": "Я ставлю бутылки в подвал",
-        "en": "I put bottles in the cellar"
-      },
-      "answer": [
-        "stelle",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Der Schlüssel ___ ___ dem Schloss",
-      "translation": {
-        "ru": "Ключ находится в замке",
-        "en": "The key is in the lock"
-      },
-      "answer": [
-        "steckt",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Tassen ___ den Tisch",
-      "translation": {
-        "ru": "Я ставлю чашки на стол",
-        "en": "I put cups on the table"
-      },
-      "answer": [
-        "stelle",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Ich ___ den Schlüssel ___ das Schloss",
-      "translation": {
-        "ru": "Я вставляю Ключ в замке",
-        "en": "I put key in the lock"
-      },
-      "answer": [
-        "stecke",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Lampe ___ den Tisch",
-      "translation": {
-        "ru": "Я ставлю лампу на стол",
-        "en": "I put lamp on the table"
-      },
-      "answer": [
-        "stelle",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Ich ___ mich ___ den Stuhl",
-      "translation": {
-        "ru": "Я сажусь на стул",
-        "en": "I sit down on the chair"
-      },
-      "answer": [
-        "setze",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Ich ___ das Bild ___ die Wand",
-      "translation": {
-        "ru": "Я вешаю картину на стену",
-        "en": "I hang picture on the wall"
-      },
-      "answer": [
-        "hänge",
-        "an"
-      ]
-    },
-    {
-      "sentence": "Ich ___ mich ___ den Stuhl",
-      "translation": {
-        "ru": "Я сажусь на стул",
-        "en": "I sit down on the chair"
-      },
-      "answer": [
-        "setze",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Die Schuhe ___ ___ den Stühlen",
-      "translation": {
-        "ru": "Ботинки стоят между стульями",
-        "en": "The shoes are between the chairs"
-      },
-      "answer": [
-        "stehen",
+        "lege",
         "zwischen"
       ]
     },
     {
-      "sentence": "Ich ___ das Fahrrad ___ die Garage",
+      "sentence": "Das Geld ___ ___ dem Buch",
       "translation": {
-        "ru": "Я ставлю велосипед в гараж",
-        "en": "I put bicycle in the garage"
+        "ru": "Деньги торчат под книгой",
+        "en": "The money is stuck under the book"
       },
       "answer": [
-        "stelle",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Der Mantel ___ ___ der Garderobe",
-      "translation": {
-        "ru": "Пальто висит на вешалке",
-        "en": "The coat is on the coat rack"
-      },
-      "answer": [
-        "hängt",
-        "an"
-      ]
-    },
-    {
-      "sentence": "Ich ___ den Ball ___ den Tisch",
-      "translation": {
-        "ru": "Я кладу мяч под стол",
-        "en": "I put ball under the table"
-      },
-      "answer": [
-        "lege",
+        "steckt",
         "unter"
       ]
     },
     {
-      "sentence": "Ich ___ das Handy ___ den Schrank",
+      "sentence": "Die Flaschen ___ ___ dem Kühlschrank",
       "translation": {
-        "ru": "Я кладу телефон в шкаф",
-        "en": "I put phone in the wardrobe"
-      },
-      "answer": [
-        "lege",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Der Koffer ___ ___ der Tür",
-      "translation": {
-        "ru": "Чемодан стоит перед дверью",
-        "en": "The suitcase is in front of the door"
-      },
-      "answer": [
-        "steht",
-        "vor"
-      ]
-    },
-    {
-      "sentence": "Das Buch ___ ___ dem Bett",
-      "translation": {
-        "ru": "Книга лежит на кровати",
-        "en": "The book is on the bed"
-      },
-      "answer": [
-        "liegt",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Die Flaschen ___ ___ dem Keller",
-      "translation": {
-        "ru": "Бутылки стоят в подвале",
-        "en": "The bottles are in the cellar"
+        "ru": "Бутылки стоят рядом с холодильником",
+        "en": "The bottles stand next to the fridge"
       },
       "answer": [
         "stehen",
-        "in"
+        "neben"
       ]
     },
     {
-      "sentence": "Ich ___ die Schuhe ___ das Bett",
+      "sentence": "Wir ___ den Koffer ___ die Tür",
       "translation": {
-        "ru": "Я ставлю ботинки под кровать",
-        "en": "I put shoes under the bed"
+        "ru": "Мы ставим чемодан за дверь",
+        "en": "We stand the suitcase behind the door"
       },
       "answer": [
-        "stelle",
-        "unter"
+        "stellen",
+        "hinter"
       ]
     },
     {
-      "sentence": "Die Jacke ___ ___ dem Stuhl",
+      "sentence": "Wir ___ das Foto ___ die Bücher",
       "translation": {
-        "ru": "Куртка висит на стуле",
-        "en": "The jacket is hanging on a chair"
+        "ru": "Мы засовываем фотографию между книгами",
+        "en": "We stick the photo between the books"
       },
       "answer": [
-        "hängt",
-        "auf"
+        "stecken",
+        "zwischen"
       ]
     },
     {
       "sentence": "Tom ___ ___ dem Fenster",
       "translation": {
         "ru": "Том сидит рядом с окном",
-        "en": "Tom is sitting by the window."
+        "en": "Tom sits next to the window"
       },
       "answer": [
         "sitzt",
@@ -324,197 +93,65 @@
       ]
     },
     {
-      "sentence": "Die Hemden ___ ___ dem Schrank",
+      "sentence": "Ich ___ das Geld ___ das Buch",
       "translation": {
-        "ru": "Рубашки висят в шкафу",
-        "en": "Shirts are hanging in the closet."
+        "ru": "Я засовываю деньги под книгу",
+        "en": "I stick the money under the book"
       },
       "answer": [
-        "hängen",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Jacke ___ den Stuhl",
-      "translation": {
-        "ru": "Я вешаю куртку на стул",
-        "en": "I hang my jacket on a chair"
-      },
-      "answer": [
-        "hänge",
-        "an"
-      ]
-    },
-    {
-      "sentence": "Ich ___ das Buch ___ das Regal",
-      "translation": {
-        "ru": "Я ставлю книгу на полку",
-        "en": "I put the book on the shelf"
-      },
-      "answer": [
-        "stelle",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Das Handy ___ ___ dem Sofa",
-      "translation": {
-        "ru": "Телефон лежит за диваном",
-        "en": "The phone is behind the sofa"
-      },
-      "answer": [
-        "liegt",
-        "hinter"
-      ]
-    },
-    {
-      "sentence": "Der Ball ___ ___ dem Tisch",
-      "translation": {
-        "ru": "Мяч лежит под столом",
-        "en": "The ball is under the table"
-      },
-      "answer": [
-        "liegt",
+        "stecke",
         "unter"
       ]
     },
     {
-      "sentence": "Ich ___ die Flasche ___ den Kühlschrank",
+      "sentence": "Der Schrank ___ ___ der Wand",
       "translation": {
-        "ru": "Я ставлю бутылку в холодильник",
-        "en": "I put bottle in the fridge"
+        "ru": "Шкаф стоит у стены",
+        "en": "The wardrobe stands by the wall"
+      },
+      "answer": [
+        "steht",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Computer ___ den Tisch",
+      "translation": {
+        "ru": "Я ставлю компьютер на стол",
+        "en": "I stand the computer on the table"
       },
       "answer": [
         "stelle",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Ich ___ mich ___ das Bett",
-      "translation": {
-        "ru": "Я сажусь на кровать",
-        "en": "I sit down on the bed"
-      },
-      "answer": [
-        "setze",
         "auf"
       ]
     },
     {
-      "sentence": "Ich ___ das Kissen ___ das Sofa",
+      "sentence": "Der Hund ___ ___ der Tür",
       "translation": {
-        "ru": "Я кладу подушку на диван",
-        "en": "I put pillow on the sofa"
-      },
-      "answer": [
-        "lege",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Ich ___ das Handy ___ die Tasche",
-      "translation": {
-        "ru": "Я кладу телефон в сумку",
-        "en": "I put phone in the bag"
-      },
-      "answer": [
-        "lege",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Wäsche ___ die Wäscheleine",
-      "translation": {
-        "ru": "Я вешаю бельё на верёвку",
-        "en": "I hang laundry on the clothesline"
-      },
-      "answer": [
-        "hänge",
-        "an"
-      ]
-    },
-    {
-      "sentence": "Die Bücher ___ ___ dem Tisch",
-      "translation": {
-        "ru": "книги лежат на стол",
-        "en": "The books are on the table"
-      },
-      "answer": [
-        "liegen",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Ich ___ mich ___ die Bank",
-      "translation": {
-        "ru": "Я сажусь на скамейку",
-        "en": "I sit down on the bench"
-      },
-      "answer": [
-        "setze",
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Das Bild ___ ___ der Wand",
-      "translation": {
-        "ru": "Картинка висит на стене",
-        "en": "The picture is on the wall"
-      },
-      "answer": [
-        "hängt",
-        "an"
-      ]
-    },
-    {
-      "sentence": "Ich ___ das Bild ___ die Wand",
-      "translation": {
-        "ru": "Я вешаю картину на стену",
-        "en": "I hang a picture on the wall"
-      },
-      "answer": [
-        "hänge",
-        "an"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Teller ___ den Schrank",
-      "translation": {
-        "ru": "Я ставлю тарелку в шкаф",
-        "en": "I put plate in the wardrobe"
-      },
-      "answer": [
-        "stelle",
-        "in"
-      ]
-    },
-    {
-      "sentence": "Anna ___ ___ dem Auto",
-      "translation": {
-        "ru": "Анна сидит в машине",
-        "en": "Anna is sitting in the car"
+        "ru": "Собака сидит перед дверью",
+        "en": "The dog sits in front of the door"
       },
       "answer": [
         "sitzt",
-        "in"
+        "vor"
       ]
     },
     {
-      "sentence": "Ich ___ die Hose ___ den Schrank",
+      "sentence": "Wir ___ uns ___ den Baum",
       "translation": {
-        "ru": "Я вешаю брюки в шкаф",
-        "en": "I hang trousers in the wardrobe"
+        "ru": "Мы садимся под дерево",
+        "en": "We sit down under the tree"
       },
       "answer": [
-        "hänge",
-        "in"
+        "setzen",
+        "unter"
       ]
     },
     {
-      "sentence": "Ich ___ den Stecker ___ die Steckdose",
+      "sentence": "Ich ___ den Schlüssel ___ das Schloss",
       "translation": {
-        "ru": "Я вставляю вилку в розетку",
-        "en": "I put plug in the socket"
+        "ru": "Я вставляю ключ в замок",
+        "en": "I stick the key into the lock"
       },
       "answer": [
         "stecke",
@@ -522,14 +159,300 @@
       ]
     },
     {
-      "sentence": "Ich ___ das Kind ___ das Auto",
+      "sentence": "Ich ___ das Bild ___ die Wand",
       "translation": {
-        "ru": "Я усаживаю ребёнка в машину",
-        "en": "I sit down child in the car"
+        "ru": "Я вешаю картину на стену",
+        "en": "I hang the picture on the wall"
+      },
+      "answer": [
+        "hänge",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Die Decke ___ ___ dem Stuhl",
+      "translation": {
+        "ru": "Одеяло лежит на стуле",
+        "en": "The blanket lies on the chair"
+      },
+      "answer": [
+        "liegt",
+        "über"
+      ]
+    },
+    {
+      "sentence": "Sie ___ den Vorhang ___ das Fenster",
+      "translation": {
+        "ru": "Она вешает занавеску перед окном",
+        "en": "She hangs the curtain in front of the window"
+      },
+      "answer": [
+        "hängt",
+        "vor"
+      ]
+    },
+    {
+      "sentence": "Der Koffer ___ ___ der Tür",
+      "translation": {
+        "ru": "Чемодан стоит перед дверью",
+        "en": "The suitcase stands in front of the door"
+      },
+      "answer": [
+        "steht",
+        "vor"
+      ]
+    },
+    {
+      "sentence": "Sie ___ den Brief ___ den Spiegel",
+      "translation": {
+        "ru": "Она засовывает письмо за зеркало",
+        "en": "She sticks the letter behind the mirror"
+      },
+      "answer": [
+        "steckt",
+        "hinter"
+      ]
+    },
+    {
+      "sentence": "Der Computer ___ ___ dem Tisch",
+      "translation": {
+        "ru": "Компьютер стоит на столе",
+        "en": "The computer stands on the table"
+      },
+      "answer": [
+        "steht",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Sie ___ den Schrank ___ die Wand",
+      "translation": {
+        "ru": "Она ставит шкаф к стене",
+        "en": "She stands the wardrobe against the wall"
+      },
+      "answer": [
+        "stellt",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Die Hemden ___ ___ dem Kleiderschrank",
+      "translation": {
+        "ru": "Рубашки висят в шкафу",
+        "en": "The shirts hang in the wardrobe"
+      },
+      "answer": [
+        "hängen",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Die Servietten ___ ___ den Tellern",
+      "translation": {
+        "ru": "Салфетки лежат между тарелками",
+        "en": "The napkins lie between the plates"
+      },
+      "answer": [
+        "liegen",
+        "zwischen"
+      ]
+    },
+    {
+      "sentence": "Ich ___ das Buch ___ den Tisch",
+      "translation": {
+        "ru": "Я кладу книгу на стол",
+        "en": "I lay the book on the table"
+      },
+      "answer": [
+        "lege",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Die Lampe ___ ___ dem Esstisch",
+      "translation": {
+        "ru": "Лампа висит над обеденным столом",
+        "en": "The lamp hangs above the dining table"
+      },
+      "answer": [
+        "hängt",
+        "über"
+      ]
+    },
+    {
+      "sentence": "Sie ___ das Handy ___ die Tasche",
+      "translation": {
+        "ru": "Она кладет телефон в сумку",
+        "en": "She lays the phone into the bag"
+      },
+      "answer": [
+        "legt",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mich ___ den Stuhl",
+      "translation": {
+        "ru": "Я сажусь на стул",
+        "en": "I sit down on the chair"
       },
       "answer": [
         "setze",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Sie ___ sich ___ den Computer",
+      "translation": {
+        "ru": "Она садится рядом с компьютером",
+        "en": "She sits down next to the computer"
+      },
+      "answer": [
+        "setzt",
+        "neben"
+      ]
+    },
+    {
+      "sentence": "Ich ___ die Lampe ___ das Fenster",
+      "translation": {
+        "ru": "Я ставлю лампу перед окном",
+        "en": "I stand the lamp in front of the window"
+      },
+      "answer": [
+        "stelle",
+        "vor"
+      ]
+    },
+    {
+      "sentence": "Wir ___ die Lampe ___ den Esstisch",
+      "translation": {
+        "ru": "Мы вешаем лампу над обеденным столом",
+        "en": "We hang the lamp above the dining table"
+      },
+      "answer": [
+        "hängen",
+        "über"
+      ]
+    },
+    {
+      "sentence": "Anna ___ ___ dem Tisch",
+      "translation": {
+        "ru": "Анна сидит за столом",
+        "en": "Anna sits at the table"
+      },
+      "answer": [
+        "sitzt",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Das Buch ___ ___ dem Tisch",
+      "translation": {
+        "ru": "Книга лежит на столе",
+        "en": "The book lies on the table"
+      },
+      "answer": [
+        "liegt",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Die Kinder ___ ___ dem Baum",
+      "translation": {
+        "ru": "Дети сидят под деревом",
+        "en": "The children sit under the tree"
+      },
+      "answer": [
+        "sitzen",
+        "unter"
+      ]
+    },
+    {
+      "sentence": "Wir ___ die Decke ___ den Stuhl",
+      "translation": {
+        "ru": "Мы кладем одеяло на стул",
+        "en": "We lay the blanket on the chair"
+      },
+      "answer": [
+        "legen",
+        "über"
+      ]
+    },
+    {
+      "sentence": "Das Bild ___ ___ der Wand",
+      "translation": {
+        "ru": "Картина висит на стене",
+        "en": "The picture hangs on the wall"
+      },
+      "answer": [
+        "hängt",
+        "an"
+      ]
+    },
+    {
+      "sentence": "Der Schlüssel ___ ___ dem Schloss",
+      "translation": {
+        "ru": "Ключ торчит в замке",
+        "en": "The key is stuck in the lock"
+      },
+      "answer": [
+        "steckt",
         "in"
+      ]
+    },
+    {
+      "sentence": "Ich ___ mich ___ den Fernseher",
+      "translation": {
+        "ru": "Я сажусь перед телевизором",
+        "en": "I sit down in front of the TV"
+      },
+      "answer": [
+        "setze",
+        "vor"
+      ]
+    },
+    {
+      "sentence": "Das Handy ___ ___ der Tasche",
+      "translation": {
+        "ru": "Телефон лежит в сумке",
+        "en": "The phone lies in the bag"
+      },
+      "answer": [
+        "liegt",
+        "in"
+      ]
+    },
+    {
+      "sentence": "Das Bild ___ ___ der Tür",
+      "translation": {
+        "ru": "Картина висит рядом с дверью",
+        "en": "The picture hangs next to the door"
+      },
+      "answer": [
+        "hängt",
+        "neben"
+      ]
+    },
+    {
+      "sentence": "Ich ___ den Mantel ___ die Tür",
+      "translation": {
+        "ru": "Я вешаю пальто за дверь",
+        "en": "I hang the coat behind the door"
+      },
+      "answer": [
+        "hänge",
+        "hinter"
+      ]
+    },
+    {
+      "sentence": "Der Brief ___ ___ dem Spiegel",
+      "translation": {
+        "ru": "Письмо торчит за зеркалом",
+        "en": "The letter is stuck behind the mirror"
+      },
+      "answer": [
+        "steckt",
+        "hinter"
       ]
     },
     {
@@ -541,10 +464,10 @@
     },
     {
       "sentence": {
-        "ru": "Я ставлю свой компьютер на стол или на стул",
-        "en": "I put my computer on the table or on the chair"
+        "ru": "Я ставлю свой компьютер на стол",
+        "en": "I put my computer on the table"
       },
-      "answer": "Ich stelle meinen Computer auf den Tisch oder auf den Stuhl"
+      "answer": "Ich stelle meinen Computer auf den Tisch"
     },
     {
       "sentence": {
