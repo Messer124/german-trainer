@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
+import { Eye } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
@@ -16,9 +17,9 @@ const STORAGE_KEY = "adverbien-answers";
 
 function normalize(value) {
   return String(value ?? "")
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, " ");
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, " ");
 }
 
 function getAcceptableAnswers(raw) {
@@ -30,12 +31,7 @@ function getAcceptableAnswers(raw) {
 function getSentenceText(rawSentence, locale) {
   if (typeof rawSentence === "string") return rawSentence;
   if (rawSentence && typeof rawSentence === "object") {
-    return (
-      rawSentence[locale] ??
-      rawSentence.ru ??
-      rawSentence.en ??
-      ""
-    );
+    return rawSentence[locale] ?? rawSentence.ru ?? rawSentence.en ?? "";
   }
   return "";
 }
@@ -44,10 +40,12 @@ export default function Direktionaladverb() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
+  const [previewValues, setPreviewValues] = useState({});
+  const previewTimersRef = useRef({});
 
   const slides = useMemo(
-    () => (locale === "en" ? [slide1En, slide2En] : [slide1Ru, slide2Ru]),
-    [locale]
+      () => (locale === "en" ? [slide1En, slide2En] : [slide1Ru, slide2Ru]),
+      [locale]
   );
   const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
 
@@ -57,9 +55,32 @@ export default function Direktionaladverb() {
     return () => document.removeEventListener("show-hint", handleShowHint);
   }, []);
 
+  useEffect(() => {
+    return () => {
+      Object.values(previewTimersRef.current).forEach((timerId) => clearTimeout(timerId));
+    };
+  }, []);
+
+  const clearPreview = (index) => {
+    if (previewTimersRef.current[index]) {
+      clearTimeout(previewTimersRef.current[index]);
+      delete previewTimersRef.current[index];
+    }
+
+    if (previewValues[index] != null) {
+      setPreviewValues((prev) => {
+        const next = { ...prev };
+        delete next[index];
+        return next;
+      });
+    }
+  };
+
   const handleChange = (index, value) => {
+    clearPreview(index);
+
     const acceptable = getAcceptableAnswers(
-      items[index]?.answers ?? items[index]?.answer
+        items[index]?.answers ?? items[index]?.answer
     );
     const normalizedValue = normalize(value);
     const isCorrect = acceptable.some((a) => normalize(a) === normalizedValue);
@@ -70,57 +91,109 @@ export default function Direktionaladverb() {
     }));
   };
 
+  const showAnswerPreview = (index) => {
+    const acceptable = getAcceptableAnswers(
+        items[index]?.answers ?? items[index]?.answer
+    );
+    const previewValue = acceptable[0] ?? "";
+
+    if (!previewValue) return;
+
+    if (previewTimersRef.current[index]) {
+      clearTimeout(previewTimersRef.current[index]);
+    }
+
+    setPreviewValues((prev) => ({
+      ...prev,
+      [index]: previewValue,
+    }));
+
+    previewTimersRef.current[index] = setTimeout(() => {
+      setPreviewValues((prev) => {
+        const next = { ...prev };
+        delete next[index];
+        return next;
+      });
+      delete previewTimersRef.current[index];
+    }, 2000);
+  };
+
+  const preventStealFocus = (event) => {
+    event.preventDefault();
+  };
+
   return (
-    <div className="exercise-inner">
-      {showHint && (
-        <ModalHtml images={slides} initialIndex={0} onClose={() => setShowHint(false)} />
-      )}
+      <div className="exercise-inner">
+        {showHint && (
+            <ModalHtml images={slides} initialIndex={0} onClose={() => setShowHint(false)} />
+        )}
 
-      <div className="scroll-container">
-        <ul className="list">
-          {items.map((item, index) => {
-            const stored = answers[index];
-            const value = stored?.value ?? "";
-            const trimmed = value.trim();
-            const isCorrect = stored?.isCorrect;
+        <div className="scroll-container">
+          <ul className="list">
+            {items.map((item, index) => {
+              const stored = answers[index];
+              const savedValue = stored?.value ?? "";
+              const visibleValue = previewValues[index] ?? savedValue;
+              const trimmed = visibleValue.trim();
+              const isPreviewing = previewValues[index] != null;
+              const isCorrect = stored?.isCorrect;
 
-            const inputClass =
-              trimmed === "" ? "input" : isCorrect ? "input correct" : "input incorrect";
+              const inputClass = isPreviewing
+                  ? "input"
+                  : trimmed === ""
+                      ? "input"
+                      : isCorrect
+                          ? "input correct"
+                          : "input incorrect";
 
-            return (
-              <li key={index} className="list-item">
+              return (
+                  <li key={index} className="list-item">
                 <span className="sentence">
                   {getSentenceText(item.sentence, locale)} —
                 </span>
 
-                <ExpandingInput
-                  type="text"
-                  value={value}
-                  onChange={(e) => handleChange(index, e.target.value)}
-                  className={inputClass}
-                  minWidth={140}
-                  maxWidth={460}
-                  aria-label={`Adverbien answer ${index + 1}`}
-                />
-              </li>
-            );
-          })}
-        </ul>
+                    <ExpandingInput
+                        type="text"
+                        value={visibleValue}
+                        onChange={(e) => handleChange(index, e.target.value)}
+                        className={inputClass}
+                        minWidth={140}
+                        maxWidth={460}
+                        readOnly={isPreviewing}
+                        aria-label={`Adverbien answer ${index + 1}`}
+                    />
+
+                    <button
+                        type="button"
+                        className="eye-container eye-container--button"
+                        onPointerDown={preventStealFocus}
+                        onTouchStart={preventStealFocus}
+                        onMouseDown={preventStealFocus}
+                        onClick={() => showAnswerPreview(index)}
+                        aria-label={`Show answer for sentence ${index + 1}`}
+                    >
+                  <span>
+                    <Eye size={18} />
+                  </span>
+                    </button>
+                  </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
-    </div>
   );
 }
 
 Direktionaladverb.headerButton = (
-  <button
-    type="button"
-    className="hint-button"
-    onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-  >
-    !
-  </button>
+    <button
+        type="button"
+        className="hint-button"
+        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
+    >
+      !
+    </button>
 );
 
-// В JSON нет поля title — задаём локально, чтобы заголовок не был пустым.
 Direktionaladverb.title = data.title;
 Direktionaladverb.instructions = data.instructions;

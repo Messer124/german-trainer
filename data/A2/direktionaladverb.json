@@ -49,7 +49,7 @@
     },
     {
       "sentence": {
-        "ru": "Передай ей книгу туда, на ту сторону",
+        "ru": "Передай ей книгу туда",
         "en": "Pass the book over to her"
       },
       "answers": [
@@ -69,22 +69,22 @@
     },
     {
       "sentence": {
-        "ru": "Выйди ко мне наружу, пожалуйста",
-        "en": "Come outside to me, please"
+        "ru": "Выйди наружу",
+        "en": "Come outside"
       },
       "answers": [
-        "Komm heraus, bitte",
-        "Komm raus, bitte"
+        "Komm heraus",
+        "Komm raus"
       ]
     },
     {
       "sentence": {
-        "ru": "Иди туда внутрь, пожалуйста",
-        "en": "Go in there, please"
+        "ru": "Иди туда внутрь",
+        "en": "Go in there"
       },
       "answers": [
-        "Geh hinein, bitte",
-        "Geh rein, bitte"
+        "Geh hinein",
+        "Geh rein"
       ]
     },
     {
@@ -99,8 +99,8 @@
     },
     {
       "sentence": {
-        "ru": "Поставь это туда, в то место",
-        "en": "Put it there, to that place"
+        "ru": "Поставь это туда",
+        "en": "Place it there"
       },
       "answers": [
         "Stell das dorthin",
@@ -109,8 +109,8 @@
     },
     {
       "sentence": {
-        "ru": "Иди туда внутрь, в комнату",
-        "en": "Go in there, into the room"
+        "ru": "Иди туда внутрь",
+        "en": "Go in there"
       },
       "answers": [
         "Geh hinein",
@@ -139,12 +139,12 @@
     },
     {
       "sentence": {
-        "ru": "Поднимись ко мне наверх, пожалуйста",
-        "en": "Come up to me, please"
+        "ru": "Поднимись наверх",
+        "en": "Come up (to me)"
       },
       "answers": [
-        "Komm herauf, bitte",
-        "Komm rauf, bitte"
+        "Komm herauf",
+        "Komm rauf"
       ]
     },
     {
@@ -158,8 +158,8 @@
     },
     {
       "sentence": {
-        "ru": "Иди туда, в то место",
-        "en": "Go there, to that place"
+        "ru": "Иди туда",
+        "en": "Go there"
       },
       "answers": [
         "Geh dorthin",
@@ -178,8 +178,8 @@
     },
     {
       "sentence": {
-        "ru": "Он там, у двери",
-        "en": "He is there, by the door"
+        "ru": "Он там",
+        "en": "He is there"
       },
       "answers": [
         "Er ist da",
@@ -188,18 +188,18 @@
     },
     {
       "sentence": {
-        "ru": "Иди туда наружу, пожалуйста",
-        "en": "Go out there, please"
+        "ru": "Иди туда наружу",
+        "en": "Go out there"
       },
       "answers": [
-        "Geh hinaus, bitte",
-        "Geh raus, bitte"
+        "Geh hinaus",
+        "Geh raus"
       ]
     },
     {
       "sentence": {
-        "ru": "Спустись ко мне вниз",
-        "en": "Come down to me"
+        "ru": "Спустись (ко мне) вниз",
+        "en": "Come down (to me)"
       },
       "answers": [
         "Komm herunter",
@@ -208,32 +208,12 @@
     },
     {
       "sentence": {
-        "ru": "Поднимись туда наверх",
+        "ru": "Поднимись наверх",
         "en": "Go up there"
       },
       "answers": [
         "Geh hinauf",
         "Geh rauf"
-      ]
-    },
-    {
-      "sentence": {
-        "ru": "Зайди ко мне внутрь, пожалуйста",
-        "en": "Come in to me, please"
-      },
-      "answers": [
-        "Komm herein, bitte",
-        "Komm rein, bitte"
-      ]
-    },
-    {
-      "sentence": {
-        "ru": "Занеси сумку туда внутрь",
-        "en": "Carry the bag inside"
-      },
-      "answers": [
-        "Trag die Tasche hinein",
-        "Trag die Tasche rein"
       ]
     },
     {
@@ -248,8 +228,28 @@
     },
     {
       "sentence": {
-        "ru": "Иди туда вниз",
-        "en": "Go down there"
+        "ru": "Занеси сумку внутрь",
+        "en": "Carry the bag inside"
+      },
+      "answers": [
+        "Trag die Tasche hinein",
+        "Trag die Tasche rein"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Зайди внутрь",
+        "en": "Come in"
+      },
+      "answers": [
+        "Komm herein",
+        "Komm rein"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Иди вниз",
+        "en": "Go down"
       },
       "answers": [
         "Geh hinunter",
@@ -276,8 +276,8 @@
     },
     {
       "sentence": {
-        "ru": "Иди ко мне сюда наверх",
-        "en": "Come up here to me"
+        "ru": "Иди (ко мне) наверх",
+        "en": "Come up here (to me)"
       },
       "answers": [
         "Komm herauf",
@@ -286,8 +286,8 @@
     },
     {
       "sentence": {
-        "ru": "Перейди туда, на ту сторону улицы",
-        "en": "Go over there across the street"
+        "ru": "Перейди туда (на ту сторону улицы)",
+        "en": "Go over there (across the street)"
       },
       "answers": [
         "Geh hinüber",
@@ -296,8 +296,8 @@
     },
     {
       "sentence": {
-        "ru": "Выйди ко мне наружу",
-        "en": "Come outside to me"
+        "ru": "Выйди наружу",
+        "en": "Come outside"
       },
       "answers": [
         "Komm heraus",
@@ -306,8 +306,8 @@
     },
     {
       "sentence": {
-        "ru": "Спустись туда вниз",
-        "en": "Go down there"
+        "ru": "Спустись вниз",
+        "en": "Go down"
       },
       "answers": [
         "Geh hinunter",
@@ -334,12 +334,12 @@
     },
     {
       "sentence": {
-        "ru": "Подожди там, в том месте, пожалуйста",
-        "en": "Wait there, in that place, please"
+        "ru": "Подожди там",
+        "en": "Wait there"
       },
       "answers": [
-        "Warte da, bitte",
-        "Warte dort, bitte"
+        "Warte da",
+        "Warte dort"
       ]
     },
     {
@@ -354,7 +354,7 @@
     },
     {
       "sentence": {
-        "ru": "Иди туда наверх",
+        "ru": "Иди наверх",
         "en": "Go up there"
       },
       "answers": [
@@ -364,12 +364,12 @@
     },
     {
       "sentence": {
-        "ru": "Спустись, пожалуйста, вниз",
-        "en": "Go down, please"
+        "ru": "Спустись вниз",
+        "en": "Go down"
       },
       "answers": [
-        "Geh, bitte, nach unten",
-        "Geh, bitte, runter"
+        "Geh nach unten",
+        "Geh runter"
       ]
     },
     {
@@ -383,8 +383,8 @@
     },
     {
       "sentence": {
-        "ru": "Принеси мне стул сюда, ко мне",
-        "en": "Bring the chair over here to me"
+        "ru": "Принеси мне стул сюда",
+        "en": "Bring the chair over here"
       },
       "answers": [
         "Bring den Stuhl herüber",
@@ -403,8 +403,8 @@
     },
     {
       "sentence": {
-        "ru": "Подойди ко мне сюда, перейдя через улицу",
-        "en": "Come over to me across the street"
+        "ru": "Подойди сюда (перейдя через улицу)",
+        "en": "Come over (across the street)"
       },
       "answers": [
         "Komm herüber",
@@ -481,7 +481,7 @@
     },
     {
       "sentence": {
-        "ru": "Унеси коробку туда, на ту сторону",
+        "ru": "Унеси коробку туда (на ту сторону)",
         "en": "Take the box over there / across"
       },
       "answers": [
