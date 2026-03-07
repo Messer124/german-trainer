@@ -16,6 +16,13 @@ function flattenItems(items) {
     return items;
 }
 
+function normalize(value) {
+    return String(value ?? "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ");
+}
+
 export default function Prepositions() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
@@ -29,40 +36,66 @@ export default function Prepositions() {
         return () => document.removeEventListener("show-hint", handleShowHint);
     }, []);
 
-    const getAnswerArray = (sentenceIdx) => {
-        const raw = items[sentenceIdx]?.answer;
+    const getAcceptedAnswers = (sentenceIdx, blankIdx) => {
+        const item = items[sentenceIdx];
+
+        if (!item) return [];
+
+        if (Array.isArray(item.answers)) {
+            const raw = item.answers[blankIdx];
+
+            if (Array.isArray(raw)) {
+                return raw.map((value) => String(value ?? "").trim()).filter(Boolean);
+            }
+
+            if (typeof raw === "string") {
+                return [raw.trim()].filter(Boolean);
+            }
+        }
+
+        const raw = item.answer;
 
         if (Array.isArray(raw)) {
-            return raw.map((a) => String(a).trim()).filter(Boolean);
+            return [String(raw[blankIdx] ?? "").trim()].filter(Boolean);
         }
 
         if (typeof raw === "string") {
-            return raw
+            const parts = raw
                 .split(",")
-                .map((p) => p.trim())
+                .map((part) => part.trim())
                 .filter(Boolean);
+
+            return [String(parts[blankIdx] ?? "").trim()].filter(Boolean);
         }
 
         return [];
     };
 
     const handleChange = (sentenceIdx, blankIdx, value) => {
-        const correctAnswers = getAnswerArray(sentenceIdx).map((a) => a.toLowerCase());
-        const correct = correctAnswers[blankIdx] ?? "";
+        const acceptedAnswers = getAcceptedAnswers(sentenceIdx, blankIdx);
+        const normalizedValue = normalize(value);
+        const isCorrect = acceptedAnswers.some(
+            (answer) => normalize(answer) === normalizedValue
+        );
         const key = `${sentenceIdx}-${blankIdx}`;
 
         setAnswers((prev) => ({
             ...prev,
             [key]: {
                 value,
-                isCorrect: value.trim().toLowerCase() === correct,
+                isCorrect,
             },
         }));
     };
 
+    const getBlanksCount = (item, sentenceIdx) => {
+        const sentenceParts = String(item.sentence || "").split("___");
+        return Math.max(0, sentenceParts.length - 1);
+    };
+
     const renderSentence = (item, sentenceIdx) => {
         const parts = String(item.sentence || "").split("___");
-        const answerArray = getAnswerArray(sentenceIdx);
+        const blanksCount = getBlanksCount(item, sentenceIdx);
 
         return (
             <li key={sentenceIdx}>
@@ -78,8 +111,8 @@ export default function Prepositions() {
 
                     return (
                         <span key={idx}>
-              {part}
-                            {idx < answerArray.length && (
+                            {part}
+                            {idx < blanksCount && (
                                 <ExpandingInput
                                     type="text"
                                     value={inputValue}
@@ -91,7 +124,7 @@ export default function Prepositions() {
                                     maxWidth={260}
                                 />
                             )}
-            </span>
+                        </span>
                     );
                 })}
             </li>

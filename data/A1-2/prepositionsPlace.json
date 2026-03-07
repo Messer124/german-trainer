@@ -4,450 +4,622 @@
     "en": "Präpositionen des Ortes"
   },
   "instructions": {
-    "ru": "Подберите правильный предлог и артикль (in dem = im)",
-    "en": "Choose the correct preposition and article (in dem = im)."
+    "ru": "Подберите правильный предлог и артикль",
+    "en": "Choose the correct preposition and article"
   },
   "items": [
     {
       "sentence": "Am Montag fliege ich ___ Deutschland.",
-      "answer": [
-        "nach"
+      "answers": [
+        [
+          "nach"
+        ]
       ]
     },
     {
       "sentence": "Ich habe das Buch ___ meinem Bruder bekommen.",
-      "answer": [
-        "von"
+      "answers": [
+        [
+          "von"
+        ]
       ]
     },
     {
       "sentence": "Ich komme gerade ___ Haus und gehe ___ Arbeit.",
-      "answer": [
-        "aus dem",
-        "zur"
+      "answers": [
+        [
+          "aus dem"
+        ],
+        [
+          "zur",
+          "zu der"
+        ]
       ]
     },
     {
       "sentence": "Ich fahre noch schnell ___ Post.",
-      "answer": [
-        "zur"
+      "answers": [
+        [
+          "zur",
+          "zu der"
+        ]
       ]
     },
     {
       "sentence": "Im Herbst fahren wir ___ Türkei.",
-      "answer": [
-        "in die"
+      "answers": [
+        [
+          "in die"
+        ]
       ]
     },
     {
       "sentence": "Warst du schon ___ Arzt?",
-      "answer": [
-        "beim"
+      "answers": [
+        [
+          "beim",
+          "bei dem"
+        ]
       ]
     },
     {
       "sentence": "Lars geht ___ Hause.",
-      "answer": [
-        "nach"
+      "answers": [
+        [
+          "nach"
+        ]
       ]
     },
     {
       "sentence": "Lena arbeitet ___ Schweiz.",
-      "answer": [
-        "in der"
+      "answers": [
+        [
+          "in der"
+        ]
       ]
     },
     {
       "sentence": "Karl hat ___ Wien studiert.",
-      "answer": [
-        "in"
+      "answers": [
+        [
+          "in"
+        ]
       ]
     },
     {
       "sentence": "Im Juni fahre ich ___ Gebirge.",
-      "answer": [
-        "ins"
+      "answers": [
+        [
+          "ins",
+          "in das"
+        ]
       ]
     },
     {
       "sentence": "Bitte nimm die Milch ___ Kühlschrank.",
-      "answer": [
-        "aus dem"
+      "answers": [
+        [
+          "aus dem"
+        ]
       ]
     },
     {
       "sentence": "Ich fahre ___ Bodensee.",
-      "answer": [
-        "an den"
+      "answers": [
+        [
+          "an den"
+        ]
       ]
     },
     {
       "sentence": "Am Samstag fahre ich ___ Großeltern.",
-      "answer": [
-        "zu den"
+      "answers": [
+        [
+          "zu den"
+        ]
       ]
     },
     {
       "sentence": "Lars fliegt ___ USA.",
-      "answer": [
-        "in die"
+      "answers": [
+        [
+          "in die"
+        ]
       ]
     },
     {
       "sentence": "Monika ist ___ Hausarzt.",
-      "answer": [
-        "beim"
+      "answers": [
+        [
+          "beim",
+          "bei dem"
+        ]
       ]
     },
     {
       "sentence": "Ich warte ___ Haltestelle.",
-      "answer": [
-        "an der"
+      "answers": [
+        [
+          "an der"
+        ]
       ]
     },
     {
       "sentence": "Direkt ___ Dienstreise fliege ich ___ Urlaub.",
-      "answer": [
-        "nach der",
-        "in den"
+      "answers": [
+        [
+          "nach der"
+        ],
+        [
+          "in den"
+        ]
       ]
     },
     {
       "sentence": "Ich packe meinen Koffer und fliege ___ Kroatien.",
-      "answer": [
-        "nach"
+      "answers": [
+        [
+          "nach"
+        ]
       ]
     },
     {
       "sentence": "Herr Martens geht um 8 Uhr morgens ___ Haus.",
-      "answer": [
-        "aus dem"
+      "answers": [
+        [
+          "aus dem"
+        ]
       ]
     },
     {
       "sentence": "Frau Stein hat bald eine Dienstreise. Sie muss am 10. September ___ Russland, ___ Moscow fliegen.",
-      "answer": [
-        "nach",
-        "nach"
+      "answers": [
+        [
+          "nach"
+        ],
+        [
+          "nach"
+        ]
       ]
     },
     {
       "sentence": "Am 1. September geht mein Bruder ___ Schule.",
-      "answer": [
-        "in die"
+      "answers": [
+        [
+          "in die"
+        ]
       ]
     },
     {
       "sentence": "Fahren wir ___ Meer oder ___ Gebirge?",
-      "answer": [
-        "ans",
-        "ins"
+      "answers": [
+        [
+          "ans",
+          "an das"
+        ],
+        [
+          "ins",
+          "in das"
+        ]
       ]
     },
     {
       "sentence": "Das Handy liegt ___ Regal.",
-      "answer": [
-        "auf dem"
+      "answers": [
+        [
+          "auf dem"
+        ]
       ]
     },
     {
       "sentence": "Heute Abend sind wir ___ Hause.",
-      "answer": [
-        "zu"
+      "answers": [
+        [
+          "zu"
+        ]
       ]
     },
     {
       "sentence": "Meine Eltern möchten ___ Bodensee fahren.",
-      "answer": [
-        "an den"
+      "answers": [
+        [
+          "an den"
+        ]
       ]
     },
     {
       "sentence": "Morgen fahre ich ___ Berlin.",
-      "answer": [
-        "nach"
+      "answers": [
+        [
+          "nach"
+        ]
       ]
     },
     {
       "sentence": "Nächste Woche fliegen wir ___ Spanien.",
-      "answer": [
-        "nach"
+      "answers": [
+        [
+          "nach"
+        ]
       ]
     },
     {
       "sentence": "Er schaut ___ dem Fenster.",
-      "answer": [
-        "aus dem"
+      "answers": [
+        [
+          "aus dem"
+        ]
       ]
     },
     {
       "sentence": "Ich arbeite ___ BMW.",
-      "answer": [
-        "bei"
+      "answers": [
+        [
+          "bei"
+        ]
       ]
     },
     {
       "sentence": "Wir fahren ___ Schweiz.",
-      "answer": [
-        "in die"
+      "answers": [
+        [
+          "in die"
+        ]
       ]
     },
     {
       "sentence": "Sie arbeitet ___ USA.",
-      "answer": [
-        "in den"
+      "answers": [
+        [
+          "in den"
+        ]
       ]
     },
     {
       "sentence": "Ich gehe heute ___ Supermarkt.",
-      "answer": [
-        "in den"
+      "answers": [
+        [
+          "in den"
+        ]
       ]
     },
     {
       "sentence": "Wir treffen uns ___ Bahnhof.",
-      "answer": [
-        "am"
+      "answers": [
+        [
+          "am",
+          "an dem"
+        ]
       ]
     },
     {
       "sentence": "Ich bekomme eine Nachricht ___ Chef.",
-      "answer": [
-        "vom"
+      "answers": [
+        [
+          "vom",
+          "von dem"
+        ]
       ]
     },
     {
       "sentence": "Ich bin heute Abend ___ Hause.",
-      "answer": [
-        "zu"
+      "answers": [
+        [
+          "zu"
+        ]
       ]
     },
     {
       "sentence": "Die Kinder spielen ___ Park.",
-      "answer": [
-        "im"
+      "answers": [
+        [
+          "im",
+          "in dem"
+        ]
       ]
     },
     {
       "sentence": "Sie kommt ___ Schule.",
-      "answer": [
-        "aus der"
+      "answers": [
+        [
+          "aus der"
+        ]
       ]
     },
     {
       "sentence": "Ich gehe nach der Arbeit ___ Park.",
-      "answer": [
-        "in den"
+      "answers": [
+        [
+          "in den"
+        ]
       ]
     },
     {
       "sentence": "Das Buch liegt ___ Tisch.",
-      "answer": [
-        "auf dem"
+      "answers": [
+        [
+          "auf dem"
+        ]
       ]
     },
     {
       "sentence": "Die Katze springt ___ Tisch.",
-      "answer": [
-        "auf den"
+      "answers": [
+        [
+          "auf den"
+        ]
       ]
     },
     {
       "sentence": "Wir sitzen ___ Strand.",
-      "answer": [
-        "am"
+      "answers": [
+        [
+          "am",
+          "an dem"
+        ]
       ]
     },
     {
       "sentence": "Wir gehen ___ Strand.",
-      "answer": [
-        "an den"
+      "answers": [
+        [
+          "an den"
+        ]
       ]
     },
     {
       "sentence": "Ich war gestern ___ Lisa.",
-      "answer": [
-        "bei"
+      "answers": [
+        [
+          "bei"
+        ]
       ]
     },
     {
       "sentence": "Nach der Arbeit gehe ich ___ Lisa.",
-      "answer": [
-        "zu"
+      "answers": [
+        [
+          "zu"
+        ]
       ]
     },
     {
       "sentence": "Mein Bruder ist schon ___ Arzt.",
-      "answer": [
-        "beim"
+      "answers": [
+        [
+          "beim",
+          "bei dem"
+        ]
       ]
     },
     {
       "sentence": "Morgen muss ich ___ Arzt fahren.",
-      "answer": [
-        "zum"
+      "answers": [
+        [
+          "zum",
+          "zu dem"
+        ]
       ]
     },
     {
       "sentence": "Wir wohnen ___ Deutschland.",
-      "answer": [
-        "in"
+      "answers": [
+        [
+          "in"
+        ]
       ]
     },
     {
       "sentence": "Ich komme ___ München.",
-      "answer": [
-        "aus"
+      "answers": [
+        [
+          "aus"
+        ]
       ]
     },
     {
       "sentence": "Wir fahren ___ der Station ab.",
-      "answer": [
-        "von"
+      "answers": [
+        [
+          "von"
+        ]
       ]
     },
     {
       "sentence": "Ich komme ___ Strand.",
-      "answer": [
-        "vom"
+      "answers": [
+        [
+          "vom",
+          "von dem"
+        ]
       ]
     },
     {
       "sentence": "Er stellt das Glas ___ Tisch.",
-      "answer": [
-        "auf den"
+      "answers": [
+        [
+          "auf den"
+        ]
       ]
     },
     {
       "sentence": "Sie wartet ___ der Haltestelle.",
-      "answer": [
-        "an"
+      "answers": [
+        [
+          "an"
+        ]
       ]
     },
     {
       "sentence": "Wir gehen jeden Tag ___ Schule.",
-      "answer": [
-        "in die"
+      "answers": [
+        [
+          "in die"
+        ]
       ]
     },
     {
       "sentence": "Kannst du das Brot ___ Ofen holen?",
-      "answer": [
-        "aus dem"
+      "answers": [
+        [
+          "aus dem"
+        ]
       ]
     },
     {
       "sentence": "Die Kinder sind schon ___ Schule.",
-      "answer": [
-        "in der"
+      "answers": [
+        [
+          "in der"
+        ]
       ]
     },
     {
       "sentence": "Das Geschenk ist ___ meinem Bruder.",
-      "answer": [
-        "von"
+      "answers": [
+        [
+          "von"
+        ]
       ]
     },
     {
       "sentence": "Ich gehe jetzt ___ Hause.",
-      "answer": [
-        "nach"
+      "answers": [
+        [
+          "nach"
+        ]
       ]
     },
     {
       "sentence": "Am Freitag fahre ich ___ meinen Eltern.",
-      "answer": [
-        "zu"
+      "answers": [
+        [
+          "zu"
+        ]
       ]
     },
     {
       "sentence": "Ich arbeite ___ Siemens.",
-      "answer": [
-        "bei"
+      "answers": [
+        [
+          "bei"
+        ]
       ]
     },
     {
       "sentence": "Der Dom steht ___ Platz.",
-      "answer": [
-        "auf dem"
+      "answers": [
+        [
+          "auf dem"
+        ]
       ]
     },
     {
       "sentence": "Das Bild hängt ___ Wand.",
-      "answer": [
-        "an der"
+      "answers": [
+        [
+          "an der"
+        ]
       ]
     },
     {
       "sentence": "Wir treffen uns ___ Café.",
-      "answer": [
-        "im"
+      "answers": [
+        [
+          "im",
+          "in dem"
+        ]
       ]
     },
     {
       "sentence": "Ich nehme das Geld ___ Tasche.",
-      "answer": [
-        "aus der"
+      "answers": [
+        [
+          "aus der"
+        ]
       ]
     },
     {
       "sentence": "Kommst du ___ Party?",
-      "answer": [
-        "zur"
+      "answers": [
+        [
+          "zur",
+          "zu der"
+        ]
       ]
     },
     {
       "sentence": "Ich fahre ___ Meer.",
-      "answer": [
-        "ans"
+      "answers": [
+        [
+          "ans",
+          "an das"
+        ]
       ]
     },
     {
       "sentence": "Im Juli fahren wir ___ Bodensee.",
-      "answer": [
-        "an den"
+      "answers": [
+        [
+          "an den"
+        ]
       ]
     },
     {
       "sentence": "Die Familie fährt ___ Alpen.",
-      "answer": [
-        "in die"
+      "answers": [
+        [
+          "in die"
+        ]
       ]
     },
     {
       "sentence": "Am Wochenende fahren wir ___ Berge.",
-      "answer": [
-        "in die"
+      "answers": [
+        [
+          "in die"
+        ]
       ]
     },
     {
       "sentence": "Ich stelle die Tasche ___ Boden.",
-      "answer": [
-        "auf den"
+      "answers": [
+        [
+          "auf den"
+        ]
       ]
     },
     {
       "sentence": "Nächstes Jahr fliege ich ___ Niederlande.",
-      "answer": [
-        "in die"
+      "answers": [
+        [
+          "in die"
+        ]
       ]
     },
     {
       "sentence": "Wir gehen ___ Konzert.",
-      "answer": [
-        "zum"
+      "answers": [
+        [
+          "zum",
+          "zu dem"
+        ]
       ]
     },
     {
       "sentence": "Er kommt ___ Arbeit und ist müde.",
-      "answer": [
-        "von der"
+      "answers": [
+        [
+          "von der"
+        ]
       ]
     },
     {
       "sentence": "Wir sind heute ___ Lisa.",
-      "answer": [
-        "bei"
+      "answers": [
+        [
+          "bei"
+        ]
       ]
     }
   ]
