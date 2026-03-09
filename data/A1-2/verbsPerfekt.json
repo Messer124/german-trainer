@@ -9,204 +9,16 @@
   },
   "items": [
     {
-      "sentence": "Wir ___ einen Kuchen ___",
-      "verb": "essen",
-      "answer": [
-        "haben",
-        "gegessen"
-      ]
-    },
-    {
-      "sentence": "Die Kinder ___ in der Schule ___",
-      "verb": "sein",
-      "answer": [
-        "sind",
-        "gewesen"
-      ]
-    },
-    {
-      "sentence": "Er ___ den Hund ___",
-      "verb": "füttern",
-      "answer": [
-        "hat",
-        "gefüttert"
-      ]
-    },
-    {
-      "sentence": "Wir ___ ins Kino ___",
-      "verb": "gehen",
-      "answer": [
-        "sind",
-        "gegangen"
-      ]
-    },
-    {
-      "sentence": "Ihr ___ die Zeitung ___",
-      "verb": "lesen",
-      "answer": [
-        "habt",
-        "gelesen"
-      ]
-    },
-    {
-      "sentence": "Ich ___ mit ihm ___",
-      "verb": "telefonieren",
+      "sentence": "Ich ___ heute im Büro ___",
+      "translation": {
+        "ru": "Я сегодня работал в офисе",
+        "en": "I worked in the office today"
+      },
       "answer": [
         "habe",
-        "telefoniert"
-      ]
-    },
-    {
-      "sentence": "Der Bus ___ eine Verspätung ___",
-      "verb": "haben",
-      "answer": [
-        "hat",
-        "gehabt"
-      ]
-    },
-    {
-      "sentence": "Der Zug ___ pünktlich ___",
-      "verb": "ankommen",
-      "answer": [
-        "ist",
-        "angekommen"
-      ]
-    },
-    {
-      "sentence": "Er ___ auf uns ___",
-      "verb": "warten",
-      "answer": [
-        "hat",
-        "gewartet"
-      ]
-    },
-    {
-      "sentence": "Ich ___ dich ___",
-      "verb": "vermissen",
-      "answer": [
-        "habe",
-        "vermisst"
-      ]
-    },
-    {
-      "sentence": "Ich ___ dir sofort ___",
-      "verb": "antworten",
-      "answer": [
-        "habe",
-        "geantwortet"
-      ]
-    },
-    {
-      "sentence": "Sie ___ gestern einen Kuchen ___",
-      "verb": "backen",
-      "answer": [
-        "hat",
-        "gebacken"
-      ]
-    },
-    {
-      "sentence": "Der Chef ___ mir ____, früher zu kommen",
-      "verb": "befehlen",
-      "answer": [
-        "hat",
-        "befohlen"
-      ]
-    },
-    {
-      "sentence": "Der Film ___ um 20 Uhr ___",
-      "verb": "beginnen",
-      "answer": [
-        "hat",
-        "begonnen"
-      ]
-    },
-    {
-      "sentence": "Wir ___ das Spiel ___",
-      "verb": "beenden",
-      "answer": [
-        "haben",
-        "beendet"
-      ]
-    },
-    {
-      "sentence": "Der Laden ___ mir Hilfe ___",
-      "verb": "bieten",
-      "answer": [
-        "hat",
-        "geboten"
-      ]
-    },
-    {
-      "sentence": "Die Kerze ___ die ganze Nacht ___",
-      "verb": "brennen",
-      "answer": [
-        "hat",
-        "gebrannt"
-      ]
-    },
-    {
-      "sentence": "Ich ___ dir das Buch ___",
-      "verb": "bringen",
-      "answer": [
-        "habe",
-        "gebracht"
-      ]
-    },
-    {
-      "sentence": "Ich ___ an dich ___",
-      "verb": "denken",
-      "answer": [
-        "habe",
-        "gedacht"
-      ]
-    },
-    {
-      "sentence": "Der Arzt ___ mir Tee ___",
-      "verb": "empfehlen",
-      "answer": [
-        "hat",
-        "empfohlen"
-      ]
-    },
-    {
-      "sentence": "Das Glas ___ auf den Boden ___",
-      "verb": "fallen",
-      "answer": [
-        "ist",
-        "gefallen"
-      ]
-    },
-    {
-      "sentence": "Der Hund ___ den Ball ___",
-      "verb": "fangen",
-      "answer": [
-        "hat",
-        "gefangen"
-      ]
-    },
-    {
-      "sentence": "Wir ___ nach Hause ___",
-      "verb": "fahren",
-      "answer": [
-        "sind",
-        "gefahren"
-      ]
-    },
-    {
-      "sentence": "Ich ___ den Schlüssel ___",
-      "verb": "finden",
-      "answer": [
-        "habe",
-        "gefunden"
-      ]
-    },
-    {
-      "sentence": "Wir ___ nach Spanien ___",
-      "verb": "fliegen",
-      "answer": [
-        "sind",
-        "geflogen"
-      ]
+        "gearbeitet"
+      ],
+      "verb": "arbeiten"
     },
     {
       "sentence": "Ich ___ dich etwas ___",
@@ -214,327 +26,11 @@
       "answer": [
         "habe",
         "gefragt"
-      ]
-    },
-    {
-      "sentence": "Der Hund ___ das Fleisch ___",
-      "verb": "fressen",
-      "answer": [
-        "hat",
-        "gefressen"
-      ]
-    },
-    {
-      "sentence": "Er ___ mir ein Buch ___",
-      "verb": "geben",
-      "answer": [
-        "hat",
-        "gegeben"
-      ]
-    },
-    {
-      "sentence": "Ich ___ gestern früh ___",
-      "verb": "gehen",
-      "answer": [
-        "bin",
-        "gegangen"
-      ]
-    },
-    {
-      "sentence": "Der Kuchen ___ gut ___",
-      "verb": "gelingen",
-      "answer": [
-        "ist",
-        "gelungen"
-      ]
-    },
-    {
-      "sentence": "Was ___ gestern ___?",
-      "verb": "geschehen",
-      "answer": [
-        "ist",
-        "geschehen"
-      ]
-    },
-    {
-      "sentence": "Unsere Mannschaft ___ ___",
-      "verb": "gewinnen",
-      "answer": [
-        "hat",
-        "gewonnen"
-      ]
-    },
-    {
-      "sentence": "Ich ___ die Blumen ___",
-      "verb": "gießen",
-      "answer": [
-        "habe",
-        "gegossen"
-      ]
-    },
-    {
-      "sentence": "Du ___ mir ___",
-      "verb": "helfen",
-      "answer": [
-        "hast",
-        "geholfen"
-      ]
-    },
-    {
-      "sentence": "Wir ___ Musik ___",
-      "verb": "hören",
-      "answer": [
-        "haben",
-        "gehört"
-      ]
-    },
-    {
-      "sentence": "Er ___ spät ___",
-      "verb": "kommen",
-      "answer": [
-        "ist",
-        "gekommen"
-      ]
-    },
-    {
-      "sentence": "Ich ___ Suppe ___",
-      "verb": "kochen",
-      "answer": [
-        "habe",
-        "gekocht"
-      ]
-    },
-    {
-      "sentence": "Das Baby ___ unter den Tisch ___",
-      "verb": "kriechen",
-      "answer": [
-        "ist",
-        "gekrochen"
-      ]
-    },
-    {
-      "sentence": "Wir ___ im Park ___",
-      "verb": "laufen",
-      "answer": [
-        "sind",
-        "gelaufen"
-      ]
-    },
-    {
-      "sentence": "Ich ___ das Buch ___",
-      "verb": "lesen",
-      "answer": [
-        "habe",
-        "gelesen"
-      ]
-    },
-    {
-      "sentence": "Mein Handy ___ auf dem Tisch ___",
-      "verb": "liegen",
-      "answer": [
-        "hat",
-        "gelegen"
-      ]
-    },
-    {
-      "sentence": "Wir ___ Fotos ___",
-      "verb": "machen",
-      "answer": [
-        "haben",
-        "gemacht"
-      ]
-    },
-    {
-      "sentence": "Sie ___ den Bus ___",
-      "verb": "nehmen",
-      "answer": [
-        "hat",
-        "genommen"
-      ]
-    },
-    {
-      "sentence": "Er ___ mich „Dima“ ___",
-      "verb": "nennen",
-      "answer": [
-        "hat",
-        "genannt"
-      ]
-    },
-    {
-      "sentence": "Ich ___ das Fenster ___",
-      "verb": "öffnen",
-      "answer": [
-        "habe",
-        "geöffnet"
-      ]
-    },
-    {
-      "sentence": "Die Kinder ___ nach Hause ___",
-      "verb": "rennen",
-      "answer": [
-        "sind",
-        "gerannt"
-      ]
-    },
-    {
-      "sentence": "Ich ___ dich ___",
-      "verb": "rufen",
-      "answer": [
-        "habe",
-        "gerufen"
-      ]
-    },
-    {
-      "sentence": "Er ___ nichts ___",
-      "verb": "sagen",
-      "answer": [
-        "hat",
-        "gesagt"
-      ]
-    },
-    {
-      "sentence": "Ich ___ gut ___",
-      "verb": "schlafen",
-      "answer": [
-        "habe",
-        "geschlafen"
-      ]
-    },
-    {
-      "sentence": "Er ___ den Ball ___",
-      "verb": "schlagen",
-      "answer": [
-        "hat",
-        "geschlagen"
-      ]
-    },
-    {
-      "sentence": "Ich ___ einen Brief ___",
-      "verb": "schreiben",
-      "answer": [
-        "habe",
-        "geschrieben"
-      ]
-    },
-    {
-      "sentence": "Wir ___ den Film ___",
-      "verb": "sehen",
-      "answer": [
-        "haben",
-        "gesehen"
-      ]
-    },
-    {
-      "sentence": "Ich ___ heute zu Hause ___",
-      "verb": "sein",
-      "answer": [
-        "bin",
-        "gewesen"
-      ]
-    },
-    {
-      "sentence": "Wir ___ ein Lied ___",
-      "verb": "singen",
-      "answer": [
-        "haben",
-        "gesungen"
-      ]
-    },
-    {
-      "sentence": "Wir ___ lange im Café ___",
-      "verb": "sitzen",
-      "answer": [
-        "haben",
-        "gesessen"
-      ]
-    },
-    {
-      "sentence": "Ich ___ mit ihm ___",
-      "verb": "sprechen",
-      "answer": [
-        "habe",
-        "gesprochen"
-      ]
-    },
-    {
-      "sentence": "Das Flugzeug ___ um 9 Uhr ___",
-      "verb": "starten",
-      "answer": [
-        "ist",
-        "gestartet"
-      ]
-    },
-    {
-      "sentence": "Er ___ vor der Tür ___",
-      "verb": "stehen",
-      "answer": [
-        "hat",
-        "gestanden"
-      ]
-    },
-    {
-      "sentence": "Wir ___ in den Bus ___",
-      "verb": "steigen",
-      "answer": [
-        "sind",
-        "gestiegen"
-      ]
-    },
-    {
-      "sentence": "Sein Hund ___ ___",
-      "verb": "sterben",
-      "answer": [
-        "ist",
-        "gestorben"
-      ]
-    },
-    {
-      "sentence": "Sie ___ eine schwere Tasche ___",
-      "verb": "tragen",
-      "answer": [
-        "hat",
-        "getragen"
-      ]
-    },
-    {
-      "sentence": "Wir ___ uns gestern ___",
-      "verb": "treffen",
-      "answer": [
-        "haben",
-        "getroffen"
-      ]
-    },
-    {
-      "sentence": "Ich ___ Wasser ___",
-      "verb": "trinken",
-      "answer": [
-        "habe",
-        "getrunken"
-      ]
-    },
-    {
-      "sentence": "Was ___ du ___?",
-      "verb": "tun",
-      "answer": [
-        "hast",
-        "getan"
-      ]
-    },
-    {
-      "sentence": "Ich ___ den Termin ___",
-      "verb": "vergessen",
-      "answer": [
-        "habe",
-        "vergessen"
-      ]
-    },
-    {
-      "sentence": "Er ___ sein Handy ___",
-      "verb": "verlieren",
-      "answer": [
-        "hat",
-        "verloren"
-      ]
+      ],
+      "translation": {
+        "ru": "Я тебя кое о чём спросил",
+        "en": "I asked you something"
+      }
     },
     {
       "sentence": "Ich ___ dich nicht ___",
@@ -542,23 +38,311 @@
       "answer": [
         "habe",
         "verstanden"
-      ]
+      ],
+      "translation": {
+        "ru": "Я тебя не понял",
+        "en": "I did not understand you"
+      }
     },
     {
-      "sentence": "Er ___ den Ball weit ___",
-      "verb": "werfen",
+      "sentence": "Wir ___ gestern Deutsch ___",
+      "translation": {
+        "ru": "Мы вчера учили немецкий",
+        "en": "We studied German yesterday"
+      },
+      "answer": [
+        "haben",
+        "gelernt"
+      ],
+      "verb": "lernen"
+    },
+    {
+      "sentence": "Ich ___ dir sofort ___",
+      "verb": "antworten",
+      "answer": [
+        "habe",
+        "geantwortet"
+      ],
+      "translation": {
+        "ru": "Я сразу тебе ответил",
+        "en": "I answered you immediately"
+      }
+    },
+    {
+      "sentence": "Ich ___ mehr Zeit ___",
+      "translation": {
+        "ru": "Мне понадобилось больше времени",
+        "en": "I needed more time"
+      },
+      "answer": [
+        "habe",
+        "gebraucht"
+      ],
+      "verb": "brauchen"
+    },
+    {
+      "sentence": "Wir ___ nach Hause ___",
+      "verb": "fahren",
+      "answer": [
+        "sind",
+        "gefahren"
+      ],
+      "translation": {
+        "ru": "Мы поехали домой",
+        "en": "We went home"
+      }
+    },
+    {
+      "sentence": "Du ___ mir ___",
+      "verb": "helfen",
+      "answer": [
+        "hast",
+        "geholfen"
+      ],
+      "translation": {
+        "ru": "Ты мне помог",
+        "en": "You helped me"
+      }
+    },
+    {
+      "sentence": "Sie ___ den Schlüssel ___",
+      "translation": {
+        "ru": "Она искала ключ",
+        "en": "She looked for the key"
+      },
       "answer": [
         "hat",
-        "geworfen"
-      ]
+        "gesucht"
+      ],
+      "verb": "suchen"
     },
     {
-      "sentence": "Ich ___ müde ___",
-      "verb": "werden",
+      "sentence": "Er ___ lange in Berlin ___",
+      "translation": {
+        "ru": "Он долго жил в Берлине",
+        "en": "He lived in Berlin for a long time"
+      },
+      "answer": [
+        "hat",
+        "gewohnt"
+      ],
+      "verb": "wohnen"
+    },
+    {
+      "sentence": "Ich ___ den Schlüssel ___",
+      "verb": "finden",
+      "answer": [
+        "habe",
+        "gefunden"
+      ],
+      "translation": {
+        "ru": "Я нашёл ключ",
+        "en": "I found the key"
+      }
+    },
+    {
+      "sentence": "Wir ___ ins Kino ___",
+      "verb": "gehen",
+      "answer": [
+        "sind",
+        "gegangen"
+      ],
+      "translation": {
+        "ru": "Мы пошли в кино",
+        "en": "We went to the cinema"
+      }
+    },
+    {
+      "sentence": "Er ___ spät ___",
+      "verb": "kommen",
+      "answer": [
+        "ist",
+        "gekommen"
+      ],
+      "translation": {
+        "ru": "Он пришёл поздно",
+        "en": "He came late"
+      }
+    },
+    {
+      "sentence": "Er ___ vor der Tür ___",
+      "verb": "stehen",
+      "answer": [
+        "hat",
+        "gestanden"
+      ],
+      "translation": {
+        "ru": "Он стоял перед дверью",
+        "en": "He stood in front of the door"
+      }
+    },
+    {
+      "sentence": "Ich ___ dir das Buch ___",
+      "verb": "bringen",
+      "answer": [
+        "habe",
+        "gebracht"
+      ],
+      "translation": {
+        "ru": "Я принес тебе книгу",
+        "en": "I brought you the book"
+      }
+    },
+    {
+      "sentence": "Ich ___ mit ihm ___",
+      "verb": "sprechen",
+      "answer": [
+        "habe",
+        "gesprochen"
+      ],
+      "translation": {
+        "ru": "Я говорил с ним",
+        "en": "I spoke with him"
+      }
+    },
+    {
+      "sentence": "Wir ___ lange im Café ___",
+      "verb": "sitzen",
+      "answer": [
+        "haben",
+        "gesessen"
+      ],
+      "translation": {
+        "ru": "Мы долго сидели в кафе",
+        "en": "We sat in the café for a long time"
+      }
+    },
+    {
+      "sentence": "Sie ___ den Bus ___",
+      "verb": "nehmen",
+      "answer": [
+        "hat",
+        "genommen"
+      ],
+      "translation": {
+        "ru": "Она поехала на автобусе",
+        "en": "She took the bus"
+      }
+    },
+    {
+      "sentence": "Wir ___ Musik ___",
+      "verb": "hören",
+      "answer": [
+        "haben",
+        "gehört"
+      ],
+      "translation": {
+        "ru": "Мы слушали музыку",
+        "en": "We listened to music"
+      }
+    },
+    {
+      "sentence": "Ich ___ gut ___",
+      "verb": "schlafen",
+      "answer": [
+        "habe",
+        "geschlafen"
+      ],
+      "translation": {
+        "ru": "Я хорошо спал",
+        "en": "I slept well"
+      }
+    },
+    {
+      "sentence": "Er ___ mir ein Buch ___",
+      "verb": "geben",
+      "answer": [
+        "hat",
+        "gegeben"
+      ],
+      "translation": {
+        "ru": "Он дал мне книгу",
+        "en": "He gave me a book"
+      }
+    },
+    {
+      "sentence": "Wir ___ einen Kuchen ___",
+      "verb": "essen",
+      "answer": [
+        "haben",
+        "gegessen"
+      ],
+      "translation": {
+        "ru": "Мы съели торт",
+        "en": "We ate a cake"
+      }
+    },
+    {
+      "sentence": "Wir ___ im Park ___",
+      "verb": "laufen",
+      "answer": [
+        "sind",
+        "gelaufen"
+      ],
+      "translation": {
+        "ru": "Мы бегали в парке",
+        "en": "We ran in the park"
+      }
+    },
+    {
+      "sentence": "Wir ___ den Film ___",
+      "verb": "sehen",
+      "answer": [
+        "haben",
+        "gesehen"
+      ],
+      "translation": {
+        "ru": "Мы посмотрели фильм",
+        "en": "We watched the film"
+      }
+    },
+    {
+      "sentence": "Wir ___ Brot im Supermarkt ___",
+      "translation": {
+        "ru": "Мы купили хлеб в супермаркете",
+        "en": "We bought bread in the supermarket"
+      },
+      "answer": [
+        "haben",
+        "gekauft"
+      ],
+      "verb": "kaufen"
+    },
+    {
+      "sentence": "Ich ___ Wasser ___",
+      "verb": "trinken",
+      "answer": [
+        "habe",
+        "getrunken"
+      ],
+      "translation": {
+        "ru": "Я выпил воды",
+        "en": "I drank water"
+      }
+    },
+    {
+      "sentence": "Ich ___ zu Hause ___",
+      "translation": {
+        "ru": "Я остался дома",
+        "en": "I stayed at home"
+      },
       "answer": [
         "bin",
-        "geworden"
-      ]
+        "geblieben"
+      ],
+      "verb": "bleiben"
+    },
+    {
+      "sentence": "Der Laden ___ Obst ___",
+      "translation": {
+        "ru": "Магазин продал фрукты",
+        "en": "The shop sold fruit"
+      },
+      "answer": [
+        "hat",
+        "verkauft"
+      ],
+      "verb": "verkaufen"
     },
     {
       "sentence": "Ich ___ es nicht ___",
@@ -566,7 +350,71 @@
       "answer": [
         "habe",
         "gewusst"
-      ]
+      ],
+      "translation": {
+        "ru": "Я этого не знал",
+        "en": "I did not know it"
+      }
+    },
+    {
+      "sentence": "Ich ___ meine Familie ___",
+      "translation": {
+        "ru": "Я любил свою семью",
+        "en": "I loved my family"
+      },
+      "answer": [
+        "habe",
+        "geliebt"
+      ],
+      "verb": "lieben"
+    },
+    {
+      "sentence": "Der Lehrer ___ die Aufgabe ___",
+      "translation": {
+        "ru": "Учитель объяснил задание",
+        "en": "The teacher explained the task"
+      },
+      "answer": [
+        "hat",
+        "erklärt"
+      ],
+      "verb": "erklären"
+    },
+    {
+      "sentence": "Ich ___ die Rechnung ___",
+      "translation": {
+        "ru": "Я оплатил счёт",
+        "en": "I paid the bill"
+      },
+      "answer": [
+        "habe",
+        "bezahlt"
+      ],
+      "verb": "bezahlen"
+    },
+    {
+      "sentence": "Wir ___ die Wörter ___",
+      "translation": {
+        "ru": "Мы повторили слова",
+        "en": "We repeated the words"
+      },
+      "answer": [
+        "haben",
+        "wiederholt"
+      ],
+      "verb": "wiederholen"
+    },
+    {
+      "sentence": "Sie ___ das Museum ___",
+      "translation": {
+        "ru": "Она осмотрела музей",
+        "en": "She visited the museum"
+      },
+      "answer": [
+        "hat",
+        "besichtigt"
+      ],
+      "verb": "besichtigen"
     },
     {
       "sentence": "Sie ___ mir den Weg ___",
@@ -574,7 +422,395 @@
       "answer": [
         "hat",
         "gezeigt"
-      ]
+      ],
+      "translation": {
+        "ru": "Она показала мне дорогу",
+        "en": "She showed me the way"
+      }
+    },
+    {
+      "sentence": "Wir ___ im Sommer nach Spanien ___",
+      "translation": {
+        "ru": "Мы летом ездили в Испанию",
+        "en": "We travelled to Spain in summer"
+      },
+      "answer": [
+        "sind",
+        "gereist"
+      ],
+      "verb": "reisen"
+    },
+    {
+      "sentence": "Ich ___ das Rezept ___",
+      "translation": {
+        "ru": "Я попробовал этот рецепт",
+        "en": "I tried the recipe"
+      },
+      "answer": [
+        "habe",
+        "versucht"
+      ],
+      "verb": "versuchen"
+    },
+    {
+      "sentence": "Wir ___ lange über das Problem ___",
+      "translation": {
+        "ru": "Мы долго обсуждали эту проблему",
+        "en": "We discussed the problem for a long time"
+      },
+      "answer": [
+        "haben",
+        "diskutiert"
+      ],
+      "verb": "diskutieren"
+    },
+    {
+      "sentence": "Er ___ auf uns ___",
+      "verb": "warten",
+      "answer": [
+        "hat",
+        "gewartet"
+      ],
+      "translation": {
+        "ru": "Он ждал нас",
+        "en": "He waited for us"
+      }
+    },
+    {
+      "sentence": "Der Arzt ___ mir Tee ___",
+      "verb": "empfehlen",
+      "answer": [
+        "hat",
+        "empfohlen"
+      ],
+      "translation": {
+        "ru": "Врач порекомендовал мне чай",
+        "en": "The doctor recommended tea to me"
+      }
+    },
+    {
+      "sentence": "Er ___ das Fahrrad ___",
+      "translation": {
+        "ru": "Он починил велосипед",
+        "en": "He repaired the bicycle"
+      },
+      "answer": [
+        "hat",
+        "repariert"
+      ],
+      "verb": "reparieren"
+    },
+    {
+      "sentence": "Ich ___ den Termin ___",
+      "verb": "vergessen",
+      "answer": [
+        "habe",
+        "vergessen"
+      ],
+      "translation": {
+        "ru": "Я забыл о встрече",
+        "en": "I forgot the appointment"
+      }
+    },
+    {
+      "sentence": "Ich ___ das Fenster ___",
+      "verb": "öffnen",
+      "answer": [
+        "habe",
+        "geöffnet"
+      ],
+      "translation": {
+        "ru": "Я открыл окно",
+        "en": "I opened the window"
+      }
+    },
+    {
+      "sentence": "Ich ___ die Tür ___",
+      "translation": {
+        "ru": "Я закрыл дверь",
+        "en": "I closed the door"
+      },
+      "answer": [
+        "habe",
+        "geschlossen"
+      ],
+      "verb": "schließen"
+    },
+    {
+      "sentence": "Wir ___ den Urlaub ___",
+      "translation": {
+        "ru": "Мы спланировали отпуск",
+        "en": "We planned the vacation"
+      },
+      "answer": [
+        "haben",
+        "geplant"
+      ],
+      "verb": "planen"
+    },
+    {
+      "sentence": "Ich ___ den Koffer ___",
+      "translation": {
+        "ru": "Я собрал чемодан",
+        "en": "I packed the suitcase"
+      },
+      "answer": [
+        "habe",
+        "gepackt"
+      ],
+      "verb": "packen"
+    },
+    {
+      "sentence": "Wir ___ auf gutes Wetter ___",
+      "translation": {
+        "ru": "Мы надеялись на хорошую погоду",
+        "en": "We hoped for good weather"
+      },
+      "answer": [
+        "haben",
+        "gehofft"
+      ],
+      "verb": "hoffen"
+    },
+    {
+      "sentence": "Ich ___ eine Pizza ___",
+      "translation": {
+        "ru": "Я заказал пиццу",
+        "en": "I ordered a pizza"
+      },
+      "answer": [
+        "habe",
+        "bestellt"
+      ],
+      "verb": "bestellen"
+    },
+    {
+      "sentence": "Ich ___ von einer Reise ___",
+      "translation": {
+        "ru": "Я мечтал о путешествии",
+        "en": "I dreamed of a trip"
+      },
+      "answer": [
+        "habe",
+        "geträumt"
+      ],
+      "verb": "träumen"
+    },
+    {
+      "sentence": "Sie ___ das Fest ___",
+      "translation": {
+        "ru": "Она организовала праздник",
+        "en": "She organized the celebration"
+      },
+      "answer": [
+        "hat",
+        "organisiert"
+      ],
+      "verb": "organisieren"
+    },
+    {
+      "sentence": "Ich ___ einen Brief ___",
+      "verb": "schreiben",
+      "answer": [
+        "habe",
+        "geschrieben"
+      ],
+      "translation": {
+        "ru": "Я написал письмо",
+        "en": "I wrote a letter"
+      }
+    },
+    {
+      "sentence": "Ihr ___ die Zeitung ___",
+      "verb": "lesen",
+      "answer": [
+        "habt",
+        "gelesen"
+      ],
+      "translation": {
+        "ru": "Вы прочитали газету",
+        "en": "You read the newspaper"
+      }
+    },
+    {
+      "sentence": "Wir ___ den Kuchen ___",
+      "translation": {
+        "ru": "Мы попробовали торт",
+        "en": "We tried the cake"
+      },
+      "answer": [
+        "haben",
+        "probiert"
+      ],
+      "verb": "probieren"
+    },
+    {
+      "sentence": "Ich ___ dich gestern ___",
+      "translation": {
+        "ru": "Я позвонил тебе вчера",
+        "en": "I called you yesterday"
+      },
+      "answer": [
+        "habe",
+        "angerufen"
+      ],
+      "verb": "anrufen"
+    },
+    {
+      "sentence": "Wir ___ unsere Freunde ___",
+      "translation": {
+        "ru": "Мы пригласили наших друзей",
+        "en": "We invited our friends"
+      },
+      "answer": [
+        "haben",
+        "eingeladen"
+      ],
+      "verb": "einladen"
+    },
+    {
+      "sentence": "Ich ___ dich vom Bahnhof ___",
+      "translation": {
+        "ru": "Я забрал тебя с вокзала",
+        "en": "I picked you up from the station"
+      },
+      "answer": [
+        "habe",
+        "abgeholt"
+      ],
+      "verb": "abholen"
+    },
+    {
+      "sentence": "Die Kinder ___ im Park ___",
+      "translation": {
+        "ru": "Дети играли в парке",
+        "en": "The children played in the park"
+      },
+      "answer": [
+        "haben",
+        "gespielt"
+      ],
+      "verb": "spielen"
+    },
+    {
+      "sentence": "Er ___ das Auto vor dem Haus ___",
+      "translation": {
+        "ru": "Он припарковал машину перед домом",
+        "en": "He parked the car in front of the house"
+      },
+      "answer": [
+        "hat",
+        "geparkt"
+      ],
+      "verb": "parken"
+    },
+    {
+      "sentence": "Wir ___ nach Spanien ___",
+      "verb": "fliegen",
+      "answer": [
+        "sind",
+        "geflogen"
+      ],
+      "translation": {
+        "ru": "Мы полетели в Испанию",
+        "en": "We flew to Spain"
+      }
+    },
+    {
+      "sentence": "Der Bus ___ an der Haltestelle ___",
+      "translation": {
+        "ru": "Автобус остановился на остановке",
+        "en": "The bus stopped at the bus stop"
+      },
+      "answer": [
+        "hat",
+        "gehalten"
+      ],
+      "verb": "halten"
+    },
+    {
+      "sentence": "Wir ___ in den Bus ___",
+      "verb": "steigen",
+      "answer": [
+        "sind",
+        "gestiegen"
+      ],
+      "translation": {
+        "ru": "Мы сели в автобус",
+        "en": "We got on the bus"
+      }
+    },
+    {
+      "sentence": "Wir ___ an der nächsten Haltestelle ___",
+      "translation": {
+        "ru": "Мы вышли на следующей остановке",
+        "en": "We got off at the next stop"
+      },
+      "answer": [
+        "sind",
+        "ausgestiegen"
+      ],
+      "verb": "aussteigen"
+    },
+    {
+      "sentence": "Sie ___ in den Zug ___",
+      "translation": {
+        "ru": "Она села в поезд",
+        "en": "She got on the train"
+      },
+      "answer": [
+        "ist",
+        "eingestiegen"
+      ],
+      "verb": "einsteigen"
+    },
+    {
+      "sentence": "Ich ___ in Berlin ___",
+      "translation": {
+        "ru": "Я сделал пересадку в Берлине",
+        "en": "I changed trains in Berlin"
+      },
+      "answer": [
+        "bin",
+        "umgestiegen"
+      ],
+      "verb": "umsteigen"
+    },
+    {
+      "sentence": "Wir ___ die Straße ___",
+      "translation": {
+        "ru": "Мы перешли улицу",
+        "en": "We crossed the street"
+      },
+      "answer": [
+        "haben",
+        "überquert"
+      ],
+      "verb": "überqueren"
+    },
+    {
+      "sentence": "Der LKW ___ das Gepäck ___",
+      "translation": {
+        "ru": "Грузовик перевёз багаж",
+        "en": "The truck transported the luggage"
+      },
+      "answer": [
+        "hat",
+        "transportiert"
+      ],
+      "verb": "transportieren"
+    },
+    {
+      "sentence": "Sie ___ eine schwere Tasche ___",
+      "verb": "tragen",
+      "answer": [
+        "hat",
+        "getragen"
+      ],
+      "translation": {
+        "ru": "Она несла тяжёлую сумку",
+        "en": "She carried a heavy bag"
+      }
     },
     {
       "sentence": "Wir ___ in eine neue Wohnung ___",
@@ -582,15 +818,683 @@
       "answer": [
         "sind",
         "gezogen"
-      ]
+      ],
+      "translation": {
+        "ru": "Мы переехали в новую квартиру",
+        "en": "We moved into a new apartment"
+      }
     },
     {
-      "sentence": "Der Chef ___ mich ___",
-      "verb": "zwingen",
+      "sentence": "Der Zug ___ pünktlich ___",
+      "verb": "ankommen",
+      "answer": [
+        "ist",
+        "angekommen"
+      ],
+      "translation": {
+        "ru": "Поезд прибыл вовремя",
+        "en": "The train arrived on time"
+      }
+    },
+    {
+      "sentence": "Ich ___ den Einkaufswagen ___",
+      "translation": {
+        "ru": "Я толкал тележку для покупок",
+        "en": "I pushed the shopping cart"
+      },
+      "answer": [
+        "habe",
+        "geschoben"
+      ],
+      "verb": "schieben"
+    },
+    {
+      "sentence": "Der Zug ___ pünktlich ___",
+      "translation": {
+        "ru": "Поезд отправился вовремя",
+        "en": "The train departed on time"
+      },
+      "answer": [
+        "ist",
+        "abgefahren"
+      ],
+      "verb": "abfahren"
+    },
+    {
+      "sentence": "Der Fahrer ___ sofort ___",
+      "translation": {
+        "ru": "Водитель сразу затормозил",
+        "en": "The driver braked immediately"
+      },
       "answer": [
         "hat",
-        "gezwungen"
-      ]
+        "gebremst"
+      ],
+      "verb": "bremsen"
+    },
+    {
+      "sentence": "Das Auto ___ schnell ___",
+      "translation": {
+        "ru": "Машина быстро ускорилась",
+        "en": "The car accelerated quickly"
+      },
+      "answer": [
+        "hat",
+        "beschleunigt"
+      ],
+      "verb": "beschleunigen"
+    },
+    {
+      "sentence": "Ich ___ um sechs Uhr ___",
+      "translation": {
+        "ru": "Я проснулся в шесть часов",
+        "en": "I woke up at six o'clock"
+      },
+      "answer": [
+        "bin",
+        "aufgewacht"
+      ],
+      "verb": "aufwachen"
+    },
+    {
+      "sentence": "Ich ___ mich morgens ___",
+      "translation": {
+        "ru": "Я утром принял душ",
+        "en": "I took a shower in the morning"
+      },
+      "answer": [
+        "habe",
+        "geduscht"
+      ],
+      "verb": "duschen"
+    },
+    {
+      "sentence": "Wir ___ früh ___",
+      "translation": {
+        "ru": "Мы встали рано",
+        "en": "We got up early"
+      },
+      "answer": [
+        "sind",
+        "aufgestanden"
+      ],
+      "verb": "aufstehen"
+    },
+    {
+      "sentence": "Die Kinder ___ im See ___",
+      "translation": {
+        "ru": "Дети купались в озере",
+        "en": "The children bathed in the lake"
+      },
+      "answer": [
+        "haben",
+        "gebadet"
+      ],
+      "verb": "baden"
+    },
+    {
+      "sentence": "Ich ___ mit ihm ___",
+      "verb": "telefonieren",
+      "answer": [
+        "habe",
+        "telefoniert"
+      ],
+      "translation": {
+        "ru": "Я разговаривал с ним по телефону",
+        "en": "I talked to him on the phone"
+      }
+    },
+    {
+      "sentence": "Ich ___ Suppe ___",
+      "verb": "kochen",
+      "answer": [
+        "habe",
+        "gekocht"
+      ],
+      "translation": {
+        "ru": "Я сварил суп",
+        "en": "I cooked soup"
+      }
+    },
+    {
+      "sentence": "Wir ___ am Abend ___",
+      "translation": {
+        "ru": "Мы вечером смотрели телевизор",
+        "en": "We watched TV in the evening"
+      },
+      "answer": [
+        "haben",
+        "ferngesehen"
+      ],
+      "verb": "fernsehen"
+    },
+    {
+      "sentence": "Ich ___ das Bad ___",
+      "translation": {
+        "ru": "Я почистил ванную",
+        "en": "I cleaned the bathroom"
+      },
+      "answer": [
+        "habe",
+        "geputzt"
+      ],
+      "verb": "putzen"
+    },
+    {
+      "sentence": "Wir ___ im Supermarkt ___",
+      "translation": {
+        "ru": "Мы сделали покупки в супермаркете",
+        "en": "We did shopping in the supermarket"
+      },
+      "answer": [
+        "haben",
+        "eingekauft"
+      ],
+      "verb": "einkaufen"
+    },
+    {
+      "sentence": "Ich ___ mein Zimmer ___",
+      "translation": {
+        "ru": "Я убрал свою комнату",
+        "en": "I tidied up my room"
+      },
+      "answer": [
+        "habe",
+        "aufgeräumt"
+      ],
+      "verb": "aufräumen"
+    },
+    {
+      "sentence": "Sie ___ gestern einen Kuchen ___",
+      "verb": "backen",
+      "answer": [
+        "hat",
+        "gebacken"
+      ],
+      "translation": {
+        "ru": "Она вчера испекла торт",
+        "en": "She baked a cake yesterday"
+      }
+    },
+    {
+      "sentence": "Sie ___ das Geschenk ___",
+      "translation": {
+        "ru": "Она упаковала подарок",
+        "en": "She wrapped the present"
+      },
+      "answer": [
+        "hat",
+        "eingepackt"
+      ],
+      "verb": "einpacken"
+    },
+    {
+      "sentence": "Ich ___ das Brot ___",
+      "translation": {
+        "ru": "Я нарезал хлеб",
+        "en": "I cut the bread"
+      },
+      "answer": [
+        "habe",
+        "geschnitten"
+      ],
+      "verb": "schneiden"
+    },
+    {
+      "sentence": "Wir ___ den Koffer ___",
+      "translation": {
+        "ru": "Мы распаковали чемодан",
+        "en": "We unpacked the suitcase"
+      },
+      "answer": [
+        "haben",
+        "ausgepackt"
+      ],
+      "verb": "auspacken"
+    },
+    {
+      "sentence": "Er ___ Wasser und Saft ___",
+      "translation": {
+        "ru": "Он смешал воду и сок",
+        "en": "He mixed water and juice"
+      },
+      "answer": [
+        "hat",
+        "gemischt"
+      ],
+      "verb": "mischen"
+    },
+    {
+      "sentence": "Ich ___ meine Hände ___",
+      "translation": {
+        "ru": "Я вымыл руки",
+        "en": "I washed my hands"
+      },
+      "answer": [
+        "habe",
+        "gewaschen"
+      ],
+      "verb": "waschen"
+    },
+    {
+      "sentence": "Sie ___ mir eine E-Mail ___",
+      "translation": {
+        "ru": "Она отправила мне электронное письмо",
+        "en": "She sent me an email"
+      },
+      "answer": [
+        "hat",
+        "geschickt"
+      ],
+      "verb": "schicken"
+    },
+    {
+      "sentence": "Ich ___ meine Haare ___",
+      "translation": {
+        "ru": "Я высушил волосы",
+        "en": "I dried my hair"
+      },
+      "answer": [
+        "habe",
+        "getrocknet"
+      ],
+      "verb": "trocknen"
+    },
+    {
+      "sentence": "Ich ___ mich ___",
+      "translation": {
+        "ru": "Я извинился",
+        "en": "I apologized"
+      },
+      "answer": [
+        "habe",
+        "entschuldigt"
+      ],
+      "verb": "entschuldigen"
+    },
+    {
+      "sentence": "Wir ___ dem Lehrer ___",
+      "translation": {
+        "ru": "Мы слушали учителя",
+        "en": "We listened to the teacher"
+      },
+      "answer": [
+        "haben",
+        "zugehört"
+      ],
+      "verb": "zuhören"
+    },
+    {
+      "sentence": "Ich ___ meinen Nachbarn ___",
+      "translation": {
+        "ru": "Я поздоровался с соседом",
+        "en": "I greeted my neighbor"
+      },
+      "answer": [
+        "habe",
+        "gegrüßt"
+      ],
+      "verb": "grüßen"
+    },
+    {
+      "sentence": "Wir ___ uns am Bahnhof ___",
+      "translation": {
+        "ru": "Мы попрощались на вокзале",
+        "en": "We said goodbye at the station"
+      },
+      "answer": [
+        "haben",
+        "verabschiedet"
+      ],
+      "verb": "verabschieden"
+    },
+    {
+      "sentence": "Wir ___ uns gestern ___",
+      "verb": "treffen",
+      "answer": [
+        "haben",
+        "getroffen"
+      ],
+      "translation": {
+        "ru": "Мы встретились вчера",
+        "en": "We met yesterday"
+      }
+    },
+    {
+      "sentence": "Ich ___ meine Großmutter ___",
+      "translation": {
+        "ru": "Я навестил бабушку",
+        "en": "I visited my grandmother"
+      },
+      "answer": [
+        "habe",
+        "besucht"
+      ],
+      "verb": "besuchen"
+    },
+    {
+      "sentence": "Er ___ dem Lehrer ___",
+      "translation": {
+        "ru": "Он согласился с учителем",
+        "en": "He agreed with the teacher"
+      },
+      "answer": [
+        "hat",
+        "zugestimmt"
+      ],
+      "verb": "zustimmen"
+    },
+    {
+      "sentence": "Sie ___ das Angebot ___",
+      "translation": {
+        "ru": "Она отклонила предложение",
+        "en": "She rejected the offer"
+      },
+      "answer": [
+        "hat",
+        "abgelehnt"
+      ],
+      "verb": "ablehnen"
+    },
+    {
+      "sentence": "Der Arzt ___ mich ___",
+      "translation": {
+        "ru": "Врач меня предупредил",
+        "en": "The doctor warned me"
+      },
+      "answer": [
+        "hat",
+        "gewarnt"
+      ],
+      "verb": "warnen"
+    },
+    {
+      "sentence": "Du ___ mich ___",
+      "translation": {
+        "ru": "Ты меня убедил",
+        "en": "You convinced me"
+      },
+      "answer": [
+        "hast",
+        "überzeugt"
+      ],
+      "verb": "überzeugen"
+    },
+    {
+      "sentence": "Ich ___ dir ___",
+      "translation": {
+        "ru": "Я поблагодарил тебя",
+        "en": "I thanked you"
+      },
+      "answer": [
+        "habe",
+        "gedankt"
+      ],
+      "verb": "danken"
+    },
+    {
+      "sentence": "Der Verkäufer ___ mich ___",
+      "translation": {
+        "ru": "Продавец меня проконсультировал",
+        "en": "The salesman advised me"
+      },
+      "answer": [
+        "hat",
+        "beraten"
+      ],
+      "verb": "beraten"
+    },
+    {
+      "sentence": "Der Koffer ___ 20 Kilo ___",
+      "translation": {
+        "ru": "Чемодан весил 20 килограммов",
+        "en": "The suitcase weighed 20 kilos"
+      },
+      "answer": [
+        "hat",
+        "gewogen"
+      ],
+      "verb": "wiegen"
+    },
+    {
+      "sentence": "Wir ___ ein Hotel ___",
+      "translation": {
+        "ru": "Мы выбрали отель",
+        "en": "We selected a hotel"
+      },
+      "answer": [
+        "haben",
+        "ausgewählt"
+      ],
+      "verb": "auswählen"
+    },
+    {
+      "sentence": "Sie ___ das Kleid ___",
+      "translation": {
+        "ru": "Она примерила платье",
+        "en": "She tried on the dress"
+      },
+      "answer": [
+        "hat",
+        "anprobiert"
+      ],
+      "verb": "anprobieren"
+    },
+    {
+      "sentence": "Ich ___ die Hose ___",
+      "translation": {
+        "ru": "Я обменял брюки",
+        "en": "I exchanged the trousers"
+      },
+      "answer": [
+        "habe",
+        "umgetauscht"
+      ],
+      "verb": "umtauschen"
+    },
+    {
+      "sentence": "Die Brille ___ gut ___",
+      "translation": {
+        "ru": "Очки хорошо подошли",
+        "en": "The glasses fit well"
+      },
+      "answer": [
+        "hat",
+        "gepasst"
+      ],
+      "verb": "passen"
+    },
+    {
+      "sentence": "Der Kunde ___ die Tasche ___",
+      "translation": {
+        "ru": "Покупатель пожаловался на сумку",
+        "en": "The customer complained about the bag"
+      },
+      "answer": [
+        "hat",
+        "reklamiert"
+      ],
+      "verb": "reklamieren"
+    },
+    {
+      "sentence": "Der Kellner ___ die Suppe ___",
+      "translation": {
+        "ru": "Официант подал суп",
+        "en": "The waiter served the soup"
+      },
+      "answer": [
+        "hat",
+        "serviert"
+      ],
+      "verb": "servieren"
+    },
+    {
+      "sentence": "Ich ___ die Teller ___",
+      "translation": {
+        "ru": "Я вымыл тарелки",
+        "en": "I washed the plates"
+      },
+      "answer": [
+        "habe",
+        "abgewaschen"
+      ],
+      "verb": "abwaschen"
+    },
+    {
+      "sentence": "Wir ___ das Geschirr ___",
+      "translation": {
+        "ru": "Мы вытерли посуду",
+        "en": "We dried the dishes"
+      },
+      "answer": [
+        "haben",
+        "abgetrocknet"
+      ],
+      "verb": "abtrocknen"
+    },
+    {
+      "sentence": "Er ___ den Fisch ___",
+      "translation": {
+        "ru": "Он пожарил рыбу",
+        "en": "He fried the fish"
+      },
+      "answer": [
+        "hat",
+        "gebraten"
+      ],
+      "verb": "braten"
+    },
+    {
+      "sentence": "Sie ___ den Kühlschrank ___",
+      "translation": {
+        "ru": "Она разложила продукты в холодильник",
+        "en": "She put the groceries into the fridge"
+      },
+      "answer": [
+        "hat",
+        "eingeräumt"
+      ],
+      "verb": "einräumen"
+    },
+    {
+      "sentence": "Ich ___ die Landschaft ___",
+      "translation": {
+        "ru": "Я сфотографировал пейзаж",
+        "en": "I photographed the landscape"
+      },
+      "answer": [
+        "habe",
+        "fotografiert"
+      ],
+      "verb": "fotografieren"
+    },
+    {
+      "sentence": "Das Kind ___ ein Bild ___",
+      "translation": {
+        "ru": "Ребёнок нарисовал картину",
+        "en": "The child painted a picture"
+      },
+      "answer": [
+        "hat",
+        "gemalt"
+      ],
+      "verb": "malen"
+    },
+    {
+      "sentence": "Wir ___ uns im Urlaub ___",
+      "translation": {
+        "ru": "Мы расслабились в отпуске",
+        "en": "We relaxed on vacation"
+      },
+      "answer": [
+        "haben",
+        "entspannt"
+      ],
+      "verb": "entspannen"
+    },
+    {
+      "sentence": "Sie ___ auf der Party ___",
+      "translation": {
+        "ru": "Она танцевала на вечеринке",
+        "en": "She danced at the party"
+      },
+      "answer": [
+        "hat",
+        "getanzt"
+      ],
+      "verb": "tanzen"
+    },
+    {
+      "sentence": "Wir ___ am See ___",
+      "translation": {
+        "ru": "Мы ночевали в палатке у озера",
+        "en": "We camped by the lake"
+      },
+      "answer": [
+        "haben",
+        "gezeltet"
+      ],
+      "verb": "zelten"
+    },
+    {
+      "sentence": "Ich ___ die Vögel ___",
+      "translation": {
+        "ru": "Я наблюдал за птицами",
+        "en": "I observed the birds"
+      },
+      "answer": [
+        "habe",
+        "beobachtet"
+      ],
+      "verb": "beobachten"
+    },
+    {
+      "sentence": "Er ___ im Meer ___",
+      "translation": {
+        "ru": "Он плавал в море",
+        "en": "He swam in the sea"
+      },
+      "answer": [
+        "ist",
+        "geschwommen"
+      ],
+      "verb": "schwimmen"
+    },
+    {
+      "sentence": "Wir ___ unsere Kinder ___",
+      "translation": {
+        "ru": "Мы защитили наших детей",
+        "en": "We protected our children"
+      },
+      "answer": [
+        "haben",
+        "geschützt"
+      ],
+      "verb": "schützen"
+    },
+    {
+      "sentence": "Sie ___ im Ozean ___",
+      "translation": {
+        "ru": "Она ныряла в океане",
+        "en": "She dived in the ocean"
+      },
+      "answer": [
+        "ist",
+        "getaucht"
+      ],
+      "verb": "tauchen"
+    },
+    {
+      "sentence": "Wir ___ einen Baum ___",
+      "translation": {
+        "ru": "Мы посадили дерево",
+        "en": "We planted a tree"
+      },
+      "answer": [
+        "haben",
+        "gepflanzt"
+      ],
+      "verb": "pflanzen"
     }
   ]
 }

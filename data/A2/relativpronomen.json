@@ -9,204 +9,254 @@
   },
   "items": [
     {
-      "sentence": "Das ist die Straße, in ___ wir nicht parken dürfen.",
-      "answer": "der"
+      "sentence": "Das ist der Käse, ___ wir heute probieren",
+      "answer": "den",
+      "verb": "probieren"
     },
     {
-      "sentence": "Das ist das Kind, ___ Name ich nicht kenne.",
-      "answer": "dessen"
+      "sentence": "Das ist der Weg, ___ ich dir zeigen will",
+      "answer": "den",
+      "verb": "zeigen"
     },
     {
-      "sentence": "Woher kommt die Studentin, ___ das Studium so schnell beendet hat?",
-      "answer": "die"
+      "sentence": "Das ist die Frau, ___ wir oft im Supermarkt sehen",
+      "answer": "die",
+      "verb": "sehen"
     },
     {
-      "sentence": "Das ist das Foto, ___ du gemacht hast.",
-      "answer": "das"
+      "sentence": "Das ist der Kuchen, ___ meine Mutter heute backt",
+      "answer": "den",
+      "verb": "backen"
     },
     {
-      "sentence": "Das sind die Fragen, ___ ich nicht verstehe.",
-      "answer": "die"
+      "sentence": "Das ist der Satz, ___ wir noch einmal wiederholen",
+      "answer": "den",
+      "verb": "wiederholen"
     },
     {
-      "sentence": "Das ist der Tisch, auf ___ ich die Tasche lege.",
-      "answer": "den"
+      "sentence": "Das ist die Tasche, ___ mir meine Oma gegeben hat",
+      "answer": "die",
+      "verb": "geben"
     },
     {
-      "sentence": "Das ist Karl-Heinz, ___ in seiner Jugend in Claudia verliebt war.",
-      "answer": "der"
+      "sentence": "Das ist der Hund, ___ die Kinder lieben",
+      "answer": "den",
+      "verb": "lieben"
     },
     {
-      "sentence": "Das ist die Kollegin, mit ___ ich heute Mittag esse.",
-      "answer": "der"
+      "sentence": "Das ist der Nachbar, ___ ich das Fahrrad repariere",
+      "answer": "dem",
+      "verb": "reparieren"
     },
     {
-      "sentence": "Das ist das Hotel, in ___ wir letzte Woche übernachtet haben.",
-      "answer": "dem"
+      "sentence": "Das ist der Garten, ___ die Touristen morgen besichtigen",
+      "answer": "den",
+      "verb": "besichtigen"
     },
     {
-      "sentence": "Das ist die Reise, auf ___ ich mich freue.",
-      "answer": "die"
+      "sentence": "Das ist das Spiel, bei ___ wir auf gutes Wetter hoffen",
+      "answer": "dem",
+      "verb": "hoffen"
     },
     {
-      "sentence": "Hast du auch den Wagen gesehen, ___ so schnell um die Kurve gefahren ist?",
-      "answer": "der"
+      "sentence": "Das sind die Leute, bei ___ wir im Sommer gewohnt haben",
+      "answer": "denen",
+      "verb": "wohnen"
     },
     {
-      "sentence": "Das ist die Wohnung, in ___ wir jetzt wohnen.",
-      "answer": "der"
+      "sentence": "Das ist die Familie, ___ Auto dringend Hilfe braucht",
+      "answer": "deren",
+      "verb": "brauchen"
     },
     {
-      "sentence": "Der Patient, ___ man operiert hatte, ist wieder gesund.",
-      "answer": "den"
+      "sentence": "Das ist die Freundin, mit ___ ich jeden Abend spreche",
+      "answer": "der",
+      "verb": "sprechen"
     },
     {
-      "sentence": "Das ist der Bus, ___ wir nehmen.",
-      "answer": "den"
+      "sentence": "Das ist der Abend, an ___ ich meinen Koffer packe",
+      "answer": "dem",
+      "verb": "packen"
     },
     {
-      "sentence": "Das sind die Kinder, ___ ich ein Eis gebe.",
-      "answer": "denen"
+      "sentence": "Das ist der Student, ___ Vater im Krankenhaus arbeitet",
+      "answer": "dessen",
+      "verb": "arbeiten"
     },
     {
-      "sentence": "Das ist die Nachbarin, ___ ich oft helfe.",
-      "answer": "der"
+      "sentence": "Das ist das Fest, ___ die Schule organisiert",
+      "answer": "das",
+      "verb": "organisieren"
     },
     {
-      "sentence": "Kennst du die hübsche Frau, mit ___ Thomas schon seit Stunden spricht?",
-      "answer": "der"
+      "sentence": "Das ist die Freundin, ___ heute zu Hause bleibt",
+      "answer": "die",
+      "verb": "bleiben"
     },
     {
-      "sentence": "Das sind die Leute, ___ Kinder schon groß sind.",
-      "answer": "deren"
+      "sentence": "Das ist der Schlüssel, mit ___ ich die Tür öffne",
+      "answer": "dem",
+      "verb": "öffnen"
     },
     {
-      "sentence": "Das ist der Bus, ___ jeden Morgen zu spät kommt.",
-      "answer": "der"
+      "sentence": "Das ist die Kollegin, ___ Bruder mir nie antwortet",
+      "answer": "deren",
+      "verb": "antworten"
     },
     {
-      "sentence": "Das sind die Übungen, ___ wir heute machen.",
-      "answer": "die"
+      "sentence": "Das ist das Kind, ___ Problem niemand versteht",
+      "answer": "dessen",
+      "verb": "verstehen"
     },
     {
-      "sentence": "Das ist die Frau, ___ im Supermarkt arbeitet.",
-      "answer": "die"
+      "sentence": "Das ist die Wohnung, in ___ wir abends Musik hören",
+      "answer": "der",
+      "verb": "hören"
     },
     {
-      "sentence": "Das ist die Reise, von ___ ich dir erzählt habe.",
-      "answer": "der"
+      "sentence": "Das ist der Knopf, mit ___ man die Tür schließt",
+      "answer": "dem",
+      "verb": "schließen"
     },
     {
-      "sentence": "Das ist das Café, in ___ wir uns treffen.",
-      "answer": "dem"
+      "sentence": "Das ist der Tag, an ___ wir unseren Urlaub planen",
+      "answer": "dem",
+      "verb": "planen"
     },
     {
-      "sentence": "Ist das der Mann, ___ du zu deinem Geburtstag eingeladen hast?",
-      "answer": "den"
+      "sentence": "Das ist die Garage, vor ___ mein Fahrrad steht",
+      "answer": "der",
+      "verb": "stehen"
     },
     {
-      "sentence": "Das ist der Mann, ___ du schon kennst.",
-      "answer": "den"
+      "sentence": "Das sind die Freunde, mit ___ wir heute Abend ins Kino gehen",
+      "answer": "denen",
+      "verb": "gehen"
     },
     {
-      "sentence": "Wie heißt eigentlich das Restaurant, in ___ man so gut bedient wird?",
-      "answer": "dem"
+      "sentence": "Das ist die Haltestelle, an ___ wir den Bus nehmen",
+      "answer": "der",
+      "verb": "nehmen"
     },
     {
-      "sentence": "Das ist das Café, in ___ wir morgen gehen.",
-      "answer": "das"
+      "sentence": "Das ist die Hütte, in ___ wir im Urlaub schlafen",
+      "answer": "der",
+      "verb": "schlafen"
     },
     {
-      "sentence": "Das ist das Buch, aus ___ ich lerne.",
-      "answer": "dem"
+      "sentence": "Das sind die Kinder, ___ jeden Morgen zur Schule laufen",
+      "answer": "die",
+      "verb": "laufen"
     },
     {
-      "sentence": "Das sind die Schuhe, ___ ich kaufen möchte.",
-      "answer": "die"
+      "sentence": "Das ist der Mann, ___ Sohn in Köln Deutsch lernt",
+      "answer": "dessen",
+      "verb": "lernen"
     },
     {
-      "sentence": "Warum sind die Aufgaben, ___ uns unser Lehrer stellt, immer so schwierig?",
-      "answer": "die"
+      "sentence": "Das sind die Kollegen, bei ___ ich immer gute Ideen finde",
+      "answer": "denen",
+      "verb": "finden"
     },
     {
-      "sentence": "Das ist das Zimmer, in ___ ich heute schlafe.",
-      "answer": "dem"
+      "sentence": "Das ist die Frau, ___ Sohn oft den Großeltern hilft",
+      "answer": "deren",
+      "verb": "helfen"
     },
     {
-      "sentence": "Das ist der Kollege, ___ ich vertraue.",
-      "answer": "dem"
+      "sentence": "Das ist die Milch, ___ die Kinder morgens trinken",
+      "answer": "die",
+      "verb": "trinken"
     },
     {
-      "sentence": "Das ist die Frau, ___ ich gestern getroffen habe.",
-      "answer": "die"
+      "sentence": "Das ist das Museum, ___ wir am Sonntag besuchen",
+      "answer": "das",
+      "verb": "besuchen"
     },
     {
-      "sentence": "Das ist die Frau, ___ Tasche auf dem Stuhl liegt.",
-      "answer": "deren"
+      "sentence": "Das ist die Bank, auf ___ die Kinder oft sitzen",
+      "answer": "der",
+      "verb": "sitzen"
     },
     {
-      "sentence": "Das ist der Laden, in ___ ich Brot kaufe.",
-      "answer": "dem"
+      "sentence": "Das sind die Freunde, mit ___ ich meinen Schlüssel gesucht habe",
+      "answer": "denen",
+      "verb": "suchen"
     },
     {
-      "sentence": "Das ist der Film, über ___ wir sprechen.",
-      "answer": "den"
+      "sentence": "Das ist das Paar, ___ wir zur Party einladen",
+      "answer": "das",
+      "verb": "einladen"
     },
     {
-      "sentence": "Kennst du die Leute, ___ neben uns wohnen?",
-      "answer": "die"
+      "sentence": "Das ist der Lehrer, ___ Namen ich dich gestern gefragt habe",
+      "answer": "dessen",
+      "verb": "fragen"
     },
     {
-      "sentence": "Das ist der Tisch, auf ___ die Tassen stehen.",
-      "answer": "dem"
+      "sentence": "Das ist die Bäckerei, ___ am Sonntag Brot verkauft",
+      "answer": "die",
+      "verb": "verkaufen"
     },
     {
-      "sentence": "Das ist der Laden, aus ___ ich gerade komme.",
-      "answer": "dem"
+      "sentence": "Das ist der Satz, ___ der Lehrer erklärt",
+      "answer": "den",
+      "verb": "erklären"
     },
     {
-      "sentence": "Das ist der Freund, mit ___ ich oft Fußball spiele.",
-      "answer": "dem"
+      "sentence": "Das sind die Äpfel, ___ wir sofort essen",
+      "answer": "die",
+      "verb": "essen"
     },
     {
-      "sentence": "Das ist das Kind, mit ___ wir im Park sind.",
-      "answer": "dem"
+      "sentence": "Das ist das Paket, ___ ich morgen abhole",
+      "answer": "das",
+      "verb": "abholen"
     },
     {
-      "sentence": "Das ist das Problem, von ___ du mir erzählt hast.",
-      "answer": "dem"
+      "sentence": "Das ist die Straße, in ___ jeden Morgen der Bus kommt",
+      "answer": "der",
+      "verb": "kommen"
     },
     {
-      "sentence": "Das ist der Park, in ___ wir heute gehen.",
-      "answer": "den"
+      "sentence": "Das sind die Nachbarn, ___ Tochter jeden Tag mit dem Bus fährt",
+      "answer": "deren",
+      "verb": "fahren"
     },
     {
-      "sentence": "Wo ist das Handy, ___ du mir gegeben hast?",
-      "answer": "das"
+      "sentence": "Das ist die Kollegin, mit ___ ich morgen Getränke bringe",
+      "answer": "der",
+      "verb": "bringen"
     },
     {
-      "sentence": "Das ist der Mann, ___ Auto vor der Tür steht.",
-      "answer": "dessen"
+      "sentence": "Das ist der Kaffee, ___ ich noch nicht bezahlt habe",
+      "answer": "den",
+      "verb": "bezahlen"
     },
     {
-      "sentence": "Das ist das Haus, in ___ meine Oma wohnt.",
-      "answer": "dem"
+      "sentence": "Das ist das Buch, ___ ich gerade lese",
+      "answer": "das",
+      "verb": "lesen"
     },
     {
-      "sentence": "Ich suche den Schlüssel, ___ ich gestern verloren habe.",
-      "answer": "den"
+      "sentence": "Das ist der Tag, an ___ ich immer meinen Regenschirm vergesse",
+      "answer": "dem",
+      "verb": "vergessen"
     },
     {
-      "sentence": "Beates Kinder, mit ___ wir nach Italien gefahren sind, sind sehr nett.",
-      "answer": "denen"
+      "sentence": "Das ist das Wort, ___ ich falsch schreibe",
+      "answer": "das",
+      "verb": "schreiben"
     },
     {
-      "sentence": "Der Fotograf, ___ Fotos wir gesehen haben, erhielt einen Preis.",
-      "answer": "dessen"
+      "sentence": "Das ist das Essen, ___ wir online bestellen",
+      "answer": "das",
+      "verb": "bestellen"
     },
     {
-      "sentence": "Das ist der Lehrer, ___ uns immer hilft.",
-      "answer": "der"
+      "sentence": "Das ist die Jacke, ___ ich morgen kaufen will",
+      "answer": "die",
+      "verb": "kaufen"
     }
   ]
 }

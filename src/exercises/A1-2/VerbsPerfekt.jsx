@@ -25,6 +25,14 @@ function normalize(v) {
   return String(v ?? "").trim().toLowerCase();
 }
 
+function getLocalizedText(raw, locale) {
+  if (typeof raw === "string") return raw;
+  if (raw && typeof raw === "object") {
+    return raw[locale] ?? raw.ru ?? raw.en ?? "";
+  }
+  return "";
+}
+
 export default function VerbsPerfekt() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
@@ -89,18 +97,27 @@ export default function VerbsPerfekt() {
     }, 2000);
   };
 
+  const preventStealFocus = (event) => {
+    event.preventDefault();
+  };
+
   return (
       <div className="exercise-inner">
-        {showHint && <ModalHtml html={locale === "en" ? hintEn : hintRu} onClose={() => setShowHint(false)} />}
+        {showHint && (
+            <ModalHtml
+                html={locale === "en" ? hintEn : hintRu}
+                onClose={() => setShowHint(false)}
+            />
+        )}
 
         <div className="scroll-container">
           <ul className="list">
             {items.map((item, itemIdx) => {
-              // sentence с 2 пропусками: ___ ... ___
               const parts = String(item.sentence ?? "").split(/_{3,}/);
               const left = parts[0] ?? "";
               const middle = parts[1] ?? "";
               const right = parts[2] ?? "";
+              const translation = getLocalizedText(item.translation, locale);
 
               const correct = Array.isArray(item.answer) ? item.answer : [];
               const correct0 = String(correct[0] ?? "");
@@ -133,6 +150,8 @@ export default function VerbsPerfekt() {
 
               return (
                   <li key={itemIdx} className="list-item">
+                    {translation ? <span className="sentence">{translation} — </span> : null}
+
                     {left}
 
                     <ExpandingInput
@@ -153,7 +172,6 @@ export default function VerbsPerfekt() {
                         value={visibleValue1}
                         onChange={(e) => handleChange(itemIdx, 1, e.target.value, correct1)}
                         className={class1}
-                        // требование: инфинитив (verb) в placeholder второго поля
                         placeholder={item.verb}
                         maxWidth={260}
                         readOnly={previewValues[key1] != null}
@@ -162,17 +180,19 @@ export default function VerbsPerfekt() {
 
                     {right}
 
-                    {/* глазок только для второго поля — в конце предложения */}
                     <button
                         type="button"
                         className="eye-container eye-container--button"
                         title="Show answer"
+                        onPointerDown={preventStealFocus}
+                        onTouchStart={preventStealFocus}
+                        onMouseDown={preventStealFocus}
                         onClick={() => showAnswerPreview(itemIdx, 1, correct1)}
                         aria-label={`Show answer for item ${itemIdx + 1}`}
                     >
-                      <span>
-                        <Eye size={18} />
-                      </span>
+                  <span>
+                    <Eye size={18} />
+                  </span>
                     </button>
                   </li>
               );

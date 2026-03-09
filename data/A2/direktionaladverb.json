@@ -59,12 +59,14 @@
     },
     {
       "sentence": {
-        "ru": "Вынесите стол",
+        "ru": "Вынеси стол",
         "en": "Take the table outside"
       },
       "answers": [
         "Tragt den Tisch hinaus",
-        "Tragt den Tisch raus"
+        "Tragt den Tisch raus",
+        "Bring den Tisch hinaus",
+        "Bring den Tisch raus"
       ]
     },
     {
@@ -119,18 +121,18 @@
     },
     {
       "sentence": {
-        "ru": "Заходите сюда внутрь",
+        "ru": "Заходи сюда внутрь",
         "en": "Come in here"
       },
       "answers": [
-        "Kommen Sie herein",
-        "Kommen Sie rein"
+        "Komm herein",
+        "Komm rein"
       ]
     },
     {
       "sentence": {
-        "ru": "Иди ко мне сюда вниз",
-        "en": "Come down here to me"
+        "ru": "Иди (ко мне сюда) вниз",
+        "en": "Come down here (to me)"
       },
       "answers": [
         "Komm herunter",
@@ -139,7 +141,7 @@
     },
     {
       "sentence": {
-        "ru": "Поднимись наверх",
+        "ru": "Поднимись (ко мне) наверх",
         "en": "Come up (to me)"
       },
       "answers": [
@@ -188,10 +190,11 @@
     },
     {
       "sentence": {
-        "ru": "Иди туда наружу",
+        "ru": "Иди наружу",
         "en": "Go out there"
       },
       "answers": [
+        "Geh nach draußen",
         "Geh hinaus",
         "Geh raus"
       ]
@@ -208,8 +211,8 @@
     },
     {
       "sentence": {
-        "ru": "Поднимись наверх",
-        "en": "Go up there"
+        "ru": "Поднимись наверх (от меня)",
+        "en": "Go up there (from me)"
       },
       "answers": [
         "Geh hinauf",
@@ -218,8 +221,8 @@
     },
     {
       "sentence": {
-        "ru": "Зайди ко мне внутрь",
-        "en": "Come in to me"
+        "ru": "Зайди (ко мне) внутрь",
+        "en": "Come in (to me)"
       },
       "answers": [
         "Komm herein",
@@ -228,8 +231,8 @@
     },
     {
       "sentence": {
-        "ru": "Занеси сумку внутрь",
-        "en": "Carry the bag inside"
+        "ru": "Занеси сумку внутрь (я снаружи)",
+        "en": "Carry the bag inside (I'm outside)"
       },
       "answers": [
         "Trag die Tasche hinein",
@@ -238,8 +241,8 @@
     },
     {
       "sentence": {
-        "ru": "Зайди внутрь",
-        "en": "Come in"
+        "ru": "Зайди внутрь (ко мне)",
+        "en": "Come in (to me)"
       },
       "answers": [
         "Komm herein",
@@ -248,8 +251,8 @@
     },
     {
       "sentence": {
-        "ru": "Иди вниз",
-        "en": "Go down"
+        "ru": "Иди вниз (от меня)",
+        "en": "Go down (from me)"
       },
       "answers": [
         "Geh hinunter",
@@ -296,8 +299,8 @@
     },
     {
       "sentence": {
-        "ru": "Выйди наружу",
-        "en": "Come outside"
+        "ru": "Выйди наружу (ко мне)",
+        "en": "Come outside (to me)"
       },
       "answers": [
         "Komm heraus",
@@ -306,8 +309,8 @@
     },
     {
       "sentence": {
-        "ru": "Спустись вниз",
-        "en": "Go down"
+        "ru": "Спустись вниз (от меня)",
+        "en": "Go down (from me)"
       },
       "answers": [
         "Geh hinunter",
@@ -354,8 +357,8 @@
     },
     {
       "sentence": {
-        "ru": "Иди наверх",
-        "en": "Go up there"
+        "ru": "Иди наверх (от меня)",
+        "en": "Go up there (from me)"
       },
       "answers": [
         "Geh hinauf",
@@ -364,12 +367,13 @@
     },
     {
       "sentence": {
-        "ru": "Спустись вниз",
-        "en": "Go down"
+        "ru": "Спустись вниз (от меня)",
+        "en": "Go down (from me)"
       },
       "answers": [
         "Geh nach unten",
-        "Geh runter"
+        "Geh runter",
+        "Geh hinunter"
       ]
     },
     {
@@ -393,12 +397,13 @@
     },
     {
       "sentence": {
-        "ru": "Иди наружу",
-        "en": "Go outside"
+        "ru": "Иди наружу (от меня)",
+        "en": "Go outside (from me)"
       },
       "answers": [
         "Geh nach draußen",
-        "Geh raus"
+        "Geh raus",
+        "Geh hinaus"
       ]
     },
     {
@@ -461,8 +466,8 @@
     },
     {
       "sentence": {
-        "ru": "Иди наружу",
-        "en": "Go out there"
+        "ru": "Иди наружу (от меня)",
+        "en": "Go out there (from me)"
       },
       "answers": [
         "Geh hinaus",
@@ -471,7 +476,7 @@
     },
     {
       "sentence": {
-        "ru": "Передай ему ручку туда",
+        "ru": "Передай ему ручку",
         "en": "Pass the pen over to him"
       },
       "answers": [
