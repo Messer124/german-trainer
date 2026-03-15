@@ -156,7 +156,7 @@ export default function App() {
 
         const keepKeyboardOpenOnEyeTap = (event) => {
             const eyeButton = event.target instanceof Element
-                ? event.target.closest(".eye-container--button")
+                ? event.target.closest(".eye-container--button, .hint-button, .expanding-input__eye-button")
                 : null;
 
             if (eyeButton) {

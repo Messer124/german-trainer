@@ -328,9 +328,9 @@ body {
   box-shadow: var(--shadow-theme-switch);
   cursor: pointer;
   transition:
-          background-color var(--duration-03) ease,
-          box-shadow var(--duration-03) ease,
-          border-color var(--duration-03) ease;
+          background-color 0.5s ease,
+          box-shadow 0.5s ease,
+          border-color 0.5s ease !important;
 }
 
 .theme-toggle:focus-visible {
@@ -348,8 +348,8 @@ body {
   background: var(--color-theme-switch-thumb-light);
   transform: translateY(-50%);
   transition:
-          left var(--duration-03) ease,
-          background-color var(--duration-03) ease;
+          left 0.5s ease,
+          background-color 0.5s ease !important;
 }
 
 .theme-toggle--dark {
