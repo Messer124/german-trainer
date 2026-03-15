@@ -64,26 +64,6 @@
     },
     {
       "wordsSet": [
-        "zu einem Drink",
-        "eingeladen",
-        "alle seine Freunde",
-        "in der Disco",
-        "er",
-        "hat",
-        "vor Freude"
-      ],
-      "correctOrder": [
-        "er",
-        "hat",
-        "alle seine Freunde",
-        "vor Freude",
-        "in der Disco",
-        "zu einem Drink",
-        "eingeladen"
-      ]
-    },
-    {
-      "wordsSet": [
         "in die Stadt",
         "fahre",
         "mit dem Bus",

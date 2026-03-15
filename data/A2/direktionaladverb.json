@@ -131,7 +131,7 @@
     },
     {
       "sentence": {
-        "ru": "Иди (ко мне сюда) вниз",
+        "ru": "Спустись (ко мне) вниз",
         "en": "Come down here (to me)"
       },
       "answers": [
@@ -251,16 +251,6 @@
     },
     {
       "sentence": {
-        "ru": "Иди вниз (от меня)",
-        "en": "Go down (from me)"
-      },
-      "answers": [
-        "Geh hinunter",
-        "Geh runter"
-      ]
-    },
-    {
-      "sentence": {
         "ru": "Мой друг стоит сзади",
         "en": "My friend is standing behind"
       },
@@ -305,16 +295,6 @@
       "answers": [
         "Komm heraus",
         "Komm raus"
-      ]
-    },
-    {
-      "sentence": {
-        "ru": "Спустись вниз (от меня)",
-        "en": "Go down (from me)"
-      },
-      "answers": [
-        "Geh hinunter",
-        "Geh runter"
       ]
     },
     {

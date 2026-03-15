@@ -18,8 +18,28 @@ import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "conjunctions-answers";
 
-function normalize(s) {
-  return String(s ?? "").trim().toLowerCase();
+function normalize(value) {
+  return String(value ?? "")
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, " ");
+}
+
+function getAcceptedAnswers(item) {
+  if (Array.isArray(item?.answer)) {
+    return item.answer.map((value) => String(value ?? "").trim()).filter(Boolean);
+  }
+
+  if (typeof item?.answer === "string") {
+    const value = item.answer.trim();
+    return value ? [value] : [];
+  }
+
+  if (Array.isArray(item?.answers)) {
+    return item.answers.map((value) => String(value ?? "").trim()).filter(Boolean);
+  }
+
+  return [];
 }
 
 export default function Conjunctions() {
@@ -40,13 +60,17 @@ export default function Conjunctions() {
   }, []);
 
   const handleChange = (index, value) => {
-    const correct = normalize(items[index]?.answer);
+    const acceptedAnswers = getAcceptedAnswers(items[index]);
+    const normalizedValue = normalize(value);
+    const isCorrect = acceptedAnswers.some(
+        (answer) => normalize(answer) === normalizedValue
+    );
 
     setAnswers((prev) => ({
       ...prev,
       [index]: {
         value,
-        isCorrect: normalize(value) === correct,
+        isCorrect,
       },
     }));
   };

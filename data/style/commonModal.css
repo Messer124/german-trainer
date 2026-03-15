@@ -811,8 +811,6 @@ table.mv-table tbody td {
 /* Первая колонка (Заголовки вопросов) */
 .prep-table .prep-header-cell {
   width: 120px;              /* Фиксированная ширина для заголовков */
-  background-color: #fcfcfc; /* Легкий фон для отделения */
-  border-right: 1px solid #e0e0e0;
 }
 
 /* Заголовки внутри ячеек (предлог — перевод) */
