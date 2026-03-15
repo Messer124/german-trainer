@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import ExpandingInput from "../../components/ExpandingInput";
 import data from "../../../data/A1-1/translate-sentences.json";

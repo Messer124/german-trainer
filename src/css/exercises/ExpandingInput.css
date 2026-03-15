@@ -1,0 +1,71 @@
+
+.expanding-input__field-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+/* Ensure the inner wrap doesn't conflict with positioning */
+.expanding-input__wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Target the button specifically */
+.expanding-input__eye-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 100%;
+    min-height: 36px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+    z-index: 5; /* Ensure above input */
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.expanding-input__eye-button:hover {
+    color: #4b5563;
+}
+
+/* SVG size control for responsive design */
+.expanding-input__eye-button svg {
+    width: 18px;
+    height: 18px;
+    transition: width 0.2s, height 0.2s;
+}
+
+/* Add padding to input only when hint is active */
+.expanding-input__input--with-hint {
+    padding-right: 36px !important;
+    box-sizing: border-box; /* Crucial for padding to work with width */
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .expanding-input__eye-button {
+        width: 44px; /* Larger hit area / spacing on desktop */
+        right: 4px; /* Slight offset from the edge */
+    }
+
+    .expanding-input__eye-button svg {
+        width: 22px; /* Larger icon on desktop */
+        height: 22px;
+    }
+
+    .expanding-input__input--with-hint {
+        padding-right: 48px !important; /* Increased padding to accommodate larger icon + offset */
+    }
+}
