@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import { Eye } from "lucide-react";
+import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
@@ -15,8 +14,6 @@ function TimeExercise() {
   const { locale } = useLocale();
   const [showImage, setShowImage] = useState(false);
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const [previewValues, setPreviewValues] = useState({});
-  const previewTimersRef = useRef({});
 
   useEffect(() => {
     const handleShowHint = () => {
@@ -29,52 +26,14 @@ function TimeExercise() {
     };
   }, []);
 
-  useEffect(() => {
-    return () => {
-      Object.values(previewTimersRef.current).forEach((id) => clearTimeout(id));
-    };
-  }, []);
-
   const handleChange = (index, value) => {
     const correct = data.items[index].answer.trim().toLowerCase();
     const isCorrect = value.trim().toLowerCase() === correct;
-
-    if (previewTimersRef.current[index]) {
-      clearTimeout(previewTimersRef.current[index]);
-      delete previewTimersRef.current[index];
-    }
-    if (previewValues[index] != null) {
-      setPreviewValues((prev) => {
-        const next = { ...prev };
-        delete next[index];
-        return next;
-      });
-    }
 
     setAnswers((prev) => ({
       ...prev,
       [index]: { value, isCorrect },
     }));
-  };
-
-  const showAnswerPreview = (index) => {
-    const answer = String(data.items[index]?.answer ?? "");
-    if (!answer) return;
-
-    if (previewTimersRef.current[index]) {
-      clearTimeout(previewTimersRef.current[index]);
-    }
-
-    setPreviewValues((prev) => ({ ...prev, [index]: answer }));
-
-    previewTimersRef.current[index] = setTimeout(() => {
-      setPreviewValues((prev) => {
-        const next = { ...prev };
-        delete next[index];
-        return next;
-      });
-      delete previewTimersRef.current[index];
-    }, 2000);
   };
 
   return (
@@ -91,8 +50,7 @@ function TimeExercise() {
               {data.items.map((item, index) => {
                 const stored = answers[index];
                 const value = stored?.value || "";
-                const visibleValue = previewValues[index] ?? value;
-                const trimmed = visibleValue.trim();
+                const trimmed = value.trim();
                 const isCorrect = stored?.isCorrect;
 
                 let inputClass = "autosize-input";
@@ -107,23 +65,13 @@ function TimeExercise() {
                       <ExpandingInput
                           type="text"
                           className={inputClass}
-                          value={visibleValue}
+                          value={value}
                           onChange={(e) => handleChange(index, e.target.value)}
-                          readOnly={previewValues[index] != null}
                           minWidth={140}
                           maxWidth={460}
+                          enableHint={true}
+                          hintValue={item.answer}
                       />
-
-                      <button
-                          type="button"
-                          className="eye-container eye-container--button"
-                          onClick={() => showAnswerPreview(index)}
-                          aria-label={`Show answer for item ${index + 1}`}
-                      >
-                        <span>
-                          <Eye size={18} />
-                        </span>
-                      </button>
                     </li>
                 );
               })}

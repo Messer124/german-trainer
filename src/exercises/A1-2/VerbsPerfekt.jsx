@@ -1,15 +1,11 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import { Eye } from "lucide-react";
-
+import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
-
 import data from "../../../data/A1-2/verbsPerfekt.json";
 import hintRu from "../../../data/A1-2/images/partizip2.html?raw";
 import hintEn from "../../../data/A1-2/images/en/partizip2.html?raw";
-
 import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "verbs-perfekt-answers";
@@ -37,8 +33,6 @@ export default function VerbsPerfekt() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
-  const [previewValues, setPreviewValues] = useState({});
-  const previewTimersRef = useRef({});
 
   const items = useMemo(() => normalizeItems(data.items), []);
 
@@ -48,57 +42,14 @@ export default function VerbsPerfekt() {
     return () => document.removeEventListener("show-hint", handleShowHint);
   }, []);
 
-  useEffect(() => {
-    return () => {
-      Object.values(previewTimersRef.current).forEach((id) => clearTimeout(id));
-    };
-  }, []);
-
   const handleChange = (itemIdx, fieldIdx, value, correct) => {
     const key = `${itemIdx}-${fieldIdx}`;
     const isCorrect = normalize(value) === normalize(correct);
-
-    if (previewTimersRef.current[key]) {
-      clearTimeout(previewTimersRef.current[key]);
-      delete previewTimersRef.current[key];
-    }
-    if (previewValues[key] != null) {
-      setPreviewValues((prev) => {
-        const next = { ...prev };
-        delete next[key];
-        return next;
-      });
-    }
 
     setAnswers((prev) => ({
       ...prev,
       [key]: { value, isCorrect },
     }));
-  };
-
-  const showAnswerPreview = (itemIdx, fieldIdx, answer) => {
-    const key = `${itemIdx}-${fieldIdx}`;
-    const value = String(answer ?? "");
-    if (!value) return;
-
-    if (previewTimersRef.current[key]) {
-      clearTimeout(previewTimersRef.current[key]);
-    }
-
-    setPreviewValues((prev) => ({ ...prev, [key]: value }));
-
-    previewTimersRef.current[key] = setTimeout(() => {
-      setPreviewValues((prev) => {
-        const next = { ...prev };
-        delete next[key];
-        return next;
-      });
-      delete previewTimersRef.current[key];
-    }, 2000);
-  };
-
-  const preventStealFocus = (event) => {
-    event.preventDefault();
   };
 
   return (
@@ -131,8 +82,6 @@ export default function VerbsPerfekt() {
 
               const value0 = stored0?.value ?? "";
               const value1 = stored1?.value ?? "";
-              const visibleValue0 = previewValues[key0] ?? value0;
-              const visibleValue1 = previewValues[key1] ?? value1;
 
               const class0 =
                   value0.trim() === ""
@@ -156,44 +105,31 @@ export default function VerbsPerfekt() {
 
                     <ExpandingInput
                         type="text"
-                        value={visibleValue0}
+                        value={value0}
                         onChange={(e) => handleChange(itemIdx, 0, e.target.value, correct0)}
                         className={class0}
                         minWidth={70}
                         maxWidth={220}
-                        readOnly={previewValues[key0] != null}
                         aria-label={`Perfekt blank 1 (item ${itemIdx + 1})`}
+                        enableHint={true}
+                        hintValue={correct0}
                     />
 
                     {middle}
 
                     <ExpandingInput
                         type="text"
-                        value={visibleValue1}
+                        value={value1}
                         onChange={(e) => handleChange(itemIdx, 1, e.target.value, correct1)}
                         className={class1}
                         placeholder={item.verb}
                         maxWidth={260}
-                        readOnly={previewValues[key1] != null}
                         aria-label={`Perfekt blank 2 (item ${itemIdx + 1})`}
+                        enableHint={true}
+                        hintValue={correct1}
                     />
 
                     {right}
-
-                    <button
-                        type="button"
-                        className="eye-container eye-container--button"
-                        title="Show answer"
-                        onPointerDown={preventStealFocus}
-                        onTouchStart={preventStealFocus}
-                        onMouseDown={preventStealFocus}
-                        onClick={() => showAnswerPreview(itemIdx, 1, correct1)}
-                        aria-label={`Show answer for item ${itemIdx + 1}`}
-                    >
-                  <span>
-                    <Eye size={18} />
-                  </span>
-                    </button>
                   </li>
               );
             })}

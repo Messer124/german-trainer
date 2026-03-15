@@ -3,7 +3,6 @@ import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
-
 import data from "../../../data/A1-2/conjunctions.json";
 import slide1Ru from "../../../data/A1-2/images/conjunctions1.html?raw";
 import slide2Ru from "../../../data/A1-2/images/conjunctions2.html?raw";

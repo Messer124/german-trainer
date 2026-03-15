@@ -1,6 +1,4 @@
-
-import { useEffect, useMemo, useRef, useState } from "react";
-import { Eye } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
@@ -25,8 +23,6 @@ export default function VerbsPreteritum() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
-    const [previewValues, setPreviewValues] = useState({});
-    const previewTimersRef = useRef({});
 
     const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
 
@@ -36,51 +32,14 @@ export default function VerbsPreteritum() {
         return () => document.removeEventListener("show-hint", handleShowHint);
     }, []);
 
-    useEffect(() => {
-        return () => {
-            Object.values(previewTimersRef.current).forEach((id) => clearTimeout(id));
-        };
-    }, []);
-
     const handleChange = (index, value) => {
         const correct = normalize(getCorrectAnswer(items[index]?.answer));
         const isCorrect = normalize(value) === correct;
-
-        if (previewTimersRef.current[index]) {
-            clearTimeout(previewTimersRef.current[index]);
-            delete previewTimersRef.current[index];
-        }
-        if (previewValues[index] != null) {
-            setPreviewValues((prev) => {
-                const next = { ...prev };
-                delete next[index];
-                return next;
-            });
-        }
 
         setAnswers((prev) => ({
             ...prev,
             [index]: { value, isCorrect },
         }));
-    };
-
-    const showAnswerPreview = (index, answerText) => {
-        if (!answerText) return;
-
-        if (previewTimersRef.current[index]) {
-            clearTimeout(previewTimersRef.current[index]);
-        }
-
-        setPreviewValues((prev) => ({ ...prev, [index]: answerText }));
-
-        previewTimersRef.current[index] = setTimeout(() => {
-            setPreviewValues((prev) => {
-                const next = { ...prev };
-                delete next[index];
-                return next;
-            });
-            delete previewTimersRef.current[index];
-        }, 2000);
     };
 
     return (
@@ -92,8 +51,7 @@ export default function VerbsPreteritum() {
                     {items.map((item, index) => {
                         const stored = answers[index];
                         const value = stored?.value ?? "";
-                        const visibleValue = previewValues[index] ?? value;
-                        const trimmed = visibleValue.trim();
+                        const trimmed = value.trim();
                         const isCorrect = stored?.isCorrect;
 
                         const parts = String(item.sentence ?? "").split("___");
@@ -112,31 +70,18 @@ export default function VerbsPreteritum() {
                         return (
                             <li key={index} className="list-item">
                                 {left}
-
                                 <ExpandingInput
                                     type="text"
-                                    value={visibleValue}
+                                    value={value}
                                     onChange={(e) => handleChange(index, e.target.value)}
                                     className={inputClass}
                                     placeholder={item.verb}
                                     maxWidth={260}
-                                    readOnly={previewValues[index] != null}
                                     aria-label={`Präteritum verb ${index + 1}`}
+                                    enableHint={true}
+                                    hintValue={correctText}
                                 />
-
                                 {right}
-
-                                <button
-                                    type="button"
-                                    className="eye-container eye-container--button"
-                                    title="Show answer"
-                                    onClick={() => showAnswerPreview(index, correctText)}
-                                    aria-label={`Show answer for item ${index + 1}`}
-                                >
-                                    <span>
-                                        <Eye size={18} />
-                                    </span>
-                                </button>
                             </li>
                         );
                     })}

@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import { Eye } from "lucide-react";
+import { useEffect, useState } from "react";
 import data from "../../../data/A1-1/kein-nicht.json";
 import "../../css/exercises/Common.css";
 import { useLocale } from "../../contexts/LocaleContext";
@@ -15,8 +14,6 @@ function KeinOrNichtSentences() {
     const { locale } = useLocale();
     const [showImage, setShowImage] = useState(false);
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [previewValues, setPreviewValues] = useState({});
-    const previewTimersRef = useRef({});
 
     useEffect(() => {
         const handleShowHint = () => {
@@ -29,28 +26,10 @@ function KeinOrNichtSentences() {
         };
     }, []);
 
-    useEffect(() => {
-        return () => {
-            Object.values(previewTimersRef.current).forEach((id) => clearTimeout(id));
-        };
-    }, []);
-
     const handleChange = (index, value) => {
         const correct = data.items[index].answer.trim().toLowerCase();
         const isCorrect = value.trim().toLowerCase() === correct;
         const key = `keinOrNicht-${index}`;
-
-        if (previewTimersRef.current[key]) {
-            clearTimeout(previewTimersRef.current[key]);
-            delete previewTimersRef.current[key];
-        }
-        if (previewValues[key] != null) {
-            setPreviewValues((prev) => {
-                const next = { ...prev };
-                delete next[key];
-                return next;
-            });
-        }
 
         setAnswers((prev) => ({
             ...prev,
@@ -59,27 +38,6 @@ function KeinOrNichtSentences() {
                 isCorrect
             }
         }));
-    };
-
-    const showAnswerPreview = (index) => {
-        const key = `keinOrNicht-${index}`;
-        const answer = String(data.items[index]?.answer ?? "");
-        if (!answer) return;
-
-        if (previewTimersRef.current[key]) {
-            clearTimeout(previewTimersRef.current[key]);
-        }
-
-        setPreviewValues((prev) => ({ ...prev, [key]: answer }));
-
-        previewTimersRef.current[key] = setTimeout(() => {
-            setPreviewValues((prev) => {
-                const next = { ...prev };
-                delete next[key];
-                return next;
-            });
-            delete previewTimersRef.current[key];
-        }, 2000);
     };
 
     return (
@@ -95,7 +53,6 @@ function KeinOrNichtSentences() {
                     {data.items.map((item, index) => {
                         const key = `keinOrNicht-${index}`;
                         const value = answers[key]?.value ?? "";
-                        const visibleValue = previewValues[key] ?? value;
                         const isCorrect = answers[key]?.isCorrect;
 
                         return (
@@ -110,20 +67,13 @@ function KeinOrNichtSentences() {
                                                 ? "correct"
                                                 : "incorrect"
                                     }`}
-                                    value={visibleValue}
+                                    value={value}
                                     onChange={(e) => handleChange(index, e.target.value)}
-                                    readOnly={previewValues[key] != null}
                                     minWidth={140}
                                     maxWidth={760}
+                                    enableHint={true}
+                                    hintValue={item.answer}
                                 />
-                                <button
-                                    type="button"
-                                    className="eye-container eye-container--button"
-                                    onClick={() => showAnswerPreview(index)}
-                                    aria-label={`Show answer for sentence ${index + 1}`}
-                                >
-                                    <span><Eye size={18} /></span>
-                                </button>
                             </li>
                         );
                     })}

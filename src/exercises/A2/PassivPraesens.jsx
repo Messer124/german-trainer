@@ -1,5 +1,4 @@
-import { Eye } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
@@ -37,8 +36,6 @@ export default function PassivPraesens() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
-    const [previewValues, setPreviewValues] = useState({});
-    const previewTimersRef = useRef({});
 
     const slides = useMemo(
         () => (locale === "en" ? [slide1En, slide2En, slide3En, slide4En] : [slide1Ru, slide2Ru, slide3Ru, slide4Ru]),
@@ -52,55 +49,15 @@ export default function PassivPraesens() {
         return () => document.removeEventListener("show-hint", handleShowHint);
     }, []);
 
-    useEffect(() => {
-        return () => {
-            Object.values(previewTimersRef.current).forEach((id) => clearTimeout(id));
-        };
-    }, []);
-
     const handleChange = (index, value) => {
         const key = `passiv-praesens-${index}`;
         const correct = normalize(items[index]?.answer);
         const isCorrect = normalize(value) === correct;
 
-        if (previewTimersRef.current[key]) {
-            clearTimeout(previewTimersRef.current[key]);
-            delete previewTimersRef.current[key];
-        }
-        if (previewValues[key] != null) {
-            setPreviewValues((prev) => {
-                const next = { ...prev };
-                delete next[key];
-                return next;
-            });
-        }
-
         setAnswers((prev) => ({
             ...prev,
             [key]: { value, isCorrect },
         }));
-    };
-
-    const showAnswerPreview = (index) => {
-        const key = `passiv-praesens-${index}`;
-        const answer = String(items[index]?.answer ?? "");
-
-        if (!answer) return;
-
-        if (previewTimersRef.current[key]) {
-            clearTimeout(previewTimersRef.current[key]);
-        }
-
-        setPreviewValues((prev) => ({ ...prev, [key]: answer }));
-
-        previewTimersRef.current[key] = setTimeout(() => {
-            setPreviewValues((prev) => {
-                const next = { ...prev };
-                delete next[key];
-                return next;
-            });
-            delete previewTimersRef.current[key];
-        }, 2000);
     };
 
     return (
@@ -114,11 +71,9 @@ export default function PassivPraesens() {
                     {items.map((item, index) => {
                         const key = `passiv-praesens-${index}`;
                         const value = answers[key]?.value ?? "";
-                        const visibleValue = previewValues[key] ?? value;
-                        const trimmed = visibleValue.trim();
                         const isCorrect = answers[key]?.isCorrect;
                         const inputClass =
-                            trimmed === ""
+                            value.trim() === ""
                                 ? "autosize-input"
                                 : isCorrect
                                     ? "autosize-input correct"
@@ -130,23 +85,16 @@ export default function PassivPraesens() {
                                 <ExpandingInput
                                     type="text"
                                     className={inputClass}
-                                    value={visibleValue}
+                                    value={value}
                                     onChange={(e) => handleChange(index, e.target.value)}
                                     minWidth={180}
                                     mobileMinWidth={90}
                                     tabletMinWidth={140}
                                     maxWidth={720}
-                                    readOnly={previewValues[key] != null}
                                     aria-label={`Passiv Präsens answer ${index + 1}`}
+                                    enableHint={true}
+                                    hintValue={item.answer}
                                 />
-                                <button
-                                    type="button"
-                                    className="eye-container eye-container--button"
-                                    onClick={() => showAnswerPreview(index)}
-                                    aria-label={`Show answer for sentence ${index + 1}`}
-                                >
-                                    <span><Eye size={18} /></span>
-                                </button>
                             </li>
                         );
                     })}

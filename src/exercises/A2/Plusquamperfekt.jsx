@@ -1,5 +1,4 @@
-import { Eye } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import { useLocale } from "../../contexts/LocaleContext";
@@ -70,8 +69,6 @@ export default function Plusquamperfekt() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
-    const [previewValues, setPreviewValues] = useState({});
-    const previewTimersRef = useRef({});
 
     const slides = useMemo(() => (locale === "en" ? [slideEn] : [slideRu]), [locale]);
     const rows = useMemo(() => getRows(data.items, locale), [locale]);
@@ -82,53 +79,14 @@ export default function Plusquamperfekt() {
         return () => document.removeEventListener("show-hint", handleShowHint);
     }, []);
 
-    useEffect(() => {
-        return () => {
-            Object.values(previewTimersRef.current).forEach((timerId) => clearTimeout(timerId));
-        };
-    }, []);
-
     const handleChange = (sentenceIndex, value, correctAnswer) => {
         const key = `plusquamperfekt-${sentenceIndex}`;
         const isCorrect = normalize(value) === normalize(correctAnswer);
-
-        if (previewTimersRef.current[key]) {
-            clearTimeout(previewTimersRef.current[key]);
-            delete previewTimersRef.current[key];
-        }
-        if (previewValues[key] != null) {
-            setPreviewValues((prev) => {
-                const next = { ...prev };
-                delete next[key];
-                return next;
-            });
-        }
 
         setAnswers((prev) => ({
             ...prev,
             [key]: { value, isCorrect },
         }));
-    };
-
-    const showAnswerPreview = (sentenceIndex, answer) => {
-        const key = `plusquamperfekt-${sentenceIndex}`;
-        const value = String(answer ?? "");
-        if (!value) return;
-
-        if (previewTimersRef.current[key]) {
-            clearTimeout(previewTimersRef.current[key]);
-        }
-
-        setPreviewValues((prev) => ({ ...prev, [key]: value }));
-
-        previewTimersRef.current[key] = setTimeout(() => {
-            setPreviewValues((prev) => {
-                const next = { ...prev };
-                delete next[key];
-                return next;
-            });
-            delete previewTimersRef.current[key];
-        }, 2000);
     };
 
     return (
@@ -150,9 +108,8 @@ export default function Plusquamperfekt() {
 
                         const key = `plusquamperfekt-${row.sentenceIndex}`;
                         const value = answers[key]?.value ?? "";
-                        const visibleValue = previewValues[key] ?? value;
                         const isCorrect = answers[key]?.isCorrect;
-                        const hasValue = visibleValue.trim() !== "";
+                        const hasValue = value.trim() !== "";
                         const inputClass = hasValue
                             ? isCorrect
                                 ? "autosize-input correct"
@@ -165,7 +122,7 @@ export default function Plusquamperfekt() {
                                 <ExpandingInput
                                     type="text"
                                     className={inputClass}
-                                    value={visibleValue}
+                                    value={value}
                                     onChange={(event) =>
                                         handleChange(row.sentenceIndex, event.target.value, row.answer)
                                     }
@@ -173,17 +130,10 @@ export default function Plusquamperfekt() {
                                     tabletMinWidth={170}
                                     mobileMinWidth={110}
                                     maxWidth={860}
-                                    readOnly={previewValues[key] != null}
                                     aria-label={`Plusquamperfekt answer ${row.sentenceIndex + 1}`}
+                                    enableHint={true}
+                                    hintValue={row.answer}
                                 />
-                                <button
-                                    type="button"
-                                    className="eye-container eye-container--button"
-                                    onClick={() => showAnswerPreview(row.sentenceIndex, row.answer)}
-                                    aria-label={`Show answer for sentence ${row.sentenceIndex + 1}`}
-                                >
-                                    <span><Eye size={18} /></span>
-                                </button>
                             </li>
                         );
                     })}
