@@ -579,6 +579,25 @@ table.mv-table tbody td {
   color: #eef6ff;
 }
 
+:root[data-theme="dark"] .theory-text--ru {
+  color: var(--theory-muted-color);
+}
+
+:root[data-theme="dark"] .text-note {
+  color: var(--theory-muted-color);
+}
+
+:root[data-theme="dark"] .theory-table--aux-verbs th:nth-child(2),
+:root[data-theme="dark"] .theory-table--aux-verbs th:nth-child(3),
+:root[data-theme="dark"] .theory-table--aux-verbs td:nth-child(2),
+:root[data-theme="dark"] .theory-table--aux-verbs td:nth-child(3),
+:root[data-theme="dark"] .theory-table--modal-verbs th:nth-child(2),
+:root[data-theme="dark"] .theory-table--modal-verbs th:nth-child(3),
+:root[data-theme="dark"] .theory-table--modal-verbs td:nth-child(2),
+:root[data-theme="dark"] .theory-table--modal-verbs td:nth-child(3) {
+  color: #1f232d;
+}
+
 /* Цветные буквы, как на картинке */
 .mv-yellow {
   color: var(--theory-accent-yellow);

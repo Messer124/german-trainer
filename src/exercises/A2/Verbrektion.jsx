@@ -7,10 +7,8 @@ import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A2/verbrektion.json";
 import slide1Ru from "../../../data/A2/images/verbrektion1.html?raw";
 import slide2Ru from "../../../data/A2/images/verbrektion2.html?raw";
-import slide3Ru from "../../../data/A2/images/verbrektion3.html?raw";
 import slide1En from "../../../data/A2/images/en/verbrektion1.html?raw";
 import slide2En from "../../../data/A2/images/en/verbrektion2.html?raw";
-import slide3En from "../../../data/A2/images/en/verbrektion3.html?raw";
 
 import "../../css/exercises/Common.css";
 
@@ -46,8 +44,8 @@ export default function Verbrektion() {
     const slides = useMemo(
         () =>
             locale === "en"
-                ? [slide1En, slide2En, slide3En]
-                : [slide1Ru, slide2Ru, slide3Ru],
+                ? [slide1En, slide2En]
+                : [slide1Ru, slide2Ru],
         [locale]
     );
     const items = useMemo(() => normalizeItems(data.items), []);

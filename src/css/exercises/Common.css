@@ -347,11 +347,6 @@
     text-transform: inherit;
 }
 
-.expanding-input__wrap {
-    display: inline-flex;
-    align-items: baseline;
-}
-
 .expanding-input__input {
     transition: width 300ms ease;
     will-change: width;
@@ -359,6 +354,13 @@
 
 .expanding-input__input[data-ghost-placeholder="true"]::placeholder {
     color: transparent;
+}
+
+.expanding-input__field-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -431,4 +433,5 @@
     .eye-container {
         transform: translateY(3px);
     }
+
 }

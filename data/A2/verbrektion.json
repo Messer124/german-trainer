@@ -4,579 +4,524 @@
     "en": "Verbrektion"
   },
   "instructions": {
-    "ru": "Вставьте предлог, вопросительное слово или местоименное наречие",
-    "en": "Insert a preposition, interrogative word, or pronominal adverb"
+    "ru": "Вставьте подходящий для глагола предлог",
+    "en": "Insert a suitable preposition for the verb"
   },
   "items": [
     {
-      "sentence": "Wir nehmen ____ dem Treffen teil.",
+      "sentence": "Ich sorge ___ das Essen.",
       "answers": [
-        "an"
+        "für"
       ]
     },
     {
-      "sentence": "____ träumst du?",
+      "sentence": "Wir bedanken uns herzlich ___ die Einladung.",
       "answers": [
-        "Wovon"
+        "für"
       ]
     },
     {
-      "sentence": "Ich ärgere mich ____, dass der Bus zu spät ist.",
-      "answers": [
-        "darüber"
-      ]
-    },
-    {
-      "sentence": "Ich ärgere mich ____ den Stau.",
+      "sentence": "Ich ärgere mich ___ den Stau.",
       "answers": [
         "über"
       ]
     },
     {
-      "sentence": "Erinnern Sie sich noch ____, wie es war, als Sie nach Deutschland gekommen sind?",
-      "answers": [
-        "daran"
-      ]
-    },
-    {
-      "sentence": "Träumst du ____ ihm?",
-      "answers": [
-        "von"
-      ]
-    },
-    {
-      "sentence": "Interessierst du dich ____ ihn?",
-      "answers": [
-        "für"
-      ]
-    },
-    {
-      "sentence": "Sie träumt ____ einem neuen Job.",
-      "answers": [
-        "von"
-      ]
-    },
-    {
-      "sentence": "Ich nehme ____ dem Kurs teil.",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "Ich glaube ____ eine gute Idee.",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "Wir sprechen ____ den Urlaub.",
-      "answers": [
-        "über"
-      ]
-    },
-    {
-      "sentence": "Ich sorge ____ das Essen.",
-      "answers": [
-        "für"
-      ]
-    },
-    {
-      "sentence": "Ich verzichte ____ Zucker.",
-      "answers": [
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Ich interessiere mich ____ das neue Handy.",
-      "answers": [
-        "für"
-      ]
-    },
-    {
-      "sentence": "Ich danke dir ____ deine Hilfe.",
-      "answers": [
-        "für"
-      ]
-    },
-    {
-      "sentence": "____ sprecht ihr?",
-      "answers": [
-        "Worüber"
-      ]
-    },
-    {
-      "sentence": "Ich spreche ____ meiner Freundin.",
-      "answers": [
-        "mit"
-      ]
-    },
-    {
-      "sentence": "Ich beschäftige mich ____ meiner Arbeit.",
-      "answers": [
-        "mit"
-      ]
-    },
-    {
-      "sentence": "Ich frage ____ dem Preis.",
+      "sentence": "Ich frage ___ dem Preis.",
       "answers": [
         "nach"
       ]
     },
     {
-      "sentence": "Wir kümmern uns ____ das Essen.",
-      "answers": [
-        "um"
-      ]
-    },
-    {
-      "sentence": "Ich zweifle ____ der Idee.",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "Das hängt ____ dem Wetter ab.",
-      "answers": [
-        "von"
-      ]
-    },
-    {
-      "sentence": "Wir sorgen ____ Essen und Getränke.",
-      "answers": [
-        "für"
-      ]
-    },
-    {
-      "sentence": "Ich denke ____ meinen Urlaub.",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "Glaubst du ____ Glück?",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "Ich kümmere mich ____ die Kinder.",
-      "answers": [
-        "um"
-      ]
-    },
-    {
-      "sentence": "____ glaubst du?",
-      "answers": [
-        "Woran"
-      ]
-    },
-    {
-      "sentence": "Ich beschäftige mich ____, wie das funktioniert.",
-      "answers": [
-        "damit"
-      ]
-    },
-    {
-      "sentence": "Ich verzichte ____, heute ins Kino zu gehen.",
-      "answers": [
-        "darauf"
-      ]
-    },
-    {
-      "sentence": "Ich spreche ____ dir ____ den Urlaub.",
-      "answers": [
-        "mit",
-        "über"
-      ]
-    },
-    {
-      "sentence": "Ich glaube ____, dass es klappt.",
-      "answers": [
-        "daran"
-      ]
-    },
-    {
-      "sentence": "Das gehört ____ der Familie.",
+      "sentence": "Wir laden euch ___ unserer Hochzeit ein.",
       "answers": [
         "zu"
       ]
     },
     {
-      "sentence": "____ fragst du?",
-      "answers": [
-        "Wonach"
-      ]
-    },
-    {
-      "sentence": "Danke ____ das Geschenk!",
-      "answers": [
-        "für"
-      ]
-    },
-    {
-      "sentence": "Ich interessiere mich ____ Musik.",
-      "answers": [
-        "für"
-      ]
-    },
-    {
-      "sentence": "Kannst du dich ____ den Hund kümmern?",
-      "answers": [
-        "um"
-      ]
-    },
-    {
-      "sentence": "Ich spreche ____ dem Arzt.",
-      "answers": [
-        "mit"
-      ]
-    },
-    {
-      "sentence": "Ich ärgere mich ____ das Wetter.",
-      "answers": [
-        "über"
-      ]
-    },
-    {
-      "sentence": "Ich höre ____ auf.",
-      "answers": [
-        "damit"
-      ]
-    },
-    {
-      "sentence": "Ich spreche ____ ihn.",
-      "answers": [
-        "über"
-      ]
-    },
-    {
-      "sentence": "Ich frage ____ dem Weg.",
-      "answers": [
-        "nach"
-      ]
-    },
-    {
-      "sentence": "Ich danke dir ____, dass du gekommen bist.",
-      "answers": [
-        "dafür"
-      ]
-    },
-    {
-      "sentence": "____ dankst du ihm?",
-      "answers": [
-        "Wofür"
-      ]
-    },
-    {
-      "sentence": "Sie sorgt ____ ihre Kinder.",
-      "answers": [
-        "für"
-      ]
-    },
-    {
-      "sentence": "Ich zweifle ____, dass es stimmt.",
-      "answers": [
-        "daran"
-      ]
-    },
-    {
-      "sentence": "Denkst du ____ den Termin?",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "Ich verzichte ____ Süßigkeiten.",
-      "answers": [
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Es hängt ____ dir ab.",
-      "answers": [
-        "von"
-      ]
-    },
-    {
-      "sentence": "Ich träume ____, dass ich am Meer bin.",
-      "answers": [
-        "davon"
-      ]
-    },
-    {
-      "sentence": "Ich frage ____, ob du Zeit hast.",
-      "answers": [
-        "danach"
-      ]
-    },
-    {
-      "sentence": "Ich kümmere mich ____, dass alles fertig ist.",
-      "answers": [
-        "darum"
-      ]
-    },
-    {
-      "sentence": "____ zweifelst du?",
-      "answers": [
-        "Woran"
-      ]
-    },
-    {
-      "sentence": "Wir sprechen ____, wie wir das machen.",
-      "answers": [
-        "darüber"
-      ]
-    },
-    {
-      "sentence": "Ich beschäftige mich ____ meiner Arbeit.",
-      "answers": [
-        "mit"
-      ]
-    },
-    {
-      "sentence": "Sprichst du ____ mir?",
-      "answers": [
-        "mit"
-      ]
-    },
-    {
-      "sentence": "Ich verzichte ____ Kaffee?",
-      "answers": [
-        "auf"
-      ]
-    },
-    {
-      "sentence": "Das hängt ____ der Zeit ab.",
-      "answers": [
-        "von"
-      ]
-    },
-    {
-      "sentence": "Wir sprechen ____ das Problem.",
-      "answers": [
-        "über"
-      ]
-    },
-    {
-      "sentence": "Ich interessiere mich ____, wie das funktioniert.",
-      "answers": [
-        "dafür"
-      ]
-    },
-    {
-      "sentence": "____ gehörst das?",
-      "answers": [
-        "Zu wem"
-      ]
-    },
-    {
-      "sentence": "Ich nehme ____ teil.",
-      "answers": [
-        "daran"
-      ]
-    },
-    {
-      "sentence": "Ich denke ____, dass es klappt.",
-      "answers": [
-        "daran"
-      ]
-    },
-    {
-      "sentence": "Er zweifelt ____ seinem Plan.",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "Ich beschäftige mich ____ Deutsch.",
-      "answers": [
-        "mit"
-      ]
-    },
-    {
-      "sentence": "Ich glaube ____ dich.",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "____ verzichtest du?",
-      "answers": [
-        "Worauf"
-      ]
-    },
-    {
-      "sentence": "____ denkst du gerade?",
-      "answers": [
-        "Woran"
-      ]
-    },
-    {
-      "sentence": "Ich träume ____ einem Urlaub.",
-      "answers": [
-        "von"
-      ]
-    },
-    {
-      "sentence": "Wir danken Ihnen ____ Ihre Zeit.",
-      "answers": [
-        "für"
-      ]
-    },
-    {
-      "sentence": "Denk bitte ____, was du ihm schenkst!",
-      "answers": [
-        "daran"
-      ]
-    },
-    {
-      "sentence": "Ich spreche ____ meiner Freundin.",
-      "answers": [
-        "mit"
-      ]
-    },
-    {
-      "sentence": "____ sprichst du?",
-      "answers": [
-        "Mit wem"
-      ]
-    },
-    {
-      "sentence": "Ich kümmere mich ____ die Kinder.",
-      "answers": [
-        "um"
-      ]
-    },
-    {
-      "sentence": "Ich zweifle ____ dir.",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "____ hängt das ab?",
-      "answers": [
-        "Wovon"
-      ]
-    },
-    {
-      "sentence": "Das gehört ____ mir.",
-      "answers": [
-        "zu"
-      ]
-    },
-    {
-      "sentence": "Gehört das ____ dir?",
-      "answers": [
-        "zu"
-      ]
-    },
-    {
-      "sentence": "Ich sorge ____, dass du pünktlich bist.",
-      "answers": [
-        "dafür"
-      ]
-    },
-    {
-      "sentence": "Nimmst du ____ der Party teil?",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "Wir nehmen ____ dem Treffen teil.",
-      "answers": [
-        "an"
-      ]
-    },
-    {
-      "sentence": "____ kümmernst du dich?",
+      "sentence": "___ kümmerst du dich?",
       "answers": [
         "Worum"
       ]
     },
     {
-      "sentence": "Hörst du ____ dem Spiel auf?",
+      "sentence": "Sie träumt ___ einem neuen Job.",
       "answers": [
-        "mit"
+        "von"
       ]
     },
     {
-      "sentence": "Er hört ____ dem Lernen auf.",
+      "sentence": "Wir gratulieren euch ___ eurem Erfolg.",
       "answers": [
-        "mit"
+        "zu"
       ]
     },
     {
-      "sentence": "____ hörst du auf?",
-      "answers": [
-        "Womit"
-      ]
-    },
-    {
-      "sentence": "Um halb sechs höre ich ____ der Arbeit auf.",
-      "answers": [
-        "mit"
-      ]
-    },
-    {
-      "sentence": "Ich verzichte ____ Süßigkeiten.",
+      "sentence": "Ich freue mich ___ den Urlaub.",
       "answers": [
         "auf"
       ]
     },
     {
-      "sentence": "Fragst du ____ mir?",
+      "sentence": "Ich verzichte ___ Zucker.",
+      "answers": [
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Das schmeckt ___ Fisch.",
       "answers": [
         "nach"
       ]
     },
     {
-      "sentence": "Ich bin ____ diesen Vorschlag, denn er ist nicht gut.",
+      "sentence": "Ich interessiere mich ___ Musik.",
       "answers": [
-        "gegen"
+        "für"
       ]
     },
     {
-      "sentence": "Wir haben uns lange ____ unterhalten.",
+      "sentence": "Kannst du mir ___ dem Lernen helfen?",
       "answers": [
-        "darüber"
+        "bei"
       ]
     },
     {
-      "sentence": "Ich warte ____, dass du kommst.",
+      "sentence": "Ich habe ___ dem Problem gehört.",
       "answers": [
-        "darauf"
+        "von"
       ]
     },
     {
-      "sentence": "____ hast du dich verliebt?",
+      "sentence": "Erinnern Sie sich noch ___, wie es war, als Sie nach Deutschland gekommen sind?",
       "answers": [
-        "In wen"
+        "daran"
       ]
     },
     {
-      "sentence": "____ sprichst du mit ihnen?",
+      "sentence": "Wir reden oft ___ früher.",
       "answers": [
-        "Worüber"
+        "von"
       ]
     },
     {
-      "sentence": "Könntet ihr mir bitte ____ Umzug helfen?",
+      "sentence": "Wir bereiten uns ___ die Prüfung vor.",
       "answers": [
-        "beim"
+        "auf"
       ]
     },
     {
-      "sentence": "Wenn du willst, kannst du ____ uns mitmachen.",
+      "sentence": "Wann fängst du ___ dem Deutschkurs an?",
       "answers": [
         "mit"
       ]
     },
     {
-      "sentence": "Ich freue mich sehr ____ das Geschenk!",
+      "sentence": "Ich bedanke mich ___ meiner Lehrerin.",
+      "answers": [
+        "bei"
+      ]
+    },
+    {
+      "sentence": "Viele Menschen leiden ___ großem Stress.",
+      "answers": [
+        "unter"
+      ]
+    },
+    {
+      "sentence": "Ich schreibe einen Brief ___ meinen Opa.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Wir reden ___ das Problem.",
       "answers": [
         "über"
+      ]
+    },
+    {
+      "sentence": "Ich beschäftige mich ___ Deutsch.",
+      "answers": [
+        "mit"
+      ]
+    },
+    {
+      "sentence": "Ich entschuldige mich ___ meinem Chef.",
+      "answers": [
+        "bei"
+      ]
+    },
+    {
+      "sentence": "___ hängt das ab?",
+      "answers": [
+        "Wovon"
+      ]
+    },
+    {
+      "sentence": "Das gehört ___ der Familie.",
+      "answers": [
+        "zu"
+      ]
+    },
+    {
+      "sentence": "Sie leidet ___ starken Kopfschmerzen.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich entschuldige mich ___ die Verspätung.",
+      "answers": [
+        "für"
+      ]
+    },
+    {
+      "sentence": "Erzähl etwas ___ deine Stadt!",
+      "answers": [
+        "über"
+      ]
+    },
+    {
+      "sentence": "Wir freuen uns ___ den Sieg.",
+      "answers": [
+        "über"
+      ]
+    },
+    {
+      "sentence": "___ zweifelst du?",
+      "answers": [
+        "Woran"
+      ]
+    },
+    {
+      "sentence": "Sie bittet ___ Geduld.",
+      "answers": [
+        "um"
+      ]
+    },
+    {
+      "sentence": "Ich warte ___ dich schon seit 3 Stunden.",
+      "answers": [
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Sie hat sich ___ ihren Eltern verabschiedet.",
+      "answers": [
+        "von"
+      ]
+    },
+    {
+      "sentence": "Ich danke dir ___ deine Hilfe.",
+      "answers": [
+        "für"
+      ]
+    },
+    {
+      "sentence": "Ich spreche ___ meiner Freundin.",
+      "answers": [
+        "mit"
+      ]
+    },
+    {
+      "sentence": "Wir nehmen ___ dem Treffen teil.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Es riecht hier ___ dem Essen.",
+      "answers": [
+        "nach"
+      ]
+    },
+    {
+      "sentence": "Ich glaube ___ dich.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Erzählen Sie doch ___, wie Sie eine Wohnung gefunden haben.",
+      "answers": [
+        "davon"
+      ]
+    },
+    {
+      "sentence": "Kannst du bitte ___ meine Tasche aufpassen?",
+      "answers": [
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Er hört ___ dem Lernen auf.",
+      "answers": [
+        "mit"
+      ]
+    },
+    {
+      "sentence": "Ich denke ___ meinen Urlaub.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Er entschuldigt sich ___ sein Verhalten.",
+      "answers": [
+        "für"
+      ]
+    },
+    {
+      "sentence": "Sie erzählt ___ das Buch.",
+      "answers": [
+        "über"
+      ]
+    },
+    {
+      "sentence": "Er bereitet sich ___ das Gespräch vor.",
+      "answers": [
+        "auf"
+      ]
+    },
+    {
+      "sentence": "___ träumst du?",
+      "answers": [
+        "Wovon"
+      ]
+    },
+    {
+      "sentence": "Nimmst du ___ der Party teil?",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Wir fangen ___ der Übung an.",
+      "answers": [
+        "mit"
+      ]
+    },
+    {
+      "sentence": "Ich warte ___, dass du kommst.",
+      "answers": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "Wir reden heute nicht ___ die Arbeit.",
+      "answers": [
+        "über"
+      ]
+    },
+    {
+      "sentence": "Das hängt ___ dem Wetter ab.",
+      "answers": [
+        "von"
+      ]
+    },
+    {
+      "sentence": "Er redet ___ einer Frau.",
+      "answers": [
+        "von"
+      ]
+    },
+    {
+      "sentence": "Ich verzichte ___, heute ins Kino zu gehen.",
+      "answers": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "Ich freue mich sehr ___ das Geschenk!",
+      "answers": [
+        "über"
+      ]
+    },
+    {
+      "sentence": "Könntet ihr mir bitte ___ dem Umzug helfen?",
+      "answers": [
+        "bei"
+      ]
+    },
+    {
+      "sentence": "Ich bitte dich ___ Hilfe.",
+      "answers": [
+        "um"
+      ]
+    },
+    {
+      "sentence": "Ich erinnere mich oft ___ meine Kindheit.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich beschäftige mich ___, wie das funktioniert.",
+      "answers": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Ich verabschiede mich ___ meinen Kollegen.",
+      "answers": [
+        "von"
+      ]
+    },
+    {
+      "sentence": "___ fragst du?",
+      "answers": [
+        "Wonach"
+      ]
+    },
+    {
+      "sentence": "Sie entschuldigt sich ___ ihren Eltern.",
+      "answers": [
+        "bei"
+      ]
+    },
+    {
+      "sentence": "Er leidet ___ einer Krankheit.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich gratuliere dir ___ der Beförderung.",
+      "answers": [
+        "zu"
+      ]
+    },
+    {
+      "sentence": "Er leidet ___ dem schlechten Klima.",
+      "answers": [
+        "unter"
+      ]
+    },
+    {
+      "sentence": "Wer passt heute ___ die Kinder auf?",
+      "answers": [
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Was hast du ___ gehört?",
+      "answers": [
+        "davon"
+      ]
+    },
+    {
+      "sentence": "___ wem sprichst du?",
+      "answers": [
+        "Mit"
+      ]
+    },
+    {
+      "sentence": "Ich ärgere mich ___, dass der Bus zu spät ist.",
+      "answers": [
+        "darüber"
+      ]
+    },
+    {
+      "sentence": "Ich interessiere mich ___, wie das funktioniert.",
+      "answers": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Ich kümmere mich ___ die Kinder.",
+      "answers": [
+        "um"
+      ]
+    },
+    {
+      "sentence": "Diese Aufgabe gehört ___ diesem Kapitel.",
+      "answers": [
+        "zu"
+      ]
+    },
+    {
+      "sentence": "___ hörst du auf?",
+      "answers": [
+        "Womit"
+      ]
+    },
+    {
+      "sentence": "Ich zweifle ___ der Idee.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Wir bedanken uns ___ unseren Freunden.",
+      "answers": [
+        "bei"
+      ]
+    },
+    {
+      "sentence": "Die Jacke riecht ___ Rauch.",
+      "answers": [
+        "nach"
+      ]
+    },
+    {
+      "sentence": "___ wen schreibst du?",
+      "answers": [
+        "An"
+      ]
+    },
+    {
+      "sentence": "Ich danke dir ___, dass du gekommen bist.",
+      "answers": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Ich lade meine Freunde ___ dem Geburtstag ein.",
+      "answers": [
+        "zu"
+      ]
+    },
+    {
+      "sentence": "Er hat uns ___ dem Unfall schon erzählt.",
+      "answers": [
+        "von"
+      ]
+    },
+    {
+      "sentence": "___ denkst du gerade?",
+      "answers": [
+        "Woran"
+      ]
+    },
+    {
+      "sentence": "Ich bedanke mich ___ deine Hilfe.",
+      "answers": [
+        "für"
+      ]
+    },
+    {
+      "sentence": "Ich freue mich ___, dich wiederzusehen.",
+      "answers": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "Die Soße schmeckt ___ Knoblauch.",
+      "answers": [
+        "nach"
+      ]
+    },
+    {
+      "sentence": "___ glaubst du?",
+      "answers": [
+        "Woran"
+      ]
+    },
+    {
+      "sentence": "Ich sorge ___, dass du pünktlich bist.",
+      "answers": [
+        "dafür"
       ]
     },
     {
@@ -601,18 +546,6 @@
       ]
     },
     {
-      "sentence": "Haben Sie sich ____ geärgert, dass es so viele bürokratische Probleme gibt?",
-      "answers": [
-        "darüber"
-      ]
-    },
-    {
-      "sentence": "Erzählen Sie doch ____, wie Sie eine Wohnung gefunden haben.",
-      "answers": [
-        "davon"
-      ]
-    },
-    {
       "sentence": "Der Mann interessiert sich nur ____ Fußball. Aber heute will er mit seiner Frau ins Kino gehen. Sie wartet schon eine Stunde ____ ihn. Er kommt immer noch nicht. Sie ärgert sich ____ ihn und träumt ____ einem Mann, der immer für sie da ist. Sie telefoniert ____ ihrer Freundin und spricht ____ ihr ____ ihren Mann. Die Freundin gibt ihr einen guten Rat: „Melde dich doch ____ einen Tanzkurs an.“ Sie findet die Idee gut und geht zu einem Tanzkurs. Dort interessieren sich viele Männer ____ sie. Da nimmt ihr Mann auch ____ dem Tanzkurs teil. Vielleicht interessiert er sich doch mehr ____ sie als ____ Fußball?",
       "answers": [
         "für",
@@ -628,314 +561,6 @@
         "für",
         "für"
       ]
-    },
-    {
-      "sentence": "Das hängt ___ dem Wetter ab.",
-      "answers": ["von"]
-    },
-    {
-      "sentence": "Sie achtet ___ ihre Gesundheit.",
-      "answers": ["auf"]
-    },
-    {
-      "sentence": "Wir fangen ___ dem Spiel an.",
-      "answers": ["mit"]
-    },
-    {
-      "sentence": "Es kommt ___ an.",
-      "answers": ["darauf"]
-    },
-    {
-      "sentence": "Er ärgert sich ___ die Note.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Wir hören ___ dem Kurs auf.",
-      "answers": ["mit"]
-    },
-    {
-      "sentence": "Können Sie bitte ___ meine Tasche aufpassen?",
-      "answers": ["auf"]
-    },
-    {
-      "sentence": "Er regt sich ___ jede Kleinigkeit auf.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Ich gebe viel Geld ___ Benzin aus.",
-      "answers": ["für"]
-    },
-    {
-      "sentence": "Ich bedanke mich ___ dir ___ deine Hilfe.",
-      "answers": ["bei", "für"]
-    },
-    {
-      "sentence": "Ich bemühe mich ___ dieses Projekt.",
-      "answers": ["um"]
-    },
-    {
-      "sentence": "Er hat ___ die Konferenz berichtet.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Er beschäftigt sich ___ schon seit einem Jahr.",
-      "answers": ["damit"]
-    },
-    {
-      "sentence": "Er beschwert sich bei mir ___ das Wetter.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Sie bewirbt sich ___ diese Stelle.",
-      "answers": ["um"]
-    },
-    {
-      "sentence": "Ich bitte dich ___ Hilfe.",
-      "answers": ["um"]
-    },
-    {
-      "sentence": "Ich denke nur ___ dich.",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Ich lade meine Freunde ___ dem Geburtstag ein.",
-      "answers": ["zu"]
-    },
-    {
-      "sentence": "Ich entscheide mich ___ dieses Auto.",
-      "answers": ["für"]
-    },
-    {
-      "sentence": "Wir entschließen uns ___ der Hochzeit.",
-      "answers": ["zu"]
-    },
-    {
-      "sentence": "Ich entschuldige mich ___ dir ___ die Verspätung.",
-      "answers": ["bei", "für"]
-    },
-    {
-      "sentence": "Ich habe viel ___ dieses Land erfahren.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Ich habe ___ diesem Land erfahren.",
-      "answers": ["von"]
-    },
-    {
-      "sentence": "Ich erhole mich ___ der Arbeit.",
-      "answers": ["von"]
-    },
-    {
-      "sentence": "Ich erinnere mich oft ___ meine Kindheit.",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Er hat sie ___ ihrer Stimme erkannt.",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Hast du dich ___ dem Wetter erkundigt?",
-      "answers": ["nach"]
-    },
-    {
-      "sentence": "Erzähl etwas ___ deine Stadt!",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Er hat uns ___ dem Unfall schon erzählt.",
-      "answers": ["von"]
-    },
-    {
-      "sentence": "Ich frage ___ Herrn Franz.",
-      "answers": ["nach"]
-    },
-    {
-      "sentence": "Wir freuen uns ___ den Sieg.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Ich freue mich ___ den Urlaub.",
-      "answers": ["auf"]
-    },
-    {
-      "sentence": "Es geht ___ unsere Familie.",
-      "answers": ["um"]
-    },
-    {
-      "sentence": "___ das Essen habe ich mich schnell gewöhnt.",
-      "answers": ["An", "an"]
-    },
-    {
-      "sentence": "Glaubst du ___ Gott?",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Ich gratuliere dir ___ der Beförderung.",
-      "answers": ["zu"]
-    },
-    {
-      "sentence": "Deutschland grenzt ___ Österreich.",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Ich halte ihn ___ einen guten Lehrer.",
-      "answers": ["für"]
-    },
-    {
-      "sentence": "Was hältst du ___?",
-      "answers": ["davon"]
-    },
-    {
-      "sentence": "In diesem Text handelt es sich ___ die Gesundheit.",
-      "answers": ["um"]
-    },
-    {
-      "sentence": "Dieser Roman handelt ___ einem Maler.",
-      "answers": ["von"]
-    },
-    {
-      "sentence": "Kannst du mir ___ dem Lernen helfen?",
-      "answers": ["bei"]
-    },
-    {
-      "sentence": "Was hast du ___ gehört?",
-      "answers": ["davon"]
-    },
-    {
-      "sentence": "Ich interessiere mich ___ die Geschichte.",
-      "answers": ["für"]
-    },
-    {
-      "sentence": "Wir müssen ___ unsere Rechte kämpfen.",
-      "answers": ["für"]
-    },
-    {
-      "sentence": "Er kämpft ___ seinen Feind.",
-      "answers": ["gegen"]
-    },
-    {
-      "sentence": "Er kümmert sich ___ seine Kinder.",
-      "answers": ["um"]
-    },
-    {
-      "sentence": "Er leidet ___ einer Krankheit.",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Er leidet ___ dem schlechten Klima.",
-      "answers": ["unter"]
-    },
-    {
-      "sentence": "Ich denke ___ meine Arbeit nach.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Wir rechnen ___ deiner Hilfe.",
-      "answers": ["mit"]
-    },
-    {
-      "sentence": "Wir reden heute nicht ___ die Arbeit.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Er redet ___ einer Frau.",
-      "answers": ["von"]
-    },
-    {
-      "sentence": "Es riecht hier ___ dem Essen.",
-      "answers": ["nach"]
-    },
-    {
-      "sentence": "Was sagst du ___ diesem Thema?",
-      "answers": ["zu"]
-    },
-    {
-      "sentence": "Ich schicke den Brief ___ meinen Bruder.",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Ich schicke meine Kinder ___ Großeltern.",
-      "answers": ["zu"]
-    },
-    {
-      "sentence": "Er schimpft immer ___ das Wetter.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Das schmeckt ___ Fisch.",
-      "answers": ["nach"]
-    },
-    {
-      "sentence": "___ wen schreibst du?",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Ich sorge ___ meine Kinder.",
-      "answers": ["für"]
-    },
-    {
-      "sentence": "Er starb ___ einer plötzlichen Krankheit.",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Sie streiten immer ___ die Politik.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Wir nehmen ___ dieser Konferenz teil.",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Sie hat sich ___ ihrem Mann getrennt.",
-      "answers": ["von"]
-    },
-    {
-      "sentence": "Ich bin ___ überzeugt!",
-      "answers": ["davon"]
-    },
-    {
-      "sentence": "Ich muss mich ___ meinen Eltern verabschieden.",
-      "answers": ["von"]
-    },
-    {
-      "sentence": "Ich verstehe ___ nichts.",
-      "answers": ["davon"]
-    },
-    {
-      "sentence": "Wir bereiten uns ___ die Prüfung vor.",
-      "answers": ["auf"]
-    },
-    {
-      "sentence": "Er hat mich ___ dieser Stadt gewarnt.",
-      "answers": ["vor"]
-    },
-    {
-      "sentence": "Ich warte ___ dich schon seit 3 Stunden.",
-      "answers": ["auf"]
-    },
-    {
-      "sentence": "Wenden Sie sich ___ unseren Chef.",
-      "answers": ["an"]
-    },
-    {
-      "sentence": "Er ist ___ einem richtigen Experten geworden.",
-      "answers": ["zu"]
-    },
-    {
-      "sentence": "Ich weiß nicht ___ dieser Geschichte.",
-      "answers": ["von"]
-    },
-    {
-      "sentence": "Er wundert sich ___ dieses Land.",
-      "answers": ["über"]
-    },
-    {
-      "sentence": "Ich schaue ihm ___ der Arbeit zu.",
-      "answers": ["bei"]
-    },
-    {
-      "sentence": "Er zweifelt ___ seinem Erfolg.",
-      "answers": ["an"]
     }
   ]
 }
