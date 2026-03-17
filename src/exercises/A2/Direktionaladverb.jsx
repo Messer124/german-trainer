@@ -93,7 +93,6 @@ export default function Direktionaladverb() {
                 <span className="sentence direktionaladverb-sentence">
                   {getSentenceText(item.sentence, locale)} —
                 </span>
-
                     <ExpandingInput
                         type="text"
                         value={value}

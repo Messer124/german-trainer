@@ -35,6 +35,27 @@ function getLocalizedText(raw, locale) {
     return "";
 }
 
+function getAcceptedAnswers(rawAnswer, locale) {
+    if (Array.isArray(rawAnswer)) {
+        return rawAnswer
+            .map((item) => getLocalizedText(item, locale))
+            .map((item) => String(item ?? "").trim())
+            .filter(Boolean);
+    }
+
+    if (typeof rawAnswer === "string") {
+        const value = rawAnswer.trim();
+        return value ? [value] : [];
+    }
+
+    if (rawAnswer && typeof rawAnswer === "object") {
+        const value = getLocalizedText(rawAnswer, locale).trim();
+        return value ? [value] : [];
+    }
+
+    return [];
+}
+
 function getRows(rawItems, locale) {
     const items = Array.isArray(rawItems) ? rawItems : [];
     const rows = [];
@@ -65,7 +86,7 @@ function getRows(rawItems, locale) {
             key: `konj2-sentence-${sentenceIndex}`,
             sentenceIndex,
             sentence: getLocalizedText(item.sentence, locale),
-            answer: String(item.answer ?? ""),
+            answers: getAcceptedAnswers(item.answer, locale),
         });
         sentenceIndex += 1;
     });
@@ -94,9 +115,12 @@ export default function Konjunktiv2() {
         return () => document.removeEventListener("show-hint", handleShowHint);
     }, []);
 
-    const handleChange = (sentenceIndex, value, correctAnswer) => {
+    const handleChange = (sentenceIndex, value, acceptedAnswers) => {
         const key = `konjunktiv2-${sentenceIndex}`;
-        const isCorrect = normalize(value) === normalize(correctAnswer);
+        const normalizedValue = normalize(value);
+        const isCorrect = acceptedAnswers.some(
+            (answer) => normalize(answer) === normalizedValue
+        );
 
         setAnswers((prev) => ({
             ...prev,
@@ -139,13 +163,13 @@ export default function Konjunktiv2() {
                                     className={inputClass}
                                     value={value}
                                     onChange={(event) =>
-                                        handleChange(row.sentenceIndex, event.target.value, row.answer)
+                                        handleChange(row.sentenceIndex, event.target.value, row.answers)
                                     }
                                     minWidth={180}
                                     maxWidth={760}
                                     aria-label={`Konjunktiv II answer ${row.sentenceIndex + 1}`}
                                     enableHint={true}
-                                    hintValue={row.answer}
+                                    hintValue={row.answers[0] ?? ""}
                                 />
                             </li>
                         );
