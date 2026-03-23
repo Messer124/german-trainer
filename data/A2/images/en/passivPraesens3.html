@@ -47,18 +47,24 @@
 
             @media (max-width: 1200px) {
                 .passiv-praesens-prepositions .passiv-prep-table {
-                    width: 900px;
-                    min-width: 900px;
+                    width: 100%;
+                    min-width: 0;
                 }
 
                 .passiv-praesens-prepositions .passiv-prep-table td {
                     padding: 10px 10px;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
                 }
 
                 .passiv-praesens-prepositions .passiv-intro,
                 .passiv-praesens-prepositions .passiv-examples,
                 .passiv-praesens-prepositions .passiv-desc {
                     font-size: 0.96rem;
+                }
+
+                .passiv-praesens-prepositions .passiv-prep {
+                    font-size: 0.96em;
                 }
             }
 
@@ -92,9 +98,9 @@
         <div class="modal-table-scroll">
             <table class="passiv-prep-table">
                 <colgroup>
-                    <col style="width:18%;">
-                    <col style="width:34%;">
-                    <col style="width:48%;">
+                    <col style="width:15%;">
+                    <col style="width:29%;">
+                    <col style="width:56%;">
                 </colgroup>
                 <tbody>
                     <tr>

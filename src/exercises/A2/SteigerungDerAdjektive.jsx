@@ -15,6 +15,7 @@ import slide3En from "../../../data/A2/images/en/steigerungderadjektive3.html?ra
 import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "steigerung-der-adjektive-answers";
+const PLACEHOLDER_TOKEN = "___";
 
 function normalize(value) {
     return String(value ?? "")
@@ -23,18 +24,27 @@ function normalize(value) {
         .replace(/\s+/g, " ");
 }
 
-function getSentenceText(rawSentence, locale) {
-    if (typeof rawSentence === "string") return rawSentence;
-    if (rawSentence && typeof rawSentence === "object") {
-        return rawSentence[locale] ?? rawSentence.ru ?? rawSentence.en ?? "";
+function getLocalizedText(raw, locale) {
+    if (typeof raw === "string") return raw;
+    if (raw && typeof raw === "object") {
+        return raw[locale] ?? raw.ru ?? raw.en ?? "";
     }
     return "";
 }
 
-function getAnswerArray(item) {
-    if (Array.isArray(item?.answers)) return item.answers.map(String);
-    if (Array.isArray(item?.answer)) return item.answer.map(String);
-    return [];
+function getAnswer(item) {
+    if (Array.isArray(item?.answer)) return String(item.answer[0] ?? "");
+    if (Array.isArray(item?.answers)) return String(item.answers[0] ?? "");
+    return String(item?.answer ?? "");
+}
+
+function splitByPlaceholder(sentence) {
+    const parts = String(sentence ?? "").split(PLACEHOLDER_TOKEN);
+    if (parts.length < 2) return null;
+    return {
+        left: parts[0] ?? "",
+        right: parts.slice(1).join(PLACEHOLDER_TOKEN),
+    };
 }
 
 export default function SteigerungDerAdjektive() {
@@ -54,8 +64,8 @@ export default function SteigerungDerAdjektive() {
         return () => document.removeEventListener("show-hint", handleShowHint);
     }, []);
 
-    const handleChange = (itemIdx, blankIdx, value, correctAnswer) => {
-        const key = `${itemIdx}-${blankIdx}`;
+    const handleChange = (itemIdx, value, correctAnswer) => {
+        const key = `steigerung-${itemIdx}`;
         const isCorrect = normalize(value) === normalize(correctAnswer);
 
         setAnswers((prev) => ({
@@ -76,48 +86,60 @@ export default function SteigerungDerAdjektive() {
             <div className="scroll-container">
                 <ul className="list">
                     {items.map((item, itemIdx) => {
-                        const sentence = getSentenceText(item.sentence, locale);
-                        const answerArray = getAnswerArray(item);
-                        const parts = sentence.split(/_{3,}/);
+                        const sentence = getLocalizedText(item.sentence, locale);
+                        const placeholder = getLocalizedText(item.placeholder, locale);
+                        const answer = getAnswer(item);
+                        const placeholderParts = splitByPlaceholder(sentence);
+                        const key = `steigerung-${itemIdx}`;
+                        const value = answers[key]?.value ?? "";
+                        const isCorrect = answers[key]?.isCorrect;
+                        const hasValue = value.trim() !== "";
+                        const inputClass = hasValue
+                            ? isCorrect
+                                ? "autosize-input correct"
+                                : "autosize-input incorrect"
+                            : "autosize-input";
 
                         return (
                             <li key={itemIdx} className="list-item">
-                                {parts.map((part, partIdx) => {
-                                    const key = `${itemIdx}-${partIdx}`;
-                                    const value = answers[key]?.value ?? "";
-                                    const isCorrect = answers[key]?.isCorrect;
-
-                                    let inputClass = "input";
-                                    if (value.trim() !== "") {
-                                        inputClass += isCorrect ? " correct" : " incorrect";
-                                    }
-
-                                    return (
-                                        <span key={partIdx}>
-                                            {part}
-                                            {partIdx < answerArray.length ? (
-                                                <ExpandingInput
-                                                    type="text"
-                                                    value={value}
-                                                    onChange={(e) =>
-                                                        handleChange(
-                                                            itemIdx,
-                                                            partIdx,
-                                                            e.target.value,
-                                                            answerArray[partIdx]
-                                                        )
-                                                    }
-                                                    className={inputClass}
-                                                    minWidth={120}
-                                                    mobileMinWidth={60}
-                                                    tabletMinWidth={90}
-                                                    maxWidth={220}
-                                                    aria-label={`Steigerung der Adjektive blank ${partIdx + 1} (item ${itemIdx + 1})`}
-                                                />
-                                            ) : null}
-                                        </span>
-                                    );
-                                })}
+                                {placeholderParts ? (
+                                    <>
+                                        {placeholderParts.left}
+                                        <ExpandingInput
+                                            type="text"
+                                            value={value}
+                                            onChange={(e) =>
+                                                handleChange(itemIdx, e.target.value, answer)
+                                            }
+                                            className={inputClass}
+                                            placeholder={placeholder}
+                                            minWidth={90}
+                                            mobileMinWidth={70}
+                                            tabletMinWidth={80}
+                                            maxWidth={280}
+                                            aria-label={`Steigerung der Adjektive answer ${itemIdx + 1}`}
+                                        />
+                                        {placeholderParts.right}
+                                    </>
+                                ) : (
+                                    <>
+                                        <span className="sentence">{sentence} —</span>
+                                        <ExpandingInput
+                                            type="text"
+                                            value={value}
+                                            onChange={(e) =>
+                                                handleChange(itemIdx, e.target.value, answer)
+                                            }
+                                            className={inputClass}
+                                            placeholder={placeholder}
+                                            minWidth={180}
+                                            mobileMinWidth={110}
+                                            tabletMinWidth={140}
+                                            maxWidth={360}
+                                            aria-label={`Steigerung der Adjektive answer ${itemIdx + 1}`}
+                                        />
+                                    </>
+                                )}
                             </li>
                         );
                     })}

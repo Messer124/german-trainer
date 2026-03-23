@@ -148,16 +148,23 @@
   text-align: left;
 }
 
-/* Жёлтые колонки haben / sein */
-.theory-table--aux-verbs th:nth-child(2),
-.theory-table--aux-verbs th:nth-child(3),
-.theory-table--aux-verbs td:nth-child(2),
-.theory-table--aux-verbs td:nth-child(3),
+/* Модальные глаголы: цветные колонки */
 .theory-table--modal-verbs th:nth-child(2),
 .theory-table--modal-verbs th:nth-child(3),
 .theory-table--modal-verbs td:nth-child(2),
 .theory-table--modal-verbs td:nth-child(3) {
   background-color: var(--theory-accent-yellow);
+}
+
+/* Prateritum haben / sein: без заливки, цветом выделяем только значения */
+.theory-table--aux-verbs tbody td:nth-child(2) {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+}
+
+.theory-table--aux-verbs tbody td:nth-child(3) {
+  color: var(--theory-accent-red);
+  font-weight: 700;
 }
 
 /* Дополнительная сетка и отступы для таблицы модальных глаголов */
@@ -587,15 +594,19 @@ table.mv-table tbody td {
   color: var(--theory-muted-color);
 }
 
-:root[data-theme="dark"] .theory-table--aux-verbs th:nth-child(2),
-:root[data-theme="dark"] .theory-table--aux-verbs th:nth-child(3),
-:root[data-theme="dark"] .theory-table--aux-verbs td:nth-child(2),
-:root[data-theme="dark"] .theory-table--aux-verbs td:nth-child(3),
 :root[data-theme="dark"] .theory-table--modal-verbs th:nth-child(2),
 :root[data-theme="dark"] .theory-table--modal-verbs th:nth-child(3),
 :root[data-theme="dark"] .theory-table--modal-verbs td:nth-child(2),
 :root[data-theme="dark"] .theory-table--modal-verbs td:nth-child(3) {
   color: #1f232d;
+}
+
+:root[data-theme="dark"] .theory-table--aux-verbs tbody td:nth-child(2) {
+  color: var(--theory-accent-yellow);
+}
+
+:root[data-theme="dark"] .theory-table--aux-verbs tbody td:nth-child(3) {
+  color: var(--theory-accent-red);
 }
 
 /* Цветные буквы, как на картинке */
@@ -779,6 +790,10 @@ table.mv-table tbody td {
   color: inherit; /* Текст остается своего цвета (синий) */
 }
 
+:root[data-theme="dark"] .strike-black {
+  text-decoration-color: #fff;
+}
+
 /* Секция "Внимание" */
 .attention-section {
   margin-top: 30px;
@@ -802,6 +817,10 @@ table.mv-table tbody td {
 .highlight-bold {
   font-weight: 700;
   color: #000;
+}
+
+:root[data-theme="dark"] .highlight-bold {
+  color: #fff;
 }
 
 .highlight-blue {

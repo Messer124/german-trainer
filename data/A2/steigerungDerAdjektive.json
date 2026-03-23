@@ -5,245 +5,721 @@
   },
   "instructions": {
     "ru": "Напишите формы Komparativ, Superlativ от прилагательных",
-    "en": "Write the comparative and superlative forms of the adjectives."
+    "en": "Write the comparative and superlative forms of the adjectives"
   },
   "items": [
     {
-      "sentence": "klein — ___ — ___",
-      "answers": [
-        "kleiner",
+      "sentence": "Mein Zimmer ist ___ als dein Zimmer",
+      "placeholder": "klein",
+      "answer": [
+        "kleiner"
+      ]
+    },
+    {
+      "sentence": "Dieses Zimmer ist ___",
+      "placeholder": "klein",
+      "answer": [
         "am kleinsten"
       ]
     },
     {
-      "sentence": "langsam — ___ — ___",
-      "answers": [
-        "langsamer",
+      "sentence": "Das ist das ___ Zimmer",
+      "placeholder": "klein",
+      "answer": [
+        "kleinste"
+      ]
+    },
+    {
+      "sentence": "Der Bus fährt ___ als der Zug",
+      "placeholder": "langsam",
+      "answer": [
+        "langsamer"
+      ]
+    },
+    {
+      "sentence": "Dieses Auto fährt ___",
+      "placeholder": "langsam",
+      "answer": [
         "am langsamsten"
       ]
     },
     {
-      "sentence": "langweilig — ___ — ___",
-      "answers": [
-        "langweiliger",
+      "sentence": "Das ist der ___ Bus",
+      "placeholder": "langsam",
+      "answer": [
+        "langsamste"
+      ]
+    },
+    {
+      "sentence": "Der Film ist ___ als das Buch",
+      "placeholder": "langweilig",
+      "answer": [
+        "langweiliger"
+      ]
+    },
+    {
+      "sentence": "Die Stunde heute war ___",
+      "placeholder": "langweilig",
+      "answer": [
         "am langweiligsten"
       ]
     },
     {
-      "sentence": "interessant — ___ — ___",
-      "answers": [
-        "interessanter",
+      "sentence": "Das ist der ___ Film",
+      "placeholder": "langweilig",
+      "answer": [
+        "langweiligste"
+      ]
+    },
+    {
+      "sentence": "Deutsch ist ___ als Mathe",
+      "placeholder": "interessant",
+      "answer": [
+        "interessanter"
+      ]
+    },
+    {
+      "sentence": "Das Buch ist ___",
+      "placeholder": "interessant",
+      "answer": [
         "am interessantesten"
       ]
     },
     {
-      "sentence": "schlecht — ___ — ___",
-      "answers": [
-        "schlechter",
+      "sentence": "Das ist das ___ Buch",
+      "placeholder": "interessant",
+      "answer": [
+        "interessanteste"
+      ]
+    },
+    {
+      "sentence": "Das Wetter heute ist ___ als gestern",
+      "placeholder": "schlecht",
+      "answer": [
+        "schlechter"
+      ]
+    },
+    {
+      "sentence": "Montag war ___",
+      "placeholder": "schlecht",
+      "answer": [
         "am schlechtesten"
       ]
     },
     {
-      "sentence": "alt — ___ — ___",
-      "answers": [
-        "älter",
+      "sentence": "Das war der ___ Tag",
+      "placeholder": "schlecht",
+      "answer": [
+        "schlechteste"
+      ]
+    },
+    {
+      "sentence": "Mein Bruder ist ___ als ich",
+      "placeholder": "alt",
+      "answer": [
+        "älter"
+      ]
+    },
+    {
+      "sentence": "Mein Opa ist ___",
+      "placeholder": "alt",
+      "answer": [
         "am ältesten"
       ]
     },
     {
-      "sentence": "gesund — ___ — ___",
-      "answers": [
-        "gesünder",
+      "sentence": "Er ist der ___ Bruder",
+      "placeholder": "alt",
+      "answer": [
+        "älteste"
+      ]
+    },
+    {
+      "sentence": "Wasser ist ___ als Cola",
+      "placeholder": "gesund",
+      "answer": [
+        "gesünder"
+      ]
+    },
+    {
+      "sentence": "Gemüse ist ___",
+      "placeholder": "gesund",
+      "answer": [
         "am gesündesten"
       ]
     },
     {
-      "sentence": "groß — ___ — ___",
-      "answers": [
-        "größer",
+      "sentence": "Das ist das ___ Frühstück",
+      "placeholder": "gesund",
+      "answer": [
+        "gesündeste"
+      ]
+    },
+    {
+      "sentence": "Berlin ist ___ als Köln",
+      "placeholder": "groß",
+      "answer": [
+        "größer"
+      ]
+    },
+    {
+      "sentence": "Hamburg ist ___",
+      "placeholder": "groß",
+      "answer": [
         "am größten"
       ]
     },
     {
-      "sentence": "hoch — ___ — ___",
-      "answers": [
-        "höher",
+      "sentence": "Das ist die ___ Stadt hier",
+      "placeholder": "groß",
+      "answer": [
+        "größte"
+      ]
+    },
+    {
+      "sentence": "Der Berg ist ___ als der Hügel",
+      "placeholder": "hoch",
+      "answer": [
+        "höher"
+      ]
+    },
+    {
+      "sentence": "Der Turm ist ___",
+      "placeholder": "hoch",
+      "answer": [
         "am höchsten"
       ]
     },
     {
-      "sentence": "gut — ___ — ___",
-      "answers": [
-        "besser",
+      "sentence": "Das ist der ___ Berg hier",
+      "placeholder": "hoch",
+      "answer": [
+        "höchste"
+      ]
+    },
+    {
+      "sentence": "Mein Deutsch ist jetzt ___ als früher",
+      "placeholder": "gut",
+      "answer": [
+        "besser"
+      ]
+    },
+    {
+      "sentence": "Kaffee schmeckt mir ___",
+      "placeholder": "gut",
+      "answer": [
         "am besten"
       ]
     },
     {
-      "sentence": "viel — ___ — ___",
-      "answers": [
-        "mehr",
+      "sentence": "Das ist der ___ Kaffee",
+      "placeholder": "gut",
+      "answer": [
+        "beste"
+      ]
+    },
+    {
+      "sentence": "Ich habe heute ___ Zeit als gestern",
+      "placeholder": "viel",
+      "answer": [
+        "mehr"
+      ]
+    },
+    {
+      "sentence": "Am Sonntag habe ich ___ Zeit",
+      "placeholder": "viel",
+      "answer": [
         "am meisten"
       ]
     },
     {
-      "sentence": "gern — ___ — ___",
-      "answers": [
-        "lieber",
+      "sentence": "Die ___ Leute schlafen nachts",
+      "placeholder": "viel",
+      "answer": [
+        "meisten"
+      ]
+    },
+    {
+      "sentence": "Ich trinke ___ Tee als Kaffee",
+      "placeholder": "gern",
+      "answer": [
+        "lieber"
+      ]
+    },
+    {
+      "sentence": "Tee trinke ich ___",
+      "placeholder": "gern",
+      "answer": [
         "am liebsten"
       ]
     },
     {
-      "sentence": "teuer — ___ — ___",
-      "answers": [
-        "teurer",
+      "sentence": "Tee ist mein ___ Getränk",
+      "placeholder": "gern",
+      "answer": [
+        "liebstes"
+      ]
+    },
+    {
+      "sentence": "Dieses Handy ist ___ als das alte",
+      "placeholder": "teuer",
+      "answer": [
+        "teurer"
+      ]
+    },
+    {
+      "sentence": "Das iPhone ist hier ___",
+      "placeholder": "teuer",
+      "answer": [
         "am teuersten"
       ]
     },
     {
-      "sentence": "schnell — ___ — ___",
-      "answers": [
-        "schneller",
+      "sentence": "Das ist das ___ Hotel",
+      "placeholder": "teuer",
+      "answer": [
+        "teuerste"
+      ]
+    },
+    {
+      "sentence": "Der Zug ist ___ als der Bus",
+      "placeholder": "schnell",
+      "answer": [
+        "schneller"
+      ]
+    },
+    {
+      "sentence": "Dieses Auto fährt ___",
+      "placeholder": "schnell",
+      "answer": [
         "am schnellsten"
       ]
     },
     {
-      "sentence": "jung — ___ — ___",
-      "answers": [
-        "jünger",
+      "sentence": "Das ist der ___ Zug",
+      "placeholder": "schnell",
+      "answer": [
+        "schnellste"
+      ]
+    },
+    {
+      "sentence": "Anna ist ___ als Paul",
+      "placeholder": "jung",
+      "answer": [
+        "jünger"
+      ]
+    },
+    {
+      "sentence": "Tom ist ___ in der Familie",
+      "placeholder": "jung",
+      "answer": [
         "am jüngsten"
       ]
     },
     {
-      "sentence": "klar — ___ — ___",
-      "answers": [
-        "klarer",
+      "sentence": "Sie ist die ___ Schwester",
+      "placeholder": "jung",
+      "answer": [
+        "jüngste"
+      ]
+    },
+    {
+      "sentence": "Deine Antwort ist ___ als meine",
+      "placeholder": "klar",
+      "answer": [
+        "klarer"
+      ]
+    },
+    {
+      "sentence": "Seine Erklärung war ___",
+      "placeholder": "klar",
+      "answer": [
         "am klarsten"
       ]
     },
     {
-      "sentence": "schön — ___ — ___",
-      "answers": [
-        "schöner",
+      "sentence": "Das ist die ___ Antwort",
+      "placeholder": "klar",
+      "answer": [
+        "klarste"
+      ]
+    },
+    {
+      "sentence": "Der Park ist ___ als die Straße",
+      "placeholder": "schön",
+      "answer": [
+        "schöner"
+      ]
+    },
+    {
+      "sentence": "Der Garten ist ___",
+      "placeholder": "schön",
+      "answer": [
         "am schönsten"
       ]
     },
     {
-      "sentence": "kurz — ___ — ___",
-      "answers": [
-        "kürzer",
+      "sentence": "Das ist der ___ Park",
+      "placeholder": "schön",
+      "answer": [
+        "schönste"
+      ]
+    },
+    {
+      "sentence": "Der Weg ist ___ als der andere",
+      "placeholder": "kurz",
+      "answer": [
+        "kürzer"
+      ]
+    },
+    {
+      "sentence": "Diese Straße ist ___",
+      "placeholder": "kurz",
+      "answer": [
         "am kürzesten"
       ]
     },
     {
-      "sentence": "lang — ___ — ___",
-      "answers": [
-        "länger",
+      "sentence": "Das ist der ___ Weg",
+      "placeholder": "kurz",
+      "answer": [
+        "kürzeste"
+      ]
+    },
+    {
+      "sentence": "Der Film ist ___ als die Serie",
+      "placeholder": "lang",
+      "answer": [
+        "länger"
+      ]
+    },
+    {
+      "sentence": "Der Winter dauert ___",
+      "placeholder": "lang",
+      "answer": [
         "am längsten"
       ]
     },
     {
-      "sentence": "warm — ___ — ___",
-      "answers": [
-        "wärmer",
+      "sentence": "Das ist der ___ Film",
+      "placeholder": "lang",
+      "answer": [
+        "längste"
+      ]
+    },
+    {
+      "sentence": "Heute ist es ___ als gestern",
+      "placeholder": "warm",
+      "answer": [
+        "wärmer"
+      ]
+    },
+    {
+      "sentence": "Im Juli ist es ___",
+      "placeholder": "warm",
+      "answer": [
         "am wärmsten"
       ]
     },
     {
-      "sentence": "laut — ___ — ___",
-      "answers": [
-        "lauter",
+      "sentence": "Heute ist der ___ Tag der Woche",
+      "placeholder": "warm",
+      "answer": [
+        "wärmste"
+      ]
+    },
+    {
+      "sentence": "Das Radio ist ___ als der Fernseher",
+      "placeholder": "laut",
+      "answer": [
+        "lauter"
+      ]
+    },
+    {
+      "sentence": "Die Musik hier ist ___",
+      "placeholder": "laut",
+      "answer": [
         "am lautesten"
       ]
     },
     {
-      "sentence": "kalt — ___ — ___",
-      "answers": [
-        "kälter",
+      "sentence": "Das ist die ___ Musik",
+      "placeholder": "laut",
+      "answer": [
+        "lauteste"
+      ]
+    },
+    {
+      "sentence": "Heute ist es ___ als gestern",
+      "placeholder": "kalt",
+      "answer": [
+        "kälter"
+      ]
+    },
+    {
+      "sentence": "Im Januar ist es ___",
+      "placeholder": "kalt",
+      "answer": [
         "am kältesten"
       ]
     },
     {
-      "sentence": "billig — ___ — ___",
-      "answers": [
-        "billiger",
+      "sentence": "Heute ist der ___ Tag im Monat",
+      "placeholder": "kalt",
+      "answer": [
+        "kälteste"
+      ]
+    },
+    {
+      "sentence": "Der Pullover ist ___ als die Jacke",
+      "placeholder": "billig",
+      "answer": [
+        "billiger"
+      ]
+    },
+    {
+      "sentence": "Dieses T-Shirt ist ___",
+      "placeholder": "billig",
+      "answer": [
         "am billigsten"
       ]
     },
     {
-      "sentence": "früh — ___ — ___",
-      "answers": [
-        "früher",
+      "sentence": "Das ist das ___ T-Shirt",
+      "placeholder": "billig",
+      "answer": [
+        "billigste"
+      ]
+    },
+    {
+      "sentence": "Ich stehe ___ auf als du",
+      "placeholder": "früh",
+      "answer": [
+        "früher"
+      ]
+    },
+    {
+      "sentence": "Am Montag stehe ich ___ auf",
+      "placeholder": "früh",
+      "answer": [
         "am frühesten"
       ]
     },
     {
-      "sentence": "spät — ___ — ___",
-      "answers": [
-        "später",
+      "sentence": "Der ___ Bus fährt um sechs",
+      "placeholder": "früh",
+      "answer": [
+        "früheste"
+      ]
+    },
+    {
+      "sentence": "Er kommt ___ als ich",
+      "placeholder": "spät",
+      "answer": [
+        "später"
+      ]
+    },
+    {
+      "sentence": "Am Freitag komme ich ___ nach Hause",
+      "placeholder": "spät",
+      "answer": [
         "am spätesten"
       ]
     },
     {
-      "sentence": "leicht — ___ — ___",
-      "answers": [
-        "leichter",
+      "sentence": "Der ___ Zug kommt um zehn",
+      "placeholder": "spät",
+      "answer": [
+        "späteste"
+      ]
+    },
+    {
+      "sentence": "Diese Aufgabe ist ___ als die andere",
+      "placeholder": "leicht",
+      "answer": [
+        "leichter"
+      ]
+    },
+    {
+      "sentence": "Frage eins ist ___",
+      "placeholder": "leicht",
+      "answer": [
         "am leichtesten"
       ]
     },
     {
-      "sentence": "faul — ___ — ___",
-      "answers": [
-        "fauler",
+      "sentence": "Das ist die ___ Übung",
+      "placeholder": "leicht",
+      "answer": [
+        "leichteste"
+      ]
+    },
+    {
+      "sentence": "Der Kater ist ___ als der Hund",
+      "placeholder": "faul",
+      "answer": [
+        "fauler"
+      ]
+    },
+    {
+      "sentence": "Am Sonntag bin ich ___",
+      "placeholder": "faul",
+      "answer": [
         "am faulsten"
       ]
     },
     {
-      "sentence": "schwer — ___ — ___",
-      "answers": [
-        "schwerer",
+      "sentence": "Er ist der ___ Schüler in der Klasse",
+      "placeholder": "faul",
+      "answer": [
+        "faulste"
+      ]
+    },
+    {
+      "sentence": "Deutsch ist ___ als Englisch",
+      "placeholder": "schwer",
+      "answer": [
+        "schwerer"
+      ]
+    },
+    {
+      "sentence": "Diese Übung ist ___",
+      "placeholder": "schwer",
+      "answer": [
         "am schwersten"
       ]
     },
     {
-      "sentence": "stark — ___ — ___",
-      "answers": [
-        "stärker",
+      "sentence": "Das ist die ___ Aufgabe",
+      "placeholder": "schwer",
+      "answer": [
+        "schwerste"
+      ]
+    },
+    {
+      "sentence": "Mein Bruder ist ___ als ich",
+      "placeholder": "stark",
+      "answer": [
+        "stärker"
+      ]
+    },
+    {
+      "sentence": "Der Löwe ist ___",
+      "placeholder": "stark",
+      "answer": [
         "am stärksten"
       ]
     },
     {
-      "sentence": "nah — ___ — ___",
-      "answers": [
-        "näher",
+      "sentence": "Das ist der ___ Spieler",
+      "placeholder": "stark",
+      "answer": [
+        "stärkste"
+      ]
+    },
+    {
+      "sentence": "Die Schule ist ___ als das Kino",
+      "placeholder": "nah",
+      "answer": [
+        "näher"
+      ]
+    },
+    {
+      "sentence": "Unser Haus ist ___ zur Schule",
+      "placeholder": "nah",
+      "answer": [
         "am nächsten"
       ]
     },
     {
-      "sentence": "weit — ___ — ___",
-      "answers": [
-        "weiter",
+      "sentence": "Das ist die ___ Apotheke",
+      "placeholder": "nah",
+      "answer": [
+        "nächste"
+      ]
+    },
+    {
+      "sentence": "Berlin ist ___ als Bonn",
+      "placeholder": "weit",
+      "answer": [
+        "weiter"
+      ]
+    },
+    {
+      "sentence": "Hamburg ist von hier ___",
+      "placeholder": "weit",
+      "answer": [
         "am weitesten"
       ]
     },
     {
-      "sentence": "neu — ___ — ___",
-      "answers": [
-        "neuer",
+      "sentence": "Das ist der ___ Weg",
+      "placeholder": "weit",
+      "answer": [
+        "weiteste"
+      ]
+    },
+    {
+      "sentence": "Mein Handy ist ___ als dein Handy",
+      "placeholder": "neu",
+      "answer": [
+        "neuer"
+      ]
+    },
+    {
+      "sentence": "Dieses Modell ist ___",
+      "placeholder": "neu",
+      "answer": [
         "am neuesten"
       ]
     },
     {
-      "sentence": "wichtig — ___ — ___",
-      "answers": [
-        "wichtiger",
+      "sentence": "Das ist das ___ Modell",
+      "placeholder": "neu",
+      "answer": [
+        "neueste"
+      ]
+    },
+    {
+      "sentence": "Deutsch ist ___ als Latein",
+      "placeholder": "wichtig",
+      "answer": [
+        "wichtiger"
+      ]
+    },
+    {
+      "sentence": "Gesundheit ist ___",
+      "placeholder": "wichtig",
+      "answer": [
         "am wichtigsten"
       ]
     },
     {
-      "sentence": "einfach — ___ — ___",
-      "answers": [
-        "einfacher",
+      "sentence": "Das ist die ___ Frage",
+      "placeholder": "wichtig",
+      "answer": [
+        "wichtigste"
+      ]
+    },
+    {
+      "sentence": "Diese Aufgabe ist ___ als die andere",
+      "placeholder": "einfach",
+      "answer": [
+        "einfacher"
+      ]
+    },
+    {
+      "sentence": "Übung zwei ist ___",
+      "placeholder": "einfach",
+      "answer": [
         "am einfachsten"
+      ]
+    },
+    {
+      "sentence": "Das ist die ___ Lösung",
+      "placeholder": "einfach",
+      "answer": [
+        "einfachste"
       ]
     }
   ]
