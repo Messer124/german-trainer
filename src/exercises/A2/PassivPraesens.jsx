@@ -90,7 +90,7 @@ export default function PassivPraesens() {
                                     minWidth={180}
                                     mobileMinWidth={90}
                                     tabletMinWidth={140}
-                                    maxWidth={720}
+                                    maxWidth={1000}
                                     aria-label={`Passiv Präsens answer ${index + 1}`}
                                     enableHint={true}
                                     hintValue={item.answer}

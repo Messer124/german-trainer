@@ -10,192 +10,10 @@
   "items": [
     {
       "sentence": {
-        "ru": "Свидетельство об окончании может быть признано в странах ЕС",
-        "en": "The graduation certificate can be recognized in EU countries"
+        "ru": "Еду уже готовят",
+        "en": "The food is already being cooked"
       },
-      "answer": "Das Abschlusszeugnis kann in den EU-Ländern anerkannt werden"
-    },
-    {
-      "sentence": {
-        "ru": "Задача ещё не решена",
-        "en": "The task is not solved yet"
-      },
-      "answer": "Die Aufgabe ist noch nicht gelöst"
-    },
-    {
-      "sentence": {
-        "ru": "Пять книг прочитано",
-        "en": "Five books have been read"
-      },
-      "answer": "Fünf Bücher sind gelesen"
-    },
-    {
-      "sentence": {
-        "ru": "Теория должна быть выучена до завтра",
-        "en": "The theory must be learned by tomorrow"
-      },
-      "answer": "Die Theorie soll bis morgen gelernt werden"
-    },
-    {
-      "sentence": {
-        "ru": "Доклад в пятницу будет прочитан известным профессором",
-        "en": "The lecture will be given by the famous professor on Friday"
-      },
-      "answer": "Der Vortrag wird vom berühmten Professor am Freitag gehalten"
-    },
-    {
-      "sentence": {
-        "ru": "Доклад подготовлен",
-        "en": "The presentation is prepared"
-      },
-      "answer": "Der Vortrag ist vorbereitet"
-    },
-    {
-      "sentence": {
-        "ru": "Консультация может быть проведена уже завтра",
-        "en": "The consultation can already be carried out tomorrow"
-      },
-      "answer": "Die Beratung kann schon morgen durchgeführt werden"
-    },
-    {
-      "sentence": {
-        "ru": "В Аргентине едят много говядины",
-        "en": "In Argentina, a lot of beef is eaten"
-      },
-      "answer": "In Argentinien wird viel Rindfleisch gegessen"
-    },
-    {
-      "sentence": {
-        "ru": "Учёба закончена",
-        "en": "The studies are finished"
-      },
-      "answer": "Das Studium ist beendet"
-    },
-    {
-      "sentence": {
-        "ru": "Письмо пишется моим отцом",
-        "en": "The letter is written by my father"
-      },
-      "answer": "Der Brief wird von meinem Vater geschrieben"
-    },
-    {
-      "sentence": {
-        "ru": "Люди не пострадали из‑за непогоды",
-        "en": "People were not injured by the severe weather"
-      },
-      "answer": "Menschen sind durch das Unwetter nicht verletzt"
-    },
-    {
-      "sentence": {
-        "ru": "Оценки должны быть улучшены к концу года",
-        "en": "The grades should be improved by the end of the year"
-      },
-      "answer": "Die Noten sollen bis Ende des Jahres verbessert werden"
-    },
-    {
-      "sentence": {
-        "ru": "Экзамены сданы",
-        "en": "The exams have been passed"
-      },
-      "answer": "Die Prüfungen sind bestanden"
-    },
-    {
-      "sentence": {
-        "ru": "Улицу перекрывают из‑за строительных работ",
-        "en": "The street is closed due to construction work"
-      },
-      "answer": "Die Straße wird wegen Bauarbeiten gesperrt"
-    },
-    {
-      "sentence": {
-        "ru": "Повышение квалификации организуется для мигрантов",
-        "en": "Further training is organized for migrants"
-      },
-      "answer": "Die Weiterbildung wird für Migranten organisiert"
-    },
-    {
-      "sentence": {
-        "ru": "Немецкий Abitur признаётся также за границей",
-        "en": "The German Abitur is also recognized abroad"
-      },
-      "answer": "Das deutsche Abitur wird auch im Ausland anerkannt"
-    },
-    {
-      "sentence": {
-        "ru": "Тест проверен",
-        "en": "The test has been checked"
-      },
-      "answer": "Der Test ist geprüft"
-    },
-    {
-      "sentence": {
-        "ru": "Окно открывается ветром",
-        "en": "The window is opened by the wind"
-      },
-      "answer": "Das Fenster wird durch den Wind geöffnet"
-    },
-    {
-      "sentence": {
-        "ru": "Детей ищут повсюду",
-        "en": "The children are being searched for everywhere"
-      },
-      "answer": "Die Kinder werden überall gesucht"
-    },
-    {
-      "sentence": {
-        "ru": "В нашей профшколе также обучают многих подростков с миграционным происхождением",
-        "en": "At our vocational school, many young people with a migration background are also trained"
-      },
-      "answer": "In unserer Berufsschule werden auch viele Jugendliche mit dem Migrationshintergrund ausgebildet"
-    },
-    {
-      "sentence": {
-        "ru": "Выставка открывается президентом",
-        "en": "The exhibition is opened by the president"
-      },
-      "answer": "Die Ausstellung wird von dem Präsidenten geöffnet"
-    },
-    {
-      "sentence": {
-        "ru": "Все молодые мигранты в Германии должны быть обучены",
-        "en": "All young migrants in Germany should be trained"
-      },
-      "answer": "Alle jungen Migranten in Deutschland sollen ausgebildet werden"
-    },
-    {
-      "sentence": {
-        "ru": "У нас дома не ссорятся",
-        "en": "At our home, people do not argue"
-      },
-      "answer": "Bei uns zu Hause wird nicht gestritten"
-    },
-    {
-      "sentence": {
-        "ru": "Ошибки исправляются учителем",
-        "en": "The mistakes are corrected by the teacher"
-      },
-      "answer": "Die Fehler werden von dem Lehrer korrigiert"
-    },
-    {
-      "sentence": {
-        "ru": "Университет скоро будет основан",
-        "en": "The university will be founded soon"
-      },
-      "answer": "Die Universität wird bald gegründet"
-    },
-    {
-      "sentence": {
-        "ru": "Два реферата должны быть написаны к пятнице",
-        "en": "Two reports must be written by Friday"
-      },
-      "answer": "Zwei Referate sollen bis Freitag geschrieben werden"
-    },
-    {
-      "sentence": {
-        "ru": "Моё обучение в Германии поддерживается (финансируется) BMBF",
-        "en": "My studies in Germany are funded by the BMBF"
-      },
-      "answer": "Mein Studium in Deutschland wird vom BMBF gefördert"
+      "answer": "Das Essen wird schon gekocht"
     },
     {
       "sentence": {
@@ -206,52 +24,10 @@
     },
     {
       "sentence": {
-        "ru": "Твои туфли (ботинки) начищены!",
-        "en": "Your shoes are polished!"
+        "ru": "Велосипед ремонтируют",
+        "en": "The bicycle is being repaired"
       },
-      "answer": "Deine Schuhe sind geputzt!"
-    },
-    {
-      "sentence": {
-        "ru": "Машину моют",
-        "en": "The car is being washed"
-      },
-      "answer": "Das Auto wird gewaschen"
-    },
-    {
-      "sentence": {
-        "ru": "Выпускные экзамены могут быть проведены в мае или июне",
-        "en": "Final exams can be held in May or in June"
-      },
-      "answer": "Die Abschlussprüfungen können im Mai oder im Juni durchgeführt werden"
-    },
-    {
-      "sentence": {
-        "ru": "Мне наконец-то стригут волосы",
-        "en": "My hair is finally being cut"
-      },
-      "answer": "Meine Haare werden endlich geschnitten"
-    },
-    {
-      "sentence": {
-        "ru": "Этот ресторан мне рекомендуют друзья",
-        "en": "The restaurant is recommended to me by my friends"
-      },
-      "answer": "Das Restaurant wird mir von den Freunden empfohlen"
-    },
-    {
-      "sentence": {
-        "ru": "Оценки улучшены",
-        "en": "The grades have been improved"
-      },
-      "answer": "Die Noten sind verbessert"
-    },
-    {
-      "sentence": {
-        "ru": "В воскресенье организуется демонстрация",
-        "en": "A demonstration is organized on Sunday"
-      },
-      "answer": "Am Sonntag wird eine Demo organisiert"
+      "answer": "Das Fahrrad wird repariert"
     },
     {
       "sentence": {
@@ -262,164 +38,17 @@
     },
     {
       "sentence": {
-        "ru": "В Бадене также часто едят шпецле и кнёдли",
-        "en": "In Baden, Spätzle and dumplings are also eaten often"
+        "ru": "Машину моют",
+        "en": "The car is being washed"
       },
-      "answer": "In Baden werden auch häufig Spätzle und Knödel gegessen"
+      "answer": "Das Auto wird gewaschen"
     },
     {
       "sentence": {
-        "ru": "Подготовка проведена",
-        "en": "The preparation has been carried out"
+        "ru": "Письмо должно быть написано ручкой",
+        "en": "The letter must be written with a pen"
       },
-      "answer": "Die Vorbereitung ist durchgeführt"
-    },
-    {
-      "sentence": {
-        "ru": "Театр посещается многими людьми",
-        "en": "The theater is visited by many people"
-      },
-      "answer": "Das Theater wird von vielen Menschen besucht"
-    },
-    {
-      "sentence": {
-        "ru": "Курсы могут быть выбраны студентами до октября",
-        "en": "Courses can be chosen by students until October"
-      },
-      "answer": "Kurse können von Studenten bis Oktober gewählt werden"
-    },
-    {
-      "sentence": {
-        "ru": "Реферат написан",
-        "en": "The report has been written"
-      },
-      "answer": "Das Referat ist geschrieben"
-    },
-    {
-      "sentence": {
-        "ru": "Выпускные экзамены чаще всего успешно сдаются учениками",
-        "en": "Final exams are usually passed successfully by the students"
-      },
-      "answer": "Abschlussprüfungen werden von den Schülern meistens erfolgreich bestanden"
-    },
-    {
-      "sentence": {
-        "ru": "Планы изменены",
-        "en": "The plans have been changed"
-      },
-      "answer": "Die Pläne sind geändert"
-    },
-    {
-      "sentence": {
-        "ru": "Проблема решается специалистами",
-        "en": "The problem is solved by the specialists"
-      },
-      "answer": "Das Problem wird von den Spezialisten gelöst"
-    },
-    {
-      "sentence": {
-        "ru": "На площади Михаэльсплац строят новый бассейн",
-        "en": "A new swimming pool is being built at Michaelsplatz"
-      },
-      "answer": "Am Michaelsplatz wird eine neue Schwimmhalle gebaut"
-    },
-    {
-      "sentence": {
-        "ru": "Сливки взбиты миксером",
-        "en": "The cream is whipped with a mixer"
-      },
-      "answer": "Die Sahne ist mit einem Mixer geschlagen"
-    },
-    {
-      "sentence": {
-        "ru": "Осенью постоянно представляют новые языковые курсы",
-        "en": "New language courses are presented every autumn"
-      },
-      "answer": "Im Herbst werden immer neue Sprachkurse präsentiert"
-    },
-    {
-      "sentence": {
-        "ru": "Теория выучена",
-        "en": "The theory has been learned"
-      },
-      "answer": "Die Theorie ist gelernt"
-    },
-    {
-      "sentence": {
-        "ru": "На курсе задают много вопросов",
-        "en": "Many questions are asked in the course"
-      },
-      "answer": "Im Kurs werden viele Fragen gestellt"
-    },
-    {
-      "sentence": {
-        "ru": "Информацию отправляют по электронной почте",
-        "en": "The information is sent by email"
-      },
-      "answer": "Die Info wird per E-Mail geschickt"
-    },
-    {
-      "sentence": {
-        "ru": "Кухню сейчас убирают",
-        "en": "The kitchen is being tidied up right now"
-      },
-      "answer": "Die Küche wird gerade aufgeräumt"
-    },
-    {
-      "sentence": {
-        "ru": "Музыку делают тише",
-        "en": "The music is turned down"
-      },
-      "answer": "Die Musik wird leiser gemacht"
-    },
-    {
-      "sentence": {
-        "ru": "Стол накрывают к ужину",
-        "en": "The table is set for dinner"
-      },
-      "answer": "Der Tisch wird für das Abendessen gedeckt"
-    },
-    {
-      "sentence": {
-        "ru": "Отчёт пишут до пятницы",
-        "en": "The report is written by Friday"
-      },
-      "answer": "Der Bericht wird bis Freitag geschrieben"
-    },
-    {
-      "sentence": {
-        "ru": "Домашнее задание делают сразу",
-        "en": "The homework is done immediately"
-      },
-      "answer": "Die Hausaufgaben werden sofort gemacht"
-    },
-    {
-      "sentence": {
-        "ru": "Посылка будет доставлена завтра",
-        "en": "The parcel will be delivered tomorrow"
-      },
-      "answer": "Das Paket wird morgen geliefert"
-    },
-    {
-      "sentence": {
-        "ru": "В супермаркете продают много фруктов",
-        "en": "A lot of fruit is sold in the supermarket"
-      },
-      "answer": "Im Supermarkt wird viel Obst verkauft"
-    },
-    {
-      "sentence": {
-        "ru": "Текст читают ещё раз",
-        "en": "The text is read once again"
-      },
-      "answer": "Der Text wird noch einmal gelesen"
-    },
-    {
-      "sentence": {
-        "ru": "Дверь на ночь закрывают на ключ",
-        "en": "The door is locked at night"
-      },
-      "answer": "Die Tür wird nachts abgeschlossen"
+      "answer": "Der Brief muss mit einem Stift geschrieben werden"
     },
     {
       "sentence": {
@@ -430,17 +59,199 @@
     },
     {
       "sentence": {
-        "ru": "Комнату убирают перед визитом",
-        "en": "The room is cleaned before the visit"
+        "ru": "Ошибка должна быть исправлена учительницей",
+        "en": "The mistake should be corrected by the teacher"
       },
-      "answer": "Das Zimmer wird vor dem Besuch sauber gemacht"
+      "answer": "Der Fehler soll von der Lehrerin korrigiert werden"
     },
     {
       "sentence": {
-        "ru": "Билеты покупают онлайн",
-        "en": "The tickets are bought online"
+        "ru": "Сливки взбиты миксером",
+        "en": "The cream is whipped with a mixer"
       },
-      "answer": "Die Tickets werden online gekauft"
+      "answer": "Die Sahne ist mit einem Mixer geschlagen"
+    },
+    {
+      "sentence": {
+        "ru": "Планы изменены",
+        "en": "The plans have been changed"
+      },
+      "answer": "Die Pläne sind geändert"
+    },
+    {
+      "sentence": {
+        "ru": "Консультация может быть проведена уже завтра",
+        "en": "The consultation can already be carried out tomorrow"
+      },
+      "answer": "Die Beratung kann schon morgen durchgeführt werden"
+    },
+    {
+      "sentence": {
+        "ru": "Музыку делают тише",
+        "en": "The music is turned down"
+      },
+      "answer": "Die Musik wird leiser gemacht"
+    },
+    {
+      "sentence": {
+        "ru": "Посылка будет доставлена завтра",
+        "en": "The parcel will be delivered tomorrow"
+      },
+      "answer": "Das Paket wird morgen geliefert"
+    },
+    {
+      "sentence": {
+        "ru": "Окно открывается ветром",
+        "en": "The window is opened by the wind"
+      },
+      "answer": "Das Fenster wird durch den Wind geöffnet"
+    },
+    {
+      "sentence": {
+        "ru": "Подготовка проведена",
+        "en": "The preparation has been carried out"
+      },
+      "answer": "Die Vorbereitung ist durchgeführt"
+    },
+    {
+      "sentence": {
+        "ru": "Реферат написан",
+        "en": "The report has been written"
+      },
+      "answer": "Das Referat ist geschrieben"
+    },
+    {
+      "sentence": {
+        "ru": "Письмо пишется моим отцом",
+        "en": "The letter is written by my father"
+      },
+      "answer": "Der Brief wird von meinem Vater geschrieben"
+    },
+    {
+      "sentence": {
+        "ru": "Детей ищут повсюду",
+        "en": "The children are being searched for everywhere"
+      },
+      "answer": "Die Kinder werden überall gesucht"
+    },
+    {
+      "sentence": {
+        "ru": "Театр посещается многими людьми",
+        "en": "The theater is visited by many people"
+      },
+      "answer": "Das Theater wird von vielen Menschen besucht"
+    },
+    {
+      "sentence": {
+        "ru": "Текст должен быть переведён до завтра",
+        "en": "The text should be translated by tomorrow"
+      },
+      "answer": "Der Text soll bis morgen übersetzt werden"
+    },
+    {
+      "sentence": {
+        "ru": "Ошибки исправляются учителем",
+        "en": "The mistakes are corrected by the teacher"
+      },
+      "answer": "Die Fehler werden von dem Lehrer korrigiert"
+    },
+    {
+      "sentence": {
+        "ru": "Мусор выносят",
+        "en": "The trash is taken out"
+      },
+      "answer": "Der Müll wird rausgebracht"
+    },
+    {
+      "sentence": {
+        "ru": "Овощи должны быть нарезаны ножом",
+        "en": "The vegetables must be cut with a knife"
+      },
+      "answer": "Das Gemüse muss mit einem Messer geschnitten werden"
+    },
+    {
+      "sentence": {
+        "ru": "Два реферата должны быть написаны к пятнице",
+        "en": "Two reports must be written by Friday"
+      },
+      "answer": "Zwei Referate sollen bis Freitag geschrieben werden"
+    },
+    {
+      "sentence": {
+        "ru": "Картина может быть повреждена солнцем",
+        "en": "The picture can be damaged by the sun"
+      },
+      "answer": "Das Bild kann durch die Sonne beschädigt werden"
+    },
+    {
+      "sentence": {
+        "ru": "Дверь уже закрыта",
+        "en": "The door is already closed"
+      },
+      "answer": "Die Tür ist schon geschlossen"
+    },
+    {
+      "sentence": {
+        "ru": "На площади Михаэльсплац строят новый бассейн",
+        "en": "A new swimming pool is being built at Michaelsplatz"
+      },
+      "answer": "Am Michaelsplatz wird eine neue Schwimmhalle gebaut"
+    },
+    {
+      "sentence": {
+        "ru": "Информацию отправляют по электронной почте",
+        "en": "The information is sent by email"
+      },
+      "answer": "Die Info wird per E-Mail geschickt"
+    },
+    {
+      "sentence": {
+        "ru": "Машина может управляться только папой",
+        "en": "The car may only be driven by the father"
+      },
+      "answer": "Das Auto darf nur von dem Vater gefahren werden"
+    },
+    {
+      "sentence": {
+        "ru": "Учёба закончена",
+        "en": "The studies are finished"
+      },
+      "answer": "Das Studium ist beendet"
+    },
+    {
+      "sentence": {
+        "ru": "Пять книг прочитано",
+        "en": "Five books have been read"
+      },
+      "answer": "Fünf Bücher sind gelesen"
+    },
+    {
+      "sentence": {
+        "ru": "Комнату убирают перед визитом",
+        "en": "The room is tidied up before the visit"
+      },
+      "answer": "Das Zimmer wird vor dem Besuch aufgeräumt"
+    },
+    {
+      "sentence": {
+        "ru": "Экзамены сданы",
+        "en": "The exams have been passed"
+      },
+      "answer": "Die Prüfungen sind bestanden"
+    },
+    {
+      "sentence": {
+        "ru": "Твои туфли (ботинки) начищены!",
+        "en": "Your shoes are polished!"
+      },
+      "answer": "Deine Schuhe sind geputzt!"
+    },
+    {
+      "sentence": {
+        "ru": "Проблема решается специалистами",
+        "en": "The problem is solved by the specialists"
+      },
+      "answer": "Das Problem wird von den Spezialisten gelöst"
     },
     {
       "sentence": {
@@ -451,31 +262,66 @@
     },
     {
       "sentence": {
-        "ru": "Еду уже готовят",
-        "en": "The food is already being cooked"
+        "ru": "Этот ресторан мне рекомендуют друзья",
+        "en": "The restaurant is recommended to me by my friends"
       },
-      "answer": "Das Essen wird schon gekocht"
+      "answer": "Das Restaurant wird mir von den Freunden empfohlen"
     },
     {
       "sentence": {
-        "ru": "Велосипед ремонтируют",
-        "en": "The bicycle is being repaired"
+        "ru": "Посылка может быть доставлена курьером",
+        "en": "The parcel can be delivered by a courier"
       },
-      "answer": "Das Fahrrad wird repariert"
+      "answer": "Das Paket kann durch einen Boten geliefert werden"
     },
     {
       "sentence": {
-        "ru": "Счёт оплачивается сегодня",
-        "en": "The bill is paid today"
+        "ru": "Окна уже открыты",
+        "en": "The windows are already open"
       },
-      "answer": "Die Rechnung wird heute bezahlt"
+      "answer": "Die Fenster sind schon geöffnet"
     },
     {
       "sentence": {
-        "ru": "Встречу (приём) переносят на следующую неделю",
-        "en": "The appointment is moved to next week"
+        "ru": "Тесто должно быть смешано миксером",
+        "en": "The dough must be mixed with a mixer"
       },
-      "answer": "Der Termin wird auf nächste Woche verschoben"
+      "answer": "Der Teig muss mit einem Mixer gemischt werden"
+    },
+    {
+      "sentence": {
+        "ru": "Теория выучена",
+        "en": "The theory has been learned"
+      },
+      "answer": "Die Theorie ist gelernt"
+    },
+    {
+      "sentence": {
+        "ru": "Тест проверен",
+        "en": "The test has been checked"
+      },
+      "answer": "Der Test ist geprüft"
+    },
+    {
+      "sentence": {
+        "ru": "Теория должна быть выучена до завтра",
+        "en": "The theory must be learned by tomorrow"
+      },
+      "answer": "Die Theorie soll bis morgen gelernt werden"
+    },
+    {
+      "sentence": {
+        "ru": "Доклад подготовлен",
+        "en": "The presentation is prepared"
+      },
+      "answer": "Der Vortrag ist vorbereitet"
+    },
+    {
+      "sentence": {
+        "ru": "Документ должен быть подписан директором",
+        "en": "The document should be signed by the director"
+      },
+      "answer": "Das Dokument soll von dem Direktor unterschrieben werden"
     },
     {
       "sentence": {
@@ -486,17 +332,31 @@
     },
     {
       "sentence": {
-        "ru": "Окна сегодня моют",
-        "en": "The windows are cleaned today"
+        "ru": "Оценки улучшены",
+        "en": "The grades have been improved"
       },
-      "answer": "Die Fenster werden heute geputzt"
+      "answer": "Die Noten sind verbessert"
     },
     {
       "sentence": {
-        "ru": "Мусор выносят",
-        "en": "The trash is taken out"
+        "ru": "Задача ещё не решена",
+        "en": "The task is not solved yet"
       },
-      "answer": "Der Müll wird rausgebracht"
+      "answer": "Die Aufgabe ist noch nicht gelöst"
+    },
+    {
+      "sentence": {
+        "ru": "Дверь может быть открыта ветром",
+        "en": "The door can be opened by the wind"
+      },
+      "answer": "Die Tür kann durch den Wind geöffnet werden"
+    },
+    {
+      "sentence": {
+        "ru": "Оценки должны быть улучшены к концу года",
+        "en": "The grades should be improved by the end of the year"
+      },
+      "answer": "Die Noten sollen bis Ende des Jahres verbessert werden"
     }
   ]
 }

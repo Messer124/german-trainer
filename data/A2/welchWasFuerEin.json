@@ -21,12 +21,8 @@
       "answer": "Welcher"
     },
     {
-      "sentence": "___ Leute arbeiten in deiner Firma? — Viele nette Kollegen.",
+      "sentence": "___ Leute arbeiten in deiner Firma? — Nette Kollegen.",
       "answer": "Was für"
-    },
-    {
-      "sentence": "___ Kaffee möchtest du? — Einen Cappuccino.",
-      "answer": "Welchen"
     },
     {
       "sentence": "___ Wohnung suchst du? — Eine helle in der Nähe.",
@@ -49,7 +45,7 @@
       "answer": "Welche"
     },
     {
-      "sentence": "___ Kurs machst du jetzt? — Einen Deutschkurs.",
+      "sentence": "___ Kurs machst du jetzt? — Den Abendkurs.",
       "answer": "Welchen"
     },
     {
@@ -61,7 +57,7 @@
       "answer": "Was für ein"
     },
     {
-      "sentence": "___ Musik hörst du gern? — Pop und Rock.",
+      "sentence": "___ Musik hörst du gern? — Die Musik von ABBA.",
       "answer": "Welche"
     },
     {
@@ -81,7 +77,7 @@
       "answer": "Welcher"
     },
     {
-      "sentence": "___ Handy hast du? — Ein Samsung.",
+      "sentence": "___ Handy hast du? — Das Samsung von meinem Bruder.",
       "answer": "Welches"
     },
     {
@@ -121,11 +117,11 @@
       "answer": "Welches"
     },
     {
-      "sentence": "___ Mensch ist der Journalist Ingo Weiß? — Leider kenne ich diesen Journalisten nicht.",
+      "sentence": "___ Mensch ist der Journalist Ingo Weiß? — Er ist ein bekannter Journalist.",
       "answer": "Was für ein"
     },
     {
-      "sentence": "___ Bücher liest du gern? — Krimis.",
+      "sentence": "___ Bücher liest du gern? — Die Harry-Potter-Bücher.",
       "answer": "Welche"
     },
     {
@@ -173,11 +169,11 @@
       "answer": "Was für ein"
     },
     {
-      "sentence": "___ Stadt ist Berlin? — Eine internationale.",
+      "sentence": "___ Stadt ist Berlin? — Eine internationale Stadt.",
       "answer": "Was für eine"
     },
     {
-      "sentence": "___ Essen magst du am meisten? — Pasta.",
+      "sentence": "___ Gericht magst du am meisten? — Pasta.",
       "answer": "Was für ein"
     },
     {
@@ -189,11 +185,11 @@
       "answer": "Was für"
     },
     {
-      "sentence": "___ Geschenk soll ich für deine Mutter kaufen? — Vielleicht Blumen.",
+      "sentence": "___ Geschenk soll ich für deine Mutter kaufen? — Einen Blumenstrauß.",
       "answer": "Was für ein"
     },
     {
-      "sentence": "___ Film schaust du heute Abend? — Eine Komödie.",
+      "sentence": "___ Film schaust du heute Abend? — Den neuen Film im Kino.",
       "answer": "Welchen"
     },
     {
@@ -205,7 +201,7 @@
       "answer": "Was für ein"
     },
     {
-      "sentence": "___ Beruf passt zu mir? — Den Beruf eines Architekten finde ich passend.",
+      "sentence": "___ Beruf passt zu mir? — Der Beruf eines Architekten.",
       "answer": "Welcher"
     }
   ]
