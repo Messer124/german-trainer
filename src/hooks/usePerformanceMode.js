@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const STORAGE_KEY = "runtime-performance-mode-v1";
+const STORAGE_KEY = "runtime-performance-mode-v2";
 const BENCHMARK_ITERATIONS = 320000;
 const LOW_DEVICE_THRESHOLD_MS = 42;
 const MAYBE_LOW_DEVICE_THRESHOLD_MS = 28;
@@ -53,7 +53,7 @@ function isLikelyLowPowerFromEnvironment() {
 
     const cores = navigator.hardwareConcurrency || 2;
     const memory = navigator.deviceMemory || null;
-    const oldIOSLike = isLikelyIOS() && cores <= 4;
+    const oldIOSLike = isLikelyIOS() && cores <= 6;
     const constrainedMemory = memory !== null && memory <= 2;
     const missingModernObservers = !("IntersectionObserver" in window) || !("ResizeObserver" in window);
 

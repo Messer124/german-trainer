@@ -6,6 +6,7 @@ import ModalHtml from "../../components/ModalHtml";
 import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { useIsLowPerformanceMode } from "../../hooks/usePerformanceMode";
 
 import data from "../../../data/A2/tekamolo.json";
 import hintRu from "../../../data/A2/images/tekamolo.html?raw";
@@ -32,31 +33,36 @@ function normalize(value) {
         .replace(/\s+/g, " ");
 }
 
-function SortableWord({ id, text, colorClass, isCorrect, activeDragId, isDraggingSession }) {
+function SortableWord({ id, text, colorClass, isCorrect, activeDragId, isDraggingSession, disableMotion }) {
     const { attributes, listeners, setNodeRef, isDragging } = useSortable({
         id,
         transition: null,
     });
     const isActiveDragItem = isDraggingSession && activeDragId === id;
+    const ButtonComponent = disableMotion ? "button" : motion.button;
 
     return (
-        <motion.button
+        <ButtonComponent
             ref={setNodeRef}
             type="button"
             className={`tkm-word ${colorClass} ${isCorrect ? "tkm-word--correct" : ""} ${isDragging ? "tkm-word--dragging" : ""}`}
-            layout
-            transition={{
-                type: "spring",
-                stiffness: 560,
-                damping: 38,
-                mass: 0.7,
-            }}
             style={{ opacity: isActiveDragItem ? 0 : 1 }}
+            {...(!disableMotion
+                ? {
+                    layout: true,
+                    transition: {
+                        type: "spring",
+                        stiffness: 560,
+                        damping: 38,
+                        mass: 0.7,
+                    },
+                }
+                : {})}
             {...attributes}
             {...listeners}
         >
             {text}
-        </motion.button>
+        </ButtonComponent>
     );
 }
 
@@ -66,6 +72,7 @@ export default function TeKaMoLo() {
     const [showHint, setShowHint] = useState(false);
     const [activeDragId, setActiveDragId] = useState(null);
     const [isDraggingSession, setIsDraggingSession] = useState(false);
+    const isLowPerformanceMode = useIsLowPerformanceMode();
     const pendingReorderRef = useRef({ timeoutId: null, signature: "" });
     const hint = locale === "en" ? hintEn : hintRu;
 
@@ -280,6 +287,7 @@ export default function TeKaMoLo() {
                                                         isCorrect={isSentenceCorrect}
                                                         activeDragId={activeDragId}
                                                         isDraggingSession={isDraggingSession}
+                                                        disableMotion={isLowPerformanceMode}
                                                     />
                                                 );
                                             })}
@@ -287,6 +295,14 @@ export default function TeKaMoLo() {
                                     </SortableContext>
                                     <DragOverlay>
                                         {isDraggingSession && activeDragId && activeDragId.startsWith(`${itemIdx}-`) ? (
+                                            isLowPerformanceMode ? (
+                                                <span
+                                                    className={`tkm-word ${item.tokenColorMap[activeDragId] ?? ""}`}
+                                                    style={{ pointerEvents: "none" }}
+                                                >
+                                                    {item.tokenMap[activeDragId]}
+                                                </span>
+                                            ) : (
                                             <motion.span
                                                 className={`tkm-word ${item.tokenColorMap[activeDragId] ?? ""}`}
                                                 initial={{ scale: 1 }}
@@ -296,6 +312,7 @@ export default function TeKaMoLo() {
                                             >
                                                 {item.tokenMap[activeDragId]}
                                             </motion.span>
+                                            )
                                         ) : null}
                                     </DragOverlay>
                                 </DndContext>

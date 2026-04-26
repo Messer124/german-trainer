@@ -25,6 +25,18 @@ function getTabsForLevel(level) {
     return EXERCISES_BY_LEVEL[level] || EXERCISES_BY_LEVEL[DEFAULT_LEVEL];
 }
 
+function requestIdleTask(callback, timeout) {
+    if (typeof window === "undefined") return null;
+
+    if ("requestIdleCallback" in window) {
+        const id = window.requestIdleCallback(callback, { timeout });
+        return () => window.cancelIdleCallback(id);
+    }
+
+    const id = window.setTimeout(callback, timeout);
+    return () => window.clearTimeout(id);
+}
+
 export default function App() {
     const { locale, setLocale } = useLocale();
     const { level, setLevel } = useLevel();
@@ -60,6 +72,7 @@ export default function App() {
     const hasThemeMountedRef = useRef(false);
     const tabsForLevel = getTabsForLevel(level);
     const labels = translations[locale].labels;
+    const isLowPerformanceMode = performanceMode === "low";
 
     useEffect(() => {
         if (typeof document === "undefined") return;
@@ -93,13 +106,52 @@ export default function App() {
             localStorage.setItem("last-level", level);
         }
 
+        if (performanceMode === "low") return;
+
         const node = contentRef.current;
         if (!node) return;
 
         node.classList.remove("fade-in");
         void node.offsetWidth;
         node.classList.add("fade-in");
-    }, [currentTab, level]);
+    }, [currentTab, level, performanceMode]);
+
+    useEffect(() => {
+        if (typeof window === "undefined") return undefined;
+
+        const exercises = Object.values(getTabsForLevel(level)).filter((item) => typeof item?.load === "function");
+        const initialDelay = isLowPerformanceMode ? 1800 : 700;
+        const idleTimeout = isLowPerformanceMode ? 2200 : 900;
+        const betweenLoadsDelay = isLowPerformanceMode ? 700 : 180;
+        let cancelled = false;
+        let index = 0;
+        let cancelIdle = null;
+        let delayTimer = null;
+
+        const scheduleNext = () => {
+            if (cancelled || index >= exercises.length || document.visibilityState === "hidden") return;
+
+            cancelIdle = requestIdleTask(() => {
+                if (cancelled || index >= exercises.length) return;
+
+                const exercise = exercises[index];
+                index += 1;
+                exercise.load().catch(() => {
+                    // Prefetch is opportunistic: failed chunks will be loaded normally on demand.
+                });
+
+                delayTimer = window.setTimeout(scheduleNext, betweenLoadsDelay);
+            }, idleTimeout);
+        };
+
+        delayTimer = window.setTimeout(scheduleNext, initialDelay);
+
+        return () => {
+            cancelled = true;
+            cancelIdle?.();
+            window.clearTimeout(delayTimer);
+        };
+    }, [level, isLowPerformanceMode]);
 
     useEffect(() => {
         if (typeof document === "undefined") return;
@@ -231,13 +283,67 @@ export default function App() {
 
     // ---------- SIDEBAR (одна разметка для desktop + mobile) ----------
 
+    const settingsDropdownContent = (
+        <div className="sidebar-settings-dropdown">
+            <label className="sidebar-settings-row">
+                <SignalHigh size={30}/>
+                <span>{labels.level}</span>
+            </label>
+            <select
+                className="sidebar-select"
+                value={level}
+                onChange={(e) => setLevel(e.target.value)}
+            >
+                <option value="A1.1">A1.1</option>
+                <option value="A1.2">A1.2</option>
+                <option value="A2">A2</option>
+                {/*<option value="B1">B1 in progress</option>*/}
+            </select>
+
+            <label className="sidebar-settings-row sidebar-settings-row--mt">
+                <Globe2 size={30}/>
+                <span>{labels.language}</span>
+            </label>
+            <select
+                className="sidebar-select"
+                value={locale}
+                onChange={(e) => setLocale(e.target.value)}
+            >
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+
+            <div className="sidebar-settings-row sidebar-settings-row--mt sidebar-settings-row--between">
+                <span className="sidebar-settings-row-label">
+                    <Palette size={30}/>
+                    <span>{labels.theme}</span>
+                </span>
+                <button
+                    type="button"
+                    className={`theme-toggle ${
+                        isDarkTheme ? "theme-toggle--dark" : ""
+                    }`}
+                    onClick={() =>
+                        setTheme((prev) => (prev === "dark" ? "light" : "dark"))
+                    }
+                    aria-label={labels.theme}
+                    aria-pressed={isDarkTheme}
+                >
+                    <span className="theme-toggle__thumb"/>
+                </button>
+            </div>
+        </div>
+    );
+
+    const SidebarComponent = isLowPerformanceMode ? "aside" : motion.aside;
+
     const sidebar = (
-        <motion.aside
+        <SidebarComponent
             key="sidebar"
             className={`sidebar ${
                 isMobile ? "sidebar--mobile" : "sidebar--desktop"
             } ${!isMobile && !isSidebarOpen ? "sidebar--collapsed" : ""}`}
-            {...(isMobile
+            {...(!isLowPerformanceMode && isMobile
                 ? {
                     initial: {opacity: 0, x: -20},
                     animate: {opacity: 1, x: 0},
@@ -272,76 +378,36 @@ export default function App() {
                 {/* середина: настройки + список упражнений, это область со скроллом */}
                 <div className="sidebar-middle">
                     {/* НАСТРОЙКИ — обёртка анимирует height, внутри сама карточка */}
-                    <motion.div
-                        className="sidebar-settings-dropdown-wrapper"
-                        initial={false}
-                        animate={settingsOpen ? "open" : "collapsed"}
-                        variants={{
-                            open: {
-                                opacity: 1,
-                                height: "auto",
-                                marginTop: 10,
-                                marginBottom: 14,
-                            },
-                            collapsed: {
-                                opacity: 0,
-                                height: 0,
-                                marginTop: 0,
-                                marginBottom: 0,
-                            },
-                        }}
-                        transition={{duration: 0.25, ease: "easeInOut"}}
-                    >
-                        <div className="sidebar-settings-dropdown">
-                            <label className="sidebar-settings-row">
-                                <SignalHigh size={30}/>
-                                <span>{labels.level}</span>
-                            </label>
-                            <select
-                                className="sidebar-select"
-                                value={level}
-                                onChange={(e) => setLevel(e.target.value)}
-                            >
-                                <option value="A1.1">A1.1</option>
-                                <option value="A1.2">A1.2</option>
-                                <option value="A2">A2</option>
-                                {/*<option value="B1">B1 in progress</option>*/}
-                            </select>
-
-                            <label className="sidebar-settings-row sidebar-settings-row--mt">
-                                <Globe2 size={30}/>
-                                <span>{labels.language}</span>
-                            </label>
-                            <select
-                                className="sidebar-select"
-                                value={locale}
-                                onChange={(e) => setLocale(e.target.value)}
-                            >
-                                <option value="ru">Русский</option>
-                                <option value="en">English</option>
-                            </select>
-
-                            <div className="sidebar-settings-row sidebar-settings-row--mt sidebar-settings-row--between">
-                                <span className="sidebar-settings-row-label">
-                                    <Palette size={30}/>
-                                    <span>{labels.theme}</span>
-                                </span>
-                                <button
-                                    type="button"
-                                    className={`theme-toggle ${
-                                        isDarkTheme ? "theme-toggle--dark" : ""
-                                    }`}
-                                    onClick={() =>
-                                        setTheme((prev) => (prev === "dark" ? "light" : "dark"))
-                                    }
-                                    aria-label={labels.theme}
-                                    aria-pressed={isDarkTheme}
-                                >
-                                    <span className="theme-toggle__thumb"/>
-                                </button>
+                    {isLowPerformanceMode ? (
+                        settingsOpen ? (
+                            <div className="sidebar-settings-dropdown-wrapper sidebar-settings-dropdown-wrapper--static">
+                                {settingsDropdownContent}
                             </div>
-                        </div>
-                    </motion.div>
+                        ) : null
+                    ) : (
+                        <motion.div
+                            className="sidebar-settings-dropdown-wrapper"
+                            initial={false}
+                            animate={settingsOpen ? "open" : "collapsed"}
+                            variants={{
+                                open: {
+                                    opacity: 1,
+                                    height: "auto",
+                                    marginTop: 10,
+                                    marginBottom: 14,
+                                },
+                                collapsed: {
+                                    opacity: 0,
+                                    height: 0,
+                                    marginTop: 0,
+                                    marginBottom: 0,
+                                },
+                            }}
+                            transition={{duration: 0.25, ease: "easeInOut"}}
+                        >
+                            {settingsDropdownContent}
+                        </motion.div>
+                    )}
 
                     {/* СПИСОК УПРАЖНЕНИЙ */}
                     <div className="sidebar-exercises">
@@ -352,8 +418,10 @@ export default function App() {
                                 const label = exerciseItem?.title?.[locale] ?? key;
                                 const prefetchExercise = () => exerciseItem?.load?.();
 
+                                const TabButton = isLowPerformanceMode ? "button" : motion.button;
+
                                 return (
-                                    <motion.button
+                                    <TabButton
                                         key={key}
                                         type="button"
                                         className={`sidebar-tab sidebar-tab--${key} ${
@@ -366,10 +434,16 @@ export default function App() {
                                             setCurrentTab(key);
                                             if (isMobile) closeSidebar();
                                         }}
-                                        initial={{opacity: 0, x: -10}}
-                                        animate={{opacity: 1, x: 0}}
+                                        {...(!isLowPerformanceMode
+                                            ? {
+                                                initial: {opacity: 0, x: -10},
+                                                animate: {opacity: 1, x: 0},
+                                            }
+                                            : {})}
                                     >
-                                        {isActive && (
+                                        {isActive && (isLowPerformanceMode ? (
+                                            <div className="sidebar-tab-active-bg"/>
+                                        ) : (
                                             <motion.div
                                                 className="sidebar-tab-active-bg"
                                                 layoutId="sidebar-active-bg"
@@ -379,9 +453,9 @@ export default function App() {
                                                     damping: 30,
                                                 }}
                                             />
-                                        )}
+                                        ))}
                                         <span className="sidebar-tab-label">{label}</span>
-                                    </motion.button>
+                                    </TabButton>
                                 );
                             })}
                         </div>
@@ -397,7 +471,7 @@ export default function App() {
                     {labels.clearAnswers}
                 </button>
             </div>
-        </motion.aside>
+        </SidebarComponent>
     );
 
     // ---------- MAIN (header + exercise-container) ----------
@@ -448,7 +522,11 @@ export default function App() {
         </div>
     );
 
-    const mobileMain = (
+    const mobileMain = isLowPerformanceMode ? (
+        <div key="main" className="main main--mobile-panel">
+            {mainContent}
+        </div>
+    ) : (
         <motion.div
             key="main"
             className="main main--mobile-panel"
@@ -467,9 +545,13 @@ export default function App() {
         return (
             <div className="app-layout app-layout--mobile">
                 <div className="mobile-stage">
-                    <AnimatePresence initial={false} mode="sync">
-                        {isSidebarOpen ? sidebar : mobileMain}
-                    </AnimatePresence>
+                    {isLowPerformanceMode ? (
+                        isSidebarOpen ? sidebar : mobileMain
+                    ) : (
+                        <AnimatePresence initial={false} mode="sync">
+                            {isSidebarOpen ? sidebar : mobileMain}
+                        </AnimatePresence>
+                    )}
                 </div>
             </div>
         );
