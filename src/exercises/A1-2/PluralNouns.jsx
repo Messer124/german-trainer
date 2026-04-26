@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/pluralNouns.json";
@@ -46,8 +47,8 @@ function PluralNounsExercise() {
         )}
 
         <div className="scroll-container">
-          <ul className="list">
-            {data.items.map((item, index) => {
+          <ProgressiveList items={data.items} className="list">
+            {(item, index) => {
               const stored = answers[index];
               const value = stored?.value || "";
               const trimmed = value.trim();
@@ -74,8 +75,8 @@ function PluralNounsExercise() {
                     />
                   </li>
               );
-            })}
-          </ul>
+            }}
+          </ProgressiveList>
         </div>
       </div>
   );

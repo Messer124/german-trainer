@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -74,8 +75,8 @@ export default function Adjektivdeklination() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {items.map((item, sentenceIdx) => {
+                <ProgressiveList items={items} className="list">
+                    {(item, sentenceIdx) => {
                         const sentence = getSentenceText(item.sentence, locale);
                         const answerArray = getAnswerArray(item);
                         const parts = sentence.split(/_{3,}/);
@@ -120,8 +121,8 @@ export default function Adjektivdeklination() {
                                 })}
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

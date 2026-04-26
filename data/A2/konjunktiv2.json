@@ -30,6 +30,7 @@
         "en": "If my parents were at home now"
       },
       "answer": [
+        "Wären jetzt meine Eltern zu Hause",
         "Wären meine Eltern jetzt zu Hause",
         "Wenn meine Eltern jetzt zu Hause wären"
       ]
@@ -69,7 +70,8 @@
         "en": "We would start earlier if we knew the address"
       },
       "answer": [
-        "Wir würden früher anfangen, wenn wir die Adresse wüssten"
+        "Wir würden früher anfangen, wenn wir die Adresse wüssten",
+        "Wir würden früher anfangen, wenn wir die Adresse wissen würden"
       ]
     },
     {
@@ -79,7 +81,8 @@
       },
       "answer": [
         "Spräche sie langsamer, verstünde ich mehr",
-        "Wenn sie langsamer spräche, verstünde ich mehr"
+        "Wenn sie langsamer spräche, verstünde ich mehr",
+        "Wenn sie langsamer sprechen würden, würde ich mehr verstehen"
       ]
     },
     {
@@ -88,6 +91,7 @@
         "en": "If the bus came on time, we would be there earlier"
       },
       "answer": [
+        "Würde der Bus pünktlich ankommen, wären wir früher dort",
         "Käme der Bus pünktlich, wären wir früher dort",
         "Wenn der Bus pünktlich käme, wären wir früher dort"
       ]

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/articleDeclension.json";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import "../../css/exercises/Common.css";
 import { useLocale } from "../../contexts/LocaleContext";
 import hint1Ru from "../../../data/A1-1/images/articleDeclension1.html?raw";
@@ -94,11 +95,11 @@ function ArticleDeclension() {
                 />
             )}
             <div className="scroll-container">
-                <ul className="list">
-                    {data.items.map((item, idx) =>
+                <ProgressiveList items={data.items} className="list">
+                    {(item, idx) =>
                         renderSentence(item.sentence, item.answer, idx)
-                    )}
-                </ul>
+                    }
+                </ProgressiveList>
             </div>
         </div>
     );

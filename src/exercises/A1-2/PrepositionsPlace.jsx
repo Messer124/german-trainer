@@ -7,6 +7,7 @@ import hintEn from "../../../data/A1-2/images/en/prepositionsPlace.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 
 const STORAGE_KEY = "prepositions-place-answers";
 
@@ -88,14 +89,14 @@ export default function Prepositions() {
         }));
     };
 
-    const getBlanksCount = (item, sentenceIdx) => {
+    const getBlanksCount = (item) => {
         const sentenceParts = String(item.sentence || "").split("___");
         return Math.max(0, sentenceParts.length - 1);
     };
 
     const renderSentence = (item, sentenceIdx) => {
         const parts = String(item.sentence || "").split("___");
-        const blanksCount = getBlanksCount(item, sentenceIdx);
+        const blanksCount = getBlanksCount(item);
 
         return (
             <li key={sentenceIdx}>
@@ -141,7 +142,9 @@ export default function Prepositions() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">{data.items.map((item, idx) => renderSentence(item, idx))}</ul>
+                <ProgressiveList items={items} className="list">
+                    {(item, idx) => renderSentence(item, idx)}
+                </ProgressiveList>
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/verbsPerfekt.json";
@@ -62,8 +63,8 @@ export default function VerbsPerfekt() {
         )}
 
         <div className="scroll-container">
-          <ul className="list">
-            {items.map((item, itemIdx) => {
+          <ProgressiveList items={items} className="list">
+            {(item, itemIdx) => {
               const parts = String(item.sentence ?? "").split(/_{3,}/);
               const left = parts[0] ?? "";
               const middle = parts[1] ?? "";
@@ -132,8 +133,8 @@ export default function VerbsPerfekt() {
                     {right}
                   </li>
               );
-            })}
-          </ul>
+            }}
+          </ProgressiveList>
         </div>
       </div>
   );

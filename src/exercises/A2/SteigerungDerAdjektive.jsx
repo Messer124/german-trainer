@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -84,8 +85,8 @@ export default function SteigerungDerAdjektive() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {items.map((item, itemIdx) => {
+                <ProgressiveList items={items} className="list">
+                    {(item, itemIdx) => {
                         const sentence = getLocalizedText(item.sentence, locale);
                         const placeholder = getLocalizedText(item.placeholder, locale);
                         const answer = getAnswer(item);
@@ -142,8 +143,8 @@ export default function SteigerungDerAdjektive() {
                                 )}
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

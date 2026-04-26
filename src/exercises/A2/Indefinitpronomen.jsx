@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -105,8 +106,8 @@ export default function Indefinitpronomen() {
         )}
 
         <div className="scroll-container">
-          <ul className="list">
-            {rows.map((row) => {
+          <ProgressiveList items={rows} className="list">
+            {(row) => {
               if (row.type === "divider") {
                 return (
                     <li key={row.key} className="exercise-section-divider">
@@ -166,8 +167,8 @@ export default function Indefinitpronomen() {
                     )}
                   </li>
               );
-            })}
-          </ul>
+            }}
+          </ProgressiveList>
         </div>
       </div>
   );

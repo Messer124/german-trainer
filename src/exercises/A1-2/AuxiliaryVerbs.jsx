@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -62,8 +63,8 @@ function AuxiliaryVerbs() {
         {showHint && <ModalHtml html={locale === "en" ? hintEn : hintRu} onClose={() => setShowHint(false)} />}
 
         <div className="scroll-container">
-          <ul className="list">
-            {items.map((item, index) => {
+          <ProgressiveList items={items} className="list">
+            {(item, index) => {
               const stored = answers[index];
               const value = stored?.value || "";
               const trimmed = value.trim();
@@ -95,8 +96,8 @@ function AuxiliaryVerbs() {
                     {right}
                   </li>
               );
-            })}
-          </ul>
+            }}
+          </ProgressiveList>
         </div>
       </div>
   );

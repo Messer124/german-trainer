@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -62,8 +63,8 @@ export default function WelchWasFuerEin() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {items.map((item, index) => {
+                <ProgressiveList items={items} className="list">
+                    {(item, index) => {
                         const value = answers[index]?.value || "";
                         const isCorrect = answers[index]?.isCorrect;
                         const sentence = getSentenceText(item.sentence, locale);
@@ -92,8 +93,8 @@ export default function WelchWasFuerEin() {
                                 {right}
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

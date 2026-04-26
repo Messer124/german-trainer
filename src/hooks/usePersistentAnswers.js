@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 // реестр всех сторов по storageKey
 const stores = new Map();
@@ -50,17 +50,44 @@ export function usePersistentAnswers(storageKey, defaultValue) {
             return defaultValue;
         }
     });
+    const answersRef = useRef(answers);
 
-    // Сохранение в localStorage при каждом изменении
     useEffect(() => {
+        answersRef.current = answers;
+    }, [answers]);
+
+    const saveAnswers = useCallback(() => {
         if (typeof window === "undefined") return;
 
         try {
-            window.localStorage.setItem(storageKey, JSON.stringify(answers));
+            window.localStorage.setItem(storageKey, JSON.stringify(answersRef.current));
         } catch {
-            // можно залогировать в будущем
+            // ответы остаются в памяти даже если localStorage временно недоступен
         }
-    }, [storageKey, answers]);
+    }, [storageKey]);
+
+    // localStorage синхронный, поэтому сохраняем ответы на blur, а не на каждую букву.
+    useEffect(() => {
+        if (typeof document === "undefined" || typeof window === "undefined") {
+            return undefined;
+        }
+
+        const handleVisibilityChange = () => {
+            if (document.visibilityState === "hidden") {
+                saveAnswers();
+            }
+        };
+
+        document.addEventListener("focusout", saveAnswers);
+        document.addEventListener("visibilitychange", handleVisibilityChange);
+        window.addEventListener("pagehide", saveAnswers);
+
+        return () => {
+            document.removeEventListener("focusout", saveAnswers);
+            document.removeEventListener("visibilitychange", handleVisibilityChange);
+            window.removeEventListener("pagehide", saveAnswers);
+        };
+    }, [saveAnswers]);
 
     // Регистрируем стор в реестре, чтобы можно было очищать напрямую
     useEffect(() => {

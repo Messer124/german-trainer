@@ -1,5 +1,6 @@
 import { useLocale } from "../../contexts/LocaleContext";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import data from "../../../data/A1-1/translate-sentences.json";
 import "../../css/exercises/Common.css";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
@@ -27,8 +28,8 @@ function TranslateSentences() {
     return (
         <div className="exercise-inner">
             <div className="scroll-container">
-                <ul className="list">
-                    {data.items.map((item, index) => {
+                <ProgressiveList items={data.items} className="list">
+                    {(item, index) => {
                         const key = `translate-${index}`;
                         const value = answers[key]?.value ?? "";
                         const isCorrect = answers[key]?.isCorrect;
@@ -54,8 +55,8 @@ function TranslateSentences() {
                                 />
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

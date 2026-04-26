@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -73,8 +74,8 @@ export default function Verbrektion() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {items.map((item, itemIdx) => {
+                <ProgressiveList items={items} className="list">
+                    {(item, itemIdx) => {
                         const sentence = getSentenceText(item.sentence, locale);
                         const parts = String(sentence ?? "").split(/_{3,}/);
                         const correctAnswers = Array.isArray(item.answers) ? item.answers : [];
@@ -118,8 +119,8 @@ export default function Verbrektion() {
                                 })}
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 
 import data from "../../../data/A2/nDeklination.json";
@@ -116,7 +117,9 @@ function NDeklination() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">{items.map((item, idx) => renderItem(item, idx))}</ul>
+                <ProgressiveList items={items} className="list">
+                    {(item, idx) => renderItem(item, idx)}
+                </ProgressiveList>
             </div>
         </div>
     );

@@ -7,6 +7,7 @@ import hintHtmlEn from "../../../data/A1-2/images/en/indefinitePronouns.html?raw
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 
 const STORAGE_KEY = "indefinite-pronouns-answers";
 
@@ -98,9 +99,9 @@ function IndefinitePronouns() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {data.items.map((item, idx) => renderSentence(item, idx))}
-                </ul>
+                <ProgressiveList items={data.items} className="list">
+                    {(item, idx) => renderSentence(item, idx)}
+                </ProgressiveList>
             </div>
         </div>
     );

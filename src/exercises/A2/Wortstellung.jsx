@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A2/wortstellung.json";
 import hintRu from "../../../data/A2/images/wortstellung.html?raw";
@@ -54,8 +55,8 @@ export default function Wortstellung() {
             {showHint && <ModalHtml html={hint} onClose={() => setShowHint(false)} />}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {items.map((item, index) => {
+                <ProgressiveList items={items} className="list">
+                    {(item, index) => {
                         const key = `wortstellung-${index}`;
                         const value = answers[key]?.value ?? "";
                         const trimmed = value.trim();
@@ -83,8 +84,8 @@ export default function Wortstellung() {
                                 />
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

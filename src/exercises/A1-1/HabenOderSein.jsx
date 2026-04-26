@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import data from "../../../data/A1-1/haben-sein.json";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import hint from "../../../data/A1-1/images/haben-sein.html?raw";
 import "../../css/exercises/Common.css";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
@@ -43,8 +44,8 @@ function HabenOderSein() {
               />
           )}
           <div className="scroll-container">
-            <ul className="list">
-              {data.items.map((item, index) => {
+            <ProgressiveList items={data.items} className="list">
+              {(item, index) => {
                 const value = answers[index]?.value || "";
                 const isCorrect = answers[index]?.isCorrect;
                 const parts = item.sentence.split("___");
@@ -63,8 +64,8 @@ function HabenOderSein() {
                       {parts[1]}
                     </li>
                 );
-              })}
-            </ul>
+              }}
+            </ProgressiveList>
           </div>
       </div>
   );

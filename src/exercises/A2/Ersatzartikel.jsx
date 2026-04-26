@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -55,8 +56,8 @@ export default function Ersatzartikel() {
             {showHint && <ModalHtml html={hint} onClose={() => setShowHint(false)} />}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {items.map((item, itemIdx) => {
+                <ProgressiveList items={items} className="list">
+                    {(item, itemIdx) => {
                         const sentence = String(item.sentence ?? "");
                         const parts = sentence.split(/_{3,}/);
                         const correctAnswers = Array.isArray(item.answers) ? item.answers : [];
@@ -100,8 +101,8 @@ export default function Ersatzartikel() {
                                 })}
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

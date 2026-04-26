@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import "../../css/exercises/Common.css";
 import ExpandingInput from "../../components/ExpandingInput";
 import ModalHtml from "../../components/ModalHtml";
+import ProgressiveList from "../../components/ProgressiveList";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import { useLocale } from "../../contexts/LocaleContext";
 
@@ -78,8 +79,8 @@ export default function PossessivePronouns() {
             {showHint && <ModalHtml images={slides} initialIndex={0} onClose={() => setShowHint(false)} />}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {items.map((item, sentenceIdx) => {
+                <ProgressiveList items={items} className="list">
+                    {(item, sentenceIdx) => {
                         const sentence = getLocalizedText(item.sentence, locale);
                         const correctAnswers = Array.isArray(item.answer)
                             ? item.answer.map((x) => String(x ?? ""))
@@ -130,8 +131,8 @@ export default function PossessivePronouns() {
                                 })}
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

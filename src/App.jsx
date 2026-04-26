@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { Suspense, useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
     Globe2,
@@ -14,6 +14,7 @@ import translations from "./locales/locales";
 import { EXERCISES_BY_LEVEL } from "./config/exercises";
 import { useColoredInputs } from "./hooks/useColoredInputs";
 import { clearAnswersByStorageKey } from "./hooks/usePersistentAnswers";
+import { usePerformanceMode } from "./hooks/usePerformanceMode";
 import "./css/App.css";
 
 const DEFAULT_LEVEL = "A1.1";
@@ -45,6 +46,7 @@ export default function App() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [settingsOpen, setSettingsOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const performanceMode = usePerformanceMode();
     const [theme, setTheme] = useState(() => {
         if (typeof window === "undefined") {
             return "light";
@@ -58,6 +60,12 @@ export default function App() {
     const hasThemeMountedRef = useRef(false);
     const tabsForLevel = getTabsForLevel(level);
     const labels = translations[locale].labels;
+
+    useEffect(() => {
+        if (typeof document === "undefined") return;
+
+        document.documentElement.setAttribute("data-performance", performanceMode);
+    }, [performanceMode]);
 
     // переключение вкладок при смене уровня
     useEffect(() => {
@@ -194,10 +202,21 @@ export default function App() {
         return null;
     }
 
-    const { component: Component, storageKey } = tabsForLevel[currentTab];
+    const currentExercise = tabsForLevel[currentTab];
+    const { component: Component, storageKey, hasHint } = currentExercise;
 
-    const instructions = Component.instructions?.[locale];
-    const headerButton = Component.headerButton;
+    const instructions = currentExercise.instructions?.[locale];
+    const headerButton = hasHint ? (
+        <button
+            type="button"
+            className="hint-button"
+            data-modal-open="true"
+            onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
+            aria-label={locale === "en" ? "Show hint" : "Показать подсказку"}
+        >
+            !
+        </button>
+    ) : null;
     const isDarkTheme = theme === "dark";
 
     const handleClearAnswers = () => {
@@ -329,7 +348,9 @@ export default function App() {
                         <div className="sidebar-exercises-inner">
                             {Object.keys(tabsForLevel).map((key) => {
                                 const isActive = currentTab === key;
-                                const label = tabsForLevel[key]?.component?.title?.[locale] ?? key;
+                                const exerciseItem = tabsForLevel[key];
+                                const label = exerciseItem?.title?.[locale] ?? key;
+                                const prefetchExercise = () => exerciseItem?.load?.();
 
                                 return (
                                     <motion.button
@@ -338,7 +359,10 @@ export default function App() {
                                         className={`sidebar-tab sidebar-tab--${key} ${
                                             isActive ? "sidebar-tab--active" : ""
                                         }`}
+                                        onMouseEnter={prefetchExercise}
+                                        onFocus={prefetchExercise}
                                         onClick={() => {
+                                            prefetchExercise();
                                             setCurrentTab(key);
                                             if (isMobile) closeSidebar();
                                         }}
@@ -403,7 +427,15 @@ export default function App() {
             <main className="exercise-container">
                 <div ref={contentRef} className="exercise-card fade-in">
                     <div className="exercise-scroll">
-                        <Component key={currentTab}/>
+                        <Suspense
+                            fallback={
+                                <div className="exercise-loading">
+                                    {locale === "en" ? "Loading exercise..." : "Загрузка упражнения..."}
+                                </div>
+                            }
+                        >
+                            <Component key={currentTab}/>
+                        </Suspense>
                     </div>
                 </div>
             </main>

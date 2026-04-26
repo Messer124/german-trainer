@@ -8,6 +8,7 @@ import hint2En from "../../../data/A1-2/images/en/prepositionsTime2.html?raw";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 
 function flattenItems(items) {
     if (!Array.isArray(items)) return [];
@@ -110,7 +111,9 @@ export default function PrepositionsTime() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">{data.items.map((item, idx) => renderSentence(item, idx))}</ul>
+                <ProgressiveList items={items} className="list">
+                    {(item, idx) => renderSentence(item, idx)}
+                </ProgressiveList>
             </div>
         </div>
     );

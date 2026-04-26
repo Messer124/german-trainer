@@ -3,6 +3,7 @@ import { DndContext, DragOverlay, closestCenter, KeyboardSensor, MouseSensor, To
 import { SortableContext, sortableKeyboardCoordinates, useSortable, arrayMove, rectSortingStrategy } from "@dnd-kit/sortable";
 import { motion } from "framer-motion";
 import ModalHtml from "../../components/ModalHtml";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -250,8 +251,8 @@ export default function TeKaMoLo() {
             {showHint && <ModalHtml html={hint} onClose={() => setShowHint(false)} />}
 
             <div className="scroll-container">
-                <ul className="list tkm-exercise-list">
-                    {items.map((item, itemIdx) => {
+                <ProgressiveList items={items} className="list tkm-exercise-list">
+                    {(item, itemIdx) => {
                         const order = getCurrentOrder(itemIdx);
                         const isSentenceCorrect = Boolean(answers[itemIdx]?.isCorrect);
 
@@ -300,8 +301,8 @@ export default function TeKaMoLo() {
                                 </DndContext>
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

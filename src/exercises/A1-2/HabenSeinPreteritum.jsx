@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/habenSeinPreteritum.json";
 import hint from "../../../data/A1-2/images/habenSeinPreteritum.html?raw";
@@ -54,8 +55,8 @@ function HabenSeinPreteritum() {
           )}
 
           <div className="scroll-container">
-            <ul className="list">
-              {data.items.map((item, index) => {
+            <ProgressiveList items={data.items} className="list">
+              {(item, index) => {
                 const value = answers[index]?.value || "";
                 const isCorrect = answers[index]?.isCorrect;
 
@@ -81,8 +82,8 @@ function HabenSeinPreteritum() {
                       {parts[1]}
                     </li>
                 );
-              })}
-            </ul>
+              }}
+            </ProgressiveList>
         </div>
       </div>
   );

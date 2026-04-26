@@ -694,6 +694,16 @@ body {
   background-color: var(--color-scrollbar-thumb);
 }
 
+.exercise-loading {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  text-align: center;
+}
+
 /* плавное появление контента упражнений */
 
 .fade-in {
@@ -709,6 +719,31 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+html[data-performance="low"] .app-layout {
+  background-attachment: scroll;
+}
+
+html[data-performance="low"] .sidebar {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+html[data-performance="low"] .fade-in {
+  animation: none;
+}
+
+html[data-performance="low"] .sidebar--desktop,
+html[data-performance="low"] .sidebar-settings-button,
+html[data-performance="low"] .sidebar-close-icon-button,
+html[data-performance="low"] .sidebar-tab,
+html[data-performance="low"] .sidebar-clear-button,
+html[data-performance="low"] .theme-toggle,
+html[data-performance="low"] .theme-toggle__thumb,
+html[data-performance="low"] .main--mobile-panel,
+html[data-performance="low"] .app-header-right > button {
+  transition: none !important;
 }
 
 /* ---------- адаптив ---------- */

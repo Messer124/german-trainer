@@ -55,13 +55,6 @@
       ]
     },
     {
-      "sentence": "Wir danken einer hilfsbereit___ Kollegin und unseren neu___ Kunden.",
-      "answers": [
-        "en",
-        "en"
-      ]
-    },
-    {
       "sentence": "Ich helfe einem neu___ Kollegen.",
       "answers": [
         "en"
@@ -172,6 +165,13 @@
       "sentence": "Wir gehen bei schlecht___ Wetter nicht spazieren.",
       "answers": [
         "em"
+      ]
+    },
+    {
+      "sentence": "Wir danken einer hilfsbereit___ Kollegin und unseren neu___ Kunden.",
+      "answers": [
+        "en",
+        "en"
       ]
     },
     {

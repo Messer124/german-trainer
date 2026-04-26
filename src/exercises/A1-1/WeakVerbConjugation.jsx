@@ -3,14 +3,23 @@ import data from "../../../data/A1-1/weak-verb-conjugation.json";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveShowMore from "../../components/ProgressiveShowMore";
 import hint from "../../../data/A1-1/images/weak-verbs-conj.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { useProgressiveItems } from "../../hooks/useProgressiveItems";
 
 const STORAGE_KEY = "weak-verb-conjugation-answers";
 
 function WeakVerbConjugation() {
     const [showImage, setShowImage] = useState(false);
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
+    const {
+        visibleItems,
+        hasMore,
+        showMore,
+        visibleCount,
+        totalCount,
+    } = useProgressiveItems(data.items);
 
     useEffect(() => {
         const handleShowHint = () => {
@@ -44,7 +53,7 @@ function WeakVerbConjugation() {
                     </tr>
                     </thead>
                     <tbody>
-                    {data.items.map((verb, index) => (
+                    {visibleItems.map((verb, index) => (
                         <tr key={index}>
                             {pronouns.map((pronoun) => {
                                 const inputKey = `weak-verbs-${index}-${pronoun}`;
@@ -83,6 +92,12 @@ function WeakVerbConjugation() {
                     ))}
                     </tbody>
                 </table>
+                <ProgressiveShowMore
+                    hasMore={hasMore}
+                    onShowMore={showMore}
+                    visibleCount={visibleCount}
+                    totalCount={totalCount}
+                />
             </div>
         </div>
 

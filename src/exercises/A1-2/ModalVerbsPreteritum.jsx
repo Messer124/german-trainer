@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/modalVerbsPreteritum.json";
@@ -44,8 +45,8 @@ function ModalVerbsPreteritum() {
               />
           )}
           <div className="scroll-container">
-            <ul className="list">
-              {data.items.map((item, index) => {
+            <ProgressiveList items={data.items} className="list">
+              {(item, index) => {
                 const stored = answers[index];
                 const value = stored?.value || "";
                 const trimmed = value.trim();
@@ -75,8 +76,8 @@ function ModalVerbsPreteritum() {
                       {parts[1]}
                     </li>
                 );
-              })}
-            </ul>
+              }}
+            </ProgressiveList>
         </div>
       </div>
   );

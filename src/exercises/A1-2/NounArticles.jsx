@@ -5,6 +5,7 @@ import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import hint1Ru from "../../../data/A1-2/images/wordGender1.html?raw";
 import hint1En from "../../../data/A1-2/images/en/wordGender1.html?raw";
 import hint2 from "../../../data/A1-2/images/wordGender2.html?raw";
@@ -47,8 +48,8 @@ function NounArticles() {
         )}
 
         <div className="scroll-container">
-          <ul className="list">
-            {data.items.map((item, index) => {
+          <ProgressiveList items={data.items} className="list">
+            {(item, index) => {
               const value = answers[index]?.value || "";
               const isCorrect = answers[index]?.isCorrect;
 
@@ -74,8 +75,8 @@ function NounArticles() {
                     {item.translation[locale]}
                   </li>
               );
-            })}
-          </ul>
+            }}
+          </ProgressiveList>
         </div>
       </div>
   );

@@ -7,6 +7,7 @@ import hintEn from "../../../data/A1-1/images/en/kein-nicht.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 
 const STORAGE_KEY = "keinOrNicht-sentences-answers";
 
@@ -49,8 +50,8 @@ function KeinOrNichtSentences() {
                 />
             )}
             <div className="scroll-container">
-                <ul className="list">
-                    {data.items.map((item, index) => {
+                <ProgressiveList items={data.items} className="list">
+                    {(item, index) => {
                         const key = `keinOrNicht-${index}`;
                         const value = answers[key]?.value ?? "";
                         const isCorrect = answers[key]?.isCorrect;
@@ -76,8 +77,8 @@ function KeinOrNichtSentences() {
                                 />
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

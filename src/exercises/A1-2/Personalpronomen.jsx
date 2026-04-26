@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import "../../css/exercises/Common.css";
 import ExpandingInput from "../../components/ExpandingInput";
 import ModalHtml from "../../components/ModalHtml";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -58,8 +59,8 @@ export default function Personalpronomen() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {items.map((item, idx) => {
+                <ProgressiveList items={items} className="list">
+                    {(item, idx) => {
                         const sentence = getLocalizedText(item.sentence, locale);
                         const placeholder = getLocalizedText(item.placeholder, locale);
                         const answer = String(item.answer ?? "");
@@ -99,8 +100,8 @@ export default function Personalpronomen() {
                                 {right}
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );

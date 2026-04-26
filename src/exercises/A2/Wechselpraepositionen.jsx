@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A2/prepositions.json";
@@ -204,8 +205,8 @@ export default function Wechselpraepositionen() {
         )}
 
         <div className="scroll-container">
-          <ul className="list">
-            {rows.map((row) => {
+          <ProgressiveList items={rows} className="list">
+            {(row) => {
               if (row.type === "divider") {
                 return (
                     <li key={row.key} className="exercise-section-divider">
@@ -216,8 +217,8 @@ export default function Wechselpraepositionen() {
 
               if (row.section === "translate") return renderTranslate(row);
               return renderInsert(row);
-            })}
-          </ul>
+            }}
+          </ProgressiveList>
         </div>
       </div>
   );

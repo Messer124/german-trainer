@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -72,8 +73,8 @@ export default function Direktionaladverb() {
         )}
 
         <div className="scroll-container">
-          <ul className="list">
-            {items.map((item, index) => {
+          <ProgressiveList items={items} className="list">
+            {(item, index) => {
               const stored = answers[index];
               const value = stored?.value ?? "";
               const trimmed = value.trim();
@@ -107,8 +108,8 @@ export default function Direktionaladverb() {
                     />
                   </li>
               );
-            })}
-          </ul>
+            }}
+          </ProgressiveList>
         </div>
       </div>
   );

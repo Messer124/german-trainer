@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocale } from "../../contexts/LocaleContext";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
+import ProgressiveList from "../../components/ProgressiveList";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/passivPraesens.json";
@@ -67,8 +68,8 @@ export default function PassivPraesens() {
             )}
 
             <div className="scroll-container">
-                <ul className="list">
-                    {items.map((item, index) => {
+                <ProgressiveList items={items} className="list">
+                    {(item, index) => {
                         const key = `passiv-praesens-${index}`;
                         const value = answers[key]?.value ?? "";
                         const isCorrect = answers[key]?.isCorrect;
@@ -97,8 +98,8 @@ export default function PassivPraesens() {
                                 />
                             </li>
                         );
-                    })}
-                </ul>
+                    }}
+                </ProgressiveList>
             </div>
         </div>
     );
