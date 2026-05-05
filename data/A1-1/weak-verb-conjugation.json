@@ -289,16 +289,6 @@
       }
     },
     {
-      "infinitive": "bauen",
-      "conjugation": {
-        "ich": "baue",
-        "du": "baust",
-        "er/sie/es": "baut",
-        "wir/sie/Sie": "bauen",
-        "ihr": "baut"
-      }
-    },
-    {
       "infinitive": "putzen",
       "conjugation": {
         "ich": "putze",
@@ -319,16 +309,6 @@
       }
     },
     {
-      "infinitive": "hassen",
-      "conjugation": {
-        "ich": "hasse",
-        "du": "hasst",
-        "er/sie/es": "hasst",
-        "wir/sie/Sie": "hassen",
-        "ihr": "hasst"
-      }
-    },
-    {
       "infinitive": "zeigen",
       "conjugation": {
         "ich": "zeige",
@@ -336,36 +316,6 @@
         "er/sie/es": "zeigt",
         "wir/sie/Sie": "zeigen",
         "ihr": "zeigt"
-      }
-    },
-    {
-      "infinitive": "versuchen",
-      "conjugation": {
-        "ich": "versuche",
-        "du": "versuchst",
-        "er/sie/es": "versucht",
-        "wir/sie/Sie": "versuchen",
-        "ihr": "versucht"
-      }
-    },
-    {
-      "infinitive": "erklären",
-      "conjugation": {
-        "ich": "erkläre",
-        "du": "erklärst",
-        "er/sie/es": "erklärt",
-        "wir/sie/Sie": "erklären",
-        "ihr": "erklärt"
-      }
-    },
-    {
-      "infinitive": "benutzen",
-      "conjugation": {
-        "ich": "benutze",
-        "du": "benutzst",
-        "er/sie/es": "benutzt",
-        "wir/sie/Sie": "benutzen",
-        "ihr": "benutzt"
       }
     },
     {
@@ -389,16 +339,6 @@
       }
     },
     {
-      "infinitive": "reparieren",
-      "conjugation": {
-        "ich": "repariere",
-        "du": "reparierst",
-        "er/sie/es": "repariert",
-        "wir/sie/Sie": "reparieren",
-        "ihr": "repariert"
-      }
-    },
-    {
       "infinitive": "fotografieren",
       "conjugation": {
         "ich": "fotografiere",
@@ -416,26 +356,6 @@
         "er/sie/es": "probiert",
         "wir/sie/Sie": "probieren",
         "ihr": "probiert"
-      }
-    },
-    {
-      "infinitive": "reservieren",
-      "conjugation": {
-        "ich": "reserviere",
-        "du": "reservierst",
-        "er/sie/es": "reserviert",
-        "wir/sie/Sie": "reservieren",
-        "ihr": "reserviert"
-      }
-    },
-    {
-      "infinitive": "korrigieren",
-      "conjugation": {
-        "ich": "korrigiere",
-        "du": "korrigierst",
-        "er/sie/es": "korrigiert",
-        "wir/sie/Sie": "korrigieren",
-        "ihr": "korrigiert"
       }
     },
     {
@@ -476,26 +396,6 @@
         "er/sie/es": "denkt",
         "wir/sie/Sie": "denken",
         "ihr": "denkt"
-      }
-    },
-    {
-      "infinitive": "hören",
-      "conjugation": {
-        "ich": "höre",
-        "du": "hörst",
-        "er/sie/es": "hört",
-        "wir/sie/Sie": "hören",
-        "ihr": "hört"
-      }
-    },
-    {
-      "infinitive": "spielen",
-      "conjugation": {
-        "ich": "spiele",
-        "du": "spielst",
-        "er/sie/es": "spielt",
-        "wir/sie/Sie": "spielen",
-        "ihr": "spielt"
       }
     }
   ]

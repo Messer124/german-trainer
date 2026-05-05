@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-const STORAGE_KEY = "runtime-performance-mode-v2";
+const STORAGE_KEY = "runtime-performance-mode-v3";
+const OVERRIDE_STORAGE_KEY = "runtime-performance-mode-override";
 const BENCHMARK_ITERATIONS = 320000;
 const LOW_DEVICE_THRESHOLD_MS = 42;
 const MAYBE_LOW_DEVICE_THRESHOLD_MS = 28;
@@ -13,8 +14,16 @@ function readStoredMode() {
     if (typeof window === "undefined") return null;
 
     try {
+        const override = window.localStorage.getItem(OVERRIDE_STORAGE_KEY);
+        if (override === "low" || override === "normal") {
+            cachedMode = override;
+            return override;
+        }
+
         const stored = window.localStorage.getItem(STORAGE_KEY);
-        if (stored === "low" || stored === "normal") {
+        const likelyLow = isLikelyLowPowerFromEnvironment();
+
+        if (stored === "low" || (stored === "normal" && !likelyLow)) {
             cachedMode = stored;
             return stored;
         }
@@ -53,11 +62,15 @@ function isLikelyLowPowerFromEnvironment() {
 
     const cores = navigator.hardwareConcurrency || 2;
     const memory = navigator.deviceMemory || null;
+    const touchPoints = navigator.maxTouchPoints || 0;
+    const coarsePointer = window.matchMedia?.("(pointer: coarse)")?.matches ?? false;
+    const tabletViewport = window.matchMedia?.("(min-width: 600px) and (max-width: 1200px)")?.matches ?? false;
     const oldIOSLike = isLikelyIOS() && cores <= 6;
+    const touchTablet = (touchPoints > 1 || coarsePointer) && tabletViewport;
     const constrainedMemory = memory !== null && memory <= 2;
     const missingModernObservers = !("IntersectionObserver" in window) || !("ResizeObserver" in window);
 
-    return oldIOSLike || constrainedMemory || missingModernObservers;
+    return oldIOSLike || touchTablet || constrainedMemory || missingModernObservers;
 }
 
 function measureRuntimeCost() {

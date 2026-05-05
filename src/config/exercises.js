@@ -273,6 +273,24 @@ export const EXERCISES_BY_LEVEL = {
                 en: "Insert a suitable preposition for the verb",
             },
         }),
+        // "conjunctive-adverbs": exercise({
+        //     storageKey: "conjunctive-adverbs-answers",
+        //     load: () => import("../exercises/A2/ConjunctiveAdverbs"),
+        //     title: { ru: "Konjunktional adverbien", en: "Konjunktional adverbien" },
+        //     instructions: {
+        //         ru: "Подберите нужное союзное слово",
+        //         en: "Choose the appropriate conjunctive adverb",
+        //     },
+        // }),
+        // "subordinating-conjunctions": exercise({
+        //     storageKey: "subordinating-conjunctions-answers",
+        //     load: () => import("../exercises/A2/SubordinatingConjunctions"),
+        //     title: { ru: "Subordinierende Konjunktionen", en: "Subordinierende Konjunktionen" },
+        //     instructions: {
+        //         ru: "Подберите нужный подчинительный союз.",
+        //         en: "Choose the appropriate subordinating conjunction.",
+        //     },
+        // }),
         konjunktiv2: exercise({
             storageKey: "konjunktiv2-answers",
             load: () => import("../exercises/A2/Konjunktiv2"),

@@ -111,6 +111,8 @@ export default function Verbrektion() {
                                                     className={inputClass}
                                                     minWidth={80}
                                                     maxWidth={220}
+                                                    enableHint={true}
+                                                    hintValue={correctAnswer}
                                                     aria-label={`Verbrektion blank ${partIdx + 1} (item ${itemIdx + 1})`}
                                                 />
                                             ) : null}

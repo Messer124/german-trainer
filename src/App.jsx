@@ -54,6 +54,8 @@ export default function App() {
 
         return keys[0];
     });
+    const [renderedTab, setRenderedTab] = useState(currentTab);
+    const [isExerciseLoading, setIsExerciseLoading] = useState(false);
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [settingsOpen, setSettingsOpen] = useState(false);
@@ -152,6 +154,37 @@ export default function App() {
             window.clearTimeout(delayTimer);
         };
     }, [level, isLowPerformanceMode]);
+
+    useEffect(() => {
+        if (!tabsForLevel[currentTab]) return undefined;
+
+        if (renderedTab === currentTab) {
+            setIsExerciseLoading(false);
+            return undefined;
+        }
+
+        setIsExerciseLoading(true);
+
+        if (typeof window === "undefined") {
+            setRenderedTab(currentTab);
+            setIsExerciseLoading(false);
+            return undefined;
+        }
+
+        const renderDelay = isLowPerformanceMode ? 140 : 40;
+        let timeoutId = null;
+        let frameId = window.requestAnimationFrame(() => {
+            timeoutId = window.setTimeout(() => {
+                setRenderedTab(currentTab);
+                setIsExerciseLoading(false);
+            }, renderDelay);
+        });
+
+        return () => {
+            window.cancelAnimationFrame(frameId);
+            window.clearTimeout(timeoutId);
+        };
+    }, [currentTab, renderedTab, tabsForLevel, isLowPerformanceMode]);
 
     useEffect(() => {
         if (typeof document === "undefined") return;
@@ -255,7 +288,9 @@ export default function App() {
     }
 
     const currentExercise = tabsForLevel[currentTab];
-    const { component: Component, storageKey, hasHint } = currentExercise;
+    const renderedExercise = tabsForLevel[renderedTab] ?? currentExercise;
+    const { component: RenderedComponent } = renderedExercise;
+    const { storageKey, hasHint } = currentExercise;
 
     const instructions = currentExercise.instructions?.[locale];
     const headerButton = hasHint ? (
@@ -279,7 +314,7 @@ export default function App() {
     const closeSidebar = () => setIsSidebarOpen(false);
     const openSidebar = () => setIsSidebarOpen(true);
 
-    useColoredInputs(currentTab);
+    useColoredInputs(renderedTab);
 
     // ---------- SIDEBAR (одна разметка для desktop + mobile) ----------
 
@@ -476,6 +511,12 @@ export default function App() {
 
     // ---------- MAIN (header + exercise-container) ----------
 
+    const exerciseLoading = (
+        <div className="exercise-loading">
+            {locale === "en" ? "Loading exercise..." : "Загрузка упражнения..."}
+        </div>
+    );
+
     const mainContent = (
         <>
             <header className="app-header">
@@ -501,15 +542,13 @@ export default function App() {
             <main className="exercise-container">
                 <div ref={contentRef} className="exercise-card fade-in">
                     <div className="exercise-scroll">
-                        <Suspense
-                            fallback={
-                                <div className="exercise-loading">
-                                    {locale === "en" ? "Loading exercise..." : "Загрузка упражнения..."}
-                                </div>
-                            }
-                        >
-                            <Component key={currentTab}/>
-                        </Suspense>
+                        {isExerciseLoading ? (
+                            exerciseLoading
+                        ) : (
+                            <Suspense fallback={exerciseLoading}>
+                                <RenderedComponent key={renderedTab}/>
+                            </Suspense>
+                        )}
                     </div>
                 </div>
             </main>
