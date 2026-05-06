@@ -40,6 +40,8 @@ body {
 :root.theme-transition .exercise-scroll,
 :root.theme-transition .theme-toggle,
 :root.theme-transition .theme-toggle__thumb,
+:root.theme-transition .help-pill,
+:root.theme-transition .help-pill__icon,
 :root.theme-transition .modal-dialog,
 :root.theme-transition .modal-html-content-wrapper,
 :root.theme-transition .modal-close-button,
@@ -598,68 +600,81 @@ body {
   align-items: center;
 }
 
-/* === КРУГЛАЯ КНОПКА МОДАЛКИ В ХЕДЕРЕ === */
-/* Срабатывает на любую кнопку, которую упражнения кладут в app-header-right */
+/* === ПИЛЮЛЯ ВЫЗОВА ТЕОРИИ В ХЕДЕРЕ === */
 
-.app-header-right > button {
+.help-pill {
   position: relative;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: var(--size-10);
 
-  width: var(--size-64);
-  height: var(--size-64);
-  border-radius: 50%;
-  border: none;
-  padding: 0;
+  min-width: calc(var(--size-100) + var(--size-50));
+  height: var(--size-56);
+  border-radius: var(--radius);
+  border: var(--size-1) solid var(--color-info-button-outline);
+  padding: var(--size-6) var(--size-18) var(--size-6) var(--size-6);
 
   cursor: pointer;
   outline: none;
 
-  /* яркий градиентный фон */
-  background: var(--color-info-button-bg);
-
-  /* прячем оригинальный контент визуально */
-  color: transparent;
-  font-size: 0;
+  background: var(--color-theme-switch-track);
+  color: var(--color-text-primary);
+  font: inherit;
+  font-size: var(--size-20);
+  font-weight: 700;
+  line-height: 1;
 
   transition:
           transform var(--duration-014) ease-out,
+          background-color var(--duration-014) ease-out,
+          border-color var(--duration-014) ease-out,
           box-shadow var(--duration-014) ease-out,
           filter var(--duration-014) ease-out;
 }
 
-/* буква "i" по центру, вне зависимости от того, что лежит в кнопке */
+.help-pill:focus-visible {
+  outline: var(--size-2) solid var(--color-select-focus-border);
+  outline-offset: var(--size-2);
+}
 
-.app-header-right > button::before {
-  content: "i";
-  position: relative;
-
-  font-size: var(--size-32);
+.help-pill__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 var(--size-44);
+  width: var(--size-44);
+  height: var(--size-44);
+  border-radius: 50%;
+  background: var(--color-info-button-bg);
+  color: var(--color-info-button-icon);
+  font-size: var(--size-28);
   font-weight: 800;
   line-height: 1;
+  box-shadow: 0 0 0 var(--size-2) var(--color-white-70);
+}
 
-  color: var(--color-info-button-icon);
+.help-pill__label {
+  white-space: nowrap;
 }
 
 /* HOVER: лёгкий подъём и усиление свечения */
 
-.app-header-right > button:hover {
+.help-pill:hover {
   transform: translateY(var(--size-1)) scale(1.03);
   box-shadow: var(--shadow-info-button-hover);
   filter: saturate(1.15);
 }
 
-.app-header-right > button:hover::after {
-  opacity: 1;
-}
-
 /* ACTIVE: имитация нажатия */
 
-.app-header-right > button:active {
+.help-pill:active {
   transform: translateY(var(--size-1)) scale(0.96);
   box-shadow: var(--shadow-info-button-active);
   filter: saturate(1);
+}
+
+:root[data-theme="dark"] .help-pill {
+  border-color: var(--color-border-subtle);
 }
 
 /* ---------- exercise-container ---------- */
@@ -721,31 +736,6 @@ body {
   }
 }
 
-html[data-performance="low"] .app-layout {
-  background-attachment: scroll;
-}
-
-html[data-performance="low"] .sidebar {
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-}
-
-html[data-performance="low"] .fade-in {
-  animation: none;
-}
-
-html[data-performance="low"] .sidebar--desktop,
-html[data-performance="low"] .sidebar-settings-button,
-html[data-performance="low"] .sidebar-close-icon-button,
-html[data-performance="low"] .sidebar-tab,
-html[data-performance="low"] .sidebar-clear-button,
-html[data-performance="low"] .theme-toggle,
-html[data-performance="low"] .theme-toggle__thumb,
-html[data-performance="low"] .main--mobile-panel,
-html[data-performance="low"] .app-header-right > button {
-  transition: none !important;
-}
-
 /* ---------- адаптив ---------- */
 
 @media (max-width: 600px) {
@@ -760,9 +750,19 @@ html[data-performance="low"] .app-header-right > button {
     height: var(--size-40);
   }
 
-  .app-header-right > button {
-    width: var(--size-40);
+  .help-pill {
+    min-width: 0;
     height: var(--size-40);
+    gap: var(--size-6);
+    padding: var(--size-5) var(--size-10) var(--size-5) var(--size-5);
+    font-size: var(--size-14);
+  }
+
+  .help-pill__icon {
+    flex-basis: var(--size-28);
+    width: var(--size-28);
+    height: var(--size-28);
+    font-size: var(--size-20);
   }
 
   .app-header-subtitle {
@@ -876,9 +876,18 @@ html[data-performance="low"] .app-header-right > button {
     min-width: 250px;
   }
 
-  .app-header-right > button {
-    width: var(--size-50);
-    height: var(--size-50);
+  .help-pill {
+    min-width: calc(var(--size-100) + var(--size-20));
+    height: var(--size-48);
+    padding: var(--size-5) var(--size-14) var(--size-5) var(--size-5);
+    font-size: var(--size-18);
+  }
+
+  .help-pill__icon {
+    flex-basis: var(--size-36);
+    width: var(--size-36);
+    height: var(--size-36);
+    font-size: var(--size-24);
   }
 
   .app-header-subtitle {

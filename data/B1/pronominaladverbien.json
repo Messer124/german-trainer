@@ -1,0 +1,456 @@
+{
+  "title": {
+    "ru": "Pronominaladverbien",
+    "en": "Pronominaladverbien"
+  },
+  "instructions": {
+    "ru": "Вставьте подходящее местоимённое наречие",
+    "en": "Insert a suitable pronominal adverb"
+  },
+  "items": [
+    {
+      "sentence": "Ich zweifle ___, dass dieser Plan funktioniert.",
+      "answers": [
+        "daran"
+      ]
+    },
+    {
+      "sentence": "___ verzichtest du?",
+      "answers": [
+        "Worauf"
+      ]
+    },
+    {
+      "sentence": "___ kümmerst du dich?",
+      "answers": [
+        "Worum"
+      ]
+    },
+    {
+      "sentence": "___ redet ihr?",
+      "answers": [
+        "Worüber"
+      ]
+    },
+    {
+      "sentence": "Das Glas ist teuer. Bitte pass ___ auf.",
+      "answers": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "___ gratulierst du ihm?",
+      "answers": [
+        "Wozu"
+      ]
+    },
+    {
+      "sentence": "___ beschäftigst du dich?",
+      "answers": [
+        "Womit"
+      ]
+    },
+    {
+      "sentence": "Ich gratuliere dir ___, dass du die Prüfung bestanden hast.",
+      "answers": [
+        "dazu"
+      ]
+    },
+    {
+      "sentence": "Mit diesem Programm kann man üben. Ich spreche oft ___.",
+      "answers": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Ich träume ___, eines Tages am Meer zu wohnen.",
+      "answers": [
+        "davon"
+      ]
+    },
+    {
+      "sentence": "Ich glaube ___, dass alles gut wird.",
+      "answers": [
+        "daran"
+      ]
+    },
+    {
+      "sentence": "___ zweifelst du?",
+      "answers": [
+        "Woran"
+      ]
+    },
+    {
+      "sentence": "___ hast du gehört?",
+      "answers": [
+        "Wovon"
+      ]
+    },
+    {
+      "sentence": "___ bedankst du dich?",
+      "answers": [
+        "Wofür"
+      ]
+    },
+    {
+      "sentence": "___ lädt er dich ein?",
+      "answers": [
+        "Wozu"
+      ]
+    },
+    {
+      "sentence": "Ich bereite mich ___ vor, morgen eine Präsentation zu halten.",
+      "answers": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "___ fängst du an?",
+      "answers": [
+        "Womit"
+      ]
+    },
+    {
+      "sentence": "Ich höre ___ auf, jeden Abend Süßigkeiten zu essen.",
+      "answers": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "___ gehört diese Aufgabe?",
+      "answers": [
+        "Wozu"
+      ]
+    },
+    {
+      "sentence": "Ich verzichte ___, heute Kaffee zu trinken.",
+      "answers": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "___ dankst du ihm?",
+      "answers": [
+        "Wofür"
+      ]
+    },
+    {
+      "sentence": "___ fragst du?",
+      "answers": [
+        "Wonach"
+      ]
+    },
+    {
+      "sentence": "___ hörst du auf?",
+      "answers": [
+        "Womit"
+      ]
+    },
+    {
+      "sentence": "___ wartest du?",
+      "answers": [
+        "Worauf"
+      ]
+    },
+    {
+      "sentence": "Kannst du mir ___ helfen, den Text zu korrigieren?",
+      "answers": [
+        "dabei"
+      ]
+    },
+    {
+      "sentence": "Die Suppe schmeckt nach Knoblauch. Schmeckt deine Suppe auch ___?",
+      "answers": [
+        "danach"
+      ]
+    },
+    {
+      "sentence": "Er lädt mich ___ ein, am Projekt teilzunehmen.",
+      "answers": [
+        "dazu"
+      ]
+    },
+    {
+      "sentence": "Ich fange ___ an, die Küche zu putzen.",
+      "answers": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Ich freue mich ___, dass du gekommen bist.",
+      "answers": [
+        "darüber"
+      ]
+    },
+    {
+      "sentence": "Ich habe ___ gehört, dass die Prüfung schwer war.",
+      "answers": [
+        "davon"
+      ]
+    },
+    {
+      "sentence": "Ich interessiere mich ___, wie Apps funktionieren.",
+      "answers": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "___ sorgst du heute?",
+      "answers": [
+        "Wofür"
+      ]
+    },
+    {
+      "sentence": "Ich entschuldige mich ___, dass ich zu spät bin.",
+      "answers": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "___ freust du dich?",
+      "answers": [
+        "Worauf"
+      ]
+    },
+    {
+      "sentence": "Das hängt ___ ab, ob ich morgen Zeit habe.",
+      "answers": [
+        "davon"
+      ]
+    },
+    {
+      "sentence": "___ interessierst du dich?",
+      "answers": [
+        "Wofür"
+      ]
+    },
+    {
+      "sentence": "___ schmeckt die Soße?",
+      "answers": [
+        "Wonach"
+      ]
+    },
+    {
+      "sentence": "___ soll ich aufpassen?",
+      "answers": [
+        "Worauf"
+      ]
+    },
+    {
+      "sentence": "___ sprichst du bei der Online-Prüfung?",
+      "answers": [
+        "Womit"
+      ]
+    },
+    {
+      "sentence": "Die Jacke riecht nach Rauch. Riecht deine Jacke auch ___?",
+      "answers": [
+        "danach"
+      ]
+    },
+    {
+      "sentence": "Er redet oft ___, dass er umziehen möchte.",
+      "answers": [
+        "davon"
+      ]
+    },
+    {
+      "sentence": "___ hängt das ab?",
+      "answers": [
+        "Wovon"
+      ]
+    },
+    {
+      "sentence": "Ich danke dir ___, dass du mir geholfen hast.",
+      "answers": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Ich erinnere mich ___, dass wir dort schon einmal waren.",
+      "answers": [
+        "daran"
+      ]
+    },
+    {
+      "sentence": "___ erzählt der Film?",
+      "answers": [
+        "Wovon"
+      ]
+    },
+    {
+      "sentence": "___ denkst du gerade?",
+      "answers": [
+        "Woran"
+      ]
+    },
+    {
+      "sentence": "___ leidet er?",
+      "answers": [
+        "Woran"
+      ]
+    },
+    {
+      "sentence": "Ich kümmere mich ___, dass die Küche sauber bleibt.",
+      "answers": [
+        "darum"
+      ]
+    },
+    {
+      "sentence": "Viele Menschen leiden ___, dass sie zu wenig schlafen.",
+      "answers": [
+        "darunter"
+      ]
+    },
+    {
+      "sentence": "___ riecht es hier?",
+      "answers": [
+        "Wonach"
+      ]
+    },
+    {
+      "sentence": "___ erinnerst du dich?",
+      "answers": [
+        "Woran"
+      ]
+    },
+    {
+      "sentence": "___ ärgerst du dich?",
+      "answers": [
+        "Worüber"
+      ]
+    },
+    {
+      "sentence": "___ nimmst du teil?",
+      "answers": [
+        "Woran"
+      ]
+    },
+    {
+      "sentence": "Der Kunde fragt ___, ob die Wohnung noch frei ist.",
+      "answers": [
+        "danach"
+      ]
+    },
+    {
+      "sentence": "Ich nehme ___ teil, weil ich mehr lernen möchte.",
+      "answers": [
+        "daran"
+      ]
+    },
+    {
+      "sentence": "___ schreibst du gerade?",
+      "answers": [
+        "Woran"
+      ]
+    },
+    {
+      "sentence": "Ich beschäftige mich ___, neue Wörter zu lernen.",
+      "answers": [
+        "damit"
+      ]
+    },
+    {
+      "sentence": "Ich denke oft ___, dass ich mehr Deutsch lernen muss.",
+      "answers": [
+        "daran"
+      ]
+    },
+    {
+      "sentence": "___ träumst du?",
+      "answers": [
+        "Wovon"
+      ]
+    },
+    {
+      "sentence": "___ entschuldigst du dich?",
+      "answers": [
+        "Wofür"
+      ]
+    },
+    {
+      "sentence": "Ich verabschiede mich ___, immer perfekt sein zu wollen.",
+      "answers": [
+        "davon"
+      ]
+    },
+    {
+      "sentence": "Dieser Teil ist wichtig. Er gehört ___.",
+      "answers": [
+        "dazu"
+      ]
+    },
+    {
+      "sentence": "Ich bitte ___, dass du pünktlich kommst.",
+      "answers": [
+        "darum"
+      ]
+    },
+    {
+      "sentence": "___ musst du dich verabschieden?",
+      "answers": [
+        "Wovon"
+      ]
+    },
+    {
+      "sentence": "___ bittest du?",
+      "answers": [
+        "Worum"
+      ]
+    },
+    {
+      "sentence": "___ brauchst du Hilfe?",
+      "answers": [
+        "Wobei"
+      ]
+    },
+    {
+      "sentence": "Der Artikel erzählt ___, wie man besser Deutsch lernen kann.",
+      "answers": [
+        "darüber"
+      ]
+    },
+    {
+      "sentence": "Ich schreibe schon seit einer Woche ___.",
+      "answers": [
+        "daran"
+      ]
+    },
+    {
+      "sentence": "Ich sorge ___, dass genug Essen da ist.",
+      "answers": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "___ bereitest du dich vor?",
+      "answers": [
+        "Worauf"
+      ]
+    },
+    {
+      "sentence": "Ich bedanke mich ___, dass Sie so schnell gekommen sind.",
+      "answers": [
+        "dafür"
+      ]
+    },
+    {
+      "sentence": "Ich ärgere mich ___, dass der Zug ausfällt.",
+      "answers": [
+        "darüber"
+      ]
+    },
+    {
+      "sentence": "Ich warte ___, dass der Kurs beginnt.",
+      "answers": [
+        "darauf"
+      ]
+    },
+    {
+      "sentence": "___ glaubst du?",
+      "answers": [
+        "Woran"
+      ]
+    }
+  ]
+}

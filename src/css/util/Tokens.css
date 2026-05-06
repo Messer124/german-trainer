@@ -380,5 +380,11 @@
     --theory-accent-violet: #c5a8ff;
     --theory-accent-yellow: #ffd86a;
     --theory-accent-red: #ff7f96;
+    --theory-accent-green: #84f7a2;
+    --theory-accent-blue: #a8c4ff;
+    --theory-line-color: rgba(157, 214, 255, 0.28);
+    --theory-on-accent-color: #ffffff;
     --theory-border-color: rgba(157, 214, 255, 0.35);
+    --theory-strong-text-color: #eef6ff;
+    --theory-surface-soft: rgba(255, 255, 255, 0.06);
 }

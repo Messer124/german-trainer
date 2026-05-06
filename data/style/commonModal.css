@@ -5,7 +5,13 @@
   --theory-accent-violet: #6c5ce7;
   --theory-accent-yellow: #f8b722;
   --theory-accent-red: #e74c3c;
+  --theory-accent-green: #9fcc5f;
+  --theory-accent-blue: #5d78be;
+  --theory-line-color: #d9d9de;
+  --theory-on-accent-color: #fff;
   --theory-border-color: #909091;
+  --theory-strong-text-color: #2e313b;
+  --theory-surface-soft: #f8f9fa;
 }
 
 /* Базовая карточка с теорией */
@@ -57,6 +63,10 @@
   font-style: italic;
 }
 
+.theory-text--muted {
+  color: var(--theory-muted-color);
+}
+
 .theory-translation {
   margin-left: 2px;
 }
@@ -77,6 +87,20 @@
   font-weight: 700;
 }
 
+.theory-word--green {
+  color: var(--theory-accent-green);
+  font-weight: 700;
+}
+
+.theory-word--blue {
+  color: var(--theory-accent-blue);
+  font-weight: 700;
+}
+
+.theory-word--on-accent {
+  color: var(--theory-on-accent-color);
+}
+
 .theory-word--italic {
   font-style: italic;
 }
@@ -87,6 +111,60 @@
 
 .theory-ending {
   font-weight: 700;
+}
+
+.theory-ending--violet {
+  color: var(--theory-accent-violet);
+  font-weight: 700;
+}
+
+.theory-ending--yellow {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+}
+
+.theory-ending--red {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.theory-ending--green {
+  color: var(--theory-accent-green);
+  font-weight: 700;
+}
+
+.theory-ending--blue {
+  color: var(--theory-accent-blue);
+  font-weight: 700;
+}
+
+.theory-bg--violet {
+  background: var(--theory-accent-violet);
+}
+
+.theory-bg--yellow {
+  background: var(--theory-accent-yellow);
+}
+
+.theory-bg--red {
+  background: var(--theory-accent-red);
+}
+
+.theory-bg--green {
+  background: var(--theory-accent-green);
+}
+
+.theory-bg--soft {
+  background: var(--theory-surface-soft);
+}
+
+.theory-split-cell-line,
+.theory-split-cell-item {
+  padding: 6px 8px;
+}
+
+.theory-split-cell-line {
+  border-bottom: 1px solid var(--theory-line-color);
 }
 
 /* Общие стили таблиц */
@@ -310,7 +388,7 @@
 
 /* Таблицы спряжения */
 .theory-table--conjugation td {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--theory-line-color);
   padding: 8px 4px;
 }
 
@@ -320,7 +398,7 @@
   color: var(--theory-muted-color);
   width: 45%;
   padding-right: 20px;
-  border-right: 1px solid #f0f0f0;
+  border-right: 1px solid var(--theory-line-color);
   font-size: var(--desktop-modal-font-size);
 }
 
@@ -560,30 +638,30 @@ table.mv-table tbody td {
 
 table.mv-table thead th {
   font-weight: 800;
-  color: #2e313b;
+  color: var(--theory-strong-text-color);
   white-space: nowrap;
 }
 
 table.mv-table tbody th {
   font-weight: 800;
-  color: #2e313b;
+  color: var(--theory-strong-text-color);
   white-space: nowrap;
 }
 
 table.mv-table tbody td {
   font-weight: 300;
-  color: #2e313b;
+  color: var(--theory-strong-text-color);
   white-space: nowrap;
 }
 
 :root[data-theme="dark"] table.mv-table thead th,
 :root[data-theme="dark"] table.mv-table tbody th,
 :root[data-theme="dark"] table.mv-table tbody td {
-  color: #eef6ff;
+  color: var(--theory-strong-text-color);
 }
 
 :root[data-theme="dark"] .mv-gray {
-  color: #eef6ff;
+  color: var(--theory-strong-text-color);
 }
 
 :root[data-theme="dark"] .theory-text--ru {
@@ -621,7 +699,7 @@ table.mv-table tbody td {
 }
 
 .mv-gray {
-  color: #444854;
+  color: var(--theory-text-color);
   font-weight: inherit;
 }
 
@@ -661,7 +739,7 @@ table.mv-table tbody td {
 
 .weak-conj-table th,
 .weak-conj-table td {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--theory-line-color);
   padding: 14px 16px; /* Чуть больше воздуха */
 }
 
@@ -670,19 +748,19 @@ table.mv-table tbody td {
 /* Линия после столбца с местоимениями (1-й столбец) */
 .weak-conj-table th:first-child,
 .weak-conj-table td:first-child {
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid var(--theory-line-color);
 }
 
 /* Линия после столбца с 'machen' (2-й столбец) */
 .weak-conj-table th:nth-child(2),
 .weak-conj-table td:nth-child(2) {
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid var(--theory-line-color);
 }
 
 /* Линия между 'arbeiten' и 'tanzen' (перед последним столбцом) */
 .weak-conj-table th:last-child,
 .weak-conj-table td:last-child {
-  border-left: 1px solid #e0e0e0;
+  border-left: 1px solid var(--theory-line-color);
 }
 
 /* --- Разделение левой и правой части --- */
@@ -748,8 +826,8 @@ table.mv-table tbody td {
 .imperativ-table th,
 .imperativ-table td {
   padding: 12px 16px;
-  border-bottom: 1px solid #e0e0e0; /* Тонкие границы */
-  border-left: 1px solid #e0e0e0;   /* Вертикальные границы */
+  border-bottom: 1px solid var(--theory-line-color); /* Тонкие границы */
+  border-left: 1px solid var(--theory-line-color);   /* Вертикальные границы */
   vertical-align: top;
   text-align: left;
 }
@@ -768,7 +846,7 @@ table.mv-table tbody td {
 
 /* Цвета текста */
 .text-blue {
-  color: #5d78be; /* Синий цвет вопросов с картинки */
+  color: var(--theory-accent-blue); /* Синий цвет вопросов с картинки */
   font-weight: 700;
 }
 
@@ -779,7 +857,7 @@ table.mv-table tbody td {
 
 .text-note {
   font-size: 0.9em;
-  color: #444;
+  color: var(--theory-muted-color);
 }
 
 /* Зачеркивание (жирное и черное поверх цветного текста) */
@@ -798,7 +876,7 @@ table.mv-table tbody td {
 .attention-section {
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 2px solid #f0f0f0;
+  border-top: 2px solid var(--theory-line-color);
 }
 
 .attention-title {
@@ -816,15 +894,15 @@ table.mv-table tbody td {
 
 .highlight-bold {
   font-weight: 700;
-  color: #000;
+  color: var(--theory-strong-text-color);
 }
 
 :root[data-theme="dark"] .highlight-bold {
-  color: #fff;
+  color: var(--theory-strong-text-color);
 }
 
 .highlight-blue {
-  color: #5d78be;
+  color: var(--theory-accent-blue);
   font-weight: 700;
 }
 
@@ -843,7 +921,7 @@ table.mv-table tbody td {
 .prep-table td {
   vertical-align: top;       /* Весь контент прижат к верху */
   padding: 12px 14px;        /* Чуть больше воздуха чем в обычной таблице */
-  border: 1px solid #e0e0e0; /* Явные границы ячеек */
+  border: 1px solid var(--theory-line-color); /* Явные границы ячеек */
 }
 
 /* Первая колонка (Заголовки вопросов) */
@@ -876,7 +954,7 @@ table.mv-table tbody td {
 
 /* Русский текст примеров */
 .theory-text--ru {
-  color: #7a7d88;            /* Серый цвет для перевода */
+  color: var(--theory-muted-color);            /* Серый цвет для перевода */
   font-size: var(--desktop-modal-font-size);
   margin-top: 2px;
 }
@@ -963,7 +1041,7 @@ table.mv-table tbody td {
 
   /* Воздух и разделение */
   padding: 16px 0;
-  border-bottom: 1px solid #bcb9b9; /* Легкая разделительная линия */
+  border-bottom: 1px solid var(--theory-line-color); /* Легкая разделительная линия */
 }
 
 .prep-row-item-conj {
@@ -974,7 +1052,7 @@ table.mv-table tbody td {
 
   /* Воздух и разделение */
   padding: 16px 0;
-  border-bottom: 1px solid #bcb9b9; /* Легкая разделительная линия */
+  border-bottom: 1px solid var(--theory-line-color); /* Легкая разделительная линия */
 }
 
 /* Убираем линию у последнего элемента в колонке */
@@ -1094,17 +1172,17 @@ table.mv-table tbody td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f8f9fa;
+  background: var(--theory-surface-soft);
   border-radius: 12px;
   padding: 12px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--theory-line-color);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .cat-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-color: #ccc;
+  border-color: var(--theory-border-color);
 }
 
 /* Визуал */
@@ -1127,13 +1205,13 @@ table.mv-table tbody td {
   margin-top: 10px;
   font-weight: 700;
   font-size: 1.1em;
-  color: #333643;
+  color: var(--theory-text-color);
 }
 
 /* Разделитель между группами глаголов */
 .theory-divider {
   border: none;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid var(--theory-line-color);
   margin: 16px 0;
 }
 
@@ -1175,7 +1253,7 @@ table.mv-table tbody td {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background: #f8f9fa;
+  background: var(--theory-surface-soft);
   padding: 12px;
   border-radius: 12px;
   margin: 16px 0;
@@ -1184,7 +1262,7 @@ table.mv-table tbody td {
 .theory-visual-divider {
   width: 1px;
   height: 100px;
-  background: #ddd;
+  background: var(--theory-line-color);
 }
 
 /* Сетка для списка слов */
@@ -1196,6 +1274,480 @@ table.mv-table tbody td {
 
 .theory-group {
   margin-bottom: 4px;
+}
+
+/* ===== B1: Steigerung von Adjektiven ===== */
+
+.modal-html-content .b1-steigerung {
+  --b1-line: #dfe1e6;
+  color: var(--theory-text-color);
+  line-height: 1.35;
+}
+
+.b1-steigerung .b1-lead,
+.b1-steigerung .b1-text,
+.b1-steigerung .b1-examples,
+.b1-steigerung .b1-table .b1-example,
+.b1-steigerung .b1-cases-table {
+  font-size: var(--desktop-modal-font-size) !important;
+}
+
+.b1-steigerung .b1-lead,
+.b1-steigerung .b1-text {
+  margin: 0 0 18px !important;
+}
+
+.b1-steigerung .b1-formula,
+.b1-steigerung .b1-table thead th,
+.b1-steigerung .b1-table .b1-degree {
+  font-size: var(--desktop-modal-header-font-size) !important;
+}
+
+.b1-steigerung .b1-formula {
+  margin: 14px auto 20px !important;
+  text-align: center;
+  font-weight: 800;
+}
+
+.b1-steigerung .b1-examples {
+  margin: 0 0 20px !important;
+  line-height: 1.35;
+}
+
+.b1-steigerung .b1-example {
+  margin: 0 0 8px !important;
+}
+
+.b1-steigerung .b1-translation {
+  font-style: italic;
+}
+
+.b1-steigerung .b1-stem,
+.b1-steigerung .b1-label {
+  font-weight: 800;
+}
+
+.b1-steigerung .b1-er,
+.b1-steigerung .b1-super {
+  color: var(--theory-accent-yellow);
+  font-weight: 800;
+}
+
+.b1-steigerung-komparativ .b1-er {
+  color: var(--theory-accent-violet);
+}
+
+.b1-steigerung .b1-ending {
+  color: var(--theory-accent-red);
+  font-weight: 800;
+}
+
+.b1-steigerung .b1-table,
+.b1-steigerung .b1-cases-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.b1-steigerung .b1-table th,
+.b1-steigerung .b1-table td,
+.b1-steigerung .b1-cases-table th,
+.b1-steigerung .b1-cases-table td {
+  border-bottom: 1px solid var(--b1-line);
+  padding: 8px 10px !important;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.b1-steigerung .b1-separator,
+.b1-steigerung .b1-cases-table th + th,
+.b1-steigerung .b1-cases-table td + td {
+  border-left: 1px solid var(--b1-line);
+}
+
+.b1-steigerung .b1-table thead th,
+.b1-steigerung .b1-table .b1-degree,
+.b1-steigerung .b1-cases-table tbody td {
+  font-weight: 800;
+}
+
+.b1-steigerung .b1-cases-table {
+  margin-top: 14px !important;
+}
+
+.b1-steigerung .b1-cases-table th:first-child,
+.b1-steigerung .b1-cases-table td:first-child {
+  border-left: none;
+  font-weight: 400;
+}
+
+.b1-steigerung .b1-note {
+  margin: 22px 0 0 !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.35;
+}
+
+.b1-steigerung .b1-compare {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.24fr) 1fr;
+  gap: 6px 24px;
+  margin: 18px 0 24px !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.35;
+}
+
+/* ===== B1: Partizipien ===== */
+
+.modal-html-content .b1-partizipien {
+  color: var(--theory-text-color);
+  line-height: 1.28;
+}
+
+.b1-partizipien .part-lead,
+.b1-partizipien .part-text,
+.b1-partizipien .part-usage-grid,
+.b1-partizipien .part-example-list {
+  font-size: var(--desktop-modal-font-size) !important;
+}
+
+.b1-partizipien .part-lead,
+.b1-partizipien .part-text {
+  margin: 0 0 28px !important;
+}
+
+.b1-partizipien .part-lead--spaced {
+  margin-top: 56px !important;
+}
+
+.b1-partizipien .part-term-row,
+.b1-partizipien .part-activity-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.b1-partizipien .part-term-row {
+  margin: 0 0 18px;
+  text-align: center;
+}
+
+.b1-partizipien .part-term {
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.b1-partizipien .part-activity-intro {
+  margin: 10px 0 16px !important;
+  text-align: center;
+}
+
+.b1-partizipien .part-activity-row {
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.b1-partizipien .part-activity-title {
+  margin: 0 !important;
+  font-weight: 800;
+  font-size: var(--desktop-modal-header-font-size) !important;
+  line-height: 1.22;
+}
+
+.b1-partizipien .part-activity-subtitle {
+  margin: 0 !important;
+}
+
+.b1-partizipien .part-example-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 46px;
+  margin-top: 20px;
+  line-height: 1.28;
+}
+
+.b1-partizipien .part-example {
+  margin: 0 !important;
+}
+
+.b1-partizipien .part-translation {
+  font-style: italic;
+}
+
+.b1-partizipien .part-formula-examples {
+  margin: 12px 0 36px !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.25;
+}
+
+.b1-partizipien .part-usage-grid {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.29fr) minmax(340px, 0.43fr) minmax(220px, 0.28fr);
+  border-top: 1px solid var(--theory-line-color);
+}
+
+.b1-partizipien .part-usage-cell {
+  padding: 10px 14px !important;
+  border-bottom: 1px solid var(--theory-line-color);
+  vertical-align: top;
+}
+
+.b1-partizipien .part-usage-cell + .part-usage-cell {
+  border-left: 1px solid var(--theory-line-color);
+}
+
+.b1-partizipien .part-usage-cell p {
+  margin: 0 0 8px !important;
+}
+
+.b1-partizipien .part-usage-cell p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.b1-partizipien .part-usage-note {
+  color: var(--theory-text-color);
+}
+
+/* ===== B1: Pronominaladverbien ===== */
+
+.modal-html-content .b1-pronominaladverbien {
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.28;
+}
+
+.b1-pronominaladverbien .pa-top-note {
+  margin: 0 0 14px !important;
+  text-align: center;
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.b1-pronominaladverbien .pa-card {
+  overflow: hidden;
+  border: 1px solid var(--theory-line-color);
+  border-radius: 16px;
+  background: var(--theory-surface-soft);
+}
+
+.b1-pronominaladverbien .pa-card--blue {
+  --pa-card-accent: #315fbd;
+}
+
+.b1-pronominaladverbien .pa-card--orange {
+  --pa-card-accent: #ee8420;
+}
+
+.b1-pronominaladverbien .pa-card--red {
+  --pa-card-accent: #df3b34;
+}
+
+.b1-pronominaladverbien .pa-card--green {
+  --pa-card-accent: #319f50;
+}
+
+.b1-pronominaladverbien .pa-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 8px 14px;
+  color: var(--theory-on-accent-color);
+  background: var(--pa-card-accent);
+  font-size: var(--desktop-modal-header-font-size);
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.b1-pronominaladverbien .pa-card-body {
+  padding: 14px 18px;
+}
+
+.b1-pronominaladverbien .pa-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.b1-pronominaladverbien .pa-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.b1-pronominaladverbien .pa-list li + li {
+  margin-top: 10px;
+}
+
+.b1-pronominaladverbien .pa-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: var(--theory-on-accent-color);
+  font-size: 0.72em;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.b1-pronominaladverbien .pa-status--bad {
+  background: var(--theory-accent-red);
+}
+
+.b1-pronominaladverbien .pa-status--good {
+  background: var(--theory-accent-green);
+}
+
+.b1-pronominaladverbien .pa-info-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 16px;
+  padding: 10px 18px;
+  border: 1px solid var(--theory-line-color);
+  border-radius: 14px;
+  background: var(--theory-surface-soft);
+}
+
+.b1-pronominaladverbien .pa-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  color: var(--theory-accent-blue);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.b1-pronominaladverbien .pa-panel {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 18px;
+  border: 1px solid var(--theory-line-color);
+  border-radius: 16px;
+  background: var(--theory-surface-soft);
+}
+
+.b1-pronominaladverbien .pa-panel + .pa-panel {
+  margin-top: 14px;
+}
+
+.b1-pronominaladverbien .pa-panel + .pa-grid-2 {
+  margin-top: 22px;
+}
+
+.b1-pronominaladverbien .pa-panel--blue {
+  --pa-panel-accent: #315fbd;
+}
+
+.b1-pronominaladverbien .pa-panel--orange {
+  --pa-panel-accent: #ee8420;
+}
+
+.b1-pronominaladverbien .pa-panel-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--pa-panel-accent);
+  color: var(--theory-on-accent-color);
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-panel p {
+  margin: 0 !important;
+}
+
+.b1-pronominaladverbien .pa-formula {
+  margin-left: auto;
+  text-align: right;
+  font-size: var(--desktop-modal-header-font-size);
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-formula-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--theory-line-color);
+  text-align: center;
+}
+
+.b1-pronominaladverbien .pa-formula-row:last-child {
+  border-bottom: none;
+}
+
+.b1-pronominaladverbien .pa-compare {
+  width: 100%;
+  margin: 16px auto 0;
+  overflow: hidden;
+  border: 1px solid var(--theory-line-color);
+  border-radius: 14px;
+  background: var(--theory-surface-soft);
+}
+
+.b1-pronominaladverbien .pa-compare-title {
+  margin: 0 !important;
+  padding: 4px 12px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-compare-row {
+  display: grid;
+  grid-template-columns: 44px 1fr 40px 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 5px 14px;
+  border-top: 1px solid var(--theory-line-color);
+}
+
+.b1-pronominaladverbien .pa-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: var(--theory-on-accent-color);
+  font-size: 0.75em;
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-num--blue {
+  background: var(--theory-accent-blue);
+}
+
+.b1-pronominaladverbien .pa-num--orange {
+  background: var(--theory-accent-yellow);
 }
 
 @media (max-width: 1200px) {
@@ -1288,6 +1840,74 @@ table.mv-table tbody td {
   .genitiv-table th:first-child {
     font-weight: 800;
     width: 15%; /* Фиксируем ширину заголовка */
+  }
+
+  .b1-steigerung .b1-lead,
+  .b1-steigerung .b1-text,
+  .b1-steigerung .b1-examples,
+  .b1-steigerung .b1-table .b1-example,
+  .b1-steigerung .b1-cases-table,
+  .b1-steigerung .b1-note,
+  .b1-steigerung .b1-compare,
+  .b1-partizipien .part-lead,
+  .b1-partizipien .part-text,
+  .b1-partizipien .part-usage-grid,
+  .b1-partizipien .part-example-list,
+  .b1-partizipien .part-formula-examples,
+  .modal-html-content .b1-pronominaladverbien {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-steigerung .b1-formula,
+  .b1-steigerung .b1-table thead th,
+  .b1-steigerung .b1-table .b1-degree,
+  .b1-partizipien .part-term,
+  .b1-partizipien .part-activity-title,
+  .b1-pronominaladverbien .pa-card-header,
+  .b1-pronominaladverbien .pa-formula {
+    font-size: var(--tablet-modal-header-font-size) !important;
+  }
+
+  .b1-steigerung .b1-table th,
+  .b1-steigerung .b1-table td,
+  .b1-steigerung .b1-cases-table th,
+  .b1-steigerung .b1-cases-table td {
+    padding: 7px 6px !important;
+  }
+
+  .b1-partizipien .part-lead--spaced {
+    margin-top: 34px !important;
+  }
+
+  .b1-partizipien .part-term-row,
+  .b1-partizipien .part-activity-row {
+    gap: 20px;
+  }
+
+  .b1-partizipien .part-example-list {
+    gap: 20px 28px;
+  }
+
+  .b1-partizipien .part-usage-grid {
+    grid-template-columns: minmax(160px, 0.3fr) minmax(260px, 0.43fr) minmax(160px, 0.27fr);
+  }
+
+  .b1-partizipien .part-usage-cell {
+    padding: 8px 10px !important;
+  }
+
+  .b1-pronominaladverbien .pa-grid-2 {
+    gap: 14px;
+  }
+
+  .b1-pronominaladverbien .pa-card-body,
+  .b1-pronominaladverbien .pa-panel {
+    padding: 10px 12px;
+  }
+
+  .b1-pronominaladverbien .pa-panel-icon {
+    width: 42px;
+    height: 42px;
   }
 
 }
@@ -1393,7 +2013,7 @@ table.mv-table tbody td {
   }
 
   .prep-column:first-child .prep-row-item:last-child {
-    border-bottom: 1px solid #bcb9b9;
+    border-bottom: 1px solid var(--theory-line-color);
   }
 
   .theory-section--two-cols {
@@ -1403,6 +2023,117 @@ table.mv-table tbody td {
 
   .cats-visual-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .b1-steigerung .b1-lead,
+  .b1-steigerung .b1-text,
+  .b1-steigerung .b1-examples,
+  .b1-steigerung .b1-table .b1-example,
+  .b1-steigerung .b1-cases-table,
+  .b1-steigerung .b1-note,
+  .b1-steigerung .b1-compare,
+  .b1-partizipien .part-lead,
+  .b1-partizipien .part-text,
+  .b1-partizipien .part-usage-grid,
+  .b1-partizipien .part-example-list,
+  .b1-partizipien .part-formula-examples,
+  .modal-html-content .b1-pronominaladverbien {
+    font-size: var(--mobile-modal-font-size) !important;
+  }
+
+  .b1-steigerung .b1-formula,
+  .b1-steigerung .b1-table thead th,
+  .b1-steigerung .b1-table .b1-degree,
+  .b1-partizipien .part-term,
+  .b1-partizipien .part-activity-title,
+  .b1-pronominaladverbien .pa-card-header,
+  .b1-pronominaladverbien .pa-formula {
+    font-size: var(--mobile-modal-header-font-size) !important;
+  }
+
+  .b1-steigerung .b1-lead,
+  .b1-steigerung .b1-text,
+  .b1-steigerung .b1-examples {
+    margin-bottom: 12px !important;
+  }
+
+  .b1-steigerung .b1-compare {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    margin: 12px 0 16px !important;
+  }
+
+  .b1-steigerung .b1-label {
+    margin-top: 6px;
+  }
+
+  .b1-steigerung .b1-table th,
+  .b1-steigerung .b1-table td,
+  .b1-steigerung .b1-cases-table th,
+  .b1-steigerung .b1-cases-table td {
+    padding: 5px 4px !important;
+  }
+
+  .b1-partizipien .part-lead,
+  .b1-partizipien .part-text {
+    margin-bottom: 14px !important;
+  }
+
+  .b1-partizipien .part-lead--spaced {
+    margin-top: 20px !important;
+  }
+
+  .b1-partizipien .part-term-row,
+  .b1-partizipien .part-activity-row,
+  .b1-partizipien .part-example-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .b1-partizipien .part-usage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .b1-partizipien .part-usage-cell {
+    padding: 7px 8px !important;
+  }
+
+  .b1-partizipien .part-usage-cell + .part-usage-cell {
+    border-left: none;
+  }
+
+  .b1-pronominaladverbien .pa-grid-2,
+  .b1-pronominaladverbien .pa-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .b1-pronominaladverbien .pa-panel {
+    gap: 8px;
+  }
+
+  .b1-pronominaladverbien .pa-panel-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .b1-pronominaladverbien .pa-formula {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .b1-pronominaladverbien .pa-formula-row {
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 6px;
+    padding: 8px 6px;
+  }
+
+  .b1-pronominaladverbien .pa-compare-row {
+    grid-template-columns: 28px 1fr;
+    gap: 6px 8px;
+  }
+
+  .b1-pronominaladverbien .pa-compare-row .pa-arrow {
+    display: none;
   }
 }
 
@@ -1449,13 +2180,13 @@ table.mv-table tbody td {
 
 .theory-table--ein-kein th,
 .theory-table--ein-kein td {
-  border-color: #d6d6d8;
+  border-color: var(--theory-line-color);
   padding: 7px 12px;
 }
 
 .theory-table--ein-kein th + th,
 .theory-table--ein-kein td + td {
-  border-left: 1px solid #d6d6d8;
+  border-left: 1px solid var(--theory-line-color);
 }
 
 .theory-table--ein-kein thead th {
@@ -1566,11 +2297,11 @@ table.mv-table tbody td {
 }
 
 .tkm-title-part--mo {
-  color: #6a72b5;
+  color: var(--theory-accent-blue);
 }
 
 .tkm-title-part--lo {
-  color: #2f3441;
+  color: var(--theory-strong-text-color);
 }
 
 .tkm-list {
@@ -1589,7 +2320,7 @@ table.mv-table tbody td {
 .tkm-table th,
 .tkm-table td {
   padding: 8px 10px;
-  border-color: #d6d6d8;
+  border-color: var(--theory-line-color);
   text-align: center;
 }
 
@@ -1599,7 +2330,7 @@ table.mv-table tbody td {
 
 .tkm-table th + th,
 .tkm-table td + td {
-  border-left: 1px solid #d6d6d8;
+  border-left: 1px solid var(--theory-line-color);
 }
 
 .tkm-col--te {
@@ -1611,7 +2342,7 @@ table.mv-table tbody td {
 }
 
 .tkm-col--mo {
-  color: #6a72b5;
+  color: var(--theory-accent-blue);
 }
 
 @media (max-width: 600px) {
@@ -1629,3 +2360,2040 @@ table.mv-table tbody td {
     padding: 6px 8px;
   }
 }
+
+/* ===== Extracted A2 modal fragment styles ===== */
+
+.lassen-basic-card {
+                --lassen-line: var(--theory-line-color);
+                --lassen-violet: var(--theory-accent-violet);
+                --lassen-yellow: var(--theory-accent-yellow);
+            }
+
+            .lassen-basic-card .lassen-lead,
+            .lassen-basic-card .lassen-note {
+                line-height: 1.28;
+            }
+
+            .lassen-basic-card .lassen-conjugation {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 14px 0 18px;
+            }
+
+            .lassen-basic-card .lassen-conjugation td {
+                padding: 10px 18px;
+                border-bottom: 1px solid var(--lassen-line);
+                vertical-align: middle;
+            }
+
+            .lassen-basic-card .lassen-conjugation td + td {
+                border-left: 1px solid var(--lassen-line);
+            }
+
+            .lassen-basic-card .lassen-pronoun {
+                width: 44%;
+            }
+
+            .lassen-basic-card .lassen-example {
+                margin-top: 16px;
+                line-height: 1.24;
+            }
+
+            @media (max-width: 1200px) {
+                .lassen-basic-card .lassen-conjugation td {
+                    padding: 9px 12px;
+                }
+
+                .lassen-basic-card .lassen-lead,
+                .lassen-basic-card .lassen-note,
+                .lassen-basic-card .lassen-example {
+                    font-size: 0.96rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .lassen-basic-card .lassen-conjugation td {
+                    padding: 8px 6px;
+                    font-size: 0.82rem;
+                }
+
+                .lassen-basic-card .lassen-pronoun {
+                    width: 40%;
+                }
+
+                .lassen-basic-card .lassen-lead,
+                .lassen-basic-card .lassen-note,
+                .lassen-basic-card .lassen-example {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+
+.lassen-meanings-card {
+                --lassen-red: var(--theory-accent-red);
+                --lassen-line: var(--theory-line-color);
+            }
+
+            .lassen-meanings-card .lassen-grid {
+                display: grid;
+                grid-template-columns: 31% 69%;
+                gap: 20px 26px;
+                margin-top: 18px;
+            }
+
+            .lassen-meanings-card .lassen-label,
+            .lassen-meanings-card .lassen-body {
+                line-height: 1.18;
+            }
+
+            .lassen-meanings-card .lassen-block {
+                margin: 0;
+            }
+
+            .lassen-meanings-card .lassen-body p {
+                margin: 0 0 14px;
+            }
+
+            @media (max-width: 1200px) {
+                .lassen-meanings-card .lassen-grid {
+                    grid-template-columns: 30% 70%;
+                    gap: 16px 18px;
+                }
+
+                .lassen-meanings-card .lassen-label,
+                .lassen-meanings-card .lassen-body,
+                .lassen-meanings-card .theory-text {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .lassen-meanings-card .lassen-grid {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                    margin-top: 12px;
+                }
+
+                .lassen-meanings-card .lassen-label,
+                .lassen-meanings-card .lassen-body,
+                .lassen-meanings-card .theory-text {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+
+.lassen-perfekt-card {
+                --lassen-line: var(--theory-line-color);
+            }
+
+            .lassen-perfekt-card .lassen-top {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 14px 0 18px;
+                table-layout: fixed;
+            }
+
+            .lassen-perfekt-card .lassen-top td {
+                padding: 14px 16px;
+                border-bottom: 1px solid var(--lassen-line);
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .lassen-perfekt-card .lassen-top td + td {
+                border-left: 1px solid var(--lassen-line);
+            }
+
+            .lassen-perfekt-card .lassen-head {
+                font-size: 1.02em;
+                line-height: 1.14;
+            }
+
+            .lassen-perfekt-card .lassen-formula {
+                font-weight: 700;
+                line-height: 1.14;
+            }
+
+            .lassen-perfekt-card .lassen-example {
+                line-height: 1.18;
+            }
+
+            .lassen-perfekt-card .lassen-note {
+                margin-top: 18px;
+                text-align: center;
+                line-height: 1.22;
+            }
+
+            .lassen-perfekt-card .lassen-bottom {
+                margin-top: 18px;
+                text-align: center;
+                line-height: 1.22;
+            }
+
+            @media (max-width: 1200px) {
+                .lassen-perfekt-card .lassen-top td {
+                    padding: 11px 10px;
+                }
+
+                .lassen-perfekt-card .lassen-head,
+                .lassen-perfekt-card .lassen-formula,
+                .lassen-perfekt-card .lassen-example,
+                .lassen-perfekt-card .lassen-note,
+                .lassen-perfekt-card .lassen-bottom,
+                .lassen-perfekt-card .theory-text {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .lassen-perfekt-card .lassen-top td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .lassen-perfekt-card .lassen-head,
+                .lassen-perfekt-card .lassen-formula,
+                .lassen-perfekt-card .lassen-example,
+                .lassen-perfekt-card .lassen-note,
+                .lassen-perfekt-card .lassen-bottom,
+                .lassen-perfekt-card .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.idp-card {
+      --idp-line: var(--theory-line-color);
+    }
+
+    .idp-card .idp-intro {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card .idp-grid {
+      border-top: 1px solid var(--idp-line);
+    }
+
+    .idp-card .idp-row {
+      display: grid;
+      grid-template-columns: minmax(90px, 120px) minmax(260px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+    }
+
+    .idp-card .idp-row > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card .idp-pronoun {
+      font-weight: 700;
+      font-size: 1.25em;
+      line-height: 1.05;
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+
+    .idp-card .idp-rule {
+      line-height: 1.26;
+    }
+
+    .idp-card .idp-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card .idp-de {
+      display: block;
+    }
+
+    .idp-card .idp-tr {
+      display: block;
+      margin-top: 2px;
+      color: var(--theory-muted-color);
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card .idp-row {
+        grid-template-columns: minmax(86px, 110px) 1fr;
+        grid-template-areas:
+          "pron rule"
+          "pron examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card .idp-row > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card .idp-pronoun {
+        grid-area: pron;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card .idp-rule {
+        grid-area: rule;
+      }
+
+      .idp-card .idp-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card .idp-row {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "pron"
+          "rule"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card .idp-pronoun {
+        border-right: none;
+        padding-right: 0;
+        font-size: 1.18em;
+      }
+    }
+
+.idp-card--slide2 {
+      --idp-line: var(--theory-line-color);
+    }
+
+    .idp-card--slide2 .idp-lead {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-poss-grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 240px) minmax(280px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 14px 0 16px;
+      border-top: 1px solid var(--idp-line);
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+      margin: 14px 0 16px;
+    }
+
+    .idp-card--slide2 .idp-poss-grid > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card--slide2 .idp-poss-left {
+      font-weight: 700;
+      line-height: 1.18;
+    }
+
+    .idp-card--slide2 .idp-poss-desc {
+      line-height: 1.26;
+    }
+
+    .idp-card--slide2 .idp-poss-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card--slide2 .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card--slide2 .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card--slide2 .idp-tr {
+      display: block;
+      margin-top: 2px;
+      color: var(--theory-muted-color);
+    }
+
+    .idp-card--slide2 .idp-note {
+      margin: 0 0 16px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-table-title {
+      text-align: center;
+      margin: 10px 0 10px;
+      font-weight: 800;
+    }
+
+    .idp-card--slide2 .idp-decl {
+      margin-top: 6px;
+    }
+
+    .idp-card--slide2 .idp-table th,
+    .idp-card--slide2 .idp-table td {
+      text-align: center;
+      border-bottom: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th + th,
+    .idp-card--slide2 .idp-table td + td {
+      border-left: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th:first-child,
+    .idp-card--slide2 .idp-table td:first-child {
+      text-align: left;
+      white-space: nowrap;
+      padding-left: 8px;
+      padding-right: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: minmax(170px, 220px) 1fr;
+        grid-template-areas:
+          "left desc"
+          "left examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card--slide2 .idp-poss-grid > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        grid-area: left;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card--slide2 .idp-poss-desc {
+        grid-area: desc;
+      }
+
+      .idp-card--slide2 .idp-poss-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "left"
+          "desc"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+
+.infinitivsaetze-intro {
+                --inf-line: var(--theory-line-color);
+            }
+
+            .infinitivsaetze-intro .inf-lead,
+            .infinitivsaetze-intro .inf-example {
+                line-height: 1.28;
+            }
+
+            .infinitivsaetze-intro .inf-zu-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 12px;
+                table-layout: fixed;
+            }
+
+            .infinitivsaetze-intro .inf-zu-table td {
+                padding: 14px 18px;
+                border-bottom: 1px solid var(--inf-line);
+                vertical-align: top;
+                line-height: 1.2;
+            }
+
+            .infinitivsaetze-intro .inf-zu-table td + td {
+                border-left: 1px solid var(--inf-line);
+            }
+
+            .infinitivsaetze-intro .inf-col-head {
+                margin: 0 0 12px;
+                font-weight: 500;
+            }
+
+            @media (max-width: 1200px) {
+                .infinitivsaetze-intro .inf-zu-table td {
+                    padding: 11px 12px;
+                }
+
+                .infinitivsaetze-intro .inf-lead,
+                .infinitivsaetze-intro .inf-example,
+                .infinitivsaetze-intro .inf-col-head,
+                .infinitivsaetze-intro .theory-text {
+                    font-size: 0.95rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .infinitivsaetze-intro .inf-zu-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .infinitivsaetze-intro .inf-lead,
+                .infinitivsaetze-intro .inf-example,
+                .infinitivsaetze-intro .inf-col-head,
+                .infinitivsaetze-intro .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.infinitivsaetze-relations {
+                --inf-line: var(--theory-line-color);
+            }
+
+            .infinitivsaetze-relations .inf-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 16px;
+                table-layout: fixed;
+            }
+
+            .infinitivsaetze-relations .inf-table td {
+                padding: 14px 16px;
+                border-bottom: 1px solid var(--inf-line);
+                vertical-align: top;
+                line-height: 1.18;
+            }
+
+            .infinitivsaetze-relations .inf-table td + td {
+                border-left: 1px solid var(--inf-line);
+            }
+
+            .infinitivsaetze-relations .inf-left {
+                width: 36%;
+            }
+
+            .infinitivsaetze-relations .inf-right p {
+                margin: 0 0 12px;
+            }
+
+            .infinitivsaetze-relations .inf-right p:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 1200px) {
+                .infinitivsaetze-relations .inf-table td {
+                    padding: 10px 10px;
+                }
+
+                .infinitivsaetze-relations .theory-text,
+                .infinitivsaetze-relations .inf-table td {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .infinitivsaetze-relations .inf-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .infinitivsaetze-relations .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.infinitivsaetze-no-zu {
+                --inf-line: var(--theory-line-color);
+            }
+
+            .infinitivsaetze-no-zu .inf-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 16px;
+                table-layout: fixed;
+            }
+
+            .infinitivsaetze-no-zu .inf-table td {
+                padding: 14px 16px;
+                border-bottom: 1px solid var(--inf-line);
+                vertical-align: top;
+                line-height: 1.18;
+            }
+
+            .infinitivsaetze-no-zu .inf-table td + td {
+                border-left: 1px solid var(--inf-line);
+            }
+
+            .infinitivsaetze-no-zu .inf-left {
+                width: 40%;
+            }
+
+            .infinitivsaetze-no-zu .inf-right p {
+                margin: 0 0 12px;
+            }
+
+            .infinitivsaetze-no-zu .inf-right p:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 1200px) {
+                .infinitivsaetze-no-zu .inf-table td {
+                    padding: 10px 10px;
+                }
+
+                .infinitivsaetze-no-zu .theory-text,
+                .infinitivsaetze-no-zu .inf-table td {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .infinitivsaetze-no-zu .inf-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .infinitivsaetze-no-zu .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.infinitivsaetze-compare {
+                --inf-line: var(--theory-line-color);
+            }
+
+            .infinitivsaetze-compare .inf-lead,
+            .infinitivsaetze-compare .inf-front {
+                line-height: 1.26;
+            }
+
+            .infinitivsaetze-compare .inf-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 18px;
+                table-layout: fixed;
+            }
+
+            .infinitivsaetze-compare .inf-table td,
+            .infinitivsaetze-compare .inf-table th {
+                padding: 12px 14px;
+                border-bottom: 1px solid var(--inf-line);
+                vertical-align: top;
+                line-height: 1.18;
+            }
+
+            .infinitivsaetze-compare .inf-table td + td,
+            .infinitivsaetze-compare .inf-table th + th {
+                border-left: 1px solid var(--inf-line);
+            }
+
+            .infinitivsaetze-compare .inf-head {
+                text-align: center;
+                font-weight: 700;
+            }
+
+            @media (max-width: 1200px) {
+                .infinitivsaetze-compare .inf-table td,
+                .infinitivsaetze-compare .inf-table th {
+                    padding: 10px 10px;
+                }
+
+                .infinitivsaetze-compare .theory-text,
+                .infinitivsaetze-compare .inf-lead,
+                .infinitivsaetze-compare .inf-front,
+                .infinitivsaetze-compare .inf-table td,
+                .infinitivsaetze-compare .inf-table th {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .infinitivsaetze-compare .inf-table td,
+                .infinitivsaetze-compare .inf-table th {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .infinitivsaetze-compare .theory-text,
+                .infinitivsaetze-compare .inf-lead,
+                .infinitivsaetze-compare .inf-front {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.n-deklination-intro {
+                --n-line: var(--theory-line-color);
+                --n-blue: var(--theory-accent-violet);
+            }
+
+            .n-deklination-intro .n-title {
+                color: var(--n-blue);
+            }
+
+            .n-deklination-intro .n-example {
+                margin: 6px 0;
+                line-height: 1.24;
+            }
+
+            .n-deklination-intro .n-note {
+                margin: 18px 0 16px;
+                line-height: 1.28;
+            }
+
+            .n-deklination-intro .n-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 8px;
+            }
+
+            .n-deklination-intro .n-table td {
+                padding: 10px 20px;
+                border-bottom: 1px solid var(--n-line);
+                vertical-align: middle;
+            }
+
+            .n-deklination-intro .n-table td + td {
+                border-left: 1px solid var(--n-line);
+            }
+
+            .n-deklination-intro .n-case {
+                width: 32%;
+                white-space: nowrap;
+            }
+
+            @media (max-width: 1200px) {
+                .n-deklination-intro .n-table td {
+                    padding: 9px 12px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .n-deklination-intro .n-table td {
+                    padding: 8px 6px;
+                    font-size: 0.82rem;
+                }
+
+                .n-deklination-intro .n-case {
+                    width: 28%;
+                    white-space: normal;
+                }
+
+                .n-deklination-intro .n-example,
+                .n-deklination-intro .n-note {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+
+.n-deklination-groups {
+                --n-line: var(--theory-line-color);
+            }
+
+            .n-deklination-groups .n-title {
+                color: var(--theory-accent-red);
+                text-align: left;
+            }
+
+            .n-deklination-groups .n-groups-table {
+                width: 1120px;
+                min-width: 1120px;
+                border-collapse: collapse;
+                margin-top: 18px;
+                table-layout: fixed;
+            }
+
+            .n-deklination-groups .n-groups-table td {
+                padding: 12px 18px;
+                border-bottom: 1px solid var(--n-line);
+                vertical-align: top;
+                line-height: 1.22;
+            }
+
+            .n-deklination-groups .n-groups-table td + td {
+                border-left: 1px solid var(--n-line);
+            }
+
+            .n-deklination-groups .n-group-num {
+                width: 14%;
+                text-align: center;
+                font-weight: 700;
+                white-space: nowrap;
+            }
+
+            .n-deklination-groups .n-group-desc {
+                width: 56%;
+            }
+
+            .n-deklination-groups .n-group-end {
+                width: 30%;
+            }
+
+            @media (max-width: 1200px) {
+                .n-deklination-groups .n-groups-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .n-deklination-groups .n-groups-table td {
+                    padding: 10px 10px;
+                    font-size: 0.94rem;
+                    line-height: 1.2;
+                }
+
+                .n-deklination-groups .n-group-num {
+                    width: 16%;
+                }
+
+                .n-deklination-groups .n-group-desc {
+                    width: 54%;
+                }
+
+                .n-deklination-groups .n-group-end {
+                    width: 30%;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .n-deklination-groups .n-groups-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .n-deklination-groups .n-groups-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .n-deklination-groups .n-group-num {
+                    width: 18%;
+                    white-space: normal;
+                }
+
+                .n-deklination-groups .n-group-desc {
+                    width: 50%;
+                }
+
+                .n-deklination-groups .n-group-end {
+                    width: 32%;
+                }
+            }
+
+.passiv-praesens-intro {
+                --passiv-line: var(--theory-line-color);
+                --passiv-blue: var(--theory-accent-violet);
+                --passiv-red: var(--theory-accent-red);
+                --passiv-yellow: var(--theory-accent-yellow);
+            }
+
+            .passiv-praesens-intro .passiv-lead {
+                line-height: 1.32;
+            }
+
+            .passiv-praesens-intro .passiv-lead .theory-list {
+                margin-top: 6px;
+                margin-bottom: 14px;
+            }
+
+            .passiv-praesens-intro .passiv-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 18px 0 18px;
+                border-top: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-cell {
+                padding: 12px 18px 10px;
+                border-bottom: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-cell:nth-child(odd) {
+                border-right: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-label {
+                margin: 0 0 4px;
+                font-size: 0.96em;
+                line-height: 1.1;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-intro .passiv-label--blue {
+                color: var(--passiv-blue);
+            }
+
+            .passiv-praesens-intro .passiv-label--red {
+                color: var(--passiv-red);
+            }
+
+            .passiv-praesens-intro .passiv-label--yellow {
+                color: var(--passiv-yellow);
+            }
+
+            .passiv-praesens-intro .passiv-example {
+                margin: 0;
+                line-height: 1.18;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-intro .passiv-cell {
+                    padding: 10px 14px 9px;
+                }
+
+                .passiv-praesens-intro .passiv-label {
+                    font-size: 0.92em;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-intro .passiv-grid {
+                    grid-template-columns: 1fr;
+                    margin-top: 14px;
+                }
+
+                .passiv-praesens-intro .passiv-cell {
+                    padding: 9px 8px 8px;
+                }
+
+                .passiv-praesens-intro .passiv-cell:nth-child(odd) {
+                    border-right: none;
+                }
+
+                .passiv-praesens-intro .passiv-label {
+                    font-size: 0.84em;
+                }
+
+                .passiv-praesens-intro .passiv-example,
+                .passiv-praesens-intro .passiv-lead,
+                .passiv-praesens-intro .theory-text {
+                    font-size: 0.84rem;
+                    line-height: 1.25;
+                }
+            }
+
+.passiv-praesens-forms {
+                --passiv-line: var(--theory-line-color);
+            }
+
+            .passiv-praesens-forms .passiv-intro {
+                max-width: 1120px;
+                margin: 0 auto 14px;
+                line-height: 1.35;
+            }
+
+            .passiv-praesens-forms .passiv-compare-table,
+            .passiv-praesens-forms .passiv-pronouns-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .passiv-praesens-forms .passiv-compare-table td,
+            .passiv-praesens-forms .passiv-compare-table th,
+            .passiv-praesens-forms .passiv-pronouns-table td {
+                border-bottom: 1px solid var(--passiv-line);
+                padding: 10px 16px;
+                vertical-align: middle;
+            }
+
+            .passiv-praesens-forms .passiv-compare-table td + td,
+            .passiv-praesens-forms .passiv-pronouns-table td + td {
+                border-left: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-forms .passiv-head {
+                text-align: center;
+                font-size: 0.98em;
+                line-height: 1.12;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-forms .passiv-section-title {
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.08em;
+            }
+
+            .passiv-praesens-forms .passiv-formula {
+                text-align: center;
+                font-size: 1em;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-forms .passiv-example {
+                line-height: 1.14;
+            }
+
+            .passiv-praesens-forms .passiv-pronouns-table td {
+                font-size: 0.98em;
+                line-height: 1.18;
+                white-space: nowrap;
+            }
+
+            .passiv-praesens-forms .passiv-note {
+                max-width: 1120px;
+                margin: 18px auto 10px;
+                line-height: 1.35;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-forms .passiv-compare-table,
+                .passiv-praesens-forms .passiv-pronouns-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-forms .passiv-compare-table td,
+                .passiv-praesens-forms .passiv-compare-table th,
+                .passiv-praesens-forms .passiv-pronouns-table td {
+                    padding: 9px 10px;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-forms .passiv-head {
+                    font-size: 0.92em;
+                }
+
+                .passiv-praesens-forms .passiv-pronouns-table td,
+                .passiv-praesens-forms .passiv-note,
+                .passiv-praesens-forms .passiv-intro {
+                    font-size: 0.96rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-forms .passiv-compare-table,
+                .passiv-praesens-forms .passiv-pronouns-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-forms .passiv-compare-table td,
+                .passiv-praesens-forms .passiv-compare-table th,
+                .passiv-praesens-forms .passiv-pronouns-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-forms .passiv-head {
+                    font-size: 0.86em;
+                }
+
+                .passiv-praesens-forms .passiv-section-title {
+                    font-size: 1em;
+                }
+
+                .passiv-praesens-forms .passiv-formula,
+                .passiv-praesens-forms .passiv-note,
+                .passiv-praesens-forms .passiv-intro {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.passiv-praesens-prepositions {
+                --passiv-line: var(--theory-line-color);
+            }
+
+            .passiv-praesens-prepositions .passiv-intro {
+                max-width: 1140px;
+                margin: 0 auto 14px;
+                line-height: 1.35;
+            }
+
+            .passiv-praesens-prepositions .passiv-prep-table {
+                width: 1080px;
+                min-width: 1080px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .passiv-praesens-prepositions .passiv-prep-table td {
+                border-bottom: 1px solid var(--passiv-line);
+                padding: 14px 16px;
+                vertical-align: middle;
+            }
+
+            .passiv-praesens-prepositions .passiv-prep-table td + td {
+                border-left: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-prepositions .passiv-prep {
+                text-align: center;
+                font-size: 1.04em;
+                line-height: 1.12;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-prepositions .passiv-desc {
+                text-align: center;
+                line-height: 1.18;
+            }
+
+            .passiv-praesens-prepositions .passiv-examples {
+                line-height: 1.2;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-prepositions .passiv-prep-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-prepositions .passiv-prep-table td {
+                    padding: 10px 10px;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-prepositions .passiv-intro,
+                .passiv-praesens-prepositions .passiv-examples,
+                .passiv-praesens-prepositions .passiv-desc {
+                    font-size: 0.96rem;
+                }
+
+                .passiv-praesens-prepositions .passiv-prep {
+                    font-size: 0.96em;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-prepositions .passiv-prep-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-prepositions .passiv-prep-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-prepositions .passiv-intro,
+                .passiv-praesens-prepositions .passiv-examples,
+                .passiv-praesens-prepositions .passiv-desc {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.passiv-praesens-modals {
+                --passiv-line: var(--theory-line-color);
+            }
+
+            .passiv-praesens-modals .passiv-intro,
+            .passiv-praesens-modals .passiv-note {
+                max-width: 1140px;
+                margin: 0 auto 16px;
+                line-height: 1.35;
+            }
+
+            .passiv-praesens-modals .passiv-modal-table {
+                width: 1080px;
+                min-width: 1080px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .passiv-praesens-modals .passiv-modal-table td {
+                border-bottom: 1px solid var(--passiv-line);
+                padding: 10px 16px;
+                vertical-align: middle;
+            }
+
+            .passiv-praesens-modals .passiv-modal-table td + td {
+                border-left: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-modals .passiv-modal-verb {
+                width: 210px;
+                font-weight: 700;
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            .passiv-praesens-modals .passiv-modal-example {
+                line-height: 1.2;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-modals .passiv-modal-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-modals .passiv-modal-table td {
+                    padding: 9px 10px;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-modals .passiv-intro,
+                .passiv-praesens-modals .passiv-note,
+                .passiv-praesens-modals .passiv-modal-example,
+                .passiv-praesens-modals .passiv-modal-verb {
+                    font-size: 0.96rem;
+                }
+
+                .passiv-praesens-modals .passiv-modal-verb {
+                    width: 150px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-modals .passiv-modal-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-modals .passiv-modal-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-modals .passiv-intro,
+                .passiv-praesens-modals .passiv-note,
+                .passiv-praesens-modals .passiv-modal-example,
+                .passiv-praesens-modals .passiv-modal-verb {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+
+                .passiv-praesens-modals .passiv-modal-verb {
+                    width: 120px;
+                }
+            }
+
+.plusquamperfekt-card {
+                --plusquam-line: var(--theory-line-color);
+                --plusquam-violet: var(--theory-accent-violet);
+                --plusquam-yellow: var(--theory-accent-yellow);
+                --plusquam-red: var(--theory-accent-red);
+                --plusquam-blue: var(--theory-accent-blue);
+            }
+
+            .plusquamperfekt-card .plusquam-grid {
+                display: grid;
+                grid-template-columns: 22% 78%;
+                gap: 0 18px;
+                margin-top: 18px;
+            }
+
+            .plusquamperfekt-card .plusquam-label {
+                margin: 0;
+                font-weight: 500;
+                line-height: 1.16;
+            }
+
+            .plusquamperfekt-card .plusquam-example {
+                margin: 0;
+                line-height: 1.16;
+            }
+
+            .plusquamperfekt-card .plusquam-blue {
+                color: var(--plusquam-blue);
+                font-weight: 700;
+            }
+
+            .plusquamperfekt-card .plusquam-divider {
+                grid-column: 1 / -1;
+                height: 18px;
+            }
+
+            @media (max-width: 1200px) {
+                .plusquamperfekt-card .plusquam-grid {
+                    grid-template-columns: 24% 76%;
+                    gap: 0 14px;
+                    margin-top: 14px;
+                }
+
+                .plusquamperfekt-card .plusquam-label,
+                .plusquamperfekt-card .plusquam-example,
+                .plusquamperfekt-card .theory-text {
+                    font-size: 0.9rem;
+                    line-height: 1.22;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .plusquamperfekt-card .plusquam-grid {
+                    grid-template-columns: 1fr;
+                    gap: 6px 0;
+                    margin-top: 10px;
+                }
+
+                .plusquamperfekt-card .plusquam-divider {
+                    height: 8px;
+                }
+
+                .plusquamperfekt-card .plusquam-label,
+                .plusquamperfekt-card .plusquam-example,
+                .plusquamperfekt-card .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.steigerung-sheet {
+                --steigerung-line: var(--theory-line-color);
+                --steigerung-violet: var(--theory-accent-violet);
+                --steigerung-yellow: var(--theory-accent-yellow);
+                --steigerung-red: var(--theory-accent-red);
+                --steigerung-green: var(--theory-accent-green);
+            }
+
+            .steigerung-sheet .steigerung-arrows {
+                max-width: 1040px;
+                margin: 0 auto 14px;
+            }
+
+            .steigerung-sheet .steigerung-wide {
+                min-width: 1040px;
+                margin: 0 auto;
+            }
+
+            .steigerung-sheet .steigerung-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .steigerung-sheet .steigerung-table th,
+            .steigerung-sheet .steigerung-table td {
+                border-bottom: 1px solid var(--steigerung-line);
+                padding: 12px 10px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .steigerung-sheet .steigerung-table thead th {
+                font-size: var(--desktop-modal-header-font-size);
+                font-weight: 700;
+                padding-top: 0;
+                padding-bottom: 10px;
+            }
+
+            .steigerung-sheet .steigerung-table .formula-row td {
+                font-size: 0.95em;
+                line-height: 1.25;
+            }
+
+            .steigerung-sheet .steigerung-table .word-row td {
+                font-size: var(--desktop-modal-font-size);
+                white-space: nowrap;
+            }
+
+            .steigerung-sheet .steigerung-dash {
+                width: 56px;
+            }
+
+            .steigerung-sheet .steigerung-note {
+                max-width: 1120px;
+                margin: 18px auto 12px;
+                text-align: center;
+                line-height: 1.35;
+            }
+
+            .steigerung-sheet .steigerung-footnote {
+                max-width: 1100px;
+                margin: 18px auto 0;
+                text-align: center;
+                line-height: 1.3;
+            }
+
+            @media (max-width: 1200px) {
+                .steigerung-sheet .theory-title {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+
+                .steigerung-sheet .steigerung-arrows {
+                    max-width: 760px;
+                    margin-bottom: 10px;
+                }
+
+                .steigerung-sheet .steigerung-wide,
+                .steigerung-sheet .steigerung-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-sheet .steigerung-table th,
+                .steigerung-sheet .steigerung-table td {
+                    padding: 9px 6px;
+                }
+
+                .steigerung-sheet .steigerung-table thead th {
+                    font-size: 1.6rem;
+                }
+
+                .steigerung-sheet .steigerung-table .formula-row td {
+                    font-size: 0.92rem;
+                }
+
+                .steigerung-sheet .steigerung-table .word-row td {
+                    font-size: 1.05rem;
+                    white-space: normal;
+                }
+
+                .steigerung-sheet .steigerung-note,
+                .steigerung-sheet .steigerung-footnote {
+                    font-size: 0.95rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .steigerung-sheet .theory-title {
+                    font-size: 1.45rem;
+                    margin-bottom: 8px;
+                }
+
+                .steigerung-sheet .steigerung-arrows {
+                    max-width: 100%;
+                    margin-bottom: 6px;
+                }
+
+                .steigerung-sheet .steigerung-wide,
+                .steigerung-sheet .steigerung-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-sheet .steigerung-table th,
+                .steigerung-sheet .steigerung-table td {
+                    padding: 8px 4px;
+                }
+
+                .steigerung-sheet .steigerung-table thead th {
+                    font-size: 0.92rem;
+                }
+
+                .steigerung-sheet .steigerung-table .formula-row td {
+                    font-size: 0.72rem;
+                    line-height: 1.2;
+                }
+
+                .steigerung-sheet .steigerung-table .word-row td {
+                    font-size: 0.82rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .steigerung-sheet .steigerung-note,
+                .steigerung-sheet .steigerung-footnote {
+                    font-size: 0.8rem;
+                    line-height: 1.25;
+                    margin-top: 12px;
+                }
+            }
+
+.steigerung-special {
+                --steigerung-violet: var(--theory-accent-violet);
+                --steigerung-yellow: var(--theory-accent-yellow);
+                --steigerung-red: var(--theory-accent-red);
+                --steigerung-green: var(--theory-accent-green);
+            }
+
+            .steigerung-special .steigerung-special-table {
+                width: 900px;
+                min-width: 900px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .steigerung-special .steigerung-special-table td {
+                padding: 6px 10px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .steigerung-special .steigerung-main-row td {
+                font-size: var(--desktop-modal-font-size);
+                white-space: nowrap;
+            }
+
+            .steigerung-special .steigerung-translation-row td {
+                font-size: 0.95em;
+                font-style: italic;
+                color: var(--theory-text-color);
+                padding-top: 0;
+                padding-bottom: 18px;
+            }
+
+            .steigerung-special .steigerung-note {
+                max-width: 1120px;
+                margin: 18px auto 0;
+                line-height: 1.35;
+            }
+
+            @media (max-width: 1200px) {
+                .steigerung-special .theory-title {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+
+                .steigerung-special .steigerung-special-table {
+                    width: 760px;
+                    min-width: 760px;
+                }
+
+                .steigerung-special .steigerung-main-row td {
+                    font-size: 1.2rem;
+                }
+
+                .steigerung-special .steigerung-translation-row td,
+                .steigerung-special .steigerung-note {
+                    font-size: 1rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .steigerung-special .theory-title {
+                    font-size: 1.45rem;
+                    margin-bottom: 8px;
+                }
+
+                .steigerung-special .steigerung-special-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-special .steigerung-special-table td {
+                    padding: 4px 4px;
+                }
+
+                .steigerung-special .steigerung-main-row td {
+                    font-size: 0.84rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .steigerung-special .steigerung-translation-row td {
+                    font-size: 0.72rem;
+                    padding-bottom: 12px;
+                }
+
+                .steigerung-special .steigerung-note {
+                    font-size: 0.82rem;
+                    line-height: 1.25;
+                    margin-top: 12px;
+                }
+            }
+
+.steigerung-usage {
+                --steigerung-line: var(--theory-line-color);
+            }
+
+            .steigerung-usage .steigerung-intro {
+                max-width: 1120px;
+                margin: 0 auto;
+                line-height: 1.35;
+            }
+
+            .steigerung-usage .steigerung-usage-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 20px auto 0;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .steigerung-usage .steigerung-usage-table th,
+            .steigerung-usage .steigerung-usage-table td {
+                border-bottom: 1px solid var(--steigerung-line);
+                padding: 12px 14px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+
+            .steigerung-usage .steigerung-usage-table thead th {
+                font-size: var(--desktop-modal-header-font-size);
+                font-weight: 700;
+                padding-top: 0;
+                padding-bottom: 10px;
+            }
+
+            .steigerung-usage .steigerung-note {
+                max-width: 1120px;
+                margin: 18px auto 0;
+                line-height: 1.35;
+            }
+
+            @media (max-width: 1200px) {
+                .steigerung-usage .steigerung-intro,
+                .steigerung-usage .steigerung-note,
+                .steigerung-usage .theory-list li {
+                    font-size: 1rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-usage .steigerung-usage-table thead th {
+                    font-size: 1.15rem;
+                    line-height: 1.15;
+                }
+
+                .steigerung-usage .steigerung-usage-table th,
+                .steigerung-usage .steigerung-usage-table td {
+                    padding: 9px 8px;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                    font-size: 0.95rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .steigerung-usage .steigerung-intro,
+                .steigerung-usage .steigerung-note,
+                .steigerung-usage .theory-list li {
+                    font-size: 0.82rem;
+                    line-height: 1.25;
+                }
+
+                .steigerung-usage .steigerung-usage-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-usage .steigerung-usage-table thead th {
+                    font-size: 0.95rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table th,
+                .steigerung-usage .steigerung-usage-table td {
+                    padding: 8px 6px;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                    font-size: 0.8rem;
+                }
+            }
+
+.welch-card-intro {
+                --welch-line: var(--theory-line-color);
+            }
+
+            .welch-card-intro .welch-lead {
+                line-height: 1.34;
+            }
+
+            .welch-card-intro .welch-question-line {
+                margin: 4px 0;
+                line-height: 1.2;
+            }
+
+            .welch-card-intro .welch-compare-grid {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                gap: 18px 22px;
+                margin: 16px 0 18px;
+                align-items: start;
+            }
+
+            .welch-card-intro .welch-compare-label {
+                line-height: 1.18;
+            }
+
+            .welch-card-intro .welch-compare-example {
+                line-height: 1.22;
+            }
+
+            .welch-card-intro .welch-remember p {
+                margin: 8px 0;
+                line-height: 1.28;
+            }
+
+            @media (max-width: 1200px) {
+                .welch-card-intro .welch-compare-grid {
+                    grid-template-columns: 28% 72%;
+                    gap: 16px 18px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .welch-card-intro .welch-compare-grid {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                }
+
+                .welch-card-intro .welch-question-line,
+                .welch-card-intro .welch-compare-label,
+                .welch-card-intro .welch-compare-example,
+                .welch-card-intro .welch-remember p,
+                .welch-card-intro .welch-lead {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+
+.welch-card-tables {
+                --welch-line: var(--theory-line-color);
+            }
+
+            .welch-card-tables .welch-block-title {
+                text-align: center;
+                line-height: 1.2;
+                margin: 0 auto 12px;
+                max-width: 1120px;
+            }
+
+            .welch-card-tables .welch-table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: fixed;
+                margin-top: 10px;
+            }
+
+            .welch-card-tables .welch-table th,
+            .welch-card-tables .welch-table td {
+                padding: 10px 12px;
+                border-bottom: 1px solid var(--welch-line);
+                border-right: 1px solid var(--welch-line);
+                text-align: center;
+                vertical-align: middle;
+                line-height: 1.16;
+            }
+
+            .welch-card-tables .welch-table th:last-child,
+            .welch-card-tables .welch-table td:last-child {
+                border-right: none;
+            }
+
+            .welch-card-tables .welch-table tbody tr:last-child td,
+            .welch-card-tables .welch-table tbody tr:last-child th {
+                border-bottom: none;
+            }
+
+            .welch-card-tables .welch-spacer {
+                height: 22px;
+            }
+
+            @media (max-width: 1200px) {
+                .welch-card-tables .welch-table th,
+                .welch-card-tables .welch-table td {
+                    padding: 9px 8px;
+                    font-size: 0.96rem;
+                }
+
+                .welch-card-tables .welch-block-title {
+                    font-size: 1rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .welch-card-tables .welch-table th,
+                .welch-card-tables .welch-table td {
+                    padding: 7px 5px;
+                    font-size: 0.76rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .welch-card-tables .welch-block-title {
+                    font-size: 0.82rem;
+                    line-height: 1.22;
+                }
+
+                .welch-card-tables .welch-spacer {
+                    height: 16px;
+                }
+            }
+
+.idp-card {
+      --idp-line: var(--theory-line-color);
+    }
+
+    .idp-card .idp-intro {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card .idp-grid {
+      border-top: 1px solid var(--idp-line);
+    }
+
+    .idp-card .idp-row {
+      display: grid;
+      grid-template-columns: minmax(90px, 120px) minmax(260px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+    }
+
+    .idp-card .idp-row > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card .idp-pronoun {
+      font-weight: 700;
+      font-size: 1.25em;
+      line-height: 1.05;
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+
+    .idp-card .idp-rule {
+      line-height: 1.26;
+    }
+
+    .idp-card .idp-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card .idp-de {
+      display: block;
+    }
+
+    .idp-card .idp-tr {
+      display: block;
+      margin-top: 2px;
+      font-style: italic;
+      color: var(--theory-muted-color);
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card .idp-row {
+        grid-template-columns: minmax(86px, 110px) 1fr;
+        grid-template-areas:
+          "pron rule"
+          "pron examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card .idp-row > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card .idp-pronoun {
+        grid-area: pron;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card .idp-rule {
+        grid-area: rule;
+      }
+
+      .idp-card .idp-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card .idp-row {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "pron"
+          "rule"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card .idp-pronoun {
+        border-right: none;
+        padding-right: 0;
+        font-size: 1.18em;
+      }
+
+      .idp-card .idp-tr {
+        font-style: normal;
+      }
+    }
+
+.idp-card--slide2 {
+      --idp-line: var(--theory-line-color);
+    }
+
+    .idp-card--slide2 .idp-lead {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-poss-grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 240px) minmax(280px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 14px 0 16px;
+      border-top: 1px solid var(--idp-line);
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+      margin: 14px 0 16px;
+    }
+
+    .idp-card--slide2 .idp-poss-grid > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card--slide2 .idp-poss-left {
+      font-weight: 700;
+      line-height: 1.18;
+    }
+
+    .idp-card--slide2 .idp-poss-desc {
+      line-height: 1.26;
+    }
+
+    .idp-card--slide2 .idp-poss-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card--slide2 .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card--slide2 .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card--slide2 .idp-tr {
+      display: block;
+      margin-top: 2px;
+      font-style: italic;
+      color: var(--theory-muted-color);
+    }
+
+    .idp-card--slide2 .idp-note {
+      margin: 0 0 16px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-table-title {
+      text-align: center;
+      margin: 10px 0 10px;
+      font-weight: 800;
+    }
+
+    .idp-card--slide2 .idp-decl {
+      margin-top: 6px;
+    }
+
+    .idp-card--slide2 .idp-table th,
+    .idp-card--slide2 .idp-table td {
+      text-align: center;
+      border-bottom: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th + th,
+    .idp-card--slide2 .idp-table td + td {
+      border-left: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th:first-child,
+    .idp-card--slide2 .idp-table td:first-child {
+      text-align: left;
+      white-space: nowrap;
+      padding-left: 8px;
+      padding-right: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: minmax(170px, 220px) 1fr;
+        grid-template-areas:
+          "left desc"
+          "left examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card--slide2 .idp-poss-grid > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        grid-area: left;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card--slide2 .idp-poss-desc {
+        grid-area: desc;
+      }
+
+      .idp-card--slide2 .idp-poss-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "left"
+          "desc"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        border-right: none;
+        padding-right: 0;
+      }
+
+      .idp-card--slide2 .idp-tr {
+        font-style: normal;
+      }
+    }

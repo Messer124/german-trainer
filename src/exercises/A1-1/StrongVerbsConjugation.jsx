@@ -3,23 +3,14 @@ import data from "../../../data/A1-1/strong-verb-conjugation.json";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveShowMore from "../../components/ProgressiveShowMore";
 import hint from "../../../data/A1-1/images/strong-verbs-conj.html?raw";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
-import { useProgressiveItems } from "../../hooks/useProgressiveItems";
 
 const STORAGE_KEY = "irregular-verbs-answers";
 
 function StrongVerbsConjugation() {
   const [showImage, setShowImage] = useState(false);
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const {
-    visibleItems,
-    hasMore,
-    showMore,
-    visibleCount,
-    totalCount,
-  } = useProgressiveItems(data.items);
 
   useEffect(() => {
     const handleShowHint = () => {
@@ -52,7 +43,7 @@ function StrongVerbsConjugation() {
             </tr>
             </thead>
             <tbody>
-            {visibleItems.map((item, index) => (
+            {data.items.map((item, index) => (
                 <tr key={index}>
                   {["ich", "du", "er/sie/es", "wir/Sie/sie", "ihr"].map((pronoun) => {
                     const inputKey = `irregular-verbs-${index}-${pronoun}`;
@@ -91,12 +82,6 @@ function StrongVerbsConjugation() {
             ))}
             </tbody>
           </table>
-          <ProgressiveShowMore
-              hasMore={hasMore}
-              onShowMore={showMore}
-              visibleCount={visibleCount}
-              totalCount={totalCount}
-          />
         </div>
       </div>
   );

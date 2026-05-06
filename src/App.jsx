@@ -1,4 +1,4 @@
-import { Suspense, useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
     Globe2,
@@ -11,56 +11,33 @@ import {
 import { useLocale } from "./contexts/LocaleContext";
 import { useLevel } from "./contexts/LevelContext";
 import translations from "./locales/locales";
-import { EXERCISES_BY_LEVEL } from "./config/exercises";
+import { loadExercisesForLevel } from "./config/exercises";
 import { useColoredInputs } from "./hooks/useColoredInputs";
 import { clearAnswersByStorageKey } from "./hooks/usePersistentAnswers";
-import { usePerformanceMode } from "./hooks/usePerformanceMode";
 import "./css/App.css";
 
-const DEFAULT_LEVEL = "A1.1";
 const MOBILE_BREAKPOINT = 600;
 const THEME_STORAGE_KEY = "app-theme";
-
-function getTabsForLevel(level) {
-    return EXERCISES_BY_LEVEL[level] || EXERCISES_BY_LEVEL[DEFAULT_LEVEL];
-}
-
-function requestIdleTask(callback, timeout) {
-    if (typeof window === "undefined") return null;
-
-    if ("requestIdleCallback" in window) {
-        const id = window.requestIdleCallback(callback, { timeout });
-        return () => window.cancelIdleCallback(id);
-    }
-
-    const id = window.setTimeout(callback, timeout);
-    return () => window.clearTimeout(id);
-}
+const SETTINGS_OPEN_STORAGE_KEY = "sidebar-settings-open";
 
 export default function App() {
     const { locale, setLocale } = useLocale();
     const { level, setLevel } = useLevel();
 
-    const [currentTab, setCurrentTab] = useState(() => {
-        const tabsForLevel = getTabsForLevel(level);
-        const keys = Object.keys(tabsForLevel);
-
-        if (typeof window !== "undefined") {
-            const savedTab = localStorage.getItem(`last-tab-${level}`);
-            if (savedTab && tabsForLevel[savedTab]) {
-                return savedTab;
-            }
+    const [tabsForLevel, setTabsForLevel] = useState({});
+    const [currentTab, setCurrentTab] = useState(null);
+    const [isLevelLoading, setIsLevelLoading] = useState(true);
+    const [levelLoadError, setLevelLoadError] = useState(null);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    const [settingsOpen, setSettingsOpen] = useState(() => {
+        if (typeof window === "undefined") {
+            return true;
         }
 
-        return keys[0];
+        const savedSettingsOpen = localStorage.getItem(SETTINGS_OPEN_STORAGE_KEY);
+        return savedSettingsOpen === null ? true : savedSettingsOpen === "true";
     });
-    const [renderedTab, setRenderedTab] = useState(currentTab);
-    const [isExerciseLoading, setIsExerciseLoading] = useState(false);
-
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-    const [settingsOpen, setSettingsOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-    const performanceMode = usePerformanceMode();
     const [theme, setTheme] = useState(() => {
         if (typeof window === "undefined") {
             return "light";
@@ -72,43 +49,69 @@ export default function App() {
 
     const contentRef = useRef(null);
     const hasThemeMountedRef = useRef(false);
-    const tabsForLevel = getTabsForLevel(level);
     const labels = translations[locale].labels;
-    const isLowPerformanceMode = performanceMode === "low";
 
+    // Загружаем весь выбранный уровень целиком.
     useEffect(() => {
-        if (typeof document === "undefined") return;
+        let cancelled = false;
 
-        document.documentElement.setAttribute("data-performance", performanceMode);
-    }, [performanceMode]);
+        setIsLevelLoading(true);
+        setLevelLoadError(null);
 
-    // переключение вкладок при смене уровня
-    useEffect(() => {
-        const tabs = getTabsForLevel(level);
-        const keys = Object.keys(tabs);
+        loadExercisesForLevel(level)
+            .then((tabs) => {
+                if (cancelled) return;
 
-        setCurrentTab((prev) => {
-            if (tabs[prev]) return prev;
+                setTabsForLevel(tabs);
+                setCurrentTab(() => {
+                    const keys = Object.keys(tabs);
 
-            if (typeof window !== "undefined") {
-                const savedTab = localStorage.getItem(`last-tab-${level}`);
-                if (savedTab && tabs[savedTab]) {
-                    return savedTab;
+                    if (typeof window !== "undefined") {
+                        const savedTab = localStorage.getItem(`last-tab-${level}`);
+                        if (savedTab && tabs[savedTab]) {
+                            return savedTab;
+                        }
+                    }
+
+                    return keys[0] ?? null;
+                });
+            })
+            .catch((error) => {
+                if (cancelled) return;
+                setTabsForLevel({});
+                setCurrentTab(null);
+                setLevelLoadError(error);
+            })
+            .finally(() => {
+                if (!cancelled) {
+                    setIsLevelLoading(false);
                 }
-            }
+            });
 
-            return keys[0];
-        });
+        return () => {
+            cancelled = true;
+        };
     }, [level]);
+
+    useEffect(() => {
+        if (!currentTab) return;
+
+        if (!tabsForLevel[currentTab]) {
+            const firstKey = Object.keys(tabsForLevel)[0] ?? null;
+            if (firstKey !== currentTab) {
+                setCurrentTab(firstKey);
+            }
+        }
+    }, [currentTab, tabsForLevel]);
 
     // сохранение выбора и анимация контента упражнения
     useEffect(() => {
+        if (!currentTab) return;
+
         if (typeof window !== "undefined") {
             localStorage.setItem(`last-tab-${level}`, currentTab);
             localStorage.setItem("last-level", level);
         }
-
-        if (performanceMode === "low") return;
 
         const node = contentRef.current;
         if (!node) return;
@@ -116,75 +119,13 @@ export default function App() {
         node.classList.remove("fade-in");
         void node.offsetWidth;
         node.classList.add("fade-in");
-    }, [currentTab, level, performanceMode]);
+    }, [currentTab, level]);
 
     useEffect(() => {
-        if (typeof window === "undefined") return undefined;
+        if (typeof window === "undefined") return;
 
-        const exercises = Object.values(getTabsForLevel(level)).filter((item) => typeof item?.load === "function");
-        const initialDelay = isLowPerformanceMode ? 1800 : 700;
-        const idleTimeout = isLowPerformanceMode ? 2200 : 900;
-        const betweenLoadsDelay = isLowPerformanceMode ? 700 : 180;
-        let cancelled = false;
-        let index = 0;
-        let cancelIdle = null;
-        let delayTimer = null;
-
-        const scheduleNext = () => {
-            if (cancelled || index >= exercises.length || document.visibilityState === "hidden") return;
-
-            cancelIdle = requestIdleTask(() => {
-                if (cancelled || index >= exercises.length) return;
-
-                const exercise = exercises[index];
-                index += 1;
-                exercise.load().catch(() => {
-                    // Prefetch is opportunistic: failed chunks will be loaded normally on demand.
-                });
-
-                delayTimer = window.setTimeout(scheduleNext, betweenLoadsDelay);
-            }, idleTimeout);
-        };
-
-        delayTimer = window.setTimeout(scheduleNext, initialDelay);
-
-        return () => {
-            cancelled = true;
-            cancelIdle?.();
-            window.clearTimeout(delayTimer);
-        };
-    }, [level, isLowPerformanceMode]);
-
-    useEffect(() => {
-        if (!tabsForLevel[currentTab]) return undefined;
-
-        if (renderedTab === currentTab) {
-            setIsExerciseLoading(false);
-            return undefined;
-        }
-
-        setIsExerciseLoading(true);
-
-        if (typeof window === "undefined") {
-            setRenderedTab(currentTab);
-            setIsExerciseLoading(false);
-            return undefined;
-        }
-
-        const renderDelay = isLowPerformanceMode ? 140 : 40;
-        let timeoutId = null;
-        let frameId = window.requestAnimationFrame(() => {
-            timeoutId = window.setTimeout(() => {
-                setRenderedTab(currentTab);
-                setIsExerciseLoading(false);
-            }, renderDelay);
-        });
-
-        return () => {
-            window.cancelAnimationFrame(frameId);
-            window.clearTimeout(timeoutId);
-        };
-    }, [currentTab, renderedTab, tabsForLevel, isLowPerformanceMode]);
+        localStorage.setItem(SETTINGS_OPEN_STORAGE_KEY, String(settingsOpen));
+    }, [settingsOpen]);
 
     useEffect(() => {
         if (typeof document === "undefined") return;
@@ -249,7 +190,7 @@ export default function App() {
 
         const keepKeyboardOpenOnEyeTap = (event) => {
             const eyeButton = event.target instanceof Element
-                ? event.target.closest(".eye-container--button, .hint-button, .expanding-input__eye-button")
+                ? event.target.closest(".eye-container--button, .hint-button, .help-pill, .expanding-input__eye-button")
                 : null;
 
             if (eyeButton) {
@@ -281,27 +222,23 @@ export default function App() {
         };
     }, []);
 
-    if (!tabsForLevel[currentTab]) {
-        const firstKey = Object.keys(tabsForLevel)[0];
-        setCurrentTab(firstKey);
-        return null;
-    }
+    const currentExercise = currentTab ? tabsForLevel[currentTab] : null;
+    const CurrentComponent = currentExercise?.component;
+    const storageKey = currentExercise?.storageKey;
+    const hasHint = currentExercise?.hasHint ?? false;
 
-    const currentExercise = tabsForLevel[currentTab];
-    const renderedExercise = tabsForLevel[renderedTab] ?? currentExercise;
-    const { component: RenderedComponent } = renderedExercise;
-    const { storageKey, hasHint } = currentExercise;
-
-    const instructions = currentExercise.instructions?.[locale];
+    const instructions = currentExercise?.instructions?.[locale] ?? "";
     const headerButton = hasHint ? (
         <button
             type="button"
-            className="hint-button"
+            className="help-pill"
             data-modal-open="true"
             onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-            aria-label={locale === "en" ? "Show hint" : "Показать подсказку"}
         >
-            !
+            <span className="help-pill__icon" aria-hidden="true">i</span>
+            <span className="help-pill__label">
+                {locale === "en" ? "Info" : "Теория"}
+            </span>
         </button>
     ) : null;
     const isDarkTheme = theme === "dark";
@@ -314,7 +251,7 @@ export default function App() {
     const closeSidebar = () => setIsSidebarOpen(false);
     const openSidebar = () => setIsSidebarOpen(true);
 
-    useColoredInputs(renderedTab);
+    useColoredInputs();
 
     // ---------- SIDEBAR (одна разметка для desktop + mobile) ----------
 
@@ -332,7 +269,7 @@ export default function App() {
                 <option value="A1.1">A1.1</option>
                 <option value="A1.2">A1.2</option>
                 <option value="A2">A2</option>
-                {/*<option value="B1">B1 in progress</option>*/}
+                <option value="B1">B1</option>
             </select>
 
             <label className="sidebar-settings-row sidebar-settings-row--mt">
@@ -370,15 +307,13 @@ export default function App() {
         </div>
     );
 
-    const SidebarComponent = isLowPerformanceMode ? "aside" : motion.aside;
-
     const sidebar = (
-        <SidebarComponent
+        <motion.aside
             key="sidebar"
             className={`sidebar ${
                 isMobile ? "sidebar--mobile" : "sidebar--desktop"
             } ${!isMobile && !isSidebarOpen ? "sidebar--collapsed" : ""}`}
-            {...(!isLowPerformanceMode && isMobile
+            {...(isMobile
                 ? {
                     initial: {opacity: 0, x: -20},
                     animate: {opacity: 1, x: 0},
@@ -413,36 +348,28 @@ export default function App() {
                 {/* середина: настройки + список упражнений, это область со скроллом */}
                 <div className="sidebar-middle">
                     {/* НАСТРОЙКИ — обёртка анимирует height, внутри сама карточка */}
-                    {isLowPerformanceMode ? (
-                        settingsOpen ? (
-                            <div className="sidebar-settings-dropdown-wrapper sidebar-settings-dropdown-wrapper--static">
-                                {settingsDropdownContent}
-                            </div>
-                        ) : null
-                    ) : (
-                        <motion.div
-                            className="sidebar-settings-dropdown-wrapper"
-                            initial={false}
-                            animate={settingsOpen ? "open" : "collapsed"}
-                            variants={{
-                                open: {
-                                    opacity: 1,
-                                    height: "auto",
-                                    marginTop: 10,
-                                    marginBottom: 14,
-                                },
-                                collapsed: {
-                                    opacity: 0,
-                                    height: 0,
-                                    marginTop: 0,
-                                    marginBottom: 0,
-                                },
-                            }}
-                            transition={{duration: 0.25, ease: "easeInOut"}}
-                        >
-                            {settingsDropdownContent}
-                        </motion.div>
-                    )}
+                    <motion.div
+                        className="sidebar-settings-dropdown-wrapper"
+                        initial={false}
+                        animate={settingsOpen ? "open" : "collapsed"}
+                        variants={{
+                            open: {
+                                opacity: 1,
+                                height: "auto",
+                                marginTop: 10,
+                                marginBottom: 14,
+                            },
+                            collapsed: {
+                                opacity: 0,
+                                height: 0,
+                                marginTop: 0,
+                                marginBottom: 0,
+                            },
+                        }}
+                        transition={{duration: 0.25, ease: "easeInOut"}}
+                    >
+                        {settingsDropdownContent}
+                    </motion.div>
 
                     {/* СПИСОК УПРАЖНЕНИЙ */}
                     <div className="sidebar-exercises">
@@ -451,34 +378,22 @@ export default function App() {
                                 const isActive = currentTab === key;
                                 const exerciseItem = tabsForLevel[key];
                                 const label = exerciseItem?.title?.[locale] ?? key;
-                                const prefetchExercise = () => exerciseItem?.load?.();
-
-                                const TabButton = isLowPerformanceMode ? "button" : motion.button;
 
                                 return (
-                                    <TabButton
+                                    <motion.button
                                         key={key}
                                         type="button"
                                         className={`sidebar-tab sidebar-tab--${key} ${
                                             isActive ? "sidebar-tab--active" : ""
                                         }`}
-                                        onMouseEnter={prefetchExercise}
-                                        onFocus={prefetchExercise}
                                         onClick={() => {
-                                            prefetchExercise();
                                             setCurrentTab(key);
                                             if (isMobile) closeSidebar();
                                         }}
-                                        {...(!isLowPerformanceMode
-                                            ? {
-                                                initial: {opacity: 0, x: -10},
-                                                animate: {opacity: 1, x: 0},
-                                            }
-                                            : {})}
+                                        initial={{opacity: 0, x: -10}}
+                                        animate={{opacity: 1, x: 0}}
                                     >
-                                        {isActive && (isLowPerformanceMode ? (
-                                            <div className="sidebar-tab-active-bg"/>
-                                        ) : (
+                                        {isActive && (
                                             <motion.div
                                                 className="sidebar-tab-active-bg"
                                                 layoutId="sidebar-active-bg"
@@ -488,9 +403,9 @@ export default function App() {
                                                     damping: 30,
                                                 }}
                                             />
-                                        ))}
+                                        )}
                                         <span className="sidebar-tab-label">{label}</span>
-                                    </TabButton>
+                                    </motion.button>
                                 );
                             })}
                         </div>
@@ -506,7 +421,7 @@ export default function App() {
                     {labels.clearAnswers}
                 </button>
             </div>
-        </SidebarComponent>
+        </motion.aside>
     );
 
     // ---------- MAIN (header + exercise-container) ----------
@@ -514,6 +429,18 @@ export default function App() {
     const exerciseLoading = (
         <div className="exercise-loading">
             {locale === "en" ? "Loading exercise..." : "Загрузка упражнения..."}
+        </div>
+    );
+
+    const emptyLevelMessage = (
+        <div className="exercise-loading">
+            {locale === "en" ? "No exercises in this level yet." : "На этом уровне пока нет упражнений."}
+        </div>
+    );
+
+    const levelErrorMessage = (
+        <div className="exercise-loading">
+            {locale === "en" ? "Could not load this level." : "Не удалось загрузить этот уровень."}
         </div>
     );
 
@@ -542,13 +469,13 @@ export default function App() {
             <main className="exercise-container">
                 <div ref={contentRef} className="exercise-card fade-in">
                     <div className="exercise-scroll">
-                        {isExerciseLoading ? (
-                            exerciseLoading
-                        ) : (
-                            <Suspense fallback={exerciseLoading}>
-                                <RenderedComponent key={renderedTab}/>
-                            </Suspense>
-                        )}
+                        {isLevelLoading
+                            ? exerciseLoading
+                            : levelLoadError
+                                ? levelErrorMessage
+                                : CurrentComponent
+                                    ? <CurrentComponent key={currentTab}/>
+                                    : emptyLevelMessage}
                     </div>
                 </div>
             </main>
@@ -561,11 +488,7 @@ export default function App() {
         </div>
     );
 
-    const mobileMain = isLowPerformanceMode ? (
-        <div key="main" className="main main--mobile-panel">
-            {mainContent}
-        </div>
-    ) : (
+    const mobileMain = (
         <motion.div
             key="main"
             className="main main--mobile-panel"
@@ -584,13 +507,9 @@ export default function App() {
         return (
             <div className="app-layout app-layout--mobile">
                 <div className="mobile-stage">
-                    {isLowPerformanceMode ? (
-                        isSidebarOpen ? sidebar : mobileMain
-                    ) : (
-                        <AnimatePresence initial={false} mode="sync">
-                            {isSidebarOpen ? sidebar : mobileMain}
-                        </AnimatePresence>
-                    )}
+                    <AnimatePresence initial={false} mode="sync">
+                        {isSidebarOpen ? sidebar : mobileMain}
+                    </AnimatePresence>
                 </div>
             </div>
         );

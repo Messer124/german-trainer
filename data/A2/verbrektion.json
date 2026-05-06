@@ -39,12 +39,6 @@
       ]
     },
     {
-      "sentence": "___ kümmerst du dich?",
-      "answers": [
-        "Worum"
-      ]
-    },
-    {
       "sentence": "Sie träumt ___ einem neuen Job.",
       "answers": [
         "von"
@@ -90,12 +84,6 @@
       "sentence": "Ich habe ___ dem Problem gehört.",
       "answers": [
         "von"
-      ]
-    },
-    {
-      "sentence": "Erinnern Sie sich noch ___, wie es war, als Sie nach Deutschland gekommen sind?",
-      "answers": [
-        "daran"
       ]
     },
     {
@@ -153,12 +141,6 @@
       ]
     },
     {
-      "sentence": "___ hängt das ab?",
-      "answers": [
-        "Wovon"
-      ]
-    },
-    {
       "sentence": "Das gehört ___ der Familie.",
       "answers": [
         "zu"
@@ -186,12 +168,6 @@
       "sentence": "Wir freuen uns ___ den Sieg.",
       "answers": [
         "über"
-      ]
-    },
-    {
-      "sentence": "___ zweifelst du?",
-      "answers": [
-        "Woran"
       ]
     },
     {
@@ -243,12 +219,6 @@
       ]
     },
     {
-      "sentence": "Erzählen Sie doch ___, wie Sie eine Wohnung gefunden haben.",
-      "answers": [
-        "davon"
-      ]
-    },
-    {
       "sentence": "Kannst du bitte ___ meine Tasche aufpassen?",
       "answers": [
         "auf"
@@ -285,12 +255,6 @@
       ]
     },
     {
-      "sentence": "___ träumst du?",
-      "answers": [
-        "Wovon"
-      ]
-    },
-    {
       "sentence": "Nimmst du ___ der Party teil?",
       "answers": [
         "an"
@@ -300,12 +264,6 @@
       "sentence": "Wir fangen ___ der Übung an.",
       "answers": [
         "mit"
-      ]
-    },
-    {
-      "sentence": "Ich warte ___, dass du kommst.",
-      "answers": [
-        "darauf"
       ]
     },
     {
@@ -324,12 +282,6 @@
       "sentence": "Er redet ___ einer Frau.",
       "answers": [
         "von"
-      ]
-    },
-    {
-      "sentence": "Ich verzichte ___, heute ins Kino zu gehen.",
-      "answers": [
-        "darauf"
       ]
     },
     {
@@ -357,21 +309,9 @@
       ]
     },
     {
-      "sentence": "Ich beschäftige mich ___, wie das funktioniert.",
-      "answers": [
-        "damit"
-      ]
-    },
-    {
       "sentence": "Ich verabschiede mich ___ meinen Kollegen.",
       "answers": [
         "von"
-      ]
-    },
-    {
-      "sentence": "___ fragst du?",
-      "answers": [
-        "Wonach"
       ]
     },
     {
@@ -405,27 +345,9 @@
       ]
     },
     {
-      "sentence": "Was hast du ___ gehört?",
-      "answers": [
-        "davon"
-      ]
-    },
-    {
       "sentence": "___ wem sprichst du?",
       "answers": [
         "Mit"
-      ]
-    },
-    {
-      "sentence": "Ich ärgere mich ___, dass der Bus zu spät ist.",
-      "answers": [
-        "darüber"
-      ]
-    },
-    {
-      "sentence": "Ich interessiere mich ___, wie das funktioniert.",
-      "answers": [
-        "dafür"
       ]
     },
     {
@@ -438,12 +360,6 @@
       "sentence": "Diese Aufgabe gehört ___ diesem Kapitel.",
       "answers": [
         "zu"
-      ]
-    },
-    {
-      "sentence": "___ hörst du auf?",
-      "answers": [
-        "Womit"
       ]
     },
     {
@@ -471,12 +387,6 @@
       ]
     },
     {
-      "sentence": "Ich danke dir ___, dass du gekommen bist.",
-      "answers": [
-        "dafür"
-      ]
-    },
-    {
       "sentence": "Ich lade meine Freunde ___ dem Geburtstag ein.",
       "answers": [
         "zu"
@@ -489,60 +399,15 @@
       ]
     },
     {
-      "sentence": "___ denkst du gerade?",
-      "answers": [
-        "Woran"
-      ]
-    },
-    {
       "sentence": "Ich bedanke mich ___ deine Hilfe.",
       "answers": [
         "für"
       ]
     },
     {
-      "sentence": "Ich freue mich ___, dich wiederzusehen.",
-      "answers": [
-        "darauf"
-      ]
-    },
-    {
       "sentence": "Die Soße schmeckt ___ Knoblauch.",
       "answers": [
         "nach"
-      ]
-    },
-    {
-      "sentence": "___ glaubst du?",
-      "answers": [
-        "Woran"
-      ]
-    },
-    {
-      "sentence": "Ich sorge ___, dass du pünktlich bist.",
-      "answers": [
-        "dafür"
-      ]
-    },
-    {
-      "sentence": "Ich interessiere mich für Politik. Interessierst du dich auch ____ oder ____ interessierst du dich?",
-      "answers": [
-        "dafür",
-        "wofür"
-      ]
-    },
-    {
-      "sentence": "Ich freue mich auf das Wochenende. Freut ihr euch auch ____ oder ____ freut ihr euch?",
-      "answers": [
-        "darauf",
-        "worauf"
-      ]
-    },
-    {
-      "sentence": "Ich beschäftige mich gerne mit meinem Haushalt und Garten. Beschäftigen Sie sich auch gerne ____ oder ____ beschäftigen Sie sich gerne?",
-      "answers": [
-        "damit",
-        "womit"
       ]
     },
     {
@@ -560,6 +425,141 @@
         "an",
         "für",
         "für"
+      ]
+    },
+    {
+      "sentence": "Ich kümmere mich ___ den Hund.",
+      "answers": [
+        "um"
+      ]
+    },
+    {
+      "sentence": "Erinnern Sie sich noch ___ Ihre erste Wohnung?",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Der Erfolg hängt ___ guter Planung ab.",
+      "answers": [
+        "von"
+      ]
+    },
+    {
+      "sentence": "Ich zweifle ___ seiner Antwort.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Erzählen Sie doch ___ Ihrem neuen Job.",
+      "answers": [
+        "von"
+      ]
+    },
+    {
+      "sentence": "Sie träumt ___ einer Reise nach Spanien.",
+      "answers": [
+        "von"
+      ]
+    },
+    {
+      "sentence": "Ich warte ___ den Zug.",
+      "answers": [
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich verzichte ___ Kaffee.",
+      "answers": [
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich beschäftige mich ___ Grammatik.",
+      "answers": [
+        "mit"
+      ]
+    },
+    {
+      "sentence": "Ich frage ___ dem Weg.",
+      "answers": [
+        "nach"
+      ]
+    },
+    {
+      "sentence": "Ich habe ___ dem Konzert gehört.",
+      "answers": [
+        "von"
+      ]
+    },
+    {
+      "sentence": "Ich ärgere mich ___ den Lärm.",
+      "answers": [
+        "über"
+      ]
+    },
+    {
+      "sentence": "Ich interessiere mich ___ Geschichte.",
+      "answers": [
+        "für"
+      ]
+    },
+    {
+      "sentence": "Er hört ___ der Arbeit auf.",
+      "answers": [
+        "mit"
+      ]
+    },
+    {
+      "sentence": "Ich danke dir ___ deine Nachricht.",
+      "answers": [
+        "für"
+      ]
+    },
+    {
+      "sentence": "Ich denke ___ meine Familie.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich freue mich ___ deinen Besuch.",
+      "answers": [
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich glaube ___ deine Idee.",
+      "answers": [
+        "an"
+      ]
+    },
+    {
+      "sentence": "Ich sorge ___ Ruhe im Zimmer.",
+      "answers": [
+        "für"
+      ]
+    },
+    {
+      "sentence": "Ich interessiere mich ___ Politik. Interessierst du dich auch ___ Sport?",
+      "answers": [
+        "für",
+        "für"
+      ]
+    },
+    {
+      "sentence": "Ich freue mich ___ das Wochenende. Freut ihr euch auch ___ den Urlaub?",
+      "answers": [
+        "auf",
+        "auf"
+      ]
+    },
+    {
+      "sentence": "Ich beschäftige mich gerne ___ meinem Haushalt und Garten. Beschäftigen Sie sich auch gerne ___ dem Garten?",
+      "answers": [
+        "mit",
+        "mit"
       ]
     }
   ]

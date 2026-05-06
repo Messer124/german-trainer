@@ -1,0 +1,317 @@
+{
+  "title": {
+    "ru": "Steigerung von Adjektiven",
+    "en": "Steigerung von Adjektiven"
+  },
+  "instructions": {
+    "ru": "Добавьте правильные окончания к прилагательным",
+    "en": "Add the correct endings to the adjectives"
+  },
+  "items": [
+    {
+      "sentence": "Ich möchte einen genauer___ Plan haben",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Die teurer___ Sachen sind oft nicht besser als die billiger___ Sachen",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mein Vater besucht seine älter___ Schwester",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Leoni ist freundlicher als ihr jünger___ Bruder",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Max kauft lieber teurer___ Autos",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Der kleinst___ Mann läuft am schnellst___",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Der Rhein ist der längst___ Fluss Deutschlands",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Welcher deutsche See ist am tiefst___?",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie ist eine der schönst___ Schauspielerinnen in der Welt",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Die längst___ Nächte gibt es im kürzest___ Monat des Jahres",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist eines der schönst___ Bilder in der Galerie",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Köln ist eine der größt___ Städte Deutschlands",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist einer der best___ Schüler in der Klasse",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie ist eine der freundlichst___ Lehrerinnen an der Schule",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist eines der teuerst___ Hotels in der Stadt",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Er ist einer der schnellst___ Läufer im Verein",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist eines der ältest___ und schönst___ Häuser in der Straße",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie ist eine der jüngst___ Mitarbeiterinnen im Büro",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist einer der kürzest___ Wege zum Bahnhof",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Der Park ist einer der ruhigst___ und sauberst___ Orte in der Stadt",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ich suche eine billig___ Wohnung",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wir kaufen einen kleiner___ Tisch",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist ein schöner___ Kleid",
+      "answers": [
+        "es"
+      ]
+    },
+    {
+      "sentence": "Ich brauche eine besser___ Lampe",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Er wohnt in einem größer___ Haus",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wir sitzen in einem ruhiger___ Café",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das ist die schönst___ Straße der Stadt",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Ich trinke den heißer___ Tee",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wir nehmen den kürzer___ Weg",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie hat das neuer___ Handy gekauft",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Ich kenne einen schneller___ Weg",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das kleiner___ Kind schläft früher",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit dem älter___ Bruder spiele ich oft",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Die jünger___ Kinder gehen zuerst",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Viele älter___ Menschen brauchen Hilfe",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Ich habe die wichtigst___ Frage vergessen",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Nach dem länger___ Gespräch gehe ich nach Hause",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Er erzählt die interessantest___ Geschichte",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wir suchen den nächst___ Bahnhof",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Bei der nächst___ Haltestelle steigen wir aus",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Vor dem größt___ Haus steht ein Baum",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Für ein besser___ Verständnis lese ich den Text noch einmal",
+      "answers": [
+        "es"
+      ]
+    },
+    {
+      "sentence": "Ich brauche wärmer___ Kleidung",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Er fährt mit einem schneller___ Auto",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Die teurer___ Jacke gefällt mir besser",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Ich nehme den billigst___ Flug",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Das war der schönst___ Tag meines Lebens",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Heute ist der heißest___ Tag der Woche",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Im kältest___ Monat bleiben wir oft zu Hause",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie trägt ihre schönst___ Schuhe",
+      "answers": [
+        "en"
+      ]
+    }
+  ]
+}
