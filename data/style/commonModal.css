@@ -1497,6 +1497,10 @@ table.mv-table tbody td {
   border-left: 1px solid var(--theory-line-color);
 }
 
+.b1-partizipien .part-usage-cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
 .b1-partizipien .part-usage-cell p {
   margin: 0 0 8px !important;
 }

@@ -4,10 +4,17 @@
     "en": "Steigerung von Adjektiven"
   },
   "instructions": {
-    "ru": "Добавьте правильные окончания к прилагательным",
-    "en": "Add the correct endings to the adjectives"
+    "ru": "Выполните задания",
+    "en": "Complete the tasks"
   },
   "items": [
+    {
+      "id": "adjectiveEndings",
+      "label": {
+        "ru": "Добавьте правильные окончания к прилагательным",
+        "en": "Add the correct endings to the adjectives"
+      }
+    },
     {
       "sentence": "Ich möchte einen genauer___ Plan haben",
       "answers": [
@@ -34,12 +41,6 @@
       ]
     },
     {
-      "sentence": "Max kauft lieber teurer___ Autos",
-      "answers": [
-        "e"
-      ]
-    },
-    {
       "sentence": "Der kleinst___ Mann läuft am schnellst___",
       "answers": [
         "e",
@@ -47,27 +48,8 @@
       ]
     },
     {
-      "sentence": "Der Rhein ist der längst___ Fluss Deutschlands",
-      "answers": [
-        "e"
-      ]
-    },
-    {
       "sentence": "Welcher deutsche See ist am tiefst___?",
       "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Sie ist eine der schönst___ Schauspielerinnen in der Welt",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Die längst___ Nächte gibt es im kürzest___ Monat des Jahres",
-      "answers": [
-        "en",
         "en"
       ]
     },
@@ -176,12 +158,6 @@
       ]
     },
     {
-      "sentence": "Ich trinke den heißer___ Tee",
-      "answers": [
-        "en"
-      ]
-    },
-    {
       "sentence": "Wir nehmen den kürzer___ Weg",
       "answers": [
         "en"
@@ -248,12 +224,6 @@
       ]
     },
     {
-      "sentence": "Bei der nächst___ Haltestelle steigen wir aus",
-      "answers": [
-        "en"
-      ]
-    },
-    {
       "sentence": "Vor dem größt___ Haus steht ein Baum",
       "answers": [
         "en"
@@ -308,9 +278,100 @@
       ]
     },
     {
-      "sentence": "Sie trägt ihre schönst___ Schuhe",
-      "answers": [
-        "en"
+      "id": "einerForms",
+      "label": {
+        "ru": "Подставьте einer/eines/eine в нужной форме",
+        "en": "Insert the correct form of einer/eines/eine"
+      }
+    },
+    {
+      "sentence": "___ der beliebtesten Reiseziele der Deutschen ist die Ostsee",
+      "answer": [
+        "Eines"
+      ]
+    },
+    {
+      "sentence": "Er träumt von ___ der schönsten Schauspielerinnen der Welt",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Goethe war der berühmteste deutsche Dichter und ___ der bekanntesten Dichter der Welt",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Die Königstraße in Stuttgart ist ___ der längsten Fußgängerzonen Deutschlands",
+      "answer": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Der Flughafen in Frankfurt am Main zählt zu ___ der größten Flughäfen Europas",
+      "answer": [
+        "einem"
+      ]
+    },
+    {
+      "sentence": "Liechtenstein ist ___ der kleinsten Länder Europas",
+      "answer": [
+        "eines"
+      ]
+    },
+    {
+      "sentence": "Kennst du ___ der reichsten Männer der Welt?",
+      "answer": [
+        "einen"
+      ]
+    },
+    {
+      "sentence": "Der Kongo ist ___ der längsten Flüsse der Welt",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Das Museum gehört zu ___ der bekanntesten Gebäude der Stadt",
+      "answer": [
+        "einem"
+      ]
+    },
+    {
+      "sentence": "Sie spricht mit ___ der erfahrensten Ärztinnen im Krankenhaus",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Wir besuchen ___ der ältesten Schlösser in Bayern",
+      "answer": [
+        "eines"
+      ]
+    },
+    {
+      "sentence": "Er arbeitet in ___ der modernsten Firmen der Region",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Ich habe ___ der spannendsten Filme des Jahres gesehen",
+      "answer": [
+        "einen"
+      ]
+    },
+    {
+      "sentence": "Maria ist ___ der fleißigsten Studentinnen im Kurs",
+      "answer": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Wir wohnen neben ___ der schönsten Parks der Stadt",
+      "answer": [
+        "einem"
       ]
     }
   ]

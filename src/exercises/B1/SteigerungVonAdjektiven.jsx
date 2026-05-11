@@ -26,10 +26,10 @@ function normalize(value) {
         .replace(/\s+/g, " ");
 }
 
-function getSentenceText(rawSentence, locale) {
-    if (typeof rawSentence === "string") return rawSentence;
-    if (rawSentence && typeof rawSentence === "object") {
-        return rawSentence[locale] ?? rawSentence.ru ?? rawSentence.en ?? "";
+function getLocalizedText(raw, locale) {
+    if (typeof raw === "string") return raw;
+    if (raw && typeof raw === "object") {
+        return raw[locale] ?? raw.ru ?? raw.en ?? "";
     }
     return "";
 }
@@ -37,7 +37,46 @@ function getSentenceText(rawSentence, locale) {
 function getAnswerArray(item) {
     if (Array.isArray(item?.answers)) return item.answers.map(String);
     if (Array.isArray(item?.answer)) return item.answer.map(String);
+    if (item?.answer != null) return [String(item.answer)];
     return [];
+}
+
+function getRows(rawItems, locale) {
+    const items = Array.isArray(rawItems) ? rawItems : [];
+    const rows = [];
+    let sentenceIndex = 0;
+
+    items.forEach((item, rawIndex) => {
+        if (!item || typeof item !== "object") return;
+
+        const hasSentence = Object.prototype.hasOwnProperty.call(item, "sentence");
+        const answers = getAnswerArray(item);
+
+        if (typeof item.id === "string" && !hasSentence && answers.length === 0) {
+            const label = getLocalizedText(item.label, locale);
+            if (!label) return;
+
+            rows.push({
+                type: "divider",
+                key: `steigerung-von-adjektiven-divider-${rawIndex}-${item.id}`,
+                label,
+            });
+            return;
+        }
+
+        if (!hasSentence || answers.length === 0) return;
+
+        rows.push({
+            type: "sentence",
+            key: `steigerung-von-adjektiven-sentence-${sentenceIndex}`,
+            sentenceIndex,
+            sentence: getLocalizedText(item.sentence, locale),
+            answers,
+        });
+        sentenceIndex += 1;
+    });
+
+    return rows;
 }
 
 export default function SteigerungVonAdjektiven() {
@@ -52,7 +91,7 @@ export default function SteigerungVonAdjektiven() {
                 : [slide1Ru, slide2Ru, slide3Ru, slide4Ru],
         [locale]
     );
-    const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
+    const rows = useMemo(() => getRows(data.items, locale), [locale]);
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);
@@ -80,16 +119,24 @@ export default function SteigerungVonAdjektiven() {
             )}
 
             <div className="scroll-container">
-                <ProgressiveList items={items} className="list">
-                    {(item, sentenceIdx) => {
-                        const sentence = getSentenceText(item.sentence, locale);
-                        const answerArray = getAnswerArray(item);
+                <ProgressiveList items={rows} className="list">
+                    {(row) => {
+                        if (row.type === "divider") {
+                            return (
+                                <li key={row.key} className="exercise-section-divider">
+                                    <span>{row.label}</span>
+                                </li>
+                            );
+                        }
+
+                        const sentence = row.sentence;
+                        const answerArray = row.answers;
                         const parts = sentence.split(/_{3,}/);
 
                         return (
-                            <li key={sentenceIdx} className="list-item">
+                            <li key={row.key} className="list-item">
                                 {parts.map((part, idx) => {
-                                    const key = `${sentenceIdx}-${idx}`;
+                                    const key = `${row.sentenceIndex}-${idx}`;
                                     const value = answers[key]?.value ?? "";
                                     const isCorrect = answers[key]?.isCorrect;
 
@@ -107,7 +154,7 @@ export default function SteigerungVonAdjektiven() {
                                                     value={value}
                                                     onChange={(e) =>
                                                         handleChange(
-                                                            sentenceIdx,
+                                                            row.sentenceIndex,
                                                             idx,
                                                             e.target.value,
                                                             answerArray[idx]
@@ -118,7 +165,7 @@ export default function SteigerungVonAdjektiven() {
                                                     mobileMinWidth={35}
                                                     tabletMinWidth={40}
                                                     maxWidth={100}
-                                                    aria-label={`Steigerung von Adjektiven blank ${idx + 1} (sentence ${sentenceIdx + 1})`}
+                                                    aria-label={`Steigerung von Adjektiven blank ${idx + 1} (sentence ${row.sentenceIndex + 1})`}
                                                 />
                                             ) : null}
                                         </span>
