@@ -11,7 +11,8 @@
     {
       "sentence": "Ich bleibe länger, ___ ich noch Fragen habe.",
       "answer": [
-        "weil"
+        "weil",
+        "wenn"
       ]
     },
     {
@@ -72,7 +73,8 @@
     {
       "sentence": "Wir bleiben zu Hause, ___ es draußen kalt ist.",
       "answer": [
-        "weil"
+        "weil",
+        "wenn"
       ]
     },
     {
@@ -102,7 +104,8 @@
     {
       "sentence": "Lara kann kein Auto mieten, ___ sie zu jung ist.",
       "answer": [
-        "weil"
+        "weil",
+        "wenn"
       ]
     },
     {
@@ -138,7 +141,8 @@
     {
       "sentence": "Ich lerne Deutsch, ___ ich in Deutschland arbeiten will.",
       "answer": [
-        "weil"
+        "weil",
+        "wenn"
       ]
     },
     {
@@ -161,7 +165,7 @@
       ]
     },
     {
-      "sentence": "Machst du jede Hausaufgabe ___ bist du faul?",
+      "sentence": "Machst du jede Hausaufgabe, ___ bist du faul?",
       "answer": [
         "oder"
       ]
@@ -181,7 +185,8 @@
     {
       "sentence": "___ ich Zeit habe, besuche ich dich.",
       "answer": [
-        "wenn"
+        "wenn",
+        "weil"
       ]
     },
     {
@@ -230,7 +235,8 @@
     {
       "sentence": "Tim kann kein Auto mieten, ___ er länger als 6 Monate in Deutschland lebt.",
       "answer": [
-        "weil"
+        "weil",
+        "wenn"
       ]
     },
     {
@@ -248,7 +254,8 @@
     {
       "sentence": "Er hat keinen Hunger, ___ isst er nur eine Suppe.",
       "answer": [
-        "trotzdem"
+        "trotzdem",
+        "deswegen"
       ]
     },
     {
@@ -260,7 +267,8 @@
     {
       "sentence": "Das Essen ist lecker, ___ ist es zu salzig.",
       "answer": [
-        "jedoch"
+        "jedoch",
+        "trotzdem"
       ]
     },
     {
@@ -290,7 +298,8 @@
     {
       "sentence": "Lara freut sich, ___ sie einen gültigen Führerschein hat.",
       "answer": [
-        "dass"
+        "dass",
+        "weil"
       ]
     },
     {
@@ -315,7 +324,8 @@
     {
       "sentence": "Ich mache jeden Tag Übungen, ___ mein Deutsch besser wird.",
       "answer": [
-        "damit"
+        "damit",
+        "weil"
       ]
     },
     {
@@ -340,7 +350,8 @@
     {
       "sentence": "Ich habe den Bus verpasst, ___ komme ich zu spät.",
       "answer": [
-        "deswegen"
+        "deswegen",
+        "dann"
       ]
     },
     {
@@ -359,7 +370,8 @@
       "sentence": "Ich habe wenig Zeit, ___ helfe ich dir kurz.",
       "answer": [
         "trotzdem",
-        "jedoch"
+        "jedoch",
+        "deswegen"
       ]
     },
     {
@@ -375,7 +387,7 @@
       ]
     },
     {
-      "sentence": "Tim kommt aus Kanada, ___ darf er in Deutschland kein Auto mieten.",
+      "sentence": "Tim hat keinen internationalen Führerschein, ___ darf er in Deutschland kein Auto mieten.",
       "answer": [
         "deswegen"
       ]
@@ -401,7 +413,8 @@
     {
       "sentence": "Die Straße ist gesperrt, ___ fahren wir eine andere Route.",
       "answer": [
-        "deswegen"
+        "deswegen",
+        "dann"
       ]
     },
     {
@@ -414,7 +427,8 @@
     {
       "sentence": "Tim und Lara wollen nach Salzburg fahren, ___ müssen sie die Fahrkarten kaufen.",
       "answer": [
-        "deswegen"
+        "deswegen",
+        "dann"
       ]
     },
     {
@@ -432,7 +446,8 @@
     {
       "sentence": "Er kommt nicht, ___ er keine Zeit hat.",
       "answer": [
-        "weil"
+        "weil",
+        "wenn"
       ]
     },
     {
@@ -450,7 +465,8 @@
     {
       "sentence": "Sie geht zum Arzt, ___ sie Bauchschmerzen hat.",
       "answer": [
-        "weil"
+        "weil",
+        "wenn"
       ]
     },
     {
@@ -462,13 +478,15 @@
     {
       "sentence": "Wir haben kein Geld, ___ bleiben wir zu Hause.",
       "answer": [
-        "deswegen"
+        "deswegen",
+        "dann"
       ]
     },
     {
       "sentence": "___ wir fertig sind, gehen wir nach Hause.",
       "answer": [
-        "wenn"
+        "wenn",
+        "weil"
       ]
     },
     {
@@ -505,7 +523,8 @@
     {
       "sentence": "Sie geht zum Zahnarzt, ___ sie Zahnschmerzen hat.",
       "answer": [
-        "weil"
+        "weil",
+        "wenn"
       ]
     },
     {
@@ -523,7 +542,8 @@
     {
       "sentence": "Ich kann heute nicht telefonieren, ___ ich im Meeting bin.",
       "answer": [
-        "weil"
+        "weil",
+        "wenn"
       ]
     },
     {
@@ -540,7 +560,7 @@
       ]
     },
     {
-      "sentence": "Er isst nicht Fleisch, ___ Gemüse.",
+      "sentence": "Er isst kein Fleisch, ___ Gemüse.",
       "answer": [
         "sondern"
       ]
@@ -548,7 +568,8 @@
     {
       "sentence": "___ du die Aufgabe machst, verstehst du die Grammatik besser.",
       "answer": [
-        "wenn"
+        "wenn",
+        "weil"
       ]
     },
     {

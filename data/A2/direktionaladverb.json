@@ -371,8 +371,8 @@
         "en": "Bring the chair over here"
       },
       "answers": [
-        "Bring den Stuhl herüber",
-        "Bring den Stuhl rüber"
+        "Bring mir den Stuhl herüber",
+        "Bring mir den Stuhl rüber"
       ]
     },
     {
@@ -460,6 +460,8 @@
         "en": "Pass the pen over to him"
       },
       "answers": [
+        "Gib ihm den Stift herüber",
+        "Gib ihm den Stift rüber",
         "Gib ihm den Kuli herüber",
         "Gib ihm den Kuli rüber"
       ]

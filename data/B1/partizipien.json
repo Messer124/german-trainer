@@ -30,17 +30,17 @@
       ]
     },
     {
-      "sentence": "Die ___ Schüler schreiben einen Test",
-      "placeholder": "lernen",
-      "answer": [
-        "lernenden"
-      ]
-    },
-    {
       "sentence": "Er verabschiedete sich ___",
       "placeholder": "weinen",
       "answer": [
         "weinend"
+      ]
+    },
+    {
+      "sentence": "Filipp mag am liebsten ___ Fleisch mit Reis",
+      "placeholder": "kochen",
+      "answer": [
+        "gekochtes"
       ]
     },
     {
@@ -79,17 +79,17 @@
       ]
     },
     {
+      "sentence": "Am ___ Wochenende waren wir in München",
+      "placeholder": "vergehen",
+      "answer": [
+        "vergangenen"
+      ]
+    },
+    {
       "sentence": "Das ___ Fenster muss repariert werden",
       "placeholder": "zerbrechen",
       "answer": [
         "zerbrochene"
-      ]
-    },
-    {
-      "sentence": "Der ___ Nachbar hört laut Musik",
-      "placeholder": "singen",
-      "answer": [
-        "singende"
       ]
     },
     {
@@ -107,10 +107,10 @@
       ]
     },
     {
-      "sentence": "Ich trinke den ___ Kaffee",
-      "placeholder": "machen",
+      "sentence": "Ich trinke den frisch ___ Kaffee",
+      "placeholder": "brühen",
       "answer": [
-        "gemachten"
+        "gebrühten"
       ]
     },
     {
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "sentence": "Die ___ Aufgabe war nicht schwer",
+      "sentence": "Die ___ Regel war nicht schwer",
       "placeholder": "erklären",
       "answer": [
         "erklärte"
@@ -178,16 +178,9 @@
     },
     {
       "sentence": "Die ___ E-Mail ist sehr wichtig",
-      "placeholder": "schicken",
+      "placeholder": "senden",
       "answer": [
-        "geschickte"
-      ]
-    },
-    {
-      "sentence": "Die ___ Tür ist offen",
-      "placeholder": "öffnen",
-      "answer": [
-        "geöffnete"
+        "gesendete"
       ]
     },
     {
@@ -226,7 +219,7 @@
       ]
     },
     {
-      "sentence": "Die ___ Rechnung ist schon bezahlt",
+      "sentence": "Die ___ Rechnung liegt auf dem Tisch",
       "placeholder": "bezahlen",
       "answer": [
         "bezahlte"
@@ -240,7 +233,7 @@
       ]
     },
     {
-      "sentence": "Der ___ Schlüssel liegt in der Tasche",
+      "sentence": "Der ___ Schlüssel liegt auf dem Tisch",
       "placeholder": "finden",
       "answer": [
         "gefundene"
@@ -317,10 +310,10 @@
       ]
     },
     {
-      "sentence": "Der ___ Bus steht an der Ampel",
-      "placeholder": "kommen",
+      "sentence": "Der ___ Bus hält an der Haltestelle",
+      "placeholder": "ankommen",
       "answer": [
-        "kommende"
+        "ankommende"
       ]
     },
     {
@@ -357,6 +350,153 @@
       "answer": [
         "vereinbarte"
       ]
+    },
+    {
+      "id": "translate",
+      "label": {
+        "ru": "Переведите предложения (Partizip I и Partizip II как прилагательные)",
+        "en": "Translate phrases (Partizip I and Partizip II as adjectives)"
+      }
+    },
+    {
+      "sentence": {
+        "ru": "Напряженный день",
+        "en": "A busy day"
+      },
+      "answer": "ein anstrengender Tag"
+    },
+    {
+      "sentence": {
+        "ru": "Запланированное путешествие",
+        "en": "A planned trip"
+      },
+      "answer": "eine geplante Reise"
+    },
+    {
+      "sentence": {
+        "ru": "Путешествующие люди",
+        "en": "Travelling people"
+      },
+      "answer": "reisende Menschen"
+    },
+    {
+      "sentence": {
+        "ru": "Расслабляющий отпуск",
+        "en": "A relaxing vacation"
+      },
+      "answer": "ein entspannender Urlaub"
+    },
+    {
+      "sentence": {
+        "ru": "Забытый чемодан",
+        "en": "A forgotten suitcase"
+      },
+      "answer": "ein vergessener Koffer"
+    },
+    {
+      "sentence": {
+        "ru": "Прибывающий поезд",
+        "en": "An arriving train"
+      },
+      "answer": "ein ankommender Zug"
+    },
+    {
+      "sentence": {
+        "ru": "Спорящие друзья",
+        "en": "Arguing friends"
+      },
+      "answer": "streitende Freunde"
+    },
+    {
+      "sentence": {
+        "ru": "Играющие дети",
+        "en": "Playing children"
+      },
+      "answer": "spielende Kinder"
+    },
+    {
+      "sentence": {
+        "ru": "Сгоревший дом",
+        "en": "A burned-down house"
+      },
+      "answer": "ein abgebranntes Haus"
+    },
+    {
+      "sentence": {
+        "ru": "Сваренный суп",
+        "en": "Cooked soup"
+      },
+      "answer": "eine gekochte Suppe"
+    },
+    {
+      "sentence": {
+        "ru": "Открытая дверь",
+        "en": "An open door"
+      },
+      "answer": "eine geöffnete Tür"
+    },
+    {
+      "sentence": {
+        "ru": "Закрытый магазин",
+        "en": "A closed shop"
+      },
+      "answer": "ein geschlossenes Geschäft"
+    },
+    {
+      "sentence": {
+        "ru": "Работающий лифт",
+        "en": "A working elevator"
+      },
+      "answer": "ein funktionierender Aufzug"
+    },
+    {
+      "sentence": {
+        "ru": "Ожидающий клиент",
+        "en": "A waiting customer"
+      },
+      "answer": "ein wartender Kunde"
+    },
+    {
+      "sentence": {
+        "ru": "Звонящий телефон",
+        "en": "A ringing phone"
+      },
+      "answer": "ein klingelndes Handy"
+    },
+    {
+      "sentence": {
+        "ru": "Припаркованная машина",
+        "en": "A parked car"
+      },
+      "answer": "ein geparktes Auto"
+    },
+    {
+      "sentence": {
+        "ru": "Зарезервированный столик",
+        "en": "A reserved table"
+      },
+      "answer": "ein reservierter Tisch"
+    },
+    {
+      "sentence": {
+        "ru": "Оплаченный счёт",
+        "en": "A paid bill"
+      },
+      "answer": "eine bezahlte Rechnung"
+    },
+    {
+      "sentence": {
+        "ru": "Потерянная карта",
+        "en": "A lost card"
+      },
+      "answer": "eine verlorene Karte"
+    },
+    {
+      "sentence": {
+        "ru": "Заряженный телефон",
+        "en": "A charged phone"
+      },
+      "answer": "ein geladenes Handy"
     }
   ]
 }

@@ -26,11 +26,15 @@ export default function ExpandingInput({
                                            maxWidth = 280,
                                            extraWidth = 2,
                                            enableHint = false,
+                                           delayedHint = false,
                                            hintValue = "",
+                                           hintDelayMs = 15000,
+                                           onChange,
                                            ...props
                                        }) {
     const inputRef = useRef(null);
     const measureRef = useRef(null);
+    const hintUnlockTimerRef = useRef(null);
     const [viewportWidth, setViewportWidth] = useState(() =>
         typeof window !== "undefined" ? window.innerWidth : 1201
     );
@@ -38,6 +42,9 @@ export default function ExpandingInput({
     const isTablet = viewportWidth > 600 && viewportWidth <= 1200;
 
     const [isHintVisible, setIsHintVisible] = useState(false);
+    const [isHintUnlocked, setIsHintUnlocked] = useState(
+        () => !delayedHint || String(value ?? "").trim() !== ""
+    );
 
     // Auto-hide hint after 2 seconds
     useEffect(() => {
@@ -53,7 +60,43 @@ export default function ExpandingInput({
     const isCorrect = (className || "").includes("correct") && !(className || "").includes("incorrect");
     const isValueMatchingHint = value === hintValue && hintValue !== "";
 
-    const shouldShowEye = enableHint && !isCorrect && !isValueMatchingHint;
+    const shouldShowEye = enableHint && isHintUnlocked && !isCorrect && !isValueMatchingHint;
+
+    const clearHintUnlockTimer = () => {
+        if (hintUnlockTimerRef.current) {
+            clearTimeout(hintUnlockTimerRef.current);
+            hintUnlockTimerRef.current = null;
+        }
+    };
+
+    const startHintUnlockTimer = () => {
+        if (!enableHint || !delayedHint || isHintUnlocked || hintUnlockTimerRef.current) return;
+
+        hintUnlockTimerRef.current = setTimeout(() => {
+            setIsHintUnlocked(true);
+            hintUnlockTimerRef.current = null;
+        }, hintDelayMs);
+    };
+
+    const handleInputChange = (event) => {
+        startHintUnlockTimer();
+        onChange?.(event);
+    };
+
+    useEffect(() => clearHintUnlockTimer, []);
+
+    useEffect(() => {
+        if (!enableHint) {
+            clearHintUnlockTimer();
+            setIsHintUnlocked(false);
+            return;
+        }
+
+        if (!delayedHint) {
+            clearHintUnlockTimer();
+            setIsHintUnlocked(true);
+        }
+    }, [enableHint, delayedHint]);
 
     const effectiveMinWidth = isMobile && mobileMinWidth != null
         ? mobileMinWidth
@@ -123,6 +166,7 @@ export default function ExpandingInput({
                   className={inputClasses}
                   style={{ ...style, width }}
                   readOnly={isHintVisible || props.readOnly}
+                  onChange={handleInputChange}
                   {...props}
               />
           </span>

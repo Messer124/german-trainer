@@ -52,7 +52,7 @@
       ]
     },
     {
-      "sentence": "Ich bleibe ___ Freitag zu Hause.",
+      "sentence": "Ich bleibe ___ Freitag zu Hause, danach fahre ich nach Köln.",
       "answer": [
         "bis"
       ]
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "sentence": "___ einer Woche bin ich wieder zu Hause.",
+      "sentence": "___ einer Woche bin ich wieder zu Hause, also nächsten Montag.",
       "answer": [
         "In"
       ]
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "sentence": "___ dem Essen trinken wir Kaffee.",
+      "sentence": "___ dem Essen trinken wir Kaffee und essen Kuchen.",
       "answer": [
         "Nach"
       ]
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "sentence": "Ich fliege nach England ___ eine Woche.",
+      "sentence": "Ich fliege ___ eine Woche nach England.",
       "answer": [
         "für"
       ]
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "sentence": "___ der Schule mache ich Hausaufgaben.",
+      "sentence": "___ der Schule komme ich nach Hause und mache Hausaufgaben.",
       "answer": [
         "Nach"
       ]
@@ -162,7 +162,7 @@
       ]
     },
     {
-      "sentence": "Ich war bereits in dieser Stadt, und zwar 2015 ___ Sommer.",
+      "sentence": "Ich war schon einmal in dieser Stadt, und zwar ___ Sommer 2015.",
       "answer": [
         "im"
       ]
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "sentence": "___ Montag und Mittwoch habe ich Zeit.",
+      "sentence": "___ Montag und Mittwoch habe ich irgendwann Zeit.",
       "answer": [
         "Zwischen"
       ]
@@ -198,13 +198,13 @@
       ]
     },
     {
-      "sentence": "___ der Party kaufe ich Getränke.",
+      "sentence": "___ der Party kaufe ich Getränke, damit alles vorbereitet ist.",
       "answer": [
         "Vor"
       ]
     },
     {
-      "sentence": "Sie hat Urlaub ___ einen Monat.",
+      "sentence": "Sie macht ___ einen Monat Urlaub.",
       "answer": [
         "für"
       ]
@@ -224,13 +224,13 @@
       ]
     },
     {
-      "sentence": "___ 2 Monaten ist er unser Abteilungsleiter und kann nicht lange abwesend von der Arbeit sein.",
+      "sentence": "___ zwei Monaten ist er unser Abteilungsleiter und kann nicht lange bei der Arbeit fehlen.",
       "answer": [
         "seit"
       ]
     },
     {
-      "sentence": "___ dem Film gehen wir noch spazieren.",
+      "sentence": "___ dem Film gehen wir noch spazieren und sprechen darüber.",
       "answer": [
         "Nach"
       ]
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "sentence": "___ nächster Woche habe ich Urlaub.",
+      "sentence": "___ nächster Woche arbeite ich im neuen Büro.",
       "answer": [
         "Ab"
       ]
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "sentence": "___ 1. Januar ___ werden die Preise erhöht.",
+      "sentence": "Die Preise werden ___ Januar ___ erhöht.",
       "answer": [
         "von",
         "an"
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "sentence": "___ zwei Stunden bin ich wieder da.",
+      "sentence": "___ zwei Stunden Fahrt bin ich wieder da.",
       "answer": [
         "Nach"
       ]
@@ -354,7 +354,7 @@
       ]
     },
     {
-      "sentence": "___ sofort ___ müssen alle Besucher einen Ausweis zeigen.",
+      "sentence": "Alle Besucher müssen ___ jetzt ___ einen Ausweis zeigen.",
       "answer": [
         "von",
         "an"
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "sentence": "___ dem Essen wasche ich mir die Hände.",
+      "sentence": "___ dem Essen wasche ich mir die Hände, damit sie sauber sind.",
       "answer": [
         "Vor"
       ]
@@ -429,7 +429,7 @@
       ]
     },
     {
-      "sentence": "Ich bin ___ Sonntag in Berlin.",
+      "sentence": "Ich bin ___ Sonntag in Berlin, danach fahre ich zurück.",
       "answer": [
         "bis"
       ]
@@ -461,7 +461,7 @@
       ]
     },
     {
-      "sentence": "___ einer Woche habe ich wieder Deutschunterricht.",
+      "sentence": "___ einer Woche, also nächsten Mittwoch, habe ich wieder Deutschunterricht.",
       "answer": [
         "In"
       ]
@@ -480,7 +480,7 @@
       ]
     },
     {
-      "sentence": "___ Januar lerne ich Deutsch.",
+      "sentence": "___ Januar werde ich Deutsch lernen.",
       "answer": [
         "Ab"
       ]

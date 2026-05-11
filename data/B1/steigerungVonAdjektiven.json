@@ -4,10 +4,17 @@
     "en": "Steigerung von Adjektiven"
   },
   "instructions": {
-    "ru": "Добавьте правильные окончания к прилагательным",
-    "en": "Add the correct endings to the adjectives"
+    "ru": "Выполните задания",
+    "en": "Complete the tasks"
   },
   "items": [
+    {
+      "id": "adjectiveEndings",
+      "label": {
+        "ru": "Добавьте правильные окончания к прилагательным",
+        "en": "Add the correct endings to the adjectives"
+      }
+    },
     {
       "sentence": "Ich möchte einen genauer___ Plan haben",
       "answers": [
@@ -34,12 +41,6 @@
       ]
     },
     {
-      "sentence": "Max kauft lieber teurer___ Autos",
-      "answers": [
-        "e"
-      ]
-    },
-    {
       "sentence": "Der kleinst___ Mann läuft am schnellst___",
       "answers": [
         "e",
@@ -47,89 +48,8 @@
       ]
     },
     {
-      "sentence": "Der Rhein ist der längst___ Fluss Deutschlands",
-      "answers": [
-        "e"
-      ]
-    },
-    {
       "sentence": "Welcher deutsche See ist am tiefst___?",
       "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Sie ist eine der schönst___ Schauspielerinnen in der Welt",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Die längst___ Nächte gibt es im kürzest___ Monat des Jahres",
-      "answers": [
-        "en",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Das ist eines der schönst___ Bilder in der Galerie",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Köln ist eine der größt___ Städte Deutschlands",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Das ist einer der best___ Schüler in der Klasse",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Sie ist eine der freundlichst___ Lehrerinnen an der Schule",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Das ist eines der teuerst___ Hotels in der Stadt",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Er ist einer der schnellst___ Läufer im Verein",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Das ist eines der ältest___ und schönst___ Häuser in der Straße",
-      "answers": [
-        "en",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Sie ist eine der jüngst___ Mitarbeiterinnen im Büro",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Das ist einer der kürzest___ Wege zum Bahnhof",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Der Park ist einer der ruhigst___ und sauberst___ Orte in der Stadt",
-      "answers": [
-        "en",
         "en"
       ]
     },
@@ -173,12 +93,6 @@
       "sentence": "Das ist die schönst___ Straße der Stadt",
       "answers": [
         "e"
-      ]
-    },
-    {
-      "sentence": "Ich trinke den heißer___ Tee",
-      "answers": [
-        "en"
       ]
     },
     {
@@ -248,12 +162,6 @@
       ]
     },
     {
-      "sentence": "Bei der nächst___ Haltestelle steigen wir aus",
-      "answers": [
-        "en"
-      ]
-    },
-    {
       "sentence": "Vor dem größt___ Haus steht ein Baum",
       "answers": [
         "en"
@@ -308,9 +216,160 @@
       ]
     },
     {
-      "sentence": "Sie trägt ihre schönst___ Schuhe",
+      "id": "einerForms",
+      "label": {
+        "ru": "Подставьте einer/eines/eine в нужной форме",
+        "en": "Insert the correct form of einer/eines/eine"
+      }
+    },
+    {
+      "sentence": "Das ist ___ der schönsten Bilder in der Galerie",
       "answers": [
-        "en"
+        "eines"
+      ]
+    },
+    {
+      "sentence": "Köln ist ___ der größten Städte Deutschlands",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Das ist ___ der besten Schüler in der Klasse",
+      "answers": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Sie ist ___ der freundlichsten Lehrerinnen an der Schule",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Das ist ___ der teuersten Hotels in der Stadt",
+      "answers": [
+        "eines"
+      ]
+    },
+    {
+      "sentence": "Er ist ___ der schnellsten Läufer im Verein",
+      "answers": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Das ist ___ der ältesten und schönsten Häuser in der Straße",
+      "answers": [
+        "eines"
+      ]
+    },
+    {
+      "sentence": "Sie ist ___ der jüngsten Mitarbeiterinnen im Büro",
+      "answers": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Das ist ___ der kürzesten Wege zum Bahnhof",
+      "answers": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Der Park ist ___ der ruhigsten und saubersten Orte in der Stadt",
+      "answers": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "___ der beliebtesten Reiseziele der Deutschen ist die Ostsee",
+      "answer": [
+        "Eines"
+      ]
+    },
+    {
+      "sentence": "Er träumt von ___ der schönsten Schauspielerinnen der Welt",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Goethe war der berühmteste deutsche Dichter und ___ der bekanntesten Dichter der Welt",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Die Königstraße in Stuttgart ist ___ der längsten Fußgängerzonen Deutschlands",
+      "answer": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Der Flughafen in Frankfurt am Main zählt zu ___ der größten Flughäfen Europas",
+      "answer": [
+        "einem"
+      ]
+    },
+    {
+      "sentence": "Liechtenstein ist ___ der kleinsten Länder Europas",
+      "answer": [
+        "eines"
+      ]
+    },
+    {
+      "sentence": "Kennst du ___ der reichsten Männer der Welt?",
+      "answer": [
+        "einen"
+      ]
+    },
+    {
+      "sentence": "Der Kongo ist ___ der längsten Flüsse der Welt",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Das Museum gehört zu ___ der bekanntesten Gebäude der Stadt",
+      "answer": [
+        "einem"
+      ]
+    },
+    {
+      "sentence": "Sie spricht mit ___ der erfahrensten Ärztinnen im Krankenhaus",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Wir besuchen ___ der ältesten Schlösser in Bayern",
+      "answer": [
+        "eines"
+      ]
+    },
+    {
+      "sentence": "Er arbeitet in ___ der modernsten Firmen der Region",
+      "answer": [
+        "einer"
+      ]
+    },
+    {
+      "sentence": "Ich habe ___ der spannendsten Filme des Jahres gesehen",
+      "answer": [
+        "einen"
+      ]
+    },
+    {
+      "sentence": "Maria ist ___ der fleißigsten Studentinnen im Kurs",
+      "answer": [
+        "eine"
+      ]
+    },
+    {
+      "sentence": "Wir wohnen neben ___ der schönsten Parks der Stadt",
+      "answer": [
+        "einem"
       ]
     }
   ]

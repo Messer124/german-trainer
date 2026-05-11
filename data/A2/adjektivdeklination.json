@@ -9,225 +9,9 @@
   },
   "items": [
     {
-      "sentence": "Im Winter mag ich warm___ Kleidung und dick___ Socken.",
-      "answers": [
-        "e",
-        "e"
-      ]
-    },
-    {
-      "sentence": "Mit der neu___ Brille siehst du sehr gut aus.",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Außerdem besuchen wir die alt___ Oma und die neu___ Nachbarn.",
-      "answers": [
-        "e",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Im Sommer genieße ich frisch___ Luft und lang___ Abende.",
-      "answers": [
-        "e",
-        "e"
-      ]
-    },
-    {
-      "sentence": "Wir warten auf die Antwort des streng___ Chefs.",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Außerdem danken wir der hilfsbereit___ Kollegin und den neu___ Kunden.",
-      "answers": [
-        "en",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Sie braucht kein neu___ Handy.",
-      "answers": [
-        "es"
-      ]
-    },
-    {
-      "sentence": "Ich helfe einem neu___ Kollegen.",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Frisch___ Kaffee und warm___ Kuchen machen den Morgen besser.",
-      "answers": [
-        "er",
-        "er"
-      ]
-    },
-    {
-      "sentence": "Ich habe drei klein___ Kinder.",
-      "answers": [
-        "e"
-      ]
-    },
-    {
-      "sentence": "Mit ruhig___ Musik und frisch___ Blumen wird es gemütlich.",
-      "answers": [
-        "er",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Stark___ Regen und schlecht___ Wetter machen den Weg zur Arbeit schwer.",
-      "answers": [
-        "er",
-        "es"
-      ]
-    },
-    {
-      "sentence": "Heiß___ Tee und kalt___ Wasser passen gut zusammen.",
-      "answers": [
-        "er",
-        "es"
-      ]
-    },
-    {
-      "sentence": "Mit stark___ Kaffee und gut___ WLAN arbeite ich besser.",
-      "answers": [
-        "em",
-        "em"
-      ]
-    },
-    {
-      "sentence": "Im Winter mag ich heiß___ Tee.",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Heute kommt keine schlecht___ Nachricht und keine unnötig___ Fragen.",
-      "answers": [
-        "e",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Ich schreibe dem krank___ Vater und dem alt___ Opa.",
-      "answers": [
-        "en",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Wir danken einem freundlich___ Verkäufer.",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Der freundlich___ Kellner bringt dem hungrig___ Gast die Speisekarte.",
-      "answers": [
-        "e",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Ich kaufe ein neu___ Handy.",
-      "answers": [
-        "es"
-      ]
-    },
-    {
-      "sentence": "Im Museum bewundern wir das modern___ Gemälde und die rund___ Skulptur.",
-      "answers": [
-        "e",
-        "e"
-      ]
-    },
-    {
-      "sentence": "Heute repariere ich die klein___ Lampe und die alt___ Kabel.",
-      "answers": [
-        "e",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Auf dem Foto sieht man das Auto des alt___ Nachbarn und das Spielzeug des klein___ Kindes.",
-      "answers": [
-        "en",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Wir gehen bei schlecht___ Wetter nicht spazieren.",
-      "answers": [
-        "em"
-      ]
-    },
-    {
-      "sentence": "Wir danken einer hilfsbereit___ Kollegin und unseren neu___ Kunden.",
-      "answers": [
-        "en",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Ich schreibe keinen fremd___ Leuten.",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Heute kommt kein streng___ Chef.",
+      "sentence": "Mit frisch___ Milch schmeckt der Kaffee besser.",
       "answers": [
         "er"
-      ]
-    },
-    {
-      "sentence": "Außerdem schreibe ich der jung___ Schwester und den gut___ Freunden.",
-      "answers": [
-        "en",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Wie heißen die neu___ Mitschüler?",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Gut___ Kaffee und frisch___ Brot sind im Café wichtig.",
-      "answers": [
-        "er",
-        "es"
-      ]
-    },
-    {
-      "sentence": "Für den Abend bestelle ich eine lecker___ Suppe.",
-      "answers": [
-        "e"
-      ]
-    },
-    {
-      "sentence": "Heute repariere ich den kaputt___ Computer.",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Da kommt mein nett___ Nachbar.",
-      "answers": [
-        "er"
-      ]
-    },
-    {
-      "sentence": "Seine klein___ Schwester hat mich angerufen.",
-      "answers": [
-        "e"
       ]
     },
     {
@@ -238,6 +22,149 @@
       ]
     },
     {
+      "sentence": "Bei laut___ Lärm kann ich nicht schlafen.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Der freundlich___ Kellner bringt dem hungrig___ Gast die Speisekarte.",
+      "answers": [
+        "e",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Heute kommt kein streng___ Chef.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Heute repariere ich den kaputt___ Computer.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit heiß___ Tee geht es mir besser.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Mit schnell___ Internet funktioniert der Kurs besser.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Vielen Dank für das schön___ Geschenk.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Für den Abend bestelle ich eine lecker___ Suppe.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Heiß___ Tee und kalt___ Wasser passen gut zusammen.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Trotz vieler gut___ Gründe bleibe ich ruhig.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Im Supermarkt kaufe ich frisch___ Käse und warm___ Brot.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Zum Frühstück esse ich frisch___ Brot.",
+      "answers": [
+        "es"
+      ]
+    },
+    {
+      "sentence": "Wir haben neu___ Nachbarn.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Schwarz___ Tee hilft mir am Morgen.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Sie braucht kein neu___ Handy.",
+      "answers": [
+        "es"
+      ]
+    },
+    {
+      "sentence": "Da kommt mein nett___ Nachbar.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Mit kalt___ Wasser wasche ich die Hände.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Ich helfe einem neu___ Kollegen.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Hinter dem groß___ Fenster steht der rot___ Koffer.",
+      "answers": [
+        "en",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit stark___ Kaffee und gut___ WLAN arbeite ich besser.",
+      "answers": [
+        "em",
+        "em"
+      ]
+    },
+    {
+      "sentence": "Das ist ein wichtig___ Thema.",
+      "answers": [
+        "es"
+      ]
+    },
+    {
+      "sentence": "Seine klein___ Schwester hat mich angerufen.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Bei kalt___ Wind bleibe ich lieber zu Hause.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
       "sentence": "Im Supermarkt kaufe ich den frisch___ Käse und das warm___ Brot.",
       "answers": [
         "en",
@@ -245,7 +172,44 @@
       ]
     },
     {
+      "sentence": "Mit der neu___ Brille siehst du sehr gut aus.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Bei stark___ Regen nehme ich den Bus.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
       "sentence": "Er hat ein neu___ Auto gekauft.",
+      "answers": [
+        "es"
+      ]
+    },
+    {
+      "sentence": "Nach kurz___ Gespräch gehe ich nach Hause.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Gut___ Kaffee und frisch___ Brot sind im Café wichtig.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Das ist der neu___ Deutschlehrer.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Ich kaufe ein günstig___ Ticket.",
       "answers": [
         "es"
       ]
@@ -258,9 +222,58 @@
       ]
     },
     {
-      "sentence": "Heute brauche ich keine lang___ Erklärung und keine unnötig___ Fragen.",
+      "sentence": "Ich kaufe ein neu___ Handy.",
       "answers": [
-        "e",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Ich trinke morgens kalt___ Wasser.",
+      "answers": [
+        "es"
+      ]
+    },
+    {
+      "sentence": "Frisch___ Kaffee steht auf dem Tisch.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Ich wünsche mir lang___ Urlaub und gut___ Essen.",
+      "answers": [
+        "en",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Mit gut___ WLAN arbeitet das Team schneller.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Auf dem Foto sieht man das Auto des alt___ Nachbarn und das Spielzeug des klein___ Kindes.",
+      "answers": [
+        "en",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ein nett___ Kollege hilft mir.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Bei schlecht___ Licht lese ich nicht gern.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Wir warten auf die Antwort des streng___ Chefs.",
+      "answers": [
         "en"
       ]
     },
@@ -272,75 +285,97 @@
       ]
     },
     {
-      "sentence": "Das ist der neu___ Deutschlehrer.",
+      "sentence": "Für das Meeting brauchen wir gut___ WLAN.",
       "answers": [
-        "e"
-      ]
-    },
-    {
-      "sentence": "Die Prüfung ist in einem halb___ Jahr.",
-      "answers": [
-        "en"
-      ]
-    },
-    {
-      "sentence": "Außerdem brauchen wir frisch___ Luft und sauber___ Handtücher.",
-      "answers": [
-        "e",
-        "e"
-      ]
-    },
-    {
-      "sentence": "Hinter dem groß___ Fenster steht der rot___ Koffer.",
-      "answers": [
-        "en",
-        "e"
-      ]
-    },
-    {
-      "sentence": "Wir haben neu___ Nachbarn.",
-      "answers": [
-        "e"
-      ]
-    },
-    {
-      "sentence": "Auf dem Tisch liegen der frisch___ Apfel und das warm___ Brot.",
-      "answers": [
-        "e",
-        "e"
-      ]
-    },
-    {
-      "sentence": "Im Supermarkt kaufe ich frisch___ Käse und warm___ Brot.",
-      "answers": [
-        "en",
         "es"
       ]
     },
     {
-      "sentence": "Ich wünsche mir lang___ Urlaub und gut___ Essen.",
+      "sentence": "Frisch___ Kaffee und warm___ Kuchen machen den Morgen besser.",
       "answers": [
-        "en",
-        "es"
-      ]
-    },
-    {
-      "sentence": "Im Meeting bespreche ich eine gut___ Idee und meine wichtig___ Notizen.",
-      "answers": [
-        "e",
-        "en"
-      ]
-    },
-    {
-      "sentence": "Vielen Dank für das schön___ Geschenk.",
-      "answers": [
-        "e"
+        "er",
+        "er"
       ]
     },
     {
       "sentence": "Morgen besucht mich ein gut___ Freund von mir.",
       "answers": [
         "er"
+      ]
+    },
+    {
+      "sentence": "Mit frisch___ Brot schmeckt die Suppe besser.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Gut___ Unterricht ist wichtig.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Ich habe drei klein___ Kinder.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Nach lang___ Arbeitstag bin ich sehr müde.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Stark___ Regen und schlecht___ Wetter machen den Weg zur Arbeit schwer.",
+      "answers": [
+        "er",
+        "es"
+      ]
+    },
+    {
+      "sentence": "Wir gehen bei schlecht___ Wetter nicht spazieren.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Ich schreibe keinen fremd___ Leuten.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wie heißen die neu___ Mitschüler?",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Bei schön___ Wetter gehen wir spazieren.",
+      "answers": [
+        "em"
+      ]
+    },
+    {
+      "sentence": "Im Sommer genieße ich frisch___ Luft und lang___ Abende.",
+      "answers": [
+        "e",
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit ruhig___ Musik und frisch___ Blumen wird es gemütlich.",
+      "answers": [
+        "er",
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie hat ein schön___ Zimmer.",
+      "answers": [
+        "es"
       ]
     }
   ]

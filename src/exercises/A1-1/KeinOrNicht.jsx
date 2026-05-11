@@ -11,6 +11,22 @@ import ProgressiveList from "../../components/ProgressiveList";
 
 const STORAGE_KEY = "keinOrNicht-sentences-answers";
 
+function normalize(value) {
+    return String(value ?? "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ");
+}
+
+function getAcceptedAnswers(item) {
+    const rawAnswer = item?.answer;
+    const answers = Array.isArray(rawAnswer) ? rawAnswer : [rawAnswer];
+
+    return answers
+        .map((answer) => String(answer ?? "").trim())
+        .filter(Boolean);
+}
+
 function KeinOrNichtSentences() {
     const { locale } = useLocale();
     const [showImage, setShowImage] = useState(false);
@@ -28,8 +44,11 @@ function KeinOrNichtSentences() {
     }, []);
 
     const handleChange = (index, value) => {
-        const correct = data.items[index].answer.trim().toLowerCase();
-        const isCorrect = value.trim().toLowerCase() === correct;
+        const acceptedAnswers = getAcceptedAnswers(data.items[index]);
+        const normalizedValue = normalize(value);
+        const isCorrect = acceptedAnswers.some(
+            (answer) => normalize(answer) === normalizedValue
+        );
         const key = `keinOrNicht-${index}`;
 
         setAnswers((prev) => ({
@@ -55,6 +74,7 @@ function KeinOrNichtSentences() {
                         const key = `keinOrNicht-${index}`;
                         const value = answers[key]?.value ?? "";
                         const isCorrect = answers[key]?.isCorrect;
+                        const acceptedAnswers = getAcceptedAnswers(item);
 
                         return (
                             <li key={index}>
@@ -73,7 +93,7 @@ function KeinOrNichtSentences() {
                                     minWidth={140}
                                     maxWidth={760}
                                     enableHint={true}
-                                    hintValue={item.answer}
+                                    hintValue={acceptedAnswers.join(" / ")}
                                 />
                             </li>
                         );

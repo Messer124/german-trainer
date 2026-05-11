@@ -104,7 +104,7 @@
       ]
     },
     {
-      "sentence": "Ich fahre ___ Bodensee.",
+      "sentence": "Ich fahre ___ Bodensee und möchte am Ufer spazieren gehen.",
       "answers": [
         [
           "an den"
@@ -172,7 +172,7 @@
       ]
     },
     {
-      "sentence": "Frau Stein hat bald eine Dienstreise. Sie muss am 10. September ___ Russland, ___ Moscow fliegen.",
+      "sentence": "Frau Stein hat bald eine Dienstreise. Sie muss am 10. September ___ Russland, ___ Moskau fliegen.",
       "answers": [
         [
           "nach"
@@ -183,7 +183,7 @@
       ]
     },
     {
-      "sentence": "Am 1. September geht mein Bruder ___ Schule.",
+      "sentence": "Am 1. September geht mein Bruder zum ersten Mal ___ Schule.",
       "answers": [
         [
           "in die"
@@ -204,7 +204,7 @@
       ]
     },
     {
-      "sentence": "Das Handy liegt ___ Regal.",
+      "sentence": "Das Handy liegt oben ___ Regal.",
       "answers": [
         [
           "auf dem"
@@ -220,7 +220,7 @@
       ]
     },
     {
-      "sentence": "Meine Eltern möchten ___ Bodensee fahren.",
+      "sentence": "Meine Eltern möchten ___ Bodensee fahren und am Ufer spazieren gehen.",
       "answers": [
         [
           "an den"
@@ -244,10 +244,10 @@
       ]
     },
     {
-      "sentence": "Er schaut ___ dem Fenster.",
+      "sentence": "Er schaut ___ Fenster.",
       "answers": [
         [
-          "aus"
+          "aus dem"
         ]
       ]
     },
@@ -284,7 +284,7 @@
       ]
     },
     {
-      "sentence": "Wir treffen uns ___ Bahnhof.",
+      "sentence": "Wir treffen uns draußen ___ Bahnhof.",
       "answers": [
         [
           "am",
@@ -319,7 +319,7 @@
       ]
     },
     {
-      "sentence": "Sie kommt zurück ___ Schule.",
+      "sentence": "Sie kommt gerade ___ Schule heraus.",
       "answers": [
         [
           "aus der"
@@ -418,15 +418,15 @@
       ]
     },
     {
-      "sentence": "Wir fahren ___ der Station ab.",
+      "sentence": "Wir fahren ___ Station ab und steigen an der nächsten Haltestelle aus.",
       "answers": [
         [
-          "von"
+          "von der"
         ]
       ]
     },
     {
-      "sentence": "Ich komme zurück ___ Strand.",
+      "sentence": "Ich komme gerade ___ Strand zurück.",
       "answers": [
         [
           "vom",
@@ -443,15 +443,15 @@
       ]
     },
     {
-      "sentence": "Sie wartet ___ der Haltestelle.",
+      "sentence": "Sie wartet ___ Haltestelle.",
       "answers": [
         [
-          "an"
+          "an der"
         ]
       ]
     },
     {
-      "sentence": "Wir gehen jeden Tag ___ Schule.",
+      "sentence": "Wir gehen jeden Tag morgens ___ Schule hinein.",
       "answers": [
         [
           "in die"
@@ -475,7 +475,7 @@
       ]
     },
     {
-      "sentence": "Das Geschenk ist ___ meinem Bruder.",
+      "sentence": "Das Geschenk kommt ___ meinem Bruder.",
       "answers": [
         [
           "von"
@@ -491,7 +491,7 @@
       ]
     },
     {
-      "sentence": "Am Freitag fahre ich ___ meinen Eltern.",
+      "sentence": "Am Freitag fahre ich ___ meinen Eltern nach Hause.",
       "answers": [
         [
           "zu"
@@ -523,7 +523,7 @@
       ]
     },
     {
-      "sentence": "Wir treffen uns ___ Café.",
+      "sentence": "Wir treffen uns drinnen ___ Café.",
       "answers": [
         [
           "im",
@@ -540,7 +540,7 @@
       ]
     },
     {
-      "sentence": "Kommst du ___ Party?",
+      "sentence": "Kommst du ___ Geburtstagsfeier von Lisa?",
       "answers": [
         [
           "zur",
@@ -558,7 +558,7 @@
       ]
     },
     {
-      "sentence": "Im Juli fahren wir ___ Bodensee.",
+      "sentence": "Im Juli fahren wir ___ Bodensee und machen dort Urlaub am Wasser.",
       "answers": [
         [
           "an den"
@@ -598,7 +598,7 @@
       ]
     },
     {
-      "sentence": "Wir gehen ___ Konzert.",
+      "sentence": "Wir fahren mit dem Auto ___ Konzert.",
       "answers": [
         [
           "zum",

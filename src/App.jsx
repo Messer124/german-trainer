@@ -19,6 +19,32 @@ import "./css/App.css";
 const MOBILE_BREAKPOINT = 600;
 const THEME_STORAGE_KEY = "app-theme";
 const SETTINGS_OPEN_STORAGE_KEY = "sidebar-settings-open";
+const BROWSER_THEME_COLORS = {
+    light: "#6ecfff",
+    dark: "#070f2f",
+};
+
+function setOrCreateMeta(name, content) {
+    if (typeof document === "undefined") return;
+
+    let meta = document.querySelector(`meta[name="${name}"]`);
+    if (!meta) {
+        meta = document.createElement("meta");
+        meta.setAttribute("name", name);
+        document.head.appendChild(meta);
+    }
+
+    meta.setAttribute("content", content);
+}
+
+function syncBrowserTheme(theme) {
+    if (typeof document === "undefined") return;
+
+    const browserTheme = theme === "dark" ? "dark" : "light";
+    document.documentElement.style.colorScheme = browserTheme;
+    setOrCreateMeta("color-scheme", browserTheme);
+    setOrCreateMeta("theme-color", BROWSER_THEME_COLORS[browserTheme]);
+}
 
 export default function App() {
     const { locale, setLocale } = useLocale();
@@ -132,6 +158,7 @@ export default function App() {
 
         const root = document.documentElement;
         root.setAttribute("data-theme", theme);
+        syncBrowserTheme(theme);
 
         if (typeof window !== "undefined") {
             localStorage.setItem(THEME_STORAGE_KEY, theme);

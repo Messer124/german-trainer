@@ -10,6 +10,26 @@
   "items": [
     {
       "wordsSet": [
+        "in Köln",
+        "ja voll",
+        "wegen des Regens",
+        "ist",
+        "heute",
+        "das Wetter",
+        "unangenehm"
+      ],
+      "correctOrder": [
+        "das Wetter",
+        "ist",
+        "heute",
+        "wegen des Regens",
+        "ja voll",
+        "unangenehm",
+        "in Köln"
+      ]
+    },
+    {
+      "wordsSet": [
         "in die Disco",
         "wie immer",
         "gestern",
