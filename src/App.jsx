@@ -23,11 +23,20 @@ const BROWSER_THEME_COLORS = {
     light: "#6ecfff",
     dark: "#070f2f",
 };
+const IOS_STATUS_BAR_STYLES = {
+    light: "default",
+    dark: "black-translucent",
+};
 
-function setOrCreateMeta(name, content) {
+function setOrCreateMeta(name, content, { recreate = false } = {}) {
     if (typeof document === "undefined") return;
 
     let meta = document.querySelector(`meta[name="${name}"]`);
+    if (recreate && meta) {
+        meta.remove();
+        meta = null;
+    }
+
     if (!meta) {
         meta = document.createElement("meta");
         meta.setAttribute("name", name);
@@ -41,9 +50,16 @@ function syncBrowserTheme(theme) {
     if (typeof document === "undefined") return;
 
     const browserTheme = theme === "dark" ? "dark" : "light";
+    const fallbackTheme = browserTheme === "dark" ? "light" : "dark";
+    const colorScheme = `${browserTheme} ${fallbackTheme}`;
+
     document.documentElement.style.colorScheme = browserTheme;
-    setOrCreateMeta("color-scheme", browserTheme);
-    setOrCreateMeta("theme-color", BROWSER_THEME_COLORS[browserTheme]);
+    document.body.style.colorScheme = browserTheme;
+
+    setOrCreateMeta("color-scheme", colorScheme);
+    setOrCreateMeta("supported-color-schemes", colorScheme);
+    setOrCreateMeta("theme-color", BROWSER_THEME_COLORS[browserTheme], { recreate: true });
+    setOrCreateMeta("apple-mobile-web-app-status-bar-style", IOS_STATUS_BAR_STYLES[browserTheme]);
 }
 
 export default function App() {

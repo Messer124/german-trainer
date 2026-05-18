@@ -1,6 +1,11 @@
 /* базовые сбросы */
 html {
   -webkit-tap-highlight-color: transparent;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
 }
 
 *,
@@ -22,6 +27,7 @@ body {
   sans-serif;
   background: var(--color-bg-body);
   color: var(--color-text-primary);
+  color-scheme: inherit;
 }
 
 :root.theme-transition body,
