@@ -20,25 +20,30 @@ const MOBILE_BREAKPOINT = 600;
 const THEME_STORAGE_KEY = "app-theme";
 const SETTINGS_OPEN_STORAGE_KEY = "sidebar-settings-open";
 const BROWSER_THEME_COLORS = {
-    light: "#6ecfff",
-    dark: "#070f2f",
+    light: "rgb(110, 207, 255)",
+    dark: "rgb(7, 15, 47)",
+};
+const DOCUMENT_THEME_BACKGROUNDS = {
+    light: "#f2f2f7",
+    dark: "#050b1f",
 };
 const IOS_STATUS_BAR_STYLES = {
     light: "default",
     dark: "black-translucent",
 };
 
-function setOrCreateMeta(name, content, { recreate = false } = {}) {
+function setOrCreateMeta(name, content, { id } = {}) {
     if (typeof document === "undefined") return;
 
-    let meta = document.querySelector(`meta[name="${name}"]`);
-    if (recreate && meta) {
-        meta.remove();
-        meta = null;
-    }
+    let meta = id
+        ? document.getElementById(id)
+        : document.querySelector(`meta[name="${name}"]`);
 
     if (!meta) {
         meta = document.createElement("meta");
+        if (id) {
+            meta.setAttribute("id", id);
+        }
         meta.setAttribute("name", name);
         document.head.appendChild(meta);
     }
@@ -54,12 +59,14 @@ function syncBrowserTheme(theme) {
     const colorScheme = `${browserTheme} ${fallbackTheme}`;
 
     document.documentElement.style.colorScheme = browserTheme;
+    document.documentElement.style.backgroundColor = DOCUMENT_THEME_BACKGROUNDS[browserTheme];
     document.body.style.colorScheme = browserTheme;
+    document.body.style.backgroundColor = DOCUMENT_THEME_BACKGROUNDS[browserTheme];
 
-    setOrCreateMeta("color-scheme", colorScheme);
-    setOrCreateMeta("supported-color-schemes", colorScheme);
-    setOrCreateMeta("theme-color", BROWSER_THEME_COLORS[browserTheme], { recreate: true });
-    setOrCreateMeta("apple-mobile-web-app-status-bar-style", IOS_STATUS_BAR_STYLES[browserTheme]);
+    setOrCreateMeta("color-scheme", colorScheme, { id: "app-color-scheme" });
+    setOrCreateMeta("supported-color-schemes", colorScheme, { id: "app-supported-color-schemes" });
+    setOrCreateMeta("theme-color", BROWSER_THEME_COLORS[browserTheme], { id: "app-theme-color" });
+    setOrCreateMeta("apple-mobile-web-app-status-bar-style", IOS_STATUS_BAR_STYLES[browserTheme], { id: "app-ios-status-bar-style" });
 }
 
 export default function App() {

@@ -1,6 +1,7 @@
 /* базовые сбросы */
 html {
   -webkit-tap-highlight-color: transparent;
+  background-color: var(--color-bg-body);
   color-scheme: light;
 }
 
@@ -19,6 +20,7 @@ body,
 #root {
   height: 100%;
   position: fixed;
+  background-color: var(--color-bg-body);
 }
 
 body {
