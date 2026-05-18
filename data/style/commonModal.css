@@ -1755,215 +1755,215 @@ table.mv-table tbody td {
   background: var(--theory-accent-yellow);
 }
 
-/* ===== B1: Modalverben im Konjunktiv II ===== */
+/* ===== B1: Konjunktiv II ===== */
 
-.modal-html-content .b1-modalverben-k2 {
+.modal-html-content .b1-konjunktiv2 {
   color: var(--theory-text-color);
   font-size: var(--desktop-modal-font-size);
   line-height: 1.28;
 }
 
-.b1-modalverben-k2 .k2-lead,
-.b1-modalverben-k2 .k2-examples p,
-.b1-modalverben-k2 .k2-note-box p,
-.b1-modalverben-k2 .k2-footnote {
+.b1-konjunktiv2 .k2-lead,
+.b1-konjunktiv2 .k2-examples p,
+.b1-konjunktiv2 .k2-note-box p,
+.b1-konjunktiv2 .k2-footnote {
   margin: 0 0 18px !important;
 }
 
-.b1-modalverben-k2 .k2-lead {
+.b1-konjunktiv2 .k2-lead {
   font-size: var(--desktop-modal-font-size) !important;
   line-height: 1.25;
 }
 
-.b1-modalverben-k2 .k2-lead--compact {
+.b1-konjunktiv2 .k2-lead--compact {
   margin-top: 26px !important;
 }
 
-.b1-modalverben-k2 .k2-translation {
+.b1-konjunktiv2 .k2-translation {
   font-style: italic;
 }
 
-.b1-modalverben-k2 .k2-compare {
+.b1-konjunktiv2 .k2-compare {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 36px;
   margin: 26px 0 24px;
 }
 
-.b1-modalverben-k2 .k2-column-title {
+.b1-konjunktiv2 .k2-column-title {
   margin: 0 0 14px !important;
   text-align: center;
   font-size: var(--desktop-modal-header-font-size) !important;
   font-weight: 800;
 }
 
-.b1-modalverben-k2 .k2-examples {
+.b1-konjunktiv2 .k2-examples {
   margin: 18px 0 24px;
 }
 
-.b1-modalverben-k2 .k2-note-box {
+.b1-konjunktiv2 .k2-note-box {
   margin-top: 24px;
   padding: 12px 16px;
   border: 2px solid var(--theory-strong-text-color);
   background: var(--theory-surface-soft);
 }
 
-.b1-modalverben-k2 .k2-note-box p:last-child,
-.b1-modalverben-k2 .k2-footnote:last-child {
+.b1-konjunktiv2 .k2-note-box p:last-child,
+.b1-konjunktiv2 .k2-footnote:last-child {
   margin-bottom: 0 !important;
 }
 
-.b1-modalverben-k2 .k2-table {
+.b1-konjunktiv2 .k2-table {
   display: grid;
   grid-template-columns: minmax(180px, 0.2fr) minmax(130px, 0.15fr) minmax(520px, 0.65fr);
   width: 100%;
   line-height: 1.25;
 }
 
-.b1-modalverben-k2 .k2-table-head,
-.b1-modalverben-k2 .k2-type,
-.b1-modalverben-k2 .k2-union,
-.b1-modalverben-k2 .k2-cell {
+.b1-konjunktiv2 .k2-table-head,
+.b1-konjunktiv2 .k2-type,
+.b1-konjunktiv2 .k2-union,
+.b1-konjunktiv2 .k2-cell {
   padding: 10px 14px;
   border-bottom: 1px solid var(--theory-line-color);
 }
 
-.b1-modalverben-k2 .k2-table-head {
+.b1-konjunktiv2 .k2-table-head {
   font-weight: 800;
   font-size: var(--desktop-modal-header-font-size) !important;
 }
 
-.b1-modalverben-k2 .k2-type,
-.b1-modalverben-k2 .k2-union {
+.b1-konjunktiv2 .k2-type,
+.b1-konjunktiv2 .k2-union {
   border-right: 1px solid var(--theory-line-color);
 }
 
-.b1-modalverben-k2 .k2-type {
+.b1-konjunktiv2 .k2-type {
   font-size: 1.04em;
 }
 
-.b1-modalverben-k2 .k2-union {
+.b1-konjunktiv2 .k2-union {
   text-align: center;
   font-size: 1.02em;
 }
 
-.b1-modalverben-k2 .k2-rowspan-2 {
+.b1-konjunktiv2 .k2-rowspan-2 {
   grid-row: span 2;
 }
 
-.b1-modalverben-k2 .k2-rowspan-3 {
+.b1-konjunktiv2 .k2-rowspan-3 {
   grid-row: span 3;
 }
 
-.b1-modalverben-k2 .k2-cell p {
+.b1-konjunktiv2 .k2-cell p {
   margin: 0 0 18px !important;
 }
 
-.b1-modalverben-k2 .k2-cell p:last-child {
+.b1-konjunktiv2 .k2-cell p:last-child {
   margin-bottom: 0 !important;
 }
 
-.b1-modalverben-k2 .k2-table--continued {
+.b1-konjunktiv2 .k2-table--continued {
   margin-top: 4px;
 }
 
-.b1-modalverben-k2 .k2-footnote {
+.b1-konjunktiv2 .k2-footnote {
   margin-top: 20px !important;
 }
 
-.b1-modalverben-k2 .k2-wish-grid {
+.b1-konjunktiv2 .k2-wish-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 22px 42px;
   margin-top: 34px;
 }
 
-.b1-modalverben-k2 .k2-wish-title {
+.b1-konjunktiv2 .k2-wish-title {
   text-align: center;
   font-size: var(--desktop-modal-header-font-size) !important;
   font-weight: 800;
 }
 
-.b1-modalverben-k2 .k2-wish-note {
+.b1-konjunktiv2 .k2-wish-note {
   text-align: center;
 }
 
-.b1-modalverben-k2 .k2-wish-note--wide {
+.b1-konjunktiv2 .k2-wish-note--wide {
   grid-column: 1 / -1;
 }
 
-.b1-modalverben-k2 .k2-wish-cell {
+.b1-konjunktiv2 .k2-wish-cell {
   line-height: 1.28;
 }
 
 @media (max-width: 1200px) {
-  .modal-html-content .b1-modalverben-k2,
-  .b1-modalverben-k2 .k2-lead {
+  .modal-html-content .b1-konjunktiv2,
+  .b1-konjunktiv2 .k2-lead {
     font-size: var(--tablet-modal-font-size) !important;
   }
 
-  .b1-modalverben-k2 .k2-column-title,
-  .b1-modalverben-k2 .k2-table-head,
-  .b1-modalverben-k2 .k2-wish-title {
+  .b1-konjunktiv2 .k2-column-title,
+  .b1-konjunktiv2 .k2-table-head,
+  .b1-konjunktiv2 .k2-wish-title {
     font-size: var(--tablet-modal-header-font-size) !important;
   }
 
-  .b1-modalverben-k2 .k2-compare {
+  .b1-konjunktiv2 .k2-compare {
     gap: 24px;
   }
 
-  .b1-modalverben-k2 .k2-table {
+  .b1-konjunktiv2 .k2-table {
     grid-template-columns: minmax(140px, 0.2fr) minmax(110px, 0.17fr) minmax(360px, 0.63fr);
   }
 
-  .b1-modalverben-k2 .k2-table-head,
-  .b1-modalverben-k2 .k2-type,
-  .b1-modalverben-k2 .k2-union,
-  .b1-modalverben-k2 .k2-cell {
+  .b1-konjunktiv2 .k2-table-head,
+  .b1-konjunktiv2 .k2-type,
+  .b1-konjunktiv2 .k2-union,
+  .b1-konjunktiv2 .k2-cell {
     padding: 8px 10px;
   }
 }
 
 @media (max-width: 600px) {
-  .modal-html-content .b1-modalverben-k2,
-  .b1-modalverben-k2 .k2-lead {
+  .modal-html-content .b1-konjunktiv2,
+  .b1-konjunktiv2 .k2-lead {
     font-size: var(--mobile-modal-font-size) !important;
   }
 
-  .b1-modalverben-k2 .k2-column-title,
-  .b1-modalverben-k2 .k2-table-head,
-  .b1-modalverben-k2 .k2-wish-title {
+  .b1-konjunktiv2 .k2-column-title,
+  .b1-konjunktiv2 .k2-table-head,
+  .b1-konjunktiv2 .k2-wish-title {
     font-size: var(--mobile-modal-header-font-size) !important;
   }
 
-  .b1-modalverben-k2 .k2-compare,
-  .b1-modalverben-k2 .k2-wish-grid {
+  .b1-konjunktiv2 .k2-compare,
+  .b1-konjunktiv2 .k2-wish-grid {
     grid-template-columns: 1fr;
     gap: 14px;
   }
 
-  .b1-modalverben-k2 .k2-table {
+  .b1-konjunktiv2 .k2-table {
     display: block;
   }
 
-  .b1-modalverben-k2 .k2-table-head {
+  .b1-konjunktiv2 .k2-table-head {
     display: none;
   }
 
-  .b1-modalverben-k2 .k2-type,
-  .b1-modalverben-k2 .k2-union,
-  .b1-modalverben-k2 .k2-cell {
+  .b1-konjunktiv2 .k2-type,
+  .b1-konjunktiv2 .k2-union,
+  .b1-konjunktiv2 .k2-cell {
     border-right: none;
     padding: 7px 8px;
   }
 
-  .b1-modalverben-k2 .k2-type {
+  .b1-konjunktiv2 .k2-type {
     margin-top: 12px;
     border-top: 1px solid var(--theory-line-color);
     font-weight: 800;
   }
 
-  .b1-modalverben-k2 .k2-union {
+  .b1-konjunktiv2 .k2-union {
     text-align: left;
     font-weight: 800;
   }
