@@ -20,8 +20,8 @@ const MOBILE_BREAKPOINT = 600;
 const THEME_STORAGE_KEY = "app-theme";
 const SETTINGS_OPEN_STORAGE_KEY = "sidebar-settings-open";
 const BROWSER_THEME_COLORS = {
-    light: "rgb(110, 207, 255)",
-    dark: "rgb(7, 15, 47)",
+    light: "#ffffff",
+    dark: "#202124",
 };
 const DOCUMENT_THEME_BACKGROUNDS = {
     light: "#f2f2f7",
@@ -49,6 +49,23 @@ function setOrCreateMeta(name, content, { id } = {}) {
     }
 
     meta.setAttribute("content", content);
+    return meta;
+}
+
+function syncThemeColorMeta(browserTheme) {
+    const lightMeta = setOrCreateMeta(
+        "theme-color",
+        BROWSER_THEME_COLORS.light,
+        { id: "app-theme-color-light" }
+    );
+    const darkMeta = setOrCreateMeta(
+        "theme-color",
+        BROWSER_THEME_COLORS.dark,
+        { id: "app-theme-color-dark" }
+    );
+
+    lightMeta.setAttribute("media", browserTheme === "dark" ? "not all" : "all");
+    darkMeta.setAttribute("media", browserTheme === "dark" ? "all" : "not all");
 }
 
 function syncBrowserTheme(theme) {
@@ -65,7 +82,7 @@ function syncBrowserTheme(theme) {
 
     setOrCreateMeta("color-scheme", colorScheme, { id: "app-color-scheme" });
     setOrCreateMeta("supported-color-schemes", colorScheme, { id: "app-supported-color-schemes" });
-    setOrCreateMeta("theme-color", BROWSER_THEME_COLORS[browserTheme], { id: "app-theme-color" });
+    syncThemeColorMeta(browserTheme);
     setOrCreateMeta("apple-mobile-web-app-status-bar-style", IOS_STATUS_BAR_STYLES[browserTheme], { id: "app-ios-status-bar-style" });
 }
 

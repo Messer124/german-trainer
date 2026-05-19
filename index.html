@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta id="app-color-scheme" name="color-scheme" content="light dark" />
     <meta id="app-supported-color-schemes" name="supported-color-schemes" content="light dark" />
-    <meta id="app-theme-color" name="theme-color" content="rgb(110, 207, 255)" />
+    <meta id="app-theme-color-light" name="theme-color" content="#ffffff" media="all" />
+    <meta id="app-theme-color-dark" name="theme-color" content="#202124" media="not all" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta id="app-ios-status-bar-style" name="apple-mobile-web-app-status-bar-style" content="default" />
     <script>
@@ -14,10 +15,13 @@
           var theme = localStorage.getItem("app-theme") === "dark" ? "dark" : "light";
           var isDark = theme === "dark";
           var colorScheme = isDark ? "dark light" : "light dark";
-          var themeColor = isDark ? "rgb(7, 15, 47)" : "rgb(110, 207, 255)";
+          var lightThemeColor = "#ffffff";
+          var darkThemeColor = "#202124";
           var backgroundColor = isDark ? "#050b1f" : "#f2f2f7";
           var statusBarStyle = isDark ? "black-translucent" : "default";
           var root = document.documentElement;
+          var lightThemeMeta = document.getElementById("app-theme-color-light");
+          var darkThemeMeta = document.getElementById("app-theme-color-dark");
 
           root.setAttribute("data-theme", theme);
           root.style.colorScheme = theme;
@@ -25,7 +29,10 @@
 
           document.getElementById("app-color-scheme").setAttribute("content", colorScheme);
           document.getElementById("app-supported-color-schemes").setAttribute("content", colorScheme);
-          document.getElementById("app-theme-color").setAttribute("content", themeColor);
+          lightThemeMeta.setAttribute("content", lightThemeColor);
+          darkThemeMeta.setAttribute("content", darkThemeColor);
+          lightThemeMeta.setAttribute("media", isDark ? "not all" : "all");
+          darkThemeMeta.setAttribute("media", isDark ? "all" : "not all");
           document.getElementById("app-ios-status-bar-style").setAttribute("content", statusBarStyle);
         } catch (error) {
           document.documentElement.setAttribute("data-theme", "light");
