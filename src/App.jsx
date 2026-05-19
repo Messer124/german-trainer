@@ -31,6 +31,7 @@ const IOS_STATUS_BAR_STYLES = {
     light: "default",
     dark: "black-translucent",
 };
+const THEME_TRANSITION_DURATION_MS = 1000;
 
 function setOrCreateMeta(name, content, { id } = {}) {
     if (typeof document === "undefined") return;
@@ -115,6 +116,7 @@ export default function App() {
 
     const contentRef = useRef(null);
     const hasThemeMountedRef = useRef(false);
+    const shouldReloadAfterThemeTransitionRef = useRef(false);
     const labels = translations[locale].labels;
 
     const handleThemeToggle = () => {
@@ -124,13 +126,8 @@ export default function App() {
             localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
         }
 
+        shouldReloadAfterThemeTransitionRef.current = true;
         setTheme(nextTheme);
-
-        if (typeof window !== "undefined") {
-            window.setTimeout(() => {
-                window.location.reload();
-            }, 80);
-        }
     };
 
     // Загружаем весь выбранный уровень целиком.
@@ -228,7 +225,12 @@ export default function App() {
         root.classList.add("theme-transition");
         const timer = window.setTimeout(() => {
             root.classList.remove("theme-transition");
-        }, 1000);
+
+            if (shouldReloadAfterThemeTransitionRef.current) {
+                shouldReloadAfterThemeTransitionRef.current = false;
+                window.location.reload();
+            }
+        }, THEME_TRANSITION_DURATION_MS);
 
         return () => {
             window.clearTimeout(timer);
