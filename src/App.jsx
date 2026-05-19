@@ -117,6 +117,22 @@ export default function App() {
     const hasThemeMountedRef = useRef(false);
     const labels = translations[locale].labels;
 
+    const handleThemeToggle = () => {
+        const nextTheme = theme === "dark" ? "light" : "dark";
+
+        if (typeof window !== "undefined") {
+            localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+        }
+
+        setTheme(nextTheme);
+
+        if (typeof window !== "undefined") {
+            window.setTimeout(() => {
+                window.location.reload();
+            }, 80);
+        }
+    };
+
     // Загружаем весь выбранный уровень целиком.
     useEffect(() => {
         let cancelled = false;
@@ -362,9 +378,7 @@ export default function App() {
                     className={`theme-toggle ${
                         isDarkTheme ? "theme-toggle--dark" : ""
                     }`}
-                    onClick={() =>
-                        setTheme((prev) => (prev === "dark" ? "light" : "dark"))
-                    }
+                    onClick={handleThemeToggle}
                     aria-label={labels.theme}
                     aria-pressed={isDarkTheme}
                 >
