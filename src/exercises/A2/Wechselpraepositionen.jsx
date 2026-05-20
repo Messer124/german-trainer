@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
+import SectionedProgressiveList from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { normalizeExerciseSections } from "../../utils/sectionedExercise";
 import data from "../../../data/A2/prepositions.json";
 import slide2Ru from "../../../data/A2/images/prepositions.html?raw";
 import slide1Ru from "../../../data/A2/images/prepVerbs.html?raw";
@@ -18,56 +19,6 @@ function normalize(v) {
   return String(v ?? "").trim().toLowerCase().replace(/\s+/g, " ");
 }
 
-function getLocalizedText(raw, locale) {
-  if (typeof raw === "string") return raw;
-  if (raw && typeof raw === "object") return raw[locale] ?? raw.ru ?? raw.en ?? "";
-  return "";
-}
-
-function getRows(rawItems) {
-  const items = Array.isArray(rawItems) ? rawItems : [];
-  const rows = [];
-
-  let currentSection = null;
-  let sentenceIndex = 0;
-
-  items.forEach((item, rawIndex) => {
-    if (!item || typeof item !== "object") return;
-
-    const hasSentence = Object.prototype.hasOwnProperty.call(item, "sentence");
-    const hasAnswer = Object.prototype.hasOwnProperty.call(item, "answer");
-
-    if (typeof item.id === "string" && !hasSentence && !hasAnswer) {
-      currentSection = item.id;
-      rows.push({
-        type: "divider",
-        key: `wechsel-divider-${rawIndex}-${item.id}`,
-        id: item.id,
-        label: item.label,
-      });
-      return;
-    }
-
-    if (!hasSentence || !hasAnswer) return;
-
-    const section = currentSection ?? "insert";
-
-    rows.push({
-      type: "item",
-      section,
-      key: `wechsel-item-${sentenceIndex}`,
-      sentenceIndex,
-      sentence: item.sentence,
-      translation: item.translation,
-      answer: item.answer,
-    });
-
-    sentenceIndex += 1;
-  });
-
-  return rows;
-}
-
 function splitByBlanks(sentence) {
   return String(sentence ?? "").split(TOKEN_RE);
 }
@@ -77,8 +28,10 @@ export default function Wechselpraepositionen() {
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
   const [showHint, setShowHint] = useState(false);
 
-  const rows = useMemo(() => getRows(data.items), []);
-  const sections = useMemo(() => rowsToSections(rows, "wechselpraepositionen"), [rows]);
+  const sections = useMemo(
+      () => normalizeExerciseSections(data, locale, "wechselpraepositionen"),
+      [locale]
+  );
   const slides = useMemo(
       () => (locale === "en" ? [slide1En, slide2En] : [slide1Ru, slide2Ru]),
       [locale]
@@ -101,8 +54,8 @@ export default function Wechselpraepositionen() {
   };
 
   const renderInsert = (row) => {
-    const sentence = getLocalizedText(row.sentence, locale);
-    const translation = getLocalizedText(row.translation, locale);
+    const sentence = row.sentence;
+    const translation = row.translation;
     const parts = splitByBlanks(sentence);
 
     const correctAnswers = Array.isArray(row.answer) ? row.answer.map(String) : [];
@@ -162,7 +115,7 @@ export default function Wechselpraepositionen() {
   };
 
   const renderTranslate = (row) => {
-    const sentence = getLocalizedText(row.sentence, locale);
+    const sentence = row.sentence;
     const correct = String(row.answer ?? "");
 
     const key = `${row.sentenceIndex}-0`;
@@ -208,10 +161,9 @@ export default function Wechselpraepositionen() {
         <SectionedProgressiveList
             sections={sections}
             className="list"
-            renderLabel={(label) => getLocalizedText(label, locale)}
         >
             {(row) => {
-              if (row.section === "translate") return renderTranslate(row);
+              if (row.sectionType === "translate") return renderTranslate(row);
               return renderInsert(row);
             }}
         </SectionedProgressiveList>

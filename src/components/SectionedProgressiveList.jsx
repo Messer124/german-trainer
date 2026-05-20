@@ -1,38 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import ProgressiveList from "./ProgressiveList";
 
-export function rowsToSections(rows, fallbackId = "section") {
-    const sections = [];
-    let currentSection = null;
-
-    (Array.isArray(rows) ? rows : []).forEach((row, index) => {
-        if (row?.type === "divider") {
-            currentSection = {
-                id: row.id ?? `${fallbackId}-${sections.length}`,
-                key: row.key ?? `${fallbackId}-divider-${index}`,
-                label: row.label,
-                items: [],
-            };
-            sections.push(currentSection);
-            return;
-        }
-
-        if (!currentSection) {
-            currentSection = {
-                id: `${fallbackId}-default`,
-                key: `${fallbackId}-default`,
-                label: "",
-                items: [],
-            };
-            sections.push(currentSection);
-        }
-
-        currentSection.items.push(row);
-    });
-
-    return sections.filter((section) => section.items.length > 0);
-}
-
 export default function SectionedProgressiveList({
     sections,
     children,

@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
+import SectionedProgressiveList from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { normalizeExerciseSections } from "../../utils/sectionedExercise";
 
 import data from "../../../data/B1/partizipien.json";
 import slide1Ru from "../../../data/B1/images/partizipien1.html?raw";
@@ -25,61 +26,6 @@ function normalize(value) {
         .replace(/\s+/g, " ");
 }
 
-function getLocalizedText(raw, locale) {
-    if (typeof raw === "string") return raw;
-    if (raw && typeof raw === "object") {
-        return raw[locale] ?? raw.ru ?? raw.en ?? "";
-    }
-    return "";
-}
-
-function getAnswer(item) {
-    if (Array.isArray(item?.answer)) return String(item.answer[0] ?? "");
-    if (Array.isArray(item?.answers)) return String(item.answers[0] ?? "");
-    return String(item?.answer ?? "");
-}
-
-function getRows(rawItems) {
-    const items = Array.isArray(rawItems) ? rawItems : [];
-    const rows = [];
-    let currentSection = "insert";
-    let sentenceIndex = 0;
-
-    items.forEach((item, rawIndex) => {
-        if (!item || typeof item !== "object") return;
-
-        const hasSentence = Object.prototype.hasOwnProperty.call(item, "sentence");
-        const hasAnswer = Object.prototype.hasOwnProperty.call(item, "answer")
-            || Object.prototype.hasOwnProperty.call(item, "answers");
-
-        if (typeof item.id === "string" && !hasSentence && !hasAnswer) {
-            currentSection = item.id;
-            rows.push({
-                type: "divider",
-                key: `partizipien-divider-${rawIndex}-${item.id}`,
-                id: item.id,
-                label: item.label,
-            });
-            return;
-        }
-
-        if (!hasSentence || !hasAnswer) return;
-
-        rows.push({
-            type: "item",
-            section: currentSection,
-            key: `partizipien-item-${sentenceIndex}`,
-            sentenceIndex,
-            sentence: item.sentence,
-            placeholder: item.placeholder,
-            answer: getAnswer(item),
-        });
-        sentenceIndex += 1;
-    });
-
-    return rows;
-}
-
 function splitByPlaceholder(sentence) {
     const parts = String(sentence ?? "").split(PLACEHOLDER_TOKEN);
     if (parts.length < 2) return null;
@@ -99,8 +45,10 @@ export default function Partizipien() {
         () => (locale === "en" ? [slide1En, slide2En, slide3En] : [slide1Ru, slide2Ru, slide3Ru]),
         [locale]
     );
-    const rows = useMemo(() => getRows(data.items), []);
-    const sections = useMemo(() => rowsToSections(rows, "partizipien"), [rows]);
+    const sections = useMemo(
+        () => normalizeExerciseSections(data, locale, "partizipien"),
+        [locale]
+    );
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);
@@ -122,9 +70,9 @@ export default function Partizipien() {
     };
 
     const renderInsert = (row) => {
-        const sentence = getLocalizedText(row.sentence, locale);
-        const placeholder = getLocalizedText(row.placeholder, locale);
-        const answer = row.answer;
+        const sentence = row.sentence;
+        const placeholder = row.placeholder;
+        const answer = row.answers[0] ?? "";
         const placeholderParts = splitByPlaceholder(sentence);
         const key = `partizipien-${row.sentenceIndex}`;
         const value = answers[key]?.value ?? "";
@@ -172,8 +120,8 @@ export default function Partizipien() {
     };
 
     const renderTranslate = (row) => {
-        const sentence = getLocalizedText(row.sentence, locale);
-        const answer = row.answer;
+        const sentence = row.sentence;
+        const answer = row.answers[0] ?? "";
         const key = `partizipien-${row.sentenceIndex}`;
         const value = answers[key]?.value ?? "";
         const isCorrect = answers[key]?.isCorrect;
@@ -213,10 +161,9 @@ export default function Partizipien() {
             <SectionedProgressiveList
                 sections={sections}
                 className="list"
-                renderLabel={(label) => getLocalizedText(label, locale)}
             >
                     {(row) => {
-                        if (row.section === "translate") return renderTranslate(row);
+                        if (row.sectionType === "translate") return renderTranslate(row);
                         return renderInsert(row);
                     }}
             </SectionedProgressiveList>

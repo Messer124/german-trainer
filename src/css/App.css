@@ -708,6 +708,14 @@ body {
   padding: var(--size-24);
 }
 
+.exercise-container:has(.exercise-section-pager) {
+  padding-bottom: 0;
+}
+
+.exercise-scroll:has(.exercise-section-pager) {
+  padding-bottom: 0;
+}
+
 .exercise-scroll::-webkit-scrollbar {
   width: var(--size-8);
 }

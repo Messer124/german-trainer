@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
+import SectionedProgressiveList from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { normalizeExerciseSections } from "../../utils/sectionedExercise";
 
 import data from "../../../data/A2/indefinitpronomen.json";
 import slide1Ru from "../../../data/A2/images/indefinitpronomen1.html?raw";
@@ -23,52 +24,6 @@ function normalize(value) {
       .replace(/\s+/g, " ");
 }
 
-function getLocalizedText(raw, locale) {
-  if (typeof raw === "string") return raw;
-  if (raw && typeof raw === "object") {
-    return raw[locale] ?? raw.ru ?? raw.en ?? "";
-  }
-  return "";
-}
-
-function getRows(rawItems, locale) {
-  const items = Array.isArray(rawItems) ? rawItems : [];
-  const rows = [];
-  let sentenceIndex = 0;
-
-  items.forEach((item, rawIndex) => {
-    if (!item || typeof item !== "object") return;
-
-    const hasSentence = Object.prototype.hasOwnProperty.call(item, "sentence");
-    const hasAnswer = Object.prototype.hasOwnProperty.call(item, "answer");
-
-    if (typeof item.id === "string" && !hasSentence && !hasAnswer) {
-      const label = getLocalizedText(item.label, locale);
-      if (!label) return;
-
-      rows.push({
-        type: "divider",
-        key: `indefinitpronomen-divider-${rawIndex}-${item.id}`,
-        label,
-      });
-      return;
-    }
-
-    if (!hasSentence || !hasAnswer) return;
-
-    rows.push({
-      type: "sentence",
-      key: `indefinitpronomen-sentence-${sentenceIndex}`,
-      sentenceIndex,
-      sentence: getLocalizedText(item.sentence, locale),
-      answer: String(item.answer ?? ""),
-    });
-    sentenceIndex += 1;
-  });
-
-  return rows;
-}
-
 function splitByPlaceholder(sentence) {
   const parts = String(sentence ?? "").split(PLACEHOLDER);
   if (parts.length < 2) return null;
@@ -84,8 +39,10 @@ export default function Indefinitpronomen() {
       () => (locale === "en" ? [slide1En, slide2En] : [slide1Ru, slide2Ru]),
       [locale]
   );
-  const rows = useMemo(() => getRows(data.items, locale), [locale]);
-  const sections = useMemo(() => rowsToSections(rows, "indefinitpronomen"), [rows]);
+  const sections = useMemo(
+      () => normalizeExerciseSections(data, locale, "indefinitpronomen"),
+      [locale]
+  );
 
   useEffect(() => {
     const handleShowHint = () => setShowHint(true);

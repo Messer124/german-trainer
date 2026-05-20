@@ -4762,18 +4762,36 @@ table.mv-table tbody td {
   .passiv-vergangenheit-replacements .pv-replacement-table,
   .passiv-vergangenheit-summary .pv-summary-grid {
     width: 100%;
-    min-width: 760px;
+    min-width: 0;
   }
 
   .passiv-vergangenheit .passiv-section-title {
-    font-size: 0.98em;
+    font-size: 0.7rem;
+  }
+
+  .passiv-vergangenheit .passiv-compare-table {
+    table-layout: fixed;
+  }
+
+  .passiv-vergangenheit .passiv-compare-table td,
+  .passiv-vergangenheit .passiv-compare-table th {
+    padding: 5px 4px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .passiv-vergangenheit .passiv-head {
+    font-size: 0.62rem;
+    line-height: 1.16;
   }
 
   .passiv-vergangenheit-replacements .pv-replacement-table th,
   .passiv-vergangenheit-replacements .pv-replacement-table td {
-    padding: 8px 8px;
-    font-size: 0.8rem;
-    line-height: 1.22;
+    padding: 5px 4px;
+    font-size: 0.58rem;
+    line-height: 1.18;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .passiv-vergangenheit-replacements .pv-lead,
@@ -4781,19 +4799,186 @@ table.mv-table tbody td {
   .passiv-vergangenheit .passiv-note,
   .passiv-vergangenheit .passiv-example,
   .passiv-vergangenheit .passiv-formula {
-    font-size: 0.82rem;
-    line-height: 1.24;
+    font-size: 0.62rem;
+    line-height: 1.18;
+  }
+
+  .passiv-vergangenheit-replacements .pv-lead {
+    margin-bottom: 8px;
+  }
+
+  .passiv-vergangenheit-replacements .pv-replacement-table td p + p,
+  .passiv-vergangenheit-replacements .pv-replacement-table--compact td p + p {
+    margin-top: 8px;
   }
 
   .passiv-vergangenheit-summary .pv-summary-title {
-    margin-top: 18px;
-    font-size: 1em;
+    margin: 10px 0 6px;
+    font-size: 0.76rem;
   }
 
   .passiv-vergangenheit-summary .pv-summary-grid {
-    grid-template-columns: 8% 25% 67%;
-    gap: 10px 12px;
-    font-size: 0.8rem;
-    line-height: 1.22;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    font-size: 0.62rem;
+    line-height: 1.18;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-label,
+  .passiv-vergangenheit-summary .pv-summary-side,
+  .passiv-vergangenheit-summary .pv-summary-replacer,
+  .passiv-vergangenheit-summary .pv-summary-example {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-side {
+    justify-self: stretch;
+    writing-mode: horizontal-tb;
+    transform: none;
+    text-align: center;
+    padding-top: 4px;
+    border-top: 1px solid var(--pv-line);
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-replacer {
+    color: var(--theory-accent-yellow);
+    font-weight: 700;
+  }
+}
+
+/* ===== Das Verb brauchen ===== */
+
+.brauchen-card {
+  --brauchen-line: var(--theory-line-color);
+  --brauchen-table-width: 1080px;
+}
+
+.brauchen-card .brauchen-lead,
+.brauchen-card .brauchen-examples,
+.brauchen-card .brauchen-note {
+  line-height: 1.28;
+}
+
+.brauchen-card .brauchen-lead {
+  margin: 0 0 18px;
+}
+
+.brauchen-card .brauchen-examples {
+  margin: 18px 0 22px;
+}
+
+.brauchen-card .brauchen-examples p {
+  margin: 0;
+}
+
+.brauchen-card .brauchen-table {
+  width: var(--brauchen-table-width);
+  min-width: var(--brauchen-table-width);
+  margin: 8px auto 20px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.brauchen-card .brauchen-table__meaning-col {
+  width: 11%;
+}
+
+.brauchen-card .brauchen-table__equivalent-col {
+  width: 16%;
+}
+
+.brauchen-card .brauchen-table th,
+.brauchen-card .brauchen-table td {
+  padding: 8px 14px;
+  border-top: 1px solid var(--brauchen-line);
+  vertical-align: middle;
+  text-align: left;
+  line-height: 1.18;
+}
+
+.brauchen-card .brauchen-table th + td,
+.brauchen-card .brauchen-table td + td {
+  border-left: 1px solid var(--brauchen-line);
+}
+
+.brauchen-card .brauchen-side-label {
+  color: var(--theory-strong-text-color);
+  font-weight: 400;
+  text-align: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: 0.02em;
+}
+
+.brauchen-card .brauchen-equivalent {
+  font-weight: 700;
+  color: var(--theory-strong-text-color);
+}
+
+.brauchen-card .brauchen-note {
+  margin-top: 18px;
+}
+
+@media (max-width: 1200px) {
+  .brauchen-card .brauchen-table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .brauchen-card .brauchen-lead,
+  .brauchen-card .brauchen-examples,
+  .brauchen-card .brauchen-note,
+  .brauchen-card .brauchen-table th,
+  .brauchen-card .brauchen-table td {
+    font-size: 0.94rem;
+  }
+
+  .brauchen-card .brauchen-table th,
+  .brauchen-card .brauchen-table td {
+    padding: 8px 10px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 600px) {
+  .brauchen-card .brauchen-lead,
+  .brauchen-card .brauchen-examples,
+  .brauchen-card .brauchen-note {
+    margin-bottom: 10px;
+    font-size: 0.68rem;
+    line-height: 1.2;
+  }
+
+  .brauchen-card .brauchen-examples {
+    margin-top: 10px;
+  }
+
+  .brauchen-card .brauchen-table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .brauchen-card .brauchen-table__meaning-col {
+    width: 12%;
+  }
+
+  .brauchen-card .brauchen-table__equivalent-col {
+    width: 17%;
+  }
+
+  .brauchen-card .brauchen-table th,
+  .brauchen-card .brauchen-table td {
+    padding: 5px 4px;
+    font-size: 0.58rem;
+    line-height: 1.16;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .brauchen-card .brauchen-side-label {
+    font-size: 0.58rem;
+    letter-spacing: 0;
   }
 }

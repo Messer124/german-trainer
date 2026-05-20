@@ -165,10 +165,11 @@
             "worden"
           ]
         }
-      ]
+      ],
+      "type": "fill"
     },
     {
-      "id": "passiversatzformen",
+      "id": "passiv-ersatzformen",
       "label": {
         "ru": "Замени Passiv, используя указанный заменитель",
         "en": "Replace “Passiv” with the specified substitute"
@@ -286,10 +287,11 @@
           ],
           "placeholder": "man"
         }
-      ]
+      ],
+      "type": "fill"
     },
     {
-      "id": "vorgangspassivPerfektUbersetzen",
+      "id": "vorgangspassiv-perfekt-translate",
       "label": {
         "ru": "Переведите предложения в Vorgangspassiv Perfekt",
         "en": "Translate the sentences using the Vorgangspassiv Perfekt"
@@ -450,10 +452,11 @@
             "Das Problem ist schnell gelöst worden"
           ]
         }
-      ]
+      ],
+      "type": "translate"
     },
     {
-      "id": "vorgangspassivModalverbenPräsens",
+      "id": "vorgangspassiv-modalverben-praesens",
       "label": {
         "ru": "Переведите предложения в Vorgangspassiv mit Modalverben (Präsens)",
         "en": "Translate the sentences using the Vorgangspassiv mit Modalverben (Präsens)"
@@ -576,10 +579,11 @@
             "Diese Information soll nicht veröffentlicht werden"
           ]
         }
-      ]
+      ],
+      "type": "fill"
     },
     {
-      "id": "vorgangspassivPräteritumModalverben",
+      "id": "vorgangspassiv-modalverben-praeteritum",
       "label": {
         "ru": "Преобразуйте словосочетание в Vorgangspassiv Präteritum с глаголом müssen",
         "en": "Transform the phrase into the Vorgangspassiv Präteritum with the verb müssen"
@@ -675,10 +679,11 @@
             "Die Rechnung musste bezahlt werden"
           ]
         }
-      ]
+      ],
+      "type": "fill"
     },
     {
-      "id": "zustandspassivPräteritum",
+      "id": "zustandspassiv-praeteritum",
       "label": {
         "ru": "Переведите предложения в Zustandspassiv Präteritum",
         "en": "Translate the sentences using the Zustandspassiv Präteritum"
@@ -825,10 +830,11 @@
             "Das Radio und das Telefon waren erfunden"
           ]
         }
-      ]
+      ],
+      "type": "fill"
     },
     {
-      "id": "fromPassivToSichLassen",
+      "id": "passiv-to-sich-lassen",
       "label": {
         "ru": "Перепишите предложения из Passiv, используя sich lassen",
         "en": "Rewrite the sentences from the passive voice using “sich lassen”"
@@ -931,7 +937,8 @@
             "Diese Frage lässt sich einfach beantworten"
           ]
         }
-      ]
+      ],
+      "type": "fill"
     }
   ]
 }

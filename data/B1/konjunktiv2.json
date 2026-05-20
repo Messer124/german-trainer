@@ -7,386 +7,395 @@
     "ru": "Выполните задания",
     "en": "Modal verbs, sentences with conjunctions, subjunctive mood"
   },
-  "items": [
+  "sections": [
     {
-      "id": "modalVerbs",
+      "id": "modal-verbs",
       "label": {
         "ru": "Перефразируйте предложения с модальными глаголами, используя Konjunktiv II в прошедшем времени",
         "en": "Paraphrase the sentences containing modal verbs, using the Konjunktiv II in the past tense"
-      }
-    },
-    {
-      "sentence": "Mit 5 konnte ich noch nicht lesen",
-      "answers": [
-        "Ich hätte so gern mit 5 lesen können",
-        "Ich hätte mit 5 so gern lesen können"
-      ]
-    },
-    {
-      "sentence": "Es tut mir leid, dass ich dir nicht helfen konnte",
-      "answers": [
-        "Ich hätte dir so gerne helfen können",
-        "Ich hätte dir gern helfen können"
-      ]
-    },
-    {
-      "sentence": "Ich habe den Bus verpasst",
-      "answers": [
-        "Ich hätte früher losgehen sollen",
-        "Ich hätte früher losgehen müssen"
-      ]
-    },
-    {
-      "sentence": "Ich bin zu spät zum Termin gekommen",
-      "answers": [
-        "Ich hätte früher losfahren sollen",
-        "Ich hätte früher losfahren müssen"
-      ]
-    },
-    {
-      "sentence": "Ich habe den Arzttermin vergessen",
-      "answers": [
-        "Ich hätte mir den Arzttermin aufschreiben sollen",
-        "Ich hätte mir den Arzttermin aufschreiben müssen"
-      ]
-    },
-    {
-      "sentence": "Ich habe keine Jacke mitgenommen",
-      "answers": [
-        "Ich hätte eine Jacke mitnehmen sollen"
-      ]
-    },
-    {
-      "sentence": "Wir haben keinen Tisch reserviert",
-      "answers": [
-        "Wir hätten einen Tisch reservieren sollen"
-      ]
-    },
-    {
-      "sentence": "Ich habe dich gestern nicht angerufen",
-      "answers": [
-        "Ich hätte dich gestern anrufen sollen",
-        "Ich hätte dich gestern anrufen müssen"
-      ]
-    },
-    {
-      "sentence": "Ich konnte gestern nicht zum Geburtstag kommen",
-      "answers": [
-        "Ich hätte gestern gern zum Geburtstag kommen können",
-        "Ich hätte gestern so gern zum Geburtstag kommen können"
-      ]
-    },
-    {
-      "sentence": "Als Kind durfte ich abends nicht lange fernsehen",
-      "answers": [
-        "Ich hätte als Kind abends gern länger fernsehen dürfen",
-        "Ich hätte als Kind abends so gern länger fernsehen dürfen"
-      ]
-    },
-    {
-      "sentence": "Ich habe zu viel Geld für das Hotel bezahlt",
-      "answers": [
-        "Ich hätte ein günstigeres Hotel buchen sollen"
-      ]
-    },
-    {
-      "sentence": "Wir haben die Tickets zu spät gekauft",
-      "answers": [
-        "Wir hätten die Tickets früher kaufen sollen",
-        "Wir hätten die Tickets früher kaufen müssen"
-      ]
-    },
-    {
-      "sentence": "Ich habe das Fenster offen gelassen",
-      "answers": [
-        "Ich hätte das Fenster schließen sollen",
-        "Ich hätte das Fenster schließen müssen"
-      ]
-    },
-    {
-      "sentence": "Ich habe die E-Mail nicht sofort beantwortet",
-      "answers": [
-        "Ich hätte die E-Mail sofort beantworten sollen",
-        "Ich hätte die E-Mail sofort beantworten müssen"
-      ]
-    },
-    {
-      "sentence": "Ich musste gestern arbeiten und konnte nicht mitkommen",
-      "answers": [
-        "Ich hätte gestern gern mitkommen können",
-        "Ich hätte gestern so gern mitkommen können"
-      ]
+      },
+      "items": [
+        {
+          "sentence": "Mit 5 konnte ich noch nicht lesen",
+          "answers": [
+            "Ich hätte so gern mit 5 lesen können",
+            "Ich hätte mit 5 so gern lesen können"
+          ]
+        },
+        {
+          "sentence": "Es tut mir leid, dass ich dir nicht helfen konnte",
+          "answers": [
+            "Ich hätte dir so gerne helfen können",
+            "Ich hätte dir gern helfen können"
+          ]
+        },
+        {
+          "sentence": "Ich habe den Bus verpasst",
+          "answers": [
+            "Ich hätte früher losgehen sollen",
+            "Ich hätte früher losgehen müssen"
+          ]
+        },
+        {
+          "sentence": "Ich bin zu spät zum Termin gekommen",
+          "answers": [
+            "Ich hätte früher losfahren sollen",
+            "Ich hätte früher losfahren müssen"
+          ]
+        },
+        {
+          "sentence": "Ich habe den Arzttermin vergessen",
+          "answers": [
+            "Ich hätte mir den Arzttermin aufschreiben sollen",
+            "Ich hätte mir den Arzttermin aufschreiben müssen"
+          ]
+        },
+        {
+          "sentence": "Ich habe keine Jacke mitgenommen",
+          "answers": [
+            "Ich hätte eine Jacke mitnehmen sollen"
+          ]
+        },
+        {
+          "sentence": "Wir haben keinen Tisch reserviert",
+          "answers": [
+            "Wir hätten einen Tisch reservieren sollen"
+          ]
+        },
+        {
+          "sentence": "Ich habe dich gestern nicht angerufen",
+          "answers": [
+            "Ich hätte dich gestern anrufen sollen",
+            "Ich hätte dich gestern anrufen müssen"
+          ]
+        },
+        {
+          "sentence": "Ich konnte gestern nicht zum Geburtstag kommen",
+          "answers": [
+            "Ich hätte gestern gern zum Geburtstag kommen können",
+            "Ich hätte gestern so gern zum Geburtstag kommen können"
+          ]
+        },
+        {
+          "sentence": "Als Kind durfte ich abends nicht lange fernsehen",
+          "answers": [
+            "Ich hätte als Kind abends gern länger fernsehen dürfen",
+            "Ich hätte als Kind abends so gern länger fernsehen dürfen"
+          ]
+        },
+        {
+          "sentence": "Ich habe zu viel Geld für das Hotel bezahlt",
+          "answers": [
+            "Ich hätte ein günstigeres Hotel buchen sollen"
+          ]
+        },
+        {
+          "sentence": "Wir haben die Tickets zu spät gekauft",
+          "answers": [
+            "Wir hätten die Tickets früher kaufen sollen",
+            "Wir hätten die Tickets früher kaufen müssen"
+          ]
+        },
+        {
+          "sentence": "Ich habe das Fenster offen gelassen",
+          "answers": [
+            "Ich hätte das Fenster schließen sollen",
+            "Ich hätte das Fenster schließen müssen"
+          ]
+        },
+        {
+          "sentence": "Ich habe die E-Mail nicht sofort beantwortet",
+          "answers": [
+            "Ich hätte die E-Mail sofort beantworten sollen",
+            "Ich hätte die E-Mail sofort beantworten müssen"
+          ]
+        },
+        {
+          "sentence": "Ich musste gestern arbeiten und konnte nicht mitkommen",
+          "answers": [
+            "Ich hätte gestern gern mitkommen können",
+            "Ich hätte gestern so gern mitkommen können"
+          ]
+        }
+      ],
+      "type": "fill"
     },
     {
       "id": "conjunctions",
       "label": {
         "ru": "Перефразируйте предложения, используя Konjunktiv II и указанный союз",
         "en": "Rephrase the sentences using Konjunktiv II and the given conjunction"
-      }
-    },
-    {
-      "sentence": "Du redest so, aber du warst nicht dabei",
-      "answers": [
-        "Du redest so, als wenn du dabei gewesen wärst"
+      },
+      "items": [
+        {
+          "sentence": "Du redest so, aber du warst nicht dabei",
+          "answers": [
+            "Du redest so, als wenn du dabei gewesen wärst"
+          ],
+          "placeholder": "als wenn"
+        },
+        {
+          "sentence": "Ich habe heute keine Zeit, deshalb komme ich nicht mit",
+          "answers": [
+            "Wenn ich heute Zeit hätte, würde ich mitkommen"
+          ],
+          "placeholder": "wenn"
+        },
+        {
+          "sentence": "Lena kocht sehr gut, obwohl sie keine gelernte Köchin ist",
+          "answers": [
+            "Lena kocht sehr gut, als ob sie eine gelernte Köchin wäre"
+          ],
+          "placeholder": "als ob"
+        },
+        {
+          "sentence": "Er sieht sehr müde aus, aber er hat lange geschlafen",
+          "answers": [
+            "Er sieht sehr müde aus, als hätte er nicht lange geschlafen"
+          ],
+          "placeholder": "als"
+        },
+        {
+          "sentence": "Wir haben kein Auto, deshalb fahren wir mit dem Zug",
+          "answers": [
+            "Wenn wir ein Auto hätten, würden wir nicht mit dem Zug fahren",
+            "Wenn wir ein Auto hätten, würden wir mit dem Auto fahren"
+          ],
+          "placeholder": "wenn"
+        },
+        {
+          "sentence": "Vielleicht hätte ich wenig Zeit. Trotzdem würde ich dir helfen",
+          "answers": [
+            "Auch wenn ich wenig Zeit hätte, würde ich dir helfen"
+          ],
+          "placeholder": "auch wenn"
+        },
+        {
+          "sentence": "Er spricht mit mir, obwohl ich sein Kind nicht bin",
+          "answers": [
+            "Er spricht mit mir, als wenn ich sein Kind wäre"
+          ],
+          "placeholder": "als wenn"
+        },
+        {
+          "sentence": "Er gibt viel Geld aus, obwohl er nicht reich ist",
+          "answers": [
+            "Er gibt viel Geld aus, als wenn er reich wäre"
+          ],
+          "placeholder": "als wenn"
+        },
+        {
+          "sentence": "Sie benimmt sich so, aber sie ist nicht die Chefin",
+          "answers": [
+            "Sie benimmt sich so, als wenn sie die Chefin wäre"
+          ],
+          "placeholder": "als wenn"
+        },
+        {
+          "sentence": "Der Vater redet heute streng, obwohl er gar nicht streng ist",
+          "answers": [
+            "Der Vater redet heute so, als ob er streng wäre"
+          ],
+          "placeholder": "als ob"
+        },
+        {
+          "sentence": "Vielleicht müsste ich früh aufstehen. Trotzdem würde ich den Ausflug machen",
+          "answers": [
+            "Auch wenn ich früh aufstehen müsste, würde ich den Ausflug machen"
+          ],
+          "placeholder": "auch wenn"
+        },
+        {
+          "sentence": "Der kleine Hansi kann keine Karten spielen, deswegen spielt er nicht mit",
+          "answers": [
+            "Wenn der kleine Hansi Karten spielen könnte, würde er mitspielen"
+          ],
+          "placeholder": "wenn"
+        },
+        {
+          "sentence": "Sie tut so, aber sie weiß nichts davon",
+          "answers": [
+            "Sie tut so, als wüsste sie alles davon",
+            "Sie tut so, als würde sie alles davon wissen"
+          ],
+          "placeholder": "als"
+        },
+        {
+          "sentence": "Er tut so, aber er versteht das Problem nicht",
+          "answers": [
+            "Er tut so, als ob er das Problem verstehen würde",
+            "Er tut so, als ob er das Problem verstünde"
+          ],
+          "placeholder": "als ob"
+        },
+        {
+          "sentence": "Vielleicht regnet es morgen. Trotzdem gehen wir spazieren",
+          "answers": [
+            "Auch wenn es morgen regnen würde, würden wir spazieren gehen",
+            "Auch wenn es morgen regnen sollte, würden wir spazieren gehen"
+          ],
+          "placeholder": "auch wenn"
+        },
+        {
+          "sentence": "Du siehst blass aus, aber du bist nicht krank",
+          "answers": [
+            "Du siehst blass aus, als wärst du krank"
+          ],
+          "placeholder": "als"
+        },
+        {
+          "sentence": "Vielleicht wäre die Wohnung teurer. Trotzdem würde ich sie nehmen",
+          "answers": [
+            "Auch wenn die Wohnung teurer wäre, würde ich sie nehmen"
+          ],
+          "placeholder": "auch wenn"
+        },
+        {
+          "sentence": "Sie sieht müde aus, aber sie hat gut geschlafen",
+          "answers": [
+            "Sie sieht aus, als ob sie nicht gut geschlafen hätte",
+            "Sie sieht so aus, als ob sie nicht gut geschlafen hätte"
+          ],
+          "placeholder": "als ob"
+        },
+        {
+          "sentence": "Sie kennt die Adresse nicht, deshalb findet sie das Büro nicht",
+          "answers": [
+            "Wenn sie die Adresse kennen würde, würde sie das Büro finden",
+            "Wenn sie die Adresse wüsste, würde sie das Büro finden"
+          ],
+          "placeholder": "wenn"
+        },
+        {
+          "sentence": "Er spricht sehr sicher, obwohl er keine Erfahrung hat",
+          "answers": [
+            "Er spricht sehr sicher, als hätte er viel Erfahrung"
+          ],
+          "placeholder": "als"
+        }
       ],
-      "placeholder": "als wenn"
+      "type": "fill"
     },
     {
-      "sentence": "Ich habe heute keine Zeit, deshalb komme ich nicht mit",
-      "answers": [
-        "Wenn ich heute Zeit hätte, würde ich mitkommen"
-      ],
-      "placeholder": "wenn"
-    },
-    {
-      "sentence": "Lena kocht sehr gut, obwohl sie keine gelernte Köchin ist",
-      "answers": [
-        "Lena kocht sehr gut, als ob sie eine gelernte Köchin wäre"
-      ],
-      "placeholder": "als ob"
-    },
-    {
-      "sentence": "Er sieht sehr müde aus, aber er hat lange geschlafen",
-      "answers": [
-        "Er sieht sehr müde aus, als hätte er nicht lange geschlafen"
-      ],
-      "placeholder": "als"
-    },
-    {
-      "sentence": "Wir haben kein Auto, deshalb fahren wir mit dem Zug",
-      "answers": [
-        "Wenn wir ein Auto hätten, würden wir nicht mit dem Zug fahren",
-        "Wenn wir ein Auto hätten, würden wir mit dem Auto fahren"
-      ],
-      "placeholder": "wenn"
-    },
-    {
-      "sentence": "Vielleicht hätte ich wenig Zeit. Trotzdem würde ich dir helfen",
-      "answers": [
-        "Auch wenn ich wenig Zeit hätte, würde ich dir helfen"
-      ],
-      "placeholder": "auch wenn"
-    },
-    {
-      "sentence": "Er spricht mit mir, obwohl ich sein Kind nicht bin",
-      "answers": [
-        "Er spricht mit mir, als wenn ich sein Kind wäre"
-      ],
-      "placeholder": "als wenn"
-    },
-    {
-      "sentence": "Er gibt viel Geld aus, obwohl er nicht reich ist",
-      "answers": [
-        "Er gibt viel Geld aus, als wenn er reich wäre"
-      ],
-      "placeholder": "als wenn"
-    },
-    {
-      "sentence": "Sie benimmt sich so, aber sie ist nicht die Chefin",
-      "answers": [
-        "Sie benimmt sich so, als wenn sie die Chefin wäre"
-      ],
-      "placeholder": "als wenn"
-    },
-    {
-      "sentence": "Der Vater redet heute streng, obwohl er gar nicht streng ist",
-      "answers": [
-        "Der Vater redet heute so, als ob er streng wäre"
-      ],
-      "placeholder": "als ob"
-    },
-    {
-      "sentence": "Vielleicht müsste ich früh aufstehen. Trotzdem würde ich den Ausflug machen",
-      "answers": [
-        "Auch wenn ich früh aufstehen müsste, würde ich den Ausflug machen"
-      ],
-      "placeholder": "auch wenn"
-    },
-    {
-      "sentence": "Der kleine Hansi kann keine Karten spielen, deswegen spielt er nicht mit",
-      "answers": [
-        "Wenn der kleine Hansi Karten spielen könnte, würde er mitspielen"
-      ],
-      "placeholder": "wenn"
-    },
-    {
-      "sentence": "Sie tut so, aber sie weiß nichts davon",
-      "answers": [
-        "Sie tut so, als wüsste sie alles davon",
-        "Sie tut so, als würde sie alles davon wissen"
-      ],
-      "placeholder": "als"
-    },
-    {
-      "sentence": "Er tut so, aber er versteht das Problem nicht",
-      "answers": [
-        "Er tut so, als ob er das Problem verstehen würde",
-        "Er tut so, als ob er das Problem verstünde"
-      ],
-      "placeholder": "als ob"
-    },
-    {
-      "sentence": "Vielleicht regnet es morgen. Trotzdem gehen wir spazieren",
-      "answers": [
-        "Auch wenn es morgen regnen würde, würden wir spazieren gehen",
-        "Auch wenn es morgen regnen sollte, würden wir spazieren gehen"
-      ],
-      "placeholder": "auch wenn"
-    },
-    {
-      "sentence": "Du siehst blass aus, aber du bist nicht krank",
-      "answers": [
-        "Du siehst blass aus, als wärst du krank"
-      ],
-      "placeholder": "als"
-    },
-    {
-      "sentence": "Vielleicht wäre die Wohnung teurer. Trotzdem würde ich sie nehmen",
-      "answers": [
-        "Auch wenn die Wohnung teurer wäre, würde ich sie nehmen"
-      ],
-      "placeholder": "auch wenn"
-    },
-    {
-      "sentence": "Sie sieht müde aus, aber sie hat gut geschlafen",
-      "answers": [
-        "Sie sieht aus, als ob sie nicht gut geschlafen hätte",
-        "Sie sieht so aus, als ob sie nicht gut geschlafen hätte"
-      ],
-      "placeholder": "als ob"
-    },
-    {
-      "sentence": "Sie kennt die Adresse nicht, deshalb findet sie das Büro nicht",
-      "answers": [
-        "Wenn sie die Adresse kennen würde, würde sie das Büro finden",
-        "Wenn sie die Adresse wüsste, würde sie das Büro finden"
-      ],
-      "placeholder": "wenn"
-    },
-    {
-      "sentence": "Er spricht sehr sicher, obwohl er keine Erfahrung hat",
-      "answers": [
-        "Er spricht sehr sicher, als hätte er viel Erfahrung"
-      ],
-      "placeholder": "als"
-    },
-    {
-      "id": "subjunctiveMood",
+      "id": "subjunctive-mood",
       "label": {
         "ru": "Перефразируйте обычное предложение в сослагательное наклонение с Konjunktiv II",
         "en": "Rephrase the sentence as an unreal wish with Konjunktiv II"
-      }
-    },
-    {
-      "sentence": "Das Wetter ist heute schlecht",
-      "answers": [
-        "Wenn das Wetter heute doch gut wäre",
-        "Wäre das Wetter heute doch gut"
-      ]
-    },
-    {
-      "sentence": "Ich habe heute keine Zeit",
-      "answers": [
-        "Wenn ich heute doch Zeit hätte",
-        "Hätte ich heute doch Zeit"
-      ]
-    },
-    {
-      "sentence": "Meine Wohnung ist sehr klein",
-      "answers": [
-        "Wenn meine Wohnung doch größer wäre",
-        "Wäre meine Wohnung doch größer"
-      ]
-    },
-    {
-      "sentence": "Ich muss morgen sehr früh aufstehen",
-      "answers": [
-        "Wenn ich morgen doch nicht so früh aufstehen müsste",
-        "Müsste ich morgen doch nicht so früh aufstehen"
-      ]
-    },
-    {
-      "sentence": "Ich kann heute nicht mitkommen",
-      "answers": [
-        "Wenn ich heute doch mitkommen könnte",
-        "Könnte ich heute doch mitkommen"
-      ]
-    },
-    {
-      "sentence": "Ich darf heute nicht länger bleiben",
-      "answers": [
-        "Wenn ich heute doch länger bleiben dürfte",
-        "Dürfte ich heute doch länger bleiben"
-      ]
-    },
-    {
-      "sentence": "Ich habe kein Auto",
-      "answers": [
-        "Wenn ich doch ein Auto hätte",
-        "Hätte ich doch ein Auto"
-      ]
-    },
-    {
-      "sentence": "Der Zug kommt zu spät",
-      "answers": [
-        "Wenn der Zug doch pünktlich käme",
-        "Käme der Zug doch pünktlich",
-        "Wenn der Zug doch pünktlich kommen würde",
-        "Würde der Zug doch pünktlich kommen"
-      ]
-    },
-    {
-      "sentence": "Der Supermarkt ist schon geschlossen",
-      "answers": [
-        "Wenn der Supermarkt doch noch geöffnet wäre",
-        "Wäre der Supermarkt doch noch geöffnet"
-      ]
-    },
-    {
-      "sentence": "Ich bin krank",
-      "answers": [
-        "Wenn ich doch gesund wäre",
-        "Wäre ich doch gesund",
-        "Wenn ich doch nicht krank wäre",
-        "Wäre ich doch nicht krank"
-      ]
-    },
-    {
-      "sentence": "Ich verstehe diese Grammatik nicht",
-      "answers": [
-        "Wenn ich diese Grammatik doch verstehen würde",
-        "Würde ich diese Grammatik doch verstehen",
-        "Wenn ich diese Grammatik doch verstünde",
-        "Verstünde ich diese Grammatik doch"
-      ]
-    },
-    {
-      "sentence": "Mein Deutsch ist noch nicht gut genug",
-      "answers": [
-        "Wenn mein Deutsch doch besser wäre",
-        "Wäre mein Deutsch doch besser"
-      ]
-    },
-    {
-      "sentence": "Ich habe gestern zu wenig geschlafen",
-      "answers": [
-        "Wenn ich gestern doch mehr geschlafen hätte",
-        "Hätte ich gestern doch mehr geschlafen"
-      ]
-    },
-    {
-      "sentence": "Ich habe meine Schlüssel vergessen",
-      "answers": [
-        "Wenn ich meine Schlüssel doch nicht vergessen hätte",
-        "Hätte ich meine Schlüssel doch nicht vergessen"
-      ]
-    },
-    {
-      "sentence": "Ich habe den Termin verpasst",
-      "answers": [
-        "Wenn ich den Termin doch nicht verpasst hätte",
-        "Hätte ich den Termin doch nicht verpasst"
-      ]
+      },
+      "items": [
+        {
+          "sentence": "Das Wetter ist heute schlecht",
+          "answers": [
+            "Wenn das Wetter heute doch gut wäre",
+            "Wäre das Wetter heute doch gut"
+          ]
+        },
+        {
+          "sentence": "Ich habe heute keine Zeit",
+          "answers": [
+            "Wenn ich heute doch Zeit hätte",
+            "Hätte ich heute doch Zeit"
+          ]
+        },
+        {
+          "sentence": "Meine Wohnung ist sehr klein",
+          "answers": [
+            "Wenn meine Wohnung doch größer wäre",
+            "Wäre meine Wohnung doch größer"
+          ]
+        },
+        {
+          "sentence": "Ich muss morgen sehr früh aufstehen",
+          "answers": [
+            "Wenn ich morgen doch nicht so früh aufstehen müsste",
+            "Müsste ich morgen doch nicht so früh aufstehen"
+          ]
+        },
+        {
+          "sentence": "Ich kann heute nicht mitkommen",
+          "answers": [
+            "Wenn ich heute doch mitkommen könnte",
+            "Könnte ich heute doch mitkommen"
+          ]
+        },
+        {
+          "sentence": "Ich darf heute nicht länger bleiben",
+          "answers": [
+            "Wenn ich heute doch länger bleiben dürfte",
+            "Dürfte ich heute doch länger bleiben"
+          ]
+        },
+        {
+          "sentence": "Ich habe kein Auto",
+          "answers": [
+            "Wenn ich doch ein Auto hätte",
+            "Hätte ich doch ein Auto"
+          ]
+        },
+        {
+          "sentence": "Der Zug kommt zu spät",
+          "answers": [
+            "Wenn der Zug doch pünktlich käme",
+            "Käme der Zug doch pünktlich",
+            "Wenn der Zug doch pünktlich kommen würde",
+            "Würde der Zug doch pünktlich kommen"
+          ]
+        },
+        {
+          "sentence": "Der Supermarkt ist schon geschlossen",
+          "answers": [
+            "Wenn der Supermarkt doch noch geöffnet wäre",
+            "Wäre der Supermarkt doch noch geöffnet"
+          ]
+        },
+        {
+          "sentence": "Ich bin krank",
+          "answers": [
+            "Wenn ich doch gesund wäre",
+            "Wäre ich doch gesund",
+            "Wenn ich doch nicht krank wäre",
+            "Wäre ich doch nicht krank"
+          ]
+        },
+        {
+          "sentence": "Ich verstehe diese Grammatik nicht",
+          "answers": [
+            "Wenn ich diese Grammatik doch verstehen würde",
+            "Würde ich diese Grammatik doch verstehen",
+            "Wenn ich diese Grammatik doch verstünde",
+            "Verstünde ich diese Grammatik doch"
+          ]
+        },
+        {
+          "sentence": "Mein Deutsch ist noch nicht gut genug",
+          "answers": [
+            "Wenn mein Deutsch doch besser wäre",
+            "Wäre mein Deutsch doch besser"
+          ]
+        },
+        {
+          "sentence": "Ich habe gestern zu wenig geschlafen",
+          "answers": [
+            "Wenn ich gestern doch mehr geschlafen hätte",
+            "Hätte ich gestern doch mehr geschlafen"
+          ]
+        },
+        {
+          "sentence": "Ich habe meine Schlüssel vergessen",
+          "answers": [
+            "Wenn ich meine Schlüssel doch nicht vergessen hätte",
+            "Hätte ich meine Schlüssel doch nicht vergessen"
+          ]
+        },
+        {
+          "sentence": "Ich habe den Termin verpasst",
+          "answers": [
+            "Wenn ich den Termin doch nicht verpasst hätte",
+            "Hätte ich den Termin doch nicht verpasst"
+          ]
+        }
+      ],
+      "type": "fill"
     }
   ]
 }

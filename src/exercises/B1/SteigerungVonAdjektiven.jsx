@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
+import SectionedProgressiveList from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { normalizeExerciseSections } from "../../utils/sectionedExercise";
 
 import data from "../../../data/B1/steigerungVonAdjektiven.json";
 import slide1Ru from "../../../data/B1/images/steigerungVonAdjektiven1.html?raw";
@@ -26,59 +27,6 @@ function normalize(value) {
         .replace(/\s+/g, " ");
 }
 
-function getLocalizedText(raw, locale) {
-    if (typeof raw === "string") return raw;
-    if (raw && typeof raw === "object") {
-        return raw[locale] ?? raw.ru ?? raw.en ?? "";
-    }
-    return "";
-}
-
-function getAnswerArray(item) {
-    if (Array.isArray(item?.answers)) return item.answers.map(String);
-    if (Array.isArray(item?.answer)) return item.answer.map(String);
-    if (item?.answer != null) return [String(item.answer)];
-    return [];
-}
-
-function getRows(rawItems, locale) {
-    const items = Array.isArray(rawItems) ? rawItems : [];
-    const rows = [];
-    let sentenceIndex = 0;
-
-    items.forEach((item, rawIndex) => {
-        if (!item || typeof item !== "object") return;
-
-        const hasSentence = Object.prototype.hasOwnProperty.call(item, "sentence");
-        const answers = getAnswerArray(item);
-
-        if (typeof item.id === "string" && !hasSentence && answers.length === 0) {
-            const label = getLocalizedText(item.label, locale);
-            if (!label) return;
-
-            rows.push({
-                type: "divider",
-                key: `steigerung-von-adjektiven-divider-${rawIndex}-${item.id}`,
-                label,
-            });
-            return;
-        }
-
-        if (!hasSentence || answers.length === 0) return;
-
-        rows.push({
-            type: "sentence",
-            key: `steigerung-von-adjektiven-sentence-${sentenceIndex}`,
-            sentenceIndex,
-            sentence: getLocalizedText(item.sentence, locale),
-            answers,
-        });
-        sentenceIndex += 1;
-    });
-
-    return rows;
-}
-
 export default function SteigerungVonAdjektiven() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
@@ -91,8 +39,10 @@ export default function SteigerungVonAdjektiven() {
                 : [slide1Ru, slide2Ru, slide3Ru, slide4Ru],
         [locale]
     );
-    const rows = useMemo(() => getRows(data.items, locale), [locale]);
-    const sections = useMemo(() => rowsToSections(rows, "steigerung-von-adjektiven"), [rows]);
+    const sections = useMemo(
+        () => normalizeExerciseSections(data, locale, "steigerung-von-adjektiven"),
+        [locale]
+    );
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);

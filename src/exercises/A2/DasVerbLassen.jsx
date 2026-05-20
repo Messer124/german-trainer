@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
+import SectionedProgressiveList from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { normalizeExerciseSections } from "../../utils/sectionedExercise";
 
 import data from "../../../data/A2/dasVerbLassen.json";
 import slide1Ru from "../../../data/A2/images/dasVerbLassen1.html?raw";
@@ -24,52 +25,6 @@ function normalize(value) {
         .replace(/\s+/g, " ");
 }
 
-function getLocalizedText(raw, locale) {
-    if (typeof raw === "string") return raw;
-    if (raw && typeof raw === "object") {
-        return raw[locale] ?? raw.ru ?? raw.en ?? "";
-    }
-    return "";
-}
-
-function getRows(rawItems, locale) {
-    const items = Array.isArray(rawItems) ? rawItems : [];
-    const rows = [];
-    let sentenceIndex = 0;
-
-    items.forEach((item, rawIndex) => {
-        if (!item || typeof item !== "object") return;
-
-        const hasSentence = Object.prototype.hasOwnProperty.call(item, "sentence");
-        const hasAnswer = Object.prototype.hasOwnProperty.call(item, "answer");
-
-        if (typeof item.id === "string" && !hasSentence && !hasAnswer) {
-            const label = getLocalizedText(item.label, locale);
-            if (!label) return;
-
-            rows.push({
-                type: "divider",
-                key: `das-verb-lassen-divider-${rawIndex}-${item.id}`,
-                label,
-            });
-            return;
-        }
-
-        if (!hasSentence || !hasAnswer) return;
-
-        rows.push({
-            type: "sentence",
-            key: `das-verb-lassen-sentence-${sentenceIndex}`,
-            sentenceIndex,
-            sentence: getLocalizedText(item.sentence, locale),
-            answer: String(item.answer ?? ""),
-        });
-        sentenceIndex += 1;
-    });
-
-    return rows;
-}
-
 export default function DasVerbLassen() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
@@ -79,8 +34,10 @@ export default function DasVerbLassen() {
         () => (locale === "en" ? [slide1En, slide2En, slide3En] : [slide1Ru, slide2Ru, slide3Ru]),
         [locale]
     );
-    const rows = useMemo(() => getRows(data.items, locale), [locale]);
-    const sections = useMemo(() => rowsToSections(rows, "das-verb-lassen"), [rows]);
+    const sections = useMemo(
+        () => normalizeExerciseSections(data, locale, "das-verb-lassen"),
+        [locale]
+    );
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);

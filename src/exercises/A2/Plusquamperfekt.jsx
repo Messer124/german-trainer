@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
+import SectionedProgressiveList from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { normalizeExerciseSections } from "../../utils/sectionedExercise";
 
 import data from "../../../data/A2/plusquamperfekt.json";
 import slideRu from "../../../data/A2/images/plusquamperfekt.html?raw";
@@ -20,60 +21,16 @@ function normalize(value) {
         .replace(/\s+/g, " ");
 }
 
-function getLocalizedText(raw, locale) {
-    if (typeof raw === "string") return raw;
-    if (raw && typeof raw === "object") {
-        return raw[locale] ?? raw.ru ?? raw.en ?? "";
-    }
-    return "";
-}
-
-function getRows(rawItems, locale) {
-    const items = Array.isArray(rawItems) ? rawItems : [];
-    const rows = [];
-    let sentenceIndex = 0;
-
-    items.forEach((item, rawIndex) => {
-        if (!item || typeof item !== "object") return;
-
-        const hasSentence = Object.prototype.hasOwnProperty.call(item, "sentence");
-        const hasAnswer = Object.prototype.hasOwnProperty.call(item, "answer");
-
-        if (typeof item.id === "string" && !hasSentence && !hasAnswer) {
-            const label = getLocalizedText(item.label, locale);
-            if (!label) return;
-
-            rows.push({
-                type: "divider",
-                key: `plusquamperfekt-divider-${rawIndex}-${item.id}`,
-                label,
-            });
-            return;
-        }
-
-        if (!hasSentence || !hasAnswer) return;
-
-        rows.push({
-            type: "sentence",
-            key: `plusquamperfekt-sentence-${sentenceIndex}`,
-            sentenceIndex,
-            sentence: typeof item.sentence === "string" ? item.sentence : getLocalizedText(item.sentence, locale),
-            answer: String(item.answer ?? ""),
-        });
-        sentenceIndex += 1;
-    });
-
-    return rows;
-}
-
 export default function Plusquamperfekt() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
     const [showHint, setShowHint] = useState(false);
 
     const slides = useMemo(() => (locale === "en" ? [slideEn] : [slideRu]), [locale]);
-    const rows = useMemo(() => getRows(data.items, locale), [locale]);
-    const sections = useMemo(() => rowsToSections(rows, "plusquamperfekt"), [rows]);
+    const sections = useMemo(
+        () => normalizeExerciseSections(data, locale, "plusquamperfekt"),
+        [locale]
+    );
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);

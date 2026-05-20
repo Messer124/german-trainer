@@ -7,496 +7,506 @@
     "ru": "Partizip I oder II?",
     "en": "Partizip I oder II? "
   },
-  "items": [
+  "sections": [
     {
-      "sentence": "Der Student hat sich über die ___ Prüfung gefreut",
-      "placeholder": "bestehen",
-      "answer": [
-        "bestandene"
-      ]
-    },
-    {
-      "sentence": "Die ___ Frau sitzt im Café",
-      "placeholder": "telefonieren",
-      "answer": [
-        "telefonierende"
-      ]
-    },
-    {
-      "sentence": "Er antwortete ___ auf die Frage",
-      "placeholder": "lächeln",
-      "answer": [
-        "lächelnd"
-      ]
-    },
-    {
-      "sentence": "Er verabschiedete sich ___",
-      "placeholder": "weinen",
-      "answer": [
-        "weinend"
-      ]
-    },
-    {
-      "sentence": "Filipp mag am liebsten ___ Fleisch mit Reis",
-      "placeholder": "kochen",
-      "answer": [
-        "gekochtes"
-      ]
-    },
-    {
-      "sentence": "Ich habe das ___ Buch zurückgegeben",
-      "placeholder": "ausleihen",
-      "answer": [
-        "ausgeliehene"
-      ]
-    },
-    {
-      "sentence": "Der ___ Patient schläft ruhig",
-      "placeholder": "operieren",
-      "answer": [
-        "operierte"
-      ]
-    },
-    {
-      "sentence": "Ein ___ Hund liegt vor der Tür",
-      "placeholder": "schlafen",
-      "answer": [
-        "schlafender"
-      ]
-    },
-    {
-      "sentence": "Die ___ Erfahrungen sind sehr wichtig",
-      "placeholder": "sammeln",
-      "answer": [
-        "gesammelten"
-      ]
-    },
-    {
-      "sentence": "Der Mann saß ___ am Fenster",
-      "placeholder": "lesen",
-      "answer": [
-        "lesend"
-      ]
-    },
-    {
-      "sentence": "Am ___ Wochenende waren wir in München",
-      "placeholder": "vergehen",
-      "answer": [
-        "vergangenen"
-      ]
-    },
-    {
-      "sentence": "Das ___ Fenster muss repariert werden",
-      "placeholder": "zerbrechen",
-      "answer": [
-        "zerbrochene"
-      ]
-    },
-    {
-      "sentence": "Ich sehe einen ___ Mann auf der Straße",
-      "placeholder": "laufen",
-      "answer": [
-        "laufenden"
-      ]
-    },
-    {
-      "sentence": "Die ___ Demonstranten haben die Straße blockiert",
-      "placeholder": "protestieren",
-      "answer": [
-        "protestierenden"
-      ]
-    },
-    {
-      "sentence": "Ich trinke den frisch ___ Kaffee",
-      "placeholder": "brühen",
-      "answer": [
-        "gebrühten"
-      ]
-    },
-    {
-      "sentence": "Die ___ Schuhe stehen im Schrank",
-      "placeholder": "putzen",
-      "answer": [
-        "geputzten"
-      ]
-    },
-    {
-      "sentence": "Der ___ Junge sucht seine Mutter",
-      "placeholder": "weinen",
-      "answer": [
-        "weinende"
-      ]
-    },
-    {
-      "sentence": "Der ___ Hund macht viel Lärm",
-      "placeholder": "bellen",
-      "answer": [
-        "bellende"
-      ]
-    },
-    {
-      "sentence": "Der ___ Kuchen liegt auf dem Tisch",
-      "placeholder": "backen",
-      "answer": [
-        "gebackene"
-      ]
-    },
-    {
-      "sentence": "Karola hat einen ___ Papagei",
-      "placeholder": "sprechen",
-      "answer": [
-        "sprechenden"
-      ]
-    },
-    {
-      "sentence": "Die ___ Wohnung ist sehr hell",
-      "placeholder": "renovieren",
-      "answer": [
-        "renovierte"
-      ]
-    },
-    {
-      "sentence": "Sie stand ___ vor der Tür",
-      "placeholder": "warten",
-      "answer": [
-        "wartend"
-      ]
-    },
-    {
-      "sentence": "Die ___ Suppe schmeckt gut",
-      "placeholder": "kochen",
-      "answer": [
-        "gekochte"
-      ]
-    },
-    {
-      "sentence": "Die ___ Regel war nicht schwer",
-      "placeholder": "erklären",
-      "answer": [
-        "erklärte"
-      ]
-    },
-    {
-      "sentence": "Die ___ E-Mail ist sehr wichtig",
-      "placeholder": "senden",
-      "answer": [
-        "gesendete"
-      ]
-    },
-    {
-      "sentence": "Der Lehrer hat uns die ___ Texte zurückgegeben",
-      "placeholder": "korrigieren",
-      "answer": [
-        "korrigierten"
-      ]
-    },
-    {
-      "sentence": "Die ___ Katze liegt auf dem Sofa",
-      "placeholder": "schlafen",
-      "answer": [
-        "schlafende"
-      ]
-    },
-    {
-      "sentence": "Ich sehe die ___ Autos auf der Straße",
-      "placeholder": "fahren",
-      "answer": [
-        "fahrenden"
-      ]
-    },
-    {
-      "sentence": "Das ___ Formular liegt auf dem Tisch",
-      "placeholder": "ausfüllen",
-      "answer": [
-        "ausgefüllte"
-      ]
-    },
-    {
-      "sentence": "Die ___ Gäste sitzen im Wohnzimmer",
-      "placeholder": "einladen",
-      "answer": [
-        "eingeladenen"
-      ]
-    },
-    {
-      "sentence": "Die ___ Rechnung liegt auf dem Tisch",
-      "placeholder": "bezahlen",
-      "answer": [
-        "bezahlte"
-      ]
-    },
-    {
-      "sentence": "Ich habe den ___ Brief gelesen",
-      "placeholder": "schreiben",
-      "answer": [
-        "geschriebenen"
-      ]
-    },
-    {
-      "sentence": "Der ___ Schlüssel liegt auf dem Tisch",
-      "placeholder": "finden",
-      "answer": [
-        "gefundene"
-      ]
-    },
-    {
-      "sentence": "Die ___ Musik stört die Nachbarn",
-      "placeholder": "dröhnen",
-      "answer": [
-        "dröhnende"
-      ]
-    },
-    {
-      "sentence": "Der ___ Zug kommt in zehn Minuten",
-      "placeholder": "verspäten",
-      "answer": [
-        "verspätete"
-      ]
-    },
-    {
-      "sentence": "Das ___ Bild hängt im Schlafzimmer",
-      "placeholder": "malen",
-      "answer": [
-        "gemalte"
-      ]
-    },
-    {
-      "sentence": "Im Stau sieht man oft ___ Autofahrer",
-      "placeholder": "schimpfen",
-      "answer": [
-        "schimpfende"
-      ]
-    },
-    {
-      "sentence": "Der Trainer hat sich über das ___ Spiel geärgert",
-      "placeholder": "verlieren",
-      "answer": [
-        "verlorene"
-      ]
-    },
-    {
-      "sentence": "Das ___ Paket liegt im Flur",
-      "placeholder": "liefern",
-      "answer": [
-        "gelieferte"
-      ]
-    },
-    {
-      "sentence": "Die ___ Kinder spielen im Park",
-      "placeholder": "lachen",
-      "answer": [
-        "lachenden"
-      ]
-    },
-    {
-      "sentence": "Das ___ Auto steht vor dem Haus",
-      "placeholder": "reparieren",
-      "answer": [
-        "reparierte"
-      ]
-    },
-    {
-      "sentence": "Der ___ Mann wartet an der Haltestelle",
-      "placeholder": "warten",
-      "answer": [
-        "wartende"
-      ]
-    },
-    {
-      "sentence": "Die ___ Frau spricht mit dem Arzt",
-      "placeholder": "husten",
-      "answer": [
-        "hustende"
-      ]
-    },
-    {
-      "sentence": "Der ___ Bus hält an der Haltestelle",
-      "placeholder": "ankommen",
-      "answer": [
-        "ankommende"
-      ]
-    },
-    {
-      "sentence": "Sie ging ___ durch den Regen",
-      "placeholder": "singen",
-      "answer": [
-        "singend"
-      ]
-    },
-    {
-      "sentence": "Das Kind kam ___ in die Küche",
-      "placeholder": "rennen",
-      "answer": [
-        "rennend"
-      ]
-    },
-    {
-      "sentence": "Laut ___ ging er aus dem Zimmer",
-      "placeholder": "lachen",
-      "answer": [
-        "lachend"
-      ]
-    },
-    {
-      "sentence": "Ich höre das ___ Wasser in der Küche",
-      "placeholder": "kochen",
-      "answer": [
-        "kochende"
-      ]
-    },
-    {
-      "sentence": "Der ___ Termin passt mir gut",
-      "placeholder": "vereinbaren",
-      "answer": [
-        "vereinbarte"
-      ]
+      "id": "insert",
+      "label": "",
+      "items": [
+        {
+          "sentence": "Der Student hat sich über die ___ Prüfung gefreut",
+          "placeholder": "bestehen",
+          "answer": [
+            "bestandene"
+          ]
+        },
+        {
+          "sentence": "Die ___ Frau sitzt im Café",
+          "placeholder": "telefonieren",
+          "answer": [
+            "telefonierende"
+          ]
+        },
+        {
+          "sentence": "Er antwortete ___ auf die Frage",
+          "placeholder": "lächeln",
+          "answer": [
+            "lächelnd"
+          ]
+        },
+        {
+          "sentence": "Er verabschiedete sich ___",
+          "placeholder": "weinen",
+          "answer": [
+            "weinend"
+          ]
+        },
+        {
+          "sentence": "Filipp mag am liebsten ___ Fleisch mit Reis",
+          "placeholder": "kochen",
+          "answer": [
+            "gekochtes"
+          ]
+        },
+        {
+          "sentence": "Ich habe das ___ Buch zurückgegeben",
+          "placeholder": "ausleihen",
+          "answer": [
+            "ausgeliehene"
+          ]
+        },
+        {
+          "sentence": "Der ___ Patient schläft ruhig",
+          "placeholder": "operieren",
+          "answer": [
+            "operierte"
+          ]
+        },
+        {
+          "sentence": "Ein ___ Hund liegt vor der Tür",
+          "placeholder": "schlafen",
+          "answer": [
+            "schlafender"
+          ]
+        },
+        {
+          "sentence": "Die ___ Erfahrungen sind sehr wichtig",
+          "placeholder": "sammeln",
+          "answer": [
+            "gesammelten"
+          ]
+        },
+        {
+          "sentence": "Der Mann saß ___ am Fenster",
+          "placeholder": "lesen",
+          "answer": [
+            "lesend"
+          ]
+        },
+        {
+          "sentence": "Am ___ Wochenende waren wir in München",
+          "placeholder": "vergehen",
+          "answer": [
+            "vergangenen"
+          ]
+        },
+        {
+          "sentence": "Das ___ Fenster muss repariert werden",
+          "placeholder": "zerbrechen",
+          "answer": [
+            "zerbrochene"
+          ]
+        },
+        {
+          "sentence": "Ich sehe einen ___ Mann auf der Straße",
+          "placeholder": "laufen",
+          "answer": [
+            "laufenden"
+          ]
+        },
+        {
+          "sentence": "Die ___ Demonstranten haben die Straße blockiert",
+          "placeholder": "protestieren",
+          "answer": [
+            "protestierenden"
+          ]
+        },
+        {
+          "sentence": "Ich trinke den frisch ___ Kaffee",
+          "placeholder": "brühen",
+          "answer": [
+            "gebrühten"
+          ]
+        },
+        {
+          "sentence": "Die ___ Schuhe stehen im Schrank",
+          "placeholder": "putzen",
+          "answer": [
+            "geputzten"
+          ]
+        },
+        {
+          "sentence": "Der ___ Junge sucht seine Mutter",
+          "placeholder": "weinen",
+          "answer": [
+            "weinende"
+          ]
+        },
+        {
+          "sentence": "Der ___ Hund macht viel Lärm",
+          "placeholder": "bellen",
+          "answer": [
+            "bellende"
+          ]
+        },
+        {
+          "sentence": "Der ___ Kuchen liegt auf dem Tisch",
+          "placeholder": "backen",
+          "answer": [
+            "gebackene"
+          ]
+        },
+        {
+          "sentence": "Karola hat einen ___ Papagei",
+          "placeholder": "sprechen",
+          "answer": [
+            "sprechenden"
+          ]
+        },
+        {
+          "sentence": "Die ___ Wohnung ist sehr hell",
+          "placeholder": "renovieren",
+          "answer": [
+            "renovierte"
+          ]
+        },
+        {
+          "sentence": "Sie stand ___ vor der Tür",
+          "placeholder": "warten",
+          "answer": [
+            "wartend"
+          ]
+        },
+        {
+          "sentence": "Die ___ Suppe schmeckt gut",
+          "placeholder": "kochen",
+          "answer": [
+            "gekochte"
+          ]
+        },
+        {
+          "sentence": "Die ___ Regel war nicht schwer",
+          "placeholder": "erklären",
+          "answer": [
+            "erklärte"
+          ]
+        },
+        {
+          "sentence": "Die ___ E-Mail ist sehr wichtig",
+          "placeholder": "senden",
+          "answer": [
+            "gesendete"
+          ]
+        },
+        {
+          "sentence": "Der Lehrer hat uns die ___ Texte zurückgegeben",
+          "placeholder": "korrigieren",
+          "answer": [
+            "korrigierten"
+          ]
+        },
+        {
+          "sentence": "Die ___ Katze liegt auf dem Sofa",
+          "placeholder": "schlafen",
+          "answer": [
+            "schlafende"
+          ]
+        },
+        {
+          "sentence": "Ich sehe die ___ Autos auf der Straße",
+          "placeholder": "fahren",
+          "answer": [
+            "fahrenden"
+          ]
+        },
+        {
+          "sentence": "Das ___ Formular liegt auf dem Tisch",
+          "placeholder": "ausfüllen",
+          "answer": [
+            "ausgefüllte"
+          ]
+        },
+        {
+          "sentence": "Die ___ Gäste sitzen im Wohnzimmer",
+          "placeholder": "einladen",
+          "answer": [
+            "eingeladenen"
+          ]
+        },
+        {
+          "sentence": "Die ___ Rechnung liegt auf dem Tisch",
+          "placeholder": "bezahlen",
+          "answer": [
+            "bezahlte"
+          ]
+        },
+        {
+          "sentence": "Ich habe den ___ Brief gelesen",
+          "placeholder": "schreiben",
+          "answer": [
+            "geschriebenen"
+          ]
+        },
+        {
+          "sentence": "Der ___ Schlüssel liegt auf dem Tisch",
+          "placeholder": "finden",
+          "answer": [
+            "gefundene"
+          ]
+        },
+        {
+          "sentence": "Die ___ Musik stört die Nachbarn",
+          "placeholder": "dröhnen",
+          "answer": [
+            "dröhnende"
+          ]
+        },
+        {
+          "sentence": "Der ___ Zug kommt in zehn Minuten",
+          "placeholder": "verspäten",
+          "answer": [
+            "verspätete"
+          ]
+        },
+        {
+          "sentence": "Das ___ Bild hängt im Schlafzimmer",
+          "placeholder": "malen",
+          "answer": [
+            "gemalte"
+          ]
+        },
+        {
+          "sentence": "Im Stau sieht man oft ___ Autofahrer",
+          "placeholder": "schimpfen",
+          "answer": [
+            "schimpfende"
+          ]
+        },
+        {
+          "sentence": "Der Trainer hat sich über das ___ Spiel geärgert",
+          "placeholder": "verlieren",
+          "answer": [
+            "verlorene"
+          ]
+        },
+        {
+          "sentence": "Das ___ Paket liegt im Flur",
+          "placeholder": "liefern",
+          "answer": [
+            "gelieferte"
+          ]
+        },
+        {
+          "sentence": "Die ___ Kinder spielen im Park",
+          "placeholder": "lachen",
+          "answer": [
+            "lachenden"
+          ]
+        },
+        {
+          "sentence": "Das ___ Auto steht vor dem Haus",
+          "placeholder": "reparieren",
+          "answer": [
+            "reparierte"
+          ]
+        },
+        {
+          "sentence": "Der ___ Mann wartet an der Haltestelle",
+          "placeholder": "warten",
+          "answer": [
+            "wartende"
+          ]
+        },
+        {
+          "sentence": "Die ___ Frau spricht mit dem Arzt",
+          "placeholder": "husten",
+          "answer": [
+            "hustende"
+          ]
+        },
+        {
+          "sentence": "Der ___ Bus hält an der Haltestelle",
+          "placeholder": "ankommen",
+          "answer": [
+            "ankommende"
+          ]
+        },
+        {
+          "sentence": "Sie ging ___ durch den Regen",
+          "placeholder": "singen",
+          "answer": [
+            "singend"
+          ]
+        },
+        {
+          "sentence": "Das Kind kam ___ in die Küche",
+          "placeholder": "rennen",
+          "answer": [
+            "rennend"
+          ]
+        },
+        {
+          "sentence": "Laut ___ ging er aus dem Zimmer",
+          "placeholder": "lachen",
+          "answer": [
+            "lachend"
+          ]
+        },
+        {
+          "sentence": "Ich höre das ___ Wasser in der Küche",
+          "placeholder": "kochen",
+          "answer": [
+            "kochende"
+          ]
+        },
+        {
+          "sentence": "Der ___ Termin passt mir gut",
+          "placeholder": "vereinbaren",
+          "answer": [
+            "vereinbarte"
+          ]
+        }
+      ],
+      "type": "fill"
     },
     {
       "id": "translate",
       "label": {
         "ru": "Переведите предложения (Partizip I и Partizip II как прилагательные)",
         "en": "Translate phrases (Partizip I and Partizip II as adjectives)"
-      }
-    },
-    {
-      "sentence": {
-        "ru": "Напряженный день",
-        "en": "A busy day"
       },
-      "answer": "ein anstrengender Tag"
-    },
-    {
-      "sentence": {
-        "ru": "Запланированное путешествие",
-        "en": "A planned trip"
-      },
-      "answer": "eine geplante Reise"
-    },
-    {
-      "sentence": {
-        "ru": "Путешествующие люди",
-        "en": "Travelling people"
-      },
-      "answer": "reisende Menschen"
-    },
-    {
-      "sentence": {
-        "ru": "Расслабляющий отпуск",
-        "en": "A relaxing vacation"
-      },
-      "answer": "ein entspannender Urlaub"
-    },
-    {
-      "sentence": {
-        "ru": "Забытый чемодан",
-        "en": "A forgotten suitcase"
-      },
-      "answer": "ein vergessener Koffer"
-    },
-    {
-      "sentence": {
-        "ru": "Прибывающий поезд",
-        "en": "An arriving train"
-      },
-      "answer": "ein ankommender Zug"
-    },
-    {
-      "sentence": {
-        "ru": "Спорящие друзья",
-        "en": "Arguing friends"
-      },
-      "answer": "streitende Freunde"
-    },
-    {
-      "sentence": {
-        "ru": "Играющие дети",
-        "en": "Playing children"
-      },
-      "answer": "spielende Kinder"
-    },
-    {
-      "sentence": {
-        "ru": "Сгоревший дом",
-        "en": "A burned-down house"
-      },
-      "answer": "ein abgebranntes Haus"
-    },
-    {
-      "sentence": {
-        "ru": "Сваренный суп",
-        "en": "Cooked soup"
-      },
-      "answer": "eine gekochte Suppe"
-    },
-    {
-      "sentence": {
-        "ru": "Открытая дверь",
-        "en": "An open door"
-      },
-      "answer": "eine geöffnete Tür"
-    },
-    {
-      "sentence": {
-        "ru": "Закрытый магазин",
-        "en": "A closed shop"
-      },
-      "answer": "ein geschlossenes Geschäft"
-    },
-    {
-      "sentence": {
-        "ru": "Работающий лифт",
-        "en": "A working elevator"
-      },
-      "answer": "ein funktionierender Aufzug"
-    },
-    {
-      "sentence": {
-        "ru": "Ожидающий клиент",
-        "en": "A waiting customer"
-      },
-      "answer": "ein wartender Kunde"
-    },
-    {
-      "sentence": {
-        "ru": "Звонящий телефон",
-        "en": "A ringing phone"
-      },
-      "answer": "ein klingelndes Handy"
-    },
-    {
-      "sentence": {
-        "ru": "Припаркованная машина",
-        "en": "A parked car"
-      },
-      "answer": "ein geparktes Auto"
-    },
-    {
-      "sentence": {
-        "ru": "Зарезервированный столик",
-        "en": "A reserved table"
-      },
-      "answer": "ein reservierter Tisch"
-    },
-    {
-      "sentence": {
-        "ru": "Оплаченный счёт",
-        "en": "A paid bill"
-      },
-      "answer": "eine bezahlte Rechnung"
-    },
-    {
-      "sentence": {
-        "ru": "Потерянная карта",
-        "en": "A lost card"
-      },
-      "answer": "eine verlorene Karte"
-    },
-    {
-      "sentence": {
-        "ru": "Заряженный телефон",
-        "en": "A charged phone"
-      },
-      "answer": "ein geladenes Handy"
+      "items": [
+        {
+          "sentence": {
+            "ru": "Напряженный день",
+            "en": "A busy day"
+          },
+          "answer": "ein anstrengender Tag"
+        },
+        {
+          "sentence": {
+            "ru": "Запланированное путешествие",
+            "en": "A planned trip"
+          },
+          "answer": "eine geplante Reise"
+        },
+        {
+          "sentence": {
+            "ru": "Путешествующие люди",
+            "en": "Travelling people"
+          },
+          "answer": "reisende Menschen"
+        },
+        {
+          "sentence": {
+            "ru": "Расслабляющий отпуск",
+            "en": "A relaxing vacation"
+          },
+          "answer": "ein entspannender Urlaub"
+        },
+        {
+          "sentence": {
+            "ru": "Забытый чемодан",
+            "en": "A forgotten suitcase"
+          },
+          "answer": "ein vergessener Koffer"
+        },
+        {
+          "sentence": {
+            "ru": "Прибывающий поезд",
+            "en": "An arriving train"
+          },
+          "answer": "ein ankommender Zug"
+        },
+        {
+          "sentence": {
+            "ru": "Спорящие друзья",
+            "en": "Arguing friends"
+          },
+          "answer": "streitende Freunde"
+        },
+        {
+          "sentence": {
+            "ru": "Играющие дети",
+            "en": "Playing children"
+          },
+          "answer": "spielende Kinder"
+        },
+        {
+          "sentence": {
+            "ru": "Сгоревший дом",
+            "en": "A burned-down house"
+          },
+          "answer": "ein abgebranntes Haus"
+        },
+        {
+          "sentence": {
+            "ru": "Сваренный суп",
+            "en": "Cooked soup"
+          },
+          "answer": "eine gekochte Suppe"
+        },
+        {
+          "sentence": {
+            "ru": "Открытая дверь",
+            "en": "An open door"
+          },
+          "answer": "eine geöffnete Tür"
+        },
+        {
+          "sentence": {
+            "ru": "Закрытый магазин",
+            "en": "A closed shop"
+          },
+          "answer": "ein geschlossenes Geschäft"
+        },
+        {
+          "sentence": {
+            "ru": "Работающий лифт",
+            "en": "A working elevator"
+          },
+          "answer": "ein funktionierender Aufzug"
+        },
+        {
+          "sentence": {
+            "ru": "Ожидающий клиент",
+            "en": "A waiting customer"
+          },
+          "answer": "ein wartender Kunde"
+        },
+        {
+          "sentence": {
+            "ru": "Звонящий телефон",
+            "en": "A ringing phone"
+          },
+          "answer": "ein klingelndes Handy"
+        },
+        {
+          "sentence": {
+            "ru": "Припаркованная машина",
+            "en": "A parked car"
+          },
+          "answer": "ein geparktes Auto"
+        },
+        {
+          "sentence": {
+            "ru": "Зарезервированный столик",
+            "en": "A reserved table"
+          },
+          "answer": "ein reservierter Tisch"
+        },
+        {
+          "sentence": {
+            "ru": "Оплаченный счёт",
+            "en": "A paid bill"
+          },
+          "answer": "eine bezahlte Rechnung"
+        },
+        {
+          "sentence": {
+            "ru": "Потерянная карта",
+            "en": "A lost card"
+          },
+          "answer": "eine verlorene Karte"
+        },
+        {
+          "sentence": {
+            "ru": "Заряженный телефон",
+            "en": "A charged phone"
+          },
+          "answer": "ein geladenes Handy"
+        }
+      ],
+      "type": "translate"
     }
   ]
 }

@@ -9,6 +9,10 @@
     line-height: 1.6;
 }
 
+.scroll-container .list li:last-child {
+    margin-bottom: 0;
+}
+
 .exercise-section-divider {
     display: flex;
     align-items: center;
@@ -56,7 +60,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--size-10);
-    padding-top: var(--size-12);
+    padding-block: var(--size-8);
     margin-top: 0;
     border-top: var(--size-1) solid var(--color-sidebar-divider);
 }
@@ -84,13 +88,17 @@
 
 .exercise-section-pager__status {
     min-width: var(--size-50);
-    padding: var(--size-4) var(--size-10);
+    height: var(--size-36);
+    padding: 0 var(--size-10);
     border-radius: var(--size-999);
     background: var(--color-modal-nav-bg);
     text-align: center;
     color: var(--color-modal-nav-text);
     font-size: var(--size-12);
     font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* базовый стиль для всех инпутов упражнений */
@@ -401,19 +409,22 @@
     }
 
     .exercise-section-pager {
-        gap: var(--size-8);
-        padding-top: var(--size-8);
+        gap: var(--size-6);
+        padding-block: var(--size-8);
         margin-top: 0;
     }
 
     .exercise-section-pager__button {
-        height: var(--size-40);
-        width: var(--size-40);
-        font-size: var(--size-22);
+        height: var(--size-28);
+        width: var(--size-28);
+        font-size: var(--size-18);
     }
 
     .exercise-section-pager__status {
-        font-size: var(--size-16);
+        min-width: var(--size-44);
+        height: var(--size-28);
+        padding: 0 var(--size-8);
+        font-size: var(--size-12);
     }
 }
 

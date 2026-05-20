@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
+import SectionedProgressiveList from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import { normalizeExerciseSections } from "../../utils/sectionedExercise";
 
 import data from "../../../data/A2/konjunktiv2.json";
 import slide1Ru from "../../../data/A2/images/konjunktiv2-1.html?raw";
@@ -28,73 +29,6 @@ function normalize(value) {
         .replace(/\s+/g, " ");
 }
 
-function getLocalizedText(raw, locale) {
-    if (typeof raw === "string") return raw;
-    if (raw && typeof raw === "object") {
-        return raw[locale] ?? raw.ru ?? raw.en ?? "";
-    }
-    return "";
-}
-
-function getAcceptedAnswers(rawAnswer, locale) {
-    if (Array.isArray(rawAnswer)) {
-        return rawAnswer
-            .map((item) => getLocalizedText(item, locale))
-            .map((item) => String(item ?? "").trim())
-            .filter(Boolean);
-    }
-
-    if (typeof rawAnswer === "string") {
-        const value = rawAnswer.trim();
-        return value ? [value] : [];
-    }
-
-    if (rawAnswer && typeof rawAnswer === "object") {
-        const value = getLocalizedText(rawAnswer, locale).trim();
-        return value ? [value] : [];
-    }
-
-    return [];
-}
-
-function getRows(rawItems, locale) {
-    const items = Array.isArray(rawItems) ? rawItems : [];
-    const rows = [];
-    let sentenceIndex = 0;
-
-    items.forEach((item, rawIndex) => {
-        if (!item || typeof item !== "object") return;
-
-        const hasSentence = Object.prototype.hasOwnProperty.call(item, "sentence");
-        const hasAnswer = Object.prototype.hasOwnProperty.call(item, "answer");
-
-        if (typeof item.id === "string" && !hasSentence && !hasAnswer) {
-            const label = getLocalizedText(item.label, locale);
-            if (!label) return;
-
-            rows.push({
-                type: "divider",
-                key: `konj2-divider-${rawIndex}-${item.id}`,
-                label,
-            });
-            return;
-        }
-
-        if (!hasSentence || !hasAnswer) return;
-
-        rows.push({
-            type: "sentence",
-            key: `konj2-sentence-${sentenceIndex}`,
-            sentenceIndex,
-            sentence: getLocalizedText(item.sentence, locale),
-            answers: getAcceptedAnswers(item.answer, locale),
-        });
-        sentenceIndex += 1;
-    });
-
-    return rows;
-}
-
 export default function Konjunktiv2() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
@@ -108,8 +42,10 @@ export default function Konjunktiv2() {
         [locale]
     );
 
-    const rows = useMemo(() => getRows(data.items, locale), [locale]);
-    const sections = useMemo(() => rowsToSections(rows, "konjunktiv2"), [rows]);
+    const sections = useMemo(
+        () => normalizeExerciseSections(data, locale, "konjunktiv2"),
+        [locale]
+    );
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);
