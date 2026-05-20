@@ -4,13 +4,16 @@
     "en": "Partizipien"
   },
   "instructions": {
-    "ru": "Partizip I oder II?",
-    "en": "Partizip I oder II? "
+    "ru": "Выполните задания",
+    "en": "Complete the tasks"
   },
   "sections": [
     {
       "id": "insert",
-      "label": "",
+      "label": {
+        "ru": "Partizip I oder II?",
+        "en": "Partizip I oder II?"
+      },
       "items": [
         {
           "sentence": "Der Student hat sich über die ___ Prüfung gefreut",

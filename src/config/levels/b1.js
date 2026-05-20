@@ -5,6 +5,7 @@ import Partizipien from "../../exercises/B1/Partizipien";
 import Pronominaladverbien from "../../exercises/B1/Pronominaladverbien";
 import Konjunktiv2 from "../../exercises/B1/Konjunktiv2";
 import PassivVergangenheit from "../../exercises/B1/PassivVergangenheit";
+import DasVerbBrauchen from "../../exercises/B1/DasVerbBrauchen";
 
 const exercises = {
     "steigerung-von-adjektiven": defineExercise(
@@ -26,6 +27,10 @@ const exercises = {
     passivVergangenheit: defineExercise(
         PassivVergangenheit,
         "b1-passiv-vergangenheit-answers"
+    ),
+    dasVerbBrauchen: defineExercise(
+        DasVerbBrauchen,
+        "das-verb-brauchen-answers"
     ),
 };
 

@@ -1,0 +1,456 @@
+{
+  "title": {
+    "ru": "Das Verb Brauchen",
+    "en": "Das Verb Brauchen"
+  },
+  "instructions": {
+    "ru": "Выполните задания",
+    "en": "Complete the tasks"
+  },
+  "sections": [
+    {
+      "id": "translate",
+      "type": "translate",
+      "label": {
+        "ru": "Переведи на немецкий язык",
+        "en": "Translate into German"
+      },
+      "items": [
+        {
+          "sentence": {
+            "ru": "Ему нужна твоя помощь",
+            "en": "He needs your help"
+          },
+          "answer": [
+            "Er braucht deine Hilfe"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Тебе не нужно ему помогать",
+            "en": "You don't need to help him"
+          },
+          "answer": [
+            "Du brauchst ihm nicht zu helfen",
+            "Du musst ihm nicht helfen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Тебе нужно ему помочь",
+            "en": "You need to help him"
+          },
+          "answer": [
+            "Du musst ihm helfen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Феликсу нужно заниматься спортом",
+            "en": "Felix needs to do sports"
+          },
+          "answer": [
+            "Felix muss Sport treiben"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Феликсу нужна новая куртка",
+            "en": "Felix needs a new jacket"
+          },
+          "answer": [
+            "Felix braucht eine neue Jacke"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Феликсу не нужно рано вставать",
+            "en": "Felix doesn't need to get up early"
+          },
+          "answer": [
+            "Felix braucht nicht früh aufzustehen",
+            "Felix muss nicht früh aufstehen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Мне нужна новая SIM-карта",
+            "en": "I need a new SIM-card"
+          },
+          "answer": [
+            "Ich brauche eine neue SIM-Karte"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Нам нужна ваша подпись",
+            "en": "We need your signature"
+          },
+          "answer": [
+            "Wir brauchen Ihre Unterschrift"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Ребёнку нужны новые ботинки",
+            "en": "The child needs new shoes"
+          },
+          "answer": [
+            "Das Kind braucht neue Schuhe"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Тебе не нужно покупать билет",
+            "en": "You don't need to buy a ticket"
+          },
+          "answer": [
+            "Du brauchst kein Ticket zu kaufen",
+            "Du musst kein Ticket kaufen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Нам не нужно сегодня готовить",
+            "en": "We don't need to cook today"
+          },
+          "answer": [
+            "Wir brauchen heute nicht zu kochen",
+            "Wir müssen heute nicht kochen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Мне нужно сегодня работать",
+            "en": "I need to work today"
+          },
+          "answer": [
+            "Ich muss heute arbeiten"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Ей нужно больше спать",
+            "en": "She needs to sleep more"
+          },
+          "answer": [
+            "Sie muss mehr schlafen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Вам нужна встреча?",
+            "en": "Do you need an appointment?"
+          },
+          "answer": [
+            "Brauchen Sie einen Termin?"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Ему нужна новая квартира",
+            "en": "He needs a new apartment"
+          },
+          "answer": [
+            "Er braucht eine neue Wohnung"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Мне не нужно заполнять эту форму",
+            "en": "I don't need to fill out this form"
+          },
+          "answer": [
+            "Ich brauche dieses Formular nicht auszufüllen",
+            "Ich muss dieses Formular nicht ausfüllen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Ты должен только нажать на эту кнопку",
+            "en": "You only need to press this button"
+          },
+          "answer": [
+            "Du brauchst nur auf diesen Knopf zu drücken"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Нам нужно только подождать пять минут",
+            "en": "We only need to wait five minutes"
+          },
+          "answer": [
+            "Wir brauchen nur fünf Minuten zu warten"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Тебе не нужно беспокоиться",
+            "en": "You don't need to worry"
+          },
+          "answer": [
+            "Du brauchst dir keine Sorgen zu machen",
+            "Du musst dir keine Sorgen machen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Мне нужна твоя электронная почта",
+            "en": "I need your email address"
+          },
+          "answer": [
+            "Ich brauche deine E-Mail-Adresse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brauchen-nur-zu",
+      "type": "fill",
+      "label": {
+        "ru": "Перепишите предложения используя конструкцию brauchen nur + zu",
+        "en": "Rewrite the sentences using the construction “brauchen nur + zu”"
+      },
+      "items": [
+        {
+          "sentence": "Repariere nur dein Auto",
+          "answers": [
+            "Du brauchst nur dein Auto zu reparieren"
+          ]
+        },
+        {
+          "sentence": "Er muss nur diese Gesetze aufmerksam lesen",
+          "answers": [
+            "Er braucht nur diese Gesetze aufmerksam zu lesen"
+          ]
+        },
+        {
+          "sentence": "Du sollst unbedingt mehr essen, dann geht es dir viel besser",
+          "answers": [
+            "Du brauchst nur mehr zu essen, dann geht es dir viel besser"
+          ]
+        },
+        {
+          "sentence": "Dieser Schriftsteller soll nur mehr Bücher veröffentlichen",
+          "answers": [
+            "Dieser Schriftsteller braucht nur mehr Bücher zu veröffentlichen"
+          ]
+        },
+        {
+          "sentence": "Erlaube nur mir das",
+          "answers": [
+            "Du brauchst nur mir das zu erlauben"
+          ]
+        },
+        {
+          "sentence": "Der Präsident soll diese Unterlagen unterschreiben",
+          "answers": [
+            "Der Präsident braucht nur diese Unterlagen zu unterschreiben"
+          ]
+        },
+        {
+          "sentence": "Sie müssen nur ein Frühstück bezahlen",
+          "answers": [
+            "Sie brauchen nur ein Frühstück zu bezahlen"
+          ]
+        },
+        {
+          "sentence": "Der Bundeskanzler soll die Mauer zerstören, dann wählen wir ihn",
+          "answers": [
+            "Der Bundeskanzler braucht nur die Mauer zu zerstören, dann wählen wir ihn"
+          ]
+        },
+        {
+          "sentence": "Du sollst nur einmal in der Woche zum Arzt gehen",
+          "answers": [
+            "Du brauchst nur einmal in der Woche zum Arzt zu gehen"
+          ]
+        },
+        {
+          "sentence": "Die Kinder müssen noch diese zwei Bücher lesen",
+          "answers": [
+            "Die Kinder brauchen nur noch diese zwei Bücher zu lesen",
+            "Die Kinder brauchen nur diese zwei Bücher zu lesen"
+          ]
+        },
+        {
+          "sentence": "Füllen Sie nur dieses Formular aus",
+          "answers": [
+            "Sie brauchen nur dieses Formular auszufüllen"
+          ]
+        },
+        {
+          "sentence": "Ruf nur deine Mutter an",
+          "answers": [
+            "Du brauchst nur deine Mutter anzurufen"
+          ]
+        },
+        {
+          "sentence": "Wir müssen nur fünf Minuten warten",
+          "answers": [
+            "Wir brauchen nur fünf Minuten zu warten"
+          ]
+        },
+        {
+          "sentence": "Er muss nur die Adresse eingeben",
+          "answers": [
+            "Er braucht nur die Adresse einzugeben"
+          ]
+        },
+        {
+          "sentence": "Lies nur die erste Seite",
+          "answers": [
+            "Du brauchst nur die erste Seite zu lesen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brauchen-nicht-zu",
+      "type": "translate",
+      "label": {
+        "ru": "Переведите предложения, используя brauchen nicht + zu",
+        "en": "Translate the sentences using brauchen nicht + zu"
+      },
+      "items": [
+        {
+          "sentence": {
+            "ru": "Вам не нужно свергать правительство",
+            "en": "You don't need to overthrow the government"
+          },
+          "answers": [
+            "Sie brauchen die Regierung nicht zu stürzen",
+            "Sie brauchen nicht die Regierung zu stürzen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Ему не нужно звонить ей",
+            "en": "He doesn't need to call her"
+          },
+          "answers": [
+            "Er braucht sie nicht anzurufen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Они не должны оккупировать эти территории",
+            "en": "They don't need to occupy these territories"
+          },
+          "answers": [
+            "Sie brauchen diese Gebiete nicht zu besetzen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Ему не нужно ничего изобретать",
+            "en": "He doesn't need to invent anything"
+          },
+          "answers": [
+            "Er braucht nichts zu erfinden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Матери не нужно запрещать это детям",
+            "en": "The mother doesn't need to forbid the children this"
+          },
+          "answers": [
+            "Die Mutter braucht es den Kindern nicht zu verbieten"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Вам не нужно торопиться",
+            "en": "You don't need to hurry"
+          },
+          "answers": [
+            "Sie brauchen sich nicht zu beeilen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Королеве не нужно устранять недоразумения",
+            "en": "The queen doesn't need to clear up misunderstandings"
+          },
+          "answers": [
+            "Die Königin braucht Missverständnisse nicht aus der Welt zu schaffen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Мэру не нужно принимать делегацию",
+            "en": "The mayor doesn't need to receive the delegation"
+          },
+          "answers": [
+            "Der Bürgermeister braucht die Delegation nicht zu empfangen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Тебе не нужно подписывать эти документы",
+            "en": "You don't need to sign these documents"
+          },
+          "answers": [
+            "Du brauchst diese Unterlagen nicht zu unterschreiben"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Мне не нужно покупать новую машину",
+            "en": "I don't need to buy a new car"
+          },
+          "answers": [
+            "Ich brauche kein neues Auto zu kaufen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Нам не нужно ждать автобус",
+            "en": "We don't need to wait for the bus"
+          },
+          "answers": [
+            "Wir brauchen nicht auf den Bus zu warten"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Ей не нужно отправлять письмо сегодня",
+            "en": "She doesn't need to send the letter today"
+          },
+          "answers": [
+            "Sie braucht den Brief heute nicht abzuschicken",
+            "Sie braucht den Brief heute nicht zu schicken"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Тебе не нужно объяснять мне это",
+            "en": "You don't need to explain this to me"
+          },
+          "answers": [
+            "Du brauchst mir das nicht zu erklären"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Детям не нужно делать это упражнение",
+            "en": "The children don't need to do this exercise"
+          },
+          "answers": [
+            "Die Kinder brauchen diese Übung nicht zu machen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Вам не нужно платить сейчас",
+            "en": "You don't need to pay now"
+          },
+          "answers": [
+            "Sie brauchen jetzt nicht zu bezahlen"
+          ]
+        }
+      ]
+    }
+  ]
+}

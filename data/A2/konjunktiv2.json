@@ -9,7 +9,7 @@
   },
   "sections": [
     {
-      "id": "present",
+      "type": "fill",
       "label": {
         "ru": "Konjunktiv II в настоящем времени",
         "en": "Konjunktiv II in the present tense"
@@ -417,8 +417,7 @@
             "Wenn er die Prüfung bestehen wollte, würde er jeden Tag Deutsch lernen"
           ]
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
       "id": "past",
