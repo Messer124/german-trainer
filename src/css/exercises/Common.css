@@ -50,6 +50,49 @@
     box-sizing: border-box;
 }
 
+.exercise-section-pager {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-10);
+    padding-top: var(--size-12);
+    margin-top: 0;
+    border-top: var(--size-1) solid var(--color-sidebar-divider);
+}
+
+.exercise-section-pager__button {
+    width: var(--size-36);
+    height: var(--size-36);
+    padding: 0;
+    border: none;
+    border-radius: var(--size-36);
+    background: var(--color-modal-nav-bg);
+    color: var(--color-modal-nav-text);
+    font-size: var(--size-22);
+    line-height: 1;
+    cursor: pointer;
+    touch-action: manipulation;
+    display: grid;
+    place-items: center;
+}
+
+.exercise-section-pager__button:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.exercise-section-pager__status {
+    min-width: var(--size-50);
+    padding: var(--size-4) var(--size-10);
+    border-radius: var(--size-999);
+    background: var(--color-modal-nav-bg);
+    text-align: center;
+    color: var(--color-modal-nav-text);
+    font-size: var(--size-12);
+    font-weight: 700;
+}
+
 /* базовый стиль для всех инпутов упражнений */
 .input,
 .autosize-input,
@@ -355,6 +398,22 @@
 
     .eye {
         font-size: var(--mobile-font-size);
+    }
+
+    .exercise-section-pager {
+        gap: var(--size-8);
+        padding-top: var(--size-8);
+        margin-top: 0;
+    }
+
+    .exercise-section-pager__button {
+        height: var(--size-40);
+        width: var(--size-40);
+        font-size: var(--size-22);
+    }
+
+    .exercise-section-pager__status {
+        font-size: var(--size-16);
     }
 }
 

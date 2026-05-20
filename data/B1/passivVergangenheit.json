@@ -1,0 +1,937 @@
+{
+  "title": {
+    "ru": "Passiv Vergangenheit",
+    "en": "Passiv Vergangenheit"
+  },
+  "instructions": {
+    "ru": "Страдательный залог в прошедшем времени",
+    "en": "Passive voice in the past tense"
+  },
+  "sections": [
+    {
+      "id": "passiv",
+      "label": {
+        "ru": "Заполни пропуски",
+        "en": "Fill in the blanks"
+      },
+      "items": [
+        {
+          "sentence": "Das Auto ___ gestern gewaschen",
+          "answers": [
+            "wurde"
+          ]
+        },
+        {
+          "sentence": "Ich wollte schnell bedient ___",
+          "answers": [
+            "werden"
+          ]
+        },
+        {
+          "sentence": "Sie sind falsch informiert ___",
+          "answers": [
+            "worden"
+          ]
+        },
+        {
+          "sentence": "Wir ___ gut behandelt",
+          "answers": [
+            "wurden"
+          ]
+        },
+        {
+          "sentence": "Der Anruf konnte nicht weitergeleitet ___",
+          "answers": [
+            "werden"
+          ]
+        },
+        {
+          "sentence": "Diese Kinder sind schlecht erzogen ___",
+          "answers": [
+            "worden"
+          ]
+        },
+        {
+          "sentence": "Der Vertrag ___ vor 2 Tagen unterschrieben",
+          "answers": [
+            "wurde"
+          ]
+        },
+        {
+          "sentence": "Das Auto musste repariert ___",
+          "answers": [
+            "werden"
+          ]
+        },
+        {
+          "sentence": "Du bist zur Party eingeladen ___",
+          "answers": [
+            "worden"
+          ]
+        },
+        {
+          "sentence": "Sein Opa ___ vorgestern operiert",
+          "answers": [
+            "wurde"
+          ]
+        },
+        {
+          "sentence": "Wann ___ das erste Handy verkauft?",
+          "answers": [
+            "wurde"
+          ]
+        },
+        {
+          "sentence": "Die Prüfung musste gut vorbereitet ___",
+          "answers": [
+            "werden"
+          ]
+        },
+        {
+          "sentence": "Die Rechnung ___ gestern bezahlt",
+          "answers": [
+            "wurde"
+          ]
+        },
+        {
+          "sentence": "Die E-Mail ist heute Morgen beantwortet ___",
+          "answers": [
+            "worden"
+          ]
+        },
+        {
+          "sentence": "Die Gäste ___ freundlich begrüßt",
+          "answers": [
+            "wurden"
+          ]
+        },
+        {
+          "sentence": "Der Termin musste leider verschoben ___",
+          "answers": [
+            "werden"
+          ]
+        },
+        {
+          "sentence": "Die Wohnung ___ letzte Woche gereinigt",
+          "answers": [
+            "wurde"
+          ]
+        },
+        {
+          "sentence": "Die Pakete sind pünktlich geliefert ___",
+          "answers": [
+            "worden"
+          ]
+        },
+        {
+          "sentence": "Der Fehler konnte schnell gefunden ___",
+          "answers": [
+            "werden"
+          ]
+        },
+        {
+          "sentence": "Die Kinder ___ vom Lehrer gelobt",
+          "answers": [
+            "wurden"
+          ]
+        },
+        {
+          "sentence": "Das Fenster ___ am Abend geschlossen",
+          "answers": [
+            "wurde"
+          ]
+        },
+        {
+          "sentence": "Die Tickets sind online gekauft ___",
+          "answers": [
+            "worden"
+          ]
+        },
+        {
+          "sentence": "Der Patient musste sofort untersucht ___",
+          "answers": [
+            "werden"
+          ]
+        },
+        {
+          "sentence": "Die Dokumente ___ gestern kopiert",
+          "answers": [
+            "wurden"
+          ]
+        },
+        {
+          "sentence": "Der Schlüssel ist im Büro gefunden ___",
+          "answers": [
+            "worden"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passiversatzformen",
+      "label": {
+        "ru": "Замени Passiv, используя указанный заменитель",
+        "en": "Replace “Passiv” with the specified substitute"
+      },
+      "items": [
+        {
+          "sentence": "Der Termin kann nicht verschoben werden",
+          "answers": [
+            "Der Termin lässt sich nicht verschieben"
+          ],
+          "placeholder": "sich lassen"
+        },
+        {
+          "sentence": "Diese Aufgabe kann leicht gelöst werden",
+          "answers": [
+            "Diese Aufgabe lässt sich leicht lösen"
+          ],
+          "placeholder": "sich lassen"
+        },
+        {
+          "sentence": "Die Bilder können nicht verkauft werden",
+          "answers": [
+            "Die Bilder sind unverkäuflich"
+          ],
+          "placeholder": "sein + Adjektiv"
+        },
+        {
+          "sentence": "Das Formular muss bis morgen ausgefüllt werden",
+          "answers": [
+            "Das Formular ist bis morgen auszufüllen"
+          ],
+          "placeholder": "sein + zu"
+        },
+        {
+          "sentence": "Die Rechnung muss heute bezahlt werden",
+          "answers": [
+            "Die Rechnung ist heute zu bezahlen"
+          ],
+          "placeholder": "sein + zu"
+        },
+        {
+          "sentence": "Diese Information kann nicht verwendet werden",
+          "answers": [
+            "Diese Information ist nicht verwendbar"
+          ],
+          "placeholder": "sein + Adjektiv"
+        },
+        {
+          "sentence": "Hier darf nicht fotografiert werden",
+          "answers": [
+            "Man darf hier nicht fotografieren"
+          ],
+          "placeholder": "man"
+        },
+        {
+          "sentence": "Diese Datei kann nicht geöffnet werden",
+          "answers": [
+            "Diese Datei lässt sich nicht öffnen"
+          ],
+          "placeholder": "sich lassen"
+        },
+        {
+          "sentence": "Die Tür kann nicht geöffnet werden",
+          "answers": [
+            "Die Tür lässt sich nicht öffnen"
+          ],
+          "placeholder": "sich lassen"
+        },
+        {
+          "sentence": "Diese Pilze können nicht gegessen werden",
+          "answers": [
+            "Diese Pilze sind nicht essbar"
+          ],
+          "placeholder": "sein + Adjektiv"
+        },
+        {
+          "sentence": "In der Bibliothek muss leise gesprochen werden",
+          "answers": [
+            "Man muss in der Bibliothek leise sprechen"
+          ],
+          "placeholder": "man"
+        },
+        {
+          "sentence": "Im Krankenhaus darf nicht laut telefoniert werden",
+          "answers": [
+            "Man darf im Krankenhaus nicht laut telefonieren"
+          ],
+          "placeholder": "man"
+        },
+        {
+          "sentence": "Dieser Fehler kann nicht entschuldigt werden",
+          "answers": [
+            "Dieser Fehler ist nicht zu entschuldigen"
+          ],
+          "placeholder": "sein + zu"
+        },
+        {
+          "sentence": "Dieses Problem kann gelöst werden",
+          "answers": [
+            "Dieses Problem ist lösbar"
+          ],
+          "placeholder": "sein + Adjektiv"
+        },
+        {
+          "sentence": "Die Arbeit muss gemacht werden",
+          "answers": [
+            "Die Arbeit ist zu machen"
+          ],
+          "placeholder": "sein + zu"
+        },
+        {
+          "sentence": "In diesem Raum darf nicht geraucht werden",
+          "answers": [
+            "Man darf in diesem Raum nicht rauchen"
+          ],
+          "placeholder": "man"
+        }
+      ]
+    },
+    {
+      "id": "vorgangspassivPerfektUbersetzen",
+      "label": {
+        "ru": "Переведите предложения в Vorgangspassiv Perfekt",
+        "en": "Translate the sentences using the Vorgangspassiv Perfekt"
+      },
+      "items": [
+        {
+          "sentence": {
+            "ru": "Во время войны беженцы из Европы были приняты в США",
+            "en": "During the war, refugees from Europe were admitted to the USA"
+          },
+          "answers": [
+            "Während des Krieges sind Flüchtlinge aus Europa in den USA aufgenommen worden",
+            "Während des Krieges sind die Flüchtlinge aus Europa in den USA aufgenommen worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "В Берлине мэр был избран три года назад",
+            "en": "In Berlin, the mayor was elected three years ago"
+          },
+          "answers": [
+            "In Berlin ist der Bürgermeister vor drei Jahren gewählt worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "В 1939 году был принят новый закон",
+            "en": "In 1939, a new law was passed"
+          },
+          "answers": [
+            "Im Jahr 1939 ist ein neues Gesetz angenommen worden",
+            "1939 ist ein neues Gesetz angenommen worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Эта политическая партия была основана им",
+            "en": "This political party was founded by him"
+          },
+          "answers": [
+            "Diese politische Partei ist von ihm gegründet worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Книгопечатание было изобретено Гутенбергом",
+            "en": "Printing was invented by Gutenberg"
+          },
+          "answers": [
+            "Der Buchdruck ist von Gutenberg erfunden worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Правительство было свергнуто в июле",
+            "en": "The government was overthrown in July"
+          },
+          "answers": [
+            "Die Regierung ist im Juli gestürzt worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Политическая газета была куплена девочкой",
+            "en": "The political newspaper was bought by the girl"
+          },
+          "answers": [
+            "Die politische Zeitung ist von dem Mädchen gekauft worden",
+            "Die politische Zeitung ist vom Mädchen gekauft worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Он был убит в апреле",
+            "en": "He was killed in April"
+          },
+          "answers": [
+            "Er ist im April getötet worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Когда эта книга была опубликована?",
+            "en": "When was this book published?"
+          },
+          "answers": [
+            "Wann ist dieses Buch veröffentlicht worden?",
+            "Wann ist das Buch veröffentlicht worden?"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Письмо было отправлено вчера вечером",
+            "en": "The letter was sent yesterday evening"
+          },
+          "answers": [
+            "Der Brief ist gestern Abend geschickt worden",
+            "Der Brief ist gestern Abend gesendet worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Эта квартира была продана в прошлом месяце",
+            "en": "This apartment was sold last month"
+          },
+          "answers": [
+            "Diese Wohnung ist letzten Monat verkauft worden",
+            "Diese Wohnung ist im letzten Monat verkauft worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Мой велосипед был украден на вокзале",
+            "en": "My bicycle was stolen at the train station"
+          },
+          "answers": [
+            "Mein Fahrrad ist am Bahnhof gestohlen worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Ребёнок был осмотрен врачом",
+            "en": "The child was examined by the doctor"
+          },
+          "answers": [
+            "Das Kind ist von dem Arzt untersucht worden",
+            "Das Kind ist vom Arzt untersucht worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Новый ресторан был открыт в центре города",
+            "en": "The new restaurant was opened in the city center"
+          },
+          "answers": [
+            "Das neue Restaurant ist im Stadtzentrum eröffnet worden",
+            "Das neue Restaurant ist in der Innenstadt eröffnet worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Все документы были проверены секретарём",
+            "en": "All documents were checked by the secretary"
+          },
+          "answers": [
+            "Alle Dokumente sind von der Sekretärin geprüft worden",
+            "Alle Dokumente sind von dem Sekretär geprüft worden",
+            "Alle Dokumente sind vom Sekretär geprüft worden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Эта проблема была быстро решена",
+            "en": "This problem was solved quickly"
+          },
+          "answers": [
+            "Dieses Problem ist schnell gelöst worden",
+            "Das Problem ist schnell gelöst worden"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vorgangspassivModalverbenPräsens",
+      "label": {
+        "ru": "Переведите предложения в Vorgangspassiv mit Modalverben (Präsens)",
+        "en": "Translate the sentences using the Vorgangspassiv mit Modalverben (Präsens)"
+      },
+      "items": [
+        {
+          "sentence": {
+            "ru": "Война должна быть закончена",
+            "en": "The war must be ended"
+          },
+          "answers": [
+            "Der Krieg muss beendet werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Конституция должна быть принята",
+            "en": "The constitution is to be adopted"
+          },
+          "answers": [
+            "Die Verfassung soll angenommen werden",
+            "Die Verfassung muss angenommen werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Правительство должно быть избрано",
+            "en": "The government is to be elected"
+          },
+          "answers": [
+            "Die Regierung soll gewählt werden",
+            "Die Regierung muss gewählt werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Все недопонимания могут быть устранены",
+            "en": "All misunderstandings can be cleared up"
+          },
+          "answers": [
+            "Alle Missverständnisse können aus der Welt geschafft werden",
+            "Alle Missverständnisse können geklärt werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Въезд в страну не должен быть ограничен",
+            "en": "Entry into the country must not be restricted"
+          },
+          "answers": [
+            "Die Einreise ins Land darf nicht beschränkt werden",
+            "Die Einreise ins Land soll nicht beschränkt werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Реформы могут быть проведены",
+            "en": "The reforms can be carried out"
+          },
+          "answers": [
+            "Die Reformen können durchgeführt werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Страйки должны быть разрешены",
+            "en": "Strikes are to be allowed"
+          },
+          "answers": [
+            "Die Streiks sollen erlaubt werden",
+            "Die Streiks müssen erlaubt werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Этот закон должен быть изменён",
+            "en": "This law must be changed"
+          },
+          "answers": [
+            "Dieses Gesetz muss geändert werden",
+            "Dieses Gesetz soll geändert werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Заявление может быть подано онлайн",
+            "en": "The application can be submitted online"
+          },
+          "answers": [
+            "Der Antrag kann online gestellt werden",
+            "Der Antrag kann online eingereicht werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Документы должны быть проверены",
+            "en": "The documents must be checked"
+          },
+          "answers": [
+            "Die Dokumente müssen geprüft werden",
+            "Die Dokumente sollen geprüft werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Решение может быть принято завтра",
+            "en": "The decision can be made tomorrow"
+          },
+          "answers": [
+            "Die Entscheidung kann morgen getroffen werden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Эта информация не должна быть опубликована",
+            "en": "This information must not be published"
+          },
+          "answers": [
+            "Diese Information darf nicht veröffentlicht werden",
+            "Diese Information soll nicht veröffentlicht werden"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vorgangspassivPräteritumModalverben",
+      "label": {
+        "ru": "Преобразуйте словосочетание в Vorgangspassiv Präteritum с глаголом müssen",
+        "en": "Transform the phrase into the Vorgangspassiv Präteritum with the verb müssen"
+      },
+      "items": [
+        {
+          "sentence": "den Hund füttern",
+          "answers": [
+            "Der Hund musste gefüttert werden"
+          ]
+        },
+        {
+          "sentence": "das Porträt malen",
+          "answers": [
+            "Das Porträt musste gemalt werden"
+          ]
+        },
+        {
+          "sentence": "eine Kutsche kaufen",
+          "answers": [
+            "Eine Kutsche musste gekauft werden"
+          ]
+        },
+        {
+          "sentence": "das Museum gründen",
+          "answers": [
+            "Das Museum musste gegründet werden"
+          ]
+        },
+        {
+          "sentence": "100 Bücher veröffentlichen",
+          "answers": [
+            "100 Bücher mussten veröffentlicht werden"
+          ]
+        },
+        {
+          "sentence": "einen Kuchen backen",
+          "answers": [
+            "Ein Kuchen musste gebacken werden"
+          ]
+        },
+        {
+          "sentence": "Geschenke für Kinder schicken",
+          "answers": [
+            "Geschenke für Kinder mussten geschickt werden"
+          ]
+        },
+        {
+          "sentence": "Blumen gießen",
+          "answers": [
+            "Blumen mussten gegossen werden"
+          ]
+        },
+        {
+          "sentence": "50 Flaschen Sekt kaufen",
+          "answers": [
+            "50 Flaschen Sekt mussten gekauft werden"
+          ]
+        },
+        {
+          "sentence": "ein neues Gerät erfinden",
+          "answers": [
+            "Ein neues Gerät musste erfunden werden"
+          ]
+        },
+        {
+          "sentence": "die Wohnung renovieren",
+          "answers": [
+            "Die Wohnung musste renoviert werden"
+          ]
+        },
+        {
+          "sentence": "den Brief abschicken",
+          "answers": [
+            "Der Brief musste abgeschickt werden"
+          ]
+        },
+        {
+          "sentence": "die Fenster putzen",
+          "answers": [
+            "Die Fenster mussten geputzt werden"
+          ]
+        },
+        {
+          "sentence": "das Formular ausfüllen",
+          "answers": [
+            "Das Formular musste ausgefüllt werden"
+          ]
+        },
+        {
+          "sentence": "die Rechnung bezahlen",
+          "answers": [
+            "Die Rechnung musste bezahlt werden"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zustandspassivPräteritum",
+      "label": {
+        "ru": "Переведите предложения в Zustandspassiv Präteritum",
+        "en": "Translate the sentences using the Zustandspassiv Präteritum"
+      },
+      "items": [
+        {
+          "sentence": {
+            "ru": "Дверь была закрыта",
+            "en": "The door was closed"
+          },
+          "answers": [
+            "Die Tür war geschlossen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Окна были открыты",
+            "en": "The windows were open"
+          },
+          "answers": [
+            "Die Fenster waren geöffnet",
+            "Die Fenster waren offen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Стол был накрыт",
+            "en": "The table was set"
+          },
+          "answers": [
+            "Der Tisch war gedeckt"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Билеты были распроданы",
+            "en": "The tickets were sold out"
+          },
+          "answers": [
+            "Die Tickets waren ausverkauft",
+            "Die Karten waren ausverkauft"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Магазин был закрыт",
+            "en": "The shop was closed"
+          },
+          "answers": [
+            "Das Geschäft war geschlossen",
+            "Der Laden war geschlossen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Был опубликован выдающийся роман Джейн Ейр (Jane Eyre)",
+            "en": "The outstanding novel Jane Eyre was published"
+          },
+          "answers": [
+            "Der bedeutende Roman Jane Eyre war veröffentlicht"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Был найден поразительный храм Ангкор-Ват (Angkor Wat)",
+            "en": "The impressive temple Angkor Wat was found"
+          },
+          "answers": [
+            "Der beeindruckende Tempel Angkor Wat war gefunden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Была построена Эйфелева башня (der Eiffelturm)",
+            "en": "The Eiffel Tower was built"
+          },
+          "answers": [
+            "Der Eiffelturm war gebaut",
+            "Der Eiffelturm war erbaut"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Был изобретен кинематограф",
+            "en": "Cinematography was invented"
+          },
+          "answers": [
+            "Die Kinematographie war erfunden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Был написан первый настоящий детектив",
+            "en": "The first real detective story was written"
+          },
+          "answers": [
+            "Der erste echte Krimi war geschrieben"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Было запрещено рабство",
+            "en": "Slavery was prohibited"
+          },
+          "answers": [
+            "Die Sklaverei war verboten"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Был основан Музей истории искусства в Вене (Kunsthistorisches Museum)",
+            "en": "The Kunsthistorisches Museum in Vienna was founded"
+          },
+          "answers": [
+            "Das Kunsthistorische Museum in Wien war gegründet"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Правительство Наполеона было свергнуто",
+            "en": "Napoleon's government was overthrown"
+          },
+          "answers": [
+            "Napoleons Regierung war gestürzt"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Были написаны величайшие музыкальные произведения",
+            "en": "The greatest musical works were written"
+          },
+          "answers": [
+            "Die bedeutendsten Musikstücke waren geschrieben",
+            "Die größten Musikstücke waren geschrieben"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Были изобретены телефон и радио",
+            "en": "The telephone and the radio were invented"
+          },
+          "answers": [
+            "Das Telefon und das Radio waren erfunden",
+            "Das Radio und das Telefon waren erfunden"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fromPassivToSichLassen",
+      "label": {
+        "ru": "Перепишите предложения из Passiv, используя sich lassen",
+        "en": "Rewrite the sentences from the passive voice using “sich lassen”"
+      },
+      "items": [
+        {
+          "sentence": "Der Buchdruck konnte früher erfunden werden",
+          "answers": [
+            "Der Buchdruck hat sich früher erfinden lassen",
+            "Der Buchdruck ließ sich früher erfinden"
+          ]
+        },
+        {
+          "sentence": "Die Verfassung kann schon unterschrieben werden",
+          "answers": [
+            "Die Verfassung lässt sich schon unterschreiben"
+          ]
+        },
+        {
+          "sentence": "Das Gemälde konnte damals verboten werden",
+          "answers": [
+            "Das Gemälde hat sich damals verbieten lassen",
+            "Das Gemälde ließ sich damals verbieten"
+          ]
+        },
+        {
+          "sentence": "Die Bücher können veröffentlicht werden",
+          "answers": [
+            "Die Bücher lassen sich veröffentlichen"
+          ]
+        },
+        {
+          "sentence": "Diese bedeutenden Musikstücke können gut verkauft werden",
+          "answers": [
+            "Diese bedeutenden Musikstücke lassen sich gut verkaufen"
+          ]
+        },
+        {
+          "sentence": "Der antike Tempel kann schließlich renoviert werden",
+          "answers": [
+            "Der antike Tempel lässt sich schließlich renovieren"
+          ]
+        },
+        {
+          "sentence": "Das Hauptthema der Reportage kann gewählt werden",
+          "answers": [
+            "Das Hauptthema der Reportage lässt sich wählen"
+          ]
+        },
+        {
+          "sentence": "Unser Ziel konnte schnell erreicht werden",
+          "answers": [
+            "Unser Ziel hat sich schnell erreichen lassen",
+            "Unser Ziel ließ sich schnell erreichen"
+          ]
+        },
+        {
+          "sentence": "Die Wirtschaft konnte privatisiert werden",
+          "answers": [
+            "Die Wirtschaft hat sich privatisieren lassen",
+            "Die Wirtschaft ließ sich privatisieren"
+          ]
+        },
+        {
+          "sentence": "Die Gesetze konnten angenommen werden",
+          "answers": [
+            "Die Gesetze haben sich annehmen lassen",
+            "Die Gesetze ließen sich annehmen"
+          ]
+        },
+        {
+          "sentence": "Das Problem kann leicht gelöst werden",
+          "answers": [
+            "Das Problem lässt sich leicht lösen"
+          ]
+        },
+        {
+          "sentence": "Die Tür konnte nicht geöffnet werden",
+          "answers": [
+            "Die Tür hat sich nicht öffnen lassen",
+            "Die Tür ließ sich nicht öffnen"
+          ]
+        },
+        {
+          "sentence": "Der Fehler kann schnell korrigiert werden",
+          "answers": [
+            "Der Fehler lässt sich schnell korrigieren"
+          ]
+        },
+        {
+          "sentence": "Die Datei konnte nicht gespeichert werden",
+          "answers": [
+            "Die Datei hat sich nicht speichern lassen",
+            "Die Datei ließ sich nicht speichern"
+          ]
+        },
+        {
+          "sentence": "Diese Frage kann einfach beantwortet werden",
+          "answers": [
+            "Diese Frage lässt sich einfach beantworten"
+          ]
+        }
+      ]
+    }
+  ]
+}

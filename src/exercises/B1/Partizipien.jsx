@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
+import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -100,6 +100,7 @@ export default function Partizipien() {
         [locale]
     );
     const rows = useMemo(() => getRows(data.items), []);
+    const sections = useMemo(() => rowsToSections(rows, "partizipien"), [rows]);
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);
@@ -209,22 +210,16 @@ export default function Partizipien() {
                 <ModalHtml images={slides} initialIndex={0} onClose={() => setShowHint(false)} />
             )}
 
-            <div className="scroll-container">
-                <ProgressiveList items={rows} className="list">
+            <SectionedProgressiveList
+                sections={sections}
+                className="list"
+                renderLabel={(label) => getLocalizedText(label, locale)}
+            >
                     {(row) => {
-                        if (row.type === "divider") {
-                            return (
-                                <li key={row.key} className="exercise-section-divider">
-                                    <span>{getLocalizedText(row.label, locale)}</span>
-                                </li>
-                            );
-                        }
-
                         if (row.section === "translate") return renderTranslate(row);
                         return renderInsert(row);
                     }}
-                </ProgressiveList>
-            </div>
+            </SectionedProgressiveList>
         </div>
     );
 }

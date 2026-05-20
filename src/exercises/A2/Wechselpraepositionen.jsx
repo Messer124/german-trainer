@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
+import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A2/prepositions.json";
@@ -78,6 +78,7 @@ export default function Wechselpraepositionen() {
   const [showHint, setShowHint] = useState(false);
 
   const rows = useMemo(() => getRows(data.items), []);
+  const sections = useMemo(() => rowsToSections(rows, "wechselpraepositionen"), [rows]);
   const slides = useMemo(
       () => (locale === "en" ? [slide1En, slide2En] : [slide1Ru, slide2Ru]),
       [locale]
@@ -204,22 +205,16 @@ export default function Wechselpraepositionen() {
             <ModalHtml images={slides} initialIndex={0} onClose={() => setShowHint(false)} />
         )}
 
-        <div className="scroll-container">
-          <ProgressiveList items={rows} className="list">
+        <SectionedProgressiveList
+            sections={sections}
+            className="list"
+            renderLabel={(label) => getLocalizedText(label, locale)}
+        >
             {(row) => {
-              if (row.type === "divider") {
-                return (
-                    <li key={row.key} className="exercise-section-divider">
-                      <span>{getLocalizedText(row.label, locale)}</span>
-                    </li>
-                );
-              }
-
               if (row.section === "translate") return renderTranslate(row);
               return renderInsert(row);
             }}
-          </ProgressiveList>
-        </div>
+        </SectionedProgressiveList>
       </div>
   );
 }

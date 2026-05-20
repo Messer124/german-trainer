@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
+import SectionedProgressiveList, { rowsToSections } from "../../components/SectionedProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
@@ -92,6 +92,7 @@ export default function SteigerungVonAdjektiven() {
         [locale]
     );
     const rows = useMemo(() => getRows(data.items, locale), [locale]);
+    const sections = useMemo(() => rowsToSections(rows, "steigerung-von-adjektiven"), [rows]);
 
     useEffect(() => {
         const handleShowHint = () => setShowHint(true);
@@ -118,17 +119,8 @@ export default function SteigerungVonAdjektiven() {
                 <ModalHtml images={slides} initialIndex={0} onClose={() => setShowHint(false)} />
             )}
 
-            <div className="scroll-container">
-                <ProgressiveList items={rows} className="list">
+            <SectionedProgressiveList sections={sections} className="list">
                     {(row) => {
-                        if (row.type === "divider") {
-                            return (
-                                <li key={row.key} className="exercise-section-divider">
-                                    <span>{row.label}</span>
-                                </li>
-                            );
-                        }
-
                         const sentence = row.sentence;
                         const answerArray = row.answers;
                         const parts = sentence.split(/_{3,}/);
@@ -177,8 +169,7 @@ export default function SteigerungVonAdjektiven() {
                             </li>
                         );
                     }}
-                </ProgressiveList>
-            </div>
+            </SectionedProgressiveList>
         </div>
     );
 }

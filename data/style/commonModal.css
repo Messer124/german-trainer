@@ -4616,3 +4616,184 @@ table.mv-table tbody td {
         font-style: normal;
       }
     }
+
+/* ===== Passiv Vergangenheit ===== */
+
+.passiv-vergangenheit .passiv-compare-table {
+  width: 1080px;
+  min-width: 1080px;
+}
+
+.passiv-vergangenheit .passiv-section-title {
+  font-size: 1.12em;
+}
+
+.passiv-vergangenheit .passiv-formula {
+  line-height: 1.18;
+}
+
+.passiv-vergangenheit .passiv-example {
+  line-height: 1.18;
+}
+
+.passiv-vergangenheit-replacements {
+  --pv-line: var(--theory-line-color);
+}
+
+.passiv-vergangenheit-replacements .pv-lead {
+  max-width: 1120px;
+  margin: 0 auto 16px;
+  line-height: 1.34;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table {
+  width: 1080px;
+  min-width: 1080px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table th,
+.passiv-vergangenheit-replacements .pv-replacement-table td {
+  padding: 10px 16px;
+  vertical-align: top;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table th {
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table td p {
+  margin: 0;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table td p + p {
+  margin-top: 18px;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-kind {
+  line-height: 1.2;
+}
+
+.passiv-vergangenheit-replacements .pv-kind-note {
+  font-style: italic;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table--compact td p + p {
+  margin-top: 16px;
+}
+
+.passiv-vergangenheit-summary .pv-summary-title {
+  margin: 24px 0 12px;
+  font-size: 1.08em;
+  font-weight: 700;
+}
+
+.passiv-vergangenheit-summary .pv-summary-grid {
+  display: grid;
+  grid-template-columns: 8% 24% 68%;
+  gap: 12px 16px;
+  align-items: start;
+  width: 1080px;
+  min-width: 1080px;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+
+.passiv-vergangenheit-summary .pv-summary-label {
+  grid-column: 1 / 3;
+  font-weight: 400;
+}
+
+.passiv-vergangenheit-summary .pv-summary-label--passiv {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.passiv-vergangenheit-summary .pv-summary-side {
+  grid-row: span 4;
+  align-self: center;
+  justify-self: center;
+  color: var(--theory-accent-violet);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.passiv-vergangenheit-summary .pv-summary-replacer {
+  font-weight: 400;
+}
+
+.passiv-vergangenheit-summary .pv-summary-example {
+  line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+  .passiv-vergangenheit .passiv-compare-table,
+  .passiv-vergangenheit-replacements .pv-replacement-table,
+  .passiv-vergangenheit-summary .pv-summary-grid {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .passiv-vergangenheit-replacements .pv-replacement-table th,
+  .passiv-vergangenheit-replacements .pv-replacement-table td {
+    padding: 9px 10px;
+    font-size: 0.94rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-grid,
+  .passiv-vergangenheit-replacements .pv-lead,
+  .passiv-vergangenheit .passiv-example,
+  .passiv-vergangenheit .passiv-formula {
+    font-size: 0.94rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .passiv-vergangenheit .passiv-compare-table,
+  .passiv-vergangenheit-replacements .pv-replacement-table,
+  .passiv-vergangenheit-summary .pv-summary-grid {
+    width: 100%;
+    min-width: 760px;
+  }
+
+  .passiv-vergangenheit .passiv-section-title {
+    font-size: 0.98em;
+  }
+
+  .passiv-vergangenheit-replacements .pv-replacement-table th,
+  .passiv-vergangenheit-replacements .pv-replacement-table td {
+    padding: 8px 8px;
+    font-size: 0.8rem;
+    line-height: 1.22;
+  }
+
+  .passiv-vergangenheit-replacements .pv-lead,
+  .passiv-vergangenheit .passiv-intro,
+  .passiv-vergangenheit .passiv-note,
+  .passiv-vergangenheit .passiv-example,
+  .passiv-vergangenheit .passiv-formula {
+    font-size: 0.82rem;
+    line-height: 1.24;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-title {
+    margin-top: 18px;
+    font-size: 1em;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-grid {
+    grid-template-columns: 8% 25% 67%;
+    gap: 10px 12px;
+    font-size: 0.8rem;
+    line-height: 1.22;
+  }
+}
