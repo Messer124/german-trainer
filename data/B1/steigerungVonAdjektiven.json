@@ -9,7 +9,7 @@
   },
   "sections": [
     {
-      "id": "adjective-endings",
+      "type": "fill",
       "label": {
         "ru": "Добавьте правильные окончания к прилагательным",
         "en": "Add the correct endings to the adjectives"
@@ -215,11 +215,10 @@
             "en"
           ]
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "einer-forms",
+      "type": "fill",
       "label": {
         "ru": "Подставьте einer/eines/eine в нужной форме",
         "en": "Insert the correct form of einer/eines/eine"
@@ -375,8 +374,7 @@
             "einem"
           ]
         }
-      ],
-      "type": "fill"
+      ]
     }
   ]
 }

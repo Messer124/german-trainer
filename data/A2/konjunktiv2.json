@@ -420,7 +420,7 @@
       ]
     },
     {
-      "id": "past",
+      "type": "fill",
       "label": {
         "ru": "Konjunktiv II в прошедшем времени",
         "en": "Konjunktiv II in the past tense"
@@ -621,8 +621,7 @@
             "Ich wäre in Köln geblieben, wenn ich einen Job gefunden hätte"
           ]
         }
-      ],
-      "type": "fill"
+      ]
     }
   ]
 }

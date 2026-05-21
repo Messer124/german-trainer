@@ -9,7 +9,7 @@
   },
   "sections": [
     {
-      "id": "insert",
+      "type": "fill",
       "label": {
         "ru": "Partizip I oder II?",
         "en": "Partizip I oder II?"
@@ -358,11 +358,10 @@
             "vereinbarte"
           ]
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "translate",
+      "type": "translate",
       "label": {
         "ru": "Переведите предложения (Partizip I и Partizip II как прилагательные)",
         "en": "Translate phrases (Partizip I and Partizip II as adjectives)"
@@ -508,8 +507,7 @@
           },
           "answer": "ein geladenes Handy"
         }
-      ],
-      "type": "translate"
+      ]
     }
   ]
 }

@@ -9,7 +9,7 @@
   },
   "sections": [
     {
-      "id": "insert",
+      "type": "multi-fill",
       "label": {
         "ru": "Определите, какой глагол и предлог необходимы",
         "en": "Determine which verb and preposition are needed"
@@ -455,11 +455,10 @@
             "hinter"
           ]
         }
-      ],
-      "type": "multi-fill"
+      ]
     },
     {
-      "id": "translate",
+      "type": "translate",
       "label": {
         "ru": "Переведите предложения",
         "en": "Translate sentences"
@@ -640,8 +639,7 @@
           },
           "answer": "Die Lampe steht zwischen den Sesseln"
         }
-      ],
-      "type": "translate"
+      ]
     }
   ]
 }

@@ -9,7 +9,7 @@
   },
   "sections": [
     {
-      "id": "perfekt",
+      "type": "fill",
       "label": {
         "ru": "Образуйте Perfekt в зависимости от значения глагола lassen",
         "en": "Form the perfect tense depending on the meaning of the verb lassen"
@@ -115,11 +115,10 @@
           "sentence": "Er lässt mich lange warten",
           "answer": "Er hat mich lange warten lassen"
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "translate",
+      "type": "translate",
       "label": {
         "ru": "Переведите предложения, используя глагол lassen",
         "en": "Translate the sentences using the verb lassen"
@@ -279,8 +278,7 @@
           },
           "answer": "Bitte lassen Sie mich nicht warten"
         }
-      ],
-      "type": "translate"
+      ]
     }
   ]
 }

@@ -9,7 +9,6 @@
   },
   "sections": [
     {
-      "id": "translate",
       "type": "translate",
       "label": {
         "ru": "Переведи на немецкий язык",
@@ -205,7 +204,6 @@
       ]
     },
     {
-      "id": "brauchen-nur-zu",
       "type": "fill",
       "label": {
         "ru": "Перепишите предложения используя конструкцию brauchen nur + zu",
@@ -306,7 +304,6 @@
       ]
     },
     {
-      "id": "brauchen-nicht-zu",
       "type": "translate",
       "label": {
         "ru": "Переведите предложения, используя brauchen nicht + zu",

@@ -9,7 +9,7 @@
   },
   "sections": [
     {
-      "id": "insert",
+      "type": "fill",
       "label": {
         "ru": "Дополните предложения c помощью ein-, kein- , welch-",
         "en": "Complete the sentences using ein-, kein-, welch-"
@@ -135,11 +135,10 @@
           "sentence": "Hast du noch Kekse? — Ja, ich habe noch ___",
           "answer": "welche"
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "translate",
+      "type": "translate",
       "label": {
         "ru": "Переведите, используя ein-, kein-, welch- и притяжательные местоимения",
         "en": "Translate using ein-, kein-, welch- and possessive pronouns"
@@ -285,8 +284,7 @@
           },
           "answer": "Ist das unser Ticket? Ja, das ist unseres"
         }
-      ],
-      "type": "translate"
+      ]
     }
   ]
 }

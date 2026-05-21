@@ -39,7 +39,7 @@ export function normalizeExerciseSections(rawData, locale, fallbackId = "section
 
     return rawSections
         .map((section, sectionIndex) => {
-            const sectionId = section.id ?? `${fallbackId}-${sectionIndex}`;
+            const sectionId = `${fallbackId}-${sectionIndex}`;
             const sectionItems = Array.isArray(section.items) ? section.items : [];
 
             return {

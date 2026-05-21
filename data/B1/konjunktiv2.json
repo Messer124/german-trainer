@@ -9,7 +9,7 @@
   },
   "sections": [
     {
-      "id": "modal-verbs",
+      "type": "fill",
       "label": {
         "ru": "Перефразируйте предложения с модальными глаголами, используя Konjunktiv II в прошедшем времени",
         "en": "Paraphrase the sentences containing modal verbs, using the Konjunktiv II in the past tense"
@@ -117,11 +117,10 @@
             "Ich hätte gestern so gern mitkommen können"
           ]
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "conjunctions",
+      "type": "fill",
       "label": {
         "ru": "Перефразируйте предложения, используя Konjunktiv II и указанный союз",
         "en": "Rephrase the sentences using Konjunktiv II and the given conjunction"
@@ -273,11 +272,10 @@
           ],
           "placeholder": "als"
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "subjunctive-mood",
+      "type": "fill",
       "label": {
         "ru": "Перефразируйте обычное предложение в сослагательное наклонение с Konjunktiv II",
         "en": "Rephrase the sentence as an unreal wish with Konjunktiv II"
@@ -394,8 +392,7 @@
             "Hätte ich den Termin doch nicht verpasst"
           ]
         }
-      ],
-      "type": "fill"
+      ]
     }
   ]
 }

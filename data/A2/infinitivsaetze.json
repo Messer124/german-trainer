@@ -9,7 +9,7 @@
   },
   "sections": [
     {
-      "id": "zu-no-zu",
+      "type": "fill",
       "label": {
         "ru": "Вставьте частицу zu или “-” там, где необходимо",
         "en": "Insert the particle zu or “-” where necessary"
@@ -95,11 +95,10 @@
           "sentence": "Lass bitte den Koffer hier ___stehen",
           "answer": "-"
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "infinitive-constructions",
+      "type": "fill",
       "label": {
         "ru": "Подберите правильную инфинитивную конструкцию (um...zu, statt...zu, ohne...zu)",
         "en": "Choose the correct infinitive construction (um...zu, statt...zu, ohne...zu)"
@@ -185,11 +184,10 @@
           "sentence": "Wir nehmen den Bus, ___ zu spät zu kommen",
           "answer": "um"
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "combine-sentences",
+      "type": "fill",
       "label": {
         "ru": "Объедините предложения, используя um...zu или damit",
         "en": "Combine the sentences using um...zu or damit"
@@ -235,11 +233,10 @@
           "sentence": "Er schreibt eine Liste. Er vergisst nichts",
           "answer": "Er schreibt eine Liste, damit er nichts vergisst"
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "translate-infinitive-constructions",
+      "type": "translate",
       "label": {
         "ru": "Переведите предложения, используя инфинитивные конструкции um...zu / statt…zu / ohne…zu",
         "en": "Translate the sentences using the infinitive constructions um...zu / statt…zu / ohne…zu"
@@ -315,11 +312,10 @@
           },
           "answer": "Er geht auf den Markt, um Obst zu kaufen"
         }
-      ],
-      "type": "translate"
+      ]
     },
     {
-      "id": "translate",
+      "type": "translate",
       "label": {
         "ru": "Переведите предложения",
         "en": "Translate the sentences"
@@ -395,8 +391,7 @@
           },
           "answer": "Eva hat keine Zeit mit den Freunden zu spielen"
         }
-      ],
-      "type": "translate"
+      ]
     }
   ]
 }

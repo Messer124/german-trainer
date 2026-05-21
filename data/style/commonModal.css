@@ -4851,7 +4851,7 @@ table.mv-table tbody td {
 
 .brauchen-card {
   --brauchen-line: var(--theory-line-color);
-  --brauchen-table-width: 1080px;
+  --brauchen-table-width: min(1160px, 100%);
 }
 
 .brauchen-card .brauchen-lead,
@@ -4881,7 +4881,7 @@ table.mv-table tbody td {
 }
 
 .brauchen-card .brauchen-table__meaning-col {
-  width: 11%;
+  width: 17%;
 }
 
 .brauchen-card .brauchen-table__equivalent-col {
@@ -4902,13 +4902,16 @@ table.mv-table tbody td {
   border-left: 1px solid var(--brauchen-line);
 }
 
+.brauchen-card .brauchen-table tr:not(:has(.brauchen-side-label)) > td:first-child {
+  border-left: 1px solid var(--brauchen-line);
+}
+
 .brauchen-card .brauchen-side-label {
   color: var(--theory-strong-text-color);
   font-weight: 400;
-  text-align: center;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  letter-spacing: 0.02em;
+  text-align: left !important;
+  vertical-align: top !important;
+  letter-spacing: 0;
 }
 
 .brauchen-card .brauchen-equivalent {
@@ -4943,42 +4946,99 @@ table.mv-table tbody td {
 }
 
 @media (max-width: 600px) {
+  .brauchen-card {
+    --brauchen-mobile-font: clamp(0.72rem, 2.8vw, 0.84rem);
+  }
+
   .brauchen-card .brauchen-lead,
   .brauchen-card .brauchen-examples,
   .brauchen-card .brauchen-note {
     margin-bottom: 10px;
-    font-size: 0.68rem;
-    line-height: 1.2;
+    font-size: var(--brauchen-mobile-font);
+    line-height: 1.28;
   }
 
   .brauchen-card .brauchen-examples {
     margin-top: 10px;
   }
 
+  .brauchen-card .brauchen-scroll {
+    overflow-x: visible;
+  }
+
   .brauchen-card .brauchen-table {
+    display: block;
     width: 100%;
     min-width: 0;
+    margin: 10px 0 14px;
+    border-collapse: separate;
+    border-spacing: 0;
   }
 
-  .brauchen-card .brauchen-table__meaning-col {
-    width: 12%;
+  .brauchen-card .brauchen-table colgroup,
+  .brauchen-card .brauchen-table tbody {
+    display: block;
   }
 
-  .brauchen-card .brauchen-table__equivalent-col {
-    width: 17%;
+  .brauchen-card .brauchen-table tr {
+    display: block;
+    margin: 0 0 8px;
+    border: 1px solid var(--brauchen-line);
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   .brauchen-card .brauchen-table th,
   .brauchen-card .brauchen-table td {
-    padding: 5px 4px;
-    font-size: 0.58rem;
-    line-height: 1.16;
+    display: block;
+    width: 100%;
+    padding: 7px 9px;
+    border: 0;
+    font-size: var(--brauchen-mobile-font);
+    line-height: 1.24;
     overflow-wrap: anywhere;
     word-break: break-word;
   }
 
+  .brauchen-card .brauchen-table td + td {
+    border-top: 1px solid var(--brauchen-line);
+  }
+
+  .brauchen-card .brauchen-table th + td,
+  .brauchen-card .brauchen-table td + td,
+  .brauchen-card .brauchen-table tr:not(:has(.brauchen-side-label)) > td:first-child {
+    border-left: 0;
+  }
+
   .brauchen-card .brauchen-side-label {
-    font-size: 0.58rem;
+    background: rgba(108, 92, 231, 0.1);
+    font-size: 0.78rem;
+    font-weight: 400;
     letter-spacing: 0;
+    text-align: left !important;
+    vertical-align: top !important;
+  }
+
+  .brauchen-card .brauchen-equivalent {
+    display: inline-flex;
+    width: auto;
+    margin: 0 9px 8px;
+    padding: 4px 8px;
+    border: 1px solid var(--brauchen-line);
+    border-radius: 999px;
+    background: var(--theory-surface-soft);
+    font-size: 0.72rem;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 380px) {
+  .brauchen-card .brauchen-table th,
+  .brauchen-card .brauchen-table td {
+    padding: 6px 7px;
+  }
+
+  .brauchen-card .brauchen-equivalent {
+    margin-inline: 7px;
   }
 }

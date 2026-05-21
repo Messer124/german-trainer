@@ -9,7 +9,7 @@
   },
   "sections": [
     {
-      "id": "nachdem",
+      "type": "fill",
       "label": {
         "ru": "Образуйте сложное предложение, используя союз nachdem",
         "en": "Form a complex sentence using the conjunction nachdem"
@@ -55,11 +55,10 @@
           "sentence": "Die Nachbarn hatten alles organisiert. Sie haben gefeiert",
           "answer": "Nachdem die Nachbarn alles organisiert hatten, haben sie gefeiert"
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "bevor",
+      "type": "fill",
       "label": {
         "ru": "Образуйте сложное предложение, используя союз bevor",
         "en": "Form a complex sentence using the conjunction bevor"
@@ -105,11 +104,10 @@
           "sentence": "Sie hat das Haus verlassen. Sie hatte die Tür abgeschlossen",
           "answer": "Bevor sie das Haus verlassen hat, hatte sie die Tür abgeschlossen"
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "als",
+      "type": "fill",
       "label": {
         "ru": "Образуйте сложное предложение, используя союз als",
         "en": "Form a complex sentence using the conjunction als"
@@ -155,11 +153,10 @@
           "sentence": "Er kam ins Büro. Das Meeting hatte schon angefangen",
           "answer": "Als er ins Büro kam, hatte das Meeting schon angefangen"
         }
-      ],
-      "type": "fill"
+      ]
     },
     {
-      "id": "translate",
+      "type": "translate",
       "label": {
         "ru": "Переведите предложения",
         "en": "Translate sentences"
@@ -305,8 +302,7 @@
           },
           "answer": "Er hatte die Aufgabe verstanden, danach hat er sie schnell gelöst"
         }
-      ],
-      "type": "translate"
+      ]
     }
   ]
 }
