@@ -1,0 +1,498 @@
+{
+  "title": {
+    "ru": "Substantivierte Adjektive",
+    "en": "Substantivierte Adjektive"
+  },
+  "instructions": {
+    "ru": "Образуйте от прилагательных существительные",
+    "en": "Form nouns from adjectives"
+  },
+  "items": [
+    {
+      "sentence": "Da steht ein Auto eines ___ ",
+      "placeholders": [
+        "bekannt"
+      ],
+      "answers": [
+        "Bekannten"
+      ]
+    },
+    {
+      "sentence": "Wo ist der Unterschied zwischen einem ___ und einem Arzt?",
+      "placeholders": [
+        "krank"
+      ],
+      "answers": [
+        "Kranken"
+      ]
+    },
+    {
+      "sentence": "Da sitzt ein ___. Ich bin der Nachbar des ___",
+      "placeholders": [
+        "deutsch",
+        "deutsch"
+      ],
+      "answers": [
+        "Deutscher",
+        "Deutschen"
+      ]
+    },
+    {
+      "sentence": "Ein ___ hat viel Freizeit, aber weniger Geld als ein ___",
+      "placeholders": [
+        "arbeitslos",
+        "angestellt"
+      ],
+      "answers": [
+        "Arbeitsloser",
+        "Angestellter"
+      ]
+    },
+    {
+      "sentence": "Ich wünsche dir alles ___",
+      "placeholders": [
+        "gut"
+      ],
+      "answers": [
+        "Gute"
+      ]
+    },
+    {
+      "sentence": "Es ist gesünder, wenn Sie weniger ___ essen",
+      "placeholders": [
+        "süß"
+      ],
+      "answers": [
+        "Süßes"
+      ]
+    },
+    {
+      "sentence": "Was ist das ___ da im Essen? — Da ist nichts ___!",
+      "placeholders": [
+        "rot",
+        "rot"
+      ],
+      "answers": [
+        "Rote",
+        "Rotes"
+      ]
+    },
+    {
+      "sentence": "Möchten Sie etwas ___ oder etwas ___?",
+      "placeholders": [
+        "teuer",
+        "billig"
+      ],
+      "answers": [
+        "Teures",
+        "Billiges"
+      ]
+    },
+    {
+      "sentence": "Wer nichts ___ tut, hat damit noch nichts ___ getan",
+      "placeholders": [
+        "böse",
+        "gut"
+      ],
+      "answers": [
+        "Böses",
+        "Gutes"
+      ]
+    },
+    {
+      "sentence": "Man muss das ___ versuchen, um das ___ zu erreichen",
+      "placeholders": [
+        "unmöglich",
+        "möglich"
+      ],
+      "answers": [
+        "Unmögliche",
+        "Mögliche"
+      ]
+    },
+    {
+      "sentence": "Es hat sich bewährt, an das ___ zu glauben, aber sich auf das ___ zu verlassen",
+      "placeholders": [
+        "gut",
+        "schlecht"
+      ],
+      "answers": [
+        "Gute",
+        "Schlechte"
+      ]
+    },
+    {
+      "sentence": "Auch aus Steinen, die dir in den Weg gelegt werden, kann man etwas ___ bauen",
+      "placeholders": [
+        "schön"
+      ],
+      "answers": [
+        "Schönes"
+      ]
+    },
+    {
+      "sentence": "Alles ___ sollten wir lieben, aber für das ___ sollten wir leben",
+      "placeholders": [
+        "alt",
+        "neu"
+      ],
+      "answers": [
+        "Alte",
+        "Neue"
+      ]
+    },
+    {
+      "sentence": "Es würde viel weniger ___ auf der Erde geben, wenn das Böse niemals im Namen des ___ getan werden könnte",
+      "placeholders": [
+        "böse",
+        "gut"
+      ],
+      "answers": [
+        "Böses",
+        "Guten"
+      ]
+    },
+    {
+      "sentence": "Die ___ sitzen schon seit einer Stunde im Wartezimmer",
+      "placeholders": [
+        "krank"
+      ],
+      "answers": [
+        "Kranken"
+      ]
+    },
+    {
+      "sentence": "Ich habe gestern mit einer ___ gesprochen",
+      "placeholders": [
+        "verwandt"
+      ],
+      "answers": [
+        "Verwandten"
+      ]
+    },
+    {
+      "sentence": "Viele ___ suchen gerade eine neue Wohnung",
+      "placeholders": [
+        "jugendlich"
+      ],
+      "answers": [
+        "Jugendliche"
+      ]
+    },
+    {
+      "sentence": "Der Chef dankte allen ___",
+      "placeholders": [
+        "angestellt"
+      ],
+      "answers": [
+        "Angestellten"
+      ]
+    },
+    {
+      "sentence": "Das ___ daran ist seine Ehrlichkeit",
+      "placeholders": [
+        "wichtig"
+      ],
+      "answers": [
+        "Wichtige"
+      ]
+    },
+    {
+      "sentence": "Wir haben nichts ___ im Kühlschrank gefunden",
+      "placeholders": [
+        "essbar"
+      ],
+      "answers": [
+        "Essbares"
+      ]
+    },
+    {
+      "sentence": "Ein ___ braucht oft viel Geduld",
+      "placeholders": [
+        "erwachsen"
+      ],
+      "answers": [
+        "Erwachsener"
+      ]
+    },
+    {
+      "sentence": "Kennst du die ___ dort am Fenster?",
+      "placeholders": [
+        "deutsch"
+      ],
+      "answers": [
+        "Deutsche"
+      ]
+    },
+    {
+      "sentence": "Der Arzt hilft den ___",
+      "placeholders": [
+        "krank"
+      ],
+      "answers": [
+        "Kranken"
+      ]
+    },
+    {
+      "sentence": "Ich habe etwas ___ in diesem Buch gelesen",
+      "placeholders": [
+        "interessant"
+      ],
+      "answers": [
+        "Interessantes"
+      ]
+    },
+    {
+      "sentence": "Nichts ___ ist heute passiert",
+      "placeholders": [
+        "besonder"
+      ],
+      "answers": [
+        "Besonderes"
+      ]
+    },
+    {
+      "sentence": "Wir sprechen gerade über einen ___ aus Berlin",
+      "placeholders": [
+        "bekannt"
+      ],
+      "answers": [
+        "Bekannten"
+      ]
+    },
+    {
+      "sentence": "Die Polizei befragte mehrere ___",
+      "placeholders": [
+        "jugendlich"
+      ],
+      "answers": [
+        "Jugendliche"
+      ]
+    },
+    {
+      "sentence": "Kannst du mir etwas ___ empfehlen?",
+      "placeholders": [
+        "günstig"
+      ],
+      "answers": [
+        "Günstiges"
+      ]
+    },
+    {
+      "sentence": "Sie wohnt bei ihren ___",
+      "placeholders": [
+        "verwandt"
+      ],
+      "answers": [
+        "Verwandten"
+      ]
+    },
+    {
+      "sentence": "Ich habe den ___ schon einmal gesehen",
+      "placeholders": [
+        "arbeitslos"
+      ],
+      "answers": [
+        "Arbeitslosen"
+      ]
+    },
+    {
+      "sentence": "Etwas ___ wäre jetzt wirklich hilfreich",
+      "placeholders": [
+        "warm"
+      ],
+      "answers": [
+        "Warmes"
+      ]
+    },
+    {
+      "sentence": "Die ___ diskutieren über Politik",
+      "placeholders": [
+        "erwachsen"
+      ],
+      "answers": [
+        "Erwachsenen"
+      ]
+    },
+    {
+      "sentence": "Wir sollten mehr auf das ___ achten",
+      "placeholders": [
+        "wesentlich"
+      ],
+      "answers": [
+        "Wesentliche"
+      ]
+    },
+    {
+      "sentence": "Der ___ hat seinen Pass verloren",
+      "placeholders": [
+        "deutsch"
+      ],
+      "answers": [
+        "Deutsche"
+      ]
+    },
+    {
+      "sentence": "Ich wünsche allen ___ viel Erfolg",
+      "placeholders": [
+        "jugendlich"
+      ],
+      "answers": [
+        "Jugendlichen"
+      ]
+    },
+    {
+      "sentence": "Etwas ___ kann man immer lernen",
+      "placeholders": [
+        "neu"
+      ],
+      "answers": [
+        "Neues"
+      ]
+    },
+    {
+      "sentence": "Der Lehrer sprach mit einer ___ über die Prüfung",
+      "placeholders": [
+        "angestellt"
+      ],
+      "answers": [
+        "Angestellten"
+      ]
+    },
+    {
+      "sentence": "Die ___ brauchen dringend Hilfe",
+      "placeholders": [
+        "arbeitslos"
+      ],
+      "answers": [
+        "Arbeitslosen"
+      ]
+    },
+    {
+      "sentence": "Ich habe nichts ___ gesagt",
+      "placeholders": [
+        "falsch"
+      ],
+      "answers": [
+        "Falsches"
+      ]
+    },
+    {
+      "sentence": "Aus dem ___ kann man viel lernen",
+      "placeholders": [
+        "vergangen"
+      ],
+      "answers": [
+        "Vergangenen"
+      ]
+    },
+    {
+      "sentence": "Der Sohn eines ___ arbeitet jetzt hier",
+      "placeholders": [
+        "bekannt"
+      ],
+      "answers": [
+        "Bekannten"
+      ]
+    },
+    {
+      "sentence": "Viele ___ verbringen zu viel Zeit am Handy",
+      "placeholders": [
+        "jugendlich"
+      ],
+      "answers": [
+        "Jugendliche"
+      ]
+    },
+    {
+      "sentence": "Ich suche etwas ___ für den Abend",
+      "placeholders": [
+        "bequem"
+      ],
+      "answers": [
+        "Bequemes"
+      ]
+    },
+    {
+      "sentence": "Die Firma unterstützt junge ___",
+      "placeholders": [
+        "arbeitslos"
+      ],
+      "answers": [
+        "Arbeitslose"
+      ]
+    },
+    {
+      "sentence": "Der Arzt kümmerte sich sofort um den ___",
+      "placeholders": [
+        "krank"
+      ],
+      "answers": [
+        "Kranken"
+      ]
+    },
+    {
+      "sentence": "Wir haben viel ___ zusammen erlebt",
+      "placeholders": [
+        "schön"
+      ],
+      "answers": [
+        "Schönes"
+      ]
+    },
+    {
+      "sentence": "Alle ___ müssen ihre Handys ausschalten",
+      "placeholders": [
+        "anwesend"
+      ],
+      "answers": [
+        "Anwesenden"
+      ]
+    },
+    {
+      "sentence": "Das ___ im Leben ist Gesundheit",
+      "placeholders": [
+        "wahr"
+      ],
+      "answers": [
+        "Wahre"
+      ]
+    },
+    {
+      "sentence": "Sie hat einem ___ den Weg erklärt",
+      "placeholders": [
+        "fremd"
+      ],
+      "answers": [
+        "Fremden"
+      ]
+    },
+    {
+      "sentence": "Nichts ___ bleibt für immer",
+      "placeholders": [
+        "schlecht"
+      ],
+      "answers": [
+        "Schlechtes"
+      ]
+    },
+    {
+      "sentence": "Die ___ feiern heute ihren Abschluss",
+      "placeholders": [
+        "jugendlich"
+      ],
+      "answers": [
+        "Jugendlichen"
+      ]
+    },
+    {
+      "sentence": "Etwas ___ würde mir jetzt guttun",
+      "placeholders": [
+        "kalt"
+      ],
+      "answers": [
+        "Kaltes"
+      ]
+    }
+  ]
+}

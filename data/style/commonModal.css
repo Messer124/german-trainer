@@ -5042,3 +5042,334 @@ table.mv-table tbody td {
     margin-inline: 7px;
   }
 }
+
+/* ===== B1: Substantivierte Adjektive ===== */
+
+.substantivierte-adjektive {
+  --sa-line: var(--theory-line-color);
+  --sa-table-width: 1120px;
+  color: var(--theory-text-color);
+  line-height: 1.26;
+}
+
+.substantivierte-adjektive .sa-lead,
+.substantivierte-adjektive .sa-heading,
+.substantivierte-adjektive .sa-example-block,
+.substantivierte-adjektive .sa-list,
+.substantivierte-adjektive .sa-declension-table,
+.substantivierte-adjektive .sa-neuter-table,
+.substantivierte-adjektive .sa-important {
+  font-size: var(--desktop-modal-font-size);
+}
+
+.substantivierte-adjektive .sa-lead {
+  margin: 0 0 20px;
+}
+
+.substantivierte-adjektive .sa-heading {
+  margin: 0 0 12px;
+  font-weight: 800;
+}
+
+.substantivierte-adjektive .sa-heading--accent {
+  margin-top: 28px;
+}
+
+.substantivierte-adjektive .sa-translation {
+  font-style: normal;
+}
+
+.substantivierte-adjektive .sa-example-block {
+  display: grid;
+  grid-template-columns: max-content 42px 1fr;
+  column-gap: 18px;
+  row-gap: 12px;
+  align-items: center;
+  margin: 8px 0 28px;
+  line-height: 1.18;
+}
+
+.substantivierte-adjektive .sa-source {
+  white-space: nowrap;
+}
+
+.substantivierte-adjektive .sa-arrow {
+  color: var(--theory-accent-red);
+  font-size: 1.45em;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
+
+.substantivierte-adjektive .sa-example-line {
+  white-space: normal;
+}
+
+.substantivierte-adjektive .sa-list {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding-left: 1.7em;
+}
+
+.substantivierte-adjektive .sa-list li {
+  padding-left: 12px;
+}
+
+.substantivierte-adjektive .sa-table-scroll {
+  margin: 10px 0 24px;
+}
+
+.substantivierte-adjektive .sa-declension-table,
+.substantivierte-adjektive .sa-neuter-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  line-height: 1.16;
+}
+
+.substantivierte-adjektive .sa-declension-table {
+  width: var(--sa-table-width);
+  min-width: var(--sa-table-width);
+}
+
+.substantivierte-adjektive .sa-neuter-table {
+  width: 620px;
+  min-width: 620px;
+}
+
+.substantivierte-adjektive .sa-declension-table th,
+.substantivierte-adjektive .sa-declension-table td,
+.substantivierte-adjektive .sa-neuter-table th,
+.substantivierte-adjektive .sa-neuter-table td {
+  padding: 7px 10px;
+  border-top: 1px solid var(--sa-line);
+  vertical-align: middle;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.substantivierte-adjektive .sa-declension-table th + th,
+.substantivierte-adjektive .sa-declension-table td + td,
+.substantivierte-adjektive .sa-neuter-table th + th,
+.substantivierte-adjektive .sa-neuter-table td + td {
+  border-left: 1px solid var(--sa-line);
+}
+
+.substantivierte-adjektive .sa-declension-table tbody th + td,
+.substantivierte-adjektive .sa-neuter-table tbody th + td {
+  border-left: 1px solid var(--sa-line);
+}
+
+.substantivierte-adjektive .sa-declension-table thead th,
+.substantivierte-adjektive .sa-neuter-table thead th {
+  font-weight: 800;
+  text-align: center;
+}
+
+.substantivierte-adjektive .sa-declension-table tbody th,
+.substantivierte-adjektive .sa-neuter-table tbody th {
+  color: var(--theory-strong-text-color);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.substantivierte-adjektive .sa-declension-table tbody td,
+.substantivierte-adjektive .sa-neuter-table tbody td {
+  font-weight: 400;
+}
+
+.substantivierte-adjektive .sa-case-head {
+  width: 130px;
+}
+
+.substantivierte-adjektive .sa-lead--spaced {
+  margin-top: 28px;
+}
+
+.substantivierte-adjektive .sa-lower-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.62fr) minmax(260px, 0.38fr);
+  gap: 32px 44px;
+  align-items: start;
+  margin-top: 6px;
+}
+
+.substantivierte-adjektive .sa-lower-grid .sa-table-scroll {
+  margin: 0;
+}
+
+.substantivierte-adjektive .sa-important {
+  line-height: 1.25;
+  padding-top: 28px;
+}
+
+.substantivierte-adjektive .sa-important-title {
+  margin: 0 0 12px;
+  color: var(--theory-strong-text-color);
+  font-weight: 800;
+}
+
+.substantivierte-adjektive .sa-important p {
+  margin: 0 0 12px;
+}
+
+@media (max-width: 1200px) {
+  .substantivierte-adjektive {
+    --sa-table-width: 920px;
+  }
+
+  .substantivierte-adjektive .sa-lead,
+  .substantivierte-adjektive .sa-heading,
+  .substantivierte-adjektive .sa-example-block,
+  .substantivierte-adjektive .sa-list,
+  .substantivierte-adjektive .sa-declension-table,
+  .substantivierte-adjektive .sa-neuter-table,
+  .substantivierte-adjektive .sa-important {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .substantivierte-adjektive .sa-lead {
+    margin-bottom: 14px;
+  }
+
+  .substantivierte-adjektive .sa-example-block {
+    column-gap: 14px;
+    row-gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .substantivierte-adjektive .sa-declension-table th,
+  .substantivierte-adjektive .sa-declension-table td,
+  .substantivierte-adjektive .sa-neuter-table th,
+  .substantivierte-adjektive .sa-neuter-table td {
+    padding: 6px 8px;
+  }
+
+  .substantivierte-adjektive .sa-neuter-table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .substantivierte-adjektive .sa-lower-grid {
+    grid-template-columns: minmax(0, 0.58fr) minmax(220px, 0.42fr);
+    gap: 18px 24px;
+  }
+
+  .substantivierte-adjektive .sa-important {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .substantivierte-adjektive {
+    --sa-table-width: 680px;
+    --sa-mobile-font: clamp(0.72rem, 2.7vw, 0.84rem);
+  }
+
+  .substantivierte-adjektive .sa-lead,
+  .substantivierte-adjektive .sa-heading,
+  .substantivierte-adjektive .sa-example-block,
+  .substantivierte-adjektive .sa-list,
+  .substantivierte-adjektive .sa-important {
+    font-size: var(--sa-mobile-font);
+    line-height: 1.28;
+  }
+
+  .substantivierte-adjektive .sa-declension-table,
+  .substantivierte-adjektive .sa-neuter-table {
+    font-size: clamp(0.62rem, 2.4vw, 0.78rem);
+  }
+
+  .substantivierte-adjektive .sa-lead {
+    margin-bottom: 10px;
+  }
+
+  .substantivierte-adjektive .sa-heading {
+    margin-bottom: 8px;
+  }
+
+  .substantivierte-adjektive .sa-heading--accent {
+    margin-top: 16px;
+  }
+
+  .substantivierte-adjektive .sa-example-block {
+    grid-template-columns: max-content 24px 1fr;
+    column-gap: 8px;
+    row-gap: 6px;
+    margin: 6px 0 14px;
+  }
+
+  .substantivierte-adjektive .sa-source--empty {
+    display: block;
+  }
+
+  .substantivierte-adjektive .sa-arrow {
+    font-size: 1.2em;
+  }
+
+  .substantivierte-adjektive .sa-list {
+    gap: 6px;
+    margin-top: 8px;
+    padding-left: 1.4em;
+  }
+
+  .substantivierte-adjektive .sa-list li {
+    padding-left: 4px;
+  }
+
+  .substantivierte-adjektive .sa-table-scroll {
+    margin: 6px 0 14px;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .substantivierte-adjektive .sa-declension-table th,
+  .substantivierte-adjektive .sa-declension-table td,
+  .substantivierte-adjektive .sa-neuter-table th,
+  .substantivierte-adjektive .sa-neuter-table td {
+    padding: 5px;
+    line-height: 1.16;
+  }
+
+  .substantivierte-adjektive .sa-case-head {
+    width: 88px;
+  }
+
+  .substantivierte-adjektive .sa-neuter-table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .substantivierte-adjektive .sa-lead--spaced {
+    margin-top: 14px;
+  }
+
+  .substantivierte-adjektive .sa-lower-grid {
+    grid-template-columns: minmax(0, 0.6fr) minmax(130px, 0.4fr);
+    gap: 10px;
+  }
+
+  .substantivierte-adjektive .sa-important-title {
+    margin-bottom: 6px;
+  }
+
+  .substantivierte-adjektive .sa-important p {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .substantivierte-adjektive {
+    --sa-table-width: 620px;
+  }
+
+  .substantivierte-adjektive .sa-example-block {
+    grid-template-columns: 1fr;
+  }
+
+  .substantivierte-adjektive .sa-source--empty,
+  .substantivierte-adjektive .sa-arrow {
+    display: none;
+  }
+}
