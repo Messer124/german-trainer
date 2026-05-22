@@ -1,0 +1,482 @@
+{
+  "title": {
+    "ru": "Doppelte Konjunktionen",
+    "en": "Doppelte Konjunktionen"
+  },
+  "instructions": {
+    "ru": "Выполните задания с парными союзами",
+    "en": "Complete the exercises with double conjunctions"
+  },
+  "sections": [
+    {
+      "type": "fill",
+      "label": {
+        "ru": "Перепишите предложения, используя sowohl … als auch, weder … noch и entweder … oder",
+        "en": "Rewrite the sentences using sowohl … als auch, weder … noch, and entweder … oder"
+      },
+      "items": [
+        {
+          "sentence": "Du passt im Unterricht auf. Du bekommst eine schlechte Note",
+          "answers": [
+            "Entweder passt du im Unterricht auf, oder du bekommst eine schlechte Note"
+          ]
+        },
+        {
+          "sentence": "Mein Vater glaubte mir nicht. Mein Bruder glaubte mir auch nicht",
+          "answers": [
+            "Weder mein Vater noch mein Bruder glaubte mir",
+            "Weder mein Vater noch mein Bruder glaubten mir"
+          ]
+        },
+        {
+          "sentence": "Anna hat mir eine E-Mail geschrieben. Sie hat auch eine SMS geschickt",
+          "answers": [
+            "Anna hat mir sowohl eine E-Mail geschrieben als auch eine SMS geschickt"
+          ]
+        },
+        {
+          "sentence": "Du gehst jetzt los. Du verpasst den Zug",
+          "answers": [
+            "Entweder gehst du jetzt los, oder du verpasst den Zug"
+          ]
+        },
+        {
+          "sentence": "Für die Abschlussparty kauft Mona kein neues Kleid. Sie kauft auch keine neue Tasche",
+          "answers": [
+            "Für die Abschlussparty kauft Mona weder ein neues Kleid noch eine neue Tasche"
+          ]
+        },
+        {
+          "sentence": "Im Sommer fahren wir nicht nach Spanien. Wir fahren auch nicht nach Italien",
+          "answers": [
+            "Im Sommer fahren wir weder nach Spanien noch nach Italien"
+          ]
+        },
+        {
+          "sentence": "Du holst mich mit dem Auto ab. Ich nehme ein Taxi",
+          "answers": [
+            "Entweder holst du mich mit dem Auto ab, oder ich nehme ein Taxi"
+          ]
+        },
+        {
+          "sentence": "Zum Geburtstag wünscht sich das kleine Mädchen eine Puppe. Ein Fahrrad wünscht es sich auch",
+          "answers": [
+            "Zum Geburtstag wünscht sich das kleine Mädchen sowohl eine Puppe als auch ein Fahrrad"
+          ]
+        },
+        {
+          "sentence": "Jonas mag keinen Kaffee. Er mag auch keinen Tee",
+          "answers": [
+            "Jonas mag weder Kaffee noch Tee"
+          ]
+        },
+        {
+          "sentence": "Sie hat den Film gesehen. Sie hat auch das Buch zum Film gelesen",
+          "answers": [
+            "Sie hat sowohl den Film gesehen als auch das Buch zum Film gelesen"
+          ]
+        },
+        {
+          "sentence": "Du nimmst deine Medikamente nicht. Du wirst nicht gesund",
+          "answers": [
+            "Entweder nimmst du deine Medikamente, oder du wirst nicht gesund"
+          ]
+        },
+        {
+          "sentence": "Herr Bolte schenkte seiner Frau zum Hochzeitstag einen Ring. Er schenkte ihr auch dazu passende Ohrringe",
+          "answers": [
+            "Herr Bolte schenkte seiner Frau zum Hochzeitstag sowohl einen Ring als auch dazu passende Ohrringe"
+          ]
+        },
+        {
+          "sentence": "Ich trinke keinen Kaffee. Ich trinke auch keinen schwarzen Tee",
+          "answers": [
+            "Ich trinke weder Kaffee noch schwarzen Tee"
+          ]
+        },
+        {
+          "sentence": "Wir können heute ins Museum gehen. Wir können auch einen Spaziergang machen",
+          "answers": [
+            "Wir können heute entweder ins Museum gehen oder einen Spaziergang machen"
+          ]
+        },
+        {
+          "sentence": "Laura spricht Spanisch. Sie spricht auch Italienisch",
+          "answers": [
+            "Laura spricht sowohl Spanisch als auch Italienisch"
+          ]
+        },
+        {
+          "sentence": "Ich habe keine Zeit. Ich habe auch keine Lust",
+          "answers": [
+            "Ich habe weder Zeit noch Lust"
+          ]
+        },
+        {
+          "sentence": "Du rufst mich heute Abend an. Du schreibst mir eine Nachricht",
+          "answers": [
+            "Entweder rufst du mich heute Abend an, oder du schreibst mir eine Nachricht"
+          ]
+        },
+        {
+          "sentence": "Der Kurs findet am Montag statt. Der Kurs findet auch am Mittwoch statt",
+          "answers": [
+            "Der Kurs findet sowohl am Montag als auch am Mittwoch statt"
+          ]
+        },
+        {
+          "sentence": "Max hat keinen Laptop. Er hat auch kein Tablet",
+          "answers": [
+            "Max hat weder einen Laptop noch ein Tablet"
+          ]
+        },
+        {
+          "sentence": "Wir fahren mit dem Zug. Wir nehmen den Bus",
+          "answers": [
+            "Entweder fahren wir mit dem Zug, oder wir nehmen den Bus"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "label": {
+        "ru": "Перепишите предложения, используя nicht nur … sondern auch и zwar … aber",
+        "en": "Rewrite the sentences using nicht nur … sondern auch and zwar … aber"
+      },
+      "items": [
+        {
+          "sentence": "Ullas neue Schuhe sind sehr hoch. Sie sind trotzdem sehr bequem",
+          "answers": [
+            "Ullas neue Schuhe sind zwar sehr hoch, aber trotzdem sehr bequem"
+          ]
+        },
+        {
+          "sentence": "Unsere Oma kann toll kochen. Sie backt auch die leckersten Kuchen",
+          "answers": [
+            "Unsere Oma kann nicht nur toll kochen, sondern auch die leckersten Kuchen backen",
+            "Unsere Oma kann nicht nur toll kochen, sondern sie backt auch die leckersten Kuchen",
+            "Unsere Oma kann nicht nur toll kochen, sondern backt auch die leckersten Kuchen"
+          ]
+        },
+        {
+          "sentence": "Ulla hat einen Führerschein. Sie kann sich noch kein Auto leisten",
+          "answers": [
+            "Ulla hat zwar einen Führerschein, aber sie kann sich noch kein Auto leisten"
+          ]
+        },
+        {
+          "sentence": "Die Politiker versprechen viel. Sie realisieren wenig",
+          "answers": [
+            "Die Politiker versprechen zwar viel, aber sie realisieren wenig"
+          ]
+        },
+        {
+          "sentence": "Letzten Samstag waren wir im Kino. Wir sind danach in die Disko gegangen",
+          "answers": [
+            "Letzten Samstag waren wir nicht nur im Kino, sondern wir sind danach auch in die Disko gegangen"
+          ]
+        },
+        {
+          "sentence": "Jonas schickt seiner Freundin mehrere SMS täglich. Er ruft sie auch jeden Tag an",
+          "answers": [
+            "Jonas schickt seiner Freundin nicht nur mehrere SMS täglich, sondern er ruft sie auch jeden Tag an",
+            "Jonas schickt seiner Freundin nicht nur täglich mehrere SMS, sondern er ruft sie auch jeden Tag an"
+          ]
+        },
+        {
+          "sentence": "Unsere Tochter mag überhaupt keine Milch. Sie isst gern Joghurt",
+          "answers": [
+            "Unsere Tochter mag zwar überhaupt keine Milch, aber sie isst gern Joghurt"
+          ]
+        },
+        {
+          "sentence": "Im Sommer waren wir in Spanien. Wir sind auch mit einem Mietwagen nach Portugal gefahren",
+          "answers": [
+            "Im Sommer waren wir nicht nur in Spanien, sondern wir sind auch mit einem Mietwagen nach Portugal gefahren"
+          ]
+        },
+        {
+          "sentence": "Der Sänger der Band war am Tag des Konzerts krank. Das Konzert war trotzdem ein großer Erfolg",
+          "answers": [
+            "Der Sänger der Band war zwar am Tag des Konzertes krank, aber das Konzert war trotzdem ein großer Erfolg",
+            "Der Sänger der Band war zwar am Tag des Konzerts krank, aber das Konzert war trotzdem ein großer Erfolg"
+          ]
+        },
+        {
+          "sentence": "Der Student hat viel gelernt. Er hat die Prüfung leider nicht bestanden",
+          "answers": [
+            "Der Student hat zwar viel gelernt, aber er hat die Prüfung leider nicht bestanden"
+          ]
+        },
+        {
+          "sentence": "Tinas neuer Nachbar sieht sehr gut aus. Er ist sehr höflich und hilfsbereit",
+          "answers": [
+            "Tinas neuer Nachbar sieht nicht nur sehr gut aus, sondern er ist auch sehr höflich und hilfsbereit"
+          ]
+        },
+        {
+          "sentence": "Das Hotel ist sehr zentral. Es ist auch ziemlich günstig",
+          "answers": [
+            "Das Hotel ist nicht nur sehr zentral, sondern es ist auch ziemlich günstig"
+          ]
+        },
+        {
+          "sentence": "Maria ist sehr müde. Sie kommt trotzdem zur Arbeit",
+          "answers": [
+            "Maria ist zwar sehr müde, aber sie kommt trotzdem zur Arbeit"
+          ]
+        },
+        {
+          "sentence": "Der neue Kollege arbeitet schnell. Er macht auch wenige Fehler",
+          "answers": [
+            "Der neue Kollege arbeitet nicht nur schnell, sondern er macht auch wenige Fehler"
+          ]
+        },
+        {
+          "sentence": "Die Wohnung ist schön. Sie ist aber sehr teuer",
+          "answers": [
+            "Die Wohnung ist zwar schön, aber sie ist sehr teuer"
+          ]
+        },
+        {
+          "sentence": "Wir haben die Präsentation vorbereitet. Wir haben auch die Fragen gesammelt",
+          "answers": [
+            "Wir haben nicht nur die Präsentation vorbereitet, sondern auch die Fragen gesammelt"
+          ]
+        },
+        {
+          "sentence": "Der Film war interessant. Er war aber zu lang",
+          "answers": [
+            "Der Film war zwar interessant, aber er war zu lang"
+          ]
+        },
+        {
+          "sentence": "Lisa lernt Deutsch. Sie lernt auch Französisch",
+          "answers": [
+            "Lisa lernt nicht nur Deutsch, sondern auch Französisch"
+          ]
+        },
+        {
+          "sentence": "Ich habe wenig Geld. Ich möchte trotzdem reisen",
+          "answers": [
+            "Ich habe zwar wenig Geld, aber ich möchte trotzdem reisen"
+          ]
+        },
+        {
+          "sentence": "Der Bus kommt spät. Er ist aber sehr bequem",
+          "answers": [
+            "Der Bus kommt zwar spät, aber er ist sehr bequem"
+          ]
+        },
+        {
+          "sentence": "Wir kaufen Gemüse. Wir kaufen auch frisches Brot",
+          "answers": [
+            "Wir kaufen nicht nur Gemüse, sondern auch frisches Brot"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "label": {
+        "ru": "Переведите предложения, используя парные союзы",
+        "en": "Translate the sentences using double conjunctions"
+      },
+      "items": [
+        {
+          "sentence": {
+            "ru": "Я возьму эту квартиру, так как она не только светлая, но и большая",
+            "en": "I take this apartment because it's not only bright but also spacious"
+          },
+          "answers": [
+            "Ich nehme diese Wohnung, weil sie nicht nur hell, sondern auch groß ist"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Рядом с нами, к сожалению, нет ни хорошего ресторана, ни уютного кафе",
+            "en": "Unfortunately, there is neither a good restaurant nor a cozy café near us"
+          },
+          "answers": [
+            "In unserer Nähe gibt es leider weder ein gutes Restaurant noch ein gemütliches Café"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Проблемы с соседями следовало бы решать либо самому, либо просить помощи у кого-то",
+            "en": "Problems with neighbors should be solved either by yourself or by asking someone for help"
+          },
+          "answers": [
+            "Probleme mit Nachbarn sollte man entweder selbst lösen oder jemanden um Hilfe bitten"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Хотя мы и установили новые окна с шумоизоляцией, шум всё ещё громкий",
+            "en": "Although we installed new soundproof windows, the noise is still loud"
+          },
+          "answers": [
+            "Wir haben zwar neue schallgedämmte Fenster eingebaut, aber der Lärm ist immer noch laut"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Хотя он не учился музыке, он играет на пианино так хорошо, что может этим зарабатывать деньги",
+            "en": "Although he did not study music, he plays the piano so well that he can earn money with it"
+          },
+          "answers": [
+            "Er hat zwar keine Musik gelernt, aber er spielt so gut Klavier, dass er damit Geld verdienen kann"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "После учёбы он хотел бы либо пройти практику, либо ещё на год поехать за границу",
+            "en": "After his studies, he would like either to do an internship or to go abroad for another year"
+          },
+          "answers": [
+            "Nach dem Studium möchte er entweder ein Praktikum machen oder noch ein Jahr ins Ausland gehen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Во время завтрака у нас на столе нет ни газет, ни смартфонов",
+            "en": "At breakfast, there are neither newspapers nor smartphones on our table"
+          },
+          "answers": [
+            "Beim Frühstück liegen bei uns auf dem Tisch weder Zeitungen noch Smartphones",
+            "Beim Frühstück liegen bei uns weder Zeitungen noch Smartphones auf dem Tisch"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Наш сосед ни газон не стрижёт, ни свой мусор не убирает",
+            "en": "Our neighbor neither mows the lawn nor puts away his trash"
+          },
+          "answers": [
+            "Unser Nachbar mäht weder den Rasen noch räumt er seinen Müll weg"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Если кто-то либо спит, либо болеет, мы не шумим",
+            "en": "If someone is either sleeping or sick, we do not make noise"
+          },
+          "answers": [
+            "Wenn jemand entweder schläft oder krank ist, machen wir keinen Lärm"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Мы не только слушаем друг друга внимательно, но и даём друг другу высказаться",
+            "en": "We not only listen to each other carefully, but also let each other finish speaking"
+          },
+          "answers": [
+            "Wir hören uns nicht nur aufmerksam zu, sondern wir lassen auch einander ausreden",
+            "Wir hören einander nicht nur aufmerksam zu, sondern lassen einander auch ausreden",
+            "Wir hören uns nicht nur aufmerksam zu, sondern wir lassen einander auch ausreden"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Чем темнее, тем хуже видно",
+            "en": "The darker it is, the worse one can see"
+          },
+          "answers": [
+            "Je dunkler es ist, desto schlechter sieht man"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "С одной стороны, Клаус медлительный ученик, с другой стороны, он приносит домой только хорошие отметки",
+            "en": "On the one hand, Klaus is a slow student; on the other hand, he brings home only good grades"
+          },
+          "answers": [
+            "Einerseits ist Klaus ein langsamer Schüler, andererseits bringt er nur gute Noten nach Hause"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Она говорит как по-немецки, так и по-английски",
+            "en": "She speaks both German and English"
+          },
+          "answers": [
+            "Sie spricht sowohl Deutsch als auch Englisch"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Мы можем встретиться либо в кафе, либо у вокзала",
+            "en": "We can meet either in the café or at the train station"
+          },
+          "answers": [
+            "Wir können uns entweder im Café oder am Bahnhof treffen"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "У меня сегодня нет ни времени, ни сил",
+            "en": "Today I have neither time nor energy"
+          },
+          "answers": [
+            "Ich habe heute weder Zeit noch Kraft"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Он не только хорошо готовит, но и отлично печёт",
+            "en": "He not only cooks well, but also bakes excellently"
+          },
+          "answers": [
+            "Er kocht nicht nur gut, sondern backt auch ausgezeichnet"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Хотя квартира маленькая, она очень уютная",
+            "en": "Although the apartment is small, it is very cozy"
+          },
+          "answers": [
+            "Die Wohnung ist zwar klein, aber sie ist sehr gemütlich"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Чем больше я учу немецкий, тем увереннее я говорю",
+            "en": "The more I learn German, the more confidently I speak"
+          },
+          "answers": [
+            "Je mehr Deutsch ich lerne, desto sicherer spreche ich"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "С одной стороны, работа интересная, с другой стороны, она очень напряжённая",
+            "en": "On the one hand, the job is interesting; on the other hand, it is very stressful"
+          },
+          "answers": [
+            "Einerseits ist die Arbeit interessant, andererseits ist sie sehr anstrengend"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Нам нужны не только новые компьютеры, но и быстрый интернет",
+            "en": "We need not only new computers, but also fast internet"
+          },
+          "answers": [
+            "Wir brauchen nicht nur neue Computer, sondern auch schnelles Internet"
+          ]
+        },
+        {
+          "sentence": {
+            "ru": "Моя сестра хочет либо учиться в Берлине, либо работать в Кёльне",
+            "en": "My sister wants either to study in Berlin or to work in Cologne"
+          },
+          "answers": [
+            "Meine Schwester möchte entweder in Berlin studieren oder in Köln arbeiten"
+          ]
+        }
+      ]
+    }
+  ]
+}

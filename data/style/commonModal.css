@@ -469,7 +469,6 @@
   justify-content: center;
   gap: 40px; /* Чуть больше воздуха */
   margin-bottom: 40px;
-  font-family: var(--theory-font-family);
 }
 
 .theory-clock-lexicon {
@@ -912,7 +911,6 @@ table.mv-table tbody td {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 0;
-  font-family: var(--theory-font-family);
 }
 
 /* ===== Сложная таблица предлогов (PrepositionsTime Table) ===== */
@@ -1398,6 +1396,148 @@ table.mv-table tbody td {
 }
 
 /* ===== B1: Partizipien ===== */
+
+/* ===== B1: Doppelkonjunktionen ===== */
+
+.modal-html-content .b1-doppelkonjunktionen {
+  color: var(--theory-text-color);
+  line-height: 1.26;
+}
+
+.b1-doppelkonjunktionen .dk-lead,
+.b1-doppelkonjunktionen .dk-table {
+  font-size: var(--desktop-modal-font-size) !important;
+}
+
+.b1-doppelkonjunktionen .dk-lead {
+  margin: 0 0 28px !important;
+}
+
+.b1-doppelkonjunktionen .dk-term {
+  white-space: nowrap;
+}
+
+.b1-doppelkonjunktionen .dk-table-scroll {
+  margin: 0 !important;
+}
+
+.b1-doppelkonjunktionen .dk-table {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.b1-doppelkonjunktionen .dk-table th,
+.b1-doppelkonjunktionen .dk-table td {
+  padding: 10px 14px !important;
+  border-top: 1px solid var(--theory-line-color);
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.b1-doppelkonjunktionen .dk-table tr > * + * {
+  border-left: 1px solid var(--theory-line-color);
+}
+
+.b1-doppelkonjunktionen .dk-table thead th {
+  color: var(--theory-strong-text-color);
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.b1-doppelkonjunktionen .dk-table tbody th {
+  font-weight: 400;
+}
+
+.b1-doppelkonjunktionen .dk-table th:first-child,
+.b1-doppelkonjunktionen .dk-table td:first-child {
+  width: 15%;
+}
+
+.b1-doppelkonjunktionen .dk-table th:nth-child(2),
+.b1-doppelkonjunktionen .dk-table td:nth-child(2) {
+  width: 54%;
+}
+
+.b1-doppelkonjunktionen .dk-table th:nth-child(3),
+.b1-doppelkonjunktionen .dk-table td:nth-child(3) {
+  width: 31%;
+}
+
+.b1-doppelkonjunktionen .dk-table p {
+  margin: 0 0 18px !important;
+}
+
+.b1-doppelkonjunktionen .dk-table p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.b1-doppelkonjunktionen .dk-meaning {
+  display: block;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.b1-doppelkonjunktionen .dk-translation {
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .b1-doppelkonjunktionen .dk-lead,
+  .b1-doppelkonjunktionen .dk-table {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-doppelkonjunktionen .dk-table thead th {
+    font-size: var(--tablet-modal-header-font-size) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .b1-doppelkonjunktionen .dk-lead {
+    margin-bottom: 14px !important;
+    font-size: clamp(0.82rem, 3vw, 0.96rem) !important;
+    line-height: 1.28;
+  }
+
+  .b1-doppelkonjunktionen .dk-table {
+    font-size: clamp(0.72rem, 2.6vw, 0.86rem) !important;
+    line-height: 1.22;
+  }
+
+  .b1-doppelkonjunktionen .dk-table th:first-child,
+  .b1-doppelkonjunktionen .dk-table td:first-child {
+    width: 23%;
+  }
+
+  .b1-doppelkonjunktionen .dk-table th:nth-child(2),
+  .b1-doppelkonjunktionen .dk-table td:nth-child(2) {
+    width: 47%;
+  }
+
+  .b1-doppelkonjunktionen .dk-table th:nth-child(3),
+  .b1-doppelkonjunktionen .dk-table td:nth-child(3) {
+    width: 30%;
+  }
+
+  .b1-doppelkonjunktionen .dk-table thead th {
+    font-size: clamp(0.9rem, 3.2vw, 1.05rem) !important;
+  }
+
+  .b1-doppelkonjunktionen .dk-table th,
+  .b1-doppelkonjunktionen .dk-table td {
+    padding: 7px 8px !important;
+  }
+
+  .b1-doppelkonjunktionen .dk-table p {
+    margin-bottom: 10px !important;
+  }
+}
 
 .modal-html-content .b1-partizipien {
   color: var(--theory-text-color);
@@ -5346,8 +5486,13 @@ table.mv-table tbody td {
   }
 
   .substantivierte-adjektive .sa-lower-grid {
-    grid-template-columns: minmax(0, 0.6fr) minmax(130px, 0.4fr);
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     gap: 10px;
+  }
+
+  .substantivierte-adjektive .sa-lower-grid .sa-table-scroll,
+  .substantivierte-adjektive .sa-important {
+    min-width: 0;
   }
 
   .substantivierte-adjektive .sa-important-title {
