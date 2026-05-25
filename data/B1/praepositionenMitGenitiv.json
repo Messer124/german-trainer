@@ -1,0 +1,466 @@
+{
+  "title": {
+    "ru": "Präpositionen mit Genitiv",
+    "en": "Präpositionen mit Genitiv"
+  },
+  "instructions": {
+    "ru": "Переведите выражения",
+    "en": "Translate the phrases"
+  },
+  "items": [
+    {
+      "sentence": {
+        "ru": "Согласно новым правилам",
+        "en": "According to the new rules"
+      },
+      "answers": [
+        "laut der neuen Regeln",
+        "laut den neuen Regeln"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Из-за новой информации",
+        "en": "Because of the new information"
+      },
+      "answers": [
+        "aufgrund der neuen Informationen"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вследствие этой ситуации",
+        "en": "As a result of this situation"
+      },
+      "answers": [
+        "infolge dieser Situation"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Внутри здания",
+        "en": "Inside the building"
+      },
+      "answers": [
+        "innerhalb des Gebäudes"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "На основании факта",
+        "en": "On the basis of the fact"
+      },
+      "answers": [
+        "aufgrund der Tatsache"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "В течение недели",
+        "en": "Within a week"
+      },
+      "answers": [
+        "innerhalb einer Woche",
+        "binnen einer Woche"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Из-за болезни",
+        "en": "Because of the illness"
+      },
+      "answers": [
+        "wegen der Krankheit"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "На примере этой таблицы",
+        "en": "Using this table as an example"
+      },
+      "answers": [
+        "anhand dieser Tabelle"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Посреди леса",
+        "en": "In the middle of the forest"
+      },
+      "answers": [
+        "inmitten des Waldes"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "В течение трёх дней",
+        "en": "Within three days"
+      },
+      "answers": [
+        "binnen drei Tagen",
+        "innerhalb von drei Tagen"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Несмотря на дождь",
+        "en": "Despite the rain"
+      },
+      "answers": [
+        "trotz des Regens"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "В течение короткого времени",
+        "en": "Within a short time"
+      },
+      "answers": [
+        "binnen kurzer Zeit",
+        "innerhalb kurzer Zeit"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "С помощью приложения",
+        "en": "With the help of the app"
+      },
+      "answers": [
+        "mithilfe der App",
+        "mit Hilfe der App"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вследствие кризиса",
+        "en": "As a result of the crisis"
+      },
+      "answers": [
+        "infolge der Krise"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "В течение одного месяца",
+        "en": "Within one month"
+      },
+      "answers": [
+        "innerhalb eines Monats",
+        "binnen eines Monats"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Несмотря на ошибку",
+        "en": "Despite the mistake"
+      },
+      "answers": [
+        "trotz des Fehlers"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Согласно отчёту",
+        "en": "According to the report"
+      },
+      "answers": [
+        "laut des Berichts",
+        "laut Bericht",
+        "laut dem Bericht"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "По фотографии",
+        "en": "Based on the photo"
+      },
+      "answers": [
+        "anhand des Fotos"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Ввиду новых законов",
+        "en": "In view of the new laws"
+      },
+      "answers": [
+        "angesichts der neuen Gesetze"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Из-за пробки",
+        "en": "Because of the traffic jam"
+      },
+      "answers": [
+        "wegen des Staus"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "С целью проверки документов",
+        "en": "For the purpose of checking the documents"
+      },
+      "answers": [
+        "zwecks Prüfung der Dokumente"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Из-за ошибки",
+        "en": "Because of the mistake"
+      },
+      "answers": [
+        "wegen des Fehlers"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вместо отца",
+        "en": "Instead of the father"
+      },
+      "answers": [
+        "statt des Vaters",
+        "anstatt des Vaters"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вследствие аварии",
+        "en": "As a result of the accident"
+      },
+      "answers": [
+        "infolge des Unfalls"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Ввиду высоких цен",
+        "en": "In view of the high prices"
+      },
+      "answers": [
+        "angesichts der hohen Preise"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Из-за плохой погоды",
+        "en": "Because of the bad weather"
+      },
+      "answers": [
+        "aufgrund des schlechten Wetters"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "С целью улучшения качества",
+        "en": "For the purpose of improving quality"
+      },
+      "answers": [
+        "zwecks Verbesserung der Qualität"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "С помощью врача",
+        "en": "With the help of the doctor"
+      },
+      "answers": [
+        "mithilfe des Arztes",
+        "mit Hilfe des Arztes"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "За городом / вне города",
+        "en": "Outside the city"
+      },
+      "answers": [
+        "außerhalb der Stadt"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Ввиду этой ситуации",
+        "en": "In view of this situation"
+      },
+      "answers": [
+        "angesichts dieser Situation"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вдоль улицы",
+        "en": "Along the street"
+      },
+      "answers": [
+        "entlang der Straße",
+        "die Straße entlang"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "С помощью ИИ",
+        "en": "With the help of AI"
+      },
+      "answers": [
+        "mithilfe der KI",
+        "mit Hilfe der KI"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Посреди города",
+        "en": "In the middle of the city"
+      },
+      "answers": [
+        "inmitten der Stadt"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вместо машины",
+        "en": "Instead of the car"
+      },
+      "answers": [
+        "statt des Autos",
+        "anstatt des Autos"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "С целью дальнейшей переработки",
+        "en": "For the purpose of further processing"
+      },
+      "answers": [
+        "zwecks weiterer Verarbeitung"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "За пределами Германии",
+        "en": "Outside Germany"
+      },
+      "answers": [
+        "außerhalb Deutschlands",
+        "außerhalb von Deutschland"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Согласно договору",
+        "en": "According to the contract"
+      },
+      "answers": [
+        "laut des Vertrags",
+        "laut Vertrag",
+        "laut dem Vertrag"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вместо ответа",
+        "en": "Instead of an answer"
+      },
+      "answers": [
+        "statt einer Antwort",
+        "anstatt einer Antwort"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "В течение недели",
+        "en": "Within a week"
+      },
+      "answers": [
+        "binnen einer Woche",
+        "innerhalb einer Woche"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Несмотря на ошеломляющий успех",
+        "en": "Despite the overwhelming success"
+      },
+      "answers": [
+        "trotz des überwältigenden Erfolgs"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Во время еды",
+        "en": "During the meal"
+      },
+      "answers": [
+        "während des Essens"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Во время встречи",
+        "en": "During the meeting"
+      },
+      "answers": [
+        "während des Treffens",
+        "während der Besprechung"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Посреди толпы",
+        "en": "In the middle of the crowd"
+      },
+      "answers": [
+        "inmitten der Menge"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вдоль Рейна",
+        "en": "Along the Rhine"
+      },
+      "answers": [
+        "entlang des Rheins",
+        "den Rhein entlang"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вдоль реки",
+        "en": "Along the river"
+      },
+      "answers": [
+        "entlang des Flusses",
+        "den Fluss entlang"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Вне рабочего времени",
+        "en": "Outside working hours"
+      },
+      "answers": [
+        "außerhalb der Arbeitszeit"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "Во время поездки",
+        "en": "During the trip"
+      },
+      "answers": [
+        "während der Reise",
+        "während der Fahrt"
+      ]
+    },
+    {
+      "sentence": {
+        "ru": "На основании этих данных",
+        "en": "Based on this data"
+      },
+      "answers": [
+        "anhand dieser Daten"
+      ]
+    }
+  ]
+}

@@ -9,6 +9,7 @@ import DasVerbBrauchen from "../../exercises/B1/DasVerbBrauchen";
 import SubstantivierteAdjektive from "../../exercises/B1/SubstantivierteAdjektive";
 import Doppelkonjunktionen from "../../exercises/B1/Doppelkonjunktionen";
 import Artikelwoerter from "../../exercises/B1/Artikelwoerter";
+import PraepositionenMitGenitiv from "../../exercises/B1/PraepositionenMitGenitiv";
 
 const exercises = {
     "steigerung-von-adjektiven": defineExercise(
@@ -46,6 +47,10 @@ const exercises = {
     artikelwoerter: defineExercise(
         Artikelwoerter,
         "artikelwoerter-answers"
+    ),
+    praepositionenMitGenitiv: defineExercise(
+        PraepositionenMitGenitiv,
+        "praepositionen-mit-genitiv-answers"
     ),
 };
 

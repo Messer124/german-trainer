@@ -1680,6 +1680,162 @@ table.mv-table tbody td {
   }
 }
 
+/* ===== B1: Präpositionen mit Genitiv ===== */
+
+.modal-html-content .b1-genitiv-prepositions {
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.18;
+}
+
+.b1-genitiv-prepositions .gp-lead,
+.b1-genitiv-prepositions .gp-groups,
+.b1-genitiv-prepositions .gp-note {
+  margin: 0 !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.22;
+}
+
+.b1-genitiv-prepositions .gp-lead {
+  margin-bottom: 34px !important;
+}
+
+.b1-genitiv-prepositions .gp-groups {
+  margin-bottom: 44px !important;
+}
+
+.b1-genitiv-prepositions .gp-groups p {
+  margin: 0 0 6px !important;
+}
+
+.b1-genitiv-prepositions .gp-groups ol {
+  margin: 0 !important;
+  padding-left: 1.7em;
+}
+
+.b1-genitiv-prepositions .gp-title {
+  margin: 38px 0 26px !important;
+  color: var(--theory-strong-text-color);
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.b1-genitiv-prepositions .gp-title--top {
+  margin-top: 0 !important;
+}
+
+.b1-genitiv-prepositions > .gp-title:first-child {
+  margin-top: 0 !important;
+}
+
+.b1-genitiv-prepositions .gp-list {
+  display: grid;
+  gap: 24px;
+}
+
+.b1-genitiv-prepositions .gp-row {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.24fr) minmax(0, 0.76fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.b1-genitiv-prepositions .gp-name,
+.b1-genitiv-prepositions .gp-example {
+  min-width: 0;
+}
+
+.b1-genitiv-prepositions .gp-name {
+  line-height: 1.18;
+}
+
+.b1-genitiv-prepositions .gp-example {
+  margin: 0 !important;
+}
+
+.b1-genitiv-prepositions .gp-term {
+  color: var(--theory-accent-red);
+  font-weight: 800;
+}
+
+.b1-genitiv-prepositions .gp-meaning,
+.b1-genitiv-prepositions .gp-translation {
+  font-style: italic;
+}
+
+.b1-genitiv-prepositions .gp-note {
+  margin-top: 42px !important;
+}
+
+@media (max-width: 1200px) {
+  .modal-html-content .b1-genitiv-prepositions,
+  .b1-genitiv-prepositions .gp-lead,
+  .b1-genitiv-prepositions .gp-groups,
+  .b1-genitiv-prepositions .gp-note {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-genitiv-prepositions .gp-title {
+    font-size: var(--tablet-modal-header-font-size) !important;
+  }
+
+  .b1-genitiv-prepositions .gp-row {
+    grid-template-columns: minmax(130px, 0.28fr) minmax(0, 0.72fr);
+    gap: 20px;
+  }
+
+  .b1-genitiv-prepositions .gp-list {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-html-content .b1-genitiv-prepositions,
+  .b1-genitiv-prepositions .gp-lead,
+  .b1-genitiv-prepositions .gp-groups,
+  .b1-genitiv-prepositions .gp-note {
+    font-size: clamp(0.82rem, 3vw, 0.96rem) !important;
+    line-height: 1.24;
+  }
+
+  .b1-genitiv-prepositions .gp-lead {
+    margin-bottom: 22px !important;
+  }
+
+  .b1-genitiv-prepositions .gp-groups {
+    margin-bottom: 28px !important;
+  }
+
+  .b1-genitiv-prepositions .gp-title {
+    margin: 28px 0 16px !important;
+    font-size: clamp(1rem, 3.4vw, 1.12rem) !important;
+    text-align: left;
+  }
+
+  .b1-genitiv-prepositions .gp-title--top {
+    margin-top: 0 !important;
+  }
+
+  .b1-genitiv-prepositions > .gp-title:first-child {
+    margin-top: 0 !important;
+  }
+
+  .b1-genitiv-prepositions .gp-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .b1-genitiv-prepositions .gp-list {
+    gap: 16px;
+  }
+
+  .b1-genitiv-prepositions .gp-note {
+    margin-top: 30px !important;
+  }
+}
+
 .modal-html-content .b1-partizipien {
   color: var(--theory-text-color);
   line-height: 1.28;
