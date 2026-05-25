@@ -1539,6 +1539,147 @@ table.mv-table tbody td {
   }
 }
 
+/* ===== B1: Artikelwörter ===== */
+
+.modal-html-content .b1-artikelwoerter {
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.18;
+}
+
+.b1-artikelwoerter .aw-intro {
+  margin: 0 0 28px !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.28;
+}
+
+.b1-artikelwoerter .aw-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 58px;
+}
+
+.b1-artikelwoerter .aw-column {
+  min-width: 0;
+}
+
+.b1-artikelwoerter .aw-heading {
+  margin: 0 0 24px !important;
+  color: var(--theory-strong-text-color);
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.b1-artikelwoerter .aw-heading span {
+  font-weight: 800;
+}
+
+.b1-artikelwoerter .aw-items {
+  display: grid;
+  gap: 20px;
+}
+
+.b1-artikelwoerter .aw-items--strong {
+  gap: 25px;
+}
+
+.b1-artikelwoerter .aw-term,
+.b1-artikelwoerter .aw-example,
+.b1-artikelwoerter .aw-note p {
+  margin: 0 !important;
+}
+
+.b1-artikelwoerter .aw-term {
+  color: var(--theory-strong-text-color);
+}
+
+.b1-artikelwoerter .aw-example {
+  margin-top: 2px !important;
+}
+
+.b1-artikelwoerter .aw-mark--weak {
+  color: var(--theory-accent-blue);
+  font-weight: 800;
+}
+
+.b1-artikelwoerter .aw-mark--strong {
+  color: var(--theory-accent-red);
+  font-weight: 800;
+}
+
+.b1-artikelwoerter .aw-note {
+  display: grid;
+  gap: 6px;
+  margin-top: 30px;
+  color: var(--theory-strong-text-color);
+  line-height: 1.18;
+}
+
+.b1-artikelwoerter .aw-underlined {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 1200px) {
+  .modal-html-content .b1-artikelwoerter,
+  .b1-artikelwoerter .aw-intro {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-artikelwoerter .aw-heading {
+    font-size: var(--tablet-modal-header-font-size) !important;
+  }
+
+  .b1-artikelwoerter .aw-grid {
+    gap: 34px;
+  }
+
+  .b1-artikelwoerter .aw-items {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 760px) {
+  .b1-artikelwoerter .aw-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .b1-artikelwoerter .aw-heading {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-html-content .b1-artikelwoerter,
+  .b1-artikelwoerter .aw-intro {
+    font-size: clamp(0.82rem, 3vw, 0.96rem) !important;
+    line-height: 1.25;
+  }
+
+  .b1-artikelwoerter .aw-intro {
+    margin-bottom: 20px !important;
+  }
+
+  .b1-artikelwoerter .aw-heading {
+    margin-bottom: 16px !important;
+    font-size: clamp(0.95rem, 3.3vw, 1.08rem) !important;
+  }
+
+  .b1-artikelwoerter .aw-items,
+  .b1-artikelwoerter .aw-items--strong {
+    gap: 13px;
+  }
+
+  .b1-artikelwoerter .aw-note {
+    margin-top: 20px;
+  }
+}
+
 .modal-html-content .b1-partizipien {
   color: var(--theory-text-color);
   line-height: 1.28;
@@ -1945,6 +2086,7 @@ table.mv-table tbody td {
   margin-top: 24px;
   padding: 12px 16px;
   border: 2px solid var(--theory-strong-text-color);
+  border-radius: var(--radius);
   background: var(--theory-surface-soft);
 }
 

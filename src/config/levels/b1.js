@@ -8,6 +8,7 @@ import PassivVergangenheit from "../../exercises/B1/PassivVergangenheit";
 import DasVerbBrauchen from "../../exercises/B1/DasVerbBrauchen";
 import SubstantivierteAdjektive from "../../exercises/B1/SubstantivierteAdjektive";
 import Doppelkonjunktionen from "../../exercises/B1/Doppelkonjunktionen";
+import Artikelwoerter from "../../exercises/B1/Artikelwoerter";
 
 const exercises = {
     "steigerung-von-adjektiven": defineExercise(
@@ -41,6 +42,10 @@ const exercises = {
     doppelkonjunktionen: defineExercise(
         Doppelkonjunktionen,
         "doppelkonjunktionen-answers"
+    ),
+    artikelwoerter: defineExercise(
+        Artikelwoerter,
+        "artikelwoerter-answers"
     ),
 };
 

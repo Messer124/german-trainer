@@ -1,0 +1,325 @@
+{
+  "title": {
+    "ru": "Artikelwörter",
+    "en": "Artikelwörter"
+  },
+  "instructions": {
+    "ru": "Вставь правильные окончания",
+    "en": "Fill in the correct endings"
+  },
+  "items": [
+    {
+      "sentence": "Solche schön___ Blumen habe ich noch nie gesehen!",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Jene modern___ Gebäude gehören zur Universität.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mehrere neu___ Cafés haben in der Altstadt geöffnet.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Nur wenige günstig___ Wohnungen sind noch frei.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wir brauchen solche digital___ Lösungen im Alltag.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Jenes klein___ Dorf liegt in den Bergen.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Meiner Meinung nach verdient er solchen verblüffend___ Erfolg nicht.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Solche kompliziert___ Fragen kann ich nicht sofort beantworten.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Morgen, morgen, nur nicht heute, sagen alle faul___ Leute.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Einige interessant___ Artikel habe ich gespeichert.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Jeder neu___ Tag ist ein neu___ Anfang.",
+      "answers": [
+        "e",
+        "er"
+      ]
+    },
+    {
+      "sentence": "Ich möchte jedes frei___ Wochenende nutzen.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mehrere erfahren___ Ärzte arbeiten in der Klinik.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Aus mehreren gut___ Gründen bleibt er zu Hause.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Nach einigen schwierig___ Gesprächen fanden wir eine Lösung.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Etliche alt___ Häuser wurden renoviert.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Welches deutsch___ Wort benutzt man hier?",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Nach jedem lang___ Arbeitstag bin ich müde.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit dieser praktisch___ App lerne ich regelmäßig.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Etliche unzufrieden___ Zuschauer verließen nach der Pause das Theater.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mancher alt___ Freund meldet sich selten.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Jener aufmerksam___ Student hat sehr gut einen Aufsatz geschrieben.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wir haben mehrere kurz___ Pausen gemacht.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Diese freundlich___ Nachbarin hilft oft im Haus.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit allen wichtig___ Dokumenten ging er zum Amt.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Viele jung___ Menschen suchen eine Ausbildung.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "In welchem klein___ Café treffen wir uns?",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Sie hat viele gut___ Ideen für das Projekt.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit sämtlichen neu___ Informationen ging sie zum Chef.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wie entstehen im Käse viele rund___ Löcher?",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Welche bekannt___ Autoren möchtest du sehen?",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wegen weniger frei___ Plätze mussten wir warten.",
+      "answers": [
+        "er"
+      ]
+    },
+    {
+      "sentence": "Alle pünktlich___ Teilnehmer bekommen ein Zertifikat.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Manche populär___ Bücher finde ich langweilig.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Jede egoistisch___ Person denkt nur an sich selbst.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Sämtliche wichtig___ Dateien wurden gesichert.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Beide europäisch___ Städte sind bei Touristen beliebt.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Welche deutsch___ Dialekte gibt es?",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit vielen erfahren___ Kollegen habe ich gesprochen.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit wenigen einfach___ Worten erklärte sie die Regel.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Alle neu___ Bücher wurden schon verkauft.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ich kenne beide nett___ Verkäuferinnen aus dem Laden.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Dieser jung___ Mann wohnt neben mir.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "In der Schule haben wir nur einige nützlich___ Kenntnisse bekommen.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Mit manchem gut___ Rat kann man viel erreichen.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Beide neu___ Kolleginnen arbeiten im Marketing.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Mit jenem alt___ Fahrrad fahre ich nicht mehr.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Ich habe einige klein___ Änderungen am Design meines Blogs vorgenommen.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Der Autor hat beiden fachkundig___ Verlegern abgesagt.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Wenige jung___ Menschen wohnen noch auf dem Land.",
+      "answers": [
+        "e"
+      ]
+    },
+    {
+      "sentence": "Wegen dieses wichtig___ Termins komme ich später.",
+      "answers": [
+        "en"
+      ]
+    },
+    {
+      "sentence": "Manche dankbar___ Leser kaufen Blumen.",
+      "answers": [
+        "en"
+      ]
+    }
+  ]
+}
