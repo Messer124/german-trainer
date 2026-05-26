@@ -1680,6 +1680,105 @@ table.mv-table tbody td {
   }
 }
 
+/* ===== B1: Konjunktionen ===== */
+
+.modal-html-content .b1-konjunktionen {
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.18;
+}
+
+.b1-konjunktionen .kj-lead {
+  margin: 0 0 34px !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.2;
+}
+
+.b1-konjunktionen .kj-list {
+  display: grid;
+  gap: 42px;
+}
+
+.b1-konjunktionen .kj-row {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.34fr) minmax(0, 0.66fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.b1-konjunktionen .kj-name,
+.b1-konjunktionen .kj-example,
+.b1-konjunktionen .kj-examples {
+  min-width: 0;
+}
+
+.b1-konjunktionen .kj-name {
+  line-height: 1.18;
+}
+
+.b1-konjunktionen .kj-example {
+  margin: 0 !important;
+}
+
+.b1-konjunktionen .kj-examples {
+  display: grid;
+  gap: 32px;
+}
+
+.b1-konjunktionen .kj-term {
+  color: var(--theory-accent-blue);
+  font-weight: 800;
+}
+
+.b1-konjunktionen .kj-meaning {
+  font-style: italic;
+}
+
+.b1-konjunktionen .kj-translation {
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .modal-html-content .b1-konjunktionen,
+  .b1-konjunktionen .kj-lead {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-konjunktionen .kj-row {
+    grid-template-columns: minmax(190px, 0.34fr) minmax(0, 0.66fr);
+    gap: 28px;
+  }
+
+  .b1-konjunktionen .kj-list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-html-content .b1-konjunktionen,
+  .b1-konjunktionen .kj-lead {
+    font-size: clamp(0.82rem, 3vw, 0.96rem) !important;
+    line-height: 1.24;
+  }
+
+  .b1-konjunktionen .kj-lead {
+    margin-bottom: 22px !important;
+  }
+
+  .b1-konjunktionen .kj-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .b1-konjunktionen .kj-list {
+    gap: 24px;
+  }
+
+  .b1-konjunktionen .kj-examples {
+    gap: 16px;
+  }
+}
+
 /* ===== B1: Präpositionen mit Genitiv ===== */
 
 .modal-html-content .b1-genitiv-prepositions {

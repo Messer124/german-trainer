@@ -1,0 +1,442 @@
+{
+  "title": {
+    "ru": "Konjunktionen",
+    "en": "Konjunktionen"
+  },
+  "instructions": {
+    "ru": "Выполните задания",
+    "en": "Complete the conjunction exercises"
+  },
+  "sections": [
+    {
+      "type": "fill",
+      "label": {
+        "ru": "Подставьте подходящий союз",
+        "en": "Insert the appropriate conjunction"
+      },
+      "items": [
+        {
+          "sentence": "Wir bleiben im Büro, ___ die Aufgabe fertig ist.",
+          "answers": [
+            "bis"
+          ]
+        },
+        {
+          "sentence": "___ sie in dieser Firma arbeitet, hat sie weniger Freizeit.",
+          "answers": [
+            "Seit",
+            "Seitdem"
+          ]
+        },
+        {
+          "sentence": "___ du Hilfe brauchst, kannst du mich jederzeit anrufen.",
+          "answers": [
+            "Wenn"
+          ]
+        },
+        {
+          "sentence": "___ ich jeden Morgen Deutsch höre, verstehe ich Nachrichten besser.",
+          "answers": [
+            "Seit",
+            "Seitdem"
+          ]
+        },
+        {
+          "sentence": "Ich lerne auch Deutsch, ___ ich mich mit deutschen Kollegen unterhalte und deutsche Bücher lese.",
+          "answers": [
+            "indem"
+          ]
+        },
+        {
+          "sentence": "___ ich am Wochenende Zeit habe, besuche ich meine Freunde.",
+          "answers": [
+            "Wenn"
+          ]
+        },
+        {
+          "sentence": "___ ich etwas gar nicht verstehe, frage ich danach meinen Deutschlehrer.",
+          "answers": [
+            "Falls",
+            "Wenn"
+          ]
+        },
+        {
+          "sentence": "Mein Deutschlehrer erklärt mir neue Wörter, ___ ich deren Gebrauch ganz gut verstehe.",
+          "answers": [
+            "bis"
+          ]
+        },
+        {
+          "sentence": "___ ich jeden Tag viele deutsche Sender höre, verstehe ich nun ganz gut Deutsch.",
+          "answers": [
+            "Da"
+          ]
+        },
+        {
+          "sentence": "___ ich deutsche Bücher lese, mache ich viele Notizen und lerne neue Wörter.",
+          "answers": [
+            "Wenn"
+          ]
+        },
+        {
+          "sentence": "___ Sie noch Fragen haben, melden Sie sich bitte per E-Mail.",
+          "answers": [
+            "Falls",
+            "Wenn"
+          ]
+        },
+        {
+          "sentence": "Man kann viel Geld sparen, ___ man öfter zu Hause kocht.",
+          "answers": [
+            "indem"
+          ]
+        },
+        {
+          "sentence": "___ ich ein Kind war, habe ich oft bei meinen Großeltern übernachtet.",
+          "answers": [
+            "Als"
+          ]
+        },
+        {
+          "sentence": "Sie verbessert ihre Aussprache, ___ sie jeden Tag laut liest.",
+          "answers": [
+            "indem"
+          ]
+        },
+        {
+          "sentence": "___ ich gestern nach Hause kam, war das Licht schon aus.",
+          "answers": [
+            "Als"
+          ]
+        },
+        {
+          "sentence": "___ der Termin ausfällt, schreibe ich dir sofort.",
+          "answers": [
+            "Falls",
+            "Wenn"
+          ]
+        },
+        {
+          "sentence": "___ der Zug Verspätung hat, nehmen wir ein Taxi.",
+          "answers": [
+            "Da"
+          ]
+        },
+        {
+          "sentence": "___ ich heute länger arbeiten muss, komme ich später.",
+          "answers": [
+            "Da"
+          ]
+        },
+        {
+          "sentence": "___ ich vor 3 Jahren nach Deutschland gezogen bin, konnte ich kein Wort verstehen.",
+          "answers": [
+            "Als"
+          ]
+        },
+        {
+          "sentence": "___ ich nach Deutschland gezogen bin, wohne ich in Köln.",
+          "answers": [
+            "Seit",
+            "Seitdem"
+          ]
+        },
+        {
+          "sentence": "Ich warte hier, ___ du zurückkommst.",
+          "answers": [
+            "bis"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "label": {
+        "ru": "Свяжите два предложения, используя союз indem",
+        "en": "Connect the two sentences using the conjunction indem"
+      },
+      "items": [
+        {
+          "sentence": "Sie lernt Deutsch. Sie schaut viele Videos",
+          "answers": [
+            "Sie lernt Deutsch, indem sie viele Videos schaut"
+          ]
+        },
+        {
+          "sentence": "Hans verdient viel Geld. Er arbeitet als Übersetzer",
+          "answers": [
+            "Hans verdient viel Geld, indem er als Übersetzer arbeitet"
+          ]
+        },
+        {
+          "sentence": "Sie hilft ihren Kunden. Sie löst ihre Probleme",
+          "answers": [
+            "Sie hilft ihren Kunden, indem sie ihre Probleme löst"
+          ]
+        },
+        {
+          "sentence": "Elisa bekommt nur gute Noten. Sie lernt jeden Tag für vier Stunden",
+          "answers": [
+            "Elisa bekommt nur gute Noten, indem sie jeden Tag für vier Stunden lernt"
+          ]
+        },
+        {
+          "sentence": "Er schreibt komplizierte Bücher. Er liest alles über das Thema",
+          "answers": [
+            "Er schreibt komplizierte Bücher, indem er alles über das Thema liest"
+          ]
+        },
+        {
+          "sentence": "Sie lügt wirklich genial. Sie überdenkt jede Kleinigkeit",
+          "answers": [
+            "Sie lügt wirklich genial, indem sie jede Kleinigkeit überdenkt"
+          ]
+        },
+        {
+          "sentence": "Er ist sehr erfolgreich. Er hat riesige Unterstützung",
+          "answers": [
+            "Er ist sehr erfolgreich, indem er riesige Unterstützung hat"
+          ]
+        },
+        {
+          "sentence": "Er hat eine Lösung gefunden. Er hat um Hilfe gebeten",
+          "answers": [
+            "Er hat eine Lösung gefunden, indem er um Hilfe gebeten hat"
+          ]
+        },
+        {
+          "sentence": "Er hat abgesagt. Er hat einen Brief geschrieben",
+          "answers": [
+            "Er hat abgesagt, indem er einen Brief geschrieben hat"
+          ]
+        },
+        {
+          "sentence": "Sie hat ein Stipendium bekommen. Sie studierte sehr fleißig",
+          "answers": [
+            "Sie hat ein Stipendium bekommen, indem sie sehr fleißig studierte",
+            "Sie hat ein Stipendium bekommen, indem sie sehr fleißig studiert hat"
+          ]
+        },
+        {
+          "sentence": "Er verbessert sein Deutsch. Er spricht jeden Tag mit Kollegen",
+          "answers": [
+            "Er verbessert sein Deutsch, indem er jeden Tag mit Kollegen spricht"
+          ]
+        },
+        {
+          "sentence": "Sie spart Geld. Sie kauft weniger Kleidung",
+          "answers": [
+            "Sie spart Geld, indem sie weniger Kleidung kauft"
+          ]
+        },
+        {
+          "sentence": "Wir schützen die Umwelt. Wir fahren öfter mit dem Fahrrad",
+          "answers": [
+            "Wir schützen die Umwelt, indem wir öfter mit dem Fahrrad fahren"
+          ]
+        },
+        {
+          "sentence": "Ich bereite mich auf die Prüfung vor. Ich wiederhole jeden Abend neue Wörter",
+          "answers": [
+            "Ich bereite mich auf die Prüfung vor, indem ich jeden Abend neue Wörter wiederhole"
+          ]
+        },
+        {
+          "sentence": "Der Arzt hilft dem Patienten. Er erklärt ihm die Behandlung genau",
+          "answers": [
+            "Der Arzt hilft dem Patienten, indem er ihm die Behandlung genau erklärt"
+          ]
+        },
+        {
+          "sentence": "Die Firma gewinnt neue Kunden. Sie verbessert ihren Service",
+          "answers": [
+            "Die Firma gewinnt neue Kunden, indem sie ihren Service verbessert"
+          ]
+        },
+        {
+          "sentence": "Du lernst neue Leute kennen. Du besuchst einen Sprachkurs",
+          "answers": [
+            "Du lernst neue Leute kennen, indem du einen Sprachkurs besuchst"
+          ]
+        },
+        {
+          "sentence": "Er bleibt gesund. Er macht regelmäßig Sport",
+          "answers": [
+            "Er bleibt gesund, indem er regelmäßig Sport macht"
+          ]
+        },
+        {
+          "sentence": "Sie löst das Problem. Sie spricht offen mit ihrem Chef",
+          "answers": [
+            "Sie löst das Problem, indem sie offen mit ihrem Chef spricht"
+          ]
+        },
+        {
+          "sentence": "Wir vermeiden Stress. Wir planen unsere Woche im Voraus",
+          "answers": [
+            "Wir vermeiden Stress, indem wir unsere Woche im Voraus planen"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "label": {
+        "ru": "Напишите ответы на вопросы, опираясь на подсказки и используя союз da",
+        "en": "Answer the questions using the hints and the conjunction da"
+      },
+      "items": [
+        {
+          "sentence": "Warum muss sie so viel übersetzen?",
+          "answers": [
+            "Da sie eine Übersetzerin wird, muss sie so viel übersetzen"
+          ],
+          "placeholder": "eine Übersetzerin werden"
+        },
+        {
+          "sentence": "Warum besteht er darauf?",
+          "answers": [
+            "Da er sehr egoistisch ist, besteht er darauf"
+          ],
+          "placeholder": "sehr egoistisch sein"
+        },
+        {
+          "sentence": "Warum haben die Touristen dieses Hotel gewählt?",
+          "answers": [
+            "Da dieses Hotel günstig ist, haben die Touristen es gewählt",
+            "Da das Hotel günstig ist, haben die Touristen dieses Hotel gewählt"
+          ],
+          "placeholder": "günstig sein"
+        },
+        {
+          "sentence": "Warum lernt Maria drei Fremdsprachen?",
+          "answers": [
+            "Da es Spaß macht, lernt Maria drei Fremdsprachen"
+          ],
+          "placeholder": "Spaß machen"
+        },
+        {
+          "sentence": "Warum schimpft Stephan immer?",
+          "answers": [
+            "Da Stephan ein komplizierter Mensch ist, schimpft er immer",
+            "Da er ein komplizierter Mensch ist, schimpft Stephan immer"
+          ],
+          "placeholder": "ein komplizierter Mensch sein"
+        },
+        {
+          "sentence": "Warum baut die Familie ein neues Haus?",
+          "answers": [
+            "Da ihr altes Haus zu klein ist, baut die Familie ein neues Haus",
+            "Da das alte Haus zu klein ist, baut die Familie ein neues Haus"
+          ],
+          "placeholder": "zu klein sein"
+        },
+        {
+          "sentence": "Warum bleibt ihr heute zu Hause?",
+          "answers": [
+            "Da wir viele Hausaufgaben haben, bleiben wir heute zu Hause"
+          ],
+          "placeholder": "viele Hausaufgaben haben"
+        },
+        {
+          "sentence": "Warum lösen Sie Ihre Probleme nicht?",
+          "answers": [
+            "Da wir keinen Rechtsanwalt finden können, lösen wir unsere Probleme nicht"
+          ],
+          "placeholder": "keinen Rechtsanwalt finden können"
+        },
+        {
+          "sentence": "Warum hast du eine so merkwürdige Aussprache?",
+          "answers": [
+            "Da Deutsch eine Fremdsprache ist, habe ich eine so merkwürdige Aussprache",
+            "Da es eine Fremdsprache ist, habe ich eine so merkwürdige Aussprache"
+          ],
+          "placeholder": "Fremdsprache sein"
+        },
+        {
+          "sentence": "Warum lernst du nicht mit deinen Altersgenossen?",
+          "answers": [
+            "Da sie doof sind, lerne ich mit meinen Altersgenossen nicht",
+            "Da sie doof sind, lerne ich nicht mit meinen Altersgenossen"
+          ],
+          "placeholder": "doof sein"
+        },
+        {
+          "sentence": "Warum kommt Tom zu spät?",
+          "answers": [
+            "Da Tom den Bus verpasst hat, kommt er zu spät",
+            "Da er den Bus verpasst hat, kommt Tom zu spät"
+          ],
+          "placeholder": "den Bus verpassen"
+        },
+        {
+          "sentence": "Warum kauft Anna einen neuen Laptop?",
+          "answers": [
+            "Da ihr alter Laptop kaputt ist, kauft Anna einen neuen Laptop",
+            "Da Annas alter Laptop kaputt ist, kauft sie einen neuen Laptop"
+          ],
+          "placeholder": "alter Laptop kaputt sein"
+        },
+        {
+          "sentence": "Warum trinkt er keinen Kaffee?",
+          "answers": [
+            "Da er abends nicht schlafen kann, trinkt er keinen Kaffee"
+          ],
+          "placeholder": "abends nicht schlafen können"
+        },
+        {
+          "sentence": "Warum zieht ihr um?",
+          "answers": [
+            "Da unsere Wohnung zu teuer ist, ziehen wir um"
+          ],
+          "placeholder": "die Wohnung zu teuer sein"
+        },
+        {
+          "sentence": "Warum nimmt sie ein Taxi?",
+          "answers": [
+            "Da es regnet, nimmt sie ein Taxi"
+          ],
+          "placeholder": "regnen"
+        },
+        {
+          "sentence": "Warum gehst du zum Arzt?",
+          "answers": [
+            "Da ich starke Kopfschmerzen habe, gehe ich zum Arzt"
+          ],
+          "placeholder": "starke Kopfschmerzen haben"
+        },
+        {
+          "sentence": "Warum bleibt Max im Büro?",
+          "answers": [
+            "Da Max den Bericht fertig schreiben muss, bleibt er im Büro",
+            "Da er den Bericht fertig schreiben muss, bleibt Max im Büro"
+          ],
+          "placeholder": "den Bericht fertig schreiben müssen"
+        },
+        {
+          "sentence": "Warum lernt Lisa online?",
+          "answers": [
+            "Da Lisa keine Zeit für einen Kurs hat, lernt sie online",
+            "Da sie keine Zeit für einen Kurs hat, lernt Lisa online"
+          ],
+          "placeholder": "keine Zeit für einen Kurs haben"
+        },
+        {
+          "sentence": "Warum verkauft ihr das Auto?",
+          "answers": [
+            "Da das Auto zu teuer ist, verkaufen wir es",
+            "Da es zu teuer ist, verkaufen wir das Auto"
+          ],
+          "placeholder": "zu teuer sein"
+        },
+        {
+          "sentence": "Warum bist du so müde?",
+          "answers": [
+            "Da ich gestern schlecht geschlafen habe, bin ich so müde"
+          ],
+          "placeholder": "gestern schlecht schlafen"
+        }
+      ]
+    }
+  ]
+}

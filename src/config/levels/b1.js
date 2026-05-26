@@ -10,6 +10,7 @@ import SubstantivierteAdjektive from "../../exercises/B1/SubstantivierteAdjektiv
 import Doppelkonjunktionen from "../../exercises/B1/Doppelkonjunktionen";
 import Artikelwoerter from "../../exercises/B1/Artikelwoerter";
 import PraepositionenMitGenitiv from "../../exercises/B1/PraepositionenMitGenitiv";
+import Konjunktionen from "../../exercises/B1/Konjunktionen";
 
 const exercises = {
     "steigerung-von-adjektiven": defineExercise(
@@ -51,6 +52,10 @@ const exercises = {
     praepositionenMitGenitiv: defineExercise(
         PraepositionenMitGenitiv,
         "praepositionen-mit-genitiv-answers"
+    ),
+    konjunktionen: defineExercise(
+        Konjunktionen,
+        "konjunktionen-answers"
     ),
 };
 
