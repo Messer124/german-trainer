@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import "../css/util/modalHtml.css";
-import "../../data/style/commonModal.css";
+import "../css/util/commonModal.css";
 
 function extractBody(html) {
     if (!html) return "";
@@ -100,20 +100,20 @@ export default function ModalHtml({ html, slides, images, initialIndex = 0, onCl
             aria-modal="true"
         >
             <div className="modal-html-shell" onClick={(e) => e.stopPropagation()}>
-                <div className="modal-html-content-wrapper">
-                    <button
-                        type="button"
-                        className="modal-close-button"
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            startClose();
-                        }}
-                        aria-label="Close"
-                        title="Close"
-                    >
-                        ×
-                    </button>
+                <button
+                    type="button"
+                    className="modal-close-button"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        startClose();
+                    }}
+                    aria-label="Close"
+                    title="Close"
+                >
+                    ×
+                </button>
 
+                <div className="modal-html-content-wrapper">
                     <div className="modal-html-content">
                         {hasPages ? (
                             <div className="modal-slider">
