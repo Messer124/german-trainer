@@ -29,6 +29,7 @@ export function getAcceptedAnswers(item, locale) {
 
     return rawAnswers
         .map((answer) => getLocalizedAnswer(answer, locale))
+        .flat()
         .map((answer) => String(answer ?? "").trim())
         .filter(Boolean);
 }

@@ -1,108 +1,34 @@
-import { useEffect, useState } from "react";
-import ModalHtml from "../../components/ModalHtml";
-import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
-import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import FillInExercise from "../../components/FillInExercise";
+
 import data from "../../../data/A1-2/habenSeinPreteritum.json";
-import hint from "../../../data/A1-2/images/habenSeinPreteritum.html?raw";
-import "../../css/exercises/Common.css";
+import hintRu from "../../../data/A1-2/images/habenSeinPreteritum.html?raw";
 
 const STORAGE_KEY = "haben-sein-preteritum-answers";
+const SLIDES_BY_LOCALE = { ru: [hintRu], en: [hintRu] };
 
 function HabenSeinPreteritum() {
-
-  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-
-  const [showImage, setShowImage] = useState(false);
-
-  useEffect(() => {
-    const handleShowHint = () => {
-      setShowImage(true);
-    };
-
-    document.addEventListener(
-        "show-hint",
-        handleShowHint
+    return (
+        <FillInExercise
+            data={data}
+            storageKey={STORAGE_KEY}
+            fallbackId="haben-sein-preteritum"
+            slidesByLocale={SLIDES_BY_LOCALE}
+            sectioned={false}
+            inputClassName="input"
+            inputSizes={{
+                blank: {
+                    minWidth: 120,
+                    maxWidth: 260,
+                },
+            }}
+            buildAnswerKey={(row) => `${row.sentenceIndex}`}
+            hintMode="first"
+            ariaLabel="Haben Sein Preteritum"
+        />
     );
-    return () => {
-      document.removeEventListener(
-          "show-hint",
-          handleShowHint
-      );
-    };
-  }, []);
-
-  const handleChange = (index, value) => {
-    const correct =
-        data.items[index].answer.trim().toLowerCase();
-
-    setAnswers((prev) => ({
-      ...prev,
-      [index]: {
-        value,
-        isCorrect: value.trim().toLowerCase() === correct,
-      },
-    }));
-  };
-
-  return (
-      <div className="exercise-inner">
-          {showImage && (
-              <ModalHtml
-                  html={hint}
-                  onClose={() => setShowImage(false)}
-              />
-          )}
-
-          <div className="scroll-container">
-            <ProgressiveList items={data.items} className="list">
-              {(item, index) => {
-                const value = answers[index]?.value || "";
-                const isCorrect = answers[index]?.isCorrect;
-
-                const parts = item.sentence.split("___");
-
-                return (
-                    <li key={index}>
-                      {parts[0]}
-                      <ExpandingInput
-                          type="text"
-                          value={value}
-                          onChange={(e) => handleChange(index, e.target.value)}
-                          className={`input ${
-                              value === ""
-                                  ? ""
-                                  : isCorrect
-                                      ? "correct"
-                                      : "incorrect"
-                          }`}
-                          minWidth={110}
-                          maxWidth={240}
-                      />
-                      {parts[1]}
-                    </li>
-                );
-              }}
-            </ProgressiveList>
-        </div>
-      </div>
-  );
 }
 
-HabenSeinPreteritum.headerButton = (
-    <button
-        onClick={() =>
-            document.dispatchEvent(
-                new CustomEvent("show-hint")
-            )
-        }
-        className="hint-button"
-    >
-      !
-    </button>
-);
-
+HabenSeinPreteritum.hasHint = true;
 HabenSeinPreteritum.instructions = data.instructions;
 HabenSeinPreteritum.title = data.title;
-
 export default HabenSeinPreteritum;

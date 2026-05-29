@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
+import { useTheoryModal } from "../../contexts/TheoryModalContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/ersatzartikel.json";
@@ -10,6 +11,7 @@ import hintRu from "../../../data/A2/images/ersatzartikel.html?raw";
 import hintEn from "../../../data/A2/images/en/ersatzartikel.html?raw";
 
 import "../../css/exercises/Common.css";
+import { normalizeAnswer } from "../../utils/answerUtils";
 
 const STORAGE_KEY = "ersatzartikel-answers";
 
@@ -21,25 +23,17 @@ function normalizeItems(rawItems) {
 }
 
 function normalize(value) {
-    return String(value ?? "")
-        .trim()
-        .toLowerCase()
-        .replace(/\s+/g, " ");
+    return normalizeAnswer(value);
 }
 
 export default function Ersatzartikel() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [showHint, setShowHint] = useState(false);
+    const { isTheoryOpen: showHint, closeTheory } = useTheoryModal();
     const hint = locale === "en" ? hintEn : hintRu;
 
     const items = useMemo(() => normalizeItems(data.items), []);
 
-    useEffect(() => {
-        const handleShowHint = () => setShowHint(true);
-        document.addEventListener("show-hint", handleShowHint);
-        return () => document.removeEventListener("show-hint", handleShowHint);
-    }, []);
 
     const handleChange = (itemIdx, blankIdx, value, correctAnswer) => {
         const key = `${itemIdx}-${blankIdx}`;
@@ -53,7 +47,7 @@ export default function Ersatzartikel() {
 
     return (
         <div className="exercise-inner">
-            {showHint && <ModalHtml html={hint} onClose={() => setShowHint(false)} />}
+            {showHint && <ModalHtml html={hint} onClose={closeTheory} />}
 
             <div className="scroll-container">
                 <ProgressiveList items={items} className="list">
@@ -108,15 +102,7 @@ export default function Ersatzartikel() {
     );
 }
 
-Ersatzartikel.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-        !
-    </button>
-);
+Ersatzartikel.hasHint = true;
 
 Ersatzartikel.instructions = data.instructions;
 Ersatzartikel.title = data.title;

@@ -1,9 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
-import ModalHtml from "../../components/ModalHtml";
-import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
-import { useLocale } from "../../contexts/LocaleContext";
-import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import FillInExercise from "../../components/FillInExercise";
 
 import data from "../../../data/A2/direktionaladverb.json";
 import slide1Ru from "../../../data/A2/images/adverbien.html?raw";
@@ -11,119 +6,37 @@ import slide2Ru from "../../../data/A2/images/prefixes.html?raw";
 import slide1En from "../../../data/A2/images/en/adverbien.html?raw";
 import slide2En from "../../../data/A2/images/en/prefixes.html?raw";
 
-import "../../css/exercises/Common.css";
-
 const STORAGE_KEY = "adverbien-answers";
-
-function normalize(value) {
-  return String(value ?? "")
-      .trim()
-      .toLowerCase()
-      .replace(/\s+/g, " ");
-}
-
-function getAcceptableAnswers(raw) {
-  if (Array.isArray(raw)) return raw.map(String);
-  if (typeof raw === "string") return [raw];
-  return [];
-}
-
-function getSentenceText(rawSentence, locale) {
-  if (typeof rawSentence === "string") return rawSentence;
-  if (rawSentence && typeof rawSentence === "object") {
-    return rawSentence[locale] ?? rawSentence.ru ?? rawSentence.en ?? "";
-  }
-  return "";
-}
+const SLIDES_BY_LOCALE = {
+    ru: [slide1Ru, slide2Ru],
+    en: [slide1En, slide2En],
+};
 
 export default function Direktionaladverb() {
-  const { locale } = useLocale();
-  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const [showHint, setShowHint] = useState(false);
-
-  const slides = useMemo(
-      () => (locale === "en" ? [slide1En, slide2En] : [slide1Ru, slide2Ru]),
-      [locale]
-  );
-  const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
-
-  useEffect(() => {
-    const handleShowHint = () => setShowHint(true);
-    document.addEventListener("show-hint", handleShowHint);
-    return () => document.removeEventListener("show-hint", handleShowHint);
-  }, []);
-
-  const handleChange = (index, value) => {
-    const acceptable = getAcceptableAnswers(
-        items[index]?.answers ?? items[index]?.answer
-    );
-    const normalizedValue = normalize(value);
-    const isCorrect = acceptable.some((a) => normalize(a) === normalizedValue);
-
-    setAnswers((prev) => ({
-      ...prev,
-      [index]: { value, isCorrect },
-    }));
-  };
-
-  return (
-      <div className="exercise-inner">
-        {showHint && (
-            <ModalHtml images={slides} initialIndex={0} onClose={() => setShowHint(false)} />
-        )}
-
-        <div className="scroll-container">
-          <ProgressiveList items={items} className="list">
-            {(item, index) => {
-              const stored = answers[index];
-              const value = stored?.value ?? "";
-              const trimmed = value.trim();
-              const isCorrect = stored?.isCorrect;
-              const acceptable = getAcceptableAnswers(
-                  item?.answers ?? item?.answer
-              );
-
-              const inputClass = trimmed === ""
-                  ? "input direktionaladverb-input"
-                  : isCorrect
-                      ? "input direktionaladverb-input correct"
-                      : "input direktionaladverb-input incorrect";
-
-              return (
-                  <li key={index} className="list-item direktionaladverb-item">
-                <span className="sentence direktionaladverb-sentence">
-                  {getSentenceText(item.sentence, locale)} —
-                </span>
-                    <ExpandingInput
-                        type="text"
-                        value={value}
-                        onChange={(e) => handleChange(index, e.target.value)}
-                        className={inputClass}
-                        minWidth={140}
-                        maxWidth={460}
-                        mobileMinWidth={120}
-                        aria-label={`Adverbien answer ${index + 1}`}
-                        enableHint={true}
-                        hintValue={acceptable[0] ?? ""}
-                    />
-                  </li>
-              );
+    return (
+        <FillInExercise
+            data={data}
+            storageKey={STORAGE_KEY}
+            fallbackId="adverbien"
+            slidesByLocale={SLIDES_BY_LOCALE}
+            sectioned={false}
+            inputClassName="input direktionaladverb-input"
+            inputSizes={{
+                full: {
+                    minWidth: 140,
+                    maxWidth: 460,
+                    mobileMinWidth: 120,
+                },
             }}
-          </ProgressiveList>
-        </div>
-      </div>
-  );
+            buildAnswerKey={(row) => `${row.sentenceIndex}`}
+            hintMode="first"
+            listItemClassName="list-item direktionaladverb-item"
+            sentenceClassName="sentence direktionaladverb-sentence"
+            ariaLabel="Adverbien"
+        />
+    );
 }
 
-Direktionaladverb.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-      !
-    </button>
-);
-
+Direktionaladverb.hasHint = true;
 Direktionaladverb.title = data.title;
 Direktionaladverb.instructions = data.instructions;

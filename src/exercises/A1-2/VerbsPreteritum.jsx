@@ -1,106 +1,34 @@
-import { useEffect, useMemo, useState } from "react";
-import ModalHtml from "../../components/ModalHtml";
-import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
-import { useLocale } from "../../contexts/LocaleContext";
-import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import FillInExercise from "../../components/FillInExercise";
+
 import data from "../../../data/A1-2/verbsPreteritum.json";
 import hintRu from "../../../data/A1-2/images/preteritum.html?raw";
 import hintEn from "../../../data/A1-2/images/en/preteritum.html?raw";
-import "../../css/exercises/Common.css";
 
 const STORAGE_KEY = "verbs-preteritum-answers";
-
-function normalize(v) {
-    return String(v ?? "").trim().toLowerCase();
-}
-
-function getCorrectAnswer(answer) {
-    if (Array.isArray(answer)) return String(answer[0] ?? "");
-    return String(answer ?? "");
-}
+const SLIDES_BY_LOCALE = { ru: [hintRu], en: [hintEn] };
 
 export default function VerbsPreteritum() {
-    const { locale } = useLocale();
-    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [showHint, setShowHint] = useState(false);
-
-    const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
-
-    useEffect(() => {
-        const handleShowHint = () => setShowHint(true);
-        document.addEventListener("show-hint", handleShowHint);
-        return () => document.removeEventListener("show-hint", handleShowHint);
-    }, []);
-
-    const handleChange = (index, value) => {
-        const correct = normalize(getCorrectAnswer(items[index]?.answer));
-        const isCorrect = normalize(value) === correct;
-
-        setAnswers((prev) => ({
-            ...prev,
-            [index]: { value, isCorrect },
-        }));
-    };
-
     return (
-        <div className="exercise-inner">
-            {showHint && <ModalHtml html={locale === "en" ? hintEn : hintRu} onClose={() => setShowHint(false)} />}
-
-            <div className="scroll-container">
-                <ProgressiveList items={items} className="list">
-                    {(item, index) => {
-                        const stored = answers[index];
-                        const value = stored?.value ?? "";
-                        const trimmed = value.trim();
-                        const isCorrect = stored?.isCorrect;
-
-                        const parts = String(item.sentence ?? "").split("___");
-                        const left = parts[0] ?? "";
-                        const right = parts[1] ?? "";
-
-                        const correctText = getCorrectAnswer(item.answer);
-
-                        const inputClass =
-                            trimmed === ""
-                                ? "input"
-                                : isCorrect
-                                    ? "input correct"
-                                    : "input incorrect";
-
-                        return (
-                            <li key={index} className="list-item">
-                                {left}
-                                <ExpandingInput
-                                    type="text"
-                                    value={value}
-                                    onChange={(e) => handleChange(index, e.target.value)}
-                                    className={inputClass}
-                                    placeholder={item.verb}
-                                    maxWidth={260}
-                                    aria-label={`Präteritum verb ${index + 1}`}
-                                    enableHint={true}
-                                    hintValue={correctText}
-                                />
-                                {right}
-                            </li>
-                        );
-                    }}
-                </ProgressiveList>
-            </div>
-        </div>
+        <FillInExercise
+            data={data}
+            storageKey={STORAGE_KEY}
+            fallbackId="verbs-preteritum"
+            slidesByLocale={SLIDES_BY_LOCALE}
+            sectioned={false}
+            placeholderField="verb"
+            inputClassName="input"
+            inputSizes={{
+                blank: {
+                    maxWidth: 260,
+                },
+            }}
+            buildAnswerKey={(row) => `${row.sentenceIndex}`}
+            hintMode="first"
+            ariaLabel="Präteritum verb"
+        />
     );
 }
 
-VerbsPreteritum.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-        !
-    </button>
-);
-
+VerbsPreteritum.hasHint = true;
 VerbsPreteritum.instructions = data.instructions;
 VerbsPreteritum.title = data.title;

@@ -1,15 +1,16 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
+    ArrowLeft,
     Globe2,
+    Menu,
+    Palette,
     SignalHigh,
     Settings,
-    Palette,
-    ArrowLeft,
-    Menu,
-} from "lucide-react";
+} from "./components/icons";
 import { useLocale } from "./contexts/LocaleContext";
 import { useLevel } from "./contexts/LevelContext";
+import { TheoryModalProvider } from "./contexts/TheoryModalContext";
 import translations from "./locales/locales";
 import { loadExercisesForLevel } from "./config/exercises";
 import { useColoredInputs } from "./hooks/useColoredInputs";
@@ -105,6 +106,7 @@ export default function App() {
         return savedSettingsOpen === null ? true : savedSettingsOpen === "true";
     });
     const [isMobile, setIsMobile] = useState(false);
+    const [isTheoryOpen, setIsTheoryOpen] = useState(false);
     const [theme, setTheme] = useState(() => {
         if (typeof window === "undefined") {
             return "light";
@@ -118,6 +120,9 @@ export default function App() {
     const hasThemeMountedRef = useRef(false);
     const shouldReloadAfterThemeTransitionRef = useRef(false);
     const labels = translations[locale].labels;
+
+    const openTheory = () => setIsTheoryOpen(true);
+    const closeTheory = () => setIsTheoryOpen(false);
 
     const handleThemeToggle = () => {
         const nextTheme = theme === "dark" ? "light" : "dark";
@@ -199,6 +204,10 @@ export default function App() {
         void node.offsetWidth;
         node.classList.add("fade-in");
     }, [currentTab, level]);
+
+    useEffect(() => {
+        setIsTheoryOpen(false);
+    }, [currentTab, locale]);
 
     useEffect(() => {
         if (typeof window === "undefined") return;
@@ -318,7 +327,7 @@ export default function App() {
             type="button"
             className="help-pill"
             data-modal-open="true"
-            onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
+            onClick={openTheory}
         >
             <span className="help-pill__icon" aria-hidden="true">i</span>
             <span className="help-pill__label">
@@ -342,35 +351,41 @@ export default function App() {
 
     const settingsDropdownContent = (
         <div className="sidebar-settings-dropdown">
-            <label className="sidebar-settings-row">
-                <SignalHigh size={30}/>
-                <span>{labels.level}</span>
-            </label>
-            <select
-                className="sidebar-select"
-                value={level}
-                onChange={(e) => setLevel(e.target.value)}
-            >
-                <option value="A1.1">A1.1</option>
-                <option value="A1.2">A1.2</option>
-                <option value="A2">A2</option>
-                <option value="B1">B1</option>
-            </select>
+            <div className="sidebar-settings-control">
+                <label className="sidebar-settings-row" htmlFor="sidebar-level-select">
+                    <SignalHigh size={30}/>
+                    <span>{labels.level}</span>
+                </label>
+                <select
+                    id="sidebar-level-select"
+                    className="sidebar-select"
+                    value={level}
+                    onChange={(e) => setLevel(e.target.value)}
+                >
+                    <option value="A1.1">A1.1</option>
+                    <option value="A1.2">A1.2</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                </select>
+            </div>
 
-            <label className="sidebar-settings-row sidebar-settings-row--mt">
-                <Globe2 size={30}/>
-                <span>{labels.language}</span>
-            </label>
-            <select
-                className="sidebar-select"
-                value={locale}
-                onChange={(e) => setLocale(e.target.value)}
-            >
-                <option value="ru">Русский</option>
-                <option value="en">English</option>
-            </select>
+            <div className="sidebar-settings-control">
+                <label className="sidebar-settings-row" htmlFor="sidebar-language-select">
+                    <Globe2 size={30}/>
+                    <span>{labels.language}</span>
+                </label>
+                <select
+                    id="sidebar-language-select"
+                    className="sidebar-select"
+                    value={locale}
+                    onChange={(e) => setLocale(e.target.value)}
+                >
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
 
-            <div className="sidebar-settings-row sidebar-settings-row--mt sidebar-settings-row--between">
+            <div className="sidebar-settings-control">
                 <span className="sidebar-settings-row-label">
                     <Palette size={30}/>
                     <span>{labels.theme}</span>
@@ -557,7 +572,15 @@ export default function App() {
                             : levelLoadError
                                 ? levelErrorMessage
                                 : CurrentComponent
-                                    ? <CurrentComponent key={currentTab}/>
+                                    ? (
+                                        <TheoryModalProvider
+                                            isTheoryOpen={isTheoryOpen}
+                                            openTheory={openTheory}
+                                            closeTheory={closeTheory}
+                                        >
+                                            <CurrentComponent key={currentTab}/>
+                                        </TheoryModalProvider>
+                                    )
                                     : emptyLevelMessage}
                     </div>
                 </div>

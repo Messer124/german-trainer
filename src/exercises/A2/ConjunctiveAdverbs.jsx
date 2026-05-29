@@ -1,100 +1,32 @@
-import { useEffect, useMemo, useState } from "react";
-import ModalHtml from "../../components/ModalHtml";
-import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
-import { useLocale } from "../../contexts/LocaleContext";
-import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import FillInExercise from "../../components/FillInExercise";
 
 import data from "../../../data/A2/conjunctiveAdverbs.json";
 import hintRu from "../../../data/A2/images/conjunctiveAdverbs.html?raw";
 import hintEn from "../../../data/A2/images/en/conjunctiveAdverbs.html?raw";
 
-import "../../css/exercises/Common.css";
-
 const STORAGE_KEY = "conjunctive-adverbs-answers";
-
-function normalize(s) {
-  return String(s ?? "").trim().toLowerCase();
-}
+const SLIDES_BY_LOCALE = { ru: [hintRu], en: [hintEn] };
 
 export default function ConjunctiveAdverbs() {
-  const { locale } = useLocale();
-  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const [showHint, setShowHint] = useState(false);
-  const hint = locale === "en" ? hintEn : hintRu;
-
-  const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
-
-  useEffect(() => {
-    const handleShowHint = () => setShowHint(true);
-    document.addEventListener("show-hint", handleShowHint);
-    return () => document.removeEventListener("show-hint", handleShowHint);
-  }, []);
-
-  const handleChange = (index, value) => {
-    const correct = normalize(items[index]?.answer);
-
-    setAnswers((prev) => ({
-      ...prev,
-      [index]: {
-        value,
-        isCorrect: normalize(value) === correct,
-      },
-    }));
-  };
-
-  return (
-      <div className="exercise-inner">
-        {showHint && (
-            <ModalHtml
-                html={hint}
-                onClose={() => setShowHint(false)}
-            />
-        )}
-
-        <div className="scroll-container">
-          <ProgressiveList items={items} className="list">
-            {(item, index) => {
-              const value = answers[index]?.value || "";
-              const isCorrect = answers[index]?.isCorrect;
-
-              const parts = String(item.sentence ?? "").split("___");
-              const left = parts[0] ?? "";
-              const right = parts[1] ?? "";
-
-              const hasValue = value.trim() !== "";
-              const inputClass = `input ${hasValue ? (isCorrect ? "correct" : "incorrect") : ""}`;
-
-              return (
-                  <li key={index} className="list-item">
-                    {left}
-                    <ExpandingInput
-                        type="text"
-                        value={value}
-                        onChange={(e) => handleChange(index, e.target.value)}
-                        className={inputClass}
-                        minWidth={100}
-                        aria-label={`Conjunction ${index + 1}`}
-                    />
-                    {right}
-                  </li>
-              );
+    return (
+        <FillInExercise
+            data={data}
+            storageKey={STORAGE_KEY}
+            fallbackId="conjunctive-adverbs"
+            slidesByLocale={SLIDES_BY_LOCALE}
+            sectioned={false}
+            inputClassName="input"
+            inputSizes={{
+                blank: {
+                    minWidth: 100,
+                },
             }}
-          </ProgressiveList>
-        </div>
-      </div>
-  );
+            buildAnswerKey={(row) => `${row.sentenceIndex}`}
+            ariaLabel="Conjunction"
+        />
+    );
 }
 
-ConjunctiveAdverbs.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-      !
-    </button>
-);
-
+ConjunctiveAdverbs.hasHint = true;
 ConjunctiveAdverbs.instructions = data.instructions;
 ConjunctiveAdverbs.title = data.title;

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useTheoryModal } from "../../contexts/TheoryModalContext";
 import data from "../../../data/A1-1/weak-verb-conjugation.json";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
@@ -9,19 +9,9 @@ import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 const STORAGE_KEY = "weak-verb-conjugation-answers";
 
 function WeakVerbConjugation() {
-    const [showImage, setShowImage] = useState(false);
+    const { isTheoryOpen: showImage, closeTheory } = useTheoryModal();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
-    useEffect(() => {
-        const handleShowHint = () => {
-            setShowImage(true);
-        };
-
-        document.addEventListener("show-hint", handleShowHint);
-        return () => {
-            document.removeEventListener("show-hint", handleShowHint);
-        };
-    }, []);
 
     const pronouns = ["ich", "du", "er/sie/es", "wir/sie/Sie", "ihr"];
 
@@ -30,7 +20,7 @@ function WeakVerbConjugation() {
             {showImage && (
                 <ModalHtml
                     html={hint}
-                    onClose={() => setShowImage(false)}
+                    onClose={closeTheory}
                 />
             )}
 
@@ -89,14 +79,7 @@ function WeakVerbConjugation() {
     );
 }
 
-WeakVerbConjugation.headerButton = (
-    <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-        className="hint-button"
-    >
-        !
-    </button>
-);
+WeakVerbConjugation.hasHint = true;
 
 WeakVerbConjugation.instructions = data.instructions;
 WeakVerbConjugation.title = data.title;

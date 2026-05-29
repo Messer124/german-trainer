@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import ModalHtml from "../../components/ModalHtml";
 import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
+import { useTheoryModal } from "../../contexts/TheoryModalContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/tekamolo.json";
@@ -12,6 +13,7 @@ import hintRu from "../../../data/A2/images/tekamolo.html?raw";
 import hintEn from "../../../data/A2/images/en/tekamolo.html?raw";
 
 import "../../css/exercises/Common.css";
+import { normalizeAnswer } from "../../utils/answerUtils";
 import "../../css/exercises/TeKaMoLo.css";
 
 const STORAGE_KEY = "tekamolo-answers";
@@ -26,10 +28,7 @@ function normalizeItems(rawItems) {
 }
 
 function normalize(value) {
-    return String(value ?? "")
-        .trim()
-        .toLowerCase()
-        .replace(/\s+/g, " ");
+    return normalizeAnswer(value);
 }
 
 function SortableWord({ id, text, colorClass, isCorrect, activeDragId, isDraggingSession }) {
@@ -63,7 +62,7 @@ function SortableWord({ id, text, colorClass, isCorrect, activeDragId, isDraggin
 export default function TeKaMoLo() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [showHint, setShowHint] = useState(false);
+    const { isTheoryOpen: showHint, closeTheory } = useTheoryModal();
     const [activeDragId, setActiveDragId] = useState(null);
     const [isDraggingSession, setIsDraggingSession] = useState(false);
     const pendingReorderRef = useRef({ timeoutId: null, signature: "" });
@@ -112,11 +111,6 @@ export default function TeKaMoLo() {
         []
     );
 
-    useEffect(() => {
-        const handleShowHint = () => setShowHint(true);
-        document.addEventListener("show-hint", handleShowHint);
-        return () => document.removeEventListener("show-hint", handleShowHint);
-    }, []);
 
     const getCurrentOrder = (itemIdx, sourceAnswers = answers) => {
         const stored = sourceAnswers[itemIdx]?.order;
@@ -248,7 +242,7 @@ export default function TeKaMoLo() {
 
     return (
         <div className="exercise-inner">
-            {showHint && <ModalHtml html={hint} onClose={() => setShowHint(false)} />}
+            {showHint && <ModalHtml html={hint} onClose={closeTheory} />}
 
             <div className="scroll-container">
                 <ProgressiveList items={items} className="list tkm-exercise-list">
@@ -308,15 +302,7 @@ export default function TeKaMoLo() {
     );
 }
 
-TeKaMoLo.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-        !
-    </button>
-);
+TeKaMoLo.hasHint = true;
 
 TeKaMoLo.instructions = data.instructions;
 TeKaMoLo.title = data.title;

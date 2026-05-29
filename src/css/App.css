@@ -260,42 +260,60 @@ body {
 
   border-radius: var(--radius);
   background-color: var(--color-control-surface);
-  padding: var(--size-18) var(--size-20);
+  padding: var(--size-8) var(--size-20);
   border: var(--size-1) solid var(--color-sidebar-button-border);
   box-shadow: var(--shadow-sidebar-button);
 }
 
 /* заголовки секций (Уровень, Язык) */
 
+.sidebar-settings-control {
+  display: grid;
+  grid-template-columns: var(--size-30) minmax(var(--size-100), 1fr);
+  align-items: center;
+  gap: var(--size-12);
+  min-height: var(--size-56);
+  padding: var(--size-8) 0;
+}
+
 .sidebar-settings-row {
   display: flex;
   align-items: center;
-  gap: var(--size-8);
+  justify-content: center;
+  gap: 0;
 
-  font-weight: 700;
-  margin-bottom: var(--size-10);
+  font-size: 0.9em;
+  font-weight: 500;
+  min-width: 0;
   color: var(--color-text-primary);
 }
 
-.sidebar-settings-row--mt {
-  margin-top: var(--size-18);
+.sidebar-settings-row svg,
+.sidebar-settings-row-label svg {
+  flex: 0 0 auto;
 }
 
-.sidebar-settings-row--between {
-  justify-content: space-between;
+.sidebar-settings-row span,
+.sidebar-settings-row-label span {
+  display: none;
 }
 
 .sidebar-settings-row-label {
   display: inline-flex;
   align-items: center;
-  gap: var(--size-8);
+  justify-content: center;
+  gap: 0;
+  min-width: 0;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 /* селекты с "капсулой" */
 
 .sidebar-select {
   width: 100%;
-  padding: var(--size-12) var(--size-48) var(--size-12) var(--size-18); /* справа больше отступ под стрелку */
+  min-width: 0;
+  padding: var(--size-10) var(--size-40) var(--size-10) var(--size-16); /* справа больше отступ под стрелку */
 
   border-radius: var(--radius);
   border: var(--size-1) solid var(--color-border-subtle);
@@ -306,14 +324,14 @@ body {
   color: var(--color-select-text);
 
   outline: none;
-  margin-bottom: var(--size-4);
+  margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 
   background-image: var(--sidebar-select-arrow);
   background-repeat: no-repeat;
-  background-position: right var(--size-18) center; /* расстояние стрелки от правого края */
+  background-position: right var(--size-16) center; /* расстояние стрелки от правого края */
   background-size: var(--size-10) var(--size-6);
 }
 
@@ -343,6 +361,10 @@ body {
           border-color 0.5s ease !important;
 }
 
+.sidebar-settings-control .theme-toggle {
+  width: 100%;
+}
+
 .theme-toggle:focus-visible {
   outline: var(--size-2) solid var(--color-select-focus-border);
   outline-offset: var(--size-2);
@@ -370,6 +392,28 @@ body {
 .theme-toggle--dark .theme-toggle__thumb {
   left: calc(100% - var(--size-6) - var(--size-36));
   background: var(--color-theme-switch-thumb-dark);
+}
+
+@media (min-width: 1201px) {
+  .sidebar-settings-control {
+    grid-template-columns: minmax(0, 1fr) minmax(calc(var(--size-100) + 2ch), 54%);
+  }
+
+  .sidebar-settings-row,
+  .sidebar-settings-row-label {
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .sidebar-settings-row svg,
+  .sidebar-settings-row-label svg {
+    display: none;
+  }
+
+  .sidebar-settings-row span,
+  .sidebar-settings-row-label span {
+    display: inline;
+  }
 }
 
 /* ===== СПИСОК УПРАЖНЕНИЙ ===== */
@@ -799,6 +843,21 @@ body {
 
   .sidebar-settings-button {
     height: var(--size-50);
+  }
+
+  .sidebar-settings-control {
+    grid-template-columns: minmax(0, 1fr) minmax(var(--size-100), 43%);
+  }
+
+  .sidebar-settings-row,
+  .sidebar-settings-row-label {
+    justify-content: flex-start;
+    gap: var(--size-8);
+  }
+
+  .sidebar-settings-row span,
+  .sidebar-settings-row-label span {
+    display: inline;
   }
 
   .sidebar-close-icon-button {

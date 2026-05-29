@@ -1,0 +1,5917 @@
+:root {
+  --theory-generic-font-family: sans-serif;
+  --theory-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", var(--theory-generic-font-family);
+  --theory-text-color: #333643;
+  --theory-muted-color: #7a7d88;
+  --theory-accent-violet: #6c5ce7;
+  --theory-accent-yellow: #f8b722;
+  --theory-accent-red: #e74c3c;
+  --theory-accent-green: #9fcc5f;
+  --theory-accent-blue: #5d78be;
+  --theory-line-color: #d9d9de;
+  --theory-on-accent-color: #fff;
+  --theory-border-color: #909091;
+  --theory-strong-text-color: #2e313b;
+  --theory-surface-soft: #f8f9fa;
+}
+
+/* Базовая карточка с теорией */
+.modal-html-content .theory-card,
+.modal-html-content .theory-card-haben-sein,
+.modal-html-content .theory-card-strong-verbs {
+  box-sizing: border-box;
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+}
+
+.theory-section + .theory-section {
+  margin-top: 24px;
+}
+
+/* Заголовки и текст */
+.theory-title {
+  font-size: var(--desktop-modal-header-font-size);
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.theory-heading {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.theory-subtitle {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.theory-number {
+  margin-right: 4px;
+}
+
+.theory-text,
+.theory-note {
+  margin: 6px 0;
+}
+
+.theory-note--footnote {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.theory-text--ru {
+  font-style: italic;
+}
+
+.theory-text--muted {
+  color: var(--theory-muted-color);
+}
+
+.theory-translation {
+  margin-left: 2px;
+}
+
+/* Цветные и выделенные слова */
+.theory-word--violet {
+  color: var(--theory-accent-violet);
+  font-weight: 700;
+}
+
+.theory-word--yellow {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+}
+
+.theory-word--red {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.theory-word--green {
+  color: var(--theory-accent-green);
+  font-weight: 700;
+}
+
+.theory-word--blue {
+  color: var(--theory-accent-blue);
+  font-weight: 700;
+}
+
+.theory-word--on-accent {
+  color: var(--theory-on-accent-color);
+}
+
+.theory-word--italic {
+  font-style: italic;
+}
+
+.theory-word--bold {
+  font-weight: 700;
+}
+
+.theory-ending {
+  font-weight: 700;
+}
+
+.theory-ending--violet {
+  color: var(--theory-accent-violet);
+  font-weight: 700;
+}
+
+.theory-ending--yellow {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+}
+
+.theory-ending--red {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.theory-ending--green {
+  color: var(--theory-accent-green);
+  font-weight: 700;
+}
+
+.theory-ending--blue {
+  color: var(--theory-accent-blue);
+  font-weight: 700;
+}
+
+.theory-bg--violet {
+  background: var(--theory-accent-violet);
+}
+
+.theory-bg--yellow {
+  background: var(--theory-accent-yellow);
+}
+
+.theory-bg--red {
+  background: var(--theory-accent-red);
+}
+
+.theory-bg--green {
+  background: var(--theory-accent-green);
+}
+
+.theory-bg--soft {
+  background: var(--theory-surface-soft);
+}
+
+.theory-split-cell-line,
+.theory-split-cell-item {
+  padding: 6px 8px;
+}
+
+.theory-split-cell-line {
+  border-bottom: 1px solid var(--theory-line-color);
+}
+
+/* Общие стили таблиц */
+.theory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.theory-table th,
+.theory-table td {
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--theory-border-color);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.theory-table th {
+  font-weight: 700;
+}
+
+/* Таблица jemand/niemand */
+.theory-table--cases th:first-child,
+.theory-table--cases td:first-child {
+  width: 140px;
+}
+
+/* Таблица jeder */
+.theory-col-masc {
+  color: var(--theory-accent-violet);
+  font-weight: 700;
+}
+
+.theory-col-fem {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.theory-col-neut {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+}
+
+/* Вспомогательные глаголы haben / sein и модальные глаголы */
+.theory-pronoun {
+  font-weight: 700;
+  text-align: right;
+  padding-right: 16px;
+  white-space: nowrap;
+}
+
+.theory-table--aux-verbs th:first-child,
+.theory-table--modal-verbs th:first-child {
+  width: 170px;
+}
+
+.theory-table--aux-verbs th,
+.theory-table--modal-verbs th {
+  text-align: left;
+}
+
+/* Модальные глаголы: цветные колонки */
+.theory-table--modal-verbs th:nth-child(2),
+.theory-table--modal-verbs th:nth-child(3),
+.theory-table--modal-verbs td:nth-child(2),
+.theory-table--modal-verbs td:nth-child(3) {
+  background-color: var(--theory-accent-yellow);
+}
+
+/* Prateritum haben / sein: без заливки, цветом выделяем только значения */
+.theory-table--aux-verbs tbody td:nth-child(2) {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+}
+
+.theory-table--aux-verbs tbody td:nth-child(3) {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+/* Дополнительная сетка и отступы для таблицы модальных глаголов */
+.theory-table--modal-verbs th + th,
+.theory-table--modal-verbs td + td {
+  border-left: 1px solid var(--theory-border-color);
+}
+
+.theory-dash-cell {
+  width: 10px;
+  text-align: center;
+}
+
+/* Таблица личных местоимений */
+.theory-table--pronouns {
+  font-size: var(--desktop-modal-font-size);
+}
+
+.theory-table--pronouns th,
+.theory-table--pronouns td {
+  padding: 6px 4px;
+}
+
+.theory-case-header {
+  font-size: var(--desktop-modal-header-font-size);
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+
+.theory-case-header--nom {
+  color: var(--theory-text-color);
+}
+
+.theory-case-header--akk {
+  color: var(--theory-accent-yellow);
+}
+
+.theory-case-header--dat {
+  color: var(--theory-accent-red);
+}
+
+/* Partizip II — двухколоночный блок */
+.theory-section--two-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.theory-column {
+  flex: 1 1 240px;
+}
+
+.theory-highlight {
+  font-weight: 700;
+}
+
+.theory-highlight--red {
+  color: var(--theory-accent-red);
+}
+
+.theory-list {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.theory-list li {
+  margin-bottom: 8px;
+}
+
+/* ===== СТРЕЛКИ (Финальная короткая версия) ===== */
+
+.theory-arrow-roof {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 12px;
+  overflow: visible;
+}
+
+.theory-arrow-line {
+  position: absolute;
+  top: 0;
+  /* Уменьшил ширину с 45% до 35%, чтобы стрелки были короче */
+  width: 35%;
+  height: 3px;
+  background-color: var(--theory-accent-yellow);
+}
+
+/* ЛЕВАЯ СТРЕЛКА */
+.theory-arrow-line--left {
+  right: 50%; /* Стыкуется в центре */
+  transform-origin: right top;
+  transform: rotate(-6deg);
+  border-radius: 2px 0 0 2px;
+}
+
+/* ПРАВАЯ СТРЕЛКА */
+.theory-arrow-line--right {
+  left: 50%;  /* Стыкуется в центре */
+  transform-origin: left top;
+  transform: rotate(6deg);
+  border-radius: 0 2px 2px 0;
+}
+
+/* Треугольники на концах */
+.theory-arrow-line::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent var(--theory-accent-yellow);
+}
+
+/* Треугольник слева */
+.theory-arrow-line--left::after {
+  left: -8px;
+  transform: rotate(180deg);
+}
+
+/* Треугольник справа */
+.theory-arrow-line--right::after {
+  right: -8px;
+}
+
+/* ===== СТИЛИ ТАБЛИЦ И ТЕКСТА ===== */
+
+/* Принудительное центрирование заголовков и формул */
+.theory-text-center {
+  text-align: center !important;
+}
+
+.theory-formula {
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  color: var(--theory-text-color);
+}
+
+/* Таблицы спряжения */
+.theory-table--conjugation td {
+  border-bottom: 1px solid var(--theory-line-color);
+  padding: 8px 4px;
+}
+
+/* Колонка местоимений */
+.theory-table--conjugation td:first-child {
+  text-align: right;
+  color: var(--theory-muted-color);
+  width: 45%;
+  padding-right: 20px;
+  border-right: 1px solid var(--theory-line-color);
+  font-size: var(--desktop-modal-font-size);
+}
+
+/* Колонка глаголов */
+.theory-table--conjugation td:last-child {
+  text-align: left;
+  width: 55%;
+  padding-left: 20px;
+  font-size: var(--desktop-modal-font-size);
+}
+
+.theory-table--conjugation tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== Дополнения для Partizip II ===== */
+
+/* Центрирование текста (утилита) */
+.theory-text-center {
+  text-align: center;
+}
+
+/* Цвет для примечания (серый, как на картинке) */
+.theory-muted {
+  color: var(--theory-muted-color);
+  font-size: var(--desktop-modal-font-size);
+}
+
+/* Формула (ge + корень + t) */
+.theory-formula {
+  text-align: center;
+  margin: 8px 0;
+  font-weight: 500;
+  color: var(--theory-muted-color);
+}
+
+/* Блок примеров слов */
+.theory-examples {
+  text-align: center;
+  font-size: var(--desktop-modal-font-size);
+  margin-bottom: 16px;
+}
+
+/* Нумерованный список для особых случаев */
+.theory-list-numbered {
+  margin: 8px 0;
+  padding-left: 20px;
+  list-style-type: decimal;
+}
+
+.theory-list-numbered li {
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
+
+/* Небольшой отступ сверху для колонок, чтобы не прилипали к линиям */
+.theory-section--partizip-top {
+  margin-top: 60px;
+}
+
+/* ===== УЛУЧШЕННЫЕ ЧАСЫ ===== */
+
+.theory-clock-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Чуть больше воздуха */
+  margin-bottom: 40px;
+}
+
+.theory-clock-lexicon {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+/* Контейнер визуализации */
+.theory-clock-visual {
+  position: relative;
+  flex: 0 0 360px; /* Увеличили размер для четкости */
+  width: 360px;
+  height: 360px;
+  font-size: var(--desktop-modal-font-size);
+  margin: 0 auto;
+}
+
+/* Циферблат */
+.theory-clock-face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 55%;   /* Размер самого круга */
+  height: 55%;
+  /* Двухцветный зеленый градиент (центр светлее, край темнее) */
+  background: radial-gradient(circle, #bcdb4e 0%, #bcdb4e 55%, #aacc33 56%, #aacc33 100%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #8fa828;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+
+/* Центральная точка */
+.theory-clock-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Часовые риски (линии) */
+.theory-clock-tick-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px; /* Толщина риски */
+  height: 100%; /* На всю высоту круга */
+  margin-left: -1px; /* Центровка */
+  pointer-events: none;
+}
+
+/* Рисуем риски только на концах линии с помощью градиента, чтобы не перекрывать центр */
+.theory-clock-tick-line::before,
+.theory-clock-tick-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Длина риски */
+  background-color: #556b2f; /* Темно-зеленый цвет рисок */
+}
+.theory-clock-tick-line::before { top: 4px; }
+.theory-clock-tick-line::after { bottom: 4px; }
+
+/* Стрелки */
+.theory-clock-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  background-color: #333;
+  border-radius: 4px;
+  z-index: 5;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.theory-clock-hand--hour {
+  width: 6px;
+  height: 16%;
+  margin-left: -3px; /* Центровка */
+  transform: rotate(-60deg); /* 10 часов */
+}
+
+.theory-clock-hand--minute {
+  width: 4px;
+  height: 23%;
+  margin-left: -2px; /* Центровка */
+  transform: rotate(60deg); /* 10 минут */
+}
+
+/* Плашки с текстом */
+.theory-clock-label {
+  position: absolute;
+  /* Центрируем сам элемент относительно его координат */
+  transform: translate(-50%, -50%);
+
+  background-color: #636e72; /* Темно-серый */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: var(--tablet-modal-font-size);
+  line-height: 1;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+/* Тонкие линии-указатели от плашки к часам */
+.theory-connector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 0; /* Высота задается динамически через JS или стили, но здесь мы используем фиксированные линии */
+  background-color: #b2bec3;
+  z-index: 0;
+  transform-origin: top left;
+}
+
+.mv-card {
+  max-width: 1700px;
+  padding: 16px;
+}
+
+.mv-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Переопределяем базовую .theory-table (рамки/паддинги/размер) под макет */
+table.mv-table {
+  border-collapse: collapse;
+  margin-top: 0;
+  background: transparent;
+}
+
+table.mv-table caption {
+  caption-side: top;
+  text-align: left;
+  padding: 0 0 10px;
+  font-size: var(--desktop-modal-font-size);
+  color: var(--theory-muted-color);
+}
+
+table.mv-table th,
+table.mv-table td {
+  padding: 15px 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+table.mv-table thead th,
+table.mv-table tbody th,
+table.mv-table tbody td {
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1;
+}
+
+table.mv-table thead th {
+  font-weight: 800;
+  color: var(--theory-strong-text-color);
+  white-space: nowrap;
+}
+
+table.mv-table tbody th {
+  font-weight: 800;
+  color: var(--theory-strong-text-color);
+  white-space: nowrap;
+}
+
+table.mv-table tbody td {
+  font-weight: 300;
+  color: var(--theory-strong-text-color);
+  white-space: nowrap;
+}
+
+:root[data-theme="dark"] table.mv-table thead th,
+:root[data-theme="dark"] table.mv-table tbody th,
+:root[data-theme="dark"] table.mv-table tbody td {
+  color: var(--theory-strong-text-color);
+}
+
+:root[data-theme="dark"] .mv-gray {
+  color: var(--theory-strong-text-color);
+}
+
+:root[data-theme="dark"] .theory-text--ru {
+  color: var(--theory-muted-color);
+}
+
+:root[data-theme="dark"] .text-note {
+  color: var(--theory-muted-color);
+}
+
+:root[data-theme="dark"] .theory-table--modal-verbs th:nth-child(2),
+:root[data-theme="dark"] .theory-table--modal-verbs th:nth-child(3),
+:root[data-theme="dark"] .theory-table--modal-verbs td:nth-child(2),
+:root[data-theme="dark"] .theory-table--modal-verbs td:nth-child(3) {
+  color: #1f232d;
+}
+
+:root[data-theme="dark"] .theory-table--aux-verbs tbody td:nth-child(2) {
+  color: var(--theory-accent-yellow);
+}
+
+:root[data-theme="dark"] .theory-table--aux-verbs tbody td:nth-child(3) {
+  color: var(--theory-accent-red);
+}
+
+/* Цветные буквы, как на картинке */
+.mv-yellow {
+  color: var(--theory-accent-yellow);
+  font-weight: inherit;
+}
+
+.mv-red {
+  color: var(--theory-accent-red);
+  font-weight: inherit;
+}
+
+.mv-gray {
+  color: var(--theory-text-color);
+  font-weight: inherit;
+}
+
+.vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--desktop-modal-font-size);
+}
+
+.vocab-table td {
+  padding: 6px 0;
+  vertical-align: top; /* Выравнивание по верхнему краю для многострочных переводов */
+}
+
+/* Первая колонка: Немецкие глаголы */
+.vocab-table td:first-child {
+  white-space: nowrap; /* Глагол в одну строку */
+  width: 1%;           /* Сжимаем колонку по содержимому */
+  padding-right: 16px; /* Отступ до тире */
+}
+
+/* Вторая колонка: Тире */
+.vocab-table td:nth-child(2) {
+  width: 1%;
+  padding-right: 16px; /* Отступ до перевода */
+  color: var(--theory-text-color);
+}
+
+/* Третья колонка: Перевод */
+.vocab-table td:last-child {
+  color: var(--theory-text-color);
+}
+
+.theory-table--large {
+  font-size: var(--desktop-modal-font-size);
+}
+
+.weak-conj-table th,
+.weak-conj-table td {
+  border-bottom: 1px solid var(--theory-line-color);
+  padding: 14px 16px; /* Чуть больше воздуха */
+}
+
+/* --- Вертикальные линии --- */
+
+/* Линия после столбца с местоимениями (1-й столбец) */
+.weak-conj-table th:first-child,
+.weak-conj-table td:first-child {
+  border-right: 1px solid var(--theory-line-color);
+}
+
+/* Линия после столбца с 'machen' (2-й столбец) */
+.weak-conj-table th:nth-child(2),
+.weak-conj-table td:nth-child(2) {
+  border-right: 1px solid var(--theory-line-color);
+}
+
+/* Линия между 'arbeiten' и 'tanzen' (перед последним столбцом) */
+.weak-conj-table th:last-child,
+.weak-conj-table td:last-child {
+  border-left: 1px solid var(--theory-line-color);
+}
+
+/* --- Разделение левой и правой части --- */
+
+/* Добавляем большой отступ слева для 4-го столбца ('arbeiten'),
+   чтобы создать визуальный разрыв */
+.weak-conj-table th:nth-child(4),
+.weak-conj-table td:nth-child(4) {
+  padding-left: 30px;
+}
+
+
+/* --- Прочие настройки столбцов --- */
+
+/* Колонка с местоимениями - жирная */
+.weak-conj-table td:first-child {
+  font-weight: 700;
+}
+
+/* Колонки с красными окончаниями - узкие и по центру */
+.weak-conj-table .ending-cell {
+  width: 1%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Убираем нижнюю границу у последнего ряда */
+.weak-conj-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Выравнивание заголовков по центру */
+.weak-conj-table thead th {
+  text-align: center;
+}
+
+.imperativ-header {
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+  text-align: center;
+  margin: 32px 0 16px;
+  font-size: 1.2em;
+}
+.imperativ-header:first-child {
+  margin-top: 0;
+}
+
+/* Контейнер для прокрутки на мобильных */
+.table-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 24px;
+}
+
+/* Базовая таблица Imperativ */
+.imperativ-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--desktop-modal-font-size);
+}
+
+.imperativ-table th,
+.imperativ-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--theory-line-color); /* Тонкие границы */
+  border-left: 1px solid var(--theory-line-color);   /* Вертикальные границы */
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Убираем левую границу у первой колонки */
+.imperativ-table th:first-child,
+.imperativ-table td:first-child {
+  border-left: none;
+}
+
+/* Настройка ширины колонок (примерная, как на картинке) */
+.imperativ-table th:nth-child(1) { width: 15%; }
+.imperativ-table th:nth-child(2) { width: 30%; }
+.imperativ-table th:nth-child(3) { width: 25%; }
+.imperativ-table th:nth-child(4) { width: 30%; }
+
+/* Цвета текста */
+.text-blue {
+  color: var(--theory-accent-blue); /* Синий цвет вопросов с картинки */
+  font-weight: 700;
+}
+
+.text-red {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.text-note {
+  font-size: 0.9em;
+  color: var(--theory-muted-color);
+}
+
+/* Зачеркивание (жирное и черное поверх цветного текста) */
+.strike-black {
+  text-decoration: line-through;
+  text-decoration-color: #000; /* Цвет линии */
+  text-decoration-thickness: 2px;
+  color: inherit; /* Текст остается своего цвета (синий) */
+}
+
+:root[data-theme="dark"] .strike-black {
+  text-decoration-color: #fff;
+}
+
+/* Секция "Внимание" */
+.attention-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid var(--theory-line-color);
+}
+
+.attention-title {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.haben-sein-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.highlight-bold {
+  font-weight: 700;
+  color: var(--theory-strong-text-color);
+}
+
+:root[data-theme="dark"] .highlight-bold {
+  color: var(--theory-strong-text-color);
+}
+
+.highlight-blue {
+  color: var(--theory-accent-blue);
+  font-weight: 700;
+}
+
+.time-prep-container {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* ===== Сложная таблица предлогов (PrepositionsTime Table) ===== */
+
+/* Базовые настройки ячеек для этой таблицы */
+.prep-table th,
+.prep-table td {
+  vertical-align: top;       /* Весь контент прижат к верху */
+  padding: 12px 14px;        /* Чуть больше воздуха чем в обычной таблице */
+  border: 1px solid var(--theory-line-color); /* Явные границы ячеек */
+}
+
+/* Первая колонка (Заголовки вопросов) */
+.prep-table .prep-header-cell {
+  width: 120px;              /* Фиксированная ширина для заголовков */
+}
+
+/* Заголовки внутри ячеек (предлог — перевод) */
+.prep-title {
+  font-size: var(--desktop-modal-font-size);
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--theory-text-color);
+}
+
+/* Описание (условия использования) */
+.prep-desc {
+  font-size: var(--desktop-modal-font-size);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+/* Блок примеров */
+.prep-table .theory-examples {
+  text-align: left;
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Русский текст примеров */
+.theory-text--ru {
+  color: var(--theory-muted-color);            /* Серый цвет для перевода */
+  font-size: var(--desktop-modal-font-size);
+  margin-top: 2px;
+}
+
+/* Фоновый желтый треугольник */
+.time-prep-triangle-bg {
+  position: absolute;
+  top: 40px; /* Начинается под первой строкой */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Ширина основания треугольника */
+  height: 85%;
+  /* Градиент имитирует треугольник: сверху желтый, к низу сужается и исчезает */
+  background: linear-gradient(to bottom, rgba(248, 183, 34, 0.25) 0%, rgba(248, 183, 34, 0.6) 100%);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ряды контента */
+.prep-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+/* Левая колонка (предлоги) */
+.prep-col-left {
+  flex: 0 0 35%; /* Ширина левой колонки */
+  text-align: right;
+  padding-right: 24px;
+  box-sizing: border-box;
+  font-size: var(--desktop-modal-header-font-size);
+  font-weight: 700;
+}
+
+/* Правая колонка (примеры) */
+.prep-col-right {
+  flex: 1;
+  text-align: left;
+  font-size: var(--desktop-modal-font-size);
+  color: var(--theory-text-color);
+}
+
+/* Специфические отступы для строк примеров */
+.example-line {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Знак предупреждения для "in der Nacht" */
+.warning-sign {
+  display: inline-block;
+  color: var(--theory-accent-red);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* --- Улучшенные стили для списка предлогов --- */
+
+.prepositions-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Две равные колонки */
+  gap: 60px; /* Большой отступ между левой и правой частью */
+  align-items: start;
+}
+
+/* Колонка-контейнер */
+.prep-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Строка с предлогом */
+.prep-row-item {
+  display: grid;
+  /* Левая часть фиксирована (130px), правая (пример) занимает остаток */
+  grid-template-columns: 130px 1fr;
+  gap: 20px;
+
+  /* Воздух и разделение */
+  padding: 16px 0;
+  border-bottom: 1px solid var(--theory-line-color); /* Легкая разделительная линия */
+}
+
+.prep-row-item-conj {
+  display: grid;
+  /* Левая часть фиксирована (130px), правая (пример) занимает остаток */
+  grid-template-columns: 160px 1fr;
+  gap: 20px;
+
+  /* Воздух и разделение */
+  padding: 16px 0;
+  border-bottom: 1px solid var(--theory-line-color); /* Легкая разделительная линия */
+}
+
+/* Убираем линию у последнего элемента в колонке */
+.prep-column .prep-row-item:last-child {
+  border-bottom: none;
+}
+
+/* Левая часть: Предлог - Перевод */
+.prep-left {
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.4;
+  color: var(--theory-text-color);
+  font-weight: 700;
+  /* Для переноса длинных слов типа "vom - bis zum" */
+  word-wrap: break-word;
+}
+
+.prep-dash {
+  color: var(--theory-muted-color);
+  margin: 0 4px;
+  font-weight: 400;
+}
+
+.prep-trans {
+  font-weight: 400;
+}
+
+/* Правая часть: Примеры */
+.prep-right {
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.5;
+}
+
+/* Перевод примера (русский) */
+.prep-right .theory-text--ru {
+  color: var(--theory-muted-color);
+  display: block;
+}
+
+.prep-right .theory-text--ru:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Стили для сложноподчиненных предложений --- */
+
+/* Сетка: Правило (слева) - Пример (справа) */
+.subordinate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /* Правая колонка чуть шире для длинных примеров */
+  gap: 24px 32px;
+  margin-top: 16px;
+  align-items: start;
+}
+
+.sub-rule {
+  font-size: var(--desktop-modal-font-size);
+  color: var(--theory-text-color);
+  line-height: 1.4;
+}
+
+.sub-example {
+  font-size: var(--desktop-modal-font-size);
+}
+
+/* --- Список особенностей союзов (weil/dass/damit) --- */
+
+.conjunction-list {
+  display: grid;
+  grid-template-columns: min-content 1fr; /* Левая колонка по ширине слова, правая - на всю ширину */
+  gap: 24px 32px; /* Отступы между колонками и строками */
+  margin-top: 16px;
+  align-items: start;
+}
+
+.conjunction-label {
+  font-size: var(--desktop-modal-header-font-size); /* Чуть крупнее, как заголовок */
+  font-weight: 700;
+  text-align: right; /* Выравнивание вправо к контенту */
+}
+
+.conjunction-content {
+  font-size: var(--desktop-modal-font-size);
+}
+
+/* Красный текст примечаний (не жирный, для пояснений в damit) */
+.theory-note-red {
+  display: block; /* С новой строки */
+  color: var(--theory-accent-red);
+  margin-top: 4px;
+}
+
+/* Специфичные стили для таблицы сравнения haben/sein */
+.haben-sein-table th {
+  text-align: center;
+  font-size: var(--desktop-modal-header-font-size); /* Чуть крупнее заголовки */
+  width: 50%;       /* Равные колонки */
+  padding-bottom: 12px;
+}
+
+.haben-sein-table td {
+  vertical-align: top; /* Важно: текст прижат к верху */
+  padding: 12px 8px;   /* Немного больше воздуха */
+  line-height: 1.4;
+  font-size: var(--desktop-modal-font-size);
+}
+
+/* Основная сетка 3x3 */
+.cats-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Карточка */
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--theory-surface-soft);
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid var(--theory-line-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-color: var(--theory-border-color);
+}
+
+/* Визуал */
+.cat-card-visual {
+  width: 100%;
+  max-width: 110px; /* Чуть увеличили */
+  aspect-ratio: 1 / 1;
+}
+
+.cat-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  /* drop-shadow помогает отделить SVG от фона */
+  filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.1));
+}
+
+/* Подпись */
+.cat-card-label {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: var(--theory-text-color);
+}
+
+/* Разделитель между группами глаголов */
+.theory-divider {
+  border: none;
+  border-top: 1px solid var(--theory-line-color);
+  margin: 16px 0;
+}
+
+/* Контейнер для группы глагола (действие + состояние) */
+.theory-group {
+  margin-bottom: 20px;
+}
+
+/* Специфический отступ для курсивных примеров */
+.theory-group em {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--theory-text-color);
+}
+
+.theory-section--three-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.theory-section--three-cols .theory-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+/* Центрирование заголовка секции внимания */
+.theory-text-center {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+/* Компактный визуальный блок */
+.theory-visual-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--theory-surface-soft);
+  padding: 12px;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+.theory-visual-divider {
+  width: 1px;
+  height: 100px;
+  background: var(--theory-line-color);
+}
+
+/* Сетка для списка слов */
+.theory-grid-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 колонки на десктопе */
+  gap: 12px;
+}
+
+.theory-group {
+  margin-bottom: 4px;
+}
+
+/* ===== B1: Steigerung von Adjektiven ===== */
+
+.modal-html-content .b1-steigerung {
+  --b1-line: #dfe1e6;
+  color: var(--theory-text-color);
+  line-height: 1.35;
+}
+
+.b1-steigerung .b1-lead,
+.b1-steigerung .b1-text,
+.b1-steigerung .b1-examples,
+.b1-steigerung .b1-table .b1-example,
+.b1-steigerung .b1-cases-table {
+  font-size: var(--desktop-modal-font-size) !important;
+}
+
+.b1-steigerung .b1-lead,
+.b1-steigerung .b1-text {
+  margin: 0 0 18px !important;
+}
+
+.b1-steigerung .b1-formula,
+.b1-steigerung .b1-table thead th,
+.b1-steigerung .b1-table .b1-degree {
+  font-size: var(--desktop-modal-header-font-size) !important;
+}
+
+.b1-steigerung .b1-formula {
+  margin: 14px auto 20px !important;
+  text-align: center;
+  font-weight: 800;
+}
+
+.b1-steigerung .b1-examples {
+  margin: 0 0 20px !important;
+  line-height: 1.35;
+}
+
+.b1-steigerung .b1-example {
+  margin: 0 0 8px !important;
+}
+
+.b1-steigerung .b1-translation {
+  font-style: italic;
+}
+
+.b1-steigerung .b1-stem,
+.b1-steigerung .b1-label {
+  font-weight: 800;
+}
+
+.b1-steigerung .b1-er,
+.b1-steigerung .b1-super {
+  color: var(--theory-accent-yellow);
+  font-weight: 800;
+}
+
+.b1-steigerung-komparativ .b1-er {
+  color: var(--theory-accent-violet);
+}
+
+.b1-steigerung .b1-ending {
+  color: var(--theory-accent-red);
+  font-weight: 800;
+}
+
+.b1-steigerung .b1-table,
+.b1-steigerung .b1-cases-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.b1-steigerung .b1-table th,
+.b1-steigerung .b1-table td,
+.b1-steigerung .b1-cases-table th,
+.b1-steigerung .b1-cases-table td {
+  border-bottom: 1px solid var(--b1-line);
+  padding: 8px 10px !important;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.b1-steigerung .b1-separator,
+.b1-steigerung .b1-cases-table th + th,
+.b1-steigerung .b1-cases-table td + td {
+  border-left: 1px solid var(--b1-line);
+}
+
+.b1-steigerung .b1-table thead th,
+.b1-steigerung .b1-table .b1-degree,
+.b1-steigerung .b1-cases-table tbody td {
+  font-weight: 800;
+}
+
+.b1-steigerung .b1-cases-table {
+  margin-top: 14px !important;
+}
+
+.b1-steigerung .b1-cases-table th:first-child,
+.b1-steigerung .b1-cases-table td:first-child {
+  border-left: none;
+  font-weight: 400;
+}
+
+.b1-steigerung .b1-note {
+  margin: 22px 0 0 !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.35;
+}
+
+.b1-steigerung .b1-compare {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.24fr) 1fr;
+  gap: 6px 24px;
+  margin: 18px 0 24px !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.35;
+}
+
+/* ===== B1: Partizipien ===== */
+
+/* ===== B1: Doppelkonjunktionen ===== */
+
+.modal-html-content .b1-doppelkonjunktionen {
+  color: var(--theory-text-color);
+  line-height: 1.26;
+}
+
+.b1-doppelkonjunktionen .dk-lead,
+.b1-doppelkonjunktionen .dk-table {
+  font-size: var(--desktop-modal-font-size) !important;
+}
+
+.b1-doppelkonjunktionen .dk-lead {
+  margin: 0 0 28px !important;
+}
+
+.b1-doppelkonjunktionen .dk-term {
+  white-space: nowrap;
+}
+
+.b1-doppelkonjunktionen .dk-table-scroll {
+  margin: 0 !important;
+}
+
+.b1-doppelkonjunktionen .dk-table {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.b1-doppelkonjunktionen .dk-table th,
+.b1-doppelkonjunktionen .dk-table td {
+  padding: 10px 14px !important;
+  border-top: 1px solid var(--theory-line-color);
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.b1-doppelkonjunktionen .dk-table tr > * + * {
+  border-left: 1px solid var(--theory-line-color);
+}
+
+.b1-doppelkonjunktionen .dk-table thead th {
+  color: var(--theory-strong-text-color);
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.b1-doppelkonjunktionen .dk-table tbody th {
+  font-weight: 400;
+}
+
+.b1-doppelkonjunktionen .dk-table th:first-child,
+.b1-doppelkonjunktionen .dk-table td:first-child {
+  width: 15%;
+}
+
+.b1-doppelkonjunktionen .dk-table th:nth-child(2),
+.b1-doppelkonjunktionen .dk-table td:nth-child(2) {
+  width: 54%;
+}
+
+.b1-doppelkonjunktionen .dk-table th:nth-child(3),
+.b1-doppelkonjunktionen .dk-table td:nth-child(3) {
+  width: 31%;
+}
+
+.b1-doppelkonjunktionen .dk-table p {
+  margin: 0 0 18px !important;
+}
+
+.b1-doppelkonjunktionen .dk-table p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.b1-doppelkonjunktionen .dk-meaning {
+  display: block;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.b1-doppelkonjunktionen .dk-translation {
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .b1-doppelkonjunktionen .dk-lead,
+  .b1-doppelkonjunktionen .dk-table {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-doppelkonjunktionen .dk-table thead th {
+    font-size: var(--tablet-modal-header-font-size) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .b1-doppelkonjunktionen .dk-lead {
+    margin-bottom: 14px !important;
+    font-size: clamp(0.82rem, 3vw, 0.96rem) !important;
+    line-height: 1.28;
+  }
+
+  .b1-doppelkonjunktionen .dk-table {
+    font-size: clamp(0.72rem, 2.6vw, 0.86rem) !important;
+    line-height: 1.22;
+  }
+
+  .b1-doppelkonjunktionen .dk-table th:first-child,
+  .b1-doppelkonjunktionen .dk-table td:first-child {
+    width: 23%;
+  }
+
+  .b1-doppelkonjunktionen .dk-table th:nth-child(2),
+  .b1-doppelkonjunktionen .dk-table td:nth-child(2) {
+    width: 47%;
+  }
+
+  .b1-doppelkonjunktionen .dk-table th:nth-child(3),
+  .b1-doppelkonjunktionen .dk-table td:nth-child(3) {
+    width: 30%;
+  }
+
+  .b1-doppelkonjunktionen .dk-table thead th {
+    font-size: clamp(0.9rem, 3.2vw, 1.05rem) !important;
+  }
+
+  .b1-doppelkonjunktionen .dk-table th,
+  .b1-doppelkonjunktionen .dk-table td {
+    padding: 7px 8px !important;
+  }
+
+  .b1-doppelkonjunktionen .dk-table p {
+    margin-bottom: 10px !important;
+  }
+}
+
+/* ===== B1: Artikelwörter ===== */
+
+.modal-html-content .b1-artikelwoerter {
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.18;
+}
+
+.b1-artikelwoerter .aw-intro {
+  margin: 0 0 28px !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.28;
+}
+
+.b1-artikelwoerter .aw-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 58px;
+}
+
+.b1-artikelwoerter .aw-column {
+  min-width: 0;
+}
+
+.b1-artikelwoerter .aw-heading {
+  margin: 0 0 24px !important;
+  color: var(--theory-strong-text-color);
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.b1-artikelwoerter .aw-heading span {
+  font-weight: 800;
+}
+
+.b1-artikelwoerter .aw-items {
+  display: grid;
+  gap: 20px;
+}
+
+.b1-artikelwoerter .aw-items--strong {
+  gap: 25px;
+}
+
+.b1-artikelwoerter .aw-term,
+.b1-artikelwoerter .aw-example,
+.b1-artikelwoerter .aw-note p {
+  margin: 0 !important;
+}
+
+.b1-artikelwoerter .aw-term {
+  color: var(--theory-strong-text-color);
+}
+
+.b1-artikelwoerter .aw-example {
+  margin-top: 2px !important;
+}
+
+.b1-artikelwoerter .aw-mark--weak {
+  color: var(--theory-accent-blue);
+  font-weight: 800;
+}
+
+.b1-artikelwoerter .aw-mark--strong {
+  color: var(--theory-accent-red);
+  font-weight: 800;
+}
+
+.b1-artikelwoerter .aw-note {
+  display: grid;
+  gap: 6px;
+  margin-top: 30px;
+  color: var(--theory-strong-text-color);
+  line-height: 1.18;
+}
+
+.b1-artikelwoerter .aw-underlined {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 1200px) {
+  .modal-html-content .b1-artikelwoerter,
+  .b1-artikelwoerter .aw-intro {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-artikelwoerter .aw-heading {
+    font-size: var(--tablet-modal-header-font-size) !important;
+  }
+
+  .b1-artikelwoerter .aw-grid {
+    gap: 34px;
+  }
+
+  .b1-artikelwoerter .aw-items {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 760px) {
+  .b1-artikelwoerter .aw-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .b1-artikelwoerter .aw-heading {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-html-content .b1-artikelwoerter,
+  .b1-artikelwoerter .aw-intro {
+    font-size: clamp(0.82rem, 3vw, 0.96rem) !important;
+    line-height: 1.25;
+  }
+
+  .b1-artikelwoerter .aw-intro {
+    margin-bottom: 20px !important;
+  }
+
+  .b1-artikelwoerter .aw-heading {
+    margin-bottom: 16px !important;
+    font-size: clamp(0.95rem, 3.3vw, 1.08rem) !important;
+  }
+
+  .b1-artikelwoerter .aw-items,
+  .b1-artikelwoerter .aw-items--strong {
+    gap: 13px;
+  }
+
+  .b1-artikelwoerter .aw-note {
+    margin-top: 20px;
+  }
+}
+
+/* ===== B1: Konjunktionen ===== */
+
+.modal-html-content .b1-konjunktionen {
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.18;
+}
+
+.b1-konjunktionen .kj-lead {
+  margin: 0 0 34px !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.2;
+}
+
+.b1-konjunktionen .kj-list {
+  display: grid;
+  gap: 42px;
+}
+
+.b1-konjunktionen .kj-row {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.34fr) minmax(0, 0.66fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.b1-konjunktionen .kj-name,
+.b1-konjunktionen .kj-example,
+.b1-konjunktionen .kj-examples {
+  min-width: 0;
+}
+
+.b1-konjunktionen .kj-name {
+  line-height: 1.18;
+}
+
+.b1-konjunktionen .kj-example {
+  margin: 0 !important;
+}
+
+.b1-konjunktionen .kj-examples {
+  display: grid;
+  gap: 32px;
+}
+
+.b1-konjunktionen .kj-term {
+  color: var(--theory-accent-blue);
+  font-weight: 800;
+}
+
+.b1-konjunktionen .kj-meaning {
+  font-style: italic;
+}
+
+.b1-konjunktionen .kj-translation {
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .modal-html-content .b1-konjunktionen,
+  .b1-konjunktionen .kj-lead {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-konjunktionen .kj-row {
+    grid-template-columns: minmax(190px, 0.34fr) minmax(0, 0.66fr);
+    gap: 28px;
+  }
+
+  .b1-konjunktionen .kj-list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-html-content .b1-konjunktionen,
+  .b1-konjunktionen .kj-lead {
+    font-size: clamp(0.82rem, 3vw, 0.96rem) !important;
+    line-height: 1.24;
+  }
+
+  .b1-konjunktionen .kj-lead {
+    margin-bottom: 22px !important;
+  }
+
+  .b1-konjunktionen .kj-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .b1-konjunktionen .kj-list {
+    gap: 24px;
+  }
+
+  .b1-konjunktionen .kj-examples {
+    gap: 16px;
+  }
+}
+
+/* ===== B1: Präpositionen mit Genitiv ===== */
+
+.modal-html-content .b1-genitiv-prepositions {
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.18;
+}
+
+.b1-genitiv-prepositions .gp-lead,
+.b1-genitiv-prepositions .gp-groups,
+.b1-genitiv-prepositions .gp-note {
+  margin: 0 !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.22;
+}
+
+.b1-genitiv-prepositions .gp-lead {
+  margin-bottom: 34px !important;
+}
+
+.b1-genitiv-prepositions .gp-groups {
+  margin-bottom: 44px !important;
+}
+
+.b1-genitiv-prepositions .gp-groups p {
+  margin: 0 0 6px !important;
+}
+
+.b1-genitiv-prepositions .gp-groups ol {
+  margin: 0 !important;
+  padding-left: 1.7em;
+}
+
+.b1-genitiv-prepositions .gp-title {
+  margin: 38px 0 26px !important;
+  color: var(--theory-strong-text-color);
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.b1-genitiv-prepositions .gp-title--top {
+  margin-top: 0 !important;
+}
+
+.b1-genitiv-prepositions > .gp-title:first-child {
+  margin-top: 0 !important;
+}
+
+.b1-genitiv-prepositions .gp-list {
+  display: grid;
+  gap: 24px;
+}
+
+.b1-genitiv-prepositions .gp-row {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.24fr) minmax(0, 0.76fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.b1-genitiv-prepositions .gp-name,
+.b1-genitiv-prepositions .gp-example {
+  min-width: 0;
+}
+
+.b1-genitiv-prepositions .gp-name {
+  line-height: 1.18;
+}
+
+.b1-genitiv-prepositions .gp-example {
+  margin: 0 !important;
+}
+
+.b1-genitiv-prepositions .gp-term {
+  color: var(--theory-accent-red);
+  font-weight: 800;
+}
+
+.b1-genitiv-prepositions .gp-meaning,
+.b1-genitiv-prepositions .gp-translation {
+  font-style: italic;
+}
+
+.b1-genitiv-prepositions .gp-note {
+  margin-top: 42px !important;
+}
+
+@media (max-width: 1200px) {
+  .modal-html-content .b1-genitiv-prepositions,
+  .b1-genitiv-prepositions .gp-lead,
+  .b1-genitiv-prepositions .gp-groups,
+  .b1-genitiv-prepositions .gp-note {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-genitiv-prepositions .gp-title {
+    font-size: var(--tablet-modal-header-font-size) !important;
+  }
+
+  .b1-genitiv-prepositions .gp-row {
+    grid-template-columns: minmax(130px, 0.28fr) minmax(0, 0.72fr);
+    gap: 20px;
+  }
+
+  .b1-genitiv-prepositions .gp-list {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-html-content .b1-genitiv-prepositions,
+  .b1-genitiv-prepositions .gp-lead,
+  .b1-genitiv-prepositions .gp-groups,
+  .b1-genitiv-prepositions .gp-note {
+    font-size: clamp(0.82rem, 3vw, 0.96rem) !important;
+    line-height: 1.24;
+  }
+
+  .b1-genitiv-prepositions .gp-lead {
+    margin-bottom: 22px !important;
+  }
+
+  .b1-genitiv-prepositions .gp-groups {
+    margin-bottom: 28px !important;
+  }
+
+  .b1-genitiv-prepositions .gp-title {
+    margin: 28px 0 16px !important;
+    font-size: clamp(1rem, 3.4vw, 1.12rem) !important;
+    text-align: left;
+  }
+
+  .b1-genitiv-prepositions .gp-title--top {
+    margin-top: 0 !important;
+  }
+
+  .b1-genitiv-prepositions > .gp-title:first-child {
+    margin-top: 0 !important;
+  }
+
+  .b1-genitiv-prepositions .gp-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .b1-genitiv-prepositions .gp-list {
+    gap: 16px;
+  }
+
+  .b1-genitiv-prepositions .gp-note {
+    margin-top: 30px !important;
+  }
+}
+
+.modal-html-content .b1-partizipien {
+  color: var(--theory-text-color);
+  line-height: 1.28;
+}
+
+.b1-partizipien .part-lead,
+.b1-partizipien .part-text,
+.b1-partizipien .part-usage-grid,
+.b1-partizipien .part-example-list {
+  font-size: var(--desktop-modal-font-size) !important;
+}
+
+.b1-partizipien .part-lead,
+.b1-partizipien .part-text {
+  margin: 0 0 28px !important;
+}
+
+.b1-partizipien .part-lead--spaced {
+  margin-top: 56px !important;
+}
+
+.b1-partizipien .part-term-row,
+.b1-partizipien .part-activity-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.b1-partizipien .part-term-row {
+  margin: 0 0 18px;
+  text-align: center;
+}
+
+.b1-partizipien .part-term {
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.b1-partizipien .part-activity-intro {
+  margin: 10px 0 16px !important;
+  text-align: center;
+}
+
+.b1-partizipien .part-activity-row {
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.b1-partizipien .part-activity-title {
+  margin: 0 !important;
+  font-weight: 800;
+  font-size: var(--desktop-modal-header-font-size) !important;
+  line-height: 1.22;
+}
+
+.b1-partizipien .part-activity-subtitle {
+  margin: 0 !important;
+}
+
+.b1-partizipien .part-example-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 46px;
+  margin-top: 20px;
+  line-height: 1.28;
+}
+
+.b1-partizipien .part-example {
+  margin: 0 !important;
+}
+
+.b1-partizipien .part-translation {
+  font-style: italic;
+}
+
+.b1-partizipien .part-formula-examples {
+  margin: 12px 0 36px !important;
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.25;
+}
+
+.b1-partizipien .part-usage-grid {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.29fr) minmax(340px, 0.43fr) minmax(220px, 0.28fr);
+  border-top: 1px solid var(--theory-line-color);
+}
+
+.b1-partizipien .part-usage-cell {
+  padding: 10px 14px !important;
+  border-bottom: 1px solid var(--theory-line-color);
+  vertical-align: top;
+}
+
+.b1-partizipien .part-usage-cell + .part-usage-cell {
+  border-left: 1px solid var(--theory-line-color);
+}
+
+.b1-partizipien .part-usage-cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.b1-partizipien .part-usage-cell p {
+  margin: 0 0 8px !important;
+}
+
+.b1-partizipien .part-usage-cell p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.b1-partizipien .part-usage-note {
+  color: var(--theory-text-color);
+}
+
+/* ===== B1: Pronominaladverbien ===== */
+
+.modal-html-content .b1-pronominaladverbien {
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.28;
+}
+
+.b1-pronominaladverbien .pa-top-note {
+  margin: 0 0 14px !important;
+  text-align: center;
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.b1-pronominaladverbien .pa-card {
+  overflow: hidden;
+  border: 1px solid var(--theory-line-color);
+  border-radius: 16px;
+  background: var(--theory-surface-soft);
+}
+
+.b1-pronominaladverbien .pa-card--blue {
+  --pa-card-accent: #315fbd;
+}
+
+.b1-pronominaladverbien .pa-card--orange {
+  --pa-card-accent: #ee8420;
+}
+
+.b1-pronominaladverbien .pa-card--red {
+  --pa-card-accent: #df3b34;
+}
+
+.b1-pronominaladverbien .pa-card--green {
+  --pa-card-accent: #319f50;
+}
+
+.b1-pronominaladverbien .pa-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 8px 14px;
+  color: var(--theory-on-accent-color);
+  background: var(--pa-card-accent);
+  font-size: var(--desktop-modal-header-font-size);
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.b1-pronominaladverbien .pa-card-body {
+  padding: 14px 18px;
+}
+
+.b1-pronominaladverbien .pa-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.b1-pronominaladverbien .pa-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.b1-pronominaladverbien .pa-list li + li {
+  margin-top: 10px;
+}
+
+.b1-pronominaladverbien .pa-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: var(--theory-on-accent-color);
+  font-size: 0.72em;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.b1-pronominaladverbien .pa-status--bad {
+  background: var(--theory-accent-red);
+}
+
+.b1-pronominaladverbien .pa-status--good {
+  background: var(--theory-accent-green);
+}
+
+.b1-pronominaladverbien .pa-info-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 16px;
+  padding: 10px 18px;
+  border: 1px solid var(--theory-line-color);
+  border-radius: 14px;
+  background: var(--theory-surface-soft);
+}
+
+.b1-pronominaladverbien .pa-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  color: var(--theory-accent-blue);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.b1-pronominaladverbien .pa-panel {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 18px;
+  border: 1px solid var(--theory-line-color);
+  border-radius: 16px;
+  background: var(--theory-surface-soft);
+}
+
+.b1-pronominaladverbien .pa-panel + .pa-panel {
+  margin-top: 14px;
+}
+
+.b1-pronominaladverbien .pa-panel + .pa-grid-2 {
+  margin-top: 22px;
+}
+
+.b1-pronominaladverbien .pa-panel--blue {
+  --pa-panel-accent: #315fbd;
+}
+
+.b1-pronominaladverbien .pa-panel--orange {
+  --pa-panel-accent: #ee8420;
+}
+
+.b1-pronominaladverbien .pa-panel-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--pa-panel-accent);
+  color: var(--theory-on-accent-color);
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-panel p {
+  margin: 0 !important;
+}
+
+.b1-pronominaladverbien .pa-formula {
+  margin-left: auto;
+  text-align: right;
+  font-size: var(--desktop-modal-header-font-size);
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-formula-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--theory-line-color);
+  text-align: center;
+}
+
+.b1-pronominaladverbien .pa-formula-row:last-child {
+  border-bottom: none;
+}
+
+.b1-pronominaladverbien .pa-compare {
+  width: 100%;
+  margin: 16px auto 0;
+  overflow: hidden;
+  border: 1px solid var(--theory-line-color);
+  border-radius: 14px;
+  background: var(--theory-surface-soft);
+}
+
+.b1-pronominaladverbien .pa-compare-title {
+  margin: 0 !important;
+  padding: 4px 12px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-compare-row {
+  display: grid;
+  grid-template-columns: 44px 1fr 40px 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 5px 14px;
+  border-top: 1px solid var(--theory-line-color);
+}
+
+.b1-pronominaladverbien .pa-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: var(--theory-on-accent-color);
+  font-size: 0.75em;
+  font-weight: 800;
+}
+
+.b1-pronominaladverbien .pa-num--blue {
+  background: var(--theory-accent-blue);
+}
+
+.b1-pronominaladverbien .pa-num--orange {
+  background: var(--theory-accent-yellow);
+}
+
+/* ===== B1: Konjunktiv II ===== */
+
+.modal-html-content .b1-konjunktiv2 {
+  color: var(--theory-text-color);
+  font-size: var(--desktop-modal-font-size);
+  line-height: 1.28;
+}
+
+.b1-konjunktiv2 .k2-lead,
+.b1-konjunktiv2 .k2-examples p,
+.b1-konjunktiv2 .k2-note-box p,
+.b1-konjunktiv2 .k2-footnote {
+  margin: 0 0 18px !important;
+}
+
+.b1-konjunktiv2 .k2-lead {
+  font-size: var(--desktop-modal-font-size) !important;
+  line-height: 1.25;
+}
+
+.b1-konjunktiv2 .k2-lead--compact {
+  margin-top: 26px !important;
+}
+
+.b1-konjunktiv2 .k2-translation {
+  font-style: italic;
+}
+
+.b1-konjunktiv2 .k2-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin: 26px 0 24px;
+}
+
+.b1-konjunktiv2 .k2-column-title {
+  margin: 0 0 14px !important;
+  text-align: center;
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 800;
+}
+
+.b1-konjunktiv2 .k2-examples {
+  margin: 18px 0 24px;
+}
+
+.b1-konjunktiv2 .k2-note-box {
+  margin-top: 24px;
+  padding: 12px 16px;
+  border: 2px solid var(--theory-strong-text-color);
+  border-radius: var(--radius);
+  background: var(--theory-surface-soft);
+}
+
+.b1-konjunktiv2 .k2-note-box p:last-child,
+.b1-konjunktiv2 .k2-footnote:last-child {
+  margin-bottom: 0 !important;
+}
+
+.b1-konjunktiv2 .k2-table {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.2fr) minmax(130px, 0.15fr) minmax(520px, 0.65fr);
+  width: 100%;
+  line-height: 1.25;
+}
+
+.b1-konjunktiv2 .k2-table-head,
+.b1-konjunktiv2 .k2-type,
+.b1-konjunktiv2 .k2-union,
+.b1-konjunktiv2 .k2-cell {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--theory-line-color);
+}
+
+.b1-konjunktiv2 .k2-table-head {
+  font-weight: 800;
+  font-size: var(--desktop-modal-header-font-size) !important;
+}
+
+.b1-konjunktiv2 .k2-type,
+.b1-konjunktiv2 .k2-union {
+  border-right: 1px solid var(--theory-line-color);
+}
+
+.b1-konjunktiv2 .k2-type {
+  font-size: 1.04em;
+}
+
+.b1-konjunktiv2 .k2-union {
+  text-align: center;
+  font-size: 1.02em;
+}
+
+.b1-konjunktiv2 .k2-rowspan-2 {
+  grid-row: span 2;
+}
+
+.b1-konjunktiv2 .k2-rowspan-3 {
+  grid-row: span 3;
+}
+
+.b1-konjunktiv2 .k2-cell p {
+  margin: 0 0 18px !important;
+}
+
+.b1-konjunktiv2 .k2-cell p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.b1-konjunktiv2 .k2-table--continued {
+  margin-top: 4px;
+}
+
+.b1-konjunktiv2 .k2-footnote {
+  margin-top: 20px !important;
+}
+
+.b1-konjunktiv2 .k2-wish-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 42px;
+  margin-top: 34px;
+}
+
+.b1-konjunktiv2 .k2-wish-title {
+  text-align: center;
+  font-size: var(--desktop-modal-header-font-size) !important;
+  font-weight: 800;
+}
+
+.b1-konjunktiv2 .k2-wish-note {
+  text-align: center;
+}
+
+.b1-konjunktiv2 .k2-wish-note--wide {
+  grid-column: 1 / -1;
+}
+
+.b1-konjunktiv2 .k2-wish-cell {
+  line-height: 1.28;
+}
+
+@media (max-width: 1200px) {
+  .modal-html-content .b1-konjunktiv2,
+  .b1-konjunktiv2 .k2-lead {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-konjunktiv2 .k2-column-title,
+  .b1-konjunktiv2 .k2-table-head,
+  .b1-konjunktiv2 .k2-wish-title {
+    font-size: var(--tablet-modal-header-font-size) !important;
+  }
+
+  .b1-konjunktiv2 .k2-compare {
+    gap: 24px;
+  }
+
+  .b1-konjunktiv2 .k2-table {
+    grid-template-columns: minmax(140px, 0.2fr) minmax(110px, 0.17fr) minmax(360px, 0.63fr);
+  }
+
+  .b1-konjunktiv2 .k2-table-head,
+  .b1-konjunktiv2 .k2-type,
+  .b1-konjunktiv2 .k2-union,
+  .b1-konjunktiv2 .k2-cell {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-html-content .b1-konjunktiv2,
+  .b1-konjunktiv2 .k2-lead {
+    font-size: var(--mobile-modal-font-size) !important;
+  }
+
+  .b1-konjunktiv2 .k2-column-title,
+  .b1-konjunktiv2 .k2-table-head,
+  .b1-konjunktiv2 .k2-wish-title {
+    font-size: var(--mobile-modal-header-font-size) !important;
+  }
+
+  .b1-konjunktiv2 .k2-compare,
+  .b1-konjunktiv2 .k2-wish-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .b1-konjunktiv2 .k2-table {
+    display: block;
+  }
+
+  .b1-konjunktiv2 .k2-table-head {
+    display: none;
+  }
+
+  .b1-konjunktiv2 .k2-type,
+  .b1-konjunktiv2 .k2-union,
+  .b1-konjunktiv2 .k2-cell {
+    border-right: none;
+    padding: 7px 8px;
+  }
+
+  .b1-konjunktiv2 .k2-type {
+    margin-top: 12px;
+    border-top: 1px solid var(--theory-line-color);
+    font-weight: 800;
+  }
+
+  .b1-konjunktiv2 .k2-union {
+    text-align: left;
+    font-weight: 800;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .theory-title,
+  .theory-case-header,
+  .haben-sein-table th {
+    font-size: var(--tablet-modal-header-font-size);
+  }
+  .modal-html-content .theory-card,
+  .theory-table--pronouns,
+  .theory-clock-visual,
+  .theory-clock-visual,
+  table.mv-table caption,
+  table.mv-table thead th,
+  table.mv-table tbody th,
+  table.mv-table tbody td ,
+  .vocab-table,
+  .theory-table--large,
+  .theory-table--conjugation td:first-child,
+  .theory-table--conjugation td:last-child,
+  .theory-clock-label,
+  .theory-muted,
+  .theory-examples,
+  .theory-card,
+  .imperativ-table,
+  .conjunction-label,
+  .conjunction-content,
+  .sub-rule,
+  .sub-example,
+  .prep-left,
+  .prep-right,
+  .haben-sein-table td {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .noun-articles--two-cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .theory-clock-visual {
+    margin: 0 150px 0 auto;
+  }
+
+  /* ===== Сложная таблица предлогов (PrepositionsTime Table) ===== */
+  .prep-title,
+  .prep-desc,
+  .prep-table .theory-examples,
+  .theory-text--ru,
+  .prep-table .prep-header-cell {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .prep-table th,
+  .prep-table td {
+    padding: 6px 7px;
+  }
+
+  .prepositions-grid-layout {
+    gap: 10px; /* Большой отступ между левой и правой частью */
+  }
+
+  /* Строка с предлогом */
+  .prep-row-item {
+    /* Левая часть фиксирована, правая (пример) занимает остаток */
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+    /* Воздух и разделение */
+    padding: 10px 0;
+  }
+
+  /* Стили конкретно для genitiv таблицы, чтобы не ломать другие */
+  .genitiv-table th {
+    font-weight: 700;
+    font-size: 1.1em;
+    padding-bottom: 12px;
+  }
+
+  .genitiv-table td {
+    font-size: 1.1em; /* Чуть крупнее шрифт внутри таблицы */
+    padding: 8px 4px;
+  }
+
+  /* На картинке первая колонка "Genitiv" имеет особый вес */
+  .genitiv-table th:first-child {
+    font-weight: 800;
+    width: 15%; /* Фиксируем ширину заголовка */
+  }
+
+  .b1-steigerung .b1-lead,
+  .b1-steigerung .b1-text,
+  .b1-steigerung .b1-examples,
+  .b1-steigerung .b1-table .b1-example,
+  .b1-steigerung .b1-cases-table,
+  .b1-steigerung .b1-note,
+  .b1-steigerung .b1-compare,
+  .b1-partizipien .part-lead,
+  .b1-partizipien .part-text,
+  .b1-partizipien .part-usage-grid,
+  .b1-partizipien .part-example-list,
+  .b1-partizipien .part-formula-examples,
+  .modal-html-content .b1-pronominaladverbien {
+    font-size: var(--tablet-modal-font-size) !important;
+  }
+
+  .b1-steigerung .b1-formula,
+  .b1-steigerung .b1-table thead th,
+  .b1-steigerung .b1-table .b1-degree,
+  .b1-partizipien .part-term,
+  .b1-partizipien .part-activity-title,
+  .b1-pronominaladverbien .pa-card-header,
+  .b1-pronominaladverbien .pa-formula {
+    font-size: var(--tablet-modal-header-font-size) !important;
+  }
+
+  .b1-steigerung .b1-table th,
+  .b1-steigerung .b1-table td,
+  .b1-steigerung .b1-cases-table th,
+  .b1-steigerung .b1-cases-table td {
+    padding: 7px 6px !important;
+  }
+
+  .b1-partizipien .part-lead--spaced {
+    margin-top: 34px !important;
+  }
+
+  .b1-partizipien .part-term-row,
+  .b1-partizipien .part-activity-row {
+    gap: 20px;
+  }
+
+  .b1-partizipien .part-example-list {
+    gap: 20px 28px;
+  }
+
+  .b1-partizipien .part-usage-grid {
+    grid-template-columns: minmax(160px, 0.3fr) minmax(260px, 0.43fr) minmax(160px, 0.27fr);
+  }
+
+  .b1-partizipien .part-usage-cell {
+    padding: 8px 10px !important;
+  }
+
+  .b1-pronominaladverbien .pa-grid-2 {
+    gap: 14px;
+  }
+
+  .b1-pronominaladverbien .pa-card-body,
+  .b1-pronominaladverbien .pa-panel {
+    padding: 10px 12px;
+  }
+
+  .b1-pronominaladverbien .pa-panel-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .theory-title,
+  .theory-case-header,
+  .haben-sein-table th {
+    font-size: var(--mobile-modal-header-font-size);
+  }
+
+  .theory-table--pronouns,
+  .theory-clock-visual,
+  .theory-clock-visual,
+  table.mv-table caption,
+  table.mv-table thead th,
+  table.mv-table tbody th,
+  table.mv-table tbody td,
+  .vocab-table,
+  .theory-table--large,
+  .theory-table--conjugation td:first-child,
+  .theory-table--conjugation td:last-child,
+  .theory-clock-label,
+  .theory-muted,
+  .theory-examples,
+  .modal-html-content .theory-card,
+  .theory-card,
+  .imperativ-table,
+  .conjunction-label,
+  .conjunction-content,
+  .sub-rule,
+  .sub-example,
+  .prep-left,
+  .prep-right,
+  .haben-sein-table td {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  table.mv-table th,
+  table.mv-table td {
+    padding: 9px 5px;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .theory-clock-visual {
+    flex: 0 0 250px; /* Увеличили размер для четкости */
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .theory-dash-cell {
+    width: 18px;
+  }
+
+  .theory-section--two-cols {
+    flex-wrap: nowrap;              /* ключевое */
+    gap: 16px;                      /* меньше gap, чтобы реально помещалось */
+    overflow-x: auto;               /* если всё равно шире — можно проскроллить */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .imperativ-table th,
+  .imperativ-table td {
+    padding: 8px 10px;
+  }
+
+  .time-prep-triangle-bg {
+    width: 95%;
+    opacity: 0.5;
+  }
+  .prep-col-left {
+    flex: 0 0 30%;
+    padding-right: 12px;
+    font-size: var(--mobile-modal-header-font-size);
+  }
+  .prep-col-right {
+    font-size: var(--mobile-modal-font-size);
+  }
+  .prep-row {
+    margin-bottom: 24px;
+  }
+
+  /* ===== Сложная таблица предлогов (PrepositionsTime Table) ===== */
+  .prep-title,
+  .prep-desc,
+  .prep-table .theory-examples,
+  .theory-text--ru,
+  .prep-table .prep-header-cell {
+    font-size: var(--mobile-modal-font-size);
+  }
+
+  .prep-table th,
+  .prep-table td {
+    padding: 3px 4px;
+  }
+
+  .prepositions-grid-layout {
+    grid-template-columns: 1fr; /* Одна колонка на мобильных */
+    gap: 0;
+  }
+
+  .prep-column:first-child .prep-row-item:last-child {
+    border-bottom: 1px solid var(--theory-line-color);
+  }
+
+  .theory-section--two-cols {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cats-visual-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .b1-steigerung .b1-lead,
+  .b1-steigerung .b1-text,
+  .b1-steigerung .b1-examples,
+  .b1-steigerung .b1-table .b1-example,
+  .b1-steigerung .b1-cases-table,
+  .b1-steigerung .b1-note,
+  .b1-steigerung .b1-compare,
+  .b1-partizipien .part-lead,
+  .b1-partizipien .part-text,
+  .b1-partizipien .part-usage-grid,
+  .b1-partizipien .part-example-list,
+  .b1-partizipien .part-formula-examples,
+  .modal-html-content .b1-pronominaladverbien {
+    font-size: var(--mobile-modal-font-size) !important;
+  }
+
+  .b1-steigerung .b1-formula,
+  .b1-steigerung .b1-table thead th,
+  .b1-steigerung .b1-table .b1-degree,
+  .b1-partizipien .part-term,
+  .b1-partizipien .part-activity-title,
+  .b1-pronominaladverbien .pa-card-header,
+  .b1-pronominaladverbien .pa-formula {
+    font-size: var(--mobile-modal-header-font-size) !important;
+  }
+
+  .b1-steigerung .b1-lead,
+  .b1-steigerung .b1-text,
+  .b1-steigerung .b1-examples {
+    margin-bottom: 12px !important;
+  }
+
+  .b1-steigerung .b1-compare {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    margin: 12px 0 16px !important;
+  }
+
+  .b1-steigerung .b1-label {
+    margin-top: 6px;
+  }
+
+  .b1-steigerung .b1-table th,
+  .b1-steigerung .b1-table td,
+  .b1-steigerung .b1-cases-table th,
+  .b1-steigerung .b1-cases-table td {
+    padding: 5px 4px !important;
+  }
+
+  .b1-partizipien .part-lead,
+  .b1-partizipien .part-text {
+    margin-bottom: 14px !important;
+  }
+
+  .b1-partizipien .part-lead--spaced {
+    margin-top: 20px !important;
+  }
+
+  .b1-partizipien .part-term-row,
+  .b1-partizipien .part-activity-row,
+  .b1-partizipien .part-example-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .b1-partizipien .part-usage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .b1-partizipien .part-usage-cell {
+    padding: 7px 8px !important;
+  }
+
+  .b1-partizipien .part-usage-cell + .part-usage-cell {
+    border-left: none;
+  }
+
+  .b1-pronominaladverbien .pa-grid-2,
+  .b1-pronominaladverbien .pa-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .b1-pronominaladverbien .pa-panel {
+    gap: 8px;
+  }
+
+  .b1-pronominaladverbien .pa-panel-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .b1-pronominaladverbien .pa-formula {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .b1-pronominaladverbien .pa-formula-row {
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 6px;
+    padding: 8px 6px;
+  }
+
+  .b1-pronominaladverbien .pa-compare-row {
+    grid-template-columns: 28px 1fr;
+    gap: 6px 8px;
+  }
+
+  .b1-pronominaladverbien .pa-compare-row .pa-arrow {
+    display: none;
+  }
+}
+
+/* ===== ein-/kein- als Ersatzartikel ===== */
+
+.theory-card--ein-kein {
+  line-height: 1.28;
+}
+
+.ek-intro {
+  margin: 0;
+}
+
+.ek-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.ek-item + .ek-item {
+  margin-top: 8px;
+}
+
+.ek-line {
+  display: block;
+}
+
+.ek-line--sub {
+  padding-left: 30px;
+}
+
+.ek-bullet {
+  color: var(--theory-muted-color);
+  margin-right: 8px;
+}
+
+.ek-table-title {
+  margin: 24px 0 8px;
+  text-align: center;
+  color: var(--theory-accent-yellow);
+  font-weight: 700;
+  font-size: calc(var(--desktop-modal-header-font-size) * 0.95);
+}
+
+.theory-table--ein-kein th,
+.theory-table--ein-kein td {
+  border-color: var(--theory-line-color);
+  padding: 7px 12px;
+}
+
+.theory-table--ein-kein th + th,
+.theory-table--ein-kein td + td {
+  border-left: 1px solid var(--theory-line-color);
+}
+
+.theory-table--ein-kein thead th {
+  font-size: calc(var(--desktop-modal-header-font-size) * 0.92);
+}
+
+.theory-table--ein-kein thead th:first-child,
+.theory-table--ein-kein tbody th {
+  white-space: nowrap;
+}
+
+.ek-attention {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.ek-attention-title {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .ek-line--sub {
+    padding-left: 22px;
+  }
+
+  .ek-table-title {
+    margin-top: 16px;
+    font-size: var(--mobile-modal-header-font-size);
+  }
+
+  .theory-table--ein-kein th,
+  .theory-table--ein-kein td {
+    padding: 5px 6px;
+  }
+
+  .theory-table--ein-kein {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .theory-table--ein-kein thead th {
+    font-size: 11px;
+    line-height: 1.15;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .theory-table--ein-kein thead th:first-child {
+    width: 24%;
+    white-space: nowrap;
+  }
+
+  .theory-table--ein-kein thead th:not(:first-child) {
+    width: 19%;
+  }
+}
+
+/* ===== Порядок объектов в предложении ===== */
+
+.theory-card--object-order .theory-title {
+  margin-bottom: 14px;
+}
+
+.oo-lead {
+  margin-top: 0;
+}
+
+.oo-list {
+  margin: 8px 0 0;
+  padding-left: 28px;
+}
+
+.oo-item + .oo-item {
+  margin-top: 12px;
+}
+
+.oo-item p {
+  margin: 0;
+}
+
+.oo-example {
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .oo-list {
+    padding-left: 20px;
+  }
+}
+
+/* ===== TeKaMoLo ===== */
+
+.theory-card--tekamolo .theory-title {
+  margin-bottom: 14px;
+}
+
+.tkm-title-part {
+  font-weight: 700;
+}
+
+.tkm-title-part--te {
+  color: var(--theory-accent-yellow);
+}
+
+.tkm-title-part--ka {
+  color: var(--theory-accent-red);
+}
+
+.tkm-title-part--mo {
+  color: var(--theory-accent-blue);
+}
+
+.tkm-title-part--lo {
+  color: var(--theory-strong-text-color);
+}
+
+.tkm-list {
+  margin: 8px 0 18px;
+  padding-left: 26px;
+}
+
+.tkm-list li + li {
+  margin-top: 8px;
+}
+
+.tkm-table {
+  margin-top: 8px;
+}
+
+.tkm-table th,
+.tkm-table td {
+  padding: 8px 10px;
+  border-color: var(--theory-line-color);
+  text-align: center;
+}
+
+.tkm-table th {
+  font-weight: 700;
+}
+
+.tkm-table th + th,
+.tkm-table td + td {
+  border-left: 1px solid var(--theory-line-color);
+}
+
+.tkm-col--te {
+  color: var(--theory-accent-yellow);
+}
+
+.tkm-col--ka {
+  color: var(--theory-accent-red);
+}
+
+.tkm-col--mo {
+  color: var(--theory-accent-blue);
+}
+
+@media (max-width: 600px) {
+  .tkm-list {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  .tkm-table {
+    min-width: 700px;
+  }
+
+  .tkm-table th,
+  .tkm-table td {
+    padding: 6px 8px;
+  }
+}
+
+/* ===== Extracted A2 modal fragment styles ===== */
+
+.lassen-basic-card {
+                --lassen-line: var(--theory-line-color);
+                --lassen-violet: var(--theory-accent-violet);
+                --lassen-yellow: var(--theory-accent-yellow);
+            }
+
+            .lassen-basic-card .lassen-lead,
+            .lassen-basic-card .lassen-note {
+                line-height: 1.28;
+            }
+
+            .lassen-basic-card .lassen-conjugation {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 14px 0 18px;
+            }
+
+            .lassen-basic-card .lassen-conjugation td {
+                padding: 10px 18px;
+                border-bottom: 1px solid var(--lassen-line);
+                vertical-align: middle;
+            }
+
+            .lassen-basic-card .lassen-conjugation td + td {
+                border-left: 1px solid var(--lassen-line);
+            }
+
+            .lassen-basic-card .lassen-pronoun {
+                width: 44%;
+            }
+
+            .lassen-basic-card .lassen-example {
+                margin-top: 16px;
+                line-height: 1.24;
+            }
+
+            @media (max-width: 1200px) {
+                .lassen-basic-card .lassen-conjugation td {
+                    padding: 9px 12px;
+                }
+
+                .lassen-basic-card .lassen-lead,
+                .lassen-basic-card .lassen-note,
+                .lassen-basic-card .lassen-example {
+                    font-size: 0.96rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .lassen-basic-card .lassen-conjugation td {
+                    padding: 8px 6px;
+                    font-size: 0.82rem;
+                }
+
+                .lassen-basic-card .lassen-pronoun {
+                    width: 40%;
+                }
+
+                .lassen-basic-card .lassen-lead,
+                .lassen-basic-card .lassen-note,
+                .lassen-basic-card .lassen-example {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+
+.lassen-meanings-card {
+                --lassen-red: var(--theory-accent-red);
+                --lassen-line: var(--theory-line-color);
+            }
+
+            .lassen-meanings-card .lassen-grid {
+                display: grid;
+                grid-template-columns: 31% 69%;
+                gap: 20px 26px;
+                margin-top: 18px;
+            }
+
+            .lassen-meanings-card .lassen-label,
+            .lassen-meanings-card .lassen-body {
+                line-height: 1.18;
+            }
+
+            .lassen-meanings-card .lassen-block {
+                margin: 0;
+            }
+
+            .lassen-meanings-card .lassen-body p {
+                margin: 0 0 14px;
+            }
+
+            @media (max-width: 1200px) {
+                .lassen-meanings-card .lassen-grid {
+                    grid-template-columns: 30% 70%;
+                    gap: 16px 18px;
+                }
+
+                .lassen-meanings-card .lassen-label,
+                .lassen-meanings-card .lassen-body,
+                .lassen-meanings-card .theory-text {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .lassen-meanings-card .lassen-grid {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                    margin-top: 12px;
+                }
+
+                .lassen-meanings-card .lassen-label,
+                .lassen-meanings-card .lassen-body,
+                .lassen-meanings-card .theory-text {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+
+.lassen-perfekt-card {
+                --lassen-line: var(--theory-line-color);
+            }
+
+            .lassen-perfekt-card .lassen-top {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 14px 0 18px;
+                table-layout: fixed;
+            }
+
+            .lassen-perfekt-card .lassen-top td {
+                padding: 14px 16px;
+                border-bottom: 1px solid var(--lassen-line);
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .lassen-perfekt-card .lassen-top td + td {
+                border-left: 1px solid var(--lassen-line);
+            }
+
+            .lassen-perfekt-card .lassen-head {
+                font-size: 1.02em;
+                line-height: 1.14;
+            }
+
+            .lassen-perfekt-card .lassen-formula {
+                font-weight: 700;
+                line-height: 1.14;
+            }
+
+            .lassen-perfekt-card .lassen-example {
+                line-height: 1.18;
+            }
+
+            .lassen-perfekt-card .lassen-note {
+                margin-top: 18px;
+                text-align: center;
+                line-height: 1.22;
+            }
+
+            .lassen-perfekt-card .lassen-bottom {
+                margin-top: 18px;
+                text-align: center;
+                line-height: 1.22;
+            }
+
+            @media (max-width: 1200px) {
+                .lassen-perfekt-card .lassen-top td {
+                    padding: 11px 10px;
+                }
+
+                .lassen-perfekt-card .lassen-head,
+                .lassen-perfekt-card .lassen-formula,
+                .lassen-perfekt-card .lassen-example,
+                .lassen-perfekt-card .lassen-note,
+                .lassen-perfekt-card .lassen-bottom,
+                .lassen-perfekt-card .theory-text {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .lassen-perfekt-card .lassen-top td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .lassen-perfekt-card .lassen-head,
+                .lassen-perfekt-card .lassen-formula,
+                .lassen-perfekt-card .lassen-example,
+                .lassen-perfekt-card .lassen-note,
+                .lassen-perfekt-card .lassen-bottom,
+                .lassen-perfekt-card .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.idp-card {
+      --idp-line: var(--theory-line-color);
+    }
+
+    .idp-card .idp-intro {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card .idp-grid {
+      border-top: 1px solid var(--idp-line);
+    }
+
+    .idp-card .idp-row {
+      display: grid;
+      grid-template-columns: minmax(90px, 120px) minmax(260px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+    }
+
+    .idp-card .idp-row > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card .idp-pronoun {
+      font-weight: 700;
+      font-size: 1.25em;
+      line-height: 1.05;
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+
+    .idp-card .idp-rule {
+      line-height: 1.26;
+    }
+
+    .idp-card .idp-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card .idp-de {
+      display: block;
+    }
+
+    .idp-card .idp-tr {
+      display: block;
+      margin-top: 2px;
+      color: var(--theory-muted-color);
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card .idp-row {
+        grid-template-columns: minmax(86px, 110px) 1fr;
+        grid-template-areas:
+          "pron rule"
+          "pron examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card .idp-row > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card .idp-pronoun {
+        grid-area: pron;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card .idp-rule {
+        grid-area: rule;
+      }
+
+      .idp-card .idp-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card .idp-row {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "pron"
+          "rule"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card .idp-pronoun {
+        border-right: none;
+        padding-right: 0;
+        font-size: 1.18em;
+      }
+    }
+
+.idp-card--slide2 {
+      --idp-line: var(--theory-line-color);
+    }
+
+    .idp-card--slide2 .idp-lead {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-poss-grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 240px) minmax(280px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 14px 0 16px;
+      border-top: 1px solid var(--idp-line);
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+      margin: 14px 0 16px;
+    }
+
+    .idp-card--slide2 .idp-poss-grid > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card--slide2 .idp-poss-left {
+      font-weight: 700;
+      line-height: 1.18;
+    }
+
+    .idp-card--slide2 .idp-poss-desc {
+      line-height: 1.26;
+    }
+
+    .idp-card--slide2 .idp-poss-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card--slide2 .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card--slide2 .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card--slide2 .idp-tr {
+      display: block;
+      margin-top: 2px;
+      color: var(--theory-muted-color);
+    }
+
+    .idp-card--slide2 .idp-note {
+      margin: 0 0 16px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-table-title {
+      text-align: center;
+      margin: 10px 0 10px;
+      font-weight: 800;
+    }
+
+    .idp-card--slide2 .idp-decl {
+      margin-top: 6px;
+    }
+
+    .idp-card--slide2 .idp-table th,
+    .idp-card--slide2 .idp-table td {
+      text-align: center;
+      border-bottom: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th + th,
+    .idp-card--slide2 .idp-table td + td {
+      border-left: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th:first-child,
+    .idp-card--slide2 .idp-table td:first-child {
+      text-align: left;
+      white-space: nowrap;
+      padding-left: 8px;
+      padding-right: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: minmax(170px, 220px) 1fr;
+        grid-template-areas:
+          "left desc"
+          "left examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card--slide2 .idp-poss-grid > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        grid-area: left;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card--slide2 .idp-poss-desc {
+        grid-area: desc;
+      }
+
+      .idp-card--slide2 .idp-poss-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "left"
+          "desc"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+
+.infinitivsaetze-intro {
+                --inf-line: var(--theory-line-color);
+            }
+
+            .infinitivsaetze-intro .inf-lead,
+            .infinitivsaetze-intro .inf-example {
+                line-height: 1.28;
+            }
+
+            .infinitivsaetze-intro .inf-zu-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 12px;
+                table-layout: fixed;
+            }
+
+            .infinitivsaetze-intro .inf-zu-table td {
+                padding: 14px 18px;
+                border-bottom: 1px solid var(--inf-line);
+                vertical-align: top;
+                line-height: 1.2;
+            }
+
+            .infinitivsaetze-intro .inf-zu-table td + td {
+                border-left: 1px solid var(--inf-line);
+            }
+
+            .infinitivsaetze-intro .inf-col-head {
+                margin: 0 0 12px;
+                font-weight: 500;
+            }
+
+            @media (max-width: 1200px) {
+                .infinitivsaetze-intro .inf-zu-table td {
+                    padding: 11px 12px;
+                }
+
+                .infinitivsaetze-intro .inf-lead,
+                .infinitivsaetze-intro .inf-example,
+                .infinitivsaetze-intro .inf-col-head,
+                .infinitivsaetze-intro .theory-text {
+                    font-size: 0.95rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .infinitivsaetze-intro .inf-zu-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .infinitivsaetze-intro .inf-lead,
+                .infinitivsaetze-intro .inf-example,
+                .infinitivsaetze-intro .inf-col-head,
+                .infinitivsaetze-intro .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.infinitivsaetze-relations {
+                --inf-line: var(--theory-line-color);
+            }
+
+            .infinitivsaetze-relations .inf-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 16px;
+                table-layout: fixed;
+            }
+
+            .infinitivsaetze-relations .inf-table td {
+                padding: 14px 16px;
+                border-bottom: 1px solid var(--inf-line);
+                vertical-align: top;
+                line-height: 1.18;
+            }
+
+            .infinitivsaetze-relations .inf-table td + td {
+                border-left: 1px solid var(--inf-line);
+            }
+
+            .infinitivsaetze-relations .inf-left {
+                width: 36%;
+            }
+
+            .infinitivsaetze-relations .inf-right p {
+                margin: 0 0 12px;
+            }
+
+            .infinitivsaetze-relations .inf-right p:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 1200px) {
+                .infinitivsaetze-relations .inf-table td {
+                    padding: 10px 10px;
+                }
+
+                .infinitivsaetze-relations .theory-text,
+                .infinitivsaetze-relations .inf-table td {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .infinitivsaetze-relations .inf-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .infinitivsaetze-relations .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.infinitivsaetze-no-zu {
+                --inf-line: var(--theory-line-color);
+            }
+
+            .infinitivsaetze-no-zu .inf-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 16px;
+                table-layout: fixed;
+            }
+
+            .infinitivsaetze-no-zu .inf-table td {
+                padding: 14px 16px;
+                border-bottom: 1px solid var(--inf-line);
+                vertical-align: top;
+                line-height: 1.18;
+            }
+
+            .infinitivsaetze-no-zu .inf-table td + td {
+                border-left: 1px solid var(--inf-line);
+            }
+
+            .infinitivsaetze-no-zu .inf-left {
+                width: 40%;
+            }
+
+            .infinitivsaetze-no-zu .inf-right p {
+                margin: 0 0 12px;
+            }
+
+            .infinitivsaetze-no-zu .inf-right p:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 1200px) {
+                .infinitivsaetze-no-zu .inf-table td {
+                    padding: 10px 10px;
+                }
+
+                .infinitivsaetze-no-zu .theory-text,
+                .infinitivsaetze-no-zu .inf-table td {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .infinitivsaetze-no-zu .inf-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .infinitivsaetze-no-zu .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.infinitivsaetze-compare {
+                --inf-line: var(--theory-line-color);
+            }
+
+            .infinitivsaetze-compare .inf-lead,
+            .infinitivsaetze-compare .inf-front {
+                line-height: 1.26;
+            }
+
+            .infinitivsaetze-compare .inf-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 18px;
+                table-layout: fixed;
+            }
+
+            .infinitivsaetze-compare .inf-table td,
+            .infinitivsaetze-compare .inf-table th {
+                padding: 12px 14px;
+                border-bottom: 1px solid var(--inf-line);
+                vertical-align: top;
+                line-height: 1.18;
+            }
+
+            .infinitivsaetze-compare .inf-table td + td,
+            .infinitivsaetze-compare .inf-table th + th {
+                border-left: 1px solid var(--inf-line);
+            }
+
+            .infinitivsaetze-compare .inf-head {
+                text-align: center;
+                font-weight: 700;
+            }
+
+            @media (max-width: 1200px) {
+                .infinitivsaetze-compare .inf-table td,
+                .infinitivsaetze-compare .inf-table th {
+                    padding: 10px 10px;
+                }
+
+                .infinitivsaetze-compare .theory-text,
+                .infinitivsaetze-compare .inf-lead,
+                .infinitivsaetze-compare .inf-front,
+                .infinitivsaetze-compare .inf-table td,
+                .infinitivsaetze-compare .inf-table th {
+                    font-size: 0.94rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .infinitivsaetze-compare .inf-table td,
+                .infinitivsaetze-compare .inf-table th {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .infinitivsaetze-compare .theory-text,
+                .infinitivsaetze-compare .inf-lead,
+                .infinitivsaetze-compare .inf-front {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.n-deklination-intro {
+                --n-line: var(--theory-line-color);
+                --n-blue: var(--theory-accent-violet);
+            }
+
+            .n-deklination-intro .n-title {
+                color: var(--n-blue);
+            }
+
+            .n-deklination-intro .n-example {
+                margin: 6px 0;
+                line-height: 1.24;
+            }
+
+            .n-deklination-intro .n-note {
+                margin: 18px 0 16px;
+                line-height: 1.28;
+            }
+
+            .n-deklination-intro .n-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 8px;
+            }
+
+            .n-deklination-intro .n-table td {
+                padding: 10px 20px;
+                border-bottom: 1px solid var(--n-line);
+                vertical-align: middle;
+            }
+
+            .n-deklination-intro .n-table td + td {
+                border-left: 1px solid var(--n-line);
+            }
+
+            .n-deklination-intro .n-case {
+                width: 32%;
+                white-space: nowrap;
+            }
+
+            @media (max-width: 1200px) {
+                .n-deklination-intro .n-table td {
+                    padding: 9px 12px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .n-deklination-intro .n-table td {
+                    padding: 8px 6px;
+                    font-size: 0.82rem;
+                }
+
+                .n-deklination-intro .n-case {
+                    width: 28%;
+                    white-space: normal;
+                }
+
+                .n-deklination-intro .n-example,
+                .n-deklination-intro .n-note {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+
+.n-deklination-groups {
+                --n-line: var(--theory-line-color);
+            }
+
+            .n-deklination-groups .n-title {
+                color: var(--theory-accent-red);
+                text-align: left;
+            }
+
+            .n-deklination-groups .n-groups-table {
+                width: 1120px;
+                min-width: 1120px;
+                border-collapse: collapse;
+                margin-top: 18px;
+                table-layout: fixed;
+            }
+
+            .n-deklination-groups .n-groups-table td {
+                padding: 12px 18px;
+                border-bottom: 1px solid var(--n-line);
+                vertical-align: top;
+                line-height: 1.22;
+            }
+
+            .n-deklination-groups .n-groups-table td + td {
+                border-left: 1px solid var(--n-line);
+            }
+
+            .n-deklination-groups .n-group-num {
+                width: 14%;
+                text-align: center;
+                font-weight: 700;
+                white-space: nowrap;
+            }
+
+            .n-deklination-groups .n-group-desc {
+                width: 56%;
+            }
+
+            .n-deklination-groups .n-group-end {
+                width: 30%;
+            }
+
+            @media (max-width: 1200px) {
+                .n-deklination-groups .n-groups-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .n-deklination-groups .n-groups-table td {
+                    padding: 10px 10px;
+                    font-size: 0.94rem;
+                    line-height: 1.2;
+                }
+
+                .n-deklination-groups .n-group-num {
+                    width: 16%;
+                }
+
+                .n-deklination-groups .n-group-desc {
+                    width: 54%;
+                }
+
+                .n-deklination-groups .n-group-end {
+                    width: 30%;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .n-deklination-groups .n-groups-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .n-deklination-groups .n-groups-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .n-deklination-groups .n-group-num {
+                    width: 18%;
+                    white-space: normal;
+                }
+
+                .n-deklination-groups .n-group-desc {
+                    width: 50%;
+                }
+
+                .n-deklination-groups .n-group-end {
+                    width: 32%;
+                }
+            }
+
+.passiv-praesens-intro {
+                --passiv-line: var(--theory-line-color);
+                --passiv-blue: var(--theory-accent-violet);
+                --passiv-red: var(--theory-accent-red);
+                --passiv-yellow: var(--theory-accent-yellow);
+            }
+
+            .passiv-praesens-intro .passiv-lead {
+                line-height: 1.32;
+            }
+
+            .passiv-praesens-intro .passiv-lead .theory-list {
+                margin-top: 6px;
+                margin-bottom: 14px;
+            }
+
+            .passiv-praesens-intro .passiv-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 18px 0 18px;
+                border-top: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-cell {
+                padding: 12px 18px 10px;
+                border-bottom: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-cell:nth-child(odd) {
+                border-right: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-intro .passiv-label {
+                margin: 0 0 4px;
+                font-size: 0.96em;
+                line-height: 1.1;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-intro .passiv-label--blue {
+                color: var(--passiv-blue);
+            }
+
+            .passiv-praesens-intro .passiv-label--red {
+                color: var(--passiv-red);
+            }
+
+            .passiv-praesens-intro .passiv-label--yellow {
+                color: var(--passiv-yellow);
+            }
+
+            .passiv-praesens-intro .passiv-example {
+                margin: 0;
+                line-height: 1.18;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-intro .passiv-cell {
+                    padding: 10px 14px 9px;
+                }
+
+                .passiv-praesens-intro .passiv-label {
+                    font-size: 0.92em;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-intro .passiv-grid {
+                    grid-template-columns: 1fr;
+                    margin-top: 14px;
+                }
+
+                .passiv-praesens-intro .passiv-cell {
+                    padding: 9px 8px 8px;
+                }
+
+                .passiv-praesens-intro .passiv-cell:nth-child(odd) {
+                    border-right: none;
+                }
+
+                .passiv-praesens-intro .passiv-label {
+                    font-size: 0.84em;
+                }
+
+                .passiv-praesens-intro .passiv-example,
+                .passiv-praesens-intro .passiv-lead,
+                .passiv-praesens-intro .theory-text {
+                    font-size: 0.84rem;
+                    line-height: 1.25;
+                }
+            }
+
+.passiv-praesens-forms {
+                --passiv-line: var(--theory-line-color);
+            }
+
+            .passiv-praesens-forms .passiv-intro {
+                max-width: 1120px;
+                margin: 0 auto 14px;
+                line-height: 1.35;
+            }
+
+            .passiv-praesens-forms .passiv-compare-table,
+            .passiv-praesens-forms .passiv-pronouns-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .passiv-praesens-forms .passiv-compare-table td,
+            .passiv-praesens-forms .passiv-compare-table th,
+            .passiv-praesens-forms .passiv-pronouns-table td {
+                border-bottom: 1px solid var(--passiv-line);
+                padding: 10px 16px;
+                vertical-align: middle;
+            }
+
+            .passiv-praesens-forms .passiv-compare-table td + td,
+            .passiv-praesens-forms .passiv-pronouns-table td + td {
+                border-left: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-forms .passiv-head {
+                text-align: center;
+                font-size: 0.98em;
+                line-height: 1.12;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-forms .passiv-section-title {
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.08em;
+            }
+
+            .passiv-praesens-forms .passiv-formula {
+                text-align: center;
+                font-size: 1em;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-forms .passiv-example {
+                line-height: 1.14;
+            }
+
+            .passiv-praesens-forms .passiv-pronouns-table td {
+                font-size: 0.98em;
+                line-height: 1.18;
+                white-space: nowrap;
+            }
+
+            .passiv-praesens-forms .passiv-note {
+                max-width: 1120px;
+                margin: 18px auto 10px;
+                line-height: 1.35;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-forms .passiv-compare-table,
+                .passiv-praesens-forms .passiv-pronouns-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-forms .passiv-compare-table td,
+                .passiv-praesens-forms .passiv-compare-table th,
+                .passiv-praesens-forms .passiv-pronouns-table td {
+                    padding: 9px 10px;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-forms .passiv-head {
+                    font-size: 0.92em;
+                }
+
+                .passiv-praesens-forms .passiv-pronouns-table td,
+                .passiv-praesens-forms .passiv-note,
+                .passiv-praesens-forms .passiv-intro {
+                    font-size: 0.96rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-forms .passiv-compare-table,
+                .passiv-praesens-forms .passiv-pronouns-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-forms .passiv-compare-table td,
+                .passiv-praesens-forms .passiv-compare-table th,
+                .passiv-praesens-forms .passiv-pronouns-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-forms .passiv-head {
+                    font-size: 0.86em;
+                }
+
+                .passiv-praesens-forms .passiv-section-title {
+                    font-size: 1em;
+                }
+
+                .passiv-praesens-forms .passiv-formula,
+                .passiv-praesens-forms .passiv-note,
+                .passiv-praesens-forms .passiv-intro {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.passiv-praesens-prepositions {
+                --passiv-line: var(--theory-line-color);
+            }
+
+            .passiv-praesens-prepositions .passiv-intro {
+                max-width: 1140px;
+                margin: 0 auto 14px;
+                line-height: 1.35;
+            }
+
+            .passiv-praesens-prepositions .passiv-prep-table {
+                width: 1080px;
+                min-width: 1080px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .passiv-praesens-prepositions .passiv-prep-table td {
+                border-bottom: 1px solid var(--passiv-line);
+                padding: 14px 16px;
+                vertical-align: middle;
+            }
+
+            .passiv-praesens-prepositions .passiv-prep-table td + td {
+                border-left: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-prepositions .passiv-prep {
+                text-align: center;
+                font-size: 1.04em;
+                line-height: 1.12;
+                font-weight: 700;
+            }
+
+            .passiv-praesens-prepositions .passiv-desc {
+                text-align: center;
+                line-height: 1.18;
+            }
+
+            .passiv-praesens-prepositions .passiv-examples {
+                line-height: 1.2;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-prepositions .passiv-prep-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-prepositions .passiv-prep-table td {
+                    padding: 10px 10px;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-prepositions .passiv-intro,
+                .passiv-praesens-prepositions .passiv-examples,
+                .passiv-praesens-prepositions .passiv-desc {
+                    font-size: 0.96rem;
+                }
+
+                .passiv-praesens-prepositions .passiv-prep {
+                    font-size: 0.96em;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-prepositions .passiv-prep-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-prepositions .passiv-prep-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-prepositions .passiv-intro,
+                .passiv-praesens-prepositions .passiv-examples,
+                .passiv-praesens-prepositions .passiv-desc {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.passiv-praesens-modals {
+                --passiv-line: var(--theory-line-color);
+            }
+
+            .passiv-praesens-modals .passiv-intro,
+            .passiv-praesens-modals .passiv-note {
+                max-width: 1140px;
+                margin: 0 auto 16px;
+                line-height: 1.35;
+            }
+
+            .passiv-praesens-modals .passiv-modal-table {
+                width: 1080px;
+                min-width: 1080px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .passiv-praesens-modals .passiv-modal-table td {
+                border-bottom: 1px solid var(--passiv-line);
+                padding: 10px 16px;
+                vertical-align: middle;
+            }
+
+            .passiv-praesens-modals .passiv-modal-table td + td {
+                border-left: 1px solid var(--passiv-line);
+            }
+
+            .passiv-praesens-modals .passiv-modal-verb {
+                width: 210px;
+                font-weight: 700;
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            .passiv-praesens-modals .passiv-modal-example {
+                line-height: 1.2;
+            }
+
+            @media (max-width: 1200px) {
+                .passiv-praesens-modals .passiv-modal-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-modals .passiv-modal-table td {
+                    padding: 9px 10px;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-modals .passiv-intro,
+                .passiv-praesens-modals .passiv-note,
+                .passiv-praesens-modals .passiv-modal-example,
+                .passiv-praesens-modals .passiv-modal-verb {
+                    font-size: 0.96rem;
+                }
+
+                .passiv-praesens-modals .passiv-modal-verb {
+                    width: 150px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .passiv-praesens-modals .passiv-modal-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .passiv-praesens-modals .passiv-modal-table td {
+                    padding: 8px 6px;
+                    font-size: 0.8rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .passiv-praesens-modals .passiv-intro,
+                .passiv-praesens-modals .passiv-note,
+                .passiv-praesens-modals .passiv-modal-example,
+                .passiv-praesens-modals .passiv-modal-verb {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+
+                .passiv-praesens-modals .passiv-modal-verb {
+                    width: 120px;
+                }
+            }
+
+.plusquamperfekt-card {
+                --plusquam-line: var(--theory-line-color);
+                --plusquam-violet: var(--theory-accent-violet);
+                --plusquam-yellow: var(--theory-accent-yellow);
+                --plusquam-red: var(--theory-accent-red);
+                --plusquam-blue: var(--theory-accent-blue);
+            }
+
+            .plusquamperfekt-card .plusquam-grid {
+                display: grid;
+                grid-template-columns: 22% 78%;
+                gap: 0 18px;
+                margin-top: 18px;
+            }
+
+            .plusquamperfekt-card .plusquam-label {
+                margin: 0;
+                font-weight: 500;
+                line-height: 1.16;
+            }
+
+            .plusquamperfekt-card .plusquam-example {
+                margin: 0;
+                line-height: 1.16;
+            }
+
+            .plusquamperfekt-card .plusquam-blue {
+                color: var(--plusquam-blue);
+                font-weight: 700;
+            }
+
+            .plusquamperfekt-card .plusquam-divider {
+                grid-column: 1 / -1;
+                height: 18px;
+            }
+
+            @media (max-width: 1200px) {
+                .plusquamperfekt-card .plusquam-grid {
+                    grid-template-columns: 24% 76%;
+                    gap: 0 14px;
+                    margin-top: 14px;
+                }
+
+                .plusquamperfekt-card .plusquam-label,
+                .plusquamperfekt-card .plusquam-example,
+                .plusquamperfekt-card .theory-text {
+                    font-size: 0.9rem;
+                    line-height: 1.22;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .plusquamperfekt-card .plusquam-grid {
+                    grid-template-columns: 1fr;
+                    gap: 6px 0;
+                    margin-top: 10px;
+                }
+
+                .plusquamperfekt-card .plusquam-divider {
+                    height: 8px;
+                }
+
+                .plusquamperfekt-card .plusquam-label,
+                .plusquamperfekt-card .plusquam-example,
+                .plusquamperfekt-card .theory-text {
+                    font-size: 0.82rem;
+                    line-height: 1.24;
+                }
+            }
+
+.steigerung-sheet {
+                --steigerung-line: var(--theory-line-color);
+                --steigerung-violet: var(--theory-accent-violet);
+                --steigerung-yellow: var(--theory-accent-yellow);
+                --steigerung-red: var(--theory-accent-red);
+                --steigerung-green: var(--theory-accent-green);
+            }
+
+            .steigerung-sheet .steigerung-arrows {
+                max-width: 1040px;
+                margin: 0 auto 14px;
+            }
+
+            .steigerung-sheet .steigerung-wide {
+                min-width: 1040px;
+                margin: 0 auto;
+            }
+
+            .steigerung-sheet .steigerung-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .steigerung-sheet .steigerung-table th,
+            .steigerung-sheet .steigerung-table td {
+                border-bottom: 1px solid var(--steigerung-line);
+                padding: 12px 10px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .steigerung-sheet .steigerung-table thead th {
+                font-size: var(--desktop-modal-header-font-size);
+                font-weight: 700;
+                padding-top: 0;
+                padding-bottom: 10px;
+            }
+
+            .steigerung-sheet .steigerung-table .formula-row td {
+                font-size: 0.95em;
+                line-height: 1.25;
+            }
+
+            .steigerung-sheet .steigerung-table .word-row td {
+                font-size: var(--desktop-modal-font-size);
+                white-space: nowrap;
+            }
+
+            .steigerung-sheet .steigerung-dash {
+                width: 56px;
+            }
+
+            .steigerung-sheet .steigerung-note {
+                max-width: 1120px;
+                margin: 18px auto 12px;
+                text-align: center;
+                line-height: 1.35;
+            }
+
+            .steigerung-sheet .steigerung-footnote {
+                max-width: 1100px;
+                margin: 18px auto 0;
+                text-align: center;
+                line-height: 1.3;
+            }
+
+            @media (max-width: 1200px) {
+                .steigerung-sheet .theory-title {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+
+                .steigerung-sheet .steigerung-arrows {
+                    max-width: 760px;
+                    margin-bottom: 10px;
+                }
+
+                .steigerung-sheet .steigerung-wide,
+                .steigerung-sheet .steigerung-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-sheet .steigerung-table th,
+                .steigerung-sheet .steigerung-table td {
+                    padding: 9px 6px;
+                }
+
+                .steigerung-sheet .steigerung-table thead th {
+                    font-size: 1.6rem;
+                }
+
+                .steigerung-sheet .steigerung-table .formula-row td {
+                    font-size: 0.92rem;
+                }
+
+                .steigerung-sheet .steigerung-table .word-row td {
+                    font-size: 1.05rem;
+                    white-space: normal;
+                }
+
+                .steigerung-sheet .steigerung-note,
+                .steigerung-sheet .steigerung-footnote {
+                    font-size: 0.95rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .steigerung-sheet .theory-title {
+                    font-size: 1.45rem;
+                    margin-bottom: 8px;
+                }
+
+                .steigerung-sheet .steigerung-arrows {
+                    max-width: 100%;
+                    margin-bottom: 6px;
+                }
+
+                .steigerung-sheet .steigerung-wide,
+                .steigerung-sheet .steigerung-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-sheet .steigerung-table th,
+                .steigerung-sheet .steigerung-table td {
+                    padding: 8px 4px;
+                }
+
+                .steigerung-sheet .steigerung-table thead th {
+                    font-size: 0.92rem;
+                }
+
+                .steigerung-sheet .steigerung-table .formula-row td {
+                    font-size: 0.72rem;
+                    line-height: 1.2;
+                }
+
+                .steigerung-sheet .steigerung-table .word-row td {
+                    font-size: 0.82rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .steigerung-sheet .steigerung-note,
+                .steigerung-sheet .steigerung-footnote {
+                    font-size: 0.8rem;
+                    line-height: 1.25;
+                    margin-top: 12px;
+                }
+            }
+
+.steigerung-special {
+                --steigerung-violet: var(--theory-accent-violet);
+                --steigerung-yellow: var(--theory-accent-yellow);
+                --steigerung-red: var(--theory-accent-red);
+                --steigerung-green: var(--theory-accent-green);
+            }
+
+            .steigerung-special .steigerung-special-table {
+                width: 900px;
+                min-width: 900px;
+                margin: 0 auto;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .steigerung-special .steigerung-special-table td {
+                padding: 6px 10px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .steigerung-special .steigerung-main-row td {
+                font-size: var(--desktop-modal-font-size);
+                white-space: nowrap;
+            }
+
+            .steigerung-special .steigerung-translation-row td {
+                font-size: 0.95em;
+                font-style: italic;
+                color: var(--theory-text-color);
+                padding-top: 0;
+                padding-bottom: 18px;
+            }
+
+            .steigerung-special .steigerung-note {
+                max-width: 1120px;
+                margin: 18px auto 0;
+                line-height: 1.35;
+            }
+
+            @media (max-width: 1200px) {
+                .steigerung-special .theory-title {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                }
+
+                .steigerung-special .steigerung-special-table {
+                    width: 760px;
+                    min-width: 760px;
+                }
+
+                .steigerung-special .steigerung-main-row td {
+                    font-size: 1.2rem;
+                }
+
+                .steigerung-special .steigerung-translation-row td,
+                .steigerung-special .steigerung-note {
+                    font-size: 1rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .steigerung-special .theory-title {
+                    font-size: 1.45rem;
+                    margin-bottom: 8px;
+                }
+
+                .steigerung-special .steigerung-special-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-special .steigerung-special-table td {
+                    padding: 4px 4px;
+                }
+
+                .steigerung-special .steigerung-main-row td {
+                    font-size: 0.84rem;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .steigerung-special .steigerung-translation-row td {
+                    font-size: 0.72rem;
+                    padding-bottom: 12px;
+                }
+
+                .steigerung-special .steigerung-note {
+                    font-size: 0.82rem;
+                    line-height: 1.25;
+                    margin-top: 12px;
+                }
+            }
+
+.steigerung-usage {
+                --steigerung-line: var(--theory-line-color);
+            }
+
+            .steigerung-usage .steigerung-intro {
+                max-width: 1120px;
+                margin: 0 auto;
+                line-height: 1.35;
+            }
+
+            .steigerung-usage .steigerung-usage-table {
+                width: 1040px;
+                min-width: 1040px;
+                margin: 20px auto 0;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .steigerung-usage .steigerung-usage-table th,
+            .steigerung-usage .steigerung-usage-table td {
+                border-bottom: 1px solid var(--steigerung-line);
+                padding: 12px 14px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+
+            .steigerung-usage .steigerung-usage-table thead th {
+                font-size: var(--desktop-modal-header-font-size);
+                font-weight: 700;
+                padding-top: 0;
+                padding-bottom: 10px;
+            }
+
+            .steigerung-usage .steigerung-note {
+                max-width: 1120px;
+                margin: 18px auto 0;
+                line-height: 1.35;
+            }
+
+            @media (max-width: 1200px) {
+                .steigerung-usage .steigerung-intro,
+                .steigerung-usage .steigerung-note,
+                .steigerung-usage .theory-list li {
+                    font-size: 1rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-usage .steigerung-usage-table thead th {
+                    font-size: 1.15rem;
+                    line-height: 1.15;
+                }
+
+                .steigerung-usage .steigerung-usage-table th,
+                .steigerung-usage .steigerung-usage-table td {
+                    padding: 9px 8px;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                    font-size: 0.95rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .steigerung-usage .steigerung-intro,
+                .steigerung-usage .steigerung-note,
+                .steigerung-usage .theory-list li {
+                    font-size: 0.82rem;
+                    line-height: 1.25;
+                }
+
+                .steigerung-usage .steigerung-usage-table {
+                    width: 100%;
+                    min-width: 0;
+                }
+
+                .steigerung-usage .steigerung-usage-table thead th {
+                    font-size: 0.95rem;
+                }
+
+                .steigerung-usage .steigerung-usage-table th,
+                .steigerung-usage .steigerung-usage-table td {
+                    padding: 8px 6px;
+                    white-space: normal;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                    font-size: 0.8rem;
+                }
+            }
+
+.welch-card-intro {
+                --welch-line: var(--theory-line-color);
+            }
+
+            .welch-card-intro .welch-lead {
+                line-height: 1.34;
+            }
+
+            .welch-card-intro .welch-question-line {
+                margin: 4px 0;
+                line-height: 1.2;
+            }
+
+            .welch-card-intro .welch-compare-grid {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                gap: 18px 22px;
+                margin: 16px 0 18px;
+                align-items: start;
+            }
+
+            .welch-card-intro .welch-compare-label {
+                line-height: 1.18;
+            }
+
+            .welch-card-intro .welch-compare-example {
+                line-height: 1.22;
+            }
+
+            .welch-card-intro .welch-remember p {
+                margin: 8px 0;
+                line-height: 1.28;
+            }
+
+            @media (max-width: 1200px) {
+                .welch-card-intro .welch-compare-grid {
+                    grid-template-columns: 28% 72%;
+                    gap: 16px 18px;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .welch-card-intro .welch-compare-grid {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                }
+
+                .welch-card-intro .welch-question-line,
+                .welch-card-intro .welch-compare-label,
+                .welch-card-intro .welch-compare-example,
+                .welch-card-intro .welch-remember p,
+                .welch-card-intro .welch-lead {
+                    font-size: 0.84rem;
+                    line-height: 1.24;
+                }
+            }
+
+.welch-card-tables {
+                --welch-line: var(--theory-line-color);
+            }
+
+            .welch-card-tables .welch-block-title {
+                text-align: center;
+                line-height: 1.2;
+                margin: 0 auto 12px;
+                max-width: 1120px;
+            }
+
+            .welch-card-tables .welch-table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: fixed;
+                margin-top: 10px;
+            }
+
+            .welch-card-tables .welch-table th,
+            .welch-card-tables .welch-table td {
+                padding: 10px 12px;
+                border-bottom: 1px solid var(--welch-line);
+                border-right: 1px solid var(--welch-line);
+                text-align: center;
+                vertical-align: middle;
+                line-height: 1.16;
+            }
+
+            .welch-card-tables .welch-table th:last-child,
+            .welch-card-tables .welch-table td:last-child {
+                border-right: none;
+            }
+
+            .welch-card-tables .welch-table tbody tr:last-child td,
+            .welch-card-tables .welch-table tbody tr:last-child th {
+                border-bottom: none;
+            }
+
+            .welch-card-tables .welch-spacer {
+                height: 22px;
+            }
+
+            @media (max-width: 1200px) {
+                .welch-card-tables .welch-table th,
+                .welch-card-tables .welch-table td {
+                    padding: 9px 8px;
+                    font-size: 0.96rem;
+                }
+
+                .welch-card-tables .welch-block-title {
+                    font-size: 1rem;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .welch-card-tables .welch-table th,
+                .welch-card-tables .welch-table td {
+                    padding: 7px 5px;
+                    font-size: 0.76rem;
+                    overflow-wrap: anywhere;
+                    word-break: break-word;
+                }
+
+                .welch-card-tables .welch-block-title {
+                    font-size: 0.82rem;
+                    line-height: 1.22;
+                }
+
+                .welch-card-tables .welch-spacer {
+                    height: 16px;
+                }
+            }
+
+.idp-card {
+      --idp-line: var(--theory-line-color);
+    }
+
+    .idp-card .idp-intro {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card .idp-grid {
+      border-top: 1px solid var(--idp-line);
+    }
+
+    .idp-card .idp-row {
+      display: grid;
+      grid-template-columns: minmax(90px, 120px) minmax(260px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+    }
+
+    .idp-card .idp-row > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card .idp-pronoun {
+      font-weight: 700;
+      font-size: 1.25em;
+      line-height: 1.05;
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+
+    .idp-card .idp-rule {
+      line-height: 1.26;
+    }
+
+    .idp-card .idp-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card .idp-de {
+      display: block;
+    }
+
+    .idp-card .idp-tr {
+      display: block;
+      margin-top: 2px;
+      font-style: italic;
+      color: var(--theory-muted-color);
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card .idp-row {
+        grid-template-columns: minmax(86px, 110px) 1fr;
+        grid-template-areas:
+          "pron rule"
+          "pron examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card .idp-row > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card .idp-pronoun {
+        grid-area: pron;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card .idp-rule {
+        grid-area: rule;
+      }
+
+      .idp-card .idp-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card .idp-row {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "pron"
+          "rule"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card .idp-pronoun {
+        border-right: none;
+        padding-right: 0;
+        font-size: 1.18em;
+      }
+
+      .idp-card .idp-tr {
+        font-style: normal;
+      }
+    }
+
+.idp-card--slide2 {
+      --idp-line: var(--theory-line-color);
+    }
+
+    .idp-card--slide2 .idp-lead {
+      margin: 0 0 14px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-poss-grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 240px) minmax(280px, 1fr) minmax(340px, 1.2fr);
+      gap: 18px 22px;
+      padding: 14px 0 16px;
+      border-top: 1px solid var(--idp-line);
+      border-bottom: 1px solid var(--idp-line);
+      align-items: start;
+      margin: 14px 0 16px;
+    }
+
+    .idp-card--slide2 .idp-poss-grid > * + * {
+      border-left: 1px solid var(--idp-line);
+      padding-left: 22px;
+    }
+
+    .idp-card--slide2 .idp-poss-left {
+      font-weight: 700;
+      line-height: 1.18;
+    }
+
+    .idp-card--slide2 .idp-poss-desc {
+      line-height: 1.26;
+    }
+
+    .idp-card--slide2 .idp-poss-examples {
+      line-height: 1.22;
+    }
+
+    .idp-card--slide2 .idp-ex {
+      margin: 0 0 12px;
+    }
+
+    .idp-card--slide2 .idp-ex:last-child {
+      margin-bottom: 0;
+    }
+
+    .idp-card--slide2 .idp-tr {
+      display: block;
+      margin-top: 2px;
+      font-style: italic;
+      color: var(--theory-muted-color);
+    }
+
+    .idp-card--slide2 .idp-note {
+      margin: 0 0 16px;
+      line-height: 1.32;
+    }
+
+    .idp-card--slide2 .idp-table-title {
+      text-align: center;
+      margin: 10px 0 10px;
+      font-weight: 800;
+    }
+
+    .idp-card--slide2 .idp-decl {
+      margin-top: 6px;
+    }
+
+    .idp-card--slide2 .idp-table th,
+    .idp-card--slide2 .idp-table td {
+      text-align: center;
+      border-bottom: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th + th,
+    .idp-card--slide2 .idp-table td + td {
+      border-left: 1px solid var(--idp-line);
+    }
+
+    .idp-card--slide2 .idp-table th:first-child,
+    .idp-card--slide2 .idp-table td:first-child {
+      text-align: left;
+      white-space: nowrap;
+      padding-left: 8px;
+      padding-right: 10px;
+    }
+
+    @media (max-width: 1200px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: minmax(170px, 220px) 1fr;
+        grid-template-areas:
+          "left desc"
+          "left examples";
+        gap: 12px 16px;
+      }
+
+      .idp-card--slide2 .idp-poss-grid > * + * {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        grid-area: left;
+        padding-right: 12px;
+        border-right: 1px solid var(--idp-line);
+      }
+
+      .idp-card--slide2 .idp-poss-desc {
+        grid-area: desc;
+      }
+
+      .idp-card--slide2 .idp-poss-examples {
+        grid-area: examples;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .idp-card--slide2 .idp-poss-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "left"
+          "desc"
+          "examples";
+        gap: 10px;
+      }
+
+      .idp-card--slide2 .idp-poss-left {
+        border-right: none;
+        padding-right: 0;
+      }
+
+      .idp-card--slide2 .idp-tr {
+        font-style: normal;
+      }
+    }
+
+/* ===== Passiv Vergangenheit ===== */
+
+.passiv-vergangenheit .passiv-compare-table {
+  width: 1080px;
+  min-width: 1080px;
+}
+
+.passiv-vergangenheit .passiv-section-title {
+  font-size: 1.12em;
+}
+
+.passiv-vergangenheit .passiv-formula {
+  line-height: 1.18;
+}
+
+.passiv-vergangenheit .passiv-example {
+  line-height: 1.18;
+}
+
+.passiv-vergangenheit-replacements {
+  --pv-line: var(--theory-line-color);
+}
+
+.passiv-vergangenheit-replacements .pv-lead {
+  max-width: 1120px;
+  margin: 0 auto 16px;
+  line-height: 1.34;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table {
+  width: 1080px;
+  min-width: 1080px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table th,
+.passiv-vergangenheit-replacements .pv-replacement-table td {
+  padding: 10px 16px;
+  vertical-align: top;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table th {
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table td p {
+  margin: 0;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table td p + p {
+  margin-top: 18px;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-kind {
+  line-height: 1.2;
+}
+
+.passiv-vergangenheit-replacements .pv-kind-note {
+  font-style: italic;
+}
+
+.passiv-vergangenheit-replacements .pv-replacement-table--compact td p + p {
+  margin-top: 16px;
+}
+
+.passiv-vergangenheit-summary .pv-summary-title {
+  margin: 24px 0 12px;
+  font-size: 1.08em;
+  font-weight: 700;
+}
+
+.passiv-vergangenheit-summary .pv-summary-grid {
+  display: grid;
+  grid-template-columns: 8% 24% 68%;
+  gap: 12px 16px;
+  align-items: start;
+  width: 1080px;
+  min-width: 1080px;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+
+.passiv-vergangenheit-summary .pv-summary-label {
+  grid-column: 1 / 3;
+  font-weight: 400;
+}
+
+.passiv-vergangenheit-summary .pv-summary-label--passiv {
+  color: var(--theory-accent-red);
+  font-weight: 700;
+}
+
+.passiv-vergangenheit-summary .pv-summary-side {
+  grid-row: span 4;
+  align-self: center;
+  justify-self: center;
+  color: var(--theory-accent-violet);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.passiv-vergangenheit-summary .pv-summary-replacer {
+  font-weight: 400;
+}
+
+.passiv-vergangenheit-summary .pv-summary-example {
+  line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+  .passiv-vergangenheit .passiv-compare-table,
+  .passiv-vergangenheit-replacements .pv-replacement-table,
+  .passiv-vergangenheit-summary .pv-summary-grid {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .passiv-vergangenheit-replacements .pv-replacement-table th,
+  .passiv-vergangenheit-replacements .pv-replacement-table td {
+    padding: 9px 10px;
+    font-size: 0.94rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-grid,
+  .passiv-vergangenheit-replacements .pv-lead,
+  .passiv-vergangenheit .passiv-example,
+  .passiv-vergangenheit .passiv-formula {
+    font-size: 0.94rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .passiv-vergangenheit .passiv-compare-table,
+  .passiv-vergangenheit-replacements .pv-replacement-table,
+  .passiv-vergangenheit-summary .pv-summary-grid {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .passiv-vergangenheit .passiv-section-title {
+    font-size: 0.7rem;
+  }
+
+  .passiv-vergangenheit .passiv-compare-table {
+    table-layout: fixed;
+  }
+
+  .passiv-vergangenheit .passiv-compare-table td,
+  .passiv-vergangenheit .passiv-compare-table th {
+    padding: 5px 4px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .passiv-vergangenheit .passiv-head {
+    font-size: 0.62rem;
+    line-height: 1.16;
+  }
+
+  .passiv-vergangenheit-replacements .pv-replacement-table th,
+  .passiv-vergangenheit-replacements .pv-replacement-table td {
+    padding: 5px 4px;
+    font-size: 0.58rem;
+    line-height: 1.18;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .passiv-vergangenheit-replacements .pv-lead,
+  .passiv-vergangenheit .passiv-intro,
+  .passiv-vergangenheit .passiv-note,
+  .passiv-vergangenheit .passiv-example,
+  .passiv-vergangenheit .passiv-formula {
+    font-size: 0.62rem;
+    line-height: 1.18;
+  }
+
+  .passiv-vergangenheit-replacements .pv-lead {
+    margin-bottom: 8px;
+  }
+
+  .passiv-vergangenheit-replacements .pv-replacement-table td p + p,
+  .passiv-vergangenheit-replacements .pv-replacement-table--compact td p + p {
+    margin-top: 8px;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-title {
+    margin: 10px 0 6px;
+    font-size: 0.76rem;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    font-size: 0.62rem;
+    line-height: 1.18;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-label,
+  .passiv-vergangenheit-summary .pv-summary-side,
+  .passiv-vergangenheit-summary .pv-summary-replacer,
+  .passiv-vergangenheit-summary .pv-summary-example {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-side {
+    justify-self: stretch;
+    writing-mode: horizontal-tb;
+    transform: none;
+    text-align: center;
+    padding-top: 4px;
+    border-top: 1px solid var(--pv-line);
+  }
+
+  .passiv-vergangenheit-summary .pv-summary-replacer {
+    color: var(--theory-accent-yellow);
+    font-weight: 700;
+  }
+}
+
+/* ===== Das Verb brauchen ===== */
+
+.brauchen-card {
+  --brauchen-line: var(--theory-line-color);
+  --brauchen-table-width: min(1160px, 100%);
+}
+
+.brauchen-card .brauchen-lead,
+.brauchen-card .brauchen-examples,
+.brauchen-card .brauchen-note {
+  line-height: 1.28;
+}
+
+.brauchen-card .brauchen-lead {
+  margin: 0 0 18px;
+}
+
+.brauchen-card .brauchen-examples {
+  margin: 18px 0 22px;
+}
+
+.brauchen-card .brauchen-examples p {
+  margin: 0;
+}
+
+.brauchen-card .brauchen-table {
+  width: var(--brauchen-table-width);
+  min-width: var(--brauchen-table-width);
+  margin: 8px auto 20px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.brauchen-card .brauchen-table__meaning-col {
+  width: 17%;
+}
+
+.brauchen-card .brauchen-table__equivalent-col {
+  width: 16%;
+}
+
+.brauchen-card .brauchen-table th,
+.brauchen-card .brauchen-table td {
+  padding: 8px 14px;
+  border-top: 1px solid var(--brauchen-line);
+  vertical-align: middle;
+  text-align: left;
+  line-height: 1.18;
+}
+
+.brauchen-card .brauchen-table th + td,
+.brauchen-card .brauchen-table td + td {
+  border-left: 1px solid var(--brauchen-line);
+}
+
+.brauchen-card .brauchen-table tr:not(:has(.brauchen-side-label)) > td:first-child {
+  border-left: 1px solid var(--brauchen-line);
+}
+
+.brauchen-card .brauchen-side-label {
+  color: var(--theory-strong-text-color);
+  font-weight: 400;
+  text-align: left !important;
+  vertical-align: top !important;
+  letter-spacing: 0;
+}
+
+.brauchen-card .brauchen-equivalent {
+  font-weight: 700;
+  color: var(--theory-strong-text-color);
+}
+
+.brauchen-card .brauchen-note {
+  margin-top: 18px;
+}
+
+@media (max-width: 1200px) {
+  .brauchen-card .brauchen-table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .brauchen-card .brauchen-lead,
+  .brauchen-card .brauchen-examples,
+  .brauchen-card .brauchen-note,
+  .brauchen-card .brauchen-table th,
+  .brauchen-card .brauchen-table td {
+    font-size: 0.94rem;
+  }
+
+  .brauchen-card .brauchen-table th,
+  .brauchen-card .brauchen-table td {
+    padding: 8px 10px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 600px) {
+  .brauchen-card {
+    --brauchen-mobile-font: clamp(0.72rem, 2.8vw, 0.84rem);
+  }
+
+  .brauchen-card .brauchen-lead,
+  .brauchen-card .brauchen-examples,
+  .brauchen-card .brauchen-note {
+    margin-bottom: 10px;
+    font-size: var(--brauchen-mobile-font);
+    line-height: 1.28;
+  }
+
+  .brauchen-card .brauchen-examples {
+    margin-top: 10px;
+  }
+
+  .brauchen-card .brauchen-scroll {
+    overflow-x: visible;
+  }
+
+  .brauchen-card .brauchen-table {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin: 10px 0 14px;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .brauchen-card .brauchen-table colgroup,
+  .brauchen-card .brauchen-table tbody {
+    display: block;
+  }
+
+  .brauchen-card .brauchen-table tr {
+    display: block;
+    margin: 0 0 8px;
+    border: 1px solid var(--brauchen-line);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .brauchen-card .brauchen-table th,
+  .brauchen-card .brauchen-table td {
+    display: block;
+    width: 100%;
+    padding: 7px 9px;
+    border: 0;
+    font-size: var(--brauchen-mobile-font);
+    line-height: 1.24;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .brauchen-card .brauchen-table td + td {
+    border-top: 1px solid var(--brauchen-line);
+  }
+
+  .brauchen-card .brauchen-table th + td,
+  .brauchen-card .brauchen-table td + td,
+  .brauchen-card .brauchen-table tr:not(:has(.brauchen-side-label)) > td:first-child {
+    border-left: 0;
+  }
+
+  .brauchen-card .brauchen-side-label {
+    background: rgba(108, 92, 231, 0.1);
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: left !important;
+    vertical-align: top !important;
+  }
+
+  .brauchen-card .brauchen-equivalent {
+    display: inline-flex;
+    width: auto;
+    margin: 0 9px 8px;
+    padding: 4px 8px;
+    border: 1px solid var(--brauchen-line);
+    border-radius: 999px;
+    background: var(--theory-surface-soft);
+    font-size: 0.72rem;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 380px) {
+  .brauchen-card .brauchen-table th,
+  .brauchen-card .brauchen-table td {
+    padding: 6px 7px;
+  }
+
+  .brauchen-card .brauchen-equivalent {
+    margin-inline: 7px;
+  }
+}
+
+/* ===== B1: Substantivierte Adjektive ===== */
+
+.substantivierte-adjektive {
+  --sa-line: var(--theory-line-color);
+  --sa-table-width: 1120px;
+  color: var(--theory-text-color);
+  line-height: 1.26;
+}
+
+.substantivierte-adjektive .sa-lead,
+.substantivierte-adjektive .sa-heading,
+.substantivierte-adjektive .sa-example-block,
+.substantivierte-adjektive .sa-list,
+.substantivierte-adjektive .sa-declension-table,
+.substantivierte-adjektive .sa-neuter-table,
+.substantivierte-adjektive .sa-important {
+  font-size: var(--desktop-modal-font-size);
+}
+
+.substantivierte-adjektive .sa-lead {
+  margin: 0 0 20px;
+}
+
+.substantivierte-adjektive .sa-heading {
+  margin: 0 0 12px;
+  font-weight: 800;
+}
+
+.substantivierte-adjektive .sa-heading--accent {
+  margin-top: 28px;
+}
+
+.substantivierte-adjektive .sa-translation {
+  font-style: normal;
+}
+
+.substantivierte-adjektive .sa-example-block {
+  display: grid;
+  grid-template-columns: max-content 42px 1fr;
+  column-gap: 18px;
+  row-gap: 12px;
+  align-items: center;
+  margin: 8px 0 28px;
+  line-height: 1.18;
+}
+
+.substantivierte-adjektive .sa-source {
+  white-space: nowrap;
+}
+
+.substantivierte-adjektive .sa-arrow {
+  color: var(--theory-accent-red);
+  font-size: 1.45em;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
+
+.substantivierte-adjektive .sa-example-line {
+  white-space: normal;
+}
+
+.substantivierte-adjektive .sa-list {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding-left: 1.7em;
+}
+
+.substantivierte-adjektive .sa-list li {
+  padding-left: 12px;
+}
+
+.substantivierte-adjektive .sa-table-scroll {
+  margin: 10px 0 24px;
+}
+
+.substantivierte-adjektive .sa-declension-table,
+.substantivierte-adjektive .sa-neuter-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  line-height: 1.16;
+}
+
+.substantivierte-adjektive .sa-declension-table {
+  width: var(--sa-table-width);
+  min-width: var(--sa-table-width);
+}
+
+.substantivierte-adjektive .sa-neuter-table {
+  width: 620px;
+  min-width: 620px;
+}
+
+.substantivierte-adjektive .sa-declension-table th,
+.substantivierte-adjektive .sa-declension-table td,
+.substantivierte-adjektive .sa-neuter-table th,
+.substantivierte-adjektive .sa-neuter-table td {
+  padding: 7px 10px;
+  border-top: 1px solid var(--sa-line);
+  vertical-align: middle;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.substantivierte-adjektive .sa-declension-table th + th,
+.substantivierte-adjektive .sa-declension-table td + td,
+.substantivierte-adjektive .sa-neuter-table th + th,
+.substantivierte-adjektive .sa-neuter-table td + td {
+  border-left: 1px solid var(--sa-line);
+}
+
+.substantivierte-adjektive .sa-declension-table tbody th + td,
+.substantivierte-adjektive .sa-neuter-table tbody th + td {
+  border-left: 1px solid var(--sa-line);
+}
+
+.substantivierte-adjektive .sa-declension-table thead th,
+.substantivierte-adjektive .sa-neuter-table thead th {
+  font-weight: 800;
+  text-align: center;
+}
+
+.substantivierte-adjektive .sa-declension-table tbody th,
+.substantivierte-adjektive .sa-neuter-table tbody th {
+  color: var(--theory-strong-text-color);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.substantivierte-adjektive .sa-declension-table tbody td,
+.substantivierte-adjektive .sa-neuter-table tbody td {
+  font-weight: 400;
+}
+
+.substantivierte-adjektive .sa-case-head {
+  width: 130px;
+}
+
+.substantivierte-adjektive .sa-lead--spaced {
+  margin-top: 28px;
+}
+
+.substantivierte-adjektive .sa-lower-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.62fr) minmax(260px, 0.38fr);
+  gap: 32px 44px;
+  align-items: start;
+  margin-top: 6px;
+}
+
+.substantivierte-adjektive .sa-lower-grid .sa-table-scroll {
+  margin: 0;
+}
+
+.substantivierte-adjektive .sa-important {
+  line-height: 1.25;
+  padding-top: 28px;
+}
+
+.substantivierte-adjektive .sa-important-title {
+  margin: 0 0 12px;
+  color: var(--theory-strong-text-color);
+  font-weight: 800;
+}
+
+.substantivierte-adjektive .sa-important p {
+  margin: 0 0 12px;
+}
+
+@media (max-width: 1200px) {
+  .substantivierte-adjektive {
+    --sa-table-width: 920px;
+  }
+
+  .substantivierte-adjektive .sa-lead,
+  .substantivierte-adjektive .sa-heading,
+  .substantivierte-adjektive .sa-example-block,
+  .substantivierte-adjektive .sa-list,
+  .substantivierte-adjektive .sa-declension-table,
+  .substantivierte-adjektive .sa-neuter-table,
+  .substantivierte-adjektive .sa-important {
+    font-size: var(--tablet-modal-font-size);
+  }
+
+  .substantivierte-adjektive .sa-lead {
+    margin-bottom: 14px;
+  }
+
+  .substantivierte-adjektive .sa-example-block {
+    column-gap: 14px;
+    row-gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .substantivierte-adjektive .sa-declension-table th,
+  .substantivierte-adjektive .sa-declension-table td,
+  .substantivierte-adjektive .sa-neuter-table th,
+  .substantivierte-adjektive .sa-neuter-table td {
+    padding: 6px 8px;
+  }
+
+  .substantivierte-adjektive .sa-neuter-table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .substantivierte-adjektive .sa-lower-grid {
+    grid-template-columns: minmax(0, 0.58fr) minmax(220px, 0.42fr);
+    gap: 18px 24px;
+  }
+
+  .substantivierte-adjektive .sa-important {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .substantivierte-adjektive {
+    --sa-table-width: 680px;
+    --sa-mobile-font: clamp(0.72rem, 2.7vw, 0.84rem);
+  }
+
+  .substantivierte-adjektive .sa-lead,
+  .substantivierte-adjektive .sa-heading,
+  .substantivierte-adjektive .sa-example-block,
+  .substantivierte-adjektive .sa-list,
+  .substantivierte-adjektive .sa-important {
+    font-size: var(--sa-mobile-font);
+    line-height: 1.28;
+  }
+
+  .substantivierte-adjektive .sa-declension-table,
+  .substantivierte-adjektive .sa-neuter-table {
+    font-size: clamp(0.62rem, 2.4vw, 0.78rem);
+  }
+
+  .substantivierte-adjektive .sa-lead {
+    margin-bottom: 10px;
+  }
+
+  .substantivierte-adjektive .sa-heading {
+    margin-bottom: 8px;
+  }
+
+  .substantivierte-adjektive .sa-heading--accent {
+    margin-top: 16px;
+  }
+
+  .substantivierte-adjektive .sa-example-block {
+    grid-template-columns: max-content 24px 1fr;
+    column-gap: 8px;
+    row-gap: 6px;
+    margin: 6px 0 14px;
+  }
+
+  .substantivierte-adjektive .sa-source--empty {
+    display: block;
+  }
+
+  .substantivierte-adjektive .sa-arrow {
+    font-size: 1.2em;
+  }
+
+  .substantivierte-adjektive .sa-list {
+    gap: 6px;
+    margin-top: 8px;
+    padding-left: 1.4em;
+  }
+
+  .substantivierte-adjektive .sa-list li {
+    padding-left: 4px;
+  }
+
+  .substantivierte-adjektive .sa-table-scroll {
+    margin: 6px 0 14px;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .substantivierte-adjektive .sa-declension-table th,
+  .substantivierte-adjektive .sa-declension-table td,
+  .substantivierte-adjektive .sa-neuter-table th,
+  .substantivierte-adjektive .sa-neuter-table td {
+    padding: 5px;
+    line-height: 1.16;
+  }
+
+  .substantivierte-adjektive .sa-case-head {
+    width: 88px;
+  }
+
+  .substantivierte-adjektive .sa-neuter-table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .substantivierte-adjektive .sa-lead--spaced {
+    margin-top: 14px;
+  }
+
+  .substantivierte-adjektive .sa-lower-grid {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 10px;
+  }
+
+  .substantivierte-adjektive .sa-lower-grid .sa-table-scroll,
+  .substantivierte-adjektive .sa-important {
+    min-width: 0;
+  }
+
+  .substantivierte-adjektive .sa-important-title {
+    margin-bottom: 6px;
+  }
+
+  .substantivierte-adjektive .sa-important p {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .substantivierte-adjektive {
+    --sa-table-width: 620px;
+  }
+
+  .substantivierte-adjektive .sa-example-block {
+    grid-template-columns: 1fr;
+  }
+
+  .substantivierte-adjektive .sa-source--empty,
+  .substantivierte-adjektive .sa-arrow {
+    display: none;
+  }
+}

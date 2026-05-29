@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useTheoryModal } from "../../contexts/TheoryModalContext";
 import data from "../../../data/A1-1/strong-verb-conjugation.json";
 import "../../css/exercises/Common.css";
 import ModalHtml from "../../components/ModalHtml";
@@ -9,26 +9,16 @@ import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 const STORAGE_KEY = "irregular-verbs-answers";
 
 function StrongVerbsConjugation() {
-  const [showImage, setShowImage] = useState(false);
+  const { isTheoryOpen: showImage, closeTheory } = useTheoryModal();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
 
-  useEffect(() => {
-    const handleShowHint = () => {
-      setShowImage(true);
-    };
-
-    document.addEventListener("show-hint", handleShowHint);
-    return () => {
-      document.removeEventListener("show-hint", handleShowHint);
-    };
-  }, []);
 
   return (
       <div className="exercise-inner">
         {showImage && (
             <ModalHtml
                 html={hint}
-                onClose={() => setShowImage(false)}
+                onClose={closeTheory}
             />
         )}
         <div className="table-wrapper">
@@ -87,14 +77,7 @@ function StrongVerbsConjugation() {
   );
 }
 
-StrongVerbsConjugation.headerButton = (
-    <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-        className="hint-button"
-    >
-      !
-    </button>
-);
+StrongVerbsConjugation.hasHint = true;
 
 StrongVerbsConjugation.instructions = data.instructions;
 StrongVerbsConjugation.title = data.title;

@@ -1,133 +1,37 @@
-import { useEffect, useMemo, useState } from "react";
-import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
-import { useLocale } from "../../contexts/LocaleContext";
+import FillInExercise from "../../components/FillInExercise";
+
 import data from "../../../data/A1-2/prepositionsTime.json";
 import hint from "../../../data/A1-2/images/prepositionsTime.html?raw";
 import hint2Ru from "../../../data/A1-2/images/prepositionsTime2.html?raw";
 import hint2En from "../../../data/A1-2/images/en/prepositionsTime2.html?raw";
-import "../../css/exercises/Common.css";
-import ModalHtml from "../../components/ModalHtml";
-import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
-
-function flattenItems(items) {
-    if (!Array.isArray(items)) return [];
-    if (Array.isArray(items[0])) return items.flat();
-    return items;
-}
 
 const STORAGE_KEY = "prepositions-time-answers";
+const SLIDES_BY_LOCALE = {
+    ru: [hint, hint2Ru],
+    en: [hint, hint2En],
+};
 
 export default function PrepositionsTime() {
-    const { locale } = useLocale();
-    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [showHint, setShowHint] = useState(false);
-
-    const items = useMemo(() => flattenItems(data.items), [data.items]);
-
-    useEffect(() => {
-        const handleShowHint = () => setShowHint(true);
-        document.addEventListener("show-hint", handleShowHint);
-        return () => document.removeEventListener("show-hint", handleShowHint);
-    }, []);
-
-    const getAnswerArray = (sentenceIdx) => {
-        const raw = items[sentenceIdx]?.answer;
-
-        if (Array.isArray(raw)) {
-            return raw.map((a) => String(a).trim()).filter(Boolean);
-        }
-
-        if (typeof raw === "string") {
-            return raw
-                .split(",")
-                .map((p) => p.trim())
-                .filter(Boolean);
-        }
-
-        return [];
-    };
-
-    const handleChange = (sentenceIdx, blankIdx, value) => {
-        const correctAnswers = getAnswerArray(sentenceIdx).map((a) => a.toLowerCase());
-        const correct = correctAnswers[blankIdx] ?? "";
-        const key = `${sentenceIdx}-${blankIdx}`;
-
-        setAnswers((prev) => ({
-            ...prev,
-            [key]: {
-                value,
-                isCorrect: value.trim().toLowerCase() === correct,
-            },
-        }));
-    };
-
-    const renderSentence = (item, sentenceIdx) => {
-        const parts = String(item.sentence || "").split("___");
-        const answerArray = getAnswerArray(sentenceIdx);
-
-        return (
-            <li key={sentenceIdx}>
-                {parts.map((part, idx) => {
-                    const key = `${sentenceIdx}-${idx}`;
-                    const inputValue = answers[key]?.value || "";
-                    const isCorrect = answers[key]?.isCorrect;
-
-                    let inputClass = "input";
-                    if (inputValue.trim() !== "") {
-                        inputClass += isCorrect ? " correct" : " incorrect";
-                    }
-
-                    return (
-                        <span key={idx}>
-              {part}
-                            {idx < answerArray.length && (
-                                <ExpandingInput
-                                    type="text"
-                                    value={inputValue}
-                                    onChange={(e) => handleChange(sentenceIdx, idx, e.target.value)}
-                                    className={inputClass}
-                                    autoComplete="off"
-                                    spellCheck={false}
-                                    minWidth={110}
-                                    maxWidth={260}
-                                />
-                            )}
-            </span>
-                    );
-                })}
-            </li>
-        );
-    };
-
     return (
-        <div className="exercise-inner">
-            {showHint && (
-                <ModalHtml
-                    slides={locale === "en" ? [hint, hint2En] : [hint, hint2Ru]}
-                    initialIndex={0}
-                    onClose={() => setShowHint(false)}
-                />
-            )}
-
-            <div className="scroll-container">
-                <ProgressiveList items={items} className="list">
-                    {(item, idx) => renderSentence(item, idx)}
-                </ProgressiveList>
-            </div>
-        </div>
+        <FillInExercise
+            data={data}
+            storageKey={STORAGE_KEY}
+            fallbackId="prepositions-time"
+            slidesByLocale={SLIDES_BY_LOCALE}
+            sectioned={false}
+            multiBlank
+            inputClassName="input"
+            inputSizes={{
+                blank: {
+                    minWidth: 110,
+                    maxWidth: 260,
+                },
+            }}
+            ariaLabel="Prepositions time"
+        />
     );
 }
 
-PrepositionsTime.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-        !
-    </button>
-);
-
+PrepositionsTime.hasHint = true;
 PrepositionsTime.instructions = data.instructions;
 PrepositionsTime.title = data.title;

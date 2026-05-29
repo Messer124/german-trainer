@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useTheoryModal } from "../../contexts/TheoryModalContext";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import ProgressiveList from "../../components/ProgressiveList";
@@ -14,17 +14,9 @@ const STORAGE_KEY = "modal-verbs-answers";
 
 function ModalVerbs() {
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [showHint, setShowHint] = useState(false);
+    const { isTheoryOpen: showHint, closeTheory } = useTheoryModal();
     const { locale } = useLocale();
 
-    useEffect(() => {
-        const handleShowHint = () => setShowHint(true);
-
-        document.addEventListener("show-hint", handleShowHint);
-        return () => {
-            document.removeEventListener("show-hint", handleShowHint);
-        };
-    }, []);
 
     const handleChange = (index, value) => {
         const correct =
@@ -43,7 +35,7 @@ function ModalVerbs() {
                 <ModalHtml
                     images={[hint1, locale === "en" ? hint2En : hint2Ru]}
                     initialIndex={0}
-                    onClose={() => setShowHint(false)}
+                    onClose={closeTheory}
                 />
             )}
             <div className="scroll-container">
@@ -85,18 +77,7 @@ function ModalVerbs() {
     );
 }
 
-ModalVerbs.headerButton = (
-    <button
-        onClick={() =>
-            document.dispatchEvent(
-                new CustomEvent("show-hint")
-            )
-        }
-        className="hint-button"
-    >
-        !
-    </button>
-);
+ModalVerbs.hasHint = true;
 
 ModalVerbs.instructions = data.instructions;
 ModalVerbs.title = data.title;

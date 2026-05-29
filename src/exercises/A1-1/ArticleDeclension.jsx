@@ -1,119 +1,41 @@
-import { useState, useEffect } from "react";
+import FillInExercise from "../../components/FillInExercise";
+
 import data from "../../../data/A1-1/articleDeclension.json";
-import ModalHtml from "../../components/ModalHtml";
-import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
-import "../../css/exercises/Common.css";
-import { useLocale } from "../../contexts/LocaleContext";
 import hint1Ru from "../../../data/A1-1/images/articleDeclension1.html?raw";
 import hint2Ru from "../../../data/A1-1/images/articleDeclension2.html?raw";
 import hint3Ru from "../../../data/A1-1/images/articleDeclension3.html?raw";
 import hint1En from "../../../data/A1-1/images/en/articleDeclension1.html?raw";
 import hint2En from "../../../data/A1-1/images/en/articleDeclension2.html?raw";
 import hint3En from "../../../data/A1-1/images/en/articleDeclension3.html?raw";
-import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 const STORAGE_KEY = "articles-answers";
+const SLIDES_BY_LOCALE = {
+    ru: [hint1Ru, hint2Ru, hint3Ru],
+    en: [hint1En, hint2En, hint3En],
+};
 
 function ArticleDeclension() {
-    const { locale } = useLocale();
-    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [showImage, setShowImage] = useState(false);
-
-    useEffect(() => {
-        const handleShowHint = () => {
-            setShowImage(true);
-        };
-
-        document.addEventListener("show-hint", handleShowHint);
-        return () => {
-            document.removeEventListener("show-hint", handleShowHint);
-        };
-    }, []);
-
-
-    const handleChange = (sentenceIdx, blankIdx, value) => {
-        const correct = data.items[sentenceIdx].answer[blankIdx]?.toLowerCase();
-        const key = `${sentenceIdx}-${blankIdx}`;
-        setAnswers((prev) => ({
-            ...prev,
-            [key]: {
-                value,
-                isCorrect: value.trim().toLowerCase() === correct,
-            },
-        }));
-    };
-
-    const renderSentence = (sentence, answerArray, sentenceIdx) => {
-        const parts = sentence.split("___");
-
-        return (
-            <li key={sentenceIdx} className="list-item">
-                {parts.map((part, idx) => {
-                    const key = `${sentenceIdx}-${idx}`;
-                    const inputValue = answers[key]?.value || "";
-                    const isCorrect = answers[key]?.isCorrect;
-
-                    let inputClass = "input";
-                    if (inputValue !== "") {
-                        inputClass += isCorrect ? " correct" : " incorrect";
-                    }
-
-                    return (
-                        <span key={idx}>
-              {part}
-                            {idx < answerArray.length && (
-                                <ExpandingInput
-                                    type="text"
-                                    value={inputValue}
-                                    onChange={(e) =>
-                                        handleChange(sentenceIdx, idx, e.target.value)
-                                    }
-                                    className={inputClass}
-                                    minWidth={110}
-                                    maxWidth={260}
-                                />
-                            )}
-            </span>
-                    );
-                })}
-            </li>
-        );
-    };
-
     return (
-        <div className="exercise-inner">
-            {showImage && (
-                <ModalHtml
-                    images={
-                        locale === "en"
-                            ? [hint1En, hint2En, hint3En]
-                            : [hint1Ru, hint2Ru, hint3Ru]
-                    }
-                    initialIndex={0}
-                    onClose={() => setShowImage(false)}
-                />
-            )}
-            <div className="scroll-container">
-                <ProgressiveList items={data.items} className="list">
-                    {(item, idx) =>
-                        renderSentence(item.sentence, item.answer, idx)
-                    }
-                </ProgressiveList>
-            </div>
-        </div>
+        <FillInExercise
+            data={data}
+            storageKey={STORAGE_KEY}
+            fallbackId="articles"
+            slidesByLocale={SLIDES_BY_LOCALE}
+            sectioned={false}
+            multiBlank
+            inputClassName="input"
+            inputSizes={{
+                blank: {
+                    minWidth: 110,
+                    maxWidth: 260,
+                },
+            }}
+            ariaLabel="Article declension"
+        />
     );
 }
 
-ArticleDeclension.headerButton = (
-    <button
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-        className="hint-button"
-    >
-        !
-    </button>
-);
-
+ArticleDeclension.hasHint = true;
 ArticleDeclension.instructions = data.instructions;
 ArticleDeclension.title = data.title;
 export default ArticleDeclension;

@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
+import { useTheoryModal } from "../../contexts/TheoryModalContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/B1/substantivierteAdjektive.json";
@@ -12,21 +13,19 @@ import slide1En from "../../../data/B1/images/en/substantivierteAdjektive1.html?
 import slide2En from "../../../data/B1/images/en/substantivierteAdjektive2.html?raw";
 
 import "../../css/exercises/Common.css";
+import { normalizeAnswer } from "../../utils/answerUtils";
 
 const STORAGE_KEY = "substantivierte-adjektive-answers";
 const BLANK_PATTERN = /_{3,}/g;
 
 function normalize(value) {
-    return String(value ?? "")
-        .trim()
-        .toLowerCase()
-        .replace(/\s+/g, " ");
+    return normalizeAnswer(value);
 }
 
 export default function SubstantivierteAdjektive() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [showHint, setShowHint] = useState(false);
+    const { isTheoryOpen: showHint, closeTheory } = useTheoryModal();
 
     const slides = useMemo(
         () => (locale === "en" ? [slide1En, slide2En] : [slide1Ru, slide2Ru]),
@@ -35,11 +34,6 @@ export default function SubstantivierteAdjektive() {
 
     const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
 
-    useEffect(() => {
-        const handleShowHint = () => setShowHint(true);
-        document.addEventListener("show-hint", handleShowHint);
-        return () => document.removeEventListener("show-hint", handleShowHint);
-    }, []);
 
     const handleChange = (itemIndex, blankIndex, value, correctAnswer) => {
         const key = `substantivierte-adjektive-${itemIndex}-${blankIndex}`;
@@ -86,7 +80,7 @@ export default function SubstantivierteAdjektive() {
     return (
         <div className="exercise-inner">
             {showHint && (
-                <ModalHtml images={slides} initialIndex={0} onClose={() => setShowHint(false)} />
+                <ModalHtml images={slides} initialIndex={0} onClose={closeTheory} />
             )}
 
             <div className="scroll-container">
@@ -114,15 +108,7 @@ export default function SubstantivierteAdjektive() {
     );
 }
 
-SubstantivierteAdjektive.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-        !
-    </button>
-);
+SubstantivierteAdjektive.hasHint = true;
 
 SubstantivierteAdjektive.instructions = data.instructions;
 SubstantivierteAdjektive.title = data.title;

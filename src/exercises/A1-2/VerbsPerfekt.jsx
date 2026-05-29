@@ -1,13 +1,15 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
+import { useTheoryModal } from "../../contexts/TheoryModalContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import data from "../../../data/A1-2/verbsPerfekt.json";
 import hintRu from "../../../data/A1-2/images/partizip2.html?raw";
 import hintEn from "../../../data/A1-2/images/en/partizip2.html?raw";
 import "../../css/exercises/Common.css";
+import { normalizeAnswer } from "../../utils/answerUtils";
 
 const STORAGE_KEY = "verbs-perfekt-answers";
 
@@ -19,7 +21,7 @@ function normalizeItems(rawItems) {
 }
 
 function normalize(v) {
-  return String(v ?? "").trim().toLowerCase();
+    return normalizeAnswer(v);
 }
 
 function getLocalizedText(raw, locale) {
@@ -33,15 +35,10 @@ function getLocalizedText(raw, locale) {
 export default function VerbsPerfekt() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const [showHint, setShowHint] = useState(false);
+  const { isTheoryOpen: showHint, closeTheory } = useTheoryModal();
 
   const items = useMemo(() => normalizeItems(data.items), []);
 
-  useEffect(() => {
-    const handleShowHint = () => setShowHint(true);
-    document.addEventListener("show-hint", handleShowHint);
-    return () => document.removeEventListener("show-hint", handleShowHint);
-  }, []);
 
   const handleChange = (itemIdx, fieldIdx, value, correct) => {
     const key = `${itemIdx}-${fieldIdx}`;
@@ -58,7 +55,7 @@ export default function VerbsPerfekt() {
         {showHint && (
             <ModalHtml
                 html={locale === "en" ? hintEn : hintRu}
-                onClose={() => setShowHint(false)}
+                onClose={closeTheory}
             />
         )}
 
@@ -140,15 +137,7 @@ export default function VerbsPerfekt() {
   );
 }
 
-VerbsPerfekt.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-      !
-    </button>
-);
+VerbsPerfekt.hasHint = true;
 
 VerbsPerfekt.instructions = data.instructions;
 VerbsPerfekt.title = data.title;

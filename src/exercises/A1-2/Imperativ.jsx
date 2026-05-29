@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 import ExpandingInput from "../../components/ExpandingInput";
 import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
+import { useTheoryModal } from "../../contexts/TheoryModalContext";
 
 import data from "../../../data/A1-2/imperativ.json";
 import hint1Ru from "../../../data/A1-2/images/imperativ1.html?raw";
@@ -28,7 +29,7 @@ function normalizeItems(rawItems) {
 function Imperativ() {
   const { locale } = useLocale();
   const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const [showHint, setShowHint] = useState(false);
+  const { isTheoryOpen: showHint, closeTheory } = useTheoryModal();
 
   const hintSlides = useMemo(
       () => (locale === "en" ? [hint1En, hint2En, hint3En] : [hint1Ru, hint2Ru, hint3Ru]),
@@ -36,11 +37,6 @@ function Imperativ() {
   );
   const items = useMemo(() => normalizeItems(data.items), []);
 
-  useEffect(() => {
-    const handleShowHint = () => setShowHint(true);
-    document.addEventListener("show-hint", handleShowHint);
-    return () => document.removeEventListener("show-hint", handleShowHint);
-  }, []);
 
   const handleChange = (itemIdx, blankIdx, value, correct) => {
     const key = `${itemIdx}-${blankIdx}`;
@@ -99,7 +95,7 @@ function Imperativ() {
   return (
     <div className="exercise-inner">
       {showHint && (
-        <ModalHtml images={hintSlides} initialIndex={0} onClose={() => setShowHint(false)} />
+        <ModalHtml images={hintSlides} initialIndex={0} onClose={closeTheory} />
       )}
 
       <div className="scroll-container">
@@ -111,15 +107,7 @@ function Imperativ() {
   );
 }
 
-Imperativ.headerButton = (
-  <button
-    type="button"
-    className="hint-button"
-    onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-  >
-    !
-  </button>
-);
+Imperativ.hasHint = true;
 
 Imperativ.instructions = data.instructions;
 Imperativ.title = data.title;

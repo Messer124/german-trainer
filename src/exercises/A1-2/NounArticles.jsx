@@ -1,99 +1,42 @@
-import { useState, useEffect } from "react";
+import FillInExercise from "../../components/FillInExercise";
+
 import data from "../../../data/A1-2/noun_articles.json";
-import { useLocale } from "../../contexts/LocaleContext";
-import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
-import "../../css/exercises/Common.css";
-import ModalHtml from "../../components/ModalHtml";
-import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
 import hint1Ru from "../../../data/A1-2/images/wordGender1.html?raw";
+import hint2Ru from "../../../data/A1-2/images/wordGender2.html?raw";
 import hint1En from "../../../data/A1-2/images/en/wordGender1.html?raw";
-import hint2 from "../../../data/A1-2/images/wordGender2.html?raw";
 
 const STORAGE_KEY = "noun-articles-answers";
+const SLIDES_BY_LOCALE = {
+    ru: [hint1Ru, hint2Ru],
+    en: [hint1En, hint2Ru],
+};
 
 function NounArticles() {
-  const { locale } = useLocale();
-  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const [showHint, setShowHint] = useState(false);
-  const hintSlides = locale === "en" ? [hint1En, hint2] : [hint1Ru, hint2];
-
-  useEffect(() => {
-    const handleShowHint = () => setShowHint(true);
-
-    document.addEventListener("show-hint", handleShowHint);
-    return () => document.removeEventListener("show-hint", handleShowHint);
-  }, []);
-
-  const handleChange = (index, value) => {
-    const correct = data.items[index].article.toLowerCase();
-
-    setAnswers((prev) => ({
-      ...prev,
-      [index]: {
-        value,
-        isCorrect: value.trim().toLowerCase() === correct,
-      },
-    }));
-  };
-
-  return (
-      <div className="exercise-inner">
-        {showHint && (
-            <ModalHtml
-                images={hintSlides}
-                initialIndex={0}
-                onClose={() => setShowHint(false)}
-            />
-        )}
-
-        <div className="scroll-container">
-          <ProgressiveList items={data.items} className="list">
-            {(item, index) => {
-              const value = answers[index]?.value || "";
-              const isCorrect = answers[index]?.isCorrect;
-
-              const inputClassName =
-                  "input" +
-                  (value === ""
-                      ? ""
-                      : isCorrect
-                          ? " correct"
-                          : " incorrect");
-
-              return (
-                  <li key={index}>
-                    <ExpandingInput
-                        type="text"
-                        value={value}
-                        onChange={(e) => handleChange(index, e.target.value)}
-                        className={inputClassName}
-                        minWidth={90}
-                        maxWidth={180}
-                    />
-                    {item.word.replace(/^_+/, "").trim()} —{" "}
-                    {item.translation[locale]}
-                  </li>
-              );
+    return (
+        <FillInExercise
+            data={data}
+            storageKey={STORAGE_KEY}
+            fallbackId="noun-articles"
+            slidesByLocale={SLIDES_BY_LOCALE}
+            sectioned={false}
+            sentenceField="word"
+            answerField="article"
+            inputClassName="input"
+            inputSizes={{
+                full: {
+                    minWidth: 100,
+                    maxWidth: 220,
+                },
             }}
-          </ProgressiveList>
-        </div>
-      </div>
-  );
+            buildAnswerKey={(row) => `${row.sentenceIndex}`}
+            separator=" —"
+            hintMode="first"
+            ariaLabel="Noun article"
+        />
+    );
 }
 
-NounArticles.headerButton = (
-    <button
-        onClick={() =>
-            document.dispatchEvent(new CustomEvent("show-hint"))
-        }
-        className="hint-button"
-    >
-      !
-    </button>
-);
-
+NounArticles.hasHint = true;
 NounArticles.instructions = data.instructions;
 NounArticles.title = data.title;
-
 export default NounArticles;

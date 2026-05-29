@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import ModalHtml from "../../components/ModalHtml";
 import ExpandingInput from "../../components/ExpandingInput";
 import ProgressiveList from "../../components/ProgressiveList";
 import { useLocale } from "../../contexts/LocaleContext";
+import { useTheoryModal } from "../../contexts/TheoryModalContext";
 import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
 
 import data from "../../../data/A2/steigerungDerAdjektive.json";
@@ -14,15 +15,13 @@ import slide2En from "../../../data/A2/images/en/steigerungderadjektive2.html?ra
 import slide3En from "../../../data/A2/images/en/steigerungderadjektive3.html?raw";
 
 import "../../css/exercises/Common.css";
+import { normalizeAnswer } from "../../utils/answerUtils";
 
 const STORAGE_KEY = "steigerung-der-adjektive-answers";
 const PLACEHOLDER_TOKEN = "___";
 
 function normalize(value) {
-    return String(value ?? "")
-        .trim()
-        .toLowerCase()
-        .replace(/\s+/g, " ");
+    return normalizeAnswer(value);
 }
 
 function getLocalizedText(raw, locale) {
@@ -51,7 +50,7 @@ function splitByPlaceholder(sentence) {
 export default function SteigerungDerAdjektive() {
     const { locale } = useLocale();
     const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [showHint, setShowHint] = useState(false);
+    const { isTheoryOpen: showHint, closeTheory } = useTheoryModal();
 
     const slides = useMemo(
         () => (locale === "en" ? [slide1En, slide2En, slide3En] : [slide1Ru, slide2Ru, slide3Ru]),
@@ -59,11 +58,6 @@ export default function SteigerungDerAdjektive() {
     );
     const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
 
-    useEffect(() => {
-        const handleShowHint = () => setShowHint(true);
-        document.addEventListener("show-hint", handleShowHint);
-        return () => document.removeEventListener("show-hint", handleShowHint);
-    }, []);
 
     const handleChange = (itemIdx, value, correctAnswer) => {
         const key = `steigerung-${itemIdx}`;
@@ -81,7 +75,7 @@ export default function SteigerungDerAdjektive() {
     return (
         <div className="exercise-inner">
             {showHint && (
-                <ModalHtml images={slides} initialIndex={0} onClose={() => setShowHint(false)} />
+                <ModalHtml images={slides} initialIndex={0} onClose={closeTheory} />
             )}
 
             <div className="scroll-container">
@@ -150,15 +144,7 @@ export default function SteigerungDerAdjektive() {
     );
 }
 
-SteigerungDerAdjektive.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-        !
-    </button>
-);
+SteigerungDerAdjektive.hasHint = true;
 
 SteigerungDerAdjektive.instructions = data.instructions;
 SteigerungDerAdjektive.title = data.title;

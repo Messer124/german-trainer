@@ -1,9 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
-import ModalHtml from "../../components/ModalHtml";
-import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
-import { useLocale } from "../../contexts/LocaleContext";
-import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import FillInExercise from "../../components/FillInExercise";
 
 import data from "../../../data/A2/relativpronomen.json";
 import slide1Ru from "../../../data/A2/images/relativpronomen.html?raw";
@@ -11,101 +6,34 @@ import slide2Ru from "../../../data/A2/images/articles.html?raw";
 import slide1En from "../../../data/A2/images/en/relativpronomen.html?raw";
 import slide2En from "../../../data/A2/images/en/articles.html?raw";
 
-import "../../css/exercises/Common.css";
-
 const STORAGE_KEY = "relativpronomen-answers";
-
-function normalize(value) {
-    return String(value ?? "")
-        .trim()
-        .toLowerCase()
-        .replace(/\s+/g, " ");
-}
-
-function toAnswerArray(answer) {
-    if (Array.isArray(answer)) return answer.map(String);
-    if (typeof answer === "string") return [answer];
-    return [];
-}
+const SLIDES_BY_LOCALE = {
+    ru: [slide1Ru, slide2Ru],
+    en: [slide1En, slide2En],
+};
 
 export default function Relativpronomen() {
-    const { locale } = useLocale();
-    const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-    const [showHint, setShowHint] = useState(false);
-
-    const slides = useMemo(
-        () => (locale === "en" ? [slide1En, slide2En] : [slide1Ru, slide2Ru]),
-        [locale]
-    );
-    const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
-
-    useEffect(() => {
-        const handleShowHint = () => setShowHint(true);
-        document.addEventListener("show-hint", handleShowHint);
-        return () => document.removeEventListener("show-hint", handleShowHint);
-    }, []);
-
-    const handleChange = (index, value) => {
-        const acceptable = toAnswerArray(items[index]?.answer).map(normalize);
-        const isCorrect = acceptable.includes(normalize(value));
-
-        setAnswers((prev) => ({
-            ...prev,
-            [index]: { value, isCorrect },
-        }));
-    };
-
     return (
-        <div className="exercise-inner">
-            {showHint && (
-                <ModalHtml slides={slides} initialIndex={0} onClose={() => setShowHint(false)} />
-            )}
-
-            <div className="scroll-container">
-                <ProgressiveList items={items} className="list">
-                    {(item, index) => {
-                        const stored = answers[index];
-                        const value = stored?.value ?? "";
-                        const isCorrect = stored?.isCorrect;
-
-                        const parts = String(item.sentence ?? "").split("___");
-                        const left = parts[0] ?? "";
-                        const right = parts[1] ?? "";
-
-                        const hasValue = value.trim() !== "";
-                        const inputClass = `input ${hasValue ? (isCorrect ? "correct" : "incorrect") : ""}`;
-
-                        return (
-                            <li key={index} className="list-item">
-                                {left}
-                                <ExpandingInput
-                                    type="text"
-                                    value={value}
-                                    onChange={(e) => handleChange(index, e.target.value)}
-                                    className={inputClass}
-                                    minWidth={100}
-                                    maxWidth={220}
-                                    aria-label={`Relativpronomen ${index + 1}`}
-                                />
-                                {right}
-                            </li>
-                        );
-                    }}
-                </ProgressiveList>
-            </div>
-        </div>
+        <FillInExercise
+            data={data}
+            storageKey={STORAGE_KEY}
+            fallbackId="relativpronomen"
+            slidesByLocale={SLIDES_BY_LOCALE}
+            sectioned={false}
+            inputClassName="input"
+            inputSizes={{
+                blank: {
+                    minWidth: 100,
+                    maxWidth: 220,
+                },
+            }}
+            buildAnswerKey={(row) => `${row.sentenceIndex}`}
+            hintMode="first"
+            ariaLabel="Relativpronomen"
+        />
     );
 }
 
-Relativpronomen.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-        !
-    </button>
-);
-
+Relativpronomen.hasHint = true;
 Relativpronomen.instructions = data.instructions;
 Relativpronomen.title = data.title;

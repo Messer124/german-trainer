@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
-import { Eye } from "lucide-react";
+import { Eye } from "./icons";
 import "../css/exercises/ExpandingInput.css";
 
 const pickFontStyles = (cs) => ({

@@ -1,9 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import ModalHtml from "../../components/ModalHtml";
-import ExpandingInput from "../../components/ExpandingInput";
-import ProgressiveList from "../../components/ProgressiveList";
-import { useLocale } from "../../contexts/LocaleContext";
-import { usePersistentAnswers } from "../../hooks/usePersistentAnswers";
+import FillInExercise from "../../components/FillInExercise";
+
 import data from "../../../data/A1-2/conjunctions.json";
 import slide1Ru from "../../../data/A1-2/images/conjunctions1.html?raw";
 import slide2Ru from "../../../data/A1-2/images/conjunctions2.html?raw";
@@ -14,116 +10,33 @@ import slide2En from "../../../data/A1-2/images/en/conjunctions2.html?raw";
 import slide3En from "../../../data/A1-2/images/en/conjunctions3.html?raw";
 import slide4En from "../../../data/A1-2/images/en/conjunctions4.html?raw";
 
-import "../../css/exercises/Common.css";
-
 const STORAGE_KEY = "conjunctions-answers";
-
-function normalize(value) {
-  return String(value ?? "")
-      .trim()
-      .toLowerCase()
-      .replace(/\s+/g, " ");
-}
-
-function getAcceptedAnswers(item) {
-  if (Array.isArray(item?.answer)) {
-    return item.answer.map((value) => String(value ?? "").trim()).filter(Boolean);
-  }
-
-  if (typeof item?.answer === "string") {
-    const value = item.answer.trim();
-    return value ? [value] : [];
-  }
-
-  if (Array.isArray(item?.answers)) {
-    return item.answers.map((value) => String(value ?? "").trim()).filter(Boolean);
-  }
-
-  return [];
-}
+const SLIDES_BY_LOCALE = {
+    ru: [slide1Ru, slide2Ru, slide3Ru, slide4Ru],
+    en: [slide1En, slide2En, slide3En, slide4En],
+};
 
 export default function Conjunctions() {
-  const { locale } = useLocale();
-  const [answers, setAnswers] = usePersistentAnswers(STORAGE_KEY, {});
-  const [showHint, setShowHint] = useState(false);
-
-  const slides = useMemo(
-      () => (locale === "en" ? [slide1En, slide2En, slide3En, slide4En] : [slide1Ru, slide2Ru, slide3Ru, slide4Ru]),
-      [locale]
-  );
-  const items = useMemo(() => (Array.isArray(data.items) ? data.items : []), []);
-
-  useEffect(() => {
-    const handleShowHint = () => setShowHint(true);
-    document.addEventListener("show-hint", handleShowHint);
-    return () => document.removeEventListener("show-hint", handleShowHint);
-  }, []);
-
-  const handleChange = (index, value) => {
-    const acceptedAnswers = getAcceptedAnswers(items[index]);
-    const normalizedValue = normalize(value);
-    const isCorrect = acceptedAnswers.some(
-        (answer) => normalize(answer) === normalizedValue
-    );
-
-    setAnswers((prev) => ({
-      ...prev,
-      [index]: {
-        value,
-        isCorrect,
-      },
-    }));
-  };
-
-  return (
-      <div className="exercise-inner">
-        {showHint && (
-            <ModalHtml slides={slides} initialIndex={0} onClose={() => setShowHint(false)} />
-        )}
-
-        <div className="scroll-container">
-          <ProgressiveList items={items} className="list">
-            {(item, index) => {
-              const value = answers[index]?.value || "";
-              const isCorrect = answers[index]?.isCorrect;
-
-              const parts = String(item.sentence ?? "").split("___");
-              const left = parts[0] ?? "";
-              const right = parts[1] ?? "";
-
-              const hasValue = value.trim() !== "";
-              const inputClass = `input ${hasValue ? (isCorrect ? "correct" : "incorrect") : ""}`;
-
-              return (
-                  <li key={index} className="list-item">
-                    {left}
-                    <ExpandingInput
-                        type="text"
-                        value={value}
-                        onChange={(e) => handleChange(index, e.target.value)}
-                        className={inputClass}
-                        minWidth={100}
-                        aria-label={`Conjunction ${index + 1}`}
-                    />
-                    {right}
-                  </li>
-              );
+    return (
+        <FillInExercise
+            data={data}
+            storageKey={STORAGE_KEY}
+            fallbackId="conjunctions"
+            slidesByLocale={SLIDES_BY_LOCALE}
+            sectioned={false}
+            inputClassName="input"
+            inputSizes={{
+                blank: {
+                    minWidth: 120,
+                    maxWidth: 280,
+                },
             }}
-          </ProgressiveList>
-        </div>
-      </div>
-  );
+            buildAnswerKey={(row) => `${row.sentenceIndex}`}
+            ariaLabel="Conjunction"
+        />
+    );
 }
 
-Conjunctions.headerButton = (
-    <button
-        type="button"
-        className="hint-button"
-        onClick={() => document.dispatchEvent(new CustomEvent("show-hint"))}
-    >
-      !
-    </button>
-);
-
+Conjunctions.hasHint = true;
 Conjunctions.instructions = data.instructions;
 Conjunctions.title = data.title;
